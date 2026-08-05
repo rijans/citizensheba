@@ -15,9 +15,9 @@ faq:
     a: No. This page helps you find the official portal. Use the Open official site button to go to bdris.gov.bd.
   - q: What can I do on BDRIS?
     a: Apply for birth and death certificates, track applications, and verify certificates online.
-  - q: Do I need to create an account on Sheba?
-    a: No. Sheba only lists services. You complete everything on the official site.
+  - q: Do I need to create an account on CitizenSheba?
+    a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: BDRIS Bangladesh — birth and death registration | Sheba
+meta_title: BDRIS Bangladesh — birth and death registration | CitizenSheba
 meta_description: Find the official BDRIS portal for birth and death certificate registration and verification in Bangladesh.
 ---

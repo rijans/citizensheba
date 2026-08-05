@@ -34,7 +34,7 @@ async function checkUrl(url, slug) {
       method: 'HEAD',
       signal: controller.signal,
       redirect: 'follow',
-      headers: { 'User-Agent': 'Sheba-LinkHealth/1.0 (+https://sheba.example.com)' },
+      headers: { 'User-Agent': 'CitizenSheba-LinkHealth/1.0 (+https://citizensheba.com)' },
     });
 
     if (response.status === 404 || response.status === 410) {

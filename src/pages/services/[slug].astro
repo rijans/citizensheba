@@ -28,7 +28,7 @@ const relatedIds =
 const related = all.filter((s) => relatedIds.includes(s.data.id));
 
 const domain = service.data.official_domain ?? officialDomainFromUrl(service.data.url);
-const title = service.data.meta_title ?? `${service.data.title} (${service.data.title_bn}) | Sheba`;
+const title = service.data.meta_title ?? `${service.data.title} (${service.data.title_bn}) | CitizenSheba`;
 const description = service.data.meta_description ?? service.data.description;
 const reportSubject = encodeURIComponent(`Report: ${service.data.slug}`);
 ---

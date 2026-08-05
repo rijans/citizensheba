@@ -15,9 +15,9 @@ faq:
     a: No. This page helps you find the official portal. Use the Open official site button to go to secure.incometax.gov.bd.
   - q: What can I do on the e-TIN portal?
     a: Register for a new TIN or manage an existing Taxpayer Identification Number.
-  - q: Do I need to create an account on Sheba?
-    a: No. Sheba only lists services. You complete everything on the official site.
+  - q: Do I need to create an account on CitizenSheba?
+    a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: e-TIN Bangladesh — NBR registration portal | Sheba
+meta_title: e-TIN Bangladesh — NBR registration portal | CitizenSheba
 meta_description: Find the official NBR e-TIN portal to register or manage your Taxpayer Identification Number in Bangladesh.
 ---

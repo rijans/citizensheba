@@ -15,9 +15,9 @@ faq:
     a: No. This page helps you find the official portal. Use the Open official site button to go to xiclassadmission.gov.bd.
   - q: What can I do on the XI Admission portal?
     a: Apply for centralized Class 11 (HSC) college admission after SSC results.
-  - q: Do I need to create an account on Sheba?
-    a: No. Sheba only lists services. You complete everything on the official site.
+  - q: Do I need to create an account on CitizenSheba?
+    a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: XI Class Admission Bangladesh — official portal | Sheba
+meta_title: XI Class Admission Bangladesh — official portal | CitizenSheba
 meta_description: Find the official XI Class Admission portal for centralized Class 11 college admission in Bangladesh.
 ---

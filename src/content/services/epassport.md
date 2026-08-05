@@ -15,9 +15,9 @@ faq:
     a: No. This page helps you find the official portal. Use the Open official site button to go to epassport.gov.bd.
   - q: What can I do on the e-Passport portal?
     a: Apply for MRPs and e-Passports, book appointments, and track application status.
-  - q: Do I need to create an account on Sheba?
-    a: No. Sheba only lists services. You complete everything on the official site.
+  - q: Do I need to create an account on CitizenSheba?
+    a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: e-Passport Bangladesh — official portal link | Sheba
+meta_title: e-Passport Bangladesh — official portal link | CitizenSheba
 meta_description: Find the official Bangladesh e-Passport portal for MRP and e-Passport applications and appointments.
 ---

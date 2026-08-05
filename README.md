@@ -1,10 +1,10 @@
-# Sheba
+# CitizenSheba
 
-**Sheba** (সেবা) is a Mobile-First directory for Bangladesh government and utility digital services. It helps citizens discover the right official portal quickly, then hop off to the government site to complete transactions.
+**CitizenSheba** (সিটিজেনসেবা) is a Mobile-First directory for Bangladesh government and utility digital services. It helps citizens discover the right official portal quickly, then hop off to the government site to complete transactions.
 
-Sheba is **not** a government entity and is not an official portal.
+CitizenSheba is **not** a government entity and is not an official portal.
 
-**Brand / domain:** placeholder `sheba.example.com` until final branding is chosen.
+**Domain:** [citizensheba.com](https://citizensheba.com)
 
 ## Quick start
 
@@ -17,8 +17,6 @@ npm run preview      # serve dist/
 ```
 
 ### End-to-end tests (Playwright)
-
-Playwright runs against `astro preview` (built `dist/`). Install browsers once:
 
 ```bash
 npx playwright install chromium
@@ -36,37 +34,26 @@ npm run test:e2e
 | `test:watch` | Vitest watch mode |
 | `test:e2e` | Playwright smoke tests |
 | `check:links` | Outbound link health for service URLs |
+| `pages:deploy` | Build and deploy `dist/` to Cloudflare Pages |
 
 ## Editing content
 
-Content lives in Astro Content Collections:
+Services live in `src/content/services/*.md` and categories in `src/content/categories/*.yaml`. Edit via PR; Astro rebuilds static HTML.
 
-- **Categories:** `src/content/categories/*.yaml`
-- **Services:** `src/content/services/*.md` (YAML frontmatter + optional body)
+## Cloudflare Pages
 
-Each service needs a valid `url` (outbound official link), `slug` (`bd-…`), `faq` (3–5 items), and `last_verified`. Schema validation runs at build time.
+| Setting | Value |
+|---------|--------|
+| Build command | `npm run build` |
+| Output directory | `dist` |
+| Node version | 20+ |
+| Production domain | `citizensheba.com` |
 
-After editing content, run `npm run build` locally. CI also runs `npm run check:links` weekly to flag stale or broken outbound URLs.
+Deploy from CI (Git connected) or locally:
 
-## Agent & SEO files
+```bash
+npm run build
+npx wrangler pages deploy dist --project-name=citizensheba
+```
 
-Built or copied at deploy:
-
-- `/sitemap-index.xml` — Astro sitemap integration
-- `/robots.txt` — crawl rules + Content Signals (`search=yes`, `ai-input=yes`, `ai-train=no`)
-- `/llms.txt` — curated agent index (categories + services)
-- `/.well-known/ai.txt` — advisory AI usage policy
-- `/manifest.webmanifest` — installable shell (icons in `public/icons/`)
-
-## Deploy on Cloudflare Pages
-
-1. Connect the GitHub repo to Cloudflare Pages.
-2. **Build command:** `npm run build`
-3. **Build output directory:** `dist`
-4. **Node version:** 22+ (see `engines` in `package.json`)
-
-`public/_headers` sets MIME types for agent files. Enable Cloudflare Web Analytics in the dashboard after the project exists.
-
-## License
-
-See repository license file.
+Then attach custom domains `citizensheba.com` and `www.citizensheba.com` in the Pages project settings.

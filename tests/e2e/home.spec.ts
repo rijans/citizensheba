@@ -4,7 +4,7 @@ test.describe('Home', () => {
   test('shows search and service directory', async ({ page }) => {
     await page.goto('/');
 
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('Sheba');
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('CitizenSheba');
 
     const search = page.getByRole('searchbox');
     await expect(search).toBeVisible();

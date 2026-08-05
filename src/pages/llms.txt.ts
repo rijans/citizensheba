@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { categoryPath, servicePath } from '../lib/urls';
-import { DISCLAIMER_SHORT } from '../lib/site';
+import { DISCLAIMER_SHORT, SITE_NAME } from '../lib/site';
 
 export const prerender = true;
 
@@ -10,7 +10,7 @@ export const GET: APIRoute = async ({ site }) => {
   const services = await getCollection('services');
 
   const lines: string[] = [
-    '# Sheba',
+    `# ${SITE_NAME}`,
     '',
     `> ${DISCLAIMER_SHORT}`,
     '',

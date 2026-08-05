@@ -1,4 +1,4 @@
-# Advisory AI Usage Policy for Sheba
+# Advisory AI Usage Policy for CitizenSheba
 # This file expresses preferences only — not a legally binding contract.
 
 search: yes
@@ -7,4 +7,6 @@ ai-train: no
 
 Contact: rijans.x@gmail.com
 
-Disclaimer: Sheba is not a government entity and is not an official portal. We only help you discover official Bangladesh government and utility digital services. Always verify information on the official government domain before acting.
+Disclaimer: CitizenSheba is not a government entity and is not an official portal. We only help you discover official Bangladesh government and utility digital services. Always verify information on the official government domain before acting.
+
+Disclaimer page: https://citizensheba.com/disclaimer

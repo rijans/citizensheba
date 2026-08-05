@@ -9,7 +9,7 @@ import { deflateSync } from 'node:zlib';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const outDir = join(__dirname, '../public/icons');
 
-/** Sheba green #006a4e */
+/** CitizenSheba green #006a4e */
 const RGB = [0, 106, 78];
 
 function crc32(buf) {

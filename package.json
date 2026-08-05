@@ -1,5 +1,5 @@
 {
-  "name": "sheba",
+  "name": "citizensheba",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -13,7 +13,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "check:links": "node scripts/check-links.mjs"
+    "check:links": "node scripts/check-links.mjs",
+    "pages:deploy": "npm run build && wrangler pages deploy dist --project-name=citizensheba"
   },
   "dependencies": {
     "@astrojs/react": "^6.0.2",
@@ -31,6 +32,7 @@
     "@vitest/coverage-v8": "^4.1.10",
     "gray-matter": "^4.0.3",
     "happy-dom": "^20.11.1",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.10",
+    "wrangler": "^4.119.0"
   }
 }

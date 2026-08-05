@@ -15,9 +15,9 @@ faq:
     a: No. This page helps you find the official portal. Use the Open official site button to go to ldtax.gov.bd.
   - q: What can I do on the LD Tax portal?
     a: Pay land development tax online and receive digital Dakhila receipts.
-  - q: Do I need to create an account on Sheba?
-    a: No. Sheba only lists services. You complete everything on the official site.
+  - q: Do I need to create an account on CitizenSheba?
+    a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: Land Development Tax Bangladesh — official portal | Sheba
+meta_title: Land Development Tax Bangladesh — official portal | CitizenSheba
 meta_description: Find the official LD Tax portal to pay land development tax and get digital Dakhila receipts in Bangladesh.
 ---

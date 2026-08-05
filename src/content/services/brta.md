@@ -15,9 +15,9 @@ faq:
     a: No. This page helps you find the official portal. Use the Open official site button to go to bsp.brta.gov.bd.
   - q: What can I do on the BRTA portal?
     a: Apply for driving licenses, register motor vehicles, and pay transport-related fees online.
-  - q: Do I need to create an account on Sheba?
-    a: No. Sheba only lists services. You complete everything on the official site.
+  - q: Do I need to create an account on CitizenSheba?
+    a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: BRTA Bangladesh — driving license and vehicle registration | Sheba
+meta_title: BRTA Bangladesh — driving license and vehicle registration | CitizenSheba
 meta_description: Find the official BRTA Service Portal for driving licenses, vehicle registration, and transport fees.
 ---

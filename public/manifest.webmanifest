@@ -1,6 +1,6 @@
 {
-  "name": "Sheba",
-  "short_name": "Sheba",
+  "name": "CitizenSheba",
+  "short_name": "CitizenSheba",
   "description": "Find Bangladesh government and utility digital services — then open the official site.",
   "start_url": "/",
   "display": "standalone",

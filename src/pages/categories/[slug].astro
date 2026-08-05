@@ -14,7 +14,7 @@ const services = (await getCollection('services'))
   .filter((s) => s.data.category === category.data.id)
   .sort((a, b) => a.data.title.localeCompare(b.data.title));
 
-const title = category.data.meta_title ?? `${category.data.name} — BD Digital Services | Sheba`;
+const title = category.data.meta_title ?? `${category.data.name} — BD Digital Services | CitizenSheba`;
 const description = category.data.meta_description ?? category.data.description;
 ---
 
