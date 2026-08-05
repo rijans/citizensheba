@@ -1,0 +1,42 @@
+---
+import { categoryPath, servicePath } from '../../lib/urls';
+import type { SearchableService } from '../../lib/search';
+
+interface Props {
+  categories: { id: string; slug: string; name: string; nameBn: string; sortOrder: number }[];
+  services: SearchableService[];
+}
+
+const { categories, services } = Astro.props;
+---
+
+<noscript>
+  <div class="noscript-directory">
+    <section>
+      <h2 class="noscript-directory__heading">Categories</h2>
+      <ul class="noscript-directory__list">
+        {
+          categories.map((cat) => (
+            <li>
+              <a href={categoryPath(cat.slug)}>{cat.name}</a>
+              <span lang="bn"> — {cat.nameBn}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+    <section>
+      <h2 class="noscript-directory__heading">Services</h2>
+      <ul class="noscript-directory__list">
+        {
+          services.map((svc) => (
+            <li>
+              <a href={servicePath(svc.slug)}>{svc.title}</a>
+              <span lang="bn"> — {svc.titleBn}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
+</noscript>

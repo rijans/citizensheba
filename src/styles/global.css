@@ -379,6 +379,241 @@ html[data-theme="dark"] .status-badge--maintenance {
   overflow: hidden;
 }
 
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Instant Directory */
+.directory {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.directory-search {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  height: 3.25rem;
+  padding: 0 0.75rem 0 1rem;
+  border: 1.5px solid var(--border-strong);
+  border-radius: 1rem;
+  background: var(--surface);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.directory-search:focus-within {
+  border-color: var(--green);
+  box-shadow: 0 0 0 4px var(--green-soft), var(--shadow);
+}
+
+.directory-search__icon {
+  flex-shrink: 0;
+  color: var(--ink-subtle);
+}
+
+.directory-search__input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.directory-search__input::placeholder {
+  color: var(--ink-subtle);
+}
+
+.directory-search__clear {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: 0;
+  border-radius: 0.5625rem;
+  background: var(--surface-muted);
+  color: var(--ink-muted);
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.directory-search__clear:hover {
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.directory-chips {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  scrollbar-width: none;
+}
+
+.directory-chips::-webkit-scrollbar {
+  display: none;
+}
+
+.directory-chip {
+  flex-shrink: 0;
+  height: 2.25rem;
+  padding: 0 0.875rem;
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink-muted);
+  font-family: inherit;
+  font-size: 0.84375rem;
+  font-weight: 550;
+  cursor: pointer;
+  transition:
+    border-color 0.18s ease,
+    color 0.18s ease,
+    background 0.18s ease,
+    transform 0.18s ease;
+}
+
+.directory-chip:hover {
+  border-color: var(--border-strong);
+  color: var(--ink);
+}
+
+.directory-chip--active {
+  border-color: var(--green);
+  background: var(--green);
+  color: #fff;
+}
+
+.directory-chip--active:hover {
+  border-color: var(--green-hover);
+  background: var(--green-hover);
+  color: #fff;
+}
+
+.directory-meta {
+  margin: 0;
+}
+
+.directory-meta__link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--green);
+  transition: color 0.2s ease;
+}
+
+.directory-meta__link:hover {
+  color: var(--green-hover);
+  text-decoration: underline;
+}
+
+.directory-grid {
+  display: grid;
+  gap: 0.875rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.directory-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2.5rem 1.5rem;
+  border: 1.5px dashed var(--border-strong);
+  border-radius: 1.25rem;
+  text-align: center;
+}
+
+.directory-empty__text {
+  margin: 0;
+  color: var(--ink-muted);
+}
+
+.directory-empty__clear {
+  border: 0;
+  background: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--green);
+  cursor: pointer;
+}
+
+.directory-empty__clear:hover {
+  text-decoration: underline;
+}
+
+/* Noscript fallback */
+.noscript-directory {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.noscript-directory__heading {
+  margin: 0 0 0.75rem;
+  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.noscript-directory__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.noscript-directory__list li + li {
+  margin-top: 0.5rem;
+}
+
+.noscript-directory__list a {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.noscript-directory__list a:hover {
+  text-decoration: underline;
+}
+
+.noscript-directory__list span {
+  color: var(--ink-subtle);
+  font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .directory-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .directory-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 640px) {
   .site-main {
     padding-inline: 1.5rem;
