@@ -1,0 +1,15 @@
+---
+interface Props {
+  status: 'ACTIVE' | 'MAINTENANCE' | 'DEPRECATED';
+}
+
+const { status } = Astro.props;
+---
+
+{
+  status !== 'ACTIVE' && (
+    <span class={`status-badge status-badge--${status.toLowerCase()}`}>
+      {status === 'MAINTENANCE' ? 'Maintenance' : 'Deprecated'}
+    </span>
+  )
+}

@@ -1,0 +1,22 @@
+---
+import StatusBadge from '../service/StatusBadge.astro';
+
+interface Props {
+  href: string;
+  title: string;
+  titleBn: string;
+  description: string;
+  status: 'ACTIVE' | 'MAINTENANCE' | 'DEPRECATED';
+}
+
+const { href, title, titleBn, description, status } = Astro.props;
+---
+
+<a class="service-card" href={href}>
+  <div class="service-card__header">
+    <h3 class="service-card__title">{title}</h3>
+    <StatusBadge status={status} />
+  </div>
+  <p class="service-card__title-bn" lang="bn">{titleBn}</p>
+  <p class="service-card__description">{description}</p>
+</a>
