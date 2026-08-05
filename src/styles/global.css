@@ -614,6 +614,240 @@ html[data-theme="dark"] .status-badge--maintenance {
   }
 }
 
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  color: var(--ink-subtle);
+}
+
+.breadcrumb a {
+  color: var(--green);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--green-hover);
+  text-decoration: underline;
+}
+
+.breadcrumb__sep {
+  color: var(--ink-subtle);
+}
+
+.breadcrumb__current {
+  color: var(--ink-muted);
+}
+
+/* Outbound CTA */
+.outbound-cta {
+  margin: 1.5rem 0;
+}
+
+.outbound-cta__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.875rem;
+  background: var(--green);
+  color: #fff;
+  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.outbound-cta__link:hover {
+  background: var(--green-hover);
+  transform: translateY(-1px);
+}
+
+.outbound-cta__domain {
+  margin: 0.625rem 0 0;
+  font-size: 0.875rem;
+  color: var(--ink-subtle);
+}
+
+/* Caution notice */
+.caution {
+  margin: 1rem 0;
+  padding: 0.875rem 1rem;
+  border: 1px solid rgba(180, 83, 9, 0.35);
+  border-radius: 0.75rem;
+  background: rgba(180, 83, 9, 0.08);
+  color: #b45309;
+  font-size: 0.875rem;
+}
+
+html[data-theme="dark"] .caution {
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.3);
+  background: rgba(251, 191, 36, 0.1);
+}
+
+/* Content pages */
+.content-page h1 {
+  margin: 0 0 1rem;
+  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.content-page h1 span[lang="bn"] {
+  color: var(--green);
+}
+
+.content-page > p,
+.content-section p {
+  margin: 0 0 1rem;
+  color: var(--ink-muted);
+  max-width: 42rem;
+}
+
+.content-page ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  color: var(--ink-muted);
+  max-width: 42rem;
+}
+
+.content-page--centered {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.content-section {
+  margin-top: 1.75rem;
+}
+
+.content-section h2 {
+  margin: 0 0 0.75rem;
+  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.content-section a,
+.content-page a,
+.service-page__report a,
+.category-page__browse a {
+  color: var(--green);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.content-section a:hover,
+.content-page a:hover,
+.service-page__report a:hover,
+.category-page__browse a:hover {
+  color: var(--green-hover);
+  text-decoration: underline;
+}
+
+/* Service page */
+.service-page__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.service-page__header h1 {
+  margin: 0;
+  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.service-page__header h1 span[lang="bn"] {
+  color: var(--green);
+}
+
+.service-page__description {
+  margin: 1rem 0 0;
+  max-width: 42rem;
+  color: var(--ink-muted);
+}
+
+.service-page__verified {
+  margin: 1.25rem 0;
+  font-size: 0.875rem;
+  color: var(--ink-subtle);
+}
+
+.service-page__report {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+}
+
+/* Service FAQ */
+.service-faq {
+  margin-top: 1.75rem;
+}
+
+.service-faq h2 {
+  margin: 0 0 1rem;
+  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.service-faq__item + .service-faq__item {
+  margin-top: 1rem;
+}
+
+.service-faq__item h3 {
+  margin: 0 0 0.375rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.service-faq__item p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  max-width: 42rem;
+}
+
+/* Category page */
+.category-page__header h1 {
+  margin: 0 0 0.5rem;
+  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.category-page__header h1 span[lang="bn"] {
+  color: var(--green);
+}
+
+.category-page__header p {
+  margin: 0;
+  max-width: 42rem;
+  color: var(--ink-muted);
+}
+
+.category-page__browse {
+  margin: 1rem 0 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
 @media (min-width: 640px) {
   .site-main {
     padding-inline: 1.5rem;

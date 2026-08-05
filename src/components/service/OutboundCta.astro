@@ -1,0 +1,15 @@
+---
+interface Props {
+  url: string;
+  domain: string;
+}
+
+const { url, domain } = Astro.props;
+---
+
+<div class="outbound-cta">
+  <a class="outbound-cta__link" href={url} target="_blank" rel="noopener noreferrer">
+    Open official site
+  </a>
+  <p class="outbound-cta__domain">{domain}</p>
+</div>

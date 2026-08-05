@@ -1,0 +1,100 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import OutboundCta from '../../components/service/OutboundCta.astro';
+import ServiceFaq from '../../components/service/ServiceFaq.astro';
+import StatusBadge from '../../components/service/StatusBadge.astro';
+import ServiceCardLink from '../../components/ui/ServiceCardLink.astro';
+import { categoryPath, servicePath, officialDomainFromUrl } from '../../lib/urls';
+import { REPORT_EMAIL } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const services = await getCollection('services');
+  return services.map((s) => ({ params: { slug: s.data.slug }, props: { service: s } }));
+}
+
+const { service } = Astro.props;
+const categories = await getCollection('categories');
+const category = categories.find((c) => c.data.id === service.data.category);
+if (!category) throw new Error('missing category');
+
+const all = await getCollection('services');
+const relatedIds =
+  service.data.related ??
+  all
+    .filter((s) => s.data.category === service.data.category && s.data.id !== service.data.id)
+    .map((s) => s.data.id)
+    .slice(0, 4);
+const related = all.filter((s) => relatedIds.includes(s.data.id));
+
+const domain = service.data.official_domain ?? officialDomainFromUrl(service.data.url);
+const title = service.data.meta_title ?? `${service.data.title} (${service.data.title_bn}) | Sheba`;
+const description = service.data.meta_description ?? service.data.description;
+const reportSubject = encodeURIComponent(`Report: ${service.data.slug}`);
+---
+
+<BaseLayout title={title} description={description} canonicalPath={servicePath(service.data.slug)}>
+  <article class="service-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb__sep" aria-hidden="true">/</span>
+      <a href={categoryPath(category.data.slug)}>{category.data.name}</a>
+      <span class="breadcrumb__sep" aria-hidden="true">/</span>
+      <span class="breadcrumb__current">{service.data.title}</span>
+    </nav>
+
+    <header class="service-page__header">
+      <StatusBadge status={service.data.status} />
+      <h1>
+        {service.data.title} <span lang="bn">{service.data.title_bn}</span>
+      </h1>
+    </header>
+
+    <p class="service-page__description">{service.data.description}</p>
+
+    <OutboundCta url={service.data.url} domain={domain} />
+
+    {
+      service.data.status !== 'ACTIVE' && (
+        <p class="caution">
+          The official site may be unavailable or changing. Verify on the government domain above.
+        </p>
+      )
+    }
+
+    <p class="service-page__verified">
+      <strong>Last verified:</strong>
+      <time datetime={service.data.last_verified.toISOString()}>
+        {service.data.last_verified.toISOString().slice(0, 10)}
+      </time>
+    </p>
+
+    <section class="content-section">
+      <h2>Who is this for</h2>
+      <p>{service.data.audience}</p>
+    </section>
+
+    <ServiceFaq items={service.data.faq} />
+
+    <section class="content-section">
+      <h2>Related services</h2>
+      <div class="directory-grid">
+        {
+          related.map((r) => (
+            <ServiceCardLink
+              href={servicePath(r.data.slug)}
+              title={r.data.title}
+              titleBn={r.data.title_bn}
+              description={r.data.description}
+              status={r.data.status}
+            />
+          ))
+        }
+      </div>
+    </section>
+
+    <p class="service-page__report">
+      <a href={`mailto:${REPORT_EMAIL}?subject=${reportSubject}`}>Report a problem</a>
+    </p>
+  </article>
+</BaseLayout>
