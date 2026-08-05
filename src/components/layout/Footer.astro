@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import { categoryPath } from '../../lib/urls';
+import { DISCLAIMER_SHORT, SITE_NAME } from '../../lib/site';
+
+const categories = (await getCollection('categories'))
+  .sort((a, b) => a.data.sort_order - b.data.sort_order);
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <section aria-labelledby="footer-categories">
+        <h2 id="footer-categories" class="site-footer__heading">Categories</h2>
+        <ul class="site-footer__list">
+          {
+            categories.map((category) => (
+              <li>
+                <a class="site-footer__link" href={categoryPath(category.data.slug)}>
+                  {category.data.name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section aria-labelledby="footer-trust">
+        <h2 id="footer-trust" class="site-footer__heading">Trust</h2>
+        <ul class="site-footer__list">
+          <li>
+            <a class="site-footer__link" href="/about">About</a>
+          </li>
+          <li>
+            <a class="site-footer__link" href="/disclaimer">Disclaimer</a>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="footer-disclaimer">
+        <h2 id="footer-disclaimer" class="site-footer__heading">Notice</h2>
+        <p class="site-footer__disclaimer">{DISCLAIMER_SHORT}</p>
+      </section>
+    </div>
+
+    <p class="site-footer__bottom">
+      &copy; {new Date().getFullYear()} {SITE_NAME}
+    </p>
+  </div>
+</footer>

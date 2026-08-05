@@ -1,21 +1,15 @@
 ---
-import '../styles/global.css';
+import BaseLayout from '../components/layout/BaseLayout.astro';
 import { buildSearchIndex } from '../lib/buildSearchIndex';
+import { SITE_NAME, SITE_TAGLINE } from '../lib/site';
 
 const index = await buildSearchIndex();
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<p>{index.services.length} services</p>
-	</body>
-</html>
+<BaseLayout title={`${SITE_NAME} — BD Digital Services`} description={SITE_TAGLINE}>
+  <section class="hero">
+    <h1>{SITE_NAME} <span lang="bn">সেবা</span></h1>
+    <p>{SITE_TAGLINE}</p>
+    <p>{index.services.length} services indexed</p>
+  </section>
+</BaseLayout>

@@ -1,0 +1,43 @@
+---
+import { SITE_NAME, SITE_NAME_BN } from '../../lib/site';
+---
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="/" class="site-brand" aria-label={`${SITE_NAME} home`}>
+      <span class="site-brand__mark" aria-hidden="true">
+        <span class="site-brand__dot"></span>
+      </span>
+      <span class="site-brand__text">
+        <span class="site-brand__name"><em>{SITE_NAME}</em></span>
+        <span class="site-brand__bn" lang="bn">{SITE_NAME_BN}</span>
+      </span>
+    </a>
+
+    <div class="site-header__actions">
+      <button
+        type="button"
+        class="theme-toggle"
+        id="theme-toggle"
+        aria-label="Toggle dark mode"
+      >
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<script is:inline>
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const root = document.documentElement;
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('data-theme', next);
+  });
+</script>

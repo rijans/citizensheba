@@ -1,1 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hind+Siliguri:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
+
+:root {
+  --header-height: 3.75rem;
+
+  --bg: #f1f5f2;
+  --surface: #ffffff;
+  --surface-muted: #e8efea;
+  --border: #dbe5de;
+  --border-strong: #c4d3ca;
+  --ink: #122a22;
+  --ink-muted: #46584f;
+  --ink-subtle: #71847a;
+  --green: #006a4e;
+  --green-hover: #0b7f5f;
+  --green-soft: rgba(0, 106, 78, 0.1);
+  --red: #f42a41;
+  --header-bg: rgba(241, 245, 242, 0.82);
+  --shadow: 0 12px 30px -14px rgba(16, 42, 34, 0.22);
+
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  --bg: #0a1411;
+  --surface: #111f19;
+  --surface-muted: #16261f;
+  --border: #1e332a;
+  --border-strong: #2c4a3c;
+  --ink: #e9f2ed;
+  --ink-muted: #a7bdb2;
+  --ink-subtle: #74897e;
+  --green: #35d6a0;
+  --green-hover: #4ae4b1;
+  --green-soft: rgba(53, 214, 160, 0.12);
+  --red: #ff4d5e;
+  --header-bg: rgba(10, 20, 17, 0.78);
+  --shadow: 0 16px 36px -16px rgba(0, 0, 0, 0.6);
+
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: "Hind Siliguri", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.35s ease, color 0.35s ease;
+}
+
+::selection {
+  background: var(--green-soft);
+}
+
+:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
+.font-display {
+  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Layout shell */
+.site {
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+}
+
+.site-main {
+  flex: 1;
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding: 1.25rem 1rem 2.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--header-height);
+  border-bottom: 1px solid var(--border);
+  background: var(--header-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  min-width: 0;
+}
+
+.site-brand__mark {
+  display: grid;
+  place-items: center;
+  width: 2.125rem;
+  height: 2.125rem;
+  flex-shrink: 0;
+  border-radius: 0.6875rem;
+  background: linear-gradient(140deg, #0c8b66, #00543e);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 5px 12px -5px rgba(0, 84, 62, 0.55);
+}
+
+.site-brand__dot {
+  width: 0.6875rem;
+  height: 0.6875rem;
+  border-radius: 50%;
+  background: var(--red);
+  transform: translateX(-1.5px);
+  box-shadow: 0 0 8px rgba(244, 42, 65, 0.55);
+}
+
+.site-brand__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.site-brand__name {
+  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.site-brand__name em {
+  color: var(--green);
+  font-style: normal;
+}
+
+.site-brand__bn {
+  font-size: 0.75rem;
+  color: var(--ink-subtle);
+  line-height: 1.2;
+}
+
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 2.375rem;
+  height: 2.375rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  color: var(--ink-muted);
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.theme-toggle__icon {
+  display: none;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+html:not([data-theme="dark"]) .theme-toggle__icon--sun,
+html[data-theme="dark"] .theme-toggle__icon--moon {
+  display: block;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  padding: 2rem 0 1.5rem;
+}
+
+.site-footer__grid {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.site-footer__heading {
+  margin: 0 0 0.75rem;
+  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.site-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer__list li + li {
+  margin-top: 0.5rem;
+}
+
+.site-footer__link {
+  color: var(--ink-muted);
+  transition: color 0.2s ease;
+}
+
+.site-footer__link:hover {
+  color: var(--green);
+}
+
+.site-footer__disclaimer {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--ink-subtle);
+  line-height: 1.5;
+}
+
+.site-footer__bottom {
+  margin-top: 1.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8125rem;
+  color: var(--ink-subtle);
+  text-align: center;
+}
+
+/* Hero (home) */
+.hero {
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.hero h1 span[lang="bn"] {
+  color: var(--green);
+}
+
+.hero p {
+  margin: 0;
+  max-width: 38rem;
+  color: var(--ink-muted);
+}
+
+@media (min-width: 640px) {
+  .site-main {
+    padding-inline: 1.5rem;
+  }
+
+  .container {
+    padding-inline: 1.5rem;
+  }
+
+  .site-footer__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
