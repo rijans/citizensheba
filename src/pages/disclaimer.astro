@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import { DISCLAIMER_SHORT, SITE_NAME } from '../lib/site';
+---
+
+<BaseLayout
+  title={`Disclaimer — ${SITE_NAME}`}
+  description={DISCLAIMER_SHORT}
+  canonicalPath="/disclaimer"
+>
+  <article class="content-page">
+    <h1>Non-Official Disclaimer</h1>
+
+    <p>{DISCLAIMER_SHORT}</p>
+
+    <section class="content-section">
+      <h2>What {SITE_NAME} is</h2>
+      <p>
+        {SITE_NAME} is an independent Directory that helps people discover Bangladesh government and
+        related digital services. We provide short Service Pages with descriptions, status information,
+        and links to official external sites.
+      </p>
+    </section>
+
+    <section class="content-section">
+      <h2>What {SITE_NAME} is not</h2>
+      <ul>
+        <li>Not a government entity, ministry, or official portal</li>
+        <li>Not affiliated with or endorsed by any government body</li>
+        <li>Not a substitute for the official sites we link to</li>
+        <li>Not responsible for outages, policy changes, or errors on official portals</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>Outbound links</h2>
+      <p>
+        When you click &ldquo;Open official site,&rdquo; you leave {SITE_NAME} and go to a
+        third-party government or utility website. Review that site&rsquo;s own terms and privacy
+        policies. We do not control those sites.
+      </p>
+    </section>
+
+    <section class="content-section">
+      <h2>Accuracy</h2>
+      <p>
+        We try to keep Service listings accurate and verify links periodically. Status and
+        last-verified dates reflect editorial judgment, not real-time monitoring. If something looks
+        wrong, please report it from the Service Page.
+      </p>
+    </section>
+
+    <p>
+      <a href="/about">About {SITE_NAME}</a>
+    </p>
+  </article>
+</BaseLayout>

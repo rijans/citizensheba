@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import { DISCLAIMER_SHORT, SITE_NAME, SITE_TAGLINE } from '../lib/site';
+---
+
+<BaseLayout
+  title={`About ${SITE_NAME} — BD Digital Services Directory`}
+  description={SITE_TAGLINE}
+  canonicalPath="/about"
+>
+  <article class="content-page">
+    <h1>About {SITE_NAME}</h1>
+
+    <p>{SITE_TAGLINE}</p>
+
+    <p>
+      {SITE_NAME} is a <strong>Directory</strong> — a searchable catalog of Bangladesh government and
+      regulated-utility digital services. Our job is discovery and hop-off: we help you find the right
+      official portal, then you complete your task on that site.
+    </p>
+
+    <p>
+      Each Service has a dedicated page with a short description, status, FAQ, and a prominent link to
+      the official external site. We do not host or proxy government transactions.
+    </p>
+
+    <section class="content-section">
+      <h2>Non-Official</h2>
+      <p>{DISCLAIMER_SHORT}</p>
+      <p>
+        <a href="/disclaimer">Read the full disclaimer</a>
+      </p>
+    </section>
+
+    <section class="content-section">
+      <h2>What we list</h2>
+      <p>
+        Official Services run by government, statutory bodies, regulated utilities, and half-government
+        peers (education boards, railway, and similar). Private banks, MFS products, and commercial
+        SaaS are out of scope for v1.
+      </p>
+    </section>
+  </article>
+</BaseLayout>
