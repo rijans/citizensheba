@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import ServiceCardLink from '../../components/ui/ServiceCardLink.astro';
+import { categoryPath, servicePath } from '../../lib/urls';
+
+export async function getStaticPaths() {
+  const categories = await getCollection('categories');
+  return categories.map((c) => ({ params: { slug: c.data.slug }, props: { category: c } }));
+}
+
+const { category } = Astro.props;
+const services = (await getCollection('services'))
+  .filter((s) => s.data.category === category.data.id)
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const title = category.data.meta_title ?? `${category.data.name} — BD Digital Services | Sheba`;
+const description = category.data.meta_description ?? category.data.description;
+---
+
+<BaseLayout title={title} description={description} canonicalPath={categoryPath(category.data.slug)}>
+  <article class="category-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb__sep" aria-hidden="true">/</span>
+      <span class="breadcrumb__current">{category.data.name}</span>
+    </nav>
+
+    <header class="category-page__header">
+      <h1>
+        {category.data.name} <span lang="bn">{category.data.name_bn}</span>
+      </h1>
+      <p>{category.data.description}</p>
+    </header>
+
+    <p class="category-page__browse">
+      <a href={`/?cat=${category.data.id}`}>Browse on Home</a>
+    </p>
+
+    <div class="directory-grid">
+      {
+        services.map((s) => (
+          <ServiceCardLink
+            href={servicePath(s.data.slug)}
+            title={s.data.title}
+            titleBn={s.data.title_bn}
+            description={s.data.description}
+            status={s.data.status}
+          />
+        ))
+      }
+    </div>
+  </article>
+</BaseLayout>
