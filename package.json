@@ -12,6 +12,7 @@
     "astro": "astro",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:e2e": "playwright test",
     "check:links": "node scripts/check-links.mjs"
   },
   "dependencies": {
@@ -26,6 +27,7 @@
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
+    "@playwright/test": "^1.62.1",
     "@vitest/coverage-v8": "^4.1.10",
     "gray-matter": "^4.0.3",
     "happy-dom": "^20.11.1",
