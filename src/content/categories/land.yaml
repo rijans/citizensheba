@@ -1,0 +1,7 @@
+id: land
+slug: land-property
+name: Land & Property
+name_bn: ভূমি ও সম্পত্তি
+description: Land records, mutation, and property tax services.
+icon: map
+sort_order: 5

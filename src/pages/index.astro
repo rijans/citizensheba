@@ -1,5 +1,8 @@
 ---
 import '../styles/global.css';
+import { buildSearchIndex } from '../lib/buildSearchIndex';
+
+const index = await buildSearchIndex();
 ---
 
 <html lang="en">
@@ -13,5 +16,6 @@ import '../styles/global.css';
 	</head>
 	<body>
 		<h1>Astro</h1>
+		<p>{index.services.length} services</p>
 	</body>
 </html>
