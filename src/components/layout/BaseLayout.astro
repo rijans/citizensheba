@@ -11,6 +11,8 @@ interface Props {
 
 const { title, description, canonicalPath } = Astro.props;
 const canonical = canonicalPath ? new URL(canonicalPath, Astro.site).href : undefined;
+/** Manual beacon only if automatic zone Web Analytics is unavailable. Never commit the token. */
+const cfWebAnalyticsToken = import.meta.env.PUBLIC_CF_WEB_ANALYTICS_TOKEN as string | undefined;
 ---
 
 <!doctype html>
@@ -33,7 +35,20 @@ const canonical = canonicalPath ? new URL(canonicalPath, Astro.site).href : unde
         document.documentElement.setAttribute('data-theme', theme);
       })();
     </script>
-    {/* Cloudflare Web Analytics — enable after CF project exists */}
+    {/*
+      Cloudflare Web Analytics: prefer automatic enablement for proxied citizensheba.com
+      (Dashboard → Analytics & Logs → Web Analytics → add hostname).
+      Optional manual beacon: set PUBLIC_CF_WEB_ANALYTICS_TOKEN in Cloudflare env.
+    */}
+    {
+      cfWebAnalyticsToken && (
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon={JSON.stringify({ token: cfWebAnalyticsToken })}
+        />
+      )
+    }
   </head>
   <body>
     <div class="site">

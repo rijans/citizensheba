@@ -9,7 +9,7 @@ const index = await buildSearchIndex();
 const initialCategoryId = Astro.url.searchParams.get('cat');
 ---
 
-<BaseLayout title={`${SITE_NAME} — BD Digital Services`} description={SITE_TAGLINE}>
+<BaseLayout title={`${SITE_NAME} — BD Digital Services`} description={SITE_TAGLINE} canonicalPath="/">
   <section class="hero">
     <h1>{SITE_NAME} <span lang="bn">সেবা</span></h1>
     <p>{SITE_TAGLINE}</p>

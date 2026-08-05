@@ -1,0 +1,23 @@
+---
+id: dghs
+slug: bd-dghs
+title: DGHS
+title_bn: স্বাস্থ্য অধিদপ্তর
+description: Directorate General of Health Services portal for health programmes, information, and related services.
+url: https://dghs.gov.bd/
+official_domain: dghs.gov.bd
+category: health
+tags: [dghs, health, স্বাস্থ্য, hospital]
+status: ACTIVE
+audience: Citizens and health workers seeking official DGHS information and linked health services.
+faq:
+  - q: Is this the official DGHS website?
+    a: No. This page helps you find the official portal. Use the Open official site button to go to dghs.gov.bd.
+  - q: Is Surokkha part of DGHS?
+    a: Vaccination and related programmes may be linked from official health sites. Use each official portal for the specific service you need.
+  - q: Do I need to create an account on CitizenSheba?
+    a: No. CitizenSheba only lists services. You complete everything on the official site.
+last_verified: 2026-08-06
+meta_title: DGHS Bangladesh — official health portal | CitizenSheba
+meta_description: Find the official Directorate General of Health Services (DGHS) portal for Bangladesh health information and services.
+---

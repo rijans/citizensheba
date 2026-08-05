@@ -60,3 +60,28 @@ npx wrangler deploy
 ```
 
 Attach custom domains `citizensheba.com` and `www.citizensheba.com` in the project settings.
+
+## Post-launch ops
+
+- [Web Analytics setup](docs/ops/web-analytics.md) — automatic preferred for `citizensheba.com`
+- [Google Search Console](docs/ops/search-console.md) — DNS verify + submit `sitemap-index.xml`
+
+### Cloudflare Web Analytics
+
+Preferred: **automatic** for proxied `citizensheba.com` (no code change required).
+
+1. Open [Web Analytics](https://dash.cloudflare.com/?to=/:account/web-analytics/sites).
+2. Add site hostname `citizensheba.com`.
+3. Enable automatic setup for Cloudflare-proxied sites.
+4. Confirm DNS is orange-cloud (proxied).
+
+Fallback: set Worker/Pages env `PUBLIC_CF_WEB_ANALYTICS_TOKEN` to the site token — [`BaseLayout.astro`](src/components/layout/BaseLayout.astro) injects the beacon only when that var is set. Do not commit the token.
+
+### Google Search Console
+
+1. Open [Search Console](https://search.google.com/search-console) → Add property → URL prefix `https://citizensheba.com`.
+2. Verify via **DNS TXT** record on the Cloudflare zone for `citizensheba.com` (copy the TXT value Google shows).
+3. After verified, submit sitemap: `https://citizensheba.com/sitemap-index.xml`.
+4. Optional: Bing Webmaster Tools with the same sitemap.
+
+Sitemap and `robots.txt` are generated on every Astro build.
