@@ -40,20 +40,23 @@ npm run test:e2e
 
 Services live in `src/content/services/*.md` and categories in `src/content/categories/*.yaml`. Edit via PR; Astro rebuilds static HTML.
 
-## Cloudflare Pages
+## Cloudflare (Workers static assets / Pages)
 
 | Setting | Value |
 |---------|--------|
 | Build command | `npm run build` |
-| Output directory | `dist` |
-| Node version | 20+ |
+| Deploy command | `npx wrangler deploy` |
+| Output / assets | `dist` (see `wrangler.jsonc`) |
+| Node version | 22+ |
 | Production domain | `citizensheba.com` |
 
-Deploy from CI (Git connected) or locally:
+Do **not** run `astro add cloudflare` for this site — it is plain static SSG (`output: "static"`). `wrangler.jsonc` serves `./dist` as assets.
+
+Deploy locally:
 
 ```bash
 npm run build
-npx wrangler pages deploy dist --project-name=citizensheba
+npx wrangler deploy
 ```
 
-Then attach custom domains `citizensheba.com` and `www.citizensheba.com` in the Pages project settings.
+Attach custom domains `citizensheba.com` and `www.citizensheba.com` in the project settings.

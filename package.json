@@ -14,7 +14,8 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "check:links": "node scripts/check-links.mjs",
-    "pages:deploy": "npm run build && wrangler pages deploy dist --project-name=citizensheba"
+    "pages:deploy": "npm run build && wrangler deploy",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@astrojs/react": "^6.0.2",
