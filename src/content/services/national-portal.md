@@ -5,6 +5,19 @@ title: Bangladesh National Portal
 title_bn: জাতীয় তথ্য বাতায়ন
 description: The central gateway to all digital services and ministries of the Bangladesh government.
 description_bn: মন্ত্রণালয় ও ডিজিটাল সেবায় প্রবেশের বাংলাদেশ জাতীয় পোর্টাল
+body: |
+  The **Bangladesh National Portal** (bangladesh.gov.bd) is the central public gateway to ministries, departments, and many government digital services.
+  
+  Use this CitizenSheba page when you want the main government web entrance. For a specific service (passport, tax, land), a dedicated Service Page may be faster.
+  
+  Always confirm you landed on the official bangladesh.gov.bd domain after you click through.
+body_bn: |
+  **বাংলাদেশ জাতীয় পোর্টাল** (bangladesh.gov.bd) মন্ত্রণালয়, অধিদপ্তর এবং অনেক সরকারি ডিজিটাল সেবার কেন্দ্রীয় প্রবেশদ্বার।
+  
+  মূল সরকারি ওয়েব প্রবেশদ্বার চাইলে এই CitizenSheba পেজ ব্যবহার করুন। নির্দিষ্ট সেবায় (পাসপোর্ট, কর, ভূমি) আলাদা সেবা পেজ দ্রুততর হতে পারে।
+  
+  ক্লিকের পর যেন অফিসিয়াল bangladesh.gov.bd ডোমেইনে পৌঁছান তা নিশ্চিত করুন।
+
 url: https://bangladesh.gov.bd/
 official_domain: bangladesh.gov.bd
 category: central

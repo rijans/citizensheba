@@ -8,6 +8,7 @@ import ServiceCardLink from '../../components/ui/ServiceCardLink.astro';
 import { categoryPath, servicePath, officialDomainFromUrl } from '../../lib/urls';
 import { REPORT_EMAIL } from '../../lib/site';
 import { documentTitle, metaDescription } from '../../lib/seo';
+import { renderMarkdown } from '../../lib/markdown';
 
 export async function getStaticPaths() {
   const services = await getCollection('services');
@@ -34,6 +35,8 @@ const title = documentTitle(service.data.title_bn, service.data.title);
 const description = metaDescription(service.data.description_bn, service.data.description);
 const reportSubject = encodeURIComponent(`Report: ${service.data.slug}`);
 const formerAliases = (service.data.aliases ?? []).filter((a) => a.kind === 'former');
+const bodyHtml = renderMarkdown(service.data.body);
+const bodyBnHtml = renderMarkdown(service.data.body_bn);
 ---
 
 <BaseLayout title={title} description={description} canonicalPath={servicePath(service.data.slug)}>
@@ -77,6 +80,11 @@ const formerAliases = (service.data.aliases ?? []).filter((a) => a.kind === 'for
         </p>
       )
     }
+
+    <section class="service-page__body" aria-label="About this service">
+      <div class="service-page__prose" set:html={bodyHtml} />
+      <div class="service-page__prose service-page__prose--bn" lang="bn" set:html={bodyBnHtml} />
+    </section>
 
     <p class="service-page__verified">
       <strong>Last verified:</strong>

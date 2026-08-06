@@ -5,6 +5,19 @@ title: BRTA Service Portal (BSP)
 title_bn: বিআরটিএ সেবা
 description: Apply for driving licenses, register motor vehicles, and pay transport-related fees online.
 description_bn: ড্রাইভিং লাইসেন্স আবেদন, মোটরযান নিবন্ধন এবং পরিবহন-সংক্রান্ত ফি অনলাইনে পরিশোধ করুন
+body: |
+  The **BRTA Service Portal (BSP)** supports driving licence applications, motor vehicle registration, and related transport fees online.
+  
+  Open bsp.brta.gov.bd from this page to use official BRTA digital services. CitizenSheba does not issue licences or register vehicles.
+  
+  Have vehicle papers or learner/licence details ready depending on the service you need on the BRTA portal.
+body_bn: |
+  **বিআরটিএ সেবা পোর্টাল (BSP)** দিয়ে ড্রাইভিং লাইসেন্স আবেদন, মোটরযান নিবন্ধন এবং সংশ্লিষ্ট পরিবহন ফি অনলাইনে করা যায়।
+  
+  অফিসিয়াল বিআরটিএ ডিজিটাল সেবার জন্য এই পেজ থেকে bsp.brta.gov.bd খুলুন। CitizenSheba লাইসেন্স দেয় না বা যানবাহন নিবন্ধন করে না।
+  
+  বিআরটিএ পোর্টালে আপনার প্রয়োজন অনুযায়ী যানবাহনের কাগজ বা লার্নার/লাইসেন্সের তথ্য রাখুন।
+
 url: https://bsp.brta.gov.bd/
 official_domain: bsp.brta.gov.bd
 category: transport

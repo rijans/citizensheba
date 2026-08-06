@@ -33,6 +33,10 @@ const service = defineCollection({
     title_bn: z.string(),
     description: z.string(),
     description_bn: z.string(),
+    /** Longer hop-page Markdown (EN). Required — cards/meta still use short description. */
+    body: z.string().min(40),
+    /** Longer hop-page Markdown (BN). */
+    body_bn: z.string().min(40),
     url: z.string().url(),
     official_domain: z.string().optional(),
     category: z.string(),

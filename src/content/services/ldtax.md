@@ -5,6 +5,19 @@ title: Land Development Tax (LD Tax)
 title_bn: ভূমি উন্নয়ন কর
 description: Pay your land development tax online and receive digital Dakhila (receipts).
 description_bn: ভূমি উন্নয়ন কর পরিশোধ করুন এবং ডিজিটাল দাখিলা রসিদ নিন
+body: |
+  **Land Development Tax (LD Tax)** lets landowners pay land development tax online and receive digital Dakhila (receipts) through the official portal.
+  
+  This page only helps you find ldtax.gov.bd. Tax calculation, payment, and receipts are handled by the government system.
+  
+  Keep your land holding details handy — many people also search for this Service as *khajna* or *dakhila*.
+body_bn: |
+  **ভূমি উন্নয়ন কর (LD Tax)** দিয়ে জমির মালিকরা অনলাইনে ভূমি উন্নয়ন কর পরিশোধ করে ডিজিটাল দাখিলা (রসিদ) পেতে পারেন।
+  
+  এই পেজ শুধু ldtax.gov.bd খুঁজে দিতে সাহায্য করে। কর হিসাব, পেমেন্ট ও রসিদ সরকারি সিস্টেমেই হয়।
+  
+  জমির তথ্য প্রস্তুত রাখুন—অনেকে এই সেবাকে *খাজনা* বা *দাখিলা* নামেও খোঁজেন।
+
 url: https://ldtax.gov.bd/
 official_domain: ldtax.gov.bd
 category: land

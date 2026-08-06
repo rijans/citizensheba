@@ -5,6 +5,19 @@ title: e-Namjari (Mutation)
 title_bn: ই-নামজারি
 description: Online portal for land mutation processing and application tracking.
 description_bn: ভূমি নামজারি (মিউটেশন) আবেদন ও ট্র্যাকিংয়ের অফিসিয়াল পোর্টাল
+body: |
+  **e-Namjari** is the official online portal for land mutation (namjari) applications and status tracking in Bangladesh.
+  
+  CitizenSheba does not submit mutation files for you — open the official site to apply and follow government instructions.
+  
+  Buyers and landowners typically use mutation after a land transfer; have your deed and khatian references ready when you continue on the official portal.
+body_bn: |
+  **ই-নামজারি** বাংলাদেশে ভূমি নামজারি (মিউটেশন) আবেদন ও অবস্থা ট্র্যাকিংয়ের অফিসিয়াল অনলাইন পোর্টাল।
+  
+  CitizenSheba আপনার হয়ে নামজারি জমা দেয় না—আবেদন ও নির্দেশনার জন্য অফিসিয়াল সাইট খুলুন।
+  
+  জমি হস্তান্তরের পর ক্রেতা ও মালিকরা সাধারণত মিউটেশন করেন; অফিসিয়াল পোর্টালে যাওয়ার আগে দলিল ও খতিয়ান সংক্রান্ত তথ্য রাখুন।
+
 url: https://mutation.land.gov.bd/
 official_domain: mutation.land.gov.bd
 category: land

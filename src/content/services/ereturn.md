@@ -5,6 +5,19 @@ title: e-Return (Online Tax Submission)
 title_bn: ই-রিটার্ন
 description: Submit your yearly income tax return online through the National Board of Revenue portal.
 description_bn: জাতীয় রাজস্ব বোর্ডের পোর্টালের মাধ্যমে বার্ষিক আয়কর রিটার্ন অনলাইনে জমা দিন
+body: |
+  **e-Return** is the National Board of Revenue (NBR) channel for submitting annual income tax returns online.
+  
+  CitizenSheba only helps you locate the official etaxnbr.gov.bd experience. Return filing, TIN login, and acknowledgements stay on NBR systems.
+  
+  File before the published deadline and keep income documents ready when you continue on the official portal.
+body_bn: |
+  **ই-রিটার্ন** জাতীয় রাজস্ব বোর্ডের (এনবিআর) মাধ্যমে বার্ষিক আয়কর রিটার্ন অনলাইনে জমা দেওয়ার চ্যানেল।
+  
+  CitizenSheba শুধু অফিসিয়াল etaxnbr.gov.bd খুঁজে দিতে সাহায্য করে। রিটার্ন, টিআইএন লগইন ও স্বীকৃতি এনবিআর সিস্টেমেই থাকে।
+  
+  প্রকাশিত সময়সীমার আগে জমা দিন এবং অফিসিয়াল পোর্টালে যাওয়ার আগে আয়ের কাগজপত্র প্রস্তুত রাখুন।
+
 url: https://etaxnbr.gov.bd/
 official_domain: etaxnbr.gov.bd
 category: tax

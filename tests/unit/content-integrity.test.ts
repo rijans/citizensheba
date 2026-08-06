@@ -89,4 +89,11 @@ describe('content integrity', () => {
     }
     expect(problems).toEqual([]);
   });
+
+  it('every service has body and body_bn Markdown', () => {
+    const missing = services
+      .filter((s) => String(s.body || '').trim().length < 40 || String(s.body_bn || '').trim().length < 40)
+      .map((s) => String(s.id));
+    expect(missing).toEqual([]);
+  });
 });

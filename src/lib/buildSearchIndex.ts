@@ -60,6 +60,8 @@ export async function buildSearchIndex(): Promise<{
       titleBn: s.data.title_bn,
       description: s.data.description,
       descriptionBn: s.data.description_bn,
+      body: s.data.body,
+      bodyBn: s.data.body_bn,
       tags: s.data.tags,
       aliases: (s.data.aliases ?? []).map((a) => a.name),
       relatedTitles,

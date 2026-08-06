@@ -83,8 +83,8 @@ Private banks, MFS apps (bKash/Nagad as products), commercial SaaS, and purely p
 _Avoid_: Calling these Official Services
 
 **Service Page (v1 content)**:
-SEO hop page: mixed title, short description, category, status, primary Outbound CTA, related Services, plus meta title/description, a small FAQ (3–5), “who is this for,” last-verified date, and the official domain shown plainly. Full Guides are out of scope for v1.
-_Avoid_: Long how-to essays (v1), thin title-only doorway pages
+SEO hop page: mixed title, short description (cards + Meta Description), primary Outbound CTA, then longer Markdown **body** / **body_bn** (EN then BN), related Services, FAQ (3–5), “who is this for,” last-verified date, and the official domain shown plainly. Full Guides are out of scope for v1.
+_Avoid_: Long how-to essays (v1), thin title-only doorway pages, putting long hop prose into `description` (breaks cards/SERP)
 
 **Category Page**:
 A dedicated, indexable page for one Category that lists its Services. Exists alongside Home filters (chips) for SEO and shareable URLs — not instead of them.

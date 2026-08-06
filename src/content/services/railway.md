@@ -5,6 +5,19 @@ title: Bangladesh Railway e-Ticket
 title_bn: রেলওয়ে ই-টিকিট
 description: Official portal to purchase intercity train tickets and check train routes/schedules.
 description_bn: আন্তঃনগর ট্রেনের টিকিট বুকিং ও সময়সূচি দেখার বাংলাদেশ রেলওয়ে ই-টিকিট পোর্টাল
+body: |
+  **Bangladesh Railway e-Ticket** is the official place to buy intercity train tickets and check routes and schedules online.
+  
+  Use the outbound button to open eticket.railway.gov.bd. Seat booking and payment happen only on the railway portal.
+  
+  Plan ahead for busy travel seasons — ticket windows and online quotas can fill quickly on the official system.
+body_bn: |
+  **বাংলাদেশ রেলওয়ে ই-টিকিট** আন্তঃনগর ট্রেনের টিকিট কেনা এবং রুট ও সময়সূচি দেখার অফিসিয়াল জায়গা।
+  
+  eticket.railway.gov.bd খুলতে আউটবাউন্ড বাটন ব্যবহার করুন। সিট বুকিং ও পেমেন্ট শুধু রেলওয়ে পোর্টালে হয়।
+  
+  ব্যস্ত মৌসুমে আগে থেকে পরিকল্পনা করুন—অফিসিয়াল সিস্টেমে কোটা দ্রুত শেষ হতে পারে।
+
 url: https://eticket.railway.gov.bd/
 official_domain: eticket.railway.gov.bd
 category: transport

@@ -37,6 +37,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [0005](adr/0005-display-name-casing.md) | Display Name casing vs official sites |
 | [0006](adr/0006-name-aliases.md) | Name Aliases (search + former line) |
 | [0007](adr/0007-bilingual-directory-search.md) | Bilingual Instant Directory search |
+| [0008](adr/0008-service-page-body-markdown.md) | Service Page body Markdown (EN + BN) |
 
 ## Ops
 

@@ -127,7 +127,7 @@ Mass-generating near-empty pages that only exist to rank and bounce to third par
 
 ### Rule
 
-Service Pages stay thin **SEO hops** with clear Non-Official stance and primary Outbound CTA — not doorway spam.
+Service Pages stay thin **SEO hops** with clear Non-Official stance and primary Outbound CTA — not doorway spam. Short `description` fields stay card/SERP-sized; longer EN+BN Markdown lives in required `body` / `body_bn` (ADR-0008), not in `description`.
 
 ---
 

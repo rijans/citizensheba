@@ -988,6 +988,49 @@ html[data-theme="dark"] .caution {
   color: var(--ink-muted);
 }
 
+.service-page__body {
+  margin: 1.75rem 0 0;
+  max-width: 42rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.service-page__prose {
+  color: var(--ink-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.service-page__prose > *:first-child {
+  margin-top: 0;
+}
+
+.service-page__prose > *:last-child {
+  margin-bottom: 0;
+}
+
+.service-page__prose p {
+  margin: 0 0 0.85rem;
+}
+
+.service-page__prose ul,
+.service-page__prose ol {
+  margin: 0 0 0.85rem;
+  padding-left: 1.25rem;
+}
+
+.service-page__prose a {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.service-page__prose--bn {
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--border);
+}
+
 .service-page__verified {
   margin: 1.25rem 0;
   font-size: 0.875rem;

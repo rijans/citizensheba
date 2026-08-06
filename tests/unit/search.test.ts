@@ -12,6 +12,8 @@ const base = {
   domain: 'example.gov.bd',
   status: 'ACTIVE' as const,
   descriptionBn: '',
+  body: '',
+  bodyBn: '',
   relatedTitles: [] as string[],
 };
 

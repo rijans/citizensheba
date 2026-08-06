@@ -5,6 +5,19 @@ title: DGHS
 title_bn: স্বাস্থ্য অধিদপ্তর
 description: Directorate General of Health Services portal for health programmes, information, and related services.
 description_bn: স্বাস্থ্য অধিদপ্তরের পোর্টাল—স্বাস্থ্য কর্মসূচি, তথ্য এবং সংশ্লিষ্ট সেবার জন্য
+body: |
+  **DGHS** (Directorate General of Health Services) publishes official health programme information and links related public health services.
+  
+  CitizenSheba helps you open dghs.gov.bd. Clinical care and hospital transactions are not handled on this hop page.
+  
+  Use DGHS when you need authoritative health-directorate information or official programme entry points.
+body_bn: |
+  **স্বাস্থ্য অধিদপ্তর (DGHS)** অফিসিয়াল স্বাস্থ্য কর্মসূচির তথ্য এবং সংশ্লিষ্ট জনস্বাস্থ্য সেবার লিংক প্রকাশ করে।
+  
+  CitizenSheba আপনাকে dghs.gov.bd খুলতে সাহায্য করে। ক্লিনিক্যাল চিকিৎসা বা হাসপাতালের লেনদেন এই হপ পেজে হয় না।
+  
+  কর্তৃপক্ষসম্মত স্বাস্থ্য অধিদপ্তরের তথ্য বা কর্মসূচির প্রবেশদ্বার চাইলে DGHS ব্যবহার করুন।
+
 url: https://dghs.gov.bd/
 official_domain: dghs.gov.bd
 category: health

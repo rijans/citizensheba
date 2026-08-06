@@ -5,6 +5,19 @@ title: Education Board Results
 title_bn: শিক্ষা বোর্ড ফলাফল
 description: Check results for public examinations (SSC, HSC, JSC, etc.) across all education boards.
 description_bn: সব শিক্ষা বোর্ডের পাবলিক পরীক্ষা (এসএসসি, এইচএসসি, জেএসসি ইত্যাদি) ফলাফল দেখুন
+body: |
+  **Education Board Results** is the official site to check public exam results such as SSC, HSC, and JSC across education boards.
+  
+  CitizenSheba only helps you reach educationboardresults.gov.bd. Result publication schedules are controlled by the boards.
+  
+  Have your roll number, registration number, and board details ready when results are live on the official site.
+body_bn: |
+  **শিক্ষা বোর্ড ফলাফল** এসএসসি, এইচএসসি, জেএসসিসহ পাবলিক পরীক্ষার ফলাফল দেখার অফিসিয়াল সাইট।
+  
+  CitizenSheba শুধু educationboardresults.gov.bd-এ পৌঁছাতে সাহায্য করে। ফলাফল প্রকাশের সময়সূচি বোর্ড নির্ধারণ করে।
+  
+  অফিসিয়াল সাইটে ফলাফল লাইভ থাকলে রোল, রেজিস্ট্রেশন নম্বর ও বোর্ডের তথ্য রাখুন।
+
 url: http://www.educationboardresults.gov.bd/
 official_domain: educationboardresults.gov.bd
 category: education

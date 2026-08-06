@@ -11,6 +11,9 @@ export type SearchableService = {
   titleBn: string;
   description: string;
   descriptionBn: string;
+  /** Plain text from body Markdown for search. */
+  body: string;
+  bodyBn: string;
   tags: string[];
   /** Name Alias strings for search (all kinds). */
   aliases: string[];
@@ -87,6 +90,8 @@ export function scoreService(sv: SearchableService, rawQuery: string): number {
   const titleBn = normalizeSearchText(sv.titleBn);
   const desc = normalizeSearchText(sv.description);
   const descBn = normalizeSearchText(sv.descriptionBn ?? '');
+  const body = normalizeSearchText(sv.body ?? '');
+  const bodyBn = normalizeSearchText(sv.bodyBn ?? '');
   const tags = (sv.tags ?? []).map(normalizeSearchText);
   const aliases = (sv.aliases ?? []).map(normalizeSearchText);
   const related = (sv.relatedTitles ?? []).map(normalizeSearchText);
@@ -98,6 +103,8 @@ export function scoreService(sv: SearchableService, rawQuery: string): number {
     titleBn,
     desc,
     descBn,
+    body,
+    bodyBn,
     catName,
     catNameBn,
     tags.join(' '),
@@ -118,6 +125,7 @@ export function scoreService(sv: SearchableService, rawQuery: string): number {
     else if (listIncludes(tags, tokens) || listIncludes(aliases, tokens)) best = 66;
     else if (fieldIncludes(catName, tokens) || fieldIncludes(catNameBn, tokens)) best = 56;
     else if (fieldIncludes(desc, tokens) || fieldIncludes(descBn, tokens)) best = 50;
+    else if (fieldIncludes(body, tokens) || fieldIncludes(bodyBn, tokens)) best = 48;
     else if (fieldIncludes(dom, tokens)) best = 46;
     else if (listStartsWith(related, tokens)) best = 42;
     else if (listIncludes(related, tokens)) best = 36;
