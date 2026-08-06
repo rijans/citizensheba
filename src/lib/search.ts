@@ -11,9 +11,11 @@ export type SearchableService = {
   titleBn: string;
   description: string;
   descriptionBn: string;
-  /** Plain text from body Markdown for search. */
-  body: string;
-  bodyBn: string;
+  /**
+   * Extra searchable plain text (from body Markdown, etc.).
+   * Prefer this over shipping full Markdown bodies into the Instant Directory island.
+   */
+  searchBlob: string;
   tags: string[];
   /** Name Alias strings for search (all kinds). */
   aliases: string[];
@@ -40,7 +42,8 @@ export function normalizeSearchText(s: string): string {
     .toLowerCase()
     .normalize('NFC')
     .replace(/[-.']/g, '')
-    .replace(/[^\p{L}\p{N}\s]+/gu, ' ')
+    // Keep letters + combining marks (Bangla matras) + digits; drop other punct.
+    .replace(/[^\p{L}\p{M}\p{N}\s]+/gu, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -90,8 +93,7 @@ export function scoreService(sv: SearchableService, rawQuery: string): number {
   const titleBn = normalizeSearchText(sv.titleBn);
   const desc = normalizeSearchText(sv.description);
   const descBn = normalizeSearchText(sv.descriptionBn ?? '');
-  const body = normalizeSearchText(sv.body ?? '');
-  const bodyBn = normalizeSearchText(sv.bodyBn ?? '');
+  const blob = normalizeSearchText(sv.searchBlob ?? '');
   const tags = (sv.tags ?? []).map(normalizeSearchText);
   const aliases = (sv.aliases ?? []).map(normalizeSearchText);
   const related = (sv.relatedTitles ?? []).map(normalizeSearchText);
@@ -103,8 +105,7 @@ export function scoreService(sv: SearchableService, rawQuery: string): number {
     titleBn,
     desc,
     descBn,
-    body,
-    bodyBn,
+    blob,
     catName,
     catNameBn,
     tags.join(' '),
@@ -125,7 +126,7 @@ export function scoreService(sv: SearchableService, rawQuery: string): number {
     else if (listIncludes(tags, tokens) || listIncludes(aliases, tokens)) best = 66;
     else if (fieldIncludes(catName, tokens) || fieldIncludes(catNameBn, tokens)) best = 56;
     else if (fieldIncludes(desc, tokens) || fieldIncludes(descBn, tokens)) best = 50;
-    else if (fieldIncludes(body, tokens) || fieldIncludes(bodyBn, tokens)) best = 48;
+    else if (fieldIncludes(blob, tokens)) best = 48;
     else if (fieldIncludes(dom, tokens)) best = 46;
     else if (listStartsWith(related, tokens)) best = 42;
     else if (listIncludes(related, tokens)) best = 36;

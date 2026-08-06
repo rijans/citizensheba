@@ -60,8 +60,11 @@ export async function buildSearchIndex(): Promise<{
       titleBn: s.data.title_bn,
       description: s.data.description,
       descriptionBn: s.data.description_bn,
-      body: s.data.body,
-      bodyBn: s.data.body_bn,
+      searchBlob: [s.data.body, s.data.body_bn]
+        .join('\n')
+        .replace(/[#>*_`\[\]()!-]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim(),
       tags: s.data.tags,
       aliases: (s.data.aliases ?? []).map((a) => a.name),
       relatedTitles,

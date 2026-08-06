@@ -12,8 +12,7 @@ const base = {
   domain: 'example.gov.bd',
   status: 'ACTIVE' as const,
   descriptionBn: '',
-  body: '',
-  bodyBn: '',
+  searchBlob: '',
   relatedTitles: [] as string[],
 };
 
@@ -68,6 +67,10 @@ describe('normalizeSearchText', () => {
   it('folds hyphens and punctuation', () => {
     expect(normalizeSearchText('e-Passport')).toBe('epassport');
     expect(normalizeSearchText('N.I.D.')).toBe('nid');
+  });
+
+  it('keeps Bengali letters with matras intact', () => {
+    expect(normalizeSearchText('সেবা')).toBe('সেবা');
   });
 });
 
