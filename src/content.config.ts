@@ -51,7 +51,7 @@ const service = defineCollection({
     status: z.enum(['ACTIVE', 'MAINTENANCE', 'DEPRECATED']),
     audience: z.string().min(1),
     audience_bn: z.string().min(1),
-    faq: z.array(faqItem).min(3).max(5),
+    faq: z.array(faqItem).min(1).max(5),
     related: z.array(z.string()).optional(),
     last_verified: z.coerce.date(),
     logo: z.string().optional(),

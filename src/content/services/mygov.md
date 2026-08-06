@@ -33,17 +33,10 @@ status: ACTIVE
 audience: "Citizens, businesses, and government users seeking integrated digital government services."
 audience_bn: "একীভূত ডিজিটাল সরকারি সেবা খোঁজা নাগরিক, ব্যবসা ও সরকারি ব্যবহারকারী।"
 faq:
-  - q: "Is this the official myGov website?"
-    a: No. This page helps you find the official portal. Use the Open official site button to go to mygov.bd.
-    q_bn: "এটি কি অফিসিয়াল myGov ওয়েবসাইট?"
-    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে mygov.bd-এ যান।
   - q: "What can I do on myGov?"
     a: "Access integrated G2C, G2B, and G2G government services from a single platform."
     q_bn: "myGov-এ কী করা যায়?"
     a_bn: "এক প্ল্যাটফর্ম থেকে একীভূত G2C, G2B ও G2G সরকারি সেবায় প্রবেশ করা যায়।"
-  - q: "Do I need to create an account on CitizenSheba?"
-    a: No. CitizenSheba only lists services. You complete everything on the official site.
-    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
-    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
+
 last_verified: 2026-08-06
 ---

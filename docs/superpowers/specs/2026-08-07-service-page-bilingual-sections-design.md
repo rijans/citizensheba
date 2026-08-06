@@ -2,6 +2,7 @@
 
 **Date:** 2026-08-07  
 **Status:** Approved and implemented  
+**Current SSOT for page structure:** [`docs/guides/service-page.md`](../../guides/service-page.md) (prefer over this snapshot when they disagree)
 **Product:** CitizenSheba Service Pages
 
 ## Problem

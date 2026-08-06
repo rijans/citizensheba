@@ -39,17 +39,10 @@ status: ACTIVE
 audience: SSC graduates applying for Class 11 (HSC) college admission in Bangladesh.
 audience_bn: বাংলাদেশে একাদশ শ্রেণি (এইচএসসি) কলেজ ভর্তির আবেদনকারী এসএসসি পাস শিক্ষার্থী।
 faq:
-  - q: "Is this the official XI Class Admission website?"
-    a: No. This page helps you find the official portal. Use the Open official site button to go to xiclassadmission.gov.bd.
-    q_bn: "এটি কি অফিসিয়াল একাদশ শ্রেণি ভর্তি ওয়েবসাইট?"
-    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে xiclassadmission.gov.bd-এ যান।
   - q: "What can I do on the XI Admission portal?"
-    a: Apply for centralized Class 11 (HSC) college admission after SSC results.
+    a: "Apply for centralized Class 11 (HSC) college admission after SSC results."
     q_bn: "একাদশ ভর্তি পোর্টালে কী করা যায়?"
-    a_bn: এসএসসি ফলের পর কেন্দ্রীয় একাদশ শ্রেণি (এইচএসসি) কলেজ ভর্তির আবেদন করা যায়।
-  - q: "Do I need to create an account on CitizenSheba?"
-    a: No. CitizenSheba only lists services. You complete everything on the official site.
-    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
-    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
+    a_bn: "এসএসসি ফলের পর কেন্দ্রীয় একাদশ শ্রেণি (এইচএসসি) কলেজ ভর্তির আবেদন করা যায়।"
+
 last_verified: 2026-08-06
 ---

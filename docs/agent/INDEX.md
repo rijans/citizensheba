@@ -37,10 +37,10 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | Web Analytics, CF beacon, `PUBLIC_CF_WEB_ANALYTICS_TOKEN` | `docs/ops/web-analytics.md` |
 | Search Console, GSC, sitemap | `docs/ops/search-console.md` |
 | add/move docs, AGENTS layout, Cursor rules | `docs/specs/DOC_ARCHITECTURE.md` |
-| content catalog, service md, category yaml, FAQ, `bd-` slug, related, new service | `CONTEXT.md`, `src/content.config.ts`, `docs/guides/display-names.md`, `tests/unit/content-integrity.test.ts`, Traps #11, #14 |
+| content catalog, service md, category yaml, FAQ, `bd-` slug, related, new service | `docs/guides/service-page.md`, `CONTEXT.md`, `src/content.config.ts`, `docs/guides/display-names.md`, `tests/unit/content-integrity.test.ts`, Traps #11, #14 |
 | Display Name, title casing, a2i, A2I, myGov, e-Namjari, official typography, Name Alias, synonym, former name, aliases | ADR-0005, ADR-0006, `docs/guides/display-names.md`, `CONTEXT.md` (Display Name, Name Alias), Trap #12–#14, `src/content/services/*.md`, `src/lib/search.ts` |
 | Instant Directory search, bilingual search, romanization, Search Variant, description_bn, relatedTitles | ADR-0007, `src/lib/search.ts`, `src/lib/buildSearchIndex.ts`, `CONTEXT.md` (Instant Directory, Search Variant), `tests/unit/search.test.ts` |
-| Service Page body, body_bn, BN-first hop copy, bilingual audience/FAQ/related headings, longer description Markdown, official link last verified | ADR-0008, ADR-0009, `src/lib/markdown.ts`, `src/lib/servicePageCopy.ts`, `src/pages/services/[slug].astro`, `CONTEXT.md` (Service Page v1), Trap #9 |
+| Service Page, hop page, SEO hop, body_bn, audience_bn, FAQ q_bn, related services heading, outbound CTA, last verified, service page structure | **`docs/guides/service-page.md` (SSOT)**, ADR-0008, ADR-0009, `src/lib/markdown.ts`, `src/lib/servicePageCopy.ts`, `src/pages/services/[slug].astro`, `CONTEXT.md` (Service Page v1), Trap #9 |
 | Official catalog, MFS, bank, doorway | `AGENTS.md` do-nots, Traps #8–#9 |
 | `_headers` | Trap #2, `public/_headers` if present |
 | v1 product intent, Guides future, hop-first | `docs/superpowers/specs/2026-08-06-bd-digital-services-directory-design.md` |
@@ -55,7 +55,8 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | Home Instant Directory | `src/pages/index.astro`, `src/components/directory/InstantDirectory.tsx` |
 | Service / Category cards | `src/components/ui/ServiceCard.tsx`, `ServiceCardLink.astro`, `CategoryIcon.tsx` |
 | Layout shell | `src/components/layout/BaseLayout.astro`, `Header.astro`, `Footer.astro` |
-| Service / Category pages | `src/pages/services/[slug].astro`, `src/pages/categories/[slug].astro` |
+| Service / Category pages | `src/pages/services/[slug].astro`, `src/pages/categories/[slug].astro`, **`docs/guides/service-page.md`** |
+| Service hop copy / headings | `src/lib/servicePageCopy.ts`, `src/components/service/OutboundCta.astro`, `ServiceFaq.astro` |
 | Content schema | `src/content.config.ts`, `src/content/services/*.md`, `src/content/categories/*.yaml` |
 | SEO helpers | `src/lib/seo.ts`, `src/lib/site.ts` |
 | Search index | `src/lib/search.ts`, `src/lib/buildSearchIndex.ts` |

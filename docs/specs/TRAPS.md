@@ -127,7 +127,7 @@ Mass-generating near-empty pages that only exist to rank and bounce to third par
 
 ### Rule
 
-Service Pages stay thin **SEO hops** with clear Non-Official stance and primary Outbound CTA — not doorway spam. Short `description` fields stay card/SERP-sized; longer EN+BN Markdown lives in required `body` / `body_bn` (ADR-0008), not in `description`. Render **BN body first, then EN**. Body copy describes the government Service only — put “we don’t process applications here” in FAQ/chrome, not in `body` / `body_bn`. Show **official link last verified** with a human-readable date. Audience, FAQ, and Related section headings are EN+BN on one line; audience/FAQ values use required `audience_bn` and `q_bn`/`a_bn` stacked BN then EN (ADR-0009).
+Service Pages stay thin **SEO hops** with clear Non-Official stance and primary Outbound CTA — not doorway spam. **Canonical structure + editorial rules:** [`docs/guides/service-page.md`](../guides/service-page.md). Short `description` fields stay card/SERP-sized; longer EN+BN Markdown lives in required `body` / `body_bn` (ADR-0008), not in `description`. Render **BN body first, then EN**. Body copy describes the government Service only — put hop disclaimers in site chrome (CTA / About / Disclaimer), not in `body` / `body_bn` or FAQ. Do **not** FAQ “Is this the official …?” or “Do I need a CitizenSheba account?” — the Outbound CTA already answers that. Show **official link last verified** with a human-readable date. Audience, FAQ, and Related section headings are EN+BN on one line; audience/FAQ values use required `audience_bn` and `q_bn`/`a_bn` stacked BN then EN (ADR-0009). FAQ is 1–5 service-useful items. When changing hop layout or copy policy, update the Service Page guide first.
 
 ---
 

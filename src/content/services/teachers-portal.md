@@ -36,17 +36,10 @@ status: ACTIVE
 audience: "Teachers and education staff who need the official Teachers' Portal for registration and related services."
 audience_bn: নিবন্ধন ও সংশ্লিষ্ট সেবার জন্য অফিসিয়াল শিক্ষক বাতায়ন প্রয়োজন এমন শিক্ষক ও শিক্ষা কর্মী।
 faq:
-  - q: "Is this the official Teachers' Portal?"
-    a: No. This page helps you find the official portal. Use the Open official site button to go to teachers.gov.bd.
-    q_bn: "এটি কি অফিসিয়াল শিক্ষক বাতায়ন ওয়েবসাইট?"
-    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে teachers.gov.bd-এ যান।
   - q: "Can students use this portal?"
     a: "The Teachers' Portal is aimed at teachers. Students should use education result and admission Service Pages instead."
     q_bn: "শিক্ষার্থীরা কি এই পোর্টাল ব্যবহার করতে পারে?"
-    a_bn: শিক্ষক বাতায়ন শিক্ষকদের জন্য। শিক্ষার্থীদের শিক্ষা ফল ও ভর্তি সেবা পেজ ব্যবহার করা উচিত।
-  - q: "Do I need to create an account on CitizenSheba?"
-    a: No. CitizenSheba only lists services. You complete everything on the official site.
-    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
-    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
+    a_bn: "শিক্ষক বাতায়ন শিক্ষকদের জন্য। শিক্ষার্থীদের শিক্ষা ফল ও ভর্তি সেবা পেজ ব্যবহার করা উচিত।"
+
 last_verified: 2026-08-06
 ---

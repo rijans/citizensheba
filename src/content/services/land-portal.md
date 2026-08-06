@@ -36,17 +36,10 @@ status: ACTIVE
 audience: "Citizens needing the official land ministry gateway before using e-Porcha, mutation, or LD Tax portals."
 audience_bn: "ই-পর্চা, নামজারি বা এলডি ট্যাক্স পোর্টালে যাওয়ার আগে অফিসিয়াল ভূমি মন্ত্রণালয় গেটওয়ে প্রয়োজন এমন নাগরিক।"
 faq:
-  - q: "Is this the official land ministry website?"
-    a: No. This page helps you find the official portal. Use the Open official site button to go to land.gov.bd.
-    q_bn: "এটি কি অফিসিয়াল ভূমি মন্ত্রণালয় ওয়েবসাইট?"
-    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে land.gov.bd-এ যান।
   - q: "Should I use this or e-Porcha / e-Namjari?"
     a: "Use land.gov.bd for ministry information and navigation. Use the dedicated e-Porcha, e-Namjari, or LD Tax Service Pages when you know which service you need."
     q_bn: "এটি ব্যবহার করব, নাকি ই-পর্চা / ই-নামজারি?"
     a_bn: "মন্ত্রণালয়ের তথ্য ও নেভিগেশনের জন্য land.gov.bd ব্যবহার করুন। কোন সেবা লাগবে জানা থাকলে নিবেদিত ই-পর্চা, ই-নামজারি বা এলডি ট্যাক্স সেবা পেজ ব্যবহার করুন।"
-  - q: "Do I need to create an account on CitizenSheba?"
-    a: No. CitizenSheba only lists services. You complete everything on the official site.
-    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
-    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
+
 last_verified: 2026-08-06
 ---

@@ -39,17 +39,10 @@ status: ACTIVE
 audience: "Students and parents checking SSC, HSC, JSC, and other board examination results."
 audience_bn: "এসএসসি, এইচএসসি, জেএসসি ও অন্যান্য বোর্ড পরীক্ষার ফল দেখা শিক্ষার্থী ও অভিভাবক।"
 faq:
-  - q: "Is this the official Education Board Results website?"
-    a: No. This page helps you find the official portal. Use the Open official site button to go to educationboardresults.gov.bd.
-    q_bn: "এটি কি অফিসিয়াল এডুকেশন বোর্ড রেজাল্টস ওয়েবসাইট?"
-    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে educationboardresults.gov.bd-এ যান।
   - q: "What results can I check?"
     a: "Public examination results including SSC, HSC, JSC, and other board exams across Bangladesh."
     q_bn: "কী কী ফল দেখা যায়?"
     a_bn: "বাংলাদেশজুড়ে এসএসসি, এইচএসসি, জেএসসিসহ পাবলিক ও বোর্ড পরীক্ষার ফল।"
-  - q: "Do I need to create an account on CitizenSheba?"
-    a: No. CitizenSheba only lists services. You complete everything on the official site.
-    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
-    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
+
 last_verified: 2026-08-06
 ---

@@ -39,17 +39,10 @@ status: ACTIVE
 audience: Landowners and citizens requesting certified khatian copies and mouza maps.
 audience_bn: সত্যায়িত খতিয়ান কপি ও মৌজা ম্যাপ চাওয়া জমির মালিক ও নাগরিক।
 faq:
-  - q: "Is this the official e-Porcha website?"
-    a: No. This page helps you find the official portal. Use the Open official site button to go to eporcha.gov.bd.
-    q_bn: "এটি কি অফিসিয়াল ই-পর্চা ওয়েবসাইট?"
-    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে eporcha.gov.bd-এ যান।
   - q: "What can I do on e-Porcha?"
-    a: Search and apply for certified copies of Khatian land records and Mouza maps.
+    a: "Search and apply for certified copies of Khatian land records and Mouza maps."
     q_bn: "ই-পর্চায় কী করা যায়?"
-    a_bn: খতিয়ান ভূমি রেকর্ড ও মৌজা ম্যাপের সত্যায়িত কপির জন্য অনুসন্ধান ও আবেদন করা যায়।
-  - q: "Do I need to create an account on CitizenSheba?"
-    a: No. CitizenSheba only lists services. You complete everything on the official site.
-    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
-    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
+    a_bn: "খতিয়ান ভূমি রেকর্ড ও মৌজা ম্যাপের সত্যায়িত কপির জন্য অনুসন্ধান ও আবেদন করা যায়।"
+
 last_verified: 2026-08-06
 ---

@@ -36,17 +36,10 @@ status: ACTIVE
 audience: Taxpayers filing annual income tax returns with the National Board of Revenue.
 audience_bn: জাতীয় রাজস্ব বোর্ডে বার্ষিক আয়কর রিটার্ন জমাদানকারী করদাতা।
 faq:
-  - q: "Is this the official e-Return website?"
-    a: No. This page helps you find the official portal. Use the Open official site button to go to etaxnbr.gov.bd.
-    q_bn: "এটি কি অফিসিয়াল ই-রিটার্ন ওয়েবসাইট?"
-    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে etaxnbr.gov.bd-এ যান।
   - q: "What can I do on the e-Return portal?"
-    a: Submit your yearly income tax return online through the NBR system.
+    a: "Submit your yearly income tax return online through the NBR system."
     q_bn: "ই-রিটার্ন পোর্টালে কী করা যায়?"
-    a_bn: এনবিআর সিস্টেমের মাধ্যমে বার্ষিক আয়কর রিটার্ন অনলাইনে জমা দেওয়া যায়।
-  - q: "Do I need to create an account on CitizenSheba?"
-    a: No. CitizenSheba only lists services. You complete everything on the official site.
-    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
-    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
+    a_bn: "এনবিআর সিস্টেমের মাধ্যমে বার্ষিক আয়কর রিটার্ন অনলাইনে জমা দেওয়া যায়।"
+
 last_verified: 2026-08-06
 ---

@@ -83,8 +83,8 @@ Private banks, MFS apps (bKash/Nagad as products), commercial SaaS, and purely p
 _Avoid_: Calling these Official Services
 
 **Service Page (v1 content)**:
-SEO hop page: mixed title, short description (cards + Meta Description), primary Outbound CTA (domain tight under the button), then longer Markdown **body_bn** then **body** (BN first), bilingual **Who is this for** / **FAQ** / **Related services** (EN+BN headings; BN-then-EN values via `audience_bn` and FAQ `q_bn`/`a_bn`), related Service cards, **official link last verified** (human-readable date), and the official domain shown plainly. Body copy describes the Service — not CitizenSheba hop disclaimers. Full Guides are out of scope for v1.
-_Avoid_: Long how-to essays (v1), thin title-only doorway pages, putting long hop prose into `description` (breaks cards/SERP), repeating “we don’t process applications here” in `body` / `body_bn`, English-only audience/FAQ on Service Pages
+SEO hop page for one Official Service — structure, bilingual rules, and editorial do-nots: [`docs/guides/service-page.md`](docs/guides/service-page.md) (SSOT). Glossary: Mixed UI H1, Outbound CTA, short `description` fields, longer `body`/`body_bn`, bilingual audience/FAQ/related, official-link last verified. Full how-to Guides are out of scope for v1.
+_Avoid_: Doorway spam, hop-disclaimer FAQ/body copy, long essays in `description` — details in the Service Page guide + Trap #9
 
 **Category Page**:
 A dedicated, indexable page for one Category that lists its Services. Exists alongside Home filters (chips) for SEO and shareable URLs — not instead of them.

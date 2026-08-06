@@ -33,17 +33,10 @@ status: ACTIVE
 audience: "Citizens, innovators, and partners exploring official digital government initiatives from A2I."
 audience_bn: "নাগরিক, উদ্ভাবক এবং অংশীদার যারা A2I-এর অফিসিয়াল ডিজিটাল সরকারি উদ্যোগ দেখতে চান।"
 faq:
-  - q: "Is this the official A2I website?"
-    a: No. This page helps you find the official portal. Use the Open official site button to go to a2i.gov.bd.
-    q_bn: "এটি কি অফিসিয়াল A2I ওয়েবসাইট?"
-    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে a2i.gov.bd-এ যান।
   - q: "Can I apply for NID or passport on A2I?"
     a: "A2I hosts programmes and links related to digital government. For NID, passport, or tax, use those dedicated Service Pages and their official portals."
     q_bn: "A2I-তে কি এনআইডি বা পাসপোর্টের আবেদন করা যায়?"
     a_bn: "A2I ডিজিটাল সরকার–সংক্রান্ত কর্মসূচি ও লিংক হোস্ট করে। এনআইডি, পাসপোর্ট বা করের জন্য সেই নিবেদিত সেবা পেজ ও অফিসিয়াল পোর্টাল ব্যবহার করুন।"
-  - q: "Do I need to create an account on CitizenSheba?"
-    a: No. CitizenSheba only lists services. You complete everything on the official site.
-    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
-    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
+
 last_verified: 2026-08-06
 ---

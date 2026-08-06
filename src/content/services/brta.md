@@ -36,17 +36,10 @@ status: ACTIVE
 audience: "Drivers and vehicle owners applying for licenses, registration, and transport fees."
 audience_bn: "লাইসেন্স, নিবন্ধন ও পরিবহন ফি–সংক্রান্ত আবেদনকারী চালক ও যান মালিক।"
 faq:
-  - q: "Is this the official BRTA website?"
-    a: No. This page helps you find the official portal. Use the Open official site button to go to bsp.brta.gov.bd.
-    q_bn: "এটি কি অফিসিয়াল BRTA ওয়েবসাইট?"
-    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে bsp.brta.gov.bd-এ যান।
   - q: "What can I do on the BRTA portal?"
     a: "Apply for driving licenses, register motor vehicles, and pay transport-related fees online."
     q_bn: "BRTA পোর্টালে কী করা যায়?"
     a_bn: "ড্রাইভিং লাইসেন্সের আবেদন, মোটরযান নিবন্ধন এবং পরিবহন–সংক্রান্ত ফি অনলাইনে পরিশোধ করা যায়।"
-  - q: "Do I need to create an account on CitizenSheba?"
-    a: No. CitizenSheba only lists services. You complete everything on the official site.
-    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
-    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
+
 last_verified: 2026-08-06
 ---

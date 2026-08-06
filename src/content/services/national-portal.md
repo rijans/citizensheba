@@ -36,17 +36,10 @@ status: ACTIVE
 audience: Anyone looking for the main gateway to Bangladesh government ministries and digital services.
 audience_bn: বাংলাদেশ সরকারের মন্ত্রণালয় ও ডিজিটাল সেবার মূল গেটওয়ে খোঁজা যে কেউ।
 faq:
-  - q: "Is this the official National Portal?"
-    a: No. This page helps you find the official portal. Use the Open official site button to go to bangladesh.gov.bd.
-    q_bn: "এটি কি অফিসিয়াল জাতীয় পোর্টাল ওয়েবসাইট?"
-    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে bangladesh.gov.bd-এ যান।
   - q: "What can I find on the National Portal?"
     a: "Links to ministries, government departments, and digital services across Bangladesh."
     q_bn: "জাতীয় পোর্টালে কী পাওয়া যায়?"
     a_bn: "বাংলাদেশজুড়ে মন্ত্রণালয়, সরকারি দপ্তর ও ডিজিটাল সেবার লিংক।"
-  - q: "Do I need to create an account on CitizenSheba?"
-    a: No. CitizenSheba only lists services. You complete everything on the official site.
-    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
-    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
+
 last_verified: 2026-08-06
 ---

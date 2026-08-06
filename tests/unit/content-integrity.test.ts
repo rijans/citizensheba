@@ -102,9 +102,15 @@ describe('content integrity', () => {
     for (const s of services) {
       if (!String(s.audience_bn || '').trim()) problems.push(`${s.id}: missing audience_bn`);
       const faq = s.faq as Array<Record<string, unknown>> | undefined;
-      if (!Array.isArray(faq) || faq.length < 3) {
-        problems.push(`${s.id}: faq needs 3–5 items`);
+      if (!Array.isArray(faq) || faq.length < 1) {
+        problems.push(`${s.id}: faq needs 1–5 items`);
         continue;
+      }
+      for (const item of faq) {
+        const q = String(item.q || '');
+        if (/^Is this the official/i.test(q) || /account on CitizenSheba/i.test(q)) {
+          problems.push(`${s.id}: redundant hop FAQ "${q}"`);
+        }
       }
       faq.forEach((item, i) => {
         if (!String(item.q || '').trim() || !String(item.a || '').trim()) {

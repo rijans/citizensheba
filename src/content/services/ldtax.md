@@ -39,17 +39,10 @@ status: ACTIVE
 audience: Landowners paying land development tax and obtaining digital receipts.
 audience_bn: ভূমি উন্নয়ন কর পরিশোধ ও ডিজিটাল রসিদ নেওয়া জমির মালিক।
 faq:
-  - q: "Is this the official LD Tax website?"
-    a: No. This page helps you find the official portal. Use the Open official site button to go to ldtax.gov.bd.
-    q_bn: "এটি কি অফিসিয়াল এলডি ট্যাক্স ওয়েবসাইট?"
-    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে ldtax.gov.bd-এ যান।
   - q: "What can I do on the LD Tax portal?"
-    a: Pay land development tax online and receive digital Dakhila receipts.
+    a: "Pay land development tax online and receive digital Dakhila receipts."
     q_bn: "এলডি ট্যাক্স পোর্টালে কী করা যায়?"
-    a_bn: অনলাইনে ভূমি উন্নয়ন কর পরিশোধ করে ডিজিটাল দাখিলা রসিদ পাওয়া যায়।
-  - q: "Do I need to create an account on CitizenSheba?"
-    a: No. CitizenSheba only lists services. You complete everything on the official site.
-    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
-    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
+    a_bn: "অনলাইনে ভূমি উন্নয়ন কর পরিশোধ করে ডিজিটাল দাখিলা রসিদ পাওয়া যায়।"
+
 last_verified: 2026-08-06
 ---

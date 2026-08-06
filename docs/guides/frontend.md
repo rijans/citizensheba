@@ -42,4 +42,5 @@
 
 ## Related
 
+- **Service Page hop:** [`docs/guides/service-page.md`](service-page.md)
 - ADR-0003, ADR-0004, `docs/guides/performance.md`, `docs/specs/TRAPS.md` (#3–#7), `CONTEXT.md` § Instant Directory / Category Icon / Mobile-First

@@ -48,7 +48,7 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 
 ## Hard do-nots
 
-- No doorway-page spam; Service Pages stay thin SEO hops with clear Outbound CTA
+- No doorway-page spam; Service Pages stay thin SEO hops with clear Outbound CTA — structure: [`docs/guides/service-page.md`](docs/guides/service-page.md)
 - Catalog v1 = Official Services only — no private banks, MFS, or commercial SaaS as Official
 - Do not host or proxy government transactions
 - `_headers` comments: `#` only (not `/* */`)
@@ -58,13 +58,14 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 
 ## Content
 
-- Services: `src/content/services/*.md` — required `title_bn`, `description_bn`, **`body` / `body_bn` (Markdown; BN rendered first on Service Pages; no hop-disclaimer filler)**, **`audience_bn`**, FAQ with **`q_bn` / `a_bn`**, `bd-` slug, FAQ 3–5, `last_verified` (official link check date), **and** `aliases` (≥2 with both `lang: en` and `lang: bn`, each with `kind`)
+- **Service Page hop structure (read + update when changing hop UI/copy):** [`docs/guides/service-page.md`](docs/guides/service-page.md)
+- Services: `src/content/services/*.md` — required fields and FAQ policy summarized in that guide; schema in `src/content.config.ts`
 - Categories: `src/content/categories/*.yaml` — required `name_bn`, `description_bn`
 - Prefer English public slugs with `bd-` prefix for services
 - **Display Name** casing: curated (not blind official typography) — ADR-0005, Trap #12, living table [`docs/guides/display-names.md`](docs/guides/display-names.md); examples A2I, myGov, lowercase `e-`
 - **Name Aliases**: **required** for every Service — ADR-0006, Trap #13–#14; search all kinds; “Formerly …” only for `kind: former`. New Services must ship EN+BN aliases (romanizations in `aliases`, not only `tags`)
 - **Instant Directory search**: EN/BN parity, `description_bn`, related titles (weak), Search Variants — ADR-0007, `src/lib/search.ts`
-- Cross-file refs + alias coverage: `tests/unit/content-integrity.test.ts`
+- Cross-file refs + alias / body / audience / FAQ coverage: `tests/unit/content-integrity.test.ts`
 
 ## Deploy smoke
 

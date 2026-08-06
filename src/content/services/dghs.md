@@ -36,17 +36,10 @@ status: ACTIVE
 audience: Citizens and health workers seeking official DGHS information and linked health services.
 audience_bn: অফিসিয়াল DGHS তথ্য ও সংশ্লিষ্ট স্বাস্থ্য সেবা খোঁজা নাগরিক ও স্বাস্থ্যকর্মী।
 faq:
-  - q: "Is this the official DGHS website?"
-    a: No. This page helps you find the official portal. Use the Open official site button to go to dghs.gov.bd.
-    q_bn: "এটি কি অফিসিয়াল DGHS ওয়েবসাইট?"
-    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে dghs.gov.bd-এ যান।
   - q: "Is Surokkha part of DGHS?"
-    a: Vaccination and related programmes may be linked from official health sites. Use each official portal for the specific service you need.
+    a: "Vaccination and related programmes may be linked from official health sites. Use each official portal for the specific service you need."
     q_bn: "সুরক্ষা কি DGHS-এর অংশ?"
-    a_bn: টিকা ও সংশ্লিষ্ট কর্মসূচি অফিসিয়াল স্বাস্থ্য সাইট থেকে লিংক থাকতে পারে। নির্দিষ্ট সেবার জন্য সংশ্লিষ্ট অফিসিয়াল পোর্টাল ব্যবহার করুন।
-  - q: "Do I need to create an account on CitizenSheba?"
-    a: No. CitizenSheba only lists services. You complete everything on the official site.
-    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
-    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
+    a_bn: "টিকা ও সংশ্লিষ্ট কর্মসূচি অফিসিয়াল স্বাস্থ্য সাইট থেকে লিংক থাকতে পারে। নির্দিষ্ট সেবার জন্য সংশ্লিষ্ট অফিসিয়াল পোর্টাল ব্যবহার করুন।"
+
 last_verified: 2026-08-06
 ---
