@@ -16,6 +16,9 @@ aliases:
   - name: a2i
     lang: en
     kind: informal
+  - name: এটুআই
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: Citizens, innovators, and partners exploring official digital government initiatives from A2I.
 faq:

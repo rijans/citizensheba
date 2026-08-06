@@ -9,6 +9,19 @@ url: https://www.land.gov.bd/
 official_domain: land.gov.bd
 category: land
 tags: [land, ভূমি, ministry, khatian]
+aliases:
+  - name: land ministry
+    lang: en
+    kind: alt
+  - name: Ministry of Land
+    lang: en
+    kind: alt
+  - name: ভূমি মন্ত্রণালয়
+    lang: bn
+    kind: alt
+  - name: ভূমি সেবা
+    lang: bn
+    kind: informal
 status: ACTIVE
 audience: Citizens needing the official land ministry gateway before using e-Porcha, mutation, or LD Tax portals.
 faq:

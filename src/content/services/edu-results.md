@@ -9,6 +9,22 @@ url: http://www.educationboardresults.gov.bd/
 official_domain: educationboardresults.gov.bd
 category: education
 tags: [ssc, hsc, jsc, result, রেজাল্ট]
+aliases:
+  - name: SSC result
+    lang: en
+    kind: alt
+  - name: HSC result
+    lang: en
+    kind: alt
+  - name: board result
+    lang: en
+    kind: informal
+  - name: এসএসসি ফলাফল
+    lang: bn
+    kind: alt
+  - name: এইচএসসি ফলাফল
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: Students and parents checking SSC, HSC, JSC, and other board examination results.
 faq:

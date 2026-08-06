@@ -9,6 +9,19 @@ url: https://www.teachers.gov.bd/
 official_domain: teachers.gov.bd
 category: education
 tags: [teacher, শিক্ষক, education, portal, registration]
+aliases:
+  - name: Shikkhok Batayon
+    lang: en
+    kind: alt
+  - name: teacher registration
+    lang: en
+    kind: alt
+  - name: শিক্ষক বাতায়ন
+    lang: bn
+    kind: alt
+  - name: শিক্ষক নিবন্ধন
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: Teachers and education staff who need the official Teachers' Portal for registration and related services.
 faq:

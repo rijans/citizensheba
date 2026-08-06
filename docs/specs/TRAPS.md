@@ -19,6 +19,7 @@
 | 11 | Broken category / related content refs |
 | 12 | Mirroring broken official Display Name casing |
 | 13 | Alternate names only in `tags` (skip `aliases`) |
+| 14 | New Service without EN+BN Name Aliases |
 
 ---
 
@@ -174,4 +175,16 @@ Putting citizen-facing synonyms / former names only in `tags`, so Instant Direct
 
 ### Rule
 
-Use optional `aliases: [{ name, lang?, kind? }]` per ADR-0006. Keep `tags` for free-form keywords. Search indexes both.
+Use **required** `aliases: [{ name, lang, kind }]` per ADR-0006 (≥2, both `en` and `bn`). Keep `tags` for free-form keywords. Search indexes both. Enforced by content schema + `content-integrity.test.ts`.
+
+---
+
+## 14. New Service without EN+BN Name Aliases
+
+### Pitfall
+
+Adding a Service with only `title` / `title_bn` / `tags`, so Instant Directory misses common citizen queries (romanizations, former names, related terms).
+
+### Rule
+
+Every new Service ships with `aliases` (≥2) covering **both** `lang: en` and `lang: bn`, each with `kind`. Include useful romanizations in aliases. See `docs/guides/display-names.md`. `npm run ci` fails without them.

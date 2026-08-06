@@ -20,8 +20,8 @@ const faqItem = z.object({ q: z.string(), a: z.string() });
 
 const nameAlias = z.object({
   name: z.string().min(1),
-  lang: z.enum(['en', 'bn']).optional(),
-  kind: z.enum(['former', 'informal', 'alt']).optional(),
+  lang: z.enum(['en', 'bn']),
+  kind: z.enum(['former', 'informal', 'alt']),
 });
 
 const service = defineCollection({
@@ -37,7 +37,8 @@ const service = defineCollection({
     official_domain: z.string().optional(),
     category: z.string(),
     tags: z.array(z.string()),
-    aliases: z.array(nameAlias).optional(),
+    /** Required: at least two Name Aliases covering EN and BN (enforced in integrity tests too). */
+    aliases: z.array(nameAlias).min(2),
     status: z.enum(['ACTIVE', 'MAINTENANCE', 'DEPRECATED']),
     audience: z.string(),
     faq: z.array(faqItem).min(3).max(5),

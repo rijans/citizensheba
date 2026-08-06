@@ -58,13 +58,13 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 
 ## Content
 
-- Services: `src/content/services/*.md` — required `title_bn`, `description_bn`, `bd-` slug, FAQ 3–5, `last_verified`
+- Services: `src/content/services/*.md` — required `title_bn`, `description_bn`, `bd-` slug, FAQ 3–5, `last_verified`, **and** `aliases` (≥2 with both `lang: en` and `lang: bn`, each with `kind`)
 - Categories: `src/content/categories/*.yaml` — required `name_bn`, `description_bn`
 - Prefer English public slugs with `bd-` prefix for services
 - **Display Name** casing: curated (not blind official typography) — ADR-0005, Trap #12, living table [`docs/guides/display-names.md`](docs/guides/display-names.md); examples A2I, myGov, lowercase `e-`
-- **Name Aliases**: optional typed `aliases` on Service content — ADR-0006, Trap #13; search all kinds; “Formerly …” only for `kind: former`
+- **Name Aliases**: **required** for every Service — ADR-0006, Trap #13–#14; search all kinds; “Formerly …” only for `kind: former`. New Services must ship EN+BN aliases (romanizations in `aliases`, not only `tags`)
 - **Instant Directory search**: EN/BN parity, `description_bn`, related titles (weak), Search Variants — ADR-0007, `src/lib/search.ts`
-- Cross-file refs: `tests/unit/content-integrity.test.ts` (category / related ids)
+- Cross-file refs + alias coverage: `tests/unit/content-integrity.test.ts`
 
 ## Deploy smoke
 

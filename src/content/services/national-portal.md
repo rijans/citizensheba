@@ -9,6 +9,19 @@ url: https://bangladesh.gov.bd/
 official_domain: bangladesh.gov.bd
 category: central
 tags: [portal, ministries, government, বাতায়ন]
+aliases:
+  - name: bangladesh.gov.bd
+    lang: en
+    kind: informal
+  - name: national web portal
+    lang: en
+    kind: alt
+  - name: জাতীয় পোর্টাল
+    lang: bn
+    kind: alt
+  - name: তথ্য বাতায়ন
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: Anyone looking for the main gateway to Bangladesh government ministries and digital services.
 faq:

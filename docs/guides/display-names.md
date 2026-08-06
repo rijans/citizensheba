@@ -1,8 +1,8 @@
 # Display Names & Name Aliases (CitizenSheba)
 
-> Glossary: `CONTEXT.md` → **Display Name**, **Name Alias**. Decisions: [ADR-0005](../adr/0005-display-name-casing.md) (casing), [ADR-0006](../adr/0006-name-aliases.md) (aliases). Trap: [#12](../specs/TRAPS.md). Design: [`docs/superpowers/specs/2026-08-07-name-aliases-design.md`](../superpowers/specs/2026-08-07-name-aliases-design.md).
+> Glossary: `CONTEXT.md` → **Display Name**, **Name Alias**, **Search Variant**. Decisions: [ADR-0005](../adr/0005-display-name-casing.md), [ADR-0006](../adr/0006-name-aliases.md), [ADR-0007](../adr/0007-bilingual-directory-search.md). Traps: [#12](../specs/TRAPS.md)–[#14](../specs/TRAPS.md).
 
-When you decide a tricky brand with the product owner, **update the Display Name table below** and the Service’s `title` / English body in the same change. The Service markdown remains runtime SSOT; this file is the human/agent cheat sheet.
+When you decide a tricky brand with the product owner, **update the Display Name table below** and the Service’s `title` / English body in the same change. The Service markdown remains runtime SSOT.
 
 ## Display Name house rules
 
@@ -33,25 +33,25 @@ When you decide a tricky brand with the product owner, **update the Display Name
 
 Add a row whenever a new Service needs a non-obvious casing decision.
 
-## Name Aliases (shipped)
-
-Optional typed field on Service content:
+## Name Aliases — **required** on every Service
 
 ```yaml
 aliases:
   - name: Aspire to Innovate
     lang: en
     kind: alt
-  - name: MRP
-    lang: en
+  - name: এটুআই
+    lang: bn
     kind: alt
 ```
 
 | Field | Required | Values |
 |-------|----------|--------|
-| `name` | yes | EN or BN string |
-| `lang` | no | `en` \| `bn` |
-| `kind` | no (set it) | `former` \| `informal` \| `alt` |
+| `name` | yes | EN or BN string (incl. romanizations) |
+| `lang` | yes | `en` \| `bn` |
+| `kind` | yes | `former` \| `informal` \| `alt` |
+
+**Minimum for every Service (new or existing):** ≥2 aliases, **at least one `en` and one `bn`**. Enforced by Zod schema + `tests/unit/content-integrity.test.ts` (`npm run ci`).
 
 | kind | Instant Directory | Service Page |
 |------|-------------------|--------------|
@@ -59,23 +59,21 @@ aliases:
 | `alt` | matched | hidden |
 | `informal` | matched | hidden |
 
-- Do **not** put citizen-facing alternate names only in `tags` — use `aliases`.
-- `tags` remain free-form keywords.
-- Slugs stay stable when government renames; add a `former` alias for the old label.
-- SERP Document Title / Meta Description do not include aliases in v1.
+### Agent checklist — adding a Service
 
-### High-traffic alias coverage (ADR-0007)
+1. Curate Display Name (`title`) per house rules; update this guide’s table if non-obvious.
+2. Fill `aliases` with EN + BN (+ romanizations citizens type).
+3. Do **not** rely on `tags` alone for alternate names.
+4. Run `npm run ci` before calling the task done.
 
-Priority Services for EN+BN+romanization aliases: NID, e-Passport, myGov, A2I, e-Namjari, LD Tax, BDRIS, Railway, e-Return, BRTA. Remaining Services follow later.
+### Search Variants (global only)
 
-### Search Variants (global)
-
-Spelling twins live in `src/lib/search.ts` (`SEARCH_VARIANT_GROUPS`) — e.g. licence/license. Not per-Service; do not put `khajna` / `porcha` there (use aliases).
+Spelling twins in `src/lib/search.ts` (`SEARCH_VARIANT_GROUPS`) — e.g. licence/license. Service-specific terms (`khajna`, `porcha`) stay in **aliases**.
 
 ## Related
 
-- `CONTEXT.md` — Display Name, Name Alias
-- [ADR-0005](../adr/0005-display-name-casing.md), [ADR-0006](../adr/0006-name-aliases.md)
-- [Trap #12](../specs/TRAPS.md)
+- `CONTEXT.md` — Display Name, Name Alias, Search Variant
+- [ADR-0005](../adr/0005-display-name-casing.md), [ADR-0006](../adr/0006-name-aliases.md), [ADR-0007](../adr/0007-bilingual-directory-search.md)
+- Traps [#12](../specs/TRAPS.md)–[#14](../specs/TRAPS.md)
 - `src/content/services/*.md`, `src/content.config.ts`, `src/lib/search.ts`
-- `docs/guides/agent-workflow.md` (stop-and-ask for disputed brands)
+- `docs/guides/agent-workflow.md`

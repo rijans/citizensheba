@@ -66,4 +66,27 @@ describe('content integrity', () => {
       .map((s) => s.id);
     expect(selfRefs).toEqual([]);
   });
+
+  it('every service has Name Aliases with EN and BN coverage', () => {
+    type Alias = { name?: string; lang?: string; kind?: string };
+    const problems: string[] = [];
+    for (const s of services) {
+      const aliases = s.aliases as Alias[] | undefined;
+      if (!Array.isArray(aliases) || aliases.length < 2) {
+        problems.push(`${s.id}: need aliases[] with at least 2 entries`);
+        continue;
+      }
+      const langs = new Set(aliases.map((a) => a.lang));
+      if (!langs.has('en')) problems.push(`${s.id}: missing lang: en alias`);
+      if (!langs.has('bn')) problems.push(`${s.id}: missing lang: bn alias`);
+      for (const a of aliases) {
+        if (!a.name?.trim()) problems.push(`${s.id}: empty alias name`);
+        if (a.lang !== 'en' && a.lang !== 'bn') problems.push(`${s.id}: alias "${a.name}" needs lang en|bn`);
+        if (a.kind !== 'former' && a.kind !== 'informal' && a.kind !== 'alt') {
+          problems.push(`${s.id}: alias "${a.name}" needs kind former|informal|alt`);
+        }
+      }
+    }
+    expect(problems).toEqual([]);
+  });
 });

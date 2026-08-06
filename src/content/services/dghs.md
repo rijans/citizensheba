@@ -9,6 +9,19 @@ url: https://dghs.gov.bd/
 official_domain: dghs.gov.bd
 category: health
 tags: [dghs, health, স্বাস্থ্য, hospital]
+aliases:
+  - name: Directorate General of Health Services
+    lang: en
+    kind: alt
+  - name: health services
+    lang: en
+    kind: informal
+  - name: স্বাস্থ্য অধিদপ্তর
+    lang: bn
+    kind: alt
+  - name: স্বাস্থ্য সেবা
+    lang: bn
+    kind: informal
 status: ACTIVE
 audience: Citizens and health workers seeking official DGHS information and linked health services.
 faq:

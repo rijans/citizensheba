@@ -16,6 +16,12 @@ aliases:
   - name: COVID vaccine
     lang: en
     kind: informal
+  - name: টিকা সনদ
+    lang: bn
+    kind: alt
+  - name: টিকা নিবন্ধন
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: Citizens registering for vaccines and downloading vaccination certificates.
 faq:

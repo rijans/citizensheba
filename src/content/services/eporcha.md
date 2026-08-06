@@ -9,6 +9,22 @@ url: https://eporcha.gov.bd/
 official_domain: eporcha.gov.bd
 category: land
 tags: [khatian, land record, mouza, porcha, খতিয়ান]
+aliases:
+  - name: porcha
+    lang: en
+    kind: informal
+  - name: khatian
+    lang: en
+    kind: alt
+  - name: mouza map
+    lang: en
+    kind: alt
+  - name: খতিয়ান
+    lang: bn
+    kind: alt
+  - name: মৌজা ম্যাপ
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: Landowners and citizens requesting certified khatian copies and mouza maps.
 faq:

@@ -9,6 +9,22 @@ url: https://secure.incometax.gov.bd/
 official_domain: secure.incometax.gov.bd
 category: tax
 tags: [tin, tax, nbr, income, টিআইএন]
+aliases:
+  - name: TIN
+    lang: en
+    kind: alt
+  - name: e-TIN
+    lang: en
+    kind: alt
+  - name: taxpayer identification number
+    lang: en
+    kind: alt
+  - name: টিআইএন
+    lang: bn
+    kind: alt
+  - name: ই-টিআইএন
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: Individuals and businesses registering for a Taxpayer Identification Number with NBR.
 faq:

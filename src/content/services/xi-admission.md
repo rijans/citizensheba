@@ -9,6 +9,22 @@ url: http://www.xiclassadmission.gov.bd/
 official_domain: xiclassadmission.gov.bd
 category: education
 tags: [admission, college, xi, একাদশ, ভর্তি]
+aliases:
+  - name: class 11 admission
+    lang: en
+    kind: alt
+  - name: HSC admission
+    lang: en
+    kind: alt
+  - name: college admission
+    lang: en
+    kind: informal
+  - name: একাদশ ভর্তি
+    lang: bn
+    kind: alt
+  - name: কলেজ ভর্তি
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: SSC graduates applying for Class 11 (HSC) college admission in Bangladesh.
 faq:

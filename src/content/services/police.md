@@ -9,6 +9,19 @@ url: https://www.police.gov.bd/
 official_domain: police.gov.bd
 category: safety
 tags: [police, পুলিশ, security, law]
+aliases:
+  - name: BD police
+    lang: en
+    kind: informal
+  - name: police portal
+    lang: en
+    kind: alt
+  - name: বাংলাদেশ পুলিশ
+    lang: bn
+    kind: alt
+  - name: পুলিশ
+    lang: bn
+    kind: informal
 status: ACTIVE
 audience: Citizens seeking official police information or linked police digital services.
 faq:
