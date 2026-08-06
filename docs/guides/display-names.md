@@ -30,7 +30,6 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `bdris` | **Birth & Death Registration (BDRIS)** | Acronym in paren |
 | `nid` | **NID Services** | Acronym |
 | `ldtax` | **Land Development Tax (LD Tax)** | Keep “LD Tax” as used |
-
 | `desco` | **DESCO** | Acronym ALL CAPS |
 | `dpdc` | **DPDC** | Acronym ALL CAPS |
 | `nesco` | **NESCO** | Acronym ALL CAPS |

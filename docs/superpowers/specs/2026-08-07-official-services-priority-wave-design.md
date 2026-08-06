@@ -1,6 +1,6 @@
 # Official Services priority wave — design
 
-> **Status:** approved design (not yet implemented). Living backlog after impl: [`docs/ops/service-catalog-backlog.md`](../../ops/service-catalog-backlog.md) (to be created). Glossary: **Catalog Backlog** in `CONTEXT.md`.
+> **Status:** implemented on `feat/official-services-priority-wave` (priority wave shipped). Living backlog: [`docs/ops/service-catalog-backlog.md`](../../ops/service-catalog-backlog.md). Glossary: **Catalog Backlog** in `CONTEXT.md`.
 
 Expand the CitizenSheba catalog with a **small, curated priority wave** of Official Services — full hop quality — plus a git-tracked backlog so agents and humans can see what is shipped vs remaining. Not a National Portal mirror; not a scraper.
 
