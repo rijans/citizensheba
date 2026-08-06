@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import ServiceCardLink from '../../components/ui/ServiceCardLink.astro';
-import { categoryPath, servicePath } from '../../lib/urls';
+import { categoryPath, servicePath, officialDomainFromUrl } from '../../lib/urls';
 import { documentTitle, metaDescription } from '../../lib/seo';
 
 export async function getStaticPaths() {
@@ -46,7 +46,10 @@ const description = metaDescription(category.data.description_bn, category.data.
             title={s.data.title}
             titleBn={s.data.title_bn}
             description={s.data.description}
+            domain={s.data.official_domain ?? officialDomainFromUrl(s.data.url)}
             status={s.data.status}
+            categoryId={category.data.id}
+            icon={category.data.icon}
           />
         ))
       }

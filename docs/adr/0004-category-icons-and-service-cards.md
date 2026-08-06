@@ -1,0 +1,3 @@
+# Category Icons and shared Service cards
+
+Instant Directory cards were text-only and hard to scan; category content already stored unused lucide-style `icon` keys. We ship **Lucide** Category Icons with **soft accents mapped in code** by category id, reuse the same Service card on Home, Category Pages, and related Services (icon, title/title_bn, description, official domain, status when not ACTIVE), and keep chips as small icon + EN name. We rejected emoji-first cards (less civic trust), YAML-edited accent colors (inconsistency), and a Home trust strip (footer Non-Official Disclaimer is enough).

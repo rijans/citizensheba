@@ -1,6 +1,10 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, type CSSProperties } from 'react';
 import { filterAndSort, type SearchableService } from '../../lib/search';
 import { categoryPath, servicePath } from '../../lib/urls';
+import { accentStyle } from '../../lib/categoryVisuals';
+import { LayoutGrid, SearchX } from '../../lib/categoryIcons';
+import CategoryIcon from '../ui/CategoryIcon';
+import ServiceCard from '../ui/ServiceCard';
 
 type Category = {
   id: string;
@@ -8,6 +12,7 @@ type Category = {
   name: string;
   nameBn: string;
   sortOrder: number;
+  icon: string;
 };
 
 interface Props {
@@ -29,6 +34,11 @@ export default function InstantDirectory({
     [services, query, categoryId],
   );
 
+  const iconByCategory = useMemo(
+    () => Object.fromEntries(categories.map((c) => [c.id, c.icon])),
+    [categories],
+  );
+
   const activeCategory = categoryId
     ? categories.find((c) => c.id === categoryId)
     : null;
@@ -39,6 +49,9 @@ export default function InstantDirectory({
     setQuery('');
     setCategoryId(null);
   };
+
+  const countLabel =
+    results.length === 1 ? '1 service' : `${results.length} services`;
 
   return (
     <div className="directory">
@@ -101,31 +114,46 @@ export default function InstantDirectory({
           className={`directory-chip${categoryId === null ? ' directory-chip--active' : ''}`}
           onClick={() => setCategoryId(null)}
         >
+          <LayoutGrid size={15} strokeWidth={2} aria-hidden="true" />
           All
         </button>
-        {categories.map((cat) => (
-          <button
-            key={cat.id}
-            type="button"
-            className={`directory-chip${categoryId === cat.id ? ' directory-chip--active' : ''}`}
-            onClick={() => setCategoryId(cat.id)}
-          >
-            {cat.name}
-          </button>
-        ))}
+        {categories.map((cat) => {
+          const style = accentStyle(cat.id) as CSSProperties;
+          return (
+            <button
+              key={cat.id}
+              type="button"
+              className={`directory-chip${categoryId === cat.id ? ' directory-chip--active' : ''}`}
+              style={style}
+              onClick={() => setCategoryId(cat.id)}
+            >
+              <CategoryIcon icon={cat.icon} categoryId={cat.id} inheritAccent size={15} />
+              {cat.name}
+            </button>
+          );
+        })}
       </div>
 
-      {activeCategory && (
-        <p className="directory-meta">
-          <a className="directory-meta__link" href={categoryPath(activeCategory.slug)}>
-            View all in {activeCategory.name}
-          </a>
+      <div className="directory-toolbar">
+        <p className="directory-count" aria-live="polite">
+          {countLabel}
         </p>
-      )}
+        {activeCategory && (
+          <p className="directory-meta">
+            <a className="directory-meta__link" href={categoryPath(activeCategory.slug)}>
+              View all in {activeCategory.name}
+            </a>
+          </p>
+        )}
+      </div>
 
       {results.length === 0 ? (
         <div className="directory-empty">
+          <span className="directory-empty__icon" aria-hidden="true">
+            <SearchX size={28} strokeWidth={1.75} />
+          </span>
           <p className="directory-empty__text">No services match your search.</p>
+          <p className="directory-empty__hint">Try a different keyword or clear filters.</p>
           {hasFilters && (
             <button type="button" className="directory-empty__clear" onClick={clearAll}>
               Clear filters
@@ -136,22 +164,16 @@ export default function InstantDirectory({
         <ul className="directory-grid">
           {results.map((svc) => (
             <li key={svc.id}>
-              <a className="service-card" href={servicePath(svc.slug)}>
-                <div className="service-card__header">
-                  <h3 className="service-card__title">{svc.title}</h3>
-                  {svc.status !== 'ACTIVE' && (
-                    <span
-                      className={`status-badge status-badge--${svc.status.toLowerCase()}`}
-                    >
-                      {svc.status === 'MAINTENANCE' ? 'Maintenance' : 'Deprecated'}
-                    </span>
-                  )}
-                </div>
-                <p className="service-card__title-bn" lang="bn">
-                  {svc.titleBn}
-                </p>
-                <p className="service-card__description">{svc.description}</p>
-              </a>
+              <ServiceCard
+                href={servicePath(svc.slug)}
+                title={svc.title}
+                titleBn={svc.titleBn}
+                description={svc.description}
+                domain={svc.domain}
+                status={svc.status}
+                categoryId={svc.categoryId}
+                icon={iconByCategory[svc.categoryId] ?? 'landmark'}
+              />
             </li>
           ))}
         </ul>

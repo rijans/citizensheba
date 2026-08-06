@@ -3,7 +3,14 @@ import { officialDomainFromUrl } from './urls';
 import type { SearchableService } from './search';
 
 export async function buildSearchIndex(): Promise<{
-  categories: { id: string; slug: string; name: string; nameBn: string; sortOrder: number }[];
+  categories: {
+    id: string;
+    slug: string;
+    name: string;
+    nameBn: string;
+    sortOrder: number;
+    icon: string;
+  }[];
   services: SearchableService[];
 }> {
   const categories = (await getCollection('categories'))
@@ -13,6 +20,7 @@ export async function buildSearchIndex(): Promise<{
       name: c.data.name,
       nameBn: c.data.name_bn,
       sortOrder: c.data.sort_order,
+      icon: c.data.icon,
     }))
     .sort((a, b) => a.sortOrder - b.sortOrder);
 

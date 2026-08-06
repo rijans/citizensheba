@@ -1,22 +1,35 @@
 ---
+import CategoryIcon from './CategoryIcon';
 import StatusBadge from '../service/StatusBadge.astro';
+import { accentStyle } from '../../lib/categoryVisuals';
 
 interface Props {
   href: string;
   title: string;
   titleBn: string;
   description: string;
+  domain: string;
   status: 'ACTIVE' | 'MAINTENANCE' | 'DEPRECATED';
+  categoryId: string;
+  icon: string;
 }
 
-const { href, title, titleBn, description, status } = Astro.props;
+const { href, title, titleBn, description, domain, status, categoryId, icon } = Astro.props;
+const style = accentStyle(categoryId);
+const styleAttr = Object.entries(style)
+  .map(([k, v]) => `${k}:${v}`)
+  .join(';');
 ---
 
-<a class="service-card" href={href}>
+<a class="service-card" href={href} style={styleAttr}>
+  <div class="service-card__top">
+    <CategoryIcon icon={icon} categoryId={categoryId} inheritAccent size={18} />
+    <StatusBadge status={status} />
+  </div>
   <div class="service-card__header">
     <h3 class="service-card__title">{title}</h3>
-    <StatusBadge status={status} />
   </div>
   <p class="service-card__title-bn" lang="bn">{titleBn}</p>
   <p class="service-card__description">{description}</p>
+  <p class="service-card__domain">{domain}</p>
 </a>

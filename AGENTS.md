@@ -27,6 +27,13 @@ CitizenSheba (সিটিজেনসেবা) is a hop-first **Directory** of
 - Visible H1 stays English-first Mixed UI — do not force H1 to match title order
 - Do **not** reintroduce `meta_title` / `meta_description` content fields
 
+## Instant Directory visuals (see ADR-0004)
+
+- Lucide **Category Icons** + soft accents from `src/lib/categoryVisuals.ts` (code map, not YAML)
+- Shared Service card: icon, titles, description, official domain, status when not ACTIVE
+- No emoji-first cards; no Home trust strip (footer disclaimer only)
+- Chips: small icon + EN name; result count + clear empty state
+
 ## Hard do-nots
 
 - No doorway-page spam; Service Pages stay thin SEO hops with clear Outbound CTA

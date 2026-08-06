@@ -27,6 +27,7 @@ const relatedIds =
     .map((s) => s.data.id)
     .slice(0, 4);
 const related = all.filter((s) => relatedIds.includes(s.data.id));
+const catById = Object.fromEntries(categories.map((c) => [c.data.id, c]));
 
 const domain = service.data.official_domain ?? officialDomainFromUrl(service.data.url);
 const title = documentTitle(service.data.title_bn, service.data.title);
@@ -81,15 +82,22 @@ const reportSubject = encodeURIComponent(`Report: ${service.data.slug}`);
       <h2>Related services</h2>
       <div class="directory-grid">
         {
-          related.map((r) => (
-            <ServiceCardLink
-              href={servicePath(r.data.slug)}
-              title={r.data.title}
-              titleBn={r.data.title_bn}
-              description={r.data.description}
-              status={r.data.status}
-            />
-          ))
+          related.map((r) => {
+            const relCat = catById[r.data.category];
+            if (!relCat) throw new Error(`missing category for ${r.data.id}`);
+            return (
+              <ServiceCardLink
+                href={servicePath(r.data.slug)}
+                title={r.data.title}
+                titleBn={r.data.title_bn}
+                description={r.data.description}
+                domain={r.data.official_domain ?? officialDomainFromUrl(r.data.url)}
+                status={r.data.status}
+                categoryId={relCat.data.id}
+                icon={relCat.data.icon}
+              />
+            );
+          })
         }
       </div>
     </section>

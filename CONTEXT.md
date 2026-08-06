@@ -78,8 +78,8 @@ Git-managed structured content (Markdown/JSON/YAML in repo) is the source of tru
 _Avoid_: Database-backed admin as a v1 requirement
 
 **Instant Directory**:
-Home provides client-side fuzzy search and instant Category filtering without full page reloads (POC-parity UX). Service Pages and Category Pages remain statically generated HTML for SEO and agents.
-_Avoid_: Server-roundtrip search as the primary Home UX (v1)
+Home provides client-side fuzzy search and instant Category filtering without full page reloads (POC-parity UX). Service cards show Category Icon (with soft accent), title / title_bn, short description, official domain, and status when not ACTIVE. The same Service card visual language is shared on Category Pages and related Services on Service Pages. Instant Directory shows a live result count and a clear empty state when nothing matches. Service Pages and Category Pages remain statically generated HTML for SEO and agents.
+_Avoid_: Server-roundtrip search as the primary Home UX (v1), emoji-first cards, stuffing Category name + domain + status + last-verified onto every card, divergent card UIs per surface
 
 **Installable Shell**:
 v1 ships a web app manifest and icons so users can Add to Home Screen. No service-worker offline cache of the Directory as a v1 goal.
@@ -100,6 +100,10 @@ _Avoid_: Treating llms.txt as access control or a training license
 **AI Usage Preference**:
 v1 signals: allow search indexing and AI input/citation of our pages; disallow AI training on our content — expressed primarily via `robots.txt` Content Signals and known AI crawler rules, with an advisory `/.well-known/ai.txt` mirroring that stance.
 _Avoid_: Relying on ai.txt alone for enforcement
+
+**Category Icon**:
+A simple SVG mark for a Category (lucide-style key in content), reused on filter chips and Service cards in that Category so the Instant Directory is scannable. Paired with a soft Category accent (muted tint + icon hue), not strong app-like color blocks. Accent hues are defined in code keyed by category id/icon, not in content YAML. Category-level only in v1 — not per-Service emoji or logo. Chips use a small icon + soft accent with the English category name (no BN on chips in v1).
+_Avoid_: Emoji wallpaper on every card, per-Service custom icons as the default, loud category color fills, BN labels on chips that force wrapping, accent colors edited ad hoc in YAML, decorative illustrations that compete with the Outbound CTA
 
 **Mobile-First**:
 Layouts, Instant Directory, and Service/Category Pages are designed for small screens first (thumb reach, single-column cards, sticky search/chips that don’t eat the viewport), then enhanced for tablet/desktop. Touch targets and performance on mid-range Android matter as much as desktop polish.
