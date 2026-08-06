@@ -67,8 +67,8 @@ One URL per Service Page for all audiences. English slugs. Titles and copy may m
 _Avoid_: Separate `/bn` and `/en` sites (for v1), Bangla-only slugs
 
 **Document Title**:
-The HTML `<title>` / SERP title for a page. Format: `বাংলা — English | CitizenSheba` (Bengali first, then English, brand last). Always generated from content fields (`title_bn` / `title`, or category `name_bn` / `name`); do not store a separate `meta_title`. Applies to Service, Category, Home, About, Disclaimer, and 404 via site BN/EN constants where needed. Visible page H1 may keep English-first Mixed UI; Document Title order does not force H1 order.
-_Avoid_: English-only meta titles, reversing BN/EN order for Document Titles, requiring H1 to mirror Document Title order, per-page `meta_title` overrides, leaving static pages English-only in `<title>`
+The HTML `<title>` / SERP title for a page. Format: `বাংলা — English | CitizenSheba Bangladesh` (Bengali first, then English, brand last). Brand postfix is `SITE_BRAND_SERP` in `src/lib/site.ts`. Composed via `documentTitle()` from content: Services use `serp_title_bn`/`serp_title` when set (expanded for opaque acronyms), else `title_bn`/`title`; categories use `name_bn`/`name`; static pages use site BN/EN constants. Visible H1 / cards keep short Display Names (`title` / `title_bn`). Do not store free-form `meta_title`.
+_Avoid_: English-only meta titles, reversing BN/EN order for Document Titles, requiring H1 to mirror Document Title order, free-form `meta_title` overrides, leaving cryptic acronym-only SERP titles (A2I, myGov, …) without `serp_title` / `serp_title_bn` expansions, using only `CitizenSheba` without Bangladesh in the brand postfix
 
 **Meta Description**:
 The HTML meta description / SERP snippet. Bengali sentence(s) first, then English sentence(s), joined as two natural sentences (e.g. `বাংলা বাক্য। English sentence.`). Always generated from content fields (`description_bn` then `description`); do not store a separate `meta_description`. Same rule for Service, Category, and static pages via BN/EN site constants.

@@ -3,6 +3,8 @@ id: a2i
 slug: bd-a2i
 title: A2I
 title_bn: এটুআই
+serp_title: A2I (Aspire to Innovate)
+serp_title_bn: এটুআই (তথ্য ও যোগাযোগ প্রযুক্তি বিভাগ)
 description: Aspire to Innovate (A2I) — the government’s digital innovation programme portal for citizen-centric digital services and initiatives.
 description_bn: নাগরিককেন্দ্রিক ডিজিটাল সেবা ও উদ্যোগের জন্য সরকারের ডিজিটাল উদ্ভাবন কর্মসূচি এটুআই (Aspire to Innovate) পোর্টাল
 body: |

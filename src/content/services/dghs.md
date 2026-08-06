@@ -3,6 +3,8 @@ id: dghs
 slug: bd-dghs
 title: DGHS
 title_bn: স্বাস্থ্য অধিদপ্তর
+serp_title: DGHS (Directorate General of Health Services)
+serp_title_bn: স্বাস্থ্য অধিদপ্তর (DGHS)
 description: "Directorate General of Health Services portal for health programmes, information, and related services."
 description_bn: "স্বাস্থ্য অধিদপ্তরের পোর্টাল—স্বাস্থ্য কর্মসূচি, তথ্য এবং সংশ্লিষ্ট সেবার জন্য"
 body: |

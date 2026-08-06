@@ -3,6 +3,8 @@ id: eporcha
 slug: bd-eporcha
 title: "e-Porcha (Khatian & Mouza Map)"
 title_bn: ই-পর্চা
+serp_title: e-Porcha (certified Khatian and Mouza map copies)
+serp_title_bn: ই-পর্চা (খতিয়ান ও মৌজা ম্যাপের সত্যায়িত কপি)
 description: Search and apply for certified copies of Khatian (land records) and Mouza maps.
 description_bn: খতিয়ান (ভূমি রেকর্ড) ও মৌজা ম্যাপের সত্যায়িত কপির জন্য অনুসন্ধান ও আবেদন করুন
 body: |

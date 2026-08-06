@@ -3,6 +3,8 @@ id: namjari
 slug: bd-namjari
 title: e-Namjari (Mutation)
 title_bn: ই-নামজারি
+serp_title: e-Namjari (land mutation applications)
+serp_title_bn: ই-নামজারি (ভূমি নামজারি আবেদন)
 description: Online portal for land mutation processing and application tracking.
 description_bn: ভূমি নামজারি (মিউটেশন) আবেদন ও ট্র্যাকিংয়ের অফিসিয়াল পোর্টাল
 body: |

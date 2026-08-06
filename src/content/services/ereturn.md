@@ -3,6 +3,8 @@ id: ereturn
 slug: bd-ereturn
 title: e-Return (Online Tax Submission)
 title_bn: ই-রিটার্ন
+serp_title: e-Return (NBR online income tax return)
+serp_title_bn: ই-রিটার্ন (এনবিআর অনলাইন আয়কর রিটার্ন)
 description: Submit your yearly income tax return online through the National Board of Revenue portal.
 description_bn: জাতীয় রাজস্ব বোর্ডের পোর্টালের মাধ্যমে বার্ষিক আয়কর রিটার্ন অনলাইনে জমা দিন
 body: |

@@ -3,6 +3,8 @@ id: xi-admission
 slug: bd-xi-admission
 title: XI Class Admission
 title_bn: একাদশ শ্রেণি ভর্তি
+serp_title: XI Class Admission (HSC / Class 11 college admission)
+serp_title_bn: একাদশ শ্রেণি ভর্তি (এইচএসসি কলেজ ভর্তি)
 description: Centralized admission portal for Class 11 (HSC) students.
 description_bn: একাদশ শ্রেণির কেন্দ্রীয় কলেজ ভর্তির অফিসিয়াল পোর্টাল
 body: |

@@ -3,6 +3,8 @@ id: mygov
 slug: bd-mygov
 title: myGov
 title_bn: মাইগভ
+serp_title: myGov (integrated digital government services)
+serp_title_bn: মাইগভ (একীভূত ডিজিটাল সরকারি সেবা)
 description: "One-stop platform to access integrated government G2C, G2B, and G2G services."
 description_bn: "জি২সি, জি২বি ও জি২জি সেবার জন্য বাংলাদেশ সরকারের সমন্বিত আমার সরকার পোর্টাল"
 body: |

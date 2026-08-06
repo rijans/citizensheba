@@ -4,7 +4,7 @@
 
 **When to read:** any task touching Service Pages, `src/pages/services/[slug].astro`, `ServiceFaq` / `OutboundCta`, `body` / `audience` / FAQ content, or hop-related CSS.
 
-**When to update:** any change to page section order, bilingual layout rules, required content fields on the hop, FAQ policy, or verified-link labeling — update **this file first**, then ADRs / CONTEXT / INDEX / Trap #9 as needed (see [DOC_ARCHITECTURE](../specs/DOC_ARCHITECTURE.md)).
+**When to update:** any change to page section order, bilingual layout rules, required content fields on the hop, FAQ policy, SERP/`serp_title` rules, or verified-link labeling — update **this file first**, then ADRs / CONTEXT / INDEX / Trap #9 as needed (see [DOC_ARCHITECTURE](../specs/DOC_ARCHITECTURE.md)).
 
 ## Role
 
@@ -18,9 +18,10 @@ Implementation: `src/pages/services/[slug].astro`.
 
 | # | Block | Source | Notes |
 |---|--------|--------|--------|
+| — | Document Title (`<title>`) | `serp_title_bn`/`serp_title` or `title_bn`/`title` | `বাংলা — English \| CitizenSheba Bangladesh` (ADR-0003); expand short acronyms for SERP |
 | 1 | Breadcrumb | Category + Service | Home → Category → title |
 | 2 | Status badge | `status` | When not `ACTIVE` |
-| 3 | H1 | `title` + `title_bn` | EN then BN on one line (Mixed UI) |
+| 3 | H1 | `title` + `title_bn` | EN then BN on one line (Mixed UI); short Display Names stay here |
 | 4 | Formerly … | `aliases` where `kind: former` | Quiet line only |
 | 5 | Short description | `description` | EN only under H1 today; cards + Meta Description also use short fields |
 | 6 | Outbound CTA | `url` + domain | Primary action; domain tight under button |
@@ -40,7 +41,7 @@ Shared section heading strings: `src/lib/servicePageCopy.ts` (not per-service).
 |---------|---------|
 | H1, section headings, FAQ questions | **EN + BN on one line** (BN in `lang="bn"`, green accent) |
 | Body, audience, FAQ answers | **BN block first, then EN** |
-| SERP Document Title / Meta Description | BN→EN (ADR-0003) — independent of visible H1 |
+| SERP Document Title / Meta Description | BN→EN (ADR-0003); brand `CitizenSheba Bangladesh`; optional `serp_title*` when Display Names are opaque |
 
 CSS: `.bilingual-stack`, `.service-page__prose--secondary` in `src/styles/global.css`.
 
@@ -50,7 +51,8 @@ Schema: `src/content.config.ts`. Integrity: `tests/unit/content-integrity.test.t
 
 | Field | Role |
 |-------|------|
-| `title` / `title_bn` | Display Name (ADR-0005) |
+| `title` / `title_bn` | Display Name for H1 / cards (ADR-0005) |
+| `serp_title` / `serp_title_bn` | Optional SERP expansions when Display Names are too short/opaque (e.g. A2I → A2I (Aspire to Innovate)) |
 | `description` / `description_bn` | Short — cards + Meta Description; keep SERP-sized |
 | `body` / `body_bn` | Longer hop Markdown (min length enforced) |
 | `audience` / `audience_bn` | Who the Service is for |

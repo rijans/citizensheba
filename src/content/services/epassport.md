@@ -3,6 +3,8 @@ id: epassport
 slug: bd-epassport
 title: e-Passport Portal
 title_bn: ই-পাসপোর্ট
+serp_title: e-Passport Portal (MRP and e-Passport)
+serp_title_bn: ই-পাসপোর্ট (এমআরপি ও ই-পাসপোর্ট)
 description: "Online application system for MRPs and e-Passports, including appointment booking."
 description_bn: "এমআরপি ও ই-পাসপোর্টের অনলাইন আবেদন ব্যবস্থা, অ্যাপয়েন্টমেন্ট বুকিংসহ"
 body: |

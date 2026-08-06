@@ -32,7 +32,10 @@ const related = all.filter((s) => relatedIds.includes(s.data.id));
 const catById = Object.fromEntries(categories.map((c) => [c.data.id, c]));
 
 const domain = service.data.official_domain ?? officialDomainFromUrl(service.data.url);
-const title = documentTitle(service.data.title_bn, service.data.title);
+const title = documentTitle(
+  service.data.serp_title_bn ?? service.data.title_bn,
+  service.data.serp_title ?? service.data.title,
+);
 const description = metaDescription(service.data.description_bn, service.data.description);
 const reportSubject = encodeURIComponent(`Report: ${service.data.slug}`);
 const formerAliases = (service.data.aliases ?? []).filter((a) => a.kind === 'former');

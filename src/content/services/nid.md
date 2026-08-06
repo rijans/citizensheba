@@ -3,6 +3,8 @@ id: nid
 slug: bd-nid
 title: NID Services
 title_bn: জাতীয় পরিচয়পত্র
+serp_title: NID Services (National ID)
+serp_title_bn: জাতীয় পরিচয়পত্র (এনআইডি সেবা)
 description: "Portal for new voter registration, NID correction, and downloading NID copies."
 description_bn: "নতুন ভোটার নিবন্ধন, এনআইডি সংশোধন এবং এনআইডি কপি ডাউনলোডের অফিসিয়াল সেবা"
 body: |

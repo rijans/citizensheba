@@ -1,5 +1,7 @@
 export const SITE_NAME = 'CitizenSheba';
 export const SITE_NAME_BN = 'সিটিজেনসেবা';
+/** Brand segment in HTML `<title>` / SERP Document Titles (ADR-0003). */
+export const SITE_BRAND_SERP = 'CitizenSheba Bangladesh';
 
 export const SITE_TAGLINE =
   'Find Bangladesh government and utility digital services — then open the official site.';

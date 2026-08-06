@@ -47,15 +47,15 @@ Use `#` comments only in `_headers`.
 
 ---
 
-## 3. Reintroducing `meta_title` / `meta_description`
+## 3. Reintroducing free-form `meta_title` / `meta_description`
 
 ### Pitfall
 
-Adding per-page meta override fields “for control.” Duplicates SERP copy, drifts from `title_bn` / `description_bn`, and fights ADR-0003.
+Adding arbitrary per-page meta override fields “for control.” Duplicates SERP copy, drifts from Display Names / descriptions, and fights ADR-0003.
 
 ### Rule
 
-Compose via `documentTitle()` / `metaDescription()` from content + site BN/EN constants. No `meta_*` fields.
+Compose via `documentTitle()` / `metaDescription()` from content + site BN/EN constants. Brand postfix is **CitizenSheba Bangladesh**. For Services whose Display Names are too short or opaque in SERP (acronyms like A2I), set optional **`serp_title` / `serp_title_bn`** expansions — not free-form `meta_*`. H1 / cards still use `title` / `title_bn`.
 
 ---
 

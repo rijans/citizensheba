@@ -33,10 +33,11 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 
 ## SERP / bilingual (see ADR-0003)
 
-- Document Title: `বাংলা — English | CitizenSheba` via `documentTitle()` in `src/lib/seo.ts`
+- Document Title: `বাংলা — English | CitizenSheba Bangladesh` via `documentTitle()` in `src/lib/seo.ts` (brand = `SITE_BRAND_SERP`)
+- Service Pages: when Display Names are too short for SERP (e.g. A2I), set optional `serp_title` / `serp_title_bn`; H1 stays `title` / `title_bn`
 - Meta Description: BN sentence then EN sentence via `metaDescription()` from `description_bn` + `description` (or site BN/EN constants)
 - Visible H1 stays English-first Mixed UI — do not force H1 to match title order
-- Do **not** reintroduce `meta_title` / `meta_description` content fields
+- Do **not** reintroduce free-form `meta_title` / `meta_description` content fields
 
 ## Instant Directory visuals (see ADR-0004)
 

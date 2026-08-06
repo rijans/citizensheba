@@ -62,9 +62,10 @@ aliases:
 ### Agent checklist — adding a Service
 
 1. Curate Display Name (`title`) per house rules; update this guide’s table if non-obvious.
-2. Fill `aliases` with EN + BN (+ romanizations citizens type).
-3. Do **not** rely on `tags` alone for alternate names.
-4. Run `npm run ci` before calling the task done.
+2. If the Display Name is too short or opaque in Google results (acronyms like A2I, myGov), set **`serp_title` / `serp_title_bn`** expansions for Document Title (ADR-0003). H1 stays short.
+3. Fill `aliases` with EN + BN (+ romanizations citizens type).
+4. Do **not** rely on `tags` alone for alternate names.
+5. Run `npm run ci` before calling the task done.
 
 ### Search Variants (global only)
 

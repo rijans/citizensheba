@@ -36,6 +36,12 @@ const service = defineCollection({
     slug: z.string().regex(/^bd-[a-z0-9]+(?:-[a-z0-9]+)*$/),
     title: z.string(),
     title_bn: z.string(),
+    /**
+     * Optional SERP-only expansions when Display Names are too short/opaque for search
+     * (e.g. A2I → A2I (Aspire to Innovate)). H1 / cards still use title / title_bn.
+     */
+    serp_title: z.string().min(1).optional(),
+    serp_title_bn: z.string().min(1).optional(),
     description: z.string(),
     description_bn: z.string(),
     /** Longer hop-page Markdown (EN). Required — cards/meta still use short description. */

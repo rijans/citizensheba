@@ -2,9 +2,17 @@ import { describe, expect, it } from 'vitest';
 import { documentTitle, metaDescription } from '../../src/lib/seo';
 
 describe('documentTitle', () => {
-  it('formats BN then EN with brand', () => {
+  it('formats BN then EN with CitizenSheba Bangladesh brand', () => {
     expect(documentTitle('জাতীয় পরিচয়পত্র', 'NID Services')).toBe(
-      'জাতীয় পরিচয়পত্র — NID Services | CitizenSheba',
+      'জাতীয় পরিচয়পত্র — NID Services | CitizenSheba Bangladesh',
+    );
+  });
+
+  it('supports expanded SERP titles for short Display Names', () => {
+    expect(
+      documentTitle('এটুআই (তথ্য ও যোগাযোগ প্রযুক্তি বিভাগ)', 'A2I (Aspire to Innovate)'),
+    ).toBe(
+      'এটুআই (তথ্য ও যোগাযোগ প্রযুক্তি বিভাগ) — A2I (Aspire to Innovate) | CitizenSheba Bangladesh',
     );
   });
 });

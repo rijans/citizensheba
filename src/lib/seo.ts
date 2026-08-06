@@ -1,7 +1,7 @@
-import { SITE_NAME } from './site';
+import { SITE_BRAND_SERP } from './site';
 
-/** Document Title: `বাংলা — English | CitizenSheba` */
-export function documentTitle(bn: string, en: string, brand: string = SITE_NAME): string {
+/** Document Title: `বাংলা — English | CitizenSheba Bangladesh` */
+export function documentTitle(bn: string, en: string, brand: string = SITE_BRAND_SERP): string {
   return `${bn.trim()} — ${en.trim()} | ${brand}`;
 }
 

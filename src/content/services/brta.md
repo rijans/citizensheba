@@ -3,6 +3,8 @@ id: brta
 slug: bd-brta
 title: BRTA Service Portal (BSP)
 title_bn: বিআরটিএ সেবা
+serp_title: BRTA Service Portal (BSP) — driving licence and vehicle registration
+serp_title_bn: বিআরটিএ সেবা (ড্রাইভিং লাইসেন্স ও যান নিবন্ধন)
 description: "Apply for driving licenses, register motor vehicles, and pay transport-related fees online."
 description_bn: "ড্রাইভিং লাইসেন্স আবেদন, মোটরযান নিবন্ধন এবং পরিবহন-সংক্রান্ত ফি অনলাইনে পরিশোধ করুন"
 body: |
