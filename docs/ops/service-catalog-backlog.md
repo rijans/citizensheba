@@ -51,20 +51,20 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
-| DESCO | desco / bd-desco | utilities | `https://ocsms.desco.org.bd/home` | drafting | gap-list | Must; verified 200 (primary `www.desco.org.bd` DNS fail) |
-| Dhaka WASA | dhaka-wasa / bd-dhaka-wasa | utilities | `https://consumer-portal.dhakawasa.org/` | drafting | gap-list | Must; curl TLS fail — confirm in browser |
-| Titas Gas | titas-gas / bd-titas-gas | utilities | `https://titasgas.gov.bd/` | drafting | gap-list | Must; curl TLS chain fail — confirm in browser |
-| BMET Online Clearance | bmet / bd-bmet | migration | `https://oc.bmet.gov.bd/` | drafting | gap-list | Must; curl could not confirm — manual check |
-| Bangladesh Online Visa (MRV) | bangladesh-visa / bd-bangladesh-visa | migration | `https://www.visa.gov.bd/` | drafting | gap-list | Must; connection reset from verifier |
+| DESCO | desco / bd-desco | utilities | `https://ocsms.desco.org.bd/home` | shipped | gap-list | Must; verified 200 (primary `www.desco.org.bd` DNS fail) |
+| Dhaka WASA | dhaka-wasa / bd-dhaka-wasa | utilities | `https://consumer-portal.dhakawasa.org/` | shipped | gap-list | Must; curl TLS fail — confirm in browser |
+| Titas Gas | titas-gas / bd-titas-gas | utilities | `https://titasgas.gov.bd/` | shipped | gap-list | Must; curl TLS chain fail — confirm in browser |
+| BMET Online Clearance | bmet / bd-bmet | migration | `https://oc.bmet.gov.bd/` | shipped | gap-list | Must; curl could not confirm — manual check |
+| Bangladesh Online Visa (MRV) | bangladesh-visa / bd-bangladesh-visa | migration | `https://www.visa.gov.bd/` | shipped | gap-list | Must; connection reset from verifier |
 
 ## Research-first / fill slots
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
-| DPDC | dpdc / bd-dpdc | utilities | `https://dpdc.org.bd/public/service/ebill` | drafting | gap-list | Verified **200** |
-| NESCO | nesco / bd-nesco | utilities | `https://customer.nesco.gov.bd/` | drafting | gap-list | Verified **200** |
-| e-Court / judiciary | ecourt / bd-ecourt | justice (if ships) | `https://ecourt.gov.bd/` | drafting | gap-list | Verified **200** |
-| Fire Service & Civil Defence | fire-service / bd-fire-service | safety | `https://fireservice.gov.bd/` | drafting | gap-list | curl TLS fail — confirm in browser |
+| DPDC | dpdc / bd-dpdc | utilities | `https://dpdc.org.bd/public/service/ebill` | shipped | gap-list | Verified **200** |
+| NESCO | nesco / bd-nesco | utilities | `https://customer.nesco.gov.bd/` | shipped | gap-list | Verified **200** |
+| e-Court / judiciary | ecourt / bd-ecourt | justice (if ships) | `https://ecourt.gov.bd/` | shipped | gap-list | Verified **200** |
+| Fire Service & Civil Defence | fire-service / bd-fire-service | safety | `https://fireservice.gov.bd/` | shipped | gap-list | curl TLS fail — confirm in browser |
 | Utility siblings (other DISCOs) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | One portal per Service; wave cap ~8–12; e.g. BREB still candidate |
 
 ## Skipped

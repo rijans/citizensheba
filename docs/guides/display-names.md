@@ -31,6 +31,16 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `nid` | **NID Services** | Acronym |
 | `ldtax` | **Land Development Tax (LD Tax)** | Keep “LD Tax” as used |
 
+| `desco` | **DESCO** | Acronym ALL CAPS |
+| `dpdc` | **DPDC** | Acronym ALL CAPS |
+| `nesco` | **NESCO** | Acronym ALL CAPS |
+| `bmet` | **BMET Online Clearance** | Acronym + product clarity |
+| `dhaka-wasa` | **Dhaka WASA** | WASA acronym |
+| `ecourt` | **e-Court** | House lowercase `e-` |
+| `bangladesh-visa` | **Bangladesh Online Visa (MRV)** | Expand MRV for clarity |
+| `titas-gas` | **Titas Gas** | Company short name |
+| `fire-service` | **Fire Service & Civil Defence** | Full directorate short form |
+
 Add a row whenever a new Service needs a non-obvious casing decision.
 
 ## Name Aliases — **required** on every Service
