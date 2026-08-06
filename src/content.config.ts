@@ -18,6 +18,12 @@ const category = defineCollection({
 
 const faqItem = z.object({ q: z.string(), a: z.string() });
 
+const nameAlias = z.object({
+  name: z.string().min(1),
+  lang: z.enum(['en', 'bn']).optional(),
+  kind: z.enum(['former', 'informal', 'alt']).optional(),
+});
+
 const service = defineCollection({
   loader: glob({ base: './src/content/services', pattern: '**/*.md' }),
   schema: z.object({
@@ -31,6 +37,7 @@ const service = defineCollection({
     official_domain: z.string().optional(),
     category: z.string(),
     tags: z.array(z.string()),
+    aliases: z.array(nameAlias).optional(),
     status: z.enum(['ACTIVE', 'MAINTENANCE', 'DEPRECATED']),
     audience: z.string(),
     faq: z.array(faqItem).min(3).max(5),

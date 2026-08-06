@@ -9,6 +9,13 @@ url: https://www.epassport.gov.bd/
 official_domain: epassport.gov.bd
 category: identity
 tags: [passport, mrp, travel, পাসপোর্ট]
+aliases:
+  - name: MRP
+    lang: en
+    kind: alt
+  - name: Machine Readable Passport
+    lang: en
+    kind: alt
 status: ACTIVE
 audience: Bangladeshi citizens applying for or renewing passports and MRPs.
 faq:

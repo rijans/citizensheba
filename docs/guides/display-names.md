@@ -1,10 +1,10 @@
-# Display Names & name aliases (CitizenSheba)
+# Display Names & Name Aliases (CitizenSheba)
 
-> **Owner guide** for curated English casing and (future) alternate names. Glossary: `CONTEXT.md` → **Display Name**. Decision: [ADR-0005](../adr/0005-display-name-casing.md). Trap: [#12](../specs/TRAPS.md).
+> Glossary: `CONTEXT.md` → **Display Name**, **Name Alias**. Decisions: [ADR-0005](../adr/0005-display-name-casing.md) (casing), [ADR-0006](../adr/0006-name-aliases.md) (aliases). Trap: [#12](../specs/TRAPS.md). Design: [`docs/superpowers/specs/2026-08-07-name-aliases-design.md`](../superpowers/specs/2026-08-07-name-aliases-design.md).
 
-When you decide a tricky brand with the product owner, **update this table** and the Service’s `title` / English body in the same change. The Service markdown remains runtime SSOT; this file is the human/agent cheat sheet so casing does not regress.
+When you decide a tricky brand with the product owner, **update the Display Name table below** and the Service’s `title` / English body in the same change. The Service markdown remains runtime SSOT; this file is the human/agent cheat sheet.
 
-## House rules (summary)
+## Display Name house rules
 
 | Rule | Examples |
 |------|----------|
@@ -31,24 +31,53 @@ When you decide a tricky brand with the product owner, **update this table** and
 | `nid` | **NID Services** | Acronym |
 | `ldtax` | **Land Development Tax (LD Tax)** | Keep “LD Tax” as used |
 
-Add a row whenever a new Service needs a non-obvious casing decision. Rows that simply follow the house rules for new acronyms are optional but useful.
+Add a row whenever a new Service needs a non-obvious casing decision.
 
-## Future: Name Aliases (schema chosen; not shipped)
+## Name Aliases (shipped)
 
-Bangladesh government portals often use **multiple English/Bengali names** for one Service, and **rename** programmes over time. Citizens search with any of those strings.
+Optional typed field on Service content:
 
-**Decision:** dedicated content field(s) for Name Aliases — do **not** overload `tags`. `tags` stay free-form search keywords; aliases are curated alternate / former / informal names mapped to the canonical Service (Display Name unchanged).
+```yaml
+aliases:
+  - name: Aspire to Innovate
+    lang: en
+    kind: alt
+  - name: MRP
+    lang: en
+    kind: alt
+```
 
-**Still open:** exact field shape (deferred — not flat vs EN/BN vs typed objects yet), whether former names appear on the Service Page, slug policy when an official name changes, and Instant Directory scoring details.
+| Field | Required | Values |
+|-------|----------|--------|
+| `name` | yes | EN or BN string |
+| `lang` | no | `en` \| `bn` |
+| `kind` | no (set it) | `former` \| `informal` \| `alt` |
 
-**Timing:** implement in a **later dedicated task** — not this Display Name casing pass.
+| kind | Instant Directory | Service Page |
+|------|-------------------|--------------|
+| `former` | matched | muted “Formerly …” under H1 |
+| `alt` | matched | hidden |
+| `informal` | matched | hidden |
 
-Until shipped, optional helpful search strings may still go in `tags` only — do not invent a parallel alias schema in content yet.
+- Do **not** put citizen-facing alternate names only in `tags` — use `aliases`.
+- `tags` remain free-form keywords.
+- Slugs stay stable when government renames; add a `former` alias for the old label.
+- SERP Document Title / Meta Description do not include aliases in v1.
+
+### Seeded examples (first ship)
+
+| id | aliases |
+|----|---------|
+| `a2i` | Aspire to Innovate (`alt`) |
+| `epassport` | MRP, Machine Readable Passport (`alt`) |
+| `ldtax` | khajna, খাজনা (`informal`); Dakhila (`alt`) |
+| `bdris` | birth registration, death registration (`alt`) |
+| `surokkha` | vaccine certificate (`alt`); COVID vaccine (`informal`) |
 
 ## Related
 
-- `CONTEXT.md` — Display Name
-- [ADR-0005](../adr/0005-display-name-casing.md)
+- `CONTEXT.md` — Display Name, Name Alias
+- [ADR-0005](../adr/0005-display-name-casing.md), [ADR-0006](../adr/0006-name-aliases.md)
 - [Trap #12](../specs/TRAPS.md)
-- `src/content/services/*.md`
+- `src/content/services/*.md`, `src/content.config.ts`, `src/lib/search.ts`
 - `docs/guides/agent-workflow.md` (stop-and-ask for disputed brands)

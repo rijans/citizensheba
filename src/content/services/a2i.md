@@ -9,6 +9,10 @@ url: https://a2i.gov.bd/
 official_domain: a2i.gov.bd
 category: central
 tags: [a2i, digital, innovation, এটুআই, services]
+aliases:
+  - name: Aspire to Innovate
+    lang: en
+    kind: alt
 status: ACTIVE
 audience: Citizens, innovators, and partners exploring official digital government initiatives from A2I.
 faq:

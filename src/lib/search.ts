@@ -6,6 +6,8 @@ export type SearchableService = {
   titleBn: string;
   description: string;
   tags: string[];
+  /** Name Alias strings for search (all kinds). */
+  aliases: string[];
   categoryName: string;
   categoryNameBn: string;
   domain: string;
@@ -28,9 +30,10 @@ export function scoreService(sv: SearchableService, rawQuery: string): number {
   const desc = norm(sv.description);
   const bn = `${norm(sv.titleBn)} ${norm(sv.categoryNameBn)}`;
   const tags = sv.tags.map(norm);
+  const aliases = (sv.aliases ?? []).map(norm);
   const catName = norm(sv.categoryName);
   const dom = norm(sv.domain);
-  const hay = [title, bn, desc, catName, tags.join(' '), dom].join(' | ');
+  const hay = [title, bn, desc, catName, tags.join(' '), aliases.join(' '), dom].join(' | ');
 
   let total = 0;
   for (const t of q.split(/\s+/)) {
@@ -38,9 +41,9 @@ export function scoreService(sv: SearchableService, rawQuery: string): number {
     if (title.startsWith(t)) best = 100;
     else if (title.split(/\s+/).some((w) => w.startsWith(t))) best = 90;
     else if (title.includes(t)) best = 82;
-    else if (tags.some((g) => g.startsWith(t))) best = 76;
+    else if (tags.some((g) => g.startsWith(t)) || aliases.some((g) => g.startsWith(t))) best = 76;
     else if (bn.includes(t)) best = 74;
-    else if (tags.some((g) => g.includes(t))) best = 66;
+    else if (tags.some((g) => g.includes(t)) || aliases.some((g) => g.includes(t))) best = 66;
     else if (catName.includes(t)) best = 56;
     else if (desc.includes(t)) best = 50;
     else if (dom.includes(t)) best = 46;

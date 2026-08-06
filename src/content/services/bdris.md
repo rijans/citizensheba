@@ -9,6 +9,13 @@ url: https://bdris.gov.bd/
 official_domain: bdris.gov.bd
 category: identity
 tags: [birth, death, certificate, bdris, জন্ম নিবন্ধন]
+aliases:
+  - name: birth registration
+    lang: en
+    kind: alt
+  - name: death registration
+    lang: en
+    kind: alt
 status: ACTIVE
 audience: Parents, guardians, and families who need birth or death certificates.
 faq:

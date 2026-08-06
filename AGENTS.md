@@ -62,6 +62,7 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 - Categories: `src/content/categories/*.yaml` — required `name_bn`, `description_bn`
 - Prefer English public slugs with `bd-` prefix for services
 - **Display Name** casing: curated (not blind official typography) — ADR-0005, Trap #12, living table [`docs/guides/display-names.md`](docs/guides/display-names.md); examples A2I, myGov, lowercase `e-`
+- **Name Aliases**: optional typed `aliases` on Service content — ADR-0006, Trap #13; search all kinds; “Formerly …” only for `kind: former`
 - Cross-file refs: `tests/unit/content-integrity.test.ts` (category / related ids)
 
 ## Deploy smoke

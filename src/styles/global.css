@@ -974,6 +974,14 @@ html[data-theme="dark"] .caution {
   color: var(--green);
 }
 
+.service-page__formerly {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--ink-subtle);
+  line-height: 1.4;
+}
+
 .service-page__description {
   margin: 1rem 0 0;
   max-width: 42rem;

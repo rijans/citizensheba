@@ -37,6 +37,7 @@ export async function buildSearchIndex(): Promise<{
       titleBn: s.data.title_bn,
       description: s.data.description,
       tags: s.data.tags,
+      aliases: (s.data.aliases ?? []).map((a) => a.name),
       categoryName: cat.name,
       categoryNameBn: cat.nameBn,
       domain: s.data.official_domain ?? officialDomainFromUrl(s.data.url),

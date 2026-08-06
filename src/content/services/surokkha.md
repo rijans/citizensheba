@@ -9,6 +9,13 @@ url: https://surokkha.gov.bd/
 official_domain: surokkha.gov.bd
 category: health
 tags: [vaccine, covid, certificate, টিকা]
+aliases:
+  - name: vaccine certificate
+    lang: en
+    kind: alt
+  - name: COVID vaccine
+    lang: en
+    kind: informal
 status: ACTIVE
 audience: Citizens registering for vaccines and downloading vaccination certificates.
 faq:

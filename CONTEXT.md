@@ -34,9 +34,9 @@ _Avoid_: Portal, App, Link, Listing (alone)
 CitizenSheba’s curated visible casing for a Service’s English name. Stored in the Service `title` and used consistently in every English mention in that Service’s content (description, audience, FAQ). May correct nonstandard casing on the official site; Outbound Link hostnames and path casing stay exact as published. Clear cases use editorial judgment; stylized or conflicting brands escalate to a human decision. House style: lowercase `e-` for electronic-service prefixes (e.g. e-Passport, e-Namjari, e-TIN); ALL CAPS for letter/digit government acronyms (e.g. A2I, BRTA, NID); preserve known camelCase product brands (e.g. myGov). Decided brands are listed in `docs/guides/display-names.md` alongside the Service `title`.
 _Avoid_: Blindly copying homepage typography, rewriting official domains to match Display Name, mismatched casing between title and body, silent “corrections” when official branding is stylized or disputed, mixed `E-` / `e-` for the same pattern, Title-casing acronyms (`A2i`, `Brta`)
 
-**Name Alias** (planned):
-An alternate, former, or informal EN/BN name citizens use for a Service that is not the Display Name — for search and discovery when government wording overlaps or changes. Will live in a dedicated Service content field (not `tags`). Not a second public title.
-_Avoid_: Treating aliases as the Display Name, stuffing aliases into `tags`, inventing ad hoc parallel lists outside content schema
+**Name Alias**:
+An alternate, former, or informal EN/BN name citizens use for a Service that is not the Display Name. Stored in optional Service `aliases` (`name`, optional `lang`, optional `kind`: `former` | `informal` | `alt`). All kinds match Instant Directory search; only `former` appears as a muted “Formerly …” line on the Service Page. Not a second public title; does not change the Service Slug.
+_Avoid_: Treating aliases as the Display Name, stuffing aliases only into `tags`, renaming slugs when government wording changes, putting aliases into Document Title / Meta Description (v1)
 
 **Category**:
 A grouping of related Services used for browsing and filtering (e.g. Identity & Registration, Tax & Finance).

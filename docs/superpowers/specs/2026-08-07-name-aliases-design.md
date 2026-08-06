@@ -1,5 +1,7 @@
 # Name Aliases — design
 
+> **Status:** implemented (ADR-0006). Kept as the design snapshot.
+
 CitizenSheba Services often have multiple citizen-facing names (EN/BN), informal labels, and occasional government renames. Instant Directory should match those strings without changing the curated **Display Name** or stable Service Slug.
 
 ## Decisions (locked)

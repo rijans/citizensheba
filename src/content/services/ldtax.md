@@ -9,6 +9,16 @@ url: https://ldtax.gov.bd/
 official_domain: ldtax.gov.bd
 category: land
 tags: [land tax, khajna, dakhila, খাজনা]
+aliases:
+  - name: khajna
+    lang: en
+    kind: informal
+  - name: খাজনা
+    lang: bn
+    kind: informal
+  - name: Dakhila
+    lang: en
+    kind: alt
 status: ACTIVE
 audience: Landowners paying land development tax and obtaining digital receipts.
 faq:

@@ -18,6 +18,7 @@
 | 10 | Committing foreign session WIP |
 | 11 | Broken category / related content refs |
 | 12 | Mirroring broken official Display Name casing |
+| 13 | Alternate names only in `tags` (skip `aliases`) |
 
 ---
 
@@ -162,3 +163,15 @@ Copying homepage typography (`a2i`, mixed `E-` / `e-`) into Service `title` / FA
 ### Rule
 
 Curate **Display Name** per ADR-0005, `CONTEXT.md`, and the living table in `docs/guides/display-names.md`. Domains/URLs stay literal (`a2i.gov.bd`). Clear fixes (A2I, e-Namjari) apply without asking; stylized or disputed brands stop-and-ask — then update both the Service content and the display-names table.
+
+---
+
+## 13. Alternate names only in `tags` (skip `aliases`)
+
+### Pitfall
+
+Putting citizen-facing synonyms / former names only in `tags`, so Instant Directory may match but there is no typed `kind`, no “Formerly …” line, and editors cannot tell keywords from Name Aliases.
+
+### Rule
+
+Use optional `aliases: [{ name, lang?, kind? }]` per ADR-0006. Keep `tags` for free-form keywords. Search indexes both.

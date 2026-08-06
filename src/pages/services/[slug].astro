@@ -33,6 +33,7 @@ const domain = service.data.official_domain ?? officialDomainFromUrl(service.dat
 const title = documentTitle(service.data.title_bn, service.data.title);
 const description = metaDescription(service.data.description_bn, service.data.description);
 const reportSubject = encodeURIComponent(`Report: ${service.data.slug}`);
+const formerAliases = (service.data.aliases ?? []).filter((a) => a.kind === 'former');
 ---
 
 <BaseLayout title={title} description={description} canonicalPath={servicePath(service.data.slug)}>
@@ -50,6 +51,19 @@ const reportSubject = encodeURIComponent(`Report: ${service.data.slug}`);
       <h1>
         {service.data.title} <span lang="bn">{service.data.title_bn}</span>
       </h1>
+      {
+        formerAliases.length > 0 && (
+          <p class="service-page__formerly">
+            Formerly{' '}
+            {formerAliases.map((a, i) => (
+              <span>
+                {i > 0 ? ', ' : ''}
+                {a.lang === 'bn' ? <span lang="bn">{a.name}</span> : a.name}
+              </span>
+            ))}
+          </p>
+        )
+      }
     </header>
 
     <p class="service-page__description">{service.data.description}</p>

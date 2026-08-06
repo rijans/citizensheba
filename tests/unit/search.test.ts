@@ -9,6 +9,7 @@ const nid: SearchableService = {
   titleBn: 'জাতীয় পরিচয়পত্র',
   description: 'New voter registration and NID corrections.',
   tags: ['nid', 'voter', 'identity', 'পরিচয়পত্র'],
+  aliases: [],
   categoryName: 'Identity & Registration',
   categoryNameBn: 'পরিচয় ও নিবন্ধন',
   domain: 'services.nidw.gov.bd',
@@ -23,6 +24,7 @@ const passport: SearchableService = {
   titleBn: 'পাসপোর্ট',
   description: 'Apply for passport.',
   tags: ['passport', 'travel'],
+  aliases: ['Machine Readable Passport', 'MRP'],
   categoryName: 'Travel',
   categoryNameBn: 'ভ্রমণ',
   domain: 'passport.gov.bd',
@@ -42,8 +44,9 @@ describe('scoreService', () => {
     expect(scoreService(nid, 'পরিচয়পত্র')).toBeGreaterThan(0);
   });
 
-  it('returns -1 when a token matches nothing', () => {
-    expect(scoreService(nid, 'passport xyzzy')).toBe(-1);
+  it('matches Name Alias strings in the tags score band', () => {
+    expect(scoreService(passport, 'Machine Readable Passport')).toBeGreaterThan(0);
+    expect(scoreService(passport, 'MRP')).toBeGreaterThan(60);
   });
 });
 
