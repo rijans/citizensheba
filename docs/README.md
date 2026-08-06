@@ -24,7 +24,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [guides/agent-workflow.md](guides/agent-workflow.md) | Stop-and-ask, patterns, parallel sessions, finalization |
 | [guides/service-page.md](guides/service-page.md) | **Service Page hop structure** (layout, bilingual rules, FAQ policy) |
 | [guides/display-names.md](guides/display-names.md) | Display Name table + Name Aliases |
-| [guides/frontend.md](guides/frontend.md) | Cards, chips, Mobile-First, tokens |
+| [guides/frontend.md](guides/frontend.md) | Cards, chips, Mobile-First, tokens, **brand logo / favicon** |
 | [guides/performance.md](guides/performance.md) | Islands, SSG, analytics weight |
 
 ## ADR index

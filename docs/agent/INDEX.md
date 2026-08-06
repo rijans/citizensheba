@@ -26,7 +26,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 |---------------------|------|
 | agent workflow, stop-and-ask, parallel session, foreign dirty, finalization, redesign | `docs/guides/agent-workflow.md`, `docs/specs/TRAPS.md` (#10) |
 | trap, pitfall, regression, known mistake | `docs/specs/TRAPS.md` (scan index, open matching bodies) |
-| UI, CSS, card, chip, Mobile-First, design token, Lucide, jargon in copy | `docs/guides/frontend.md`, ADR-0004, `docs/specs/TRAPS.md` (#5–#7) |
+| UI, CSS, card, chip, Mobile-First, design token, Lucide, jargon in copy, logo, brand mark, favicon, PWA icon | `docs/guides/frontend.md`, ADR-0004, `public/brand/`, `docs/specs/TRAPS.md` (#5–#7) |
 | performance, island, LCP, client JS, analytics weight | `docs/guides/performance.md`, ADR-0001 |
 | stack, Astro, Cloudflare, wrangler, static assets, React island, Tailwind | `docs/adr/0001-astro-ssg-react-island-cloudflare.md`, `README.md` § Cloudflare, Trap #1 |
 | deploy, production, wrangler login, smoke live, workers.dev, citizensheba.com, MCP Cloudflare | `docs/ops/production-and-deploy.md` |
@@ -55,6 +55,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | Home Instant Directory | `src/pages/index.astro`, `src/components/directory/InstantDirectory.tsx` |
 | Service / Category cards | `src/components/ui/ServiceCard.tsx`, `ServiceCardLink.astro`, `CategoryIcon.tsx` |
 | Layout shell | `src/components/layout/BaseLayout.astro`, `Header.astro`, `Footer.astro` |
+| Brand / favicon / PWA icons | `public/brand/citizensheba-logo.png`, `public/favicon*`, `public/icons/`, `public/manifest.webmanifest`, `docs/guides/frontend.md` § Brand mark |
 | Service / Category pages | `src/pages/services/[slug].astro`, `src/pages/categories/[slug].astro`, **`docs/guides/service-page.md`** |
 | Service hop copy / headings | `src/lib/servicePageCopy.ts`, `src/components/service/OutboundCta.astro`, `ServiceFaq.astro` |
 | Content schema | `src/content.config.ts`, `src/content/services/*.md`, `src/content/categories/*.yaml` |

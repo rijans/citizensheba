@@ -40,6 +40,14 @@
 - Never reintroduce `meta_title` / `meta_description` content fields.
 - New categories need `icon` (lucide key) + entry in `CATEGORY_ACCENTS` if a dedicated hue is desired.
 
+## Brand mark
+
+- Circular emblem (transparent PNG): `public/brand/citizensheba-logo.png`
+- Header: emblem + existing English `.com` wordmark + Bangla (`Header.astro`)
+- Favicon / Apple touch: `public/favicon-32.png`, `favicon-48.png`, `favicon.ico`, `apple-touch-icon.png`
+- PWA: `public/icons/icon-192.png`, `icon-512.png`, `icon-512-maskable.png` (`manifest.webmanifest`)
+- When replacing the logo, crop to a transparent circle and regenerate favicon + PWA sizes together (see `docs/superpowers/specs/2026-08-07-brand-logo-design.md`)
+
 ## Related
 
 - **Service Page hop:** [`docs/guides/service-page.md`](service-page.md)
