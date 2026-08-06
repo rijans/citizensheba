@@ -11,8 +11,10 @@ CitizenSheba is **not** a government entity and is not an official portal.
 ```bash
 npm ci
 npm run dev          # http://localhost:4321
+npm run check        # Astro + TypeScript (imports, props, .astro)
 npm test             # unit tests (Vitest)
 npm run build        # static output → dist/
+npm run ci           # check → test → build (same as GitHub Actions)
 npm run preview      # serve dist/
 ```
 
@@ -28,10 +30,12 @@ npm run test:e2e
 | Script | Description |
 |--------|-------------|
 | `dev` | Astro dev server |
+| `check` | `astro check` — TypeScript / .astro diagnostics |
 | `build` | Production static build to `dist/` |
 | `preview` | Preview built site |
 | `test` | Vitest unit tests |
 | `test:watch` | Vitest watch mode |
+| `ci` | `check` → `test` → `build` (matches GitHub Actions) |
 | `test:e2e` | Playwright smoke tests |
 | `check:links` | Outbound link health for service URLs |
 | `pages:deploy` | Build and deploy `dist/` to Cloudflare Pages |

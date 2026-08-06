@@ -45,6 +45,8 @@ CitizenSheba (সিটিজেনসেবা) is a hop-first **Directory** of
 ## Deploy smoke
 
 ```bash
-npm ci && npm test && npm run build
+npm ci && npm run ci
 # then wrangler deploy only when asked
 ```
+
+CI on GitHub: `npm ci` → `astro check` → Vitest → `astro build`.
