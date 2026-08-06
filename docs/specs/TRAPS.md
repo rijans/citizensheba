@@ -17,6 +17,7 @@
 | 9 | Doorway / thin spam Service Pages |
 | 10 | Committing foreign session WIP |
 | 11 | Broken category / related content refs |
+| 12 | Mirroring broken official Display Name casing |
 
 ---
 
@@ -149,3 +150,15 @@ Service `category` or `related` ids that do not exist — builds may still parti
 ### Rule
 
 Run / keep green `tests/unit/content-integrity.test.ts`. Fix refs in content, do not weaken the test.
+
+---
+
+## 12. Mirroring broken official Display Name casing
+
+### Pitfall
+
+Copying homepage typography (`a2i`, mixed `E-` / `e-`) into Service `title` / FAQ because “that’s what the official site says,” while leaving domains alone would have been enough.
+
+### Rule
+
+Curate **Display Name** per ADR-0005, `CONTEXT.md`, and the living table in `docs/guides/display-names.md`. Domains/URLs stay literal (`a2i.gov.bd`). Clear fixes (A2I, e-Namjari) apply without asking; stylized or disputed brands stop-and-ask — then update both the Service content and the display-names table.

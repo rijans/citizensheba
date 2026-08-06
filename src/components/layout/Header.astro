@@ -4,12 +4,14 @@ import { SITE_NAME, SITE_NAME_BN } from '../../lib/site';
 
 <header class="site-header">
   <div class="container site-header__inner">
-    <a href="/" class="site-brand" aria-label={`${SITE_NAME} home`}>
+    <a href="/" class="site-brand" aria-label={`${SITE_NAME}.com home`}>
       <span class="site-brand__mark" aria-hidden="true">
         <span class="site-brand__dot"></span>
       </span>
       <span class="site-brand__text">
-        <span class="site-brand__name"><em>{SITE_NAME}</em></span>
+        <span class="site-brand__name">
+          <em>{SITE_NAME}</em><span class="site-brand__tld">.com</span>
+        </span>
         <span class="site-brand__bn" lang="bn">{SITE_NAME_BN}</span>
       </span>
     </a>

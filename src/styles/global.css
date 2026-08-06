@@ -159,7 +159,7 @@ a {
 
 .site-brand__name {
   font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.3125rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -170,8 +170,17 @@ a {
   font-style: normal;
 }
 
+.site-brand__tld {
+  margin-left: 0.06em;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink-subtle);
+  vertical-align: 0.06em;
+}
+
 .site-brand__bn {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: var(--ink-subtle);
   line-height: 1.2;
 }
@@ -489,6 +498,60 @@ html[data-theme="dark"] .status-badge--maintenance {
 .directory-search__clear:hover {
   background: var(--green-soft);
   color: var(--green);
+}
+
+.directory-chips-wrap {
+  position: relative;
+  margin-inline: -0.125rem;
+  padding-inline: 0.125rem;
+}
+
+.directory-chips-wrap::before,
+.directory-chips-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2.25rem;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.directory-chips-wrap::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--bg) 0%,
+    var(--bg) 28%,
+    transparent 100%
+  );
+  box-shadow: inset 10px 0 14px -10px rgba(16, 42, 34, 0.28);
+}
+
+.directory-chips-wrap::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--bg) 0%,
+    var(--bg) 28%,
+    transparent 100%
+  );
+  box-shadow: inset -10px 0 14px -10px rgba(16, 42, 34, 0.28);
+}
+
+html[data-theme="dark"] .directory-chips-wrap::before {
+  box-shadow: inset 10px 0 16px -10px rgba(0, 0, 0, 0.55);
+}
+
+html[data-theme="dark"] .directory-chips-wrap::after {
+  box-shadow: inset -10px 0 16px -10px rgba(0, 0, 0, 0.55);
+}
+
+.directory-chips-wrap--left::before,
+.directory-chips-wrap--right::after {
+  opacity: 1;
 }
 
 .directory-chips {

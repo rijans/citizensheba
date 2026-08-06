@@ -3,7 +3,7 @@ import BaseLayout from '../components/layout/BaseLayout.astro';
 import InstantDirectory from '../components/directory/InstantDirectory';
 import NoscriptDirectory from '../components/directory/NoscriptDirectory.astro';
 import { buildSearchIndex } from '../lib/buildSearchIndex';
-import { HOME_TITLE_BN, HOME_TITLE_EN, SITE_NAME, SITE_TAGLINE, SITE_TAGLINE_BN } from '../lib/site';
+import { HOME_TITLE_BN, HOME_TITLE_EN, SITE_TAGLINE, SITE_TAGLINE_BN } from '../lib/site';
 import { documentTitle, metaDescription } from '../lib/seo';
 
 const index = await buildSearchIndex();
@@ -16,7 +16,9 @@ const initialCategoryId = Astro.url.searchParams.get('cat');
   canonicalPath="/"
 >
   <section class="hero">
-    <h1>{SITE_NAME} <span lang="bn">সেবা</span></h1>
+    <h1>
+      <span lang="bn">সরকারি সব ডিজিটাল সেবা</span> Bangladesh Gov Digital Services
+    </h1>
     <p>{SITE_TAGLINE}</p>
   </section>
   <InstantDirectory

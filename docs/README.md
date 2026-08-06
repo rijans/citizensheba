@@ -22,6 +22,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | Doc | Topic |
 |-----|--------|
 | [guides/agent-workflow.md](guides/agent-workflow.md) | Stop-and-ask, patterns, parallel sessions, finalization |
+| [guides/display-names.md](guides/display-names.md) | Display Name table + planned Name Aliases |
 | [guides/frontend.md](guides/frontend.md) | Cards, chips, Mobile-First, tokens |
 | [guides/performance.md](guides/performance.md) | Islands, SSG, analytics weight |
 
@@ -33,6 +34,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [0002](adr/0002-agent-llms-txt-and-ai-usage-signals.md) | `/llms.txt` + AI usage / robots signals |
 | [0003](adr/0003-bilingual-document-title-and-meta-description.md) | BN→EN Document Title / Meta Description |
 | [0004](adr/0004-category-icons-and-service-cards.md) | Lucide Category Icons + shared Service cards |
+| [0005](adr/0005-display-name-casing.md) | Display Name casing vs official sites |
 
 ## Ops
 

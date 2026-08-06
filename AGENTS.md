@@ -61,6 +61,7 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 - Services: `src/content/services/*.md` — required `title_bn`, `description_bn`, `bd-` slug, FAQ 3–5, `last_verified`
 - Categories: `src/content/categories/*.yaml` — required `name_bn`, `description_bn`
 - Prefer English public slugs with `bd-` prefix for services
+- **Display Name** casing: curated (not blind official typography) — ADR-0005, Trap #12, living table [`docs/guides/display-names.md`](docs/guides/display-names.md); examples A2I, myGov, lowercase `e-`
 - Cross-file refs: `tests/unit/content-integrity.test.ts` (category / related ids)
 
 ## Deploy smoke

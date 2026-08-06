@@ -30,6 +30,14 @@ _Avoid_: Portal (ambiguous with government portals), Gateway, Hub (marketing-onl
 A single discoverable digital offering citizens can open on an external official site (e.g. NID, e-Passport, Railway e-Ticket).
 _Avoid_: Portal, App, Link, Listing (alone)
 
+**Display Name**:
+CitizenSheba’s curated visible casing for a Service’s English name. Stored in the Service `title` and used consistently in every English mention in that Service’s content (description, audience, FAQ). May correct nonstandard casing on the official site; Outbound Link hostnames and path casing stay exact as published. Clear cases use editorial judgment; stylized or conflicting brands escalate to a human decision. House style: lowercase `e-` for electronic-service prefixes (e.g. e-Passport, e-Namjari, e-TIN); ALL CAPS for letter/digit government acronyms (e.g. A2I, BRTA, NID); preserve known camelCase product brands (e.g. myGov). Decided brands are listed in `docs/guides/display-names.md` alongside the Service `title`.
+_Avoid_: Blindly copying homepage typography, rewriting official domains to match Display Name, mismatched casing between title and body, silent “corrections” when official branding is stylized or disputed, mixed `E-` / `e-` for the same pattern, Title-casing acronyms (`A2i`, `Brta`)
+
+**Name Alias** (planned):
+An alternate, former, or informal EN/BN name citizens use for a Service that is not the Display Name — for search and discovery when government wording overlaps or changes. Will live in a dedicated Service content field (not `tags`). Not a second public title.
+_Avoid_: Treating aliases as the Display Name, stuffing aliases into `tags`, inventing ad hoc parallel lists outside content schema
+
 **Category**:
 A grouping of related Services used for browsing and filtering (e.g. Identity & Registration, Tax & Finance).
 _Avoid_: Tag, Topic, Section

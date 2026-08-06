@@ -1,4 +1,4 @@
-import { useMemo, useState, type CSSProperties } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
 import { filterAndSort, type SearchableService } from '../../lib/search';
 import { categoryPath, servicePath } from '../../lib/urls';
 import { accentStyle } from '../../lib/categoryVisuals';
@@ -21,6 +21,8 @@ interface Props {
   initialCategoryId: string | null;
 }
 
+const SEARCH_PLACEHOLDER = 'সেবা খুঁজুন… Search services…';
+
 export default function InstantDirectory({
   categories,
   services,
@@ -28,6 +30,8 @@ export default function InstantDirectory({
 }: Props) {
   const [query, setQuery] = useState('');
   const [categoryId, setCategoryId] = useState<string | null>(initialCategoryId);
+  const [chipOverflow, setChipOverflow] = useState({ left: false, right: false });
+  const chipsRef = useRef<HTMLDivElement>(null);
 
   const results = useMemo(
     () => filterAndSort(services, query, categoryId),
@@ -45,6 +49,30 @@ export default function InstantDirectory({
 
   const hasFilters = query.trim().length > 0 || categoryId !== null;
 
+  const updateChipOverflow = useCallback(() => {
+    const el = chipsRef.current;
+    if (!el) return;
+    const maxScroll = el.scrollWidth - el.clientWidth;
+    const left = el.scrollLeft > 2;
+    const right = maxScroll > 2 && el.scrollLeft < maxScroll - 2;
+    setChipOverflow((prev) =>
+      prev.left === left && prev.right === right ? prev : { left, right },
+    );
+  }, []);
+
+  useEffect(() => {
+    const el = chipsRef.current;
+    if (!el) return;
+    updateChipOverflow();
+    const ro = new ResizeObserver(updateChipOverflow);
+    ro.observe(el);
+    window.addEventListener('resize', updateChipOverflow);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener('resize', updateChipOverflow);
+    };
+  }, [categories, updateChipOverflow]);
+
   const clearAll = () => {
     setQuery('');
     setCategoryId(null);
@@ -53,11 +81,19 @@ export default function InstantDirectory({
   const countLabel =
     results.length === 1 ? '1 service' : `${results.length} services`;
 
+  const chipsWrapClass = [
+    'directory-chips-wrap',
+    chipOverflow.left ? 'directory-chips-wrap--left' : '',
+    chipOverflow.right ? 'directory-chips-wrap--right' : '',
+  ]
+    .filter(Boolean)
+    .join(' ');
+
   return (
     <div className="directory">
       <div className="directory-search">
         <label className="sr-only" htmlFor="directory-query">
-          Search services
+          {SEARCH_PLACEHOLDER}
         </label>
         <svg
           className="directory-search__icon"
@@ -78,7 +114,7 @@ export default function InstantDirectory({
           id="directory-query"
           className="directory-search__input"
           type="search"
-          placeholder="Search services…"
+          placeholder={SEARCH_PLACEHOLDER}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           autoComplete="off"
@@ -108,30 +144,38 @@ export default function InstantDirectory({
         )}
       </div>
 
-      <div className="directory-chips" role="group" aria-label="Filter by category">
-        <button
-          type="button"
-          className={`directory-chip${categoryId === null ? ' directory-chip--active' : ''}`}
-          onClick={() => setCategoryId(null)}
+      <div className={chipsWrapClass}>
+        <div
+          ref={chipsRef}
+          className="directory-chips"
+          role="group"
+          aria-label="Filter by category"
+          onScroll={updateChipOverflow}
         >
-          <LayoutGrid size={16} strokeWidth={2} aria-hidden="true" />
-          All
-        </button>
-        {categories.map((cat) => {
-          const style = accentStyle(cat.id) as CSSProperties;
-          return (
-            <button
-              key={cat.id}
-              type="button"
-              className={`directory-chip${categoryId === cat.id ? ' directory-chip--active' : ''}`}
-              style={style}
-              onClick={() => setCategoryId(cat.id)}
-            >
-              <CategoryIcon icon={cat.icon} categoryId={cat.id} inheritAccent size={16} />
-              {cat.name}
-            </button>
-          );
-        })}
+          <button
+            type="button"
+            className={`directory-chip${categoryId === null ? ' directory-chip--active' : ''}`}
+            onClick={() => setCategoryId(null)}
+          >
+            <LayoutGrid size={16} strokeWidth={2} aria-hidden="true" />
+            All
+          </button>
+          {categories.map((cat) => {
+            const style = accentStyle(cat.id) as CSSProperties;
+            return (
+              <button
+                key={cat.id}
+                type="button"
+                className={`directory-chip${categoryId === cat.id ? ' directory-chip--active' : ''}`}
+                style={style}
+                onClick={() => setCategoryId(cat.id)}
+              >
+                <CategoryIcon icon={cat.icon} categoryId={cat.id} inheritAccent size={16} />
+                {cat.name}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       <div className="directory-toolbar">

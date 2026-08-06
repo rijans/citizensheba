@@ -17,6 +17,7 @@ No drive-by architecture refactors mid-task.
 - Business/product meaning is unclear after Tier 0 + matching INDEX rows
 - The request contradicts code, tests, ADRs, or a trap
 - Two interpretations would change user-visible or SEO behavior
+- **Display Name** casing is stylized or conflicts with house rules (ADR-0005 / `docs/guides/display-names.md`) — clear acronym/`e-` fixes may proceed; ask on disputed brands, then update the display-names table
 
 **Mid-task — pause** if you find:
 
