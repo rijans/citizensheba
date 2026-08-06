@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 :root {
-  --header-height: 3.75rem;
+  --header-height: 4.75rem;
 
   --bg: #f1f5f2;
   --surface: #ffffff;
@@ -16,7 +16,7 @@
   --green-hover: #0b7f5f;
   --green-soft: rgba(0, 106, 78, 0.1);
   --red: #f42a41;
-  --header-bg: rgba(241, 245, 242, 0.82);
+  --header-bg: #f1f5f2;
   --shadow: 0 12px 30px -14px rgba(16, 42, 34, 0.22);
 
   color-scheme: light;
@@ -35,7 +35,7 @@ html[data-theme="dark"] {
   --green-hover: #4ae4b1;
   --green-soft: rgba(53, 214, 160, 0.12);
   --red: #ff4d5e;
-  --header-bg: rgba(10, 20, 17, 0.78);
+  --header-bg: #0a1411;
   --shadow: 0 16px 36px -16px rgba(0, 0, 0, 0.6);
 
   color-scheme: dark;
@@ -111,8 +111,6 @@ a {
   height: var(--header-height);
   border-bottom: 1px solid var(--border);
   background: var(--header-bg);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
 }
 
 .site-header__inner {
@@ -125,13 +123,13 @@ a {
 .site-brand {
   display: flex;
   align-items: center;
-  gap: 0.625rem;
+  gap: 0.75rem;
   min-width: 0;
 }
 
 .site-brand__logo {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.25rem;
+  height: 3.25rem;
   flex-shrink: 0;
   border-radius: 50%;
   object-fit: contain;
@@ -146,7 +144,7 @@ a {
 
 .site-brand__name {
   font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
-  font-size: 1.3125rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -159,7 +157,7 @@ a {
 
 .site-brand__tld {
   margin-left: 0.06em;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--ink-subtle);
@@ -167,7 +165,7 @@ a {
 }
 
 .site-brand__bn {
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   color: var(--ink-subtle);
   line-height: 1.2;
 }
@@ -181,8 +179,8 @@ a {
 .theme-toggle {
   display: grid;
   place-items: center;
-  width: 2.375rem;
-  height: 2.375rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border: 1px solid var(--border-strong);
   border-radius: 0.75rem;
   background: var(--surface);
