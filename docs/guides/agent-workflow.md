@@ -50,10 +50,11 @@ Git has no “session.” Two agent chats on one worktree overwrite each other.
 Before calling a task done:
 
 1. `npm run ci` (or at least the checks that cover your change).
-2. Docs: update the **owner** layer — glossary → `CONTEXT.md`; decision → ADR; ops → `docs/ops/`; routing → `INDEX.md`; new pitfall → `TRAPS.md`.
-3. Content edits: ensure integrity tests still pass (`tests/unit/content-integrity.test.ts`).
-4. Do not leave product decisions only in chat.
+2. UI / CSS / visual content work: **should** verify with `npm run dev` ([local-dev.md](../ops/local-dev.md)).
+3. Docs: update the **owner** layer — glossary → `CONTEXT.md`; decision → ADR; ops → `docs/ops/`; routing → `INDEX.md`; new pitfall → `TRAPS.md`.
+4. Content edits: ensure integrity tests still pass (`tests/unit/content-integrity.test.ts`).
+5. Do not leave product decisions only in chat.
 
 ## Related
 
-- `AGENTS.md`, `docs/agent/INDEX.md`, `docs/specs/TRAPS.md`, `docs/specs/DOC_ARCHITECTURE.md`
+- `AGENTS.md`, `docs/agent/INDEX.md`, `docs/specs/TRAPS.md`, `docs/specs/DOC_ARCHITECTURE.md`, `docs/ops/local-dev.md`

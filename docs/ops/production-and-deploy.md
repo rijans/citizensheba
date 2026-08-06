@@ -18,6 +18,10 @@ This is **not** a classic Cloudflare Pages Git auto-build unless someone later e
 
 Do **not** run `astro add cloudflare` (Trap #1). Do **not** assume `git push origin main` alone updates the live Worker.
 
+## Before production
+
+Use [`local-dev.md`](local-dev.md) (`npm run dev`) to live-check UI/content on localhost. Use `npm run ci` before commit/push. Then deploy only with approval (below).
+
 ## Deployment cycle
 
 ```text
