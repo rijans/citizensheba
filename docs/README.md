@@ -50,4 +50,5 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | Doc | Topic |
 |-----|--------|
 | [specs/…-design.md](superpowers/specs/2026-08-06-bd-digital-services-directory-design.md) | v1 product design |
+| [specs/…-name-aliases-design.md](superpowers/specs/2026-08-07-name-aliases-design.md) | Name Aliases (typed field, search, former line) |
 | [plans/…-directory.md](superpowers/plans/2026-08-06-bd-digital-services-directory.md) | v1 implementation plan |
