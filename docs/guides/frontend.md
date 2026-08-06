@@ -14,7 +14,7 @@
 
 - Design phone-first: sticky search/chips must not push the directory below the fold.
 - Chips: horizontal scroll OK; do **not** use `translateY` hover lifts inside `overflow-x` scrollports (Trap #6).
-- Touch targets: chips ~2.25rem height; search field ~3.25rem.
+- Touch targets: chips ~2.375rem height; search field ~3.25rem.
 - Prefer CSS variables from `:root` / `[data-theme="dark"]` over one-off hex in components.
 
 ## Components
@@ -29,7 +29,9 @@
 ## Typography & tokens
 
 - Display: Bricolage Grotesque; body/BN: Hind Siliguri (see `global.css`).
-- Prefer existing utility classes / CSS modules already in `global.css` over ad-hoc pixel font sizes scattered in JSX.
+- Body base stays **16px** (industry default). Hero/header largely unchanged.
+- **Directory / card scale (modest, post-NID compare):** card title `1.0625rem`, BN `0.875rem`, description `0.9375rem`, domain `0.8125rem`; Category Icon well `2.5rem` / glyph ~20px; chips `0.875rem` with ~`1.375rem` icon wells.
+- Prefer existing classes in `global.css` over ad-hoc pixel sizes in JSX.
 - Dark theme: keep contrast; accent soft tints must remain readable on `--surface`.
 
 ## Content → UI

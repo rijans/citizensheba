@@ -114,7 +114,7 @@ export default function InstantDirectory({
           className={`directory-chip${categoryId === null ? ' directory-chip--active' : ''}`}
           onClick={() => setCategoryId(null)}
         >
-          <LayoutGrid size={15} strokeWidth={2} aria-hidden="true" />
+          <LayoutGrid size={16} strokeWidth={2} aria-hidden="true" />
           All
         </button>
         {categories.map((cat) => {
@@ -127,7 +127,7 @@ export default function InstantDirectory({
               style={style}
               onClick={() => setCategoryId(cat.id)}
             >
-              <CategoryIcon icon={cat.icon} categoryId={cat.id} inheritAccent size={15} />
+              <CategoryIcon icon={cat.icon} categoryId={cat.id} inheritAccent size={16} />
               {cat.name}
             </button>
           );
