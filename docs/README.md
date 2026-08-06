@@ -49,6 +49,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [ops/production-and-deploy.md](ops/production-and-deploy.md) | Production URLs, deploy cycle, auth, live smoke checks |
 | [ops/web-analytics.md](ops/web-analytics.md) | Cloudflare Web Analytics |
 | [ops/search-console.md](ops/search-console.md) | Google Search Console |
+| [ops/service-catalog-backlog.md](ops/service-catalog-backlog.md) | Catalog Backlog — candidates vs shipped (priority waves) |
 
 ## History (superpowers)
 
@@ -56,4 +57,5 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 |-----|--------|
 | [specs/…-design.md](superpowers/specs/2026-08-06-bd-digital-services-directory-design.md) | v1 product design |
 | [specs/…-name-aliases-design.md](superpowers/specs/2026-08-07-name-aliases-design.md) | Name Aliases (typed field, search, former line) |
+| [specs/…-priority-wave-design.md](superpowers/specs/2026-08-07-official-services-priority-wave-design.md) | Official Services priority wave + Catalog Backlog |
 | [plans/…-directory.md](superpowers/plans/2026-08-06-bd-digital-services-directory.md) | v1 implementation plan |
