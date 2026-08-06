@@ -495,7 +495,10 @@ html[data-theme="dark"] .status-badge--maintenance {
   display: flex;
   gap: 0.5rem;
   overflow-x: auto;
-  padding-bottom: 0.25rem;
+  /* Vertical padding so hover borders aren't clipped by overflow-x scrollport */
+  padding-block: 0.25rem;
+  padding-inline: 1px;
+  margin-block: -0.25rem;
   scrollbar-width: none;
 }
 
@@ -513,6 +516,7 @@ html[data-theme="dark"] .status-badge--maintenance {
   gap: 0.375rem;
   flex-shrink: 0;
   height: 2.25rem;
+  box-sizing: border-box;
   padding: 0 0.875rem;
   border: 1.5px solid var(--border);
   border-radius: 999px;
@@ -525,8 +529,7 @@ html[data-theme="dark"] .status-badge--maintenance {
   transition:
     border-color 0.18s ease,
     color 0.18s ease,
-    background 0.18s ease,
-    transform 0.18s ease;
+    background 0.18s ease;
 }
 
 .directory-chip .category-icon {
@@ -540,7 +543,6 @@ html[data-theme="dark"] .status-badge--maintenance {
 .directory-chip:hover {
   border-color: var(--cat-accent, var(--border-strong));
   color: var(--ink);
-  transform: translateY(-1px);
 }
 
 .directory-chip--active {
