@@ -9,6 +9,19 @@ url: https://services.nidw.gov.bd/nid-pub/
 official_domain: services.nidw.gov.bd
 category: identity
 tags: [nid, voter, identity, smart card, পরিচয়পত্র]
+aliases:
+  - name: National ID
+    lang: en
+    kind: alt
+  - name: national identity card
+    lang: en
+    kind: alt
+  - name: এনআইডি
+    lang: bn
+    kind: alt
+  - name: স্মার্ট কার্ড
+    lang: bn
+    kind: informal
 status: ACTIVE
 audience: Bangladeshi citizens who need to register, correct, or download a National ID.
 faq:

@@ -19,6 +19,12 @@ aliases:
   - name: Dakhila
     lang: en
     kind: alt
+  - name: দাখিলা
+    lang: bn
+    kind: alt
+  - name: land tax
+    lang: en
+    kind: alt
 status: ACTIVE
 audience: Landowners paying land development tax and obtaining digital receipts.
 faq:

@@ -9,6 +9,19 @@ url: https://bsp.brta.gov.bd/
 official_domain: bsp.brta.gov.bd
 category: transport
 tags: [driving licence, license, vehicle, brta, লাইসেন্স]
+aliases:
+  - name: driving license
+    lang: en
+    kind: alt
+  - name: vehicle registration
+    lang: en
+    kind: alt
+  - name: BSP
+    lang: en
+    kind: alt
+  - name: ড্রাইভিং লাইসেন্স
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: Drivers and vehicle owners applying for licenses, registration, and transport fees.
 faq:

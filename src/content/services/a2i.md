@@ -13,6 +13,9 @@ aliases:
   - name: Aspire to Innovate
     lang: en
     kind: alt
+  - name: a2i
+    lang: en
+    kind: informal
 status: ACTIVE
 audience: Citizens, innovators, and partners exploring official digital government initiatives from A2I.
 faq:

@@ -64,15 +64,13 @@ aliases:
 - Slugs stay stable when government renames; add a `former` alias for the old label.
 - SERP Document Title / Meta Description do not include aliases in v1.
 
-### Seeded examples (first ship)
+### High-traffic alias coverage (ADR-0007)
 
-| id | aliases |
-|----|---------|
-| `a2i` | Aspire to Innovate (`alt`) |
-| `epassport` | MRP, Machine Readable Passport (`alt`) |
-| `ldtax` | khajna, খাজনা (`informal`); Dakhila (`alt`) |
-| `bdris` | birth registration, death registration (`alt`) |
-| `surokkha` | vaccine certificate (`alt`); COVID vaccine (`informal`) |
+Priority Services for EN+BN+romanization aliases: NID, e-Passport, myGov, A2I, e-Namjari, LD Tax, BDRIS, Railway, e-Return, BRTA. Remaining Services follow later.
+
+### Search Variants (global)
+
+Spelling twins live in `src/lib/search.ts` (`SEARCH_VARIANT_GROUPS`) — e.g. licence/license. Not per-Service; do not put `khajna` / `porcha` there (use aliases).
 
 ## Related
 

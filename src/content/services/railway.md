@@ -9,6 +9,19 @@ url: https://eticket.railway.gov.bd/
 official_domain: eticket.railway.gov.bd
 category: transport
 tags: [train, ticket, rail, ট্রেন, টিকিট]
+aliases:
+  - name: train ticket
+    lang: en
+    kind: alt
+  - name: railway ticket
+    lang: en
+    kind: alt
+  - name: eticket
+    lang: en
+    kind: informal
+  - name: রেল টিকিট
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: Train travelers booking intercity tickets and checking schedules in Bangladesh.
 faq:

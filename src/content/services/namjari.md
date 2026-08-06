@@ -9,6 +9,19 @@ url: https://mutation.land.gov.bd/
 official_domain: mutation.land.gov.bd
 category: land
 tags: [mutation, namjari, নামজারি]
+aliases:
+  - name: namjari
+    lang: en
+    kind: informal
+  - name: land mutation
+    lang: en
+    kind: alt
+  - name: মিউটেশন
+    lang: bn
+    kind: alt
+  - name: নামজারি
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: Property buyers and landowners processing land mutation applications.
 faq:

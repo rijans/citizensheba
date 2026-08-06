@@ -16,6 +16,15 @@ aliases:
   - name: death registration
     lang: en
     kind: alt
+  - name: birth certificate
+    lang: en
+    kind: alt
+  - name: জন্ম নিবন্ধন
+    lang: bn
+    kind: alt
+  - name: মৃত্যু নিবন্ধন
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: Parents, guardians, and families who need birth or death certificates.
 faq:

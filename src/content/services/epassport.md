@@ -16,6 +16,12 @@ aliases:
   - name: Machine Readable Passport
     lang: en
     kind: alt
+  - name: passport
+    lang: en
+    kind: informal
+  - name: পাসপোর্ট
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: Bangladeshi citizens applying for or renewing passports and MRPs.
 faq:

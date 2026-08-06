@@ -9,6 +9,19 @@ url: https://etaxnbr.gov.bd/
 official_domain: etaxnbr.gov.bd
 category: tax
 tags: [return, tax, income tax, nbr, আয়কর]
+aliases:
+  - name: income tax return
+    lang: en
+    kind: alt
+  - name: tax return
+    lang: en
+    kind: alt
+  - name: NBR return
+    lang: en
+    kind: informal
+  - name: আয়কর রিটার্ন
+    lang: bn
+    kind: alt
 status: ACTIVE
 audience: Taxpayers filing annual income tax returns with the National Board of Revenue.
 faq:

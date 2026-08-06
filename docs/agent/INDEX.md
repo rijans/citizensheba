@@ -39,6 +39,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | add/move docs, AGENTS layout, Cursor rules | `docs/specs/DOC_ARCHITECTURE.md` |
 | content catalog, service md, category yaml, FAQ, `bd-` slug, related | `CONTEXT.md`, `src/content.config.ts`, `tests/unit/content-integrity.test.ts`, Trap #11 |
 | Display Name, title casing, a2i, A2I, myGov, e-Namjari, official typography, Name Alias, synonym, former name, aliases | ADR-0005, ADR-0006, `docs/guides/display-names.md`, `CONTEXT.md` (Display Name, Name Alias), Trap #12–#13, `src/content/services/*.md`, `src/lib/search.ts` |
+| Instant Directory search, bilingual search, romanization, Search Variant, description_bn, relatedTitles | ADR-0007, `src/lib/search.ts`, `src/lib/buildSearchIndex.ts`, `CONTEXT.md` (Instant Directory, Search Variant), `tests/unit/search.test.ts` |
 | Official catalog, MFS, bank, doorway | `AGENTS.md` do-nots, Traps #8–#9 |
 | `_headers` | Trap #2, `public/_headers` if present |
 | v1 product intent, Guides future, hop-first | `docs/superpowers/specs/2026-08-06-bd-digital-services-directory-design.md` |
@@ -77,3 +78,4 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | 0004 Category Icons / cards | `docs/adr/0004-category-icons-and-service-cards.md` |
 | 0005 Display Name casing | `docs/adr/0005-display-name-casing.md` |
 | 0006 Name Aliases | `docs/adr/0006-name-aliases.md` |
+| 0007 Bilingual Directory search | `docs/adr/0007-bilingual-directory-search.md` |

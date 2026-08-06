@@ -9,6 +9,16 @@ url: https://www.mygov.bd/
 official_domain: mygov.bd
 category: central
 tags: [mygov, one stop, central, সেবা]
+aliases:
+  - name: Amar Shorkar
+    lang: en
+    kind: alt
+  - name: আমার সরকার
+    lang: bn
+    kind: alt
+  - name: My Government
+    lang: en
+    kind: informal
 status: ACTIVE
 audience: Citizens, businesses, and government users seeking integrated digital government services.
 faq:

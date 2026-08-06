@@ -1,0 +1,3 @@
+# Bilingual Instant Directory search
+
+Citizens discover Services with EN, BN, former names, related terms, and Latin romanizations of Bangla. We keep client-side Instant Directory scoring, give `title_bn` the same rank band as EN `title`, search `description_bn`, attach related Services’ Display Names at a lower weight, and add light normalization plus a small global **Search Variant** map (spelling twins like licence/license). Service-specific romanizations and synonyms stay in **Name Aliases** (ADR-0006). We rejected a full BN↔Latin transliteration library (noisy + heavy) and deferred typo edit-distance until real miss queries justify it.

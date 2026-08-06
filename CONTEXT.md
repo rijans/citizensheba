@@ -35,8 +35,12 @@ CitizenSheba’s curated visible casing for a Service’s English name. Stored i
 _Avoid_: Blindly copying homepage typography, rewriting official domains to match Display Name, mismatched casing between title and body, silent “corrections” when official branding is stylized or disputed, mixed `E-` / `e-` for the same pattern, Title-casing acronyms (`A2i`, `Brta`)
 
 **Name Alias**:
-An alternate, former, or informal EN/BN name citizens use for a Service that is not the Display Name. Stored in optional Service `aliases` (`name`, optional `lang`, optional `kind`: `former` | `informal` | `alt`). All kinds match Instant Directory search; only `former` appears as a muted “Formerly …” line on the Service Page. Not a second public title; does not change the Service Slug.
-_Avoid_: Treating aliases as the Display Name, stuffing aliases only into `tags`, renaming slugs when government wording changes, putting aliases into Document Title / Meta Description (v1)
+An alternate, former, or informal EN/BN name citizens use for a Service that is not the Display Name. Stored in optional Service `aliases` (`name`, optional `lang`, optional `kind`: `former` | `informal` | `alt`). All kinds match Instant Directory search; only `former` appears as a muted “Formerly …” line on the Service Page. Includes common Latin romanizations of Bangla terms when curated. Not a second public title; does not change the Service Slug.
+_Avoid_: Treating aliases as the Display Name, stuffing aliases only into `tags`, renaming slugs when government wording changes, putting aliases into Document Title / Meta Description (v1), relying on a full transliteration library as the only romanization strategy, putting Service-specific romanizations only in the global Search Variant map
+
+**Search Variant**:
+A global, Service-agnostic spelling twin used by Instant Directory normalization (e.g. licence/license, e-passport/epassport). Not a Name Alias and not Service-specific.
+_Avoid_: Stuffing per-Service nicknames into the variant map, full transliteration dictionaries as the variant map
 
 **Category**:
 A grouping of related Services used for browsing and filtering (e.g. Identity & Registration, Tax & Finance).
@@ -91,8 +95,8 @@ Git-managed structured content (Markdown/JSON/YAML in repo) is the source of tru
 _Avoid_: Database-backed admin as a v1 requirement
 
 **Instant Directory**:
-Home provides client-side fuzzy search and instant Category filtering without full page reloads (POC-parity UX). Service cards show Category Icon (with soft accent), title / title_bn, short description, official domain, and status when not ACTIVE. The same Service card visual language is shared on Category Pages and related Services on Service Pages. Instant Directory shows a live result count and a clear empty state when nothing matches. Service Pages and Category Pages remain statically generated HTML for SEO and agents.
-_Avoid_: Server-roundtrip search as the primary Home UX (v1), emoji-first cards, stuffing Category name + domain + status + last-verified onto every card, divergent card UIs per surface
+Home provides client-side fuzzy search and instant Category filtering without full page reloads (POC-parity UX). Search aims to match EN and BN Display Names, Name Aliases (including former and related terms), curated Latin romanizations, and (at a lower weight) related Services’ Display Names (`title` / `title_bn` from explicit related or same-category fallback), with light query/index normalization and a small shared variant map — not a full transliteration library or typo engine by default. `title_bn` ranks with EN title parity; `description_bn` is searchable like EN description. Service cards show Category Icon (with soft accent), title / title_bn, short description, official domain, and status when not ACTIVE. The same Service card visual language is shared on Category Pages and related Services on Service Pages. Instant Directory shows a live result count and a clear empty state when nothing matches. Service Pages and Category Pages remain statically generated HTML for SEO and agents.
+_Avoid_: Server-roundtrip search as the primary Home UX (v1), emoji-first cards, stuffing Category name + domain + status + last-verified onto every card, divergent card UIs per surface, depending on automatic BN↔Latin transliteration alone for discovery, ranking related-Service title hits as strongly as the Service’s own Display Name
 
 **Installable Shell**:
 v1 ships a web app manifest and icons so users can Add to Home Screen. No service-worker offline cache of the Directory as a v1 goal.

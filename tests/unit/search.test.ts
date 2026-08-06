@@ -1,35 +1,73 @@
 import { describe, expect, it } from 'vitest';
-import { filterAndSort, scoreService, type SearchableService } from '../../src/lib/search';
+import {
+  filterAndSort,
+  normalizeSearchText,
+  scoreService,
+  type SearchableService,
+} from '../../src/lib/search';
+
+const base = {
+  categoryName: 'Identity & Registration',
+  categoryNameBn: 'পরিচয় ও নিবন্ধন',
+  domain: 'example.gov.bd',
+  status: 'ACTIVE' as const,
+  descriptionBn: '',
+  relatedTitles: [] as string[],
+};
 
 const nid: SearchableService = {
+  ...base,
   id: 'nid',
   slug: 'bd-nid',
   categoryId: 'identity',
   title: 'NID Services',
   titleBn: 'জাতীয় পরিচয়পত্র',
   description: 'New voter registration and NID corrections.',
+  descriptionBn: 'নতুন ভোটার নিবন্ধন এবং এনআইডি সংশোধন',
   tags: ['nid', 'voter', 'identity', 'পরিচয়পত্র'],
-  aliases: [],
-  categoryName: 'Identity & Registration',
-  categoryNameBn: 'পরিচয় ও নিবন্ধন',
+  aliases: ['national identity card', 'এনআইডি'],
   domain: 'services.nidw.gov.bd',
-  status: 'ACTIVE',
 };
 
 const passport: SearchableService = {
+  ...base,
   id: 'passport',
   slug: 'bd-passport',
   categoryId: 'travel',
-  title: 'Passport Services',
-  titleBn: 'পাসপোর্ট',
+  title: 'e-Passport Portal',
+  titleBn: 'ই-পাসপোর্ট',
   description: 'Apply for passport.',
+  descriptionBn: 'পাসপোর্ট আবেদন',
   tags: ['passport', 'travel'],
   aliases: ['Machine Readable Passport', 'MRP'],
+  relatedTitles: ['NID Services', 'জাতীয় পরিচয়পত্র'],
   categoryName: 'Travel',
   categoryNameBn: 'ভ্রমণ',
-  domain: 'passport.gov.bd',
-  status: 'ACTIVE',
+  domain: 'epassport.gov.bd',
 };
+
+const brta: SearchableService = {
+  ...base,
+  id: 'brta',
+  slug: 'bd-brta',
+  categoryId: 'transport',
+  title: 'BRTA Service Portal (BSP)',
+  titleBn: 'বিআরটিএ সেবা',
+  description: 'Driving licences and vehicles.',
+  descriptionBn: 'ড্রাইভিং লাইসেন্স',
+  tags: ['driving licence', 'vehicle'],
+  aliases: [],
+  categoryName: 'Transport',
+  categoryNameBn: 'পরিবহন',
+  domain: 'bsp.brta.gov.bd',
+};
+
+describe('normalizeSearchText', () => {
+  it('folds hyphens and punctuation', () => {
+    expect(normalizeSearchText('e-Passport')).toBe('epassport');
+    expect(normalizeSearchText('N.I.D.')).toBe('nid');
+  });
+});
 
 describe('scoreService', () => {
   it('returns 0 for empty query', () => {
@@ -40,13 +78,32 @@ describe('scoreService', () => {
     expect(scoreService(nid, 'nid')).toBeGreaterThan(80);
   });
 
-  it('matches Bengali tags', () => {
-    expect(scoreService(nid, 'পরিচয়পত্র')).toBeGreaterThan(0);
+  it('ranks Bengali title like English title', () => {
+    expect(scoreService(nid, 'জাতীয়')).toBeGreaterThan(80);
   });
 
-  it('matches Name Alias strings in the tags score band', () => {
+  it('matches description_bn', () => {
+    expect(scoreService(nid, 'ভোটার')).toBeGreaterThan(0);
+  });
+
+  it('matches Name Alias strings', () => {
     expect(scoreService(passport, 'Machine Readable Passport')).toBeGreaterThan(0);
     expect(scoreService(passport, 'MRP')).toBeGreaterThan(60);
+  });
+
+  it('matches Search Variants (licence ↔ license)', () => {
+    expect(scoreService(brta, 'license')).toBeGreaterThan(0);
+  });
+
+  it('matches related titles at a lower band than own title', () => {
+    const relatedHit = scoreService(passport, 'জাতীয় পরিচয়পত্র');
+    const ownTitle = scoreService(nid, 'জাতীয় পরিচয়পত্র');
+    expect(relatedHit).toBeGreaterThan(0);
+    expect(ownTitle).toBeGreaterThan(relatedHit);
+  });
+
+  it('returns -1 when a token matches nothing', () => {
+    expect(scoreService(nid, 'passport xyzzy')).toBe(-1);
   });
 });
 
