@@ -29,18 +29,18 @@ export default function ServiceCard({
     <a className="service-card" href={href} style={style}>
       <div className="service-card__top">
         <CategoryIcon icon={icon} categoryId={categoryId} inheritAccent size={18} />
+        <div className="service-card__titles">
+          <h3 className="service-card__title">{title}</h3>
+          <p className="service-card__title-bn" lang="bn">
+            {titleBn}
+          </p>
+        </div>
         {status !== 'ACTIVE' && (
           <span className={`status-badge status-badge--${status.toLowerCase()}`}>
             {status === 'MAINTENANCE' ? 'Maintenance' : 'Deprecated'}
           </span>
         )}
       </div>
-      <div className="service-card__header">
-        <h3 className="service-card__title">{title}</h3>
-      </div>
-      <p className="service-card__title-bn" lang="bn">
-        {titleBn}
-      </p>
       <p className="service-card__description">{description}</p>
       <p className="service-card__domain">{domain}</p>
     </a>

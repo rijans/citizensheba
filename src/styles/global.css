@@ -349,9 +349,13 @@ html[data-theme="dark"] .status-badge--maintenance {
 .service-card__top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  margin-bottom: 0.75rem;
+  gap: 0.75rem;
+  margin-bottom: 0;
+}
+
+.service-card__titles {
+  flex: 1;
+  min-width: 0;
 }
 
 .category-icon {
@@ -369,13 +373,6 @@ html[data-theme="dark"] .status-badge--maintenance {
   display: block;
 }
 
-.service-card__header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
-
 .service-card__title {
   margin: 0;
   font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
@@ -389,6 +386,7 @@ html[data-theme="dark"] .status-badge--maintenance {
   margin: 0.125rem 0 0;
   font-size: 0.8125rem;
   color: var(--ink-subtle);
+  line-height: 1.3;
 }
 
 .service-card__description {
