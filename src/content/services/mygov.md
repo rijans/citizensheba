@@ -4,6 +4,7 @@ slug: bd-mygov
 title: myGov
 title_bn: মাইগভ
 description: One-stop platform to access integrated government G2C, G2B, and G2G services.
+description_bn: জি২সি, জি২বি ও জি২জি সেবার জন্য বাংলাদেশ সরকারের সমন্বিত আমার সরকার পোর্টাল
 url: https://www.mygov.bd/
 official_domain: mygov.bd
 category: central
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: myGov Bangladesh — official portal link | CitizenSheba
-meta_description: Find the official myGov Bangladesh portal for integrated government G2C, G2B, and G2G services.
 ---

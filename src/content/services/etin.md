@@ -4,6 +4,7 @@ slug: bd-etin
 title: NBR e-TIN Registration
 title_bn: ই-টিআইএন
 description: Register for a new Taxpayer Identification Number (TIN) or manage existing ones.
+description_bn: জাতীয় রাজস্ব বোর্ডের মাধ্যমে করদাতা শনাক্তকরণ নম্বর (টিআইএন) নিবন্ধন বা ব্যবস্থাপনা করুন
 url: https://secure.incometax.gov.bd/
 official_domain: secure.incometax.gov.bd
 category: tax
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: e-TIN Bangladesh — NBR registration portal | CitizenSheba
-meta_description: Find the official NBR e-TIN portal to register or manage your Taxpayer Identification Number in Bangladesh.
 ---

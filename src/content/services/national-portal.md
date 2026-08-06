@@ -4,6 +4,7 @@ slug: bd-national-portal
 title: Bangladesh National Portal
 title_bn: জাতীয় তথ্য বাতায়ন
 description: The central gateway to all digital services and ministries of the Bangladesh government.
+description_bn: মন্ত্রণালয় ও ডিজিটাল সেবায় প্রবেশের বাংলাদেশ জাতীয় পোর্টাল
 url: https://bangladesh.gov.bd/
 official_domain: bangladesh.gov.bd
 category: central
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: Bangladesh National Portal — official link | CitizenSheba
-meta_description: Find the official Bangladesh National Portal gateway to government ministries and digital services.
 ---

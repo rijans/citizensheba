@@ -7,6 +7,7 @@ import StatusBadge from '../../components/service/StatusBadge.astro';
 import ServiceCardLink from '../../components/ui/ServiceCardLink.astro';
 import { categoryPath, servicePath, officialDomainFromUrl } from '../../lib/urls';
 import { REPORT_EMAIL } from '../../lib/site';
+import { documentTitle, metaDescription } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const services = await getCollection('services');
@@ -28,8 +29,8 @@ const relatedIds =
 const related = all.filter((s) => relatedIds.includes(s.data.id));
 
 const domain = service.data.official_domain ?? officialDomainFromUrl(service.data.url);
-const title = service.data.meta_title ?? `${service.data.title} (${service.data.title_bn}) | CitizenSheba`;
-const description = service.data.meta_description ?? service.data.description;
+const title = documentTitle(service.data.title_bn, service.data.title);
+const description = metaDescription(service.data.description_bn, service.data.description);
 const reportSubject = encodeURIComponent(`Report: ${service.data.slug}`);
 ---
 

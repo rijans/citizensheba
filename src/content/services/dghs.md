@@ -4,6 +4,7 @@ slug: bd-dghs
 title: DGHS
 title_bn: স্বাস্থ্য অধিদপ্তর
 description: Directorate General of Health Services portal for health programmes, information, and related services.
+description_bn: স্বাস্থ্য অধিদপ্তরের পোর্টাল—স্বাস্থ্য কর্মসূচি, তথ্য এবং সংশ্লিষ্ট সেবার জন্য
 url: https://dghs.gov.bd/
 official_domain: dghs.gov.bd
 category: health
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: DGHS Bangladesh — official health portal | CitizenSheba
-meta_description: Find the official Directorate General of Health Services (DGHS) portal for Bangladesh health information and services.
 ---

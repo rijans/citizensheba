@@ -4,6 +4,7 @@ slug: bd-ldtax
 title: Land Development Tax (LD Tax)
 title_bn: ভূমি উন্নয়ন কর
 description: Pay your land development tax online and receive digital Dakhila (receipts).
+description_bn: ভূমি উন্নয়ন কর পরিশোধ করুন এবং ডিজিটাল দাখিলা রসিদ নিন
 url: https://ldtax.gov.bd/
 official_domain: ldtax.gov.bd
 category: land
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: Land Development Tax Bangladesh — official portal | CitizenSheba
-meta_description: Find the official LD Tax portal to pay land development tax and get digital Dakhila receipts in Bangladesh.
 ---

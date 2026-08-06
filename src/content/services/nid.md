@@ -4,6 +4,7 @@ slug: bd-nid
 title: NID Services
 title_bn: জাতীয় পরিচয়পত্র
 description: Portal for new voter registration, NID correction, and downloading NID copies.
+description_bn: নতুন ভোটার নিবন্ধন, এনআইডি সংশোধন এবং এনআইডি কপি ডাউনলোডের অফিসিয়াল সেবা
 url: https://services.nidw.gov.bd/nid-pub/
 official_domain: services.nidw.gov.bd
 category: identity
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: NID Services Bangladesh — official portal link | CitizenSheba
-meta_description: Find the official Bangladesh NID services portal for registration, correction, and NID copy download.
 ---

@@ -10,10 +10,9 @@ const category = defineCollection({
     name: z.string(),
     name_bn: z.string(),
     description: z.string(),
+    description_bn: z.string(),
     icon: z.string(),
     sort_order: z.number().int(),
-    meta_title: z.string().optional(),
-    meta_description: z.string().optional(),
   }),
 });
 
@@ -27,6 +26,7 @@ const service = defineCollection({
     title: z.string(),
     title_bn: z.string(),
     description: z.string(),
+    description_bn: z.string(),
     url: z.string().url(),
     official_domain: z.string().optional(),
     category: z.string(),
@@ -36,8 +36,6 @@ const service = defineCollection({
     faq: z.array(faqItem).min(3).max(5),
     related: z.array(z.string()).optional(),
     last_verified: z.coerce.date(),
-    meta_title: z.string().optional(),
-    meta_description: z.string().optional(),
     logo: z.string().optional(),
   }),
 });

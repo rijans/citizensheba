@@ -4,6 +4,7 @@ slug: bd-namjari
 title: E-Namjari (Mutation)
 title_bn: ই-নামজারি
 description: Online portal for land mutation processing and application tracking.
+description_bn: ভূমি নামজারি (মিউটেশন) আবেদন ও ট্র্যাকিংয়ের অফিসিয়াল পোর্টাল
 url: https://mutation.land.gov.bd/
 official_domain: mutation.land.gov.bd
 category: land
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: E-Namjari Bangladesh — land mutation portal | CitizenSheba
-meta_description: Find the official E-Namjari portal for land mutation applications and tracking in Bangladesh.
 ---

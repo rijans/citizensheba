@@ -4,6 +4,7 @@ slug: bd-a2i
 title: a2i
 title_bn: এটুআই
 description: Aspire to Innovate (a2i) — the government’s digital innovation programme portal for citizen-centric digital services and initiatives.
+description_bn: নাগরিককেন্দ্রিক ডিজিটাল সেবা ও উদ্যোগের জন্য সরকারের ডিজিটাল উদ্ভাবন কর্মসূচি এটুআই (Aspire to Innovate) পোর্টাল
 url: https://a2i.gov.bd/
 official_domain: a2i.gov.bd
 category: central
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: a2i Bangladesh — Aspire to Innovate portal | CitizenSheba
-meta_description: Find the official a2i (Aspire to Innovate) portal for Bangladesh digital government initiatives.
 ---

@@ -4,6 +4,7 @@ slug: bd-ereturn
 title: e-Return (Online Tax Submission)
 title_bn: ই-রিটার্ন
 description: Submit your yearly income tax return online through the National Board of Revenue portal.
+description_bn: জাতীয় রাজস্ব বোর্ডের পোর্টালের মাধ্যমে বার্ষিক আয়কর রিটার্ন অনলাইনে জমা দিন
 url: https://etaxnbr.gov.bd/
 official_domain: etaxnbr.gov.bd
 category: tax
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: e-Return Bangladesh — online tax submission | CitizenSheba
-meta_description: Find the official NBR e-Return portal to submit your annual income tax return online in Bangladesh.
 ---

@@ -3,5 +3,6 @@ slug: transport-travel
 name: Transport & Travel
 name_bn: পরিবহন ও ভ্রমণ
 description: Driving licenses, vehicle registration, and train tickets.
+description_bn: ড্রাইভিং লাইসেন্স, যানবাহন নিবন্ধন ও ট্রেন টিকিট
 icon: car
 sort_order: 4

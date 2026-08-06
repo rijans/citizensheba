@@ -4,6 +4,7 @@ slug: bd-bdris
 title: Birth & Death Registration (BDRIS)
 title_bn: জন্ম ও মৃত্যু নিবন্ধন
 description: Apply for new birth/death certificates, track application status, and verify certificates online.
+description_bn: নতুন জন্ম/মৃত্যু সনদের আবেদন, আবেদনের অবস্থা ট্র্যাক এবং সনদ যাচাই অনলাইনে করুন
 url: https://bdris.gov.bd/
 official_domain: bdris.gov.bd
 category: identity
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: BDRIS Bangladesh — birth and death registration | CitizenSheba
-meta_description: Find the official BDRIS portal for birth and death certificate registration and verification in Bangladesh.
 ---

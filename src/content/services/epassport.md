@@ -4,6 +4,7 @@ slug: bd-epassport
 title: e-Passport Portal
 title_bn: ই-পাসপোর্ট
 description: Online application system for MRPs and e-Passports, including appointment booking.
+description_bn: এমআরপি ও ই-পাসপোর্টের অনলাইন আবেদন ব্যবস্থা, অ্যাপয়েন্টমেন্ট বুকিংসহ
 url: https://www.epassport.gov.bd/
 official_domain: epassport.gov.bd
 category: identity
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: e-Passport Bangladesh — official portal link | CitizenSheba
-meta_description: Find the official Bangladesh e-Passport portal for MRP and e-Passport applications and appointments.
 ---

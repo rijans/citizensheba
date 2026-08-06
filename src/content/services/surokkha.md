@@ -4,6 +4,7 @@ slug: bd-surokkha
 title: Surokkha
 title_bn: সুরক্ষা
 description: Vaccine registration, status checking, and certificate downloading platform.
+description_bn: টিকা নিবন্ধন, অবস্থা যাচাই এবং সনদ ডাউনলোডের সুরক্ষা পোর্টাল
 url: https://surokkha.gov.bd/
 official_domain: surokkha.gov.bd
 category: health
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: Surokkha Bangladesh — vaccine registration portal | CitizenSheba
-meta_description: Find the official Surokkha portal for vaccine registration, status checks, and certificate download in Bangladesh.
 ---

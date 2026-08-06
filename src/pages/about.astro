@@ -1,11 +1,20 @@
 ---
 import BaseLayout from '../components/layout/BaseLayout.astro';
-import { DISCLAIMER_SHORT, SITE_NAME, SITE_TAGLINE } from '../lib/site';
+import {
+  ABOUT_DESCRIPTION_BN,
+  ABOUT_DESCRIPTION_EN,
+  ABOUT_TITLE_BN,
+  ABOUT_TITLE_EN,
+  DISCLAIMER_SHORT,
+  SITE_NAME,
+  SITE_TAGLINE,
+} from '../lib/site';
+import { documentTitle, metaDescription } from '../lib/seo';
 ---
 
 <BaseLayout
-  title={`About ${SITE_NAME} — BD Digital Services Directory`}
-  description={SITE_TAGLINE}
+  title={documentTitle(ABOUT_TITLE_BN, ABOUT_TITLE_EN)}
+  description={metaDescription(ABOUT_DESCRIPTION_BN, ABOUT_DESCRIPTION_EN)}
   canonicalPath="/about"
 >
   <article class="content-page">

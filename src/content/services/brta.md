@@ -4,6 +4,7 @@ slug: bd-brta
 title: BRTA Service Portal (BSP)
 title_bn: বিআরটিএ সেবা
 description: Apply for driving licenses, register motor vehicles, and pay transport-related fees online.
+description_bn: ড্রাইভিং লাইসেন্স আবেদন, মোটরযান নিবন্ধন এবং পরিবহন-সংক্রান্ত ফি অনলাইনে পরিশোধ করুন
 url: https://bsp.brta.gov.bd/
 official_domain: bsp.brta.gov.bd
 category: transport
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: BRTA Bangladesh — driving license and vehicle registration | CitizenSheba
-meta_description: Find the official BRTA Service Portal for driving licenses, vehicle registration, and transport fees.
 ---

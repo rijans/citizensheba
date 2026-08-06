@@ -1,9 +1,18 @@
 ---
 import BaseLayout from '../components/layout/BaseLayout.astro';
-import { SITE_NAME } from '../lib/site';
+import {
+  NOT_FOUND_DESCRIPTION_BN,
+  NOT_FOUND_DESCRIPTION_EN,
+  NOT_FOUND_TITLE_BN,
+  NOT_FOUND_TITLE_EN,
+} from '../lib/site';
+import { documentTitle, metaDescription } from '../lib/seo';
 ---
 
-<BaseLayout title={`Page not found — ${SITE_NAME}`} description="The page you requested could not be found.">
+<BaseLayout
+  title={documentTitle(NOT_FOUND_TITLE_BN, NOT_FOUND_TITLE_EN)}
+  description={metaDescription(NOT_FOUND_DESCRIPTION_BN, NOT_FOUND_DESCRIPTION_EN)}
+>
   <article class="content-page content-page--centered">
     <h1>Page not found</h1>
     <p>The page you are looking for does not exist or may have moved.</p>

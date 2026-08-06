@@ -2,6 +2,19 @@
 
 A citizen-facing directory that helps people discover Bangladesh government and related digital portals, with a clear path to the official external site.
 
+## Documentation layers
+
+Product decisions and logic must be recorded and kept current:
+
+| Layer | Use for |
+|-------|---------|
+| `CONTEXT.md` | Glossary / ubiquitous language |
+| `docs/adr/` | Hard-to-reverse product and tech decisions (why + alternatives) |
+| `AGENTS.md` | Agent guardrails and pointers (lean) |
+| `docs/ops/` | Operational runbooks |
+
+Do not leave decisions only in chat or code comments.
+
 ## Language
 
 **Directory**:
@@ -35,6 +48,14 @@ _Avoid_: Legal waiver (unless counsel drafts one)
 **Mixed UI**:
 One URL per Service Page for all audiences. English slugs. Titles and copy may mix EN/BN where natural for clarity and SEO, without duplicating full parallel locale trees.
 _Avoid_: Separate `/bn` and `/en` sites (for v1), Bangla-only slugs
+
+**Document Title**:
+The HTML `<title>` / SERP title for a page. Format: `বাংলা — English | CitizenSheba` (Bengali first, then English, brand last). Always generated from content fields (`title_bn` / `title`, or category `name_bn` / `name`); do not store a separate `meta_title`. Applies to Service, Category, Home, About, Disclaimer, and 404 via site BN/EN constants where needed. Visible page H1 may keep English-first Mixed UI; Document Title order does not force H1 order.
+_Avoid_: English-only meta titles, reversing BN/EN order for Document Titles, requiring H1 to mirror Document Title order, per-page `meta_title` overrides, leaving static pages English-only in `<title>`
+
+**Meta Description**:
+The HTML meta description / SERP snippet. Bengali sentence(s) first, then English sentence(s), joined as two natural sentences (e.g. `বাংলা বাক্য। English sentence.`). Always generated from content fields (`description_bn` then `description`); do not store a separate `meta_description`. Same rule for Service, Category, and static pages via BN/EN site constants.
+_Avoid_: English-only meta descriptions, EN-then-BN order, em-dash or pipe joins for descriptions, per-page `meta_description` overrides
 
 **Official Service** (v1 catalog):
 A Service whose Outbound Link is run by government, a statutory/public body, or a regulated utility citizens must use (e.g. NID, education boards, railway, DESCO/WASA-class bill portals).

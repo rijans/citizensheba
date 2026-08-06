@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import ServiceCardLink from '../../components/ui/ServiceCardLink.astro';
 import { categoryPath, servicePath } from '../../lib/urls';
+import { documentTitle, metaDescription } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const categories = await getCollection('categories');
@@ -14,8 +15,8 @@ const services = (await getCollection('services'))
   .filter((s) => s.data.category === category.data.id)
   .sort((a, b) => a.data.title.localeCompare(b.data.title));
 
-const title = category.data.meta_title ?? `${category.data.name} — BD Digital Services | CitizenSheba`;
-const description = category.data.meta_description ?? category.data.description;
+const title = documentTitle(category.data.name_bn, category.data.name);
+const description = metaDescription(category.data.description_bn, category.data.description);
 ---
 
 <BaseLayout title={title} description={description} canonicalPath={categoryPath(category.data.slug)}>

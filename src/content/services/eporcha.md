@@ -4,6 +4,7 @@ slug: bd-eporcha
 title: e-Porcha (Khatian & Mouza Map)
 title_bn: ই-পর্চা
 description: Search and apply for certified copies of Khatian (land records) and Mouza maps.
+description_bn: খতিয়ান (ভূমি রেকর্ড) ও মৌজা ম্যাপের সত্যায়িত কপির জন্য অনুসন্ধান ও আবেদন করুন
 url: https://eporcha.gov.bd/
 official_domain: eporcha.gov.bd
 category: land
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: e-Porcha Bangladesh — khatian and mouza maps | CitizenSheba
-meta_description: Find the official e-Porcha portal for certified Khatian land records and Mouza maps in Bangladesh.
 ---

@@ -4,6 +4,7 @@ slug: bd-xi-admission
 title: XI Class Admission
 title_bn: একাদশ শ্রেণি ভর্তি
 description: Centralized admission portal for Class 11 (HSC) students.
+description_bn: একাদশ শ্রেণির কেন্দ্রীয় কলেজ ভর্তির অফিসিয়াল পোর্টাল
 url: http://www.xiclassadmission.gov.bd/
 official_domain: xiclassadmission.gov.bd
 category: education
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: XI Class Admission Bangladesh — official portal | CitizenSheba
-meta_description: Find the official XI Class Admission portal for centralized Class 11 college admission in Bangladesh.
 ---

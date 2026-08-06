@@ -1,11 +1,18 @@
 ---
 import BaseLayout from '../components/layout/BaseLayout.astro';
-import { DISCLAIMER_SHORT, SITE_NAME } from '../lib/site';
+import {
+  DISCLAIMER_SHORT,
+  DISCLAIMER_SHORT_BN,
+  DISCLAIMER_TITLE_BN,
+  DISCLAIMER_TITLE_EN,
+  SITE_NAME,
+} from '../lib/site';
+import { documentTitle, metaDescription } from '../lib/seo';
 ---
 
 <BaseLayout
-  title={`Disclaimer — ${SITE_NAME}`}
-  description={DISCLAIMER_SHORT}
+  title={documentTitle(DISCLAIMER_TITLE_BN, DISCLAIMER_TITLE_EN)}
+  description={metaDescription(DISCLAIMER_SHORT_BN, DISCLAIMER_SHORT)}
   canonicalPath="/disclaimer"
 >
   <article class="content-page">

@@ -4,6 +4,7 @@ slug: bd-teachers-portal
 title: Teachers' Portal
 title_bn: শিক্ষক বাতায়ন
 description: Official Teachers' Portal (শিক্ষক বাতায়ন) for teacher registration, information, and education-related digital services.
+description_bn: শিক্ষক নিবন্ধন, তথ্য ও শিক্ষা-সংক্রান্ত ডিজিটাল সেবার শিক্ষক বাতায়ন
 url: https://www.teachers.gov.bd/
 official_domain: teachers.gov.bd
 category: education
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: Teachers' Portal Bangladesh — শিক্ষক বাতায়ন | CitizenSheba
-meta_description: Find the official Bangladesh Teachers' Portal (teachers.gov.bd) for teacher registration and education services.
 ---

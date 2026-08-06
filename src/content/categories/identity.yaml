@@ -3,5 +3,6 @@ slug: identity-registration
 name: Identity & Registration
 name_bn: পরিচয় ও নিবন্ধন
 description: National ID, birth registration, and passport services.
+description_bn: জাতীয় পরিচয়পত্র, জন্ম নিবন্ধন ও পাসপোর্ট সেবা
 icon: fingerprint
 sort_order: 2

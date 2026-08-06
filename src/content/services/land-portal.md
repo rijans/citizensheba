@@ -4,6 +4,7 @@ slug: bd-land-portal
 title: Ministry of Land Portal
 title_bn: ভূমি মন্ত্রণালয়
 description: Official Ministry of Land portal linking land-related information and digital land services.
+description_bn: ভূমি-সংক্রান্ত তথ্য ও ডিজিটাল ভূমি সেবার মন্ত্রণালয়ের অফিসিয়াল পোর্টাল
 url: https://www.land.gov.bd/
 official_domain: land.gov.bd
 category: land
@@ -18,6 +19,4 @@ faq:
   - q: Do I need to create an account on CitizenSheba?
     a: No. CitizenSheba only lists services. You complete everything on the official site.
 last_verified: 2026-08-06
-meta_title: Ministry of Land Bangladesh — official portal | CitizenSheba
-meta_description: Find the official Ministry of Land portal and related Bangladesh digital land services.
 ---
