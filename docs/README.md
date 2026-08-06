@@ -59,3 +59,4 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [specs/…-name-aliases-design.md](superpowers/specs/2026-08-07-name-aliases-design.md) | Name Aliases (typed field, search, former line) |
 | [specs/…-priority-wave-design.md](superpowers/specs/2026-08-07-official-services-priority-wave-design.md) | Official Services priority wave + Catalog Backlog |
 | [plans/…-directory.md](superpowers/plans/2026-08-06-bd-digital-services-directory.md) | v1 implementation plan |
+| [plans/…-priority-wave.md](superpowers/plans/2026-08-07-official-services-priority-wave.md) | Official Services priority wave implementation |
