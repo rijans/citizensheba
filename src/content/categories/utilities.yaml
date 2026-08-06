@@ -1,0 +1,8 @@
+id: utilities
+slug: utilities-bills
+name: Utilities
+name_bn: ইউটিলিটি
+description: Electricity, water, and gas utility portals for bills and customer service.
+description_bn: বিদ্যুৎ, পানি ও গ্যাস ইউটিলিটির বিল ও গ্রাহক সেবা পোর্টাল
+icon: zap
+sort_order: 8

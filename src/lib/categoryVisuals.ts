@@ -15,6 +15,9 @@ export const CATEGORY_ACCENTS: Record<string, CategoryAccent> = {
   education: { accent: '#0369a1', soft: 'rgba(3, 105, 161, 0.12)' },
   health: { accent: '#be123c', soft: 'rgba(190, 18, 60, 0.12)' },
   safety: { accent: '#334155', soft: 'rgba(51, 65, 85, 0.12)' },
+  utilities: { accent: '#0891b2', soft: 'rgba(8, 145, 178, 0.12)' },
+  migration: { accent: '#4338ca', soft: 'rgba(67, 56, 202, 0.12)' },
+  justice: { accent: '#57534e', soft: 'rgba(87, 83, 78, 0.12)' },
 };
 
 export const DEFAULT_CATEGORY_ACCENT: CategoryAccent = {

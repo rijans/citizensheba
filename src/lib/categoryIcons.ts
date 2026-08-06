@@ -8,8 +8,11 @@ import {
   Landmark,
   LayoutGrid,
   Map,
+  Plane,
+  Scale,
   SearchX,
   Shield,
+  Zap,
 } from 'lucide-react';
 
 const BY_KEY: Record<string, LucideIcon> = {
@@ -21,6 +24,9 @@ const BY_KEY: Record<string, LucideIcon> = {
   'graduation-cap': GraduationCap,
   'heart-pulse': HeartPulse,
   shield: Shield,
+  zap: Zap,
+  plane: Plane,
+  scale: Scale,
 };
 
 export function lucideIconFor(key: string | undefined | null): LucideIcon {
