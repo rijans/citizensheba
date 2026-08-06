@@ -43,6 +43,6 @@ faq:
     q_bn: "ই-পাসপোর্ট পোর্টালে কী করা যায়?"
     a_bn: "এমআরপি ও ই-পাসপোর্টের আবেদন, অ্যাপয়েন্টমেন্ট বুকিং এবং আবেদনের অবস্থা ট্র্যাক করা যায়।"
 
-related: [bangladesh-visa, bmet]
+related: [nid, bangladesh-visa, bmet]
 last_verified: 2026-08-06
 ---
