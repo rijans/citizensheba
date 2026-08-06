@@ -6,6 +6,22 @@
 
 **Statuses:** `candidate` → `drafting` → `ready` → `shipped` | `skip` (`skip` needs a reason).
 
+## Verification 2026-08-07
+
+Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from dev environment (strict TLS verify).
+
+| Service | Candidate URL | HTTP | Chosen outbound URL | Notes |
+|---------|---------------|------|---------------------|-------|
+| DESCO | `https://www.desco.org.bd/` | 000 (DNS) | `https://ocsms.desco.org.bd/home` | Alternate official customer system; **200** |
+| Dhaka WASA | `https://consumer-portal.dhakawasa.org/` | 000 | `https://consumer-portal.dhakawasa.org/` | TLS handshake fail (`dh key too small`); keep portal URL — manual/browser check before ship |
+| Titas Gas | `https://titasgas.gov.bd/` | 000 | `https://titasgas.gov.bd/` | TLS verify fail (incomplete chain); HTTP→308→HTTPS same issue |
+| DPDC | `https://dpdc.org.bd/public/service/ebill` | **200** | same | e-bill hop confirmed |
+| NESCO | `https://customer.nesco.gov.bd/` | **200** | same | Customer portal confirmed |
+| BMET OC | `https://oc.bmet.gov.bd/` | 000 | `https://oc.bmet.gov.bd/` | HTTPS TLS verify fail; plain HTTP returns **404** — manual check before ship |
+| Bangladesh visa (MRV) | `https://www.visa.gov.bd/` | 000 | `https://www.visa.gov.bd/` | Connection reset by peer; no working alternate found in this run |
+| Fire Service | `https://fireservice.gov.bd/` | 000 | `https://fireservice.gov.bd/` | TLS verify fail (incomplete chain) |
+| e-Court | `https://ecourt.gov.bd/` | **200** | same | Judiciary portal confirmed |
+
 ## Already shipped (catalog today)
 
 Populate fully during priority-wave implementation (current ~20 Services → `shipped`).
@@ -18,22 +34,25 @@ Populate fully during priority-wave implementation (current ~20 Services → `sh
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
-| DESCO | desco / bd-desco | utilities | _(confirm)_ | candidate | gap-list | Must |
-| Dhaka WASA | dhaka-wasa / bd-dhaka-wasa | utilities | _(confirm)_ | candidate | gap-list | Must |
-| Titas Gas | titas-gas / bd-titas-gas | utilities | _(confirm)_ | candidate | gap-list | Must |
-| BMET | bmet / bd-bmet | migration | _(confirm)_ | candidate | gap-list | Must |
-| Immigration / visa | immigration / bd-immigration | migration | _(confirm)_ | candidate | gap-list | Must; finalize Display Name / id |
+| DESCO | desco / bd-desco | utilities | `https://ocsms.desco.org.bd/home` | candidate | gap-list | Must; verified 200 (primary `www.desco.org.bd` DNS fail) |
+| Dhaka WASA | dhaka-wasa / bd-dhaka-wasa | utilities | `https://consumer-portal.dhakawasa.org/` | candidate | gap-list | Must; curl TLS fail — confirm in browser |
+| Titas Gas | titas-gas / bd-titas-gas | utilities | `https://titasgas.gov.bd/` | candidate | gap-list | Must; curl TLS chain fail — confirm in browser |
+| BMET | bmet / bd-bmet | migration | `https://oc.bmet.gov.bd/` | candidate | gap-list | Must; curl could not confirm — manual check |
+| Immigration / visa | bangladesh-visa / bd-bangladesh-visa | migration | `https://www.visa.gov.bd/` | candidate | gap-list | Must; connection reset from verifier; Display Name TBD |
 
 ## Research-first / fill slots
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
-| e-Court / judiciary | _(TBD)_ | justice (if ships) | _(confirm)_ | candidate | gap-list | Research priority |
-| Fire Service & Civil Defence | _(TBD)_ | safety | _(confirm)_ | candidate | gap-list | Research priority |
-| Utility siblings (NESCO, etc.) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | One portal per Service; wave cap ~8–12 |
+| DPDC | dpdc / bd-dpdc | utilities | `https://dpdc.org.bd/public/service/ebill` | candidate | gap-list | Verified **200** |
+| NESCO | nesco / bd-nesco | utilities | `https://customer.nesco.gov.bd/` | candidate | gap-list | Verified **200** |
+| e-Court / judiciary | ecourt / bd-ecourt | justice (if ships) | `https://ecourt.gov.bd/` | candidate | gap-list | Verified **200** |
+| Fire Service & Civil Defence | fire-service / bd-fire-service | safety | `https://fireservice.gov.bd/` | candidate | gap-list | curl TLS fail — confirm in browser |
+| Utility siblings (other DISCOs) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | One portal per Service; wave cap ~8–12 |
 
 ## Skipped
 
 | Working name | Reason | Notes |
 |--------------|--------|-------|
 | nagorikseba.com listings | non-Official / mixed private | Out of seed scope |
+
