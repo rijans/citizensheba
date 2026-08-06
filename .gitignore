@@ -33,3 +33,8 @@ blob-report/
 
 .wrangler/
 dist/
+
+# Local scratch / POC dumps (not product source)
+Fable5/
+Qwen/
+bd-digital-services-hub-reqs-v2_Very_Initial_plan.md
