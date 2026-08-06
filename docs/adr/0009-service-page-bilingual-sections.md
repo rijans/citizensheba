@@ -1,0 +1,3 @@
+# Service Page bilingual sections (audience, FAQ, related)
+
+Service Pages needed EN+BN parity for **Who is this for**, **FAQ**, and **Related services**, matching the mixed H1. We require parallel `audience_bn` and FAQ `q_bn` / `a_bn` (same pattern as `title_bn` / `body_bn`), render headings as English + Bengali on one line, and stack values BN then EN. Section heading BN strings are shared UI constants (`src/lib/servicePageCopy.ts`), not per-service fields. Related Services cards already show `title` + `title_bn`; only the section heading is bilingualized here. We rejected nested `{en,bn}` objects and hardcoding BN only in the template without schema fields.

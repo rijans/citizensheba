@@ -1,7 +1,11 @@
 ---
+import { servicePageHeadings } from '../../lib/servicePageCopy';
+
 interface FaqItem {
   q: string;
   a: string;
+  q_bn: string;
+  a_bn: string;
 }
 
 interface Props {
@@ -9,15 +13,24 @@ interface Props {
 }
 
 const { items } = Astro.props;
+const { faq: heading } = servicePageHeadings;
 ---
 
 <section class="service-faq">
-  <h2>FAQ</h2>
+  <h2>
+    {heading.en}{' '}
+    <span lang="bn">{heading.bn}</span>
+  </h2>
   {
     items.map((item) => (
       <div class="service-faq__item">
-        <h3>{item.q}</h3>
-        <p>{item.a}</p>
+        <h3>
+          {item.q} <span lang="bn">{item.q_bn}</span>
+        </h3>
+        <div class="bilingual-stack">
+          <p lang="bn">{item.a_bn}</p>
+          <p>{item.a}</p>
+        </div>
       </div>
     ))
   }

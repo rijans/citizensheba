@@ -58,7 +58,7 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 
 ## Content
 
-- Services: `src/content/services/*.md` — required `title_bn`, `description_bn`, **`body` / `body_bn` (Markdown)**, `bd-` slug, FAQ 3–5, `last_verified`, **and** `aliases` (≥2 with both `lang: en` and `lang: bn`, each with `kind`)
+- Services: `src/content/services/*.md` — required `title_bn`, `description_bn`, **`body` / `body_bn` (Markdown; BN rendered first on Service Pages; no hop-disclaimer filler)**, **`audience_bn`**, FAQ with **`q_bn` / `a_bn`**, `bd-` slug, FAQ 3–5, `last_verified` (official link check date), **and** `aliases` (≥2 with both `lang: en` and `lang: bn`, each with `kind`)
 - Categories: `src/content/categories/*.yaml` — required `name_bn`, `description_bn`
 - Prefer English public slugs with `bd-` prefix for services
 - **Display Name** casing: curated (not blind official typography) — ADR-0005, Trap #12, living table [`docs/guides/display-names.md`](docs/guides/display-names.md); examples A2I, myGov, lowercase `e-`

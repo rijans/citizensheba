@@ -127,7 +127,7 @@ Mass-generating near-empty pages that only exist to rank and bounce to third par
 
 ### Rule
 
-Service Pages stay thin **SEO hops** with clear Non-Official stance and primary Outbound CTA — not doorway spam. Short `description` fields stay card/SERP-sized; longer EN+BN Markdown lives in required `body` / `body_bn` (ADR-0008), not in `description`.
+Service Pages stay thin **SEO hops** with clear Non-Official stance and primary Outbound CTA — not doorway spam. Short `description` fields stay card/SERP-sized; longer EN+BN Markdown lives in required `body` / `body_bn` (ADR-0008), not in `description`. Render **BN body first, then EN**. Body copy describes the government Service only — put “we don’t process applications here” in FAQ/chrome, not in `body` / `body_bn`. Show **official link last verified** with a human-readable date. Audience, FAQ, and Related section headings are EN+BN on one line; audience/FAQ values use required `audience_bn` and `q_bn`/`a_bn` stacked BN then EN (ADR-0009).
 
 ---
 

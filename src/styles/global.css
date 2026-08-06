@@ -837,7 +837,7 @@ html[data-theme="dark"] .directory-chips-wrap::after {
 }
 
 .outbound-cta__domain {
-  margin: 0.625rem 0 0;
+  margin: 0.25rem 0 0;
   font-size: 0.875rem;
   color: var(--ink-subtle);
 }
@@ -937,6 +937,25 @@ html[data-theme="dark"] .caution {
   font-weight: 700;
 }
 
+.content-section h2 span[lang="bn"],
+.service-faq h2 span[lang="bn"],
+.service-faq__item h3 span[lang="bn"] {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.bilingual-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 42rem;
+}
+
+.bilingual-stack > p {
+  margin: 0;
+  color: var(--ink-muted);
+}
+
 .content-section a,
 .content-page a,
 .service-page__report a,
@@ -991,9 +1010,6 @@ html[data-theme="dark"] .caution {
 .service-page__body {
   margin: 1.75rem 0 0;
   max-width: 42rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
 }
 
 .service-page__prose {
@@ -1026,8 +1042,10 @@ html[data-theme="dark"] .caution {
   text-underline-offset: 0.12em;
 }
 
-.service-page__prose--bn {
-  padding-top: 0.25rem;
+/* Equal space above and below the language divider (BN first, then EN). */
+.service-page__prose--secondary {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
   border-top: 1px solid var(--border);
 }
 
@@ -1064,8 +1082,7 @@ html[data-theme="dark"] .caution {
   font-weight: 600;
 }
 
-.service-faq__item p {
-  margin: 0;
+.service-faq__item .bilingual-stack p {
   font-size: 0.875rem;
   color: var(--ink-muted);
   max-width: 42rem;

@@ -8,20 +8,17 @@ description_bn: ভূমি উন্নয়ন কর পরিশোধ ক
 body: |
   **Land Development Tax (LD Tax)** lets landowners pay land development tax online and receive digital Dakhila (receipts) through the official portal.
   
-  This page only helps you find ldtax.gov.bd. Tax calculation, payment, and receipts are handled by the government system.
-  
   Keep your land holding details handy — many people also search for this Service as *khajna* or *dakhila*.
+
 body_bn: |
   **ভূমি উন্নয়ন কর (LD Tax)** দিয়ে জমির মালিকরা অনলাইনে ভূমি উন্নয়ন কর পরিশোধ করে ডিজিটাল দাখিলা (রসিদ) পেতে পারেন।
   
-  এই পেজ শুধু ldtax.gov.bd খুঁজে দিতে সাহায্য করে। কর হিসাব, পেমেন্ট ও রসিদ সরকারি সিস্টেমেই হয়।
-  
   জমির তথ্য প্রস্তুত রাখুন—অনেকে এই সেবাকে *খাজনা* বা *দাখিলা* নামেও খোঁজেন।
 
-url: https://ldtax.gov.bd/
+url: "https://ldtax.gov.bd/"
 official_domain: ldtax.gov.bd
 category: land
-tags: [land tax, khajna, dakhila, খাজনা]
+tags: ["land tax", khajna, dakhila, "খাজনা"]
 aliases:
   - name: khajna
     lang: en
@@ -40,12 +37,19 @@ aliases:
     kind: alt
 status: ACTIVE
 audience: Landowners paying land development tax and obtaining digital receipts.
+audience_bn: ভূমি উন্নয়ন কর পরিশোধ ও ডিজিটাল রসিদ নেওয়া জমির মালিক।
 faq:
-  - q: Is this the official LD Tax website?
+  - q: "Is this the official LD Tax website?"
     a: No. This page helps you find the official portal. Use the Open official site button to go to ldtax.gov.bd.
-  - q: What can I do on the LD Tax portal?
+    q_bn: "এটি কি অফিসিয়াল এলডি ট্যাক্স ওয়েবসাইট?"
+    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে ldtax.gov.bd-এ যান।
+  - q: "What can I do on the LD Tax portal?"
     a: Pay land development tax online and receive digital Dakhila receipts.
-  - q: Do I need to create an account on CitizenSheba?
+    q_bn: "এলডি ট্যাক্স পোর্টালে কী করা যায়?"
+    a_bn: অনলাইনে ভূমি উন্নয়ন কর পরিশোধ করে ডিজিটাল দাখিলা রসিদ পাওয়া যায়।
+  - q: "Do I need to create an account on CitizenSheba?"
     a: No. CitizenSheba only lists services. You complete everything on the official site.
+    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
+    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
 last_verified: 2026-08-06
 ---

@@ -96,4 +96,25 @@ describe('content integrity', () => {
       .map((s) => String(s.id));
     expect(missing).toEqual([]);
   });
+
+  it('every service has audience_bn and bilingual FAQ', () => {
+    const problems: string[] = [];
+    for (const s of services) {
+      if (!String(s.audience_bn || '').trim()) problems.push(`${s.id}: missing audience_bn`);
+      const faq = s.faq as Array<Record<string, unknown>> | undefined;
+      if (!Array.isArray(faq) || faq.length < 3) {
+        problems.push(`${s.id}: faq needs 3–5 items`);
+        continue;
+      }
+      faq.forEach((item, i) => {
+        if (!String(item.q || '').trim() || !String(item.a || '').trim()) {
+          problems.push(`${s.id}: faq[${i}] missing q/a`);
+        }
+        if (!String(item.q_bn || '').trim() || !String(item.a_bn || '').trim()) {
+          problems.push(`${s.id}: faq[${i}] missing q_bn/a_bn`);
+        }
+      });
+    }
+    expect(problems).toEqual([]);
+  });
 });

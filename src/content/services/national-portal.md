@@ -8,20 +8,17 @@ description_bn: মন্ত্রণালয় ও ডিজিটাল স�
 body: |
   The **Bangladesh National Portal** (bangladesh.gov.bd) is the central public gateway to ministries, departments, and many government digital services.
   
-  Use this CitizenSheba page when you want the main government web entrance. For a specific service (passport, tax, land), a dedicated Service Page may be faster.
-  
   Always confirm you landed on the official bangladesh.gov.bd domain after you click through.
+
 body_bn: |
   **বাংলাদেশ জাতীয় পোর্টাল** (bangladesh.gov.bd) মন্ত্রণালয়, অধিদপ্তর এবং অনেক সরকারি ডিজিটাল সেবার কেন্দ্রীয় প্রবেশদ্বার।
   
-  মূল সরকারি ওয়েব প্রবেশদ্বার চাইলে এই CitizenSheba পেজ ব্যবহার করুন। নির্দিষ্ট সেবায় (পাসপোর্ট, কর, ভূমি) আলাদা সেবা পেজ দ্রুততর হতে পারে।
-  
   ক্লিকের পর যেন অফিসিয়াল bangladesh.gov.bd ডোমেইনে পৌঁছান তা নিশ্চিত করুন।
 
-url: https://bangladesh.gov.bd/
+url: "https://bangladesh.gov.bd/"
 official_domain: bangladesh.gov.bd
 category: central
-tags: [portal, ministries, government, বাতায়ন]
+tags: [portal, ministries, government, "বাতায়ন"]
 aliases:
   - name: bangladesh.gov.bd
     lang: en
@@ -37,12 +34,19 @@ aliases:
     kind: alt
 status: ACTIVE
 audience: Anyone looking for the main gateway to Bangladesh government ministries and digital services.
+audience_bn: বাংলাদেশ সরকারের মন্ত্রণালয় ও ডিজিটাল সেবার মূল গেটওয়ে খোঁজা যে কেউ।
 faq:
-  - q: Is this the official National Portal?
+  - q: "Is this the official National Portal?"
     a: No. This page helps you find the official portal. Use the Open official site button to go to bangladesh.gov.bd.
-  - q: What can I find on the National Portal?
-    a: Links to ministries, government departments, and digital services across Bangladesh.
-  - q: Do I need to create an account on CitizenSheba?
+    q_bn: "এটি কি অফিসিয়াল জাতীয় পোর্টাল ওয়েবসাইট?"
+    a_bn: না। এই পেজ অফিসিয়াল পোর্টাল খুঁজে পেতে সাহায্য করে। Open official site বাটন দিয়ে bangladesh.gov.bd-এ যান।
+  - q: "What can I find on the National Portal?"
+    a: "Links to ministries, government departments, and digital services across Bangladesh."
+    q_bn: "জাতীয় পোর্টালে কী পাওয়া যায়?"
+    a_bn: "বাংলাদেশজুড়ে মন্ত্রণালয়, সরকারি দপ্তর ও ডিজিটাল সেবার লিংক।"
+  - q: "Do I need to create an account on CitizenSheba?"
     a: No. CitizenSheba only lists services. You complete everything on the official site.
+    q_bn: "CitizenSheba-তে কি অ্যাকাউন্ট খুলতে হবে?"
+    a_bn: না। CitizenSheba শুধু সেবার তালিকা দেয়। সব কাজ অফিসিয়াল সাইটেই সম্পন্ন হয়।
 last_verified: 2026-08-06
 ---

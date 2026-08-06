@@ -53,7 +53,7 @@ Before calling a task done:
 1. `npm run ci` (or at least the checks that cover your change).
 2. UI / CSS / visual content work: **should** verify with `npm run dev` ([local-dev.md](../ops/local-dev.md)).
 3. Docs: update the **owner** layer — glossary → `CONTEXT.md`; decision → ADR; ops → `docs/ops/`; routing → `INDEX.md`; new pitfall → `TRAPS.md`.
-4. Content edits: ensure integrity tests still pass (`tests/unit/content-integrity.test.ts`) — **new Services must include EN+BN `aliases` and Markdown `body` / `body_bn`** (Trap #14, ADR-0008).
+4. Content edits: ensure integrity tests still pass (`tests/unit/content-integrity.test.ts`) — **new Services must include EN+BN `aliases`, Markdown `body` / `body_bn`, `audience_bn`, and FAQ `q_bn` / `a_bn`** (Trap #14, ADR-0008, ADR-0009).
 5. Do not leave product decisions only in chat.
 
 ## Related
