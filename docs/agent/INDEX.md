@@ -29,6 +29,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | UI, CSS, card, chip, Mobile-First, design token, Lucide, jargon in copy | `docs/guides/frontend.md`, ADR-0004, `docs/specs/TRAPS.md` (#5–#7) |
 | performance, island, LCP, client JS, analytics weight | `docs/guides/performance.md`, ADR-0001 |
 | stack, Astro, Cloudflare, wrangler, static assets, React island, Tailwind | `docs/adr/0001-astro-ssg-react-island-cloudflare.md`, `README.md` § Cloudflare, Trap #1 |
+| deploy, production, wrangler login, smoke live, workers.dev, citizensheba.com, MCP Cloudflare | `docs/ops/production-and-deploy.md` |
 | llms.txt, robots, ai.txt, agent crawl, AI train | `docs/adr/0002-agent-llms-txt-and-ai-usage-signals.md` |
 | Document Title, Meta Description, SERP, bilingual title, `description_bn`, `meta_title` | `docs/adr/0003-bilingual-document-title-and-meta-description.md`, `src/lib/seo.ts`, `CONTEXT.md`, Traps #3–#4 |
 | Category Icon, Service card, accent, Instant Directory chips, emoji on cards | `docs/adr/0004-category-icons-and-service-cards.md`, `src/lib/categoryVisuals.ts`, `CONTEXT.md`, Traps #5–#7 |
@@ -60,6 +61,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | CI | `.github/workflows/ci.yml`, `package.json` scripts `check` / `ci` |
 | Content integrity tests | `tests/unit/content-integrity.test.ts` |
 | Link health | `scripts/check-links.mjs`, `.github/workflows/link-health.yml` |
+| Production / deploy | `docs/ops/production-and-deploy.md`, `wrangler.jsonc` |
 
 ---
 

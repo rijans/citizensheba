@@ -69,6 +69,7 @@ Attach custom domains `citizensheba.com` and `www.citizensheba.com` in the proje
 
 ## Post-launch ops
 
+- [Production & deploy](docs/ops/production-and-deploy.md) — Worker name, auth, deploy cycle, live smoke checks
 - [Web Analytics setup](docs/ops/web-analytics.md) — automatic preferred for `citizensheba.com`
 - [Google Search Console](docs/ops/search-console.md) — DNS verify + submit `sitemap-index.xml`
 

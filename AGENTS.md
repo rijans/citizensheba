@@ -65,9 +65,11 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 
 ## Deploy smoke
 
+Full cycle (auth, `wrangler deploy`, curl checklist): [`docs/ops/production-and-deploy.md`](docs/ops/production-and-deploy.md).
+
 ```bash
 npm ci && npm run ci
-# then wrangler deploy only when asked
+# then npm run deploy only when asked
 ```
 
-CI on GitHub: `npm ci` → `astro check` → Vitest → `astro build`.
+CI on GitHub: `npm ci` → `astro check` → Vitest → `astro build` (**verify only — does not deploy**).
