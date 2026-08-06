@@ -2,17 +2,28 @@
 
 CitizenSheba (সিটিজেনসেবা) is a hop-first **Directory** of Bangladesh **Official Services** (gov, utilities, half-gov). Domain: https://citizensheba.com. Repo: this tree (`main`).
 
-## Read first
+> **Start here every task:** Tier 0 below → route via [`docs/agent/INDEX.md`](docs/agent/INDEX.md). Scan trap titles in [`docs/specs/TRAPS.md`](docs/specs/TRAPS.md) when the topic matches. Doc map: [`docs/README.md`](docs/README.md).
 
-| Layer | Purpose |
-|-------|---------|
-| [`CONTEXT.md`](CONTEXT.md) | Ubiquitous language / glossary |
-| [`docs/adr/`](docs/adr/) | Hard-to-reverse product + tech decisions |
-| [`README.md`](README.md) | Dev/deploy commands |
-| [`docs/ops/`](docs/ops/) | Analytics, Search Console, runbooks |
-| Spec/plan under `docs/superpowers/` | Design + implementation plan history |
+## Tier 0 — always read
 
-**Document every product decision and logic.** When a decision lands or changes, update the matching layer (glossary → CONTEXT; expensive-to-reverse → ADR; agent do-nots → this file; ops → `docs/ops/`). Do not leave decisions only in chat.
+| File | Purpose |
+|------|---------|
+| [`AGENTS.md`](AGENTS.md) | This file — do-nots and standing product rules |
+| [`docs/agent/INDEX.md`](docs/agent/INDEX.md) | **Task router** — keywords → ADRs / guides / code map |
+| [`CONTEXT.md`](CONTEXT.md) | Domain glossary / ubiquitous language |
+
+**On demand:** [`README.md`](README.md), [`docs/README.md`](docs/README.md), [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md), [`docs/specs/DOC_ARCHITECTURE.md`](docs/specs/DOC_ARCHITECTURE.md), [`docs/specs/TRAPS.md`](docs/specs/TRAPS.md).
+
+**Document every product decision.** Update the matching layer (glossary → CONTEXT; expensive-to-reverse → ADR; agent do-nots → this file; ops → `docs/ops/`; routing → INDEX; pitfalls → TRAPS). Do not leave decisions only in chat.
+
+## Workflow (summary)
+
+Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
+
+- Match existing patterns; do not silently redesign.
+- Stop-and-ask on ambiguity, contradictions, or foreign dirty files.
+- Parallel chats: isolate worktrees when possible; stage explicit paths only.
+- Before done: `npm run ci` + update owner docs (finalization checklist in the guide).
 
 ## Stack (see ADR-0001)
 
@@ -33,6 +44,7 @@ CitizenSheba (সিটিজেনসেবা) is a hop-first **Directory** of
 - Shared Service card: icon, titles, description, official domain, status when not ACTIVE
 - No emoji-first cards; no Home trust strip (footer disclaimer only)
 - Chips: small icon + EN name; result count + clear empty state
+- Frontend / perf detail: [`docs/guides/frontend.md`](docs/guides/frontend.md), [`docs/guides/performance.md`](docs/guides/performance.md)
 
 ## Hard do-nots
 
@@ -42,12 +54,14 @@ CitizenSheba (সিটিজেনসেবা) is a hop-first **Directory** of
 - `_headers` comments: `#` only (not `/* */`)
 - Do not rewrite git config; use env / `git -c` for identity when committing
 - Do not push to `main` / production without explicit user approval in this environment
+- Do not grow `.cursor/rules/*.mdc` with duplicated policy — pointer file only ([DOC_ARCHITECTURE](docs/specs/DOC_ARCHITECTURE.md))
 
 ## Content
 
 - Services: `src/content/services/*.md` — required `title_bn`, `description_bn`, `bd-` slug, FAQ 3–5, `last_verified`
 - Categories: `src/content/categories/*.yaml` — required `name_bn`, `description_bn`
 - Prefer English public slugs with `bd-` prefix for services
+- Cross-file refs: `tests/unit/content-integrity.test.ts` (category / related ids)
 
 ## Deploy smoke
 

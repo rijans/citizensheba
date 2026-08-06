@@ -1,0 +1,73 @@
+# Agent documentation router
+
+> **Tier 0** — read with root `AGENTS.md` and `CONTEXT.md`.  
+> **Rule:** every row below that matches your task must be **read** or **explicitly skipped with a one-line reason**.  
+> **Traps:** scan titles in `docs/specs/TRAPS.md` when the topic matches; open bodies on demand.
+
+Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE.md`](../specs/DOC_ARCHITECTURE.md).
+
+---
+
+## Tier 0 — always (compact)
+
+| File | Purpose |
+|------|---------|
+| `AGENTS.md` | Anchor — do-nots, bilingual/SERP/visual guardrails, deploy smoke |
+| `docs/agent/INDEX.md` | This router |
+| `CONTEXT.md` | Domain glossary (Directory, Service, Category Icon, Document Title, …) |
+
+**On demand:** `README.md`; `docs/README.md`; `docs/guides/agent-workflow.md`; `docs/specs/TRAPS.md` (scan titles).
+
+---
+
+## Tier 1 — conditional SSOTs (match task → read)
+
+| Triggers / keywords | Read |
+|---------------------|------|
+| agent workflow, stop-and-ask, parallel session, foreign dirty, finalization, redesign | `docs/guides/agent-workflow.md`, `docs/specs/TRAPS.md` (#10) |
+| trap, pitfall, regression, known mistake | `docs/specs/TRAPS.md` (scan index, open matching bodies) |
+| UI, CSS, card, chip, Mobile-First, design token, Lucide, jargon in copy | `docs/guides/frontend.md`, ADR-0004, `docs/specs/TRAPS.md` (#5–#7) |
+| performance, island, LCP, client JS, analytics weight | `docs/guides/performance.md`, ADR-0001 |
+| stack, Astro, Cloudflare, wrangler, static assets, React island, Tailwind | `docs/adr/0001-astro-ssg-react-island-cloudflare.md`, `README.md` § Cloudflare, Trap #1 |
+| llms.txt, robots, ai.txt, agent crawl, AI train | `docs/adr/0002-agent-llms-txt-and-ai-usage-signals.md` |
+| Document Title, Meta Description, SERP, bilingual title, `description_bn`, `meta_title` | `docs/adr/0003-bilingual-document-title-and-meta-description.md`, `src/lib/seo.ts`, `CONTEXT.md`, Traps #3–#4 |
+| Category Icon, Service card, accent, Instant Directory chips, emoji on cards | `docs/adr/0004-category-icons-and-service-cards.md`, `src/lib/categoryVisuals.ts`, `CONTEXT.md`, Traps #5–#7 |
+| Web Analytics, CF beacon, `PUBLIC_CF_WEB_ANALYTICS_TOKEN` | `docs/ops/web-analytics.md` |
+| Search Console, GSC, sitemap | `docs/ops/search-console.md` |
+| add/move docs, AGENTS layout, Cursor rules | `docs/specs/DOC_ARCHITECTURE.md` |
+| content catalog, service md, category yaml, FAQ, `bd-` slug, related | `CONTEXT.md`, `src/content.config.ts`, `tests/unit/content-integrity.test.ts`, Trap #11 |
+| Official catalog, MFS, bank, doorway | `AGENTS.md` do-nots, Traps #8–#9 |
+| `_headers` | Trap #2, `public/_headers` if present |
+| v1 product intent, Guides future, hop-first | `docs/superpowers/specs/2026-08-06-bd-digital-services-directory-design.md` |
+| historical implementation plan | `docs/superpowers/plans/2026-08-06-bd-digital-services-directory.md` |
+
+---
+
+## Code map (locate before edit)
+
+| Area | Paths |
+|------|--------|
+| Home Instant Directory | `src/pages/index.astro`, `src/components/directory/InstantDirectory.tsx` |
+| Service / Category cards | `src/components/ui/ServiceCard.tsx`, `ServiceCardLink.astro`, `CategoryIcon.tsx` |
+| Layout shell | `src/components/layout/BaseLayout.astro`, `Header.astro`, `Footer.astro` |
+| Service / Category pages | `src/pages/services/[slug].astro`, `src/pages/categories/[slug].astro` |
+| Content schema | `src/content.config.ts`, `src/content/services/*.md`, `src/content/categories/*.yaml` |
+| SEO helpers | `src/lib/seo.ts`, `src/lib/site.ts` |
+| Search index | `src/lib/search.ts`, `src/lib/buildSearchIndex.ts` |
+| Category accents / icons | `src/lib/categoryVisuals.ts`, `src/lib/categoryIcons.ts` |
+| Styles / tokens | `src/styles/global.css` |
+| Agent / SEO files | `src/pages/llms.txt.ts`, `src/pages/robots.txt.ts` |
+| CI | `.github/workflows/ci.yml`, `package.json` scripts `check` / `ci` |
+| Content integrity tests | `tests/unit/content-integrity.test.ts` |
+| Link health | `scripts/check-links.mjs`, `.github/workflows/link-health.yml` |
+
+---
+
+## ADR index (do not duplicate bodies in AGENTS.md)
+
+| ADR | File |
+|-----|------|
+| 0001 Stack | `docs/adr/0001-astro-ssg-react-island-cloudflare.md` |
+| 0002 Agent signals | `docs/adr/0002-agent-llms-txt-and-ai-usage-signals.md` |
+| 0003 Bilingual SERP | `docs/adr/0003-bilingual-document-title-and-meta-description.md` |
+| 0004 Category Icons / cards | `docs/adr/0004-category-icons-and-service-cards.md` |

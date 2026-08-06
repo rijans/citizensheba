@@ -1,0 +1,10 @@
+---
+description: Single Cursor entry point — agent rules live in project docs, not here
+alwaysApply: true
+---
+
+# CitizenSheba agents (Cursor)
+
+**Before any task:** read [`AGENTS.md`](../../AGENTS.md) at the repo root, then route via [`docs/agent/INDEX.md`](../../docs/agent/INDEX.md). Domain language: [`CONTEXT.md`](../../CONTEXT.md).
+
+**Do not add or expand rules in `.cursor/rules/`.** This file is a **pointer only**. Put new guardrails in `AGENTS.md`, `CONTEXT.md`, `docs/adr/`, `docs/specs/TRAPS.md`, or `docs/guides/` so all editors share one SSOT. Policy: [`docs/specs/DOC_ARCHITECTURE.md`](../../docs/specs/DOC_ARCHITECTURE.md).

@@ -1,0 +1,49 @@
+# CitizenSheba documentation
+
+Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.md), then route via [`docs/agent/INDEX.md`](agent/INDEX.md).
+
+## Directory index
+
+| Path | Role |
+|------|------|
+| [`../AGENTS.md`](../AGENTS.md) | Agent anchor — guardrails, do-nots, Tier 0 reads |
+| [`../CONTEXT.md`](../CONTEXT.md) | Domain glossary / ubiquitous language (SSOT) |
+| [`agent/INDEX.md`](agent/INDEX.md) | **Task router** — keywords → SSOT docs + code map |
+| [`specs/DOC_ARCHITECTURE.md`](specs/DOC_ARCHITECTURE.md) | How docs are layered; where to put new docs |
+| [`specs/TRAPS.md`](specs/TRAPS.md) | Known pitfalls — scan titles, open bodies on demand |
+| [`guides/`](guides/) | Agent workflow, frontend, performance |
+| [`adr/`](adr/) | Architecture Decision Records (hard-to-reverse) |
+| [`ops/`](ops/) | Runbooks (analytics, Search Console) |
+| [`superpowers/`](superpowers/) | Historical design specs + implementation plans |
+| [`../README.md`](../README.md) | Human quick start, npm scripts, deploy |
+
+## Guides
+
+| Doc | Topic |
+|-----|--------|
+| [guides/agent-workflow.md](guides/agent-workflow.md) | Stop-and-ask, patterns, parallel sessions, finalization |
+| [guides/frontend.md](guides/frontend.md) | Cards, chips, Mobile-First, tokens |
+| [guides/performance.md](guides/performance.md) | Islands, SSG, analytics weight |
+
+## ADR index
+
+| ADR | Topic |
+|-----|--------|
+| [0001](adr/0001-astro-ssg-react-island-cloudflare.md) | Astro SSG + React island + Cloudflare static assets |
+| [0002](adr/0002-agent-llms-txt-and-ai-usage-signals.md) | `/llms.txt` + AI usage / robots signals |
+| [0003](adr/0003-bilingual-document-title-and-meta-description.md) | BN→EN Document Title / Meta Description |
+| [0004](adr/0004-category-icons-and-service-cards.md) | Lucide Category Icons + shared Service cards |
+
+## Ops
+
+| Doc | Topic |
+|-----|--------|
+| [ops/web-analytics.md](ops/web-analytics.md) | Cloudflare Web Analytics |
+| [ops/search-console.md](ops/search-console.md) | Google Search Console |
+
+## History (superpowers)
+
+| Doc | Topic |
+|-----|--------|
+| [specs/…-design.md](superpowers/specs/2026-08-06-bd-digital-services-directory-design.md) | v1 product design |
+| [plans/…-directory.md](superpowers/plans/2026-08-06-bd-digital-services-directory.md) | v1 implementation plan |

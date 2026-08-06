@@ -1,0 +1,69 @@
+/**
+ * Cheap content integrity: category / related id refs (no Astro, no network).
+ */
+import { readFileSync, readdirSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { describe, expect, it } from 'vitest';
+import matter from 'gray-matter';
+
+const root = join(dirname(fileURLToPath(import.meta.url)), '../..');
+const categoriesDir = join(root, 'src/content/categories');
+const servicesDir = join(root, 'src/content/services');
+
+function loadYamlFile(path: string): Record<string, unknown> {
+  const raw = readFileSync(path, 'utf8');
+  const { data } = matter(`---\n${raw}\n---\n`);
+  return data as Record<string, unknown>;
+}
+
+function loadService(path: string): Record<string, unknown> {
+  const { data } = matter(readFileSync(path, 'utf8'));
+  return data as Record<string, unknown>;
+}
+
+describe('content integrity', () => {
+  const categoryFiles = readdirSync(categoriesDir).filter((f) => /\.ya?ml$/i.test(f));
+  const serviceFiles = readdirSync(servicesDir).filter((f) => f.endsWith('.md'));
+
+  const categories = categoryFiles.map((f) => loadYamlFile(join(categoriesDir, f)));
+  const services = serviceFiles.map((f) => loadService(join(servicesDir, f)));
+
+  const categoryIds = new Set(categories.map((c) => String(c.id)));
+  const serviceIds = new Set(services.map((s) => String(s.id)));
+
+  it('has unique category ids', () => {
+    expect(categories.map((c) => c.id).sort()).toEqual([...categoryIds].sort());
+  });
+
+  it('has unique service ids', () => {
+    expect(services.map((s) => s.id).sort()).toEqual([...serviceIds].sort());
+  });
+
+  it('every service.category points at a real category', () => {
+    const missing = services
+      .filter((s) => !categoryIds.has(String(s.category)))
+      .map((s) => `${s.id} → ${s.category}`);
+    expect(missing).toEqual([]);
+  });
+
+  it('every service.related id points at a real service', () => {
+    const missing: string[] = [];
+    for (const s of services) {
+      const related = s.related;
+      if (!related) continue;
+      expect(Array.isArray(related)).toBe(true);
+      for (const id of related as string[]) {
+        if (!serviceIds.has(id)) missing.push(`${s.id} → related:${id}`);
+      }
+    }
+    expect(missing).toEqual([]);
+  });
+
+  it('no service lists itself in related', () => {
+    const selfRefs = services
+      .filter((s) => Array.isArray(s.related) && (s.related as string[]).includes(String(s.id)))
+      .map((s) => s.id);
+    expect(selfRefs).toEqual([]);
+  });
+});

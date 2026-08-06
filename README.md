@@ -44,7 +44,7 @@ npm run test:e2e
 
 Services live in `src/content/services/*.md` and categories in `src/content/categories/*.yaml`. Each needs EN + BN title/name and description fields (`title`/`title_bn`, `description`/`description_bn`, etc.). Document Title and Meta Description are generated at build time (BN→EN) — do not add `meta_title` / `meta_description`. Edit via PR; Astro rebuilds static HTML.
 
-Agent onboarding: see [`AGENTS.md`](AGENTS.md). Domain language: [`CONTEXT.md`](CONTEXT.md). ADRs: [`docs/adr/`](docs/adr/).
+Agent onboarding: [`AGENTS.md`](AGENTS.md) → [`docs/agent/INDEX.md`](docs/agent/INDEX.md). Doc map: [`docs/README.md`](docs/README.md). Domain language: [`CONTEXT.md`](CONTEXT.md). ADRs: [`docs/adr/`](docs/adr/).
 
 ## Cloudflare (Workers static assets / Pages)
 

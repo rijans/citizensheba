@@ -11,9 +11,14 @@ Product decisions and logic must be recorded and kept current:
 | `CONTEXT.md` | Glossary / ubiquitous language |
 | `docs/adr/` | Hard-to-reverse product and tech decisions (why + alternatives) |
 | `AGENTS.md` | Agent guardrails and pointers (lean) |
+| `docs/agent/INDEX.md` | Agent task router — keywords → SSOTs + code map |
+| `docs/README.md` | Human/agent directory index of all docs |
+| `docs/specs/DOC_ARCHITECTURE.md` | Where new docs belong; editor pointer policy |
+| `docs/specs/TRAPS.md` | Known pitfalls (scan titles) |
+| `docs/guides/` | Agent workflow, frontend, performance |
 | `docs/ops/` | Operational runbooks |
 
-Do not leave decisions only in chat or code comments.
+Do not leave decisions only in chat or code comments. Route tasks via `docs/agent/INDEX.md` (see also root `AGENTS.md` Tier 0).
 
 ## Language
 
