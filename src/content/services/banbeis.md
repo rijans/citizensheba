@@ -23,6 +23,13 @@ category: education
 directory_global_rank: 510
 directory_category_rank: 140
 icon: file-spreadsheet
+capabilities:
+  - en: "Browse education statistics"
+    bn: "শিক্ষা পরিসংখ্যান দেখুন"
+  - en: "Download publications"
+    bn: "প্রকাশনা ডাউনলোড করুন"
+  - en: "Find research data"
+    bn: "গবেষণা তথ্য খুঁজুন"
 tags: [banbeis, education statistics, "ব্যানবেইস", "শিক্ষা তথ্য"]
 aliases:
   - name: Bangladesh Bureau of Educational Information and Statistics

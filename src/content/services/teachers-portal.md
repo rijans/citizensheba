@@ -21,6 +21,13 @@ category: education
 directory_global_rank: 160
 directory_category_rank: 10
 icon: graduation-cap
+capabilities:
+  - en: "Register as a teacher"
+    bn: "শিক্ষক নিবন্ধন"
+  - en: "Access teacher information"
+    bn: "শিক্ষক তথ্য নিন"
+  - en: "Use education digital services"
+    bn: "শিক্ষা ডিজিটাল সেবা"
 tags: [teacher, "শিক্ষক", education, portal, registration]
 aliases:
   - name: Shikkhok Batayon

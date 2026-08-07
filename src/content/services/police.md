@@ -21,6 +21,13 @@ category: safety
 directory_global_rank: 140
 directory_category_rank: 10
 icon: shield
+capabilities:
+  - en: "Find public police information"
+    bn: "পুলিশ জনতথ্য"
+  - en: "Access digital police services"
+    bn: "ডিজিটাল পুলিশ সেবা"
+  - en: "Read published notices"
+    bn: "প্রকাশিত নোটিশ পড়ুন"
 tags: [police, "পুলিশ", security, law]
 aliases:
   - name: BD police

@@ -23,6 +23,13 @@ category: land
 directory_global_rank: 830
 directory_category_rank: 20
 icon: stamp
+capabilities:
+  - en: "Apply for land mutation"
+    bn: "নামজারি আবেদন"
+  - en: "Track mutation status"
+    bn: "নামজারি অবস্থা ট্র্যাক"
+  - en: "Follow application steps"
+    bn: "আবেদনের ধাপ অনুসরণ"
 tags: [mutation, namjari, "নামজারি"]
 aliases:
   - name: namjari

@@ -21,6 +21,13 @@ category: migration
 directory_global_rank: 560
 directory_category_rank: 20
 icon: plane
+capabilities:
+  - en: "Start MRV application"
+    bn: "এমআরভি আবেদন শুরু"
+  - en: "Check visa guidance"
+    bn: "ভিসা নির্দেশনা দেখুন"
+  - en: "Follow application steps"
+    bn: "আবেদনের ধাপ অনুসরণ"
 tags: [visa, mrv, immigration, "ভিসা", "এমআরভি"]
 aliases:
   - name: MRV portal

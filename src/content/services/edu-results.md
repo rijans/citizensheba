@@ -21,6 +21,13 @@ category: education
 directory_global_rank: 170
 directory_category_rank: 20
 icon: file-badge
+capabilities:
+  - en: "Check SSC results"
+    bn: "এসএসসি ফলাফল দেখুন"
+  - en: "Check HSC results"
+    bn: "এইচএসসি ফলাফল দেখুন"
+  - en: "View board exam results"
+    bn: "বোর্ড পরীক্ষার ফল"
 tags: [ssc, hsc, jsc, result, "রেজাল্ট"]
 aliases:
   - name: SSC result

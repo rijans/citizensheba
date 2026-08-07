@@ -23,6 +23,13 @@ category: utilities
 directory_global_rank: 690
 directory_category_rank: 70
 icon: zap
+capabilities:
+  - en: "Find rural electricity info"
+    bn: "পল্লী বিদ্যুৎ তথ্য"
+  - en: "Explore PBS-linked services"
+    bn: "পবিস-সংক্রান্ত সেবা"
+  - en: "Read board guidance"
+    bn: "বোর্ড নির্দেশনা পড়ুন"
 tags: [breb, rural, electricity, "বিআরইবি", "পল্লী বিদ্যুৎ"]
 aliases:
   - name: Bangladesh Rural Electrification Board

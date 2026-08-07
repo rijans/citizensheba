@@ -21,6 +21,13 @@ category: safety
 directory_global_rank: 530
 directory_category_rank: 40
 icon: ship-wheel
+capabilities:
+  - en: "Read maritime safety info"
+    bn: "সমুদ্রসীমা নিরাপত্তা"
+  - en: "View published notices"
+    bn: "প্রকাশিত নোটিশ দেখুন"
+  - en: "Find Coast Guard updates"
+    bn: "কোস্ট গার্ড আপডেট"
 tags: [coast guard, maritime, "কোস্ট গার্ড", "সমুদ্র"]
 aliases:
   - name: Coast Guard BD

@@ -23,6 +23,13 @@ category: utilities
 directory_global_rank: 680
 directory_category_rank: 80
 icon: zap
+capabilities:
+  - en: "View power sector info"
+    bn: "বিদ্যুৎ খাতের তথ্য"
+  - en: "Find published services"
+    bn: "প্রকাশিত সেবা খুঁজুন"
+  - en: "Read board notices"
+    bn: "বোর্ড নোটিশ পড়ুন"
 tags: [bpdb, power, electricity, "বিপিডিবি", "বিদ্যুৎ"]
 aliases:
   - name: Bangladesh Power Development Board

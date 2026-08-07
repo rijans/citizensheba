@@ -23,6 +23,13 @@ category: education
 directory_global_rank: 1050
 directory_category_rank: 100
 icon: library
+capabilities:
+  - en: "Find technical education info"
+    bn: "কারিগরি শিক্ষা তথ্য"
+  - en: "Explore madrasah education info"
+    bn: "মাদরাসা শিক্ষা তথ্য"
+  - en: "Read division updates"
+    bn: "বিভাগীয় আপডেট"
 tags: [tmed, technical education, madrasah, "কারিগরি", "মাদরাসা"]
 aliases:
   - name: Technical and Madrasah Education Division

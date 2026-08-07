@@ -23,6 +23,13 @@ category: tax
 directory_global_rank: 1080
 directory_category_rank: 30
 icon: calculator
+capabilities:
+  - en: "Register for VAT"
+    bn: "ভ্যাট নিবন্ধন"
+  - en: "Use VAT e-services"
+    bn: "ভ্যাট ই-সেবা নিন"
+  - en: "Manage VAT account"
+    bn: "ভ্যাট অ্যাকাউন্ট ব্যবস্থাপনা"
 tags: [vat, nbr, tax, "ভ্যাট", "কর"]
 aliases:
   - name: VAT

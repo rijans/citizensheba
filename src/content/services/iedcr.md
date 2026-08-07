@@ -23,6 +23,13 @@ category: health
 directory_global_rank: 860
 directory_category_rank: 50
 icon: microscope
+capabilities:
+  - en: "View disease surveillance"
+    bn: "রোগ নজরদারি দেখুন"
+  - en: "Read public health updates"
+    bn: "জনস্বাস্থ্য আপডেট"
+  - en: "Find research information"
+    bn: "গবেষণা তথ্য খুঁজুন"
 tags: [iedcr, epidemiology, disease control, "আইইডিসিআর", "রোগ নিয়ন্ত্রণ"]
 aliases:
   - name: Institute of Epidemiology Disease Control and Research

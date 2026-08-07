@@ -23,6 +23,13 @@ category: transport
 directory_global_rank: 720
 directory_category_rank: 40
 icon: plane
+capabilities:
+  - en: "Read aviation regulations"
+    bn: "বিমান চলাচল নিয়ম"
+  - en: "View airport information"
+    bn: "বিমানবন্দর তথ্য"
+  - en: "Find public notices"
+    bn: "জন নোটিশ খুঁজুন"
 tags: [caab, aviation, airport, "সিএএবি", "বিমান"]
 aliases:
   - name: Civil Aviation Authority of Bangladesh

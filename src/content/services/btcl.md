@@ -23,6 +23,13 @@ category: utilities
 directory_global_rank: 940
 directory_category_rank: 100
 icon: phone
+capabilities:
+  - en: "Manage telephone services"
+    bn: "টেলিফোন সেবা ব্যবস্থাপনা"
+  - en: "Access customer portal"
+    bn: "গ্রাহক পোর্টাল খুলুন"
+  - en: "Find billing help"
+    bn: "বিলিং সহায়তা খুঁজুন"
 tags: [btcl, telephone, telecom, "বিটিসিএল", "টেলিফোন"]
 aliases:
   - name: BTCL

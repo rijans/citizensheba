@@ -23,6 +23,13 @@ category: utilities
 directory_global_rank: 1100
 directory_category_rank: 90
 icon: zap
+capabilities:
+  - en: "Pay electricity bills"
+    bn: "বিদ্যুৎ বিল পরিশোধ"
+  - en: "Manage customer account"
+    bn: "গ্রাহক অ্যাকাউন্ট"
+  - en: "Access west-zone services"
+    bn: "পশ্চিমাঞ্চল সেবা"
 tags: [wzpdcl, electricity, west zone, "বিদ্যুৎ"]
 aliases:
   - name: West Zone Power Distribution

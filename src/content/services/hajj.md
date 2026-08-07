@@ -21,6 +21,13 @@ category: migration
 directory_global_rank: 550
 directory_category_rank: 30
 icon: mosque
+capabilities:
+  - en: "Register for Hajj"
+    bn: "হজ নিবন্ধন করুন"
+  - en: "Read hajj guidance"
+    bn: "হজ নির্দেশনা পড়ুন"
+  - en: "View management updates"
+    bn: "ব্যবস্থাপনা আপডেট"
 tags: [hajj, pilgrimage, "হজ", "হাজী"]
 aliases:
   - name: Hajj management

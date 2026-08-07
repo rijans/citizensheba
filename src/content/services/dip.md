@@ -23,6 +23,13 @@ category: identity
 directory_global_rank: 770
 directory_category_rank: 40
 icon: user-round
+capabilities:
+  - en: "Find passport information"
+    bn: "পাসপোর্ট তথ্য খুঁজুন"
+  - en: "Read immigration guidance"
+    bn: "ইমিগ্রেশন নির্দেশনা"
+  - en: "View department notices"
+    bn: "অধিদপ্তর নোটিশ দেখুন"
 tags: [dip, passport, immigration, "ডিআইপি", "পাসপোর্ট"]
 aliases:
   - name: Department of Immigration and Passports

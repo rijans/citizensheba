@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 60
 directory_category_rank: 10
 icon: landmark
+capabilities:
+  - en: "Access G2C services"
+    bn: "জি২সি সেবা নিন"
+  - en: "Explore G2B services"
+    bn: "জি২বি সেবা দেখুন"
+  - en: "Open integrated gov services"
+    bn: "সমন্বিত সরকারি সেবা"
 tags: [mygov, "one stop", central, "সেবা"]
 aliases:
   - name: Amar Shorkar

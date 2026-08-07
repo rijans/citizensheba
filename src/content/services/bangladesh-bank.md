@@ -21,6 +21,13 @@ category: tax
 directory_global_rank: 520
 directory_category_rank: 50
 icon: landmark
+capabilities:
+  - en: "Read monetary policy"
+    bn: "মুদ্রানীতি পড়ুন"
+  - en: "View banking notices"
+    bn: "ব্যাংকিং নোটিশ দেখুন"
+  - en: "Find public information"
+    bn: "জনতথ্য খুঁজুন"
 tags: [bangladesh bank, central bank, "বাংলাদেশ ব্যাংক", "কেন্দ্রীয় ব্যাংক"]
 aliases:
   - name: BB

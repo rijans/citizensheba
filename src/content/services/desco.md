@@ -23,6 +23,13 @@ category: utilities
 directory_global_rank: 100
 directory_category_rank: 20
 icon: zap
+capabilities:
+  - en: "Check electricity account"
+    bn: "বিদ্যুৎ অ্যাকাউন্ট দেখুন"
+  - en: "Pay or view bills"
+    bn: "বিল দেখুন বা পরিশোধ"
+  - en: "Find customer services"
+    bn: "গ্রাহক সেবা খুঁজুন"
 tags: [desco, electricity, bill, "ডেসকো", "বিদ্যুৎ"]
 aliases:
   - name: Dhaka Electric Supply

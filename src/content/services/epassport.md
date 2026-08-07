@@ -23,6 +23,13 @@ category: identity
 directory_global_rank: 20
 directory_category_rank: 20
 icon: book-user
+capabilities:
+  - en: "Apply for e-Passport"
+    bn: "ই-পাসপোর্ট আবেদন"
+  - en: "Apply for MRP"
+    bn: "এমআরপি আবেদন"
+  - en: "Book appointment"
+    bn: "অ্যাপয়েন্টমেন্ট বুকিং"
 tags: [passport, mrp, travel, "পাসপোর্ট"]
 aliases:
   - name: MRP

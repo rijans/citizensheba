@@ -21,6 +21,13 @@ category: justice
 directory_global_rank: 1030
 directory_category_rank: 20
 icon: scale
+capabilities:
+  - en: "Find court information"
+    bn: "আদালত তথ্য খুঁজুন"
+  - en: "Read judiciary notices"
+    bn: "বিচার বিভাগীয় নোটিশ"
+  - en: "View official updates"
+    bn: "অফিসিয়াল আপডেট"
 tags: [supreme court, judiciary, "সুপ্রিম কোর্ট", "আদালত"]
 aliases:
   - name: Supreme Court of Bangladesh

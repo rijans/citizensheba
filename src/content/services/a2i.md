@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 500
 directory_category_rank: 40
 icon: lightbulb
+capabilities:
+  - en: "Explore digital initiatives"
+    bn: "ডিজিটাল উদ্যোগ দেখুন"
+  - en: "Find citizen services"
+    bn: "নাগরিক সেবা খুঁজুন"
+  - en: "Read programme updates"
+    bn: "কর্মসূচির আপডেট পড়ুন"
 tags: [a2i, digital, innovation, "এটুআই", services]
 aliases:
   - name: Aspire to Innovate

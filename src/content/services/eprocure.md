@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 820
 directory_category_rank: 260
 icon: clipboard-list
+capabilities:
+  - en: "Browse tender notices"
+    bn: "দরপত্র নোটিশ দেখুন"
+  - en: "Join e-GP participation"
+    bn: "ই-জিপি অংশগ্রহণ"
+  - en: "Find procurement guidance"
+    bn: "কেনাকাটা নির্দেশনা"
 tags: [egp, tender, procurement, "ই-জিপি", "দরপত্র"]
 aliases:
   - name: e-Government Procurement

@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 780
 directory_category_rank: 60
 icon: monitor
+capabilities:
+  - en: "Explore ICT programmes"
+    bn: "আইসিটি কর্মসূচি দেখুন"
+  - en: "Find digital-service info"
+    bn: "ডিজিটাল সেবা তথ্য"
+  - en: "Read department updates"
+    bn: "অধিদপ্তর আপডেট"
 tags: [doict, ict, "ডয়েক্ট", "আইসিটি"]
 aliases:
   - name: Department of ICT

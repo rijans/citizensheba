@@ -23,6 +23,13 @@ category: safety
 directory_global_rank: 910
 directory_category_rank: 50
 icon: shield-alert
+capabilities:
+  - en: "Read disaster preparedness"
+    bn: "দুর্যোগ প্রস্তুতি পড়ুন"
+  - en: "Find relief information"
+    bn: "ত্রাণ তথ্য খুঁজুন"
+  - en: "View ministry updates"
+    bn: "মন্ত্রণালয় আপডেট"
 tags: [modmr, disaster, relief, "দুর্যোগ", "ত্রাণ"]
 aliases:
   - name: Ministry of Disaster Management and Relief

@@ -23,6 +23,13 @@ category: health
 directory_global_rank: 760
 directory_category_rank: 20
 icon: stethoscope
+capabilities:
+  - en: "Explore health programmes"
+    bn: "স্বাস্থ্য কর্মসূচি দেখুন"
+  - en: "Read health information"
+    bn: "স্বাস্থ্য তথ্য পড়ুন"
+  - en: "Find related services"
+    bn: "সংশ্লিষ্ট সেবা খুঁজুন"
 tags: [dghs, health, "স্বাস্থ্য", hospital]
 aliases:
   - name: Directorate General of Health Services

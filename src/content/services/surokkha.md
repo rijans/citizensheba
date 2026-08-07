@@ -23,6 +23,13 @@ category: health
 directory_global_rank: 180
 directory_category_rank: 10
 icon: heart-pulse
+capabilities:
+  - en: "Register for vaccine"
+    bn: "টিকা নিবন্ধন"
+  - en: "Check vaccination status"
+    bn: "টিকার অবস্থা যাচাই"
+  - en: "Download certificate"
+    bn: "সনদ ডাউনলোড"
 tags: [vaccine, covid, certificate, "টিকা"]
 aliases:
   - name: vaccine certificate

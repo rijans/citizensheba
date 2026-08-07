@@ -23,6 +23,13 @@ category: health
 directory_global_rank: 750
 directory_category_rank: 40
 icon: baby
+capabilities:
+  - en: "Explore FP programmes"
+    bn: "পরিবার পরিকল্পনা কর্মসূচি"
+  - en: "Read health information"
+    bn: "স্বাস্থ্য তথ্য পড়ুন"
+  - en: "Find service guidance"
+    bn: "সেবা নির্দেশনা খুঁজুন"
 tags: [dgfp, family planning, "ডিজিএফপি", "পরিবার পরিকল্পনা"]
 aliases:
   - name: Directorate General of Family Planning

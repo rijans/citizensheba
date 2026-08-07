@@ -23,6 +23,13 @@ category: transport
 directory_global_rank: 650
 directory_category_rank: 60
 icon: ship
+capabilities:
+  - en: "Check passenger services"
+    bn: "যাত্রী সেবা দেখুন"
+  - en: "View cargo information"
+    bn: "মালামাল তথ্য দেখুন"
+  - en: "Find schedule updates"
+    bn: "সময়সূচি আপডেট"
 tags: [biwtc, launch, waterway, "বিআইডব্লিউটিসি", "লঞ্চ"]
 aliases:
   - name: Bangladesh Inland Water Transport Corporation

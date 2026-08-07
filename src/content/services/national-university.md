@@ -21,6 +21,13 @@ category: education
 directory_global_rank: 950
 directory_category_rank: 130
 icon: university
+capabilities:
+  - en: "Check exam information"
+    bn: "পরীক্ষা তথ্য দেখুন"
+  - en: "View results updates"
+    bn: "ফলাফল আপডেট দেখুন"
+  - en: "Find affiliated college info"
+    bn: "অধিভুক্ত কলেজ তথ্য"
 tags: [nu, university, exam, "জাতীয় বিশ্ববিদ্যালয়", "পরীক্ষা"]
 aliases:
   - name: NU Bangladesh

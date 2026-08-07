@@ -98,6 +98,21 @@ const verifiedIso = service.data.last_verified.toISOString().slice(0, 10);
 
     <p class="service-page__description">{service.data.description}</p>
 
+    {
+      service.data.capabilities && service.data.capabilities.length > 0 && (
+        <ul class="service-page__capabilities" aria-label="What you can do">
+          {service.data.capabilities.map((cap) => (
+            <li class="service-page__capability">
+              <span class="service-page__capability-en">{cap.en}</span>
+              <span class="service-page__capability-bn" lang="bn">
+                {cap.bn}
+              </span>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
     <OutboundCta url={service.data.url} domain={domain} />
 
     {

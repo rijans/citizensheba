@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 840
 directory_category_rank: 270
 icon: store
+capabilities:
+  - en: "Explore export programmes"
+    bn: "রপ্তানি কর্মসূচি দেখুন"
+  - en: "Find exporter information"
+    bn: "রপ্তানিকারক তথ্য"
+  - en: "Read promotion guidance"
+    bn: "উন্নয়ন নির্দেশনা"
 tags: [epb, export, trade, "ইপিবি", "রপ্তানি"]
 aliases:
   - name: Export Promotion Bureau

@@ -23,6 +23,13 @@ category: safety
 directory_global_rank: 1000
 directory_category_rank: 30
 icon: shield-alert
+capabilities:
+  - en: "Read RAB public information"
+    bn: "র্যাব জনতথ্য পড়ুন"
+  - en: "View published notices"
+    bn: "প্রকাশিত নোটিশ দেখুন"
+  - en: "Find official updates"
+    bn: "অফিসিয়াল আপডেট"
 tags: [rab, security, "র্যাব", "নিরাপত্তা"]
 aliases:
   - name: Rapid Action Battalion

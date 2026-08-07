@@ -1,0 +1,5 @@
+# Service capability capsules on hop pages
+
+Service Pages needed a scannable “what you can do” signal without yellow keyword highlights in the short description, tag clouds from `tags`/`aliases`, or UI that competes with the Outbound CTA. We add an optional **`capabilities`** array (`{ en, bn }`, 2–4 items when present) shown only on the Service Page between the short description and the Outbound CTA as soft brand-aligned capsules (muted gray EN, subtler gray BN — not Category accent or green BN). Capsules are curated citizen tasks for the official portal, not Instant Directory card chrome and not search index fields in v1. We rejected inline `<mark>` soup, runtime parsing of `description`, dumping tags/aliases as pills, EN-only capsules, Category-colored capsule chrome that fights the green brand, and showing capabilities on Home/Category cards.
+
+**Living structure:** [`docs/guides/service-page.md`](../guides/service-page.md). Spec: [`docs/superpowers/specs/2026-08-07-service-capabilities-design.md`](../superpowers/specs/2026-08-07-service-capabilities-design.md).

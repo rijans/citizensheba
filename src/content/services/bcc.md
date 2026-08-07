@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 590
 directory_category_rank: 50
 icon: cpu
+capabilities:
+  - en: "Read ICT standards"
+    bn: "আইসিটি মান পড়ুন"
+  - en: "Explore digital initiatives"
+    bn: "ডিজিটাল উদ্যোগ দেখুন"
+  - en: "Find ICT information"
+    bn: "আইসিটি তথ্য খুঁজুন"
 tags: [bcc, ict, digital, "বিসিসি", "আইসিটি"]
 aliases:
   - name: Bangladesh Computer Council

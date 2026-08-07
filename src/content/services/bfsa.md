@@ -23,6 +23,13 @@ category: health
 directory_global_rank: 610
 directory_category_rank: 60
 icon: utensils
+capabilities:
+  - en: "Read food safety advisories"
+    bn: "খাদ্য নিরাপত্তা সতর্কতা"
+  - en: "View regulation updates"
+    bn: "নিয়ন্ত্রণ আপডেট দেখুন"
+  - en: "Find public guidance"
+    bn: "জন নির্দেশনা খুঁজুন"
 tags: [bfsa, food safety, "বিএফএসএ", "নিরাপদ খাদ্য"]
 aliases:
   - name: Bangladesh Food Safety Authority

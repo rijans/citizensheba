@@ -21,6 +21,13 @@ category: land
 directory_global_rank: 900
 directory_category_rank: 40
 icon: home
+capabilities:
+  - en: "Find land information"
+    bn: "ভূমি তথ্য খুঁজুন"
+  - en: "Explore digital land services"
+    bn: "ডিজিটাল ভূমি সেবা"
+  - en: "Open ministry land links"
+    bn: "মন্ত্রণালয়ের ভূমি লিংক"
 tags: [land, "ভূমি", ministry, khatian]
 aliases:
   - name: land ministry

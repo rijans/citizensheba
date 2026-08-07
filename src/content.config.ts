@@ -29,6 +29,12 @@ const nameAlias = z.object({
   kind: z.enum(['former', 'informal', 'alt']),
 });
 
+/** Curated hop “what you can do” tasks (ADR-0011). Omit when not ready. */
+const capability = z.object({
+  en: z.string().min(1).max(40),
+  bn: z.string().min(1).max(48),
+});
+
 const service = defineCollection({
   loader: glob({ base: './src/content/services', pattern: '**/*.md' }),
   schema: z.object({
@@ -60,6 +66,11 @@ const service = defineCollection({
      * When omitted, cards use the Category icon. Chips always use Category icons.
      */
     icon: z.string().min(1).optional(),
+    /**
+     * Optional hop-only “what you can do” capsules (ADR-0011).
+     * When set: 2–4 EN+BN tasks. Not shown on Instant Directory cards.
+     */
+    capabilities: z.array(capability).min(2).max(4).optional(),
     tags: z.array(z.string()),
     /** Required: at least two Name Aliases covering EN and BN (enforced in integrity tests too). */
     aliases: z.array(nameAlias).min(2),

@@ -23,6 +23,13 @@ category: education
 directory_global_rank: 1060
 directory_category_rank: 60
 icon: badge-check
+capabilities:
+  - en: "Read higher-education guidance"
+    bn: "উচ্চশিক্ষা নির্দেশনা"
+  - en: "Find university-related info"
+    bn: "বিশ্ববিদ্যালয় তথ্য"
+  - en: "View UGC notices"
+    bn: "ইউজিসি নোটিশ দেখুন"
 tags: [ugc, university, higher education, "ইউজিসি", "উচ্চশিক্ষা"]
 aliases:
   - name: University Grants Commission

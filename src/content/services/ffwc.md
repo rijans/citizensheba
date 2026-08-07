@@ -23,6 +23,13 @@ category: safety
 directory_global_rank: 850
 directory_category_rank: 60
 icon: cloud-rain
+capabilities:
+  - en: "Read flood bulletins"
+    bn: "বন্যা বুলেটিন পড়ুন"
+  - en: "Check water levels"
+    bn: "পানির স্তর দেখুন"
+  - en: "View flood warnings"
+    bn: "বন্যা সতর্কতা দেখুন"
 tags: [ffwc, flood, warning, "এফএফডব্লিউসি", "বন্যা"]
 aliases:
   - name: Flood Forecasting and Warning Centre

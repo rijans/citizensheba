@@ -21,6 +21,13 @@ category: utilities
 directory_global_rank: 1040
 directory_category_rank: 50
 icon: flame
+capabilities:
+  - en: "Find customer information"
+    bn: "গ্রাহক তথ্য খুঁজুন"
+  - en: "Access gas services"
+    bn: "গ্যাস সেবা নিন"
+  - en: "View account guidance"
+    bn: "অ্যাকাউন্ট নির্দেশনা"
 tags: [titas, gas, bill, "তিতাস", "গ্যাস"]
 aliases:
   - name: TGTDCL

@@ -23,6 +23,13 @@ category: migration
 directory_global_rank: 1090
 directory_category_rank: 50
 icon: hand-heart
+capabilities:
+  - en: "Explore welfare services"
+    bn: "কল্যাণ সেবা দেখুন"
+  - en: "Read expatriate guidance"
+    bn: "প্রবাসী নির্দেশনা"
+  - en: "Find WEWB updates"
+    bn: "ডব্লিউইডব্লিউবি আপডেট"
 tags: [wewb, expatriate, welfare, "প্রবাসী", "কল্যাণ"]
 aliases:
   - name: Wage Earners Welfare Board

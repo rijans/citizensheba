@@ -21,6 +21,13 @@ category: safety
 directory_global_rank: 190
 directory_category_rank: 20
 icon: flame
+capabilities:
+  - en: "Find emergency information"
+    bn: "জরুরি তথ্য খুঁজুন"
+  - en: "Explore public services"
+    bn: "জনসেবা দেখুন"
+  - en: "Read safety guidance"
+    bn: "নিরাপত্তা নির্দেশনা"
 tags: [fire, civil defence, emergency, "ফায়ার", "সিভিল ডিফেন্স"]
 aliases:
   - name: FSCD

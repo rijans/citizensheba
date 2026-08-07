@@ -21,6 +21,13 @@ category: central
 directory_global_rank: 70
 directory_category_rank: 20
 icon: globe
+capabilities:
+  - en: "Browse ministries"
+    bn: "মন্ত্রণালয় দেখুন"
+  - en: "Find digital services"
+    bn: "ডিজিটাল সেবা খুঁজুন"
+  - en: "Open government gateways"
+    bn: "সরকারি গেটওয়ে খুলুন"
 tags: [portal, ministries, government, "বাতায়ন"]
 aliases:
   - name: bangladesh.gov.bd

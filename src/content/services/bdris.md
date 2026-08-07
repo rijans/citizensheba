@@ -21,6 +21,15 @@ category: identity
 directory_global_rank: 50
 directory_category_rank: 30
 icon: scroll-text
+capabilities:
+  - en: "Apply for birth certificate"
+    bn: "জন্ম সনদের আবেদন"
+  - en: "Apply for death certificate"
+    bn: "মৃত্যু সনদের আবেদন"
+  - en: "Track application status"
+    bn: "আবেদনের অবস্থা ট্র্যাক"
+  - en: "Verify certificate"
+    bn: "সনদ যাচাই করুন"
 tags: [birth, death, certificate, bdris, "জন্ম নিবন্ধন"]
 aliases:
   - name: birth registration

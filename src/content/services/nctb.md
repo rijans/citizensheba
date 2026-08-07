@@ -23,6 +23,13 @@ category: education
 directory_global_rank: 960
 directory_category_rank: 50
 icon: book-open
+capabilities:
+  - en: "Find curriculum information"
+    bn: "শিক্ষাক্রম তথ্য"
+  - en: "Browse textbook publications"
+    bn: "পাঠ্যপুস্তক প্রকাশনা"
+  - en: "Read NCTB updates"
+    bn: "এনসিটিবি আপডেট"
 tags: [nctb, textbook, curriculum, "এনসিটিবি", "পাঠ্যপুস্তক"]
 aliases:
   - name: National Curriculum and Textbook Board

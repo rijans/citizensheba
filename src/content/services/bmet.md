@@ -23,6 +23,13 @@ category: migration
 directory_global_rank: 670
 directory_category_rank: 10
 icon: briefcase-business
+capabilities:
+  - en: "Apply for emigration clearance"
+    bn: "বহির্গমন ক্লিয়ারেন্স"
+  - en: "Track clearance status"
+    bn: "ক্লিয়ারেন্স অবস্থা"
+  - en: "Read overseas employment guidance"
+    bn: "বৈদেশিক কর্মসংস্থান নির্দেশনা"
 tags: [bmet, emigration, overseas, "বিএমইটি", "প্রবাস"]
 aliases:
   - name: Bureau of Manpower Employment and Training

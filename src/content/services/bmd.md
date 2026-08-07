@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 660
 directory_category_rank: 220
 icon: cloud-sun
+capabilities:
+  - en: "Check weather forecast"
+    bn: "আবহাওয়া পূর্বাভাস"
+  - en: "View weather warnings"
+    bn: "আবহাওয়া সতর্কতা"
+  - en: "Read climate information"
+    bn: "জলবায়ু তথ্য পড়ুন"
 tags: [bmd, weather, forecast, "বিএমডি", "আবহাওয়া"]
 aliases:
   - name: Bangladesh Meteorological Department

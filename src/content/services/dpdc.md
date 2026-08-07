@@ -23,6 +23,13 @@ category: utilities
 directory_global_rank: 110
 directory_category_rank: 30
 icon: zap
+capabilities:
+  - en: "View e-bill"
+    bn: "ই-বিল দেখুন"
+  - en: "Access customer service"
+    bn: "গ্রাহক সেবা নিন"
+  - en: "Manage electricity account"
+    bn: "বিদ্যুৎ অ্যাকাউন্ট"
 tags: [dpdc, electricity, ebill, "ডিপিডিসি", "বিদ্যুৎ"]
 aliases:
   - name: Dhaka Power Distribution

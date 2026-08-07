@@ -21,6 +21,13 @@ category: land
 directory_global_rank: 870
 directory_category_rank: 30
 icon: banknote
+capabilities:
+  - en: "Pay land development tax"
+    bn: "ভূমি উন্নয়ন কর পরিশোধ"
+  - en: "Get digital Dakhila"
+    bn: "ডিজিটাল দাখিলা নিন"
+  - en: "View tax payment status"
+    bn: "কর পরিশোধের অবস্থা"
 tags: ["land tax", khajna, dakhila, "খাজনা"]
 aliases:
   - name: khajna

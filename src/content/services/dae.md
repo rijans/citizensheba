@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 730
 directory_category_rank: 240
 icon: sprout
+capabilities:
+  - en: "Read farmer advisories"
+    bn: "কৃষক পরামর্শ পড়ুন"
+  - en: "Find extension information"
+    bn: "সম্প্রসারণ তথ্য"
+  - en: "View agriculture updates"
+    bn: "কৃষি আপডেট দেখুন"
 tags: [dae, agriculture, farmers, "কৃষি", "সম্প্রসারণ"]
 aliases:
   - name: Department of Agricultural Extension

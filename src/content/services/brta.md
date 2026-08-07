@@ -23,6 +23,13 @@ category: transport
 directory_global_rank: 130
 directory_category_rank: 20
 icon: car
+capabilities:
+  - en: "Apply for driving licence"
+    bn: "ড্রাইভিং লাইসেন্স আবেদন"
+  - en: "Register a vehicle"
+    bn: "মোটরযান নিবন্ধন"
+  - en: "Pay transport fees"
+    bn: "পরিবহন ফি পরিশোধ"
 tags: ["driving licence", license, vehicle, brta, "লাইসেন্স"]
 aliases:
   - name: driving license

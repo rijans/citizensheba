@@ -21,6 +21,13 @@ category: education
 directory_global_rank: 1070
 directory_category_rank: 70
 icon: university
+capabilities:
+  - en: "Check admission info"
+    bn: "ভর্তি তথ্য দেখুন"
+  - en: "Read academic notices"
+    bn: "একাডেমিক নোটিশ"
+  - en: "Find university information"
+    bn: "বিশ্ববিদ্যালয় তথ্য"
 tags: [du, dhaka university, admission, "ঢাকা বিশ্ববিদ্যালয়"]
 aliases:
   - name: DU

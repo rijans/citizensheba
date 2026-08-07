@@ -21,6 +21,13 @@ category: utilities
 directory_global_rank: 90
 directory_category_rank: 10
 icon: droplets
+capabilities:
+  - en: "Manage water account"
+    bn: "পানি অ্যাকাউন্ট ব্যবস্থাপনা"
+  - en: "Pay water bills"
+    bn: "পানির বিল পরিশোধ"
+  - en: "Access sewer services"
+    bn: "স্যুয়ারেজ সেবা নিন"
 tags: [wasa, water, bill, "ওয়াসা", "পানি"]
 aliases:
   - name: DWASA

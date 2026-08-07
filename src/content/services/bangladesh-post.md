@@ -21,6 +21,13 @@ category: central
 directory_global_rank: 580
 directory_category_rank: 200
 icon: mail
+capabilities:
+  - en: "Track postal items"
+    bn: "ডাক আইটেম ট্র্যাক করুন"
+  - en: "Find post-office guidance"
+    bn: "পোস্ট অফিস নির্দেশনা"
+  - en: "Explore postal services"
+    bn: "ডাক সেবা দেখুন"
 tags: [post, postal, tracking, "ডাক", "পোস্ট"]
 aliases:
   - name: Bangladesh Postal Department

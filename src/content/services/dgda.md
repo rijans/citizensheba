@@ -23,6 +23,13 @@ category: health
 directory_global_rank: 740
 directory_category_rank: 30
 icon: pill
+capabilities:
+  - en: "Read medicine regulation"
+    bn: "ওষুধ নিয়ন্ত্রণ তথ্য"
+  - en: "View drug-safety updates"
+    bn: "ওষুধ নিরাপত্তা আপডেট"
+  - en: "Find public guidance"
+    bn: "জন নির্দেশনা খুঁজুন"
 tags: [dgda, drug, medicine, "ডিজিডিএ", "ওষুধ"]
 aliases:
   - name: Directorate General of Drug Administration

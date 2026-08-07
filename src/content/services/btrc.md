@@ -23,6 +23,13 @@ category: utilities
 directory_global_rank: 80
 directory_category_rank: 40
 icon: radio
+capabilities:
+  - en: "Read telecom notices"
+    bn: "টেলিকম নোটিশ পড়ুন"
+  - en: "View regulation updates"
+    bn: "নিয়ন্ত্রণ আপডেট"
+  - en: "Find public information"
+    bn: "জনতথ্য খুঁজুন"
 tags: [btrc, telecom, regulator, "বিটিআরসি", "টেলিকম"]
 aliases:
   - name: Bangladesh Telecommunication Regulatory Commission

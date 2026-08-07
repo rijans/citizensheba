@@ -1227,6 +1227,39 @@ html[data-theme="dark"] .caution {
   color: var(--ink-muted);
 }
 
+.service-page__capabilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0.875rem 0 0;
+  padding: 0;
+  max-width: 42rem;
+}
+
+.service-page__capability {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  padding: 0.4375rem 0.75rem;
+  border-radius: 0.75rem;
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  line-height: 1.25;
+}
+
+.service-page__capability-en {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+}
+
+.service-page__capability-bn {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--ink-subtle);
+}
+
 .service-page__body {
   margin: 1.75rem 0 0;
   max-width: 42rem;

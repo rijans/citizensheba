@@ -23,6 +23,13 @@ category: education
 directory_global_rank: 710
 directory_category_rank: 80
 icon: university
+capabilities:
+  - en: "Check admission info"
+    bn: "ভর্তি তথ্য দেখুন"
+  - en: "Read academic notices"
+    bn: "একাডেমিক নোটিশ"
+  - en: "Find university updates"
+    bn: "বিশ্ববিদ্যালয় আপডেট"
 tags: [buet, engineering, admission, "বুয়েট"]
 aliases:
   - name: Bangladesh University of Engineering and Technology

@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 700
 directory_category_rank: 230
 icon: factory
+capabilities:
+  - en: "Explore SME services"
+    bn: "এসএমই সেবা দেখুন"
+  - en: "Find cottage industry info"
+    bn: "কুটির শিল্প তথ্য"
+  - en: "Read programme guidance"
+    bn: "কর্মসূচি নির্দেশনা"
 tags: [bscic, sme, cottage, "বিসিক", "কুটির শিল্প"]
 aliases:
   - name: Bangladesh Small and Cottage Industries Corporation

@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 930
 directory_category_rank: 280
 icon: heart-handshake
+capabilities:
+  - en: "Explore women & children programmes"
+    bn: "মহিলা ও শিশু কর্মসূচি"
+  - en: "Read policy notices"
+    bn: "নীতি নোটিশ পড়ুন"
+  - en: "Find ministry updates"
+    bn: "মন্ত্রণালয় আপডেট"
 tags: [mowca, women, children, "মহিলা", "শিশু"]
 aliases:
   - name: Ministry of Women and Children Affairs

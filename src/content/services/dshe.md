@@ -23,6 +23,13 @@ category: education
 directory_global_rank: 790
 directory_category_rank: 110
 icon: school
+capabilities:
+  - en: "Read school/college admin info"
+    bn: "স্কুল-কলেজ প্রশাসন তথ্য"
+  - en: "View education notices"
+    bn: "শিক্ষা নোটিশ দেখুন"
+  - en: "Find directorate updates"
+    bn: "অধিদপ্তর আপডেট"
 tags: [dshe, secondary education, "মাউশি", "মাধ্যমিক"]
 aliases:
   - name: Directorate of Secondary and Higher Education

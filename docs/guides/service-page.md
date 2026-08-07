@@ -26,6 +26,7 @@ Implementation: `src/pages/services/[slug].astro`.
 | 3 | Icon + H1 | Service `icon` ?? Category `icon`; `title` + `title_bn` | Same Lucide + Category accent as cards (ADR-0004); EN then BN on one line |
 | 4 | Formerly … | `aliases` where `kind: former` | Quiet line only |
 | 5 | Short description | `description` | EN only under H1 today; cards + Meta Description also use short fields |
+| 5b | Capability capsules | optional `capabilities[]` | 2–4 EN+BN soft capsules (muted gray EN, subtler gray BN); hop only — ADR-0011 |
 | 6 | Outbound CTA | `url` + domain | Primary action; domain under button with small **Copy** (full URL); bilingual toast “Link copied / লিংক কপি হয়েছে” |
 | 7 | Status caution | if not `ACTIVE` | Short warning |
 | 8 | Body | `body_bn` then `body` | Markdown; BN first; equal-spaced divider before EN |
@@ -62,6 +63,7 @@ Schema: `src/content.config.ts`. Integrity: `tests/unit/content-integrity.test.t
 | `aliases` | ≥2 with both `en` and `bn` (ADR-0006) |
 | `directory_global_rank` / `directory_category_rank` | Browse order on Home All / Category (ADR-0010); living table [`directory-ranking.md`](directory-ranking.md) |
 | `icon` | Optional Lucide Service Icon (ADR-0004); [`service-icons.md`](service-icons.md) |
+| `capabilities` | Optional hop-only tasks (2–4 `{ en, bn }`) as soft capsules before Outbound CTA (ADR-0011) |
 | `url`, `official_domain`, `last_verified`, `category`, `slug` (`bd-…`) | Hop + Link Health |
 
 ## Editorial do-nots (hop copy)

@@ -23,6 +23,13 @@ category: education
 directory_global_rank: 1110
 directory_category_rank: 30
 icon: clipboard-check
+capabilities:
+  - en: "Apply for Class 11 admission"
+    bn: "একাদশ ভর্তি আবেদন"
+  - en: "Track admission status"
+    bn: "ভর্তির অবস্থা ট্র্যাক"
+  - en: "Follow college admission steps"
+    bn: "কলেজ ভর্তির ধাপ"
 tags: [admission, college, xi, "একাদশ", "ভর্তি"]
 aliases:
   - name: class 11 admission

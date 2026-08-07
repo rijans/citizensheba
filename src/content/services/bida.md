@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 620
 directory_category_rank: 210
 icon: briefcase-business
+capabilities:
+  - en: "Explore investment info"
+    bn: "বিনিয়োগ তথ্য দেখুন"
+  - en: "Access one-stop services"
+    bn: "ওয়ান-স্টপ সেবা নিন"
+  - en: "Read investor guidance"
+    bn: "বিনিয়োগকারী নির্দেশনা"
 tags: [bida, investment, oss, "বিডা", "বিনিয়োগ"]
 aliases:
   - name: Bangladesh Investment Development Authority

@@ -23,6 +23,13 @@ category: tax
 directory_global_rank: 30
 directory_category_rank: 10
 icon: receipt
+capabilities:
+  - en: "Register for new TIN"
+    bn: "নতুন টিআইএন নিবন্ধন"
+  - en: "Manage existing TIN"
+    bn: "টিআইএন ব্যবস্থাপনা"
+  - en: "Update taxpayer details"
+    bn: "করদাতা তথ্য হালনাগাদ"
 tags: [tin, tax, nbr, income, "টিআইএন"]
 aliases:
   - name: TIN

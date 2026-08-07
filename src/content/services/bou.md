@@ -21,6 +21,13 @@ category: education
 directory_global_rank: 570
 directory_category_rank: 120
 icon: book-open
+capabilities:
+  - en: "Browse programmes"
+    bn: "প্রোগ্রাম দেখুন"
+  - en: "Find admission info"
+    bn: "ভর্তি তথ্য খুঁজুন"
+  - en: "Check exam notices"
+    bn: "পরীক্ষা নোটিশ দেখুন"
 tags: [bou, open university, distance learning, "উন্মুক্ত বিশ্ববিদ্যালয়"]
 aliases:
   - name: BOU

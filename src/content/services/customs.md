@@ -21,6 +21,13 @@ category: tax
 directory_global_rank: 540
 directory_category_rank: 40
 icon: package
+capabilities:
+  - en: "Read customs procedures"
+    bn: "কাস্টমস পদ্ধতি পড়ুন"
+  - en: "View trade notices"
+    bn: "বাণিজ্য নোটিশ দেখুন"
+  - en: "Find trade guidance"
+    bn: "বাণিজ্য নির্দেশনা"
 tags: [customs, import, export, "কাস্টমস", "শুল্ক"]
 aliases:
   - name: Customs BD

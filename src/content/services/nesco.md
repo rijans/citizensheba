@@ -23,6 +23,13 @@ category: utilities
 directory_global_rank: 970
 directory_category_rank: 60
 icon: zap
+capabilities:
+  - en: "Pay electricity bills"
+    bn: "বিদ্যুৎ বিল পরিশোধ"
+  - en: "Manage account services"
+    bn: "অ্যাকাউন্ট সেবা"
+  - en: "Access customer portal"
+    bn: "গ্রাহক পোর্টাল খুলুন"
 tags: [nesco, electricity, bill, "নেসকো", "বিদ্যুৎ"]
 aliases:
   - name: Northern Electricity Supply

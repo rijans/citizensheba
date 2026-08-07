@@ -21,6 +21,13 @@ category: education
 directory_global_rank: 890
 directory_category_rank: 40
 icon: school
+capabilities:
+  - en: "Read education policy notices"
+    bn: "শিক্ষা নীতি নোটিশ"
+  - en: "Find ministry information"
+    bn: "মন্ত্রণালয় তথ্য"
+  - en: "View education updates"
+    bn: "শিক্ষা আপডেট দেখুন"
 tags: [education ministry, moedu, "শিক্ষা মন্ত্রণালয়"]
 aliases:
   - name: MoE Bangladesh

@@ -23,6 +23,13 @@ category: utilities
 directory_global_rank: 600
 directory_category_rank: 120
 icon: bolt
+capabilities:
+  - en: "View energy tariffs"
+    bn: "জ্বালানি ট্যারিফ দেখুন"
+  - en: "Read regulation notices"
+    bn: "নিয়ন্ত্রণ নোটিশ পড়ুন"
+  - en: "Find commission updates"
+    bn: "কমিশন আপডেট খুঁজুন"
 tags: [berc, energy, tariff, "বিইআরসি", "জ্বালানি"]
 aliases:
   - name: Bangladesh Energy Regulatory Commission

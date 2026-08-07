@@ -23,6 +23,13 @@ category: utilities
 directory_global_rank: 980
 directory_category_rank: 110
 icon: cable
+capabilities:
+  - en: "View grid information"
+    bn: "গ্রিড তথ্য দেখুন"
+  - en: "Read transmission updates"
+    bn: "সঞ্চালন আপডেট"
+  - en: "Find company notices"
+    bn: "কোম্পানি নোটিশ"
 tags: [pgcb, power grid, transmission, "পিজিসিবি", "গ্রিড"]
 aliases:
   - name: Power Grid Company of Bangladesh

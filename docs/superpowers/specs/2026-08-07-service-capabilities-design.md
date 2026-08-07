@@ -1,6 +1,6 @@
 # Service capability capsules — design
 
-> **Status:** approved design (awaiting implement). Living hop SSOT after ship: [`docs/guides/service-page.md`](../../guides/service-page.md). Glossary: `CONTEXT.md` → **Service Capability**.
+> **Status:** implemented. Living hop SSOT: [`docs/guides/service-page.md`](../../guides/service-page.md). Glossary: `CONTEXT.md` → **Service Capability**. ADR: [0011](../../adr/0011-service-capability-capsules.md).
 
 Hop pages need a scannable “what you can do” signal without yellow highlights inside the short description, tag clouds, or competing with the Outbound CTA. Citizens (EN and BN) should see 2–4 curated tasks as soft capsules between the description and the primary CTA.
 
@@ -14,7 +14,7 @@ Hop pages need a scannable “what you can do” signal without yellow highlight
 | Count | When present: **2–4** items; omit field if nothing solid |
 | Placement | After short description, **before** Outbound CTA |
 | Surfaces | **Service Page hop only** — not Instant Directory / Category cards |
-| Accent | Category soft accent (same family as hop icon well) |
+| Accent | Brand soft surface + muted gray EN / subtler gray BN (not Category blue / not green BN) |
 | Seeding v1 | **All** Services get 2–4 curated tasks from existing description/body honesty |
 | Search | Capsules are display-only in v1 (aliases/tags already cover search) |
 | Docs | `service-page.md`, `CONTEXT.md`, `new-service.md`, INDEX; short ADR-0011 |
@@ -54,8 +54,8 @@ Integrity (optional soft rule): if `capabilities` present, each `en`/`bn` non-em
 ## Visual
 
 - Row: flex wrap, gap ~0.5rem, margin under description / above CTA
-- Capsule: soft Category accent fill (`--cat-accent-soft`), accent or ink text; radius ~0.75rem; padding compact
-- Typography: EN ~0.8125–0.875rem medium; BN slightly smaller, `lang="bn"`, muted/green peer (not louder than H1 BN)
+- Capsule: `surface-muted` fill + light border; radius ~0.75rem; padding compact
+- Typography: EN ~0.8125–0.875rem medium **ink-muted**; BN slightly smaller, `lang="bn"`, **ink-subtle** gray (quieter than EN; not green/blue)
 - No Lucide inside capsules; no border/shadow that rivals the green CTA button
 - Mobile: wrap naturally; do not force horizontal scroll
 

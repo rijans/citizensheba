@@ -23,6 +23,13 @@ category: tax
 directory_global_rank: 40
 directory_category_rank: 20
 icon: file-text
+capabilities:
+  - en: "Submit income tax return"
+    bn: "আয়কর রিটার্ন জমা"
+  - en: "File yearly return online"
+    bn: "বার্ষিক রিটার্ন অনলাইন"
+  - en: "Access NBR tax portal"
+    bn: "এনবিআর ট্যাক্স পোর্টাল"
 tags: [return, tax, "income tax", nbr, "আয়কর"]
 aliases:
   - name: income tax return

@@ -21,6 +21,13 @@ category: transport
 directory_global_rank: 630
 directory_category_rank: 30
 icon: plane
+capabilities:
+  - en: "Check flight information"
+    bn: "ফ্লাইট তথ্য দেখুন"
+  - en: "Start ticket booking"
+    bn: "টিকিট বুকিং শুরু"
+  - en: "Find travel updates"
+    bn: "ভ্রমণ আপডেট খুঁজুন"
 tags: [biman, airline, flight, "বিমান", "এয়ারলাইন্স"]
 aliases:
   - name: Biman

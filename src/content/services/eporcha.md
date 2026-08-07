@@ -23,6 +23,13 @@ category: land
 directory_global_rank: 150
 directory_category_rank: 10
 icon: map
+capabilities:
+  - en: "Search Khatian records"
+    bn: "খতিয়ান অনুসন্ধান"
+  - en: "Apply for certified copy"
+    bn: "সত্যায়িত কপির আবেদন"
+  - en: "Find Mouza maps"
+    bn: "মৌজা ম্যাপ খুঁজুন"
 tags: [khatian, "land record", mouza, porcha, "খতিয়ান"]
 aliases:
   - name: porcha

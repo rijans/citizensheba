@@ -23,6 +23,13 @@ category: transport
 directory_global_rank: 1020
 directory_category_rank: 50
 icon: bus
+capabilities:
+  - en: "Read roads administration info"
+    bn: "সড়ক প্রশাসন তথ্য"
+  - en: "View highway updates"
+    bn: "মহাসড়ক আপডেট"
+  - en: "Find division notices"
+    bn: "বিভাগীয় নোটিশ"
 tags: [rthd, roads, highways, "সড়ক", "মহাসড়ক"]
 aliases:
   - name: Road Transport and Highways Division

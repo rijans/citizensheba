@@ -21,6 +21,13 @@ category: justice
 directory_global_rank: 880
 directory_category_rank: 30
 icon: scale
+capabilities:
+  - en: "Read justice administration info"
+    bn: "বিচার প্রশাসন তথ্য"
+  - en: "View division notices"
+    bn: "বিভাগীয় নোটিশ দেখুন"
+  - en: "Find legal guidance"
+    bn: "আইন নির্দেশনা খুঁজুন"
 tags: [law, justice, division, "আইন", "বিচার"]
 aliases:
   - name: Law & Justice Division

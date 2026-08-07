@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 800
 directory_category_rank: 250
 icon: hand-heart
+capabilities:
+  - en: "Explore welfare programmes"
+    bn: "কল্যাণ কর্মসূচি দেখুন"
+  - en: "Read public guidance"
+    bn: "জন নির্দেশনা পড়ুন"
+  - en: "Find social service info"
+    bn: "সমাজসেবা তথ্য"
 tags: [dss, social services, welfare, "সমাজসেবা", "ভাতা"]
 aliases:
   - name: Department of Social Services

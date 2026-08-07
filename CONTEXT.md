@@ -142,6 +142,10 @@ _Avoid_: Emoji wallpaper on every card, loud category color fills, BN labels on 
 Optional Lucide key on a Service (`icon` in frontmatter). When set, Service cards (Home, Category, related) and the Service Page H1 show that glyph instead of the Category Icon; the soft accent remains the Category accent. When omitted, those surfaces use the Category Icon. Living table: `docs/guides/service-icons.md`.
 _Avoid_: Per-Service accent colors, official gov logos on cards, custom PNG/stock ID-card illustrations, putting Service icons on Category chips
 
+**Service Capability**:
+Optional curated “what you can do” task on a Service hop (`capabilities: [{ en, bn }, …]`, 2–4 when present). Shown only on the Service Page as soft capsules (muted gray EN, subtler gray BN) between the short description and the Outbound CTA — not on Instant Directory cards, not derived from `tags`/`aliases`, and not search-indexed in v1. Decision: ADR-0011; living hop order: `docs/guides/service-page.md`.
+_Avoid_: Yellow highlights inside `description`, dumping tags as pills, capability rows on Home cards, Category-blue or green BN capsule chrome that fights the hop hierarchy, competing visually with the green Outbound CTA
+
 **Mobile-First**:
 Layouts, Instant Directory, and Service/Category Pages are designed for small screens first (thumb reach, single-column cards, sticky search/chips that don’t eat the viewport), then enhanced for tablet/desktop. Touch targets and performance on mid-range Android matter as much as desktop polish.
 _Avoid_: Desktop-only hover reliance, tiny tap targets, hero chrome that pushes search below the fold on phones

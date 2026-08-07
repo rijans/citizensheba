@@ -21,6 +21,13 @@ category: transport
 directory_global_rank: 120
 directory_category_rank: 10
 icon: train-front
+capabilities:
+  - en: "Buy intercity tickets"
+    bn: "আন্তঃনগর টিকিট কিনুন"
+  - en: "Check train schedules"
+    bn: "ট্রেন সময়সূচি দেখুন"
+  - en: "View routes"
+    bn: "রুট দেখুন"
 tags: [train, ticket, rail, "ট্রেন", "টিকিট"]
 aliases:
   - name: train ticket

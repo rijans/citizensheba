@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 1010
 directory_category_rank: 290
 icon: building-2
+capabilities:
+  - en: "Register a company"
+    bn: "কোম্পানি নিবন্ধন"
+  - en: "Register a firm"
+    bn: "ফার্ম নিবন্ধন"
+  - en: "Access RJSC e-services"
+    bn: "আরজেএসসি ই-সেবা"
 tags: [rjsc, company, registration, "আরজেএসসি", "কোম্পানি"]
 aliases:
   - name: Registrar of Joint Stock Companies

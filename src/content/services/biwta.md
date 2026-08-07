@@ -23,6 +23,13 @@ category: transport
 directory_global_rank: 640
 directory_category_rank: 70
 icon: anchor
+capabilities:
+  - en: "View waterway information"
+    bn: "নৌপথ তথ্য দেখুন"
+  - en: "Read navigation notices"
+    bn: "নৌচলাচল নোটিশ পড়ুন"
+  - en: "Find regulation updates"
+    bn: "নিয়ন্ত্রণ আপডেট খুঁজুন"
 tags: [biwta, waterway, navigation, "বিআইডব্লিউটিএ", "নৌপথ"]
 aliases:
   - name: Bangladesh Inland Water Transport Authority

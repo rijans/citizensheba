@@ -23,6 +23,13 @@ category: central
 directory_global_rank: 200
 directory_category_rank: 30
 icon: wallet
+capabilities:
+  - en: "Pay utility bills"
+    bn: "ইউটিলিটি বিল পরিশোধ"
+  - en: "Pay selected service fees"
+    bn: "নির্বাচিত সেবা ফি"
+  - en: "Use government payment gateway"
+    bn: "সরকারি পেমেন্ট গেটওয়ে"
 tags: [ekpay, payment, bill, "একপে", "বিল"]
 aliases:
   - name: Ekpay

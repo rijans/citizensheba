@@ -21,6 +21,13 @@ category: justice
 directory_global_rank: 810
 directory_category_rank: 10
 icon: gavel
+capabilities:
+  - en: "Submit a citizen report"
+    bn: "নাগরিক অভিযোগ জমা"
+  - en: "Access mobile court services"
+    bn: "মোবাইল কোর্ট সেবা"
+  - en: "Follow case guidance"
+    bn: "মামলা নির্দেশনা"
 tags: [ecourt, court, mobile court, "ই-কোর্ট", "আদালত"]
 aliases:
   - name: eCourts

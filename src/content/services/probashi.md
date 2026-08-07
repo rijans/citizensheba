@@ -23,6 +23,13 @@ category: migration
 directory_global_rank: 990
 directory_category_rank: 40
 icon: users
+capabilities:
+  - en: "Read migrant-worker policy"
+    bn: "প্রবাসী কর্মী নীতি"
+  - en: "Find overseas employment info"
+    bn: "বৈদেশিক কর্মসংস্থান তথ্য"
+  - en: "View ministry services"
+    bn: "মন্ত্রণালয় সেবা"
 tags: [probashi, expatriate, overseas, "প্রবাসী", "কল্যাণ"]
 aliases:
   - name: Ministry of Expatriates Welfare
