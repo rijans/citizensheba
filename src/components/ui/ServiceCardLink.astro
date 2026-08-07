@@ -1,24 +1,13 @@
 ---
 import CategoryIcon from './CategoryIcon';
 import StatusBadge from '../service/StatusBadge.astro';
-import { accentStyle } from '../../lib/categoryVisuals';
+import { accentStyleAttr } from '../../lib/categoryVisuals';
+import type { ServiceCardFields } from '../../lib/serviceCard';
 
-interface Props {
-  href: string;
-  title: string;
-  titleBn: string;
-  description: string;
-  domain: string;
-  status: 'ACTIVE' | 'MAINTENANCE' | 'DEPRECATED';
-  categoryId: string;
-  icon: string;
-}
+type Props = ServiceCardFields;
 
-const { href, title, titleBn, description, domain, status, categoryId, icon } = Astro.props;
-const style = accentStyle(categoryId);
-const styleAttr = Object.entries(style)
-  .map(([k, v]) => `${k}:${v}`)
-  .join(';');
+const { href, title, titleBn, description, domain, status, categoryId, icon } = Astro.props as Props;
+const styleAttr = accentStyleAttr(categoryId);
 ---
 
 <a class="service-card" href={href} style={styleAttr}>

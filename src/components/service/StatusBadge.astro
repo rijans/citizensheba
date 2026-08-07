@@ -1,15 +1,12 @@
 ---
+import { statusBadgeLabel, type ServiceStatus } from '../../lib/serviceCard';
+
 interface Props {
-  status: 'ACTIVE' | 'MAINTENANCE' | 'DEPRECATED';
+  status: ServiceStatus;
 }
 
 const { status } = Astro.props;
+const label = statusBadgeLabel(status);
 ---
 
-{
-  status !== 'ACTIVE' && (
-    <span class={`status-badge status-badge--${status.toLowerCase()}`}>
-      {status === 'MAINTENANCE' ? 'Maintenance' : 'Deprecated'}
-    </span>
-  )
-}
+{label && <span class={`status-badge status-badge--${status.toLowerCase()}`}>{label}</span>}

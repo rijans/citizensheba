@@ -56,7 +56,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 |------|--------|
 | Home Instant Directory | `src/pages/index.astro`, `src/components/directory/InstantDirectory.tsx`, `useDirectoryBrowse.ts`, `DirectoryCardSkeleton.tsx`, `DirectoryPagination.tsx` |
 | Category directory (paginated) | `src/pages/categories/[slug].astro`, `src/components/directory/CategoryDirectory.tsx`, `useDirectoryBrowse.ts` |
-| Service / Category cards | `src/components/ui/ServiceCard.tsx`, `ServiceCardLink.astro`, `CategoryIcon.tsx` |
+| Service / Category cards | `src/components/ui/ServiceCard.tsx`, `ServiceCardLink.astro`, `StatusBadge.tsx`, `src/components/service/StatusBadge.astro`, `src/lib/serviceCard.ts`, `CategoryIcon.tsx` |
 | Layout shell | `src/components/layout/BaseLayout.astro`, `Header.astro`, `Footer.astro` |
 | Brand / favicon / PWA icons | `public/brand/citizensheba-logo.png`, `public/favicon*`, `public/icons/`, `public/manifest.webmanifest`, `docs/guides/frontend.md` § Brand mark |
 | Service / Category pages | `src/pages/services/[slug].astro`, `src/pages/categories/[slug].astro`, **`docs/guides/service-page.md`** |

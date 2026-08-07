@@ -1,17 +1,10 @@
 import type { CSSProperties } from 'react';
 import CategoryIcon from './CategoryIcon';
+import StatusBadge from './StatusBadge';
 import { accentStyle } from '../../lib/categoryVisuals';
+import type { ServiceCardFields } from '../../lib/serviceCard';
 
-export type ServiceCardProps = {
-  href: string;
-  title: string;
-  titleBn: string;
-  description: string;
-  domain: string;
-  status: 'ACTIVE' | 'MAINTENANCE' | 'DEPRECATED';
-  categoryId: string;
-  icon: string;
-};
+export type ServiceCardProps = ServiceCardFields;
 
 export default function ServiceCard({
   href,
@@ -35,11 +28,7 @@ export default function ServiceCard({
             {titleBn}
           </p>
         </div>
-        {status !== 'ACTIVE' && (
-          <span className={`status-badge status-badge--${status.toLowerCase()}`}>
-            {status === 'MAINTENANCE' ? 'Maintenance' : 'Deprecated'}
-          </span>
-        )}
+        <StatusBadge status={status} />
       </div>
       <p className="service-card__description">{description}</p>
       <p className="service-card__domain">{domain}</p>
