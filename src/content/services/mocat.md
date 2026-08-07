@@ -52,6 +52,6 @@ faq:
     a: "No. MoCAT is the ministry. CAAB is the Civil Aviation Authority of Bangladesh."
     q_bn: "মোক্যাট কি সিএএবি-র মতো একই?"
     a_bn: "না। মোক্যাট মন্ত্রণালয়। সিএএবি বেসামরিক বিমান চলাচল কর্তৃপক্ষ।"
-related: [caab, biman, bangladesh-visa, national-portal]
+related: [tourism-board, parjatan, parjatan-hotels, beautiful-bangladesh, caab, biman, bangladesh-visa, tourist-police]
 last_verified: 2026-08-07
 ---

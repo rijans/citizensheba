@@ -52,7 +52,7 @@ faq:
     a: "No. NID services use the NID portal. DSS covers social services programmes."
     q_bn: "সমাজসেবা কি এনআইডি সংশোধন করে?"
     a_bn: "না। এনআইডি সেবা এনআইডি পোর্টালে। সমাজসেবা সামাজিক সেবা কর্মসূচি কভার করে।"
-related: [mygov, national-portal, nid, mowca, msw]
+related: [dss-bhata, mygov, national-portal, nid, mowca, msw]
 last_verified: 2026-08-07
 ---
 

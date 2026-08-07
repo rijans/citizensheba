@@ -86,6 +86,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `bwdb` | `droplets` | Water development |
 | `caab` | `plane` | Civil aviation |
 | `cabinet` | `landmark` | Cabinet Division |
+| `cafopfm` | `banknote` | CAFO Pension & Fund Management |
 | `cag` | `scroll-text` | Comptroller & Auditor General |
 | `ccc` | `building-2` | Chattogram City Corp |
 | `cda` | `landmark` | Chattogram Development Authority |
@@ -135,6 +136,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `dscc` | `building-2` | Dhaka South City |
 | `dshe` | `school` | Secondary / higher ed |
 | `dss` | `hand-heart` | Social services |
+| `dss-bhata` | `hand-heart` | Social allowance MIS (vata) |
 | `du` | `university` | University of Dhaka |
 | `duet` | `university` | DUET engineering |
 | `ecourt` | `gavel` | e-Court |
@@ -167,6 +169,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `hcu` | `flame` | Hydrocarbon Unit |
 | `highway-police` | `car` | Highway Police |
 | `hstu` | `university` | HSTU science & technology |
+| `ibas` | `calculator` | iBAS++ budget & accounting |
 | `ictd` | `cpu` | ICT Division |
 | `idcol` | `zap` | Infrastructure finance (half-gov) |
 | `iedcr` | `microscope` | Disease research |
@@ -246,6 +249,8 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `nwpgcl` | `zap` | North-West power generation |
 | `online-gd` | `shield` | Online GD |
 | `parliament` | `landmark` | Jatiya Sangsad |
+| `parjatan` | `building-2` | Bangladesh Parjatan Corporation |
+| `parjatan-hotels` | `building-2` | Parjatan Hotels booking |
 | `padma-oil` | `flame` | Padma Oil (petroleum marketing) |
 | `pbi` | `shield` | Police Bureau of Investigation |
 | `petrobangla` | `flame` | Oil/gas corporation |
@@ -306,6 +311,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `titas-gas` | `flame` | Gas |
 | `tmed` | `library` | Technical / madrasah ed |
 | `tourist-police` | `shield` | Tourist Police |
+| `tourism-board` | `plane` | Bangladesh Tourism Board |
 | `uftb` | `university` | University of Frontier Technology |
 | `ugc` | `badge-check` | University grants |
 | `vat` | `calculator` | VAT online |

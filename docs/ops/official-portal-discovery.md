@@ -69,6 +69,8 @@ Soft-TLS (curl verify fail but browser works) is the common WASA / Titas / RAJUK
 | Jobs / recruitment | BPSC, NTRCA, Teletalk **exam-application** hosts, dedicated join-forces URLs | `central` / `education` / `safety` | Prefer dedicated application portals. **Do not** ship Teletalk Alljobs (`alljobs.teletalk.com.bd`) as Official — it mixes private + gov job ads |
 | Utilities / energy SOEs | DISCOs, gas distribution, generation, Petrobangla siblings | `utilities` | One company = one hop |
 | LGI / development | City corps, pourashava (selective), RAJUK/CDA/KDA | `central` | Pourashava: high bar (citizen demand) |
+| Tourism / travel | Tourism Board, Parjatan Corp, Parjatan Hotels booking, Beautiful Bangladesh, BTB registration | `transport` | MoCAT / CAAB / Biman / Tourist Police already common peers |
+| Social safety / pension | DSS Bhata (ISPMIS) for vata allowances; CAFO Pension for civil pensions; DSS/MoSW policy hops | `health` (welfare) / `tax` | Do not conflate boyosko/bekar vata with civil pension |
 | Training / forms | BPATC, NILG, forms.gov.bd | `central` | Skip hijacked museum domains |
 
 ## Wave rhythm

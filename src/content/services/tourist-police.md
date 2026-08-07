@@ -50,6 +50,6 @@ faq:
     a: "Use 999 / Bangladesh Police for emergencies. Tourist Police publishes tourist-safety information and unit notices."
     q_bn: "প্রতি জরুরি অবস্থায় কি ৯৯৯-এর বদলে ট্যুরিস্ট পুলিশে ফোন করব?"
     a_bn: "জরুরি অবস্থায় ৯৯৯ / বাংলাদেশ পুলিশ ব্যবহার করুন। ট্যুরিস্ট পুলিশ পর্যটক নিরাপত্তা তথ্য ও ইউনিট নোটিশ প্রকাশ করে।"
-related: [police, highway-police, mocat, bangladesh-visa]
+related: [police, highway-police, mocat, tourism-board, parjatan, bangladesh-visa]
 last_verified: 2026-08-07
 ---

@@ -182,11 +182,26 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 | More public unis / boards | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | Wave 33 shipped SUST (soft CF); GAU already shipped; KAU fail; IUT skipped (OIC) |
 | More half-gov / SOE / state banks / finance | _(TBD)_ | tax | _(confirm)_ | candidate | gap-list | Wave 33 shipped BKB (soft 503) / BHBFC / JBC; BDBL for sale; private banks & MFS out |
 | More public medical colleges / institutes | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | Wave 33–34 shipped SHSMC/SZMC/Khulna MC/DJMC/NIMH/NIKDU; **never** `bmc.edu.bd` (hijacked/private) |
+| Tourism / travel siblings | _(TBD)_ | transport | _(confirm)_ | candidate | gap-list | Wave 35 shipped Tourism Board / Parjatan / Hotels / Beautiful BD / BTB Registration; NHTTI still flaky |
+| Social safety / donation | _(TBD)_ | health / tax | _(confirm)_ | candidate | gap-list | Wave 35 shipped DSS Bhata + CAFO Pension; PM relief/donation / Ashrayan hosts still unconfirmed — keep searching known Official URLs |
 | BG Press / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 31 shipped BPATC; forms.gov.bd still flaky without alternate confirmed entry; liberationwarmuseum.org hijacked — skip |
 | Development authorities (RAJUK/CDA/KDA/RDA) | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped RAJUK/CDA/KDA; Rajshahi DA outbound still unconfirmed (`rda.gov.bd` = Rural Development Academy Bogura) |
 | Gov job application portals | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | BPSC/NTRCA shipped; **skip** Teletalk Alljobs (private+gov mix); prefer per-exam Teletalk hosts when Official |
 | Skip notes | — | — | — | skipped | gap-list | IUT (OIC); `bmc.edu.bd` hijacked/private; `smc.edu.bd` junk; `pmc.edu.bd` junk; `afmcbd.com` for sale; `nitor.org` wrong; icddr,b international; Teletalk Alljobs mixed market |
 | Industry / trade associations (BASIS, …) | — | — | — | — | partner | **Not Official** — Partner candidates (ADR-0013); do not seed as Official rows |
+
+## Priority wave 35 — tourism + social safety (2026-08-08)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Bangladesh Tourism Board | tourism-board / bd-tourism-board | transport | https://tourismboard.gov.bd/ | shipped | gap-list | National tourism promotion; verified 200 |
+| Bangladesh Parjatan Corporation | parjatan / bd-parjatan | transport | https://www.parjatan.gov.bd/ | shipped | gap-list | State tourism SOE; verified 200 |
+| Parjatan Hotels | parjatan-hotels / bd-parjatan-hotels | transport | https://hotels.gov.bd/ | shipped | gap-list | Official BPC hotel/motel booking |
+| Beautiful Bangladesh | beautiful-bangladesh / bd-beautiful-bangladesh | transport | https://beautifulbangladesh.gov.bd/ | shipped | gap-list | Tourism branding portal; verified 200 |
+| BTB Registration | btb-registration / bd-btb-registration | transport | https://btbregistration.gov.bd/ | shipped | gap-list | Operator registration; verified 200 |
+| DSS Bhata | dss-bhata / bd-dss-bhata | health | https://dss.bhata.gov.bd/home | shipped | gap-list | ISPMIS citizen vata apply/track (boyosko/bekar/etc.) |
+| CAFO Pension | cafopfm / bd-cafopfm | tax | https://www.cafopfm.gov.bd/ | shipped | gap-list | Civil pension (not DSS vata); also resolves via pension.gov.bd |
+| iBAS++ | ibas / bd-ibas | tax | https://ibas.finance.gov.bd/ | shipped | gap-list | Integrated budget & accounting; verified 200 |
 
 ## Priority wave 34 — medical + labour/consumer (2026-08-08)
 

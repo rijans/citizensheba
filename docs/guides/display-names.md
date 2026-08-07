@@ -138,6 +138,14 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `uftb` | **UFTB** | University of Frontier Technology; former BDU in aliases |
 | `nins` | **NINS** | Neurosciences institute |
 | `nidch` | **NIDCH** | Chest diseases institute |
+| `tourism-board` | **Bangladesh Tourism Board** | National tourism promotion |
+| `parjatan` | **Bangladesh Parjatan Corporation** | State tourism SOE |
+| `parjatan-hotels` | **Parjatan Hotels** | Official booking host `hotels.gov.bd` |
+| `beautiful-bangladesh` | **Beautiful Bangladesh** | Tourism branding portal |
+| `btb-registration` | **BTB Registration** | Operator registration |
+| `dss-bhata` | **DSS Bhata** | Social allowance MIS (vata); not civil pension |
+| `cafopfm` | **CAFO Pension** | Civil pension & fund management |
+| `ibas` | **iBAS++** | Integrated Budget and Accounting System |
 | `sust` | **SUST** | Shahjalal University of Science and Technology |
 | `krishi-bank` | **Bangladesh Krishi Bank** | Specialized state agricultural bank; BKB in aliases |
 | `shsmc` | **Shaheed Suhrawardy Medical College** | Public MC; ShSMC in aliases |
