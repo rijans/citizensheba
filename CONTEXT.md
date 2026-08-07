@@ -107,7 +107,7 @@ Git-managed structured content (Markdown/JSON/YAML in repo) is the source of tru
 _Avoid_: Database-backed admin as a v1 requirement
 
 **Catalog Backlog**:
-Git-tracked working list of Official Service candidates and seed status (`candidate` → `drafting` → `ready` → `shipped` | `skip`) at `docs/ops/service-catalog-backlog.md`. Used to plan priority waves and avoid silent gaps; published hops remain `src/content/services/*.md`. Discovery may use National Portal and curated gap lists; mixed third-party directories (e.g. nagorikseba) are not seed sources. One Outbound portal = one Service; siblings stay on the backlog until shipped. Partner / association candidates are noted only (ADR-0013) — not Official backlog rows and not a second content collection yet.
+Git-tracked working list of Official Service candidates and seed status (`candidate` → `drafting` → `ready` → `shipped` | `skip`) at `docs/ops/service-catalog-backlog.md`. Used to plan priority waves and avoid silent gaps; published hops remain `src/content/services/*.md`. Discovery method: [`docs/ops/official-portal-discovery.md`](docs/ops/official-portal-discovery.md) (bucket sweeps via National Portal + sector apex lists; not NP mirrors). Partner / association candidates are noted only (ADR-0013) — not Official backlog rows and not a second content collection yet.
 _Avoid_: Treating the backlog as a second content collection, shipping thin URL-only rows, mirroring every National Portal listing, seeding non-Official listings as Official, hub pages with multiple Outbounds
 
 **Instant Directory**:

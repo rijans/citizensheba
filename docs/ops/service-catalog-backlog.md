@@ -6,6 +6,8 @@
 
 **Partner listing (not Official):** Industry / trade associations (e.g. BASIS, FBCCI, BGMEA-class) are **Partner candidates** under [ADR-0013](../adr/0013-partner-listing.md) — do **not** add them as Official `candidate` rows here. No separate Partner backlog file until a Partner ship wave. Instant Directory stays Official-only.
 
+**How to find more Official portals:** [`official-portal-discovery.md`](official-portal-discovery.md) — bucket sweeps (finance, medical colleges, public unis, jobs, utilities, LGI), National Portal + sector apex lists, verify title/domain before drafting.
+
 **Statuses:** `candidate` → `drafting` → `ready` → `shipped` | `skip` (`skip` needs a reason).
 
 ## Verification 2026-08-07
@@ -177,13 +179,29 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 |--------------|-----------|----------|--------------|--------|--------|-------|
 | Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | Wave 31 shipped GTCL/KGDCL/BPC/NWPGCL/Jamuna Oil/RPCL/BGFCL; Padma Oil / JGTCL still unconfirmed |
 | Other city corporations | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped KCC/Rajshahi/RPCC/COCC/Mymensingh; remaining pourashava/siblings TBD |
-| More public unis / boards | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | SUST 403 Cloudflare; IUT skipped (OIC) |
-| More half-gov / SOE / state banks | _(TBD)_ | mixed | _(confirm)_ | candidate | gap-list | Major state banks shipped; BDBL.com for sale; private banks & MFS out |
-| More public medical colleges | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | SHSMC / Cumilla MC still fail; DMC/CMC/SSMC shipped |
+| More public unis / boards | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | Wave 32 shipped RUB + UFTB; **SUST** still Cloudflare 403; KAU fail; IUT skipped (OIC) |
+| More half-gov / SOE / state banks / finance | _(TBD)_ | tax | _(confirm)_ | candidate | gap-list | Wave 32 shipped ICB/MRA/IDRA/SBC/Ansar-VDP Bank; **BKB/HBFC/JBC** still fail; BDBL for sale; private banks & MFS out |
+| More public medical colleges / institutes | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | Wave 32 shipped COMC/NINS/NIDCH; SHSMC/SZMC/Khulna MC still fail; **never** `bmc.edu.bd` (private Barind) |
 | BG Press / BPATC / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 31 shipped BPATC; forms.gov.bd fail; liberationwarmuseum.org hijacked — skip |
-| Development authorities (RAJUK/CDA/KDA/RDA) | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped RAJUK/CDA/KDA; Rajshahi DA outbound still unconfirmed (rda.gov.bd is Rural Development Academy Bogura — do not use) |
-| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); private Barind MC; `smc.edu.bd` junk; `afmcbd.com` for sale; `nitor.org` wrong (DE pest control); icddr,b international |
+| Development authorities (RAJUK/CDA/KDA/RDA) | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped RAJUK/CDA/KDA; Rajshahi DA outbound still unconfirmed (`rda.gov.bd` = Rural Development Academy Bogura) |
+| Gov job application portals | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | BPSC/NTRCA shipped; **skip** Teletalk Alljobs (private+gov mix); prefer per-exam Teletalk hosts when Official |
+| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); private Barind MC (`bmc.edu.bd`); `smc.edu.bd` junk; `afmcbd.com` for sale; `nitor.org` wrong (DE pest control); icddr,b international; Teletalk Alljobs mixed market |
 | Industry / trade associations (BASIS, …) | — | — | — | — | partner | **Not Official** — Partner candidates (ADR-0013); do not seed as Official rows |
+
+## Priority wave 32 — finance + medical + unis (2026-08-08)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| ICB | icb / bd-icb | tax | https://www.icb.gov.bd/ | shipped | gap-list | Investment Corporation; verified 200 |
+| MRA | mra / bd-mra | tax | https://www.mra.gov.bd/ | shipped | gap-list | Microcredit regulator; verified 200 |
+| IDRA | idra / bd-idra | tax | https://www.idra.org.bd/ | shipped | gap-list | Insurance regulator; Nuxt portal verified |
+| SBC | sbc / bd-sbc | tax | https://www.sbc.gov.bd/ | shipped | gap-list | Sadharan Bima; verified 200 |
+| Ansar-VDP Development Bank | ansar-vdp-bank / bd-ansar-vdp-bank | tax | https://www.ansarvdpbank.gov.bd/ | shipped | gap-list | Specialized state bank; verified 200 |
+| Cumilla Medical College | comc / bd-comc | health | https://www.comc.edu.bd/ | shipped | gap-list | Public MC; verified 200 |
+| Rabindra University Bangladesh | rub / bd-rub | education | https://www.rub.ac.bd/ | shipped | gap-list | Public uni; verified 200 |
+| UFTB | uftb / bd-uftb | education | https://www.bdu.ac.bd/ | shipped | gap-list | Gov digital uni (former BDU); verified 200 |
+| NINS | nins / bd-nins | health | https://www.nins.gov.bd/ | shipped | gap-list | Neurosciences institute; verified 200 |
+| NIDCH | nidch / bd-nidch | health | https://www.nidch.gov.bd/ | shipped | gap-list | Chest diseases institute; verified 200 |
 
 ## Priority wave 31 — utility SOEs + BPATC (2026-08-08)
 

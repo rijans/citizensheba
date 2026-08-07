@@ -13,6 +13,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `agrani` | `landmark` | Agrani Bank (state) |
 | `ais` | `sprout` | Agriculture Information Service |
 | `ansar` | `users` | Ansar & VDP |
+| `ansar-vdp-bank` | `landmark` | Ansar-VDP Development Bank |
 | `apscl` | `zap` | Ashuganj generation (half-gov) |
 | `archaeology` | `landmark` | Archaeology directorate |
 | `army` | `shield` | Bangladesh Army |
@@ -92,6 +93,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `cid` | `shield` | Criminal Investigation Department |
 | `coastguard` | `ship-wheel` | Coast Guard |
 | `cocc` | `building-2` | Cumilla City Corp |
+| `comc` | `stethoscope` | Cumilla Medical College |
 | `coop` | `users` | Department of Cooperatives |
 | `cou` | `university` | Comilla University |
 | `cpa` | `ship` | Chittagong Port Authority |
@@ -120,6 +122,11 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `dos` | `ship` | Department of Shipping |
 | `dpdc` | `zap` | Electricity |
 | `dpe` | `school` | Primary education |
+| `icb` | `landmark` | Investment Corporation of Bangladesh |
+| `idra` | `landmark` | Insurance Development & Regulatory Authority |
+| `mra` | `landmark` | Microcredit Regulatory Authority |
+| `nidch` | `stethoscope` | Chest diseases institute |
+| `nins` | `stethoscope` | Neurosciences institute |
 | `printing` | `file-text` | Printing & publications / gazettes |
 | `dscc` | `building-2` | Dhaka South City |
 | `dshe` | `school` | Secondary / higher ed |
@@ -261,8 +268,10 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `rpcl` | `zap` | Rural Power Company |
 | `rthd` | `bus` | Roads & highways |
 | `ru` | `university` | University of Rajshahi |
+| `rub` | `university` | Rabindra University Bangladesh |
 | `ruet` | `university` | RUET |
 | `sau` | `university` | Sher-e-Bangla Agricultural Uni |
+| `sbc` | `landmark` | Sadharan Bima Corporation |
 | `sca` | `sprout` | Seed Certification Agency |
 | `settlement` | `map` | Land settlement |
 | `sgcl` | `flame` | Sundarban Gas |
@@ -284,6 +293,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `titas-gas` | `flame` | Gas |
 | `tmed` | `library` | Technical / madrasah ed |
 | `tourist-police` | `shield` | Tourist Police |
+| `uftb` | `university` | University of Frontier Technology |
 | `ugc` | `badge-check` | University grants |
 | `vat` | `calculator` | VAT online |
 | `warpo` | `droplets` | Water resources planning |

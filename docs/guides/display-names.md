@@ -127,6 +127,17 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `rpcl` | **RPCL** | Rural Power Company |
 | `bgfcl` | **BGFCL** | Bangladesh Gas Fields |
 | `bpatc` | **BPATC** | Public Administration Training Centre |
+
+| `icb` | **ICB** | Investment Corporation of Bangladesh |
+| `mra` | **MRA** | Microcredit Regulatory Authority |
+| `idra` | **IDRA** | Insurance Development and Regulatory Authority |
+| `sbc` | **SBC** | Sadharan Bima Corporation |
+| `ansar-vdp-bank` | **Ansar-VDP Development Bank** | Specialized state bank |
+| `comc` | **Cumilla Medical College** | Public MC; Comilla in aliases |
+| `rub` | **Rabindra University Bangladesh** | Full institutional name |
+| `uftb` | **UFTB** | University of Frontier Technology; former BDU in aliases |
+| `nins` | **NINS** | Neurosciences institute |
+| `nidch` | **NIDCH** | Chest diseases institute |
 | `mofood` | **MoFood** | Food ministry short form |
 | `dgfood` | **DG Food** | Directorate short form |
 | `fisheries` | **DoF** | Department of Fisheries short form |

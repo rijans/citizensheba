@@ -58,6 +58,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [ops/web-analytics.md](ops/web-analytics.md) | Cloudflare Web Analytics |
 | [ops/search-console.md](ops/search-console.md) | Google Search Console |
 | [ops/service-catalog-backlog.md](ops/service-catalog-backlog.md) | Catalog Backlog — candidates vs shipped (priority waves) |
+| [ops/official-portal-discovery.md](ops/official-portal-discovery.md) | How to find Official Outbounds (bucket sweeps, verify, anti-patterns) |
 
 ## History (superpowers)
 
