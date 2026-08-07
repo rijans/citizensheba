@@ -4,9 +4,10 @@ import BaseLayout from '../../components/layout/BaseLayout.astro';
 import Breadcrumb from '../../components/layout/Breadcrumb.astro';
 import CategoryDirectory from '../../components/directory/CategoryDirectory';
 import CategoryIcon from '../../components/ui/CategoryIcon';
-import { categoryPath, officialDomainFromUrl } from '../../lib/urls';
+import { categoryPath } from '../../lib/urls';
 import { documentTitle, metaDescription, breadcrumbListJsonLd, webPageJsonLd } from '../../lib/seo';
-import { accentStyle } from '../../lib/categoryVisuals';
+import { accentStyleAttr } from '../../lib/categoryVisuals';
+import { toDirectoryCard } from '../../lib/serviceProjection';
 import { ArrowLeft } from 'lucide-react';
 
 export async function getStaticPaths() {
@@ -15,6 +16,12 @@ export async function getStaticPaths() {
 }
 
 const { category } = Astro.props;
+const catInput = {
+  id: category.data.id,
+  name: category.data.name,
+  name_bn: category.data.name_bn,
+  icon: category.data.icon,
+};
 const services = (await getCollection('services'))
   .filter((s) => s.data.category === category.data.id)
   .sort((a, b) => {
@@ -23,24 +30,12 @@ const services = (await getCollection('services'))
     }
     return a.data.title.localeCompare(b.data.title);
   })
-  .map((s) => ({
-    id: s.data.id,
-    slug: s.data.slug,
-    title: s.data.title,
-    titleBn: s.data.title_bn,
-    description: s.data.description,
-    domain: s.data.official_domain ?? officialDomainFromUrl(s.data.url),
-    status: s.data.status,
-    directoryCategoryRank: s.data.directory_category_rank,
-    ...(s.data.icon ? { icon: s.data.icon } : {}),
-  }));
+  .map((s) => toDirectoryCard(s.data, catInput));
 
 const title = documentTitle(category.data.name_bn, category.data.name);
 const description = metaDescription(category.data.description_bn, category.data.description);
 const canonicalPath = categoryPath(category.data.slug);
-const catAccentAttr = Object.entries(accentStyle(category.data.id))
-  .map(([k, v]) => `${k}:${v}`)
-  .join(';');
+const catAccentAttr = accentStyleAttr(category.data.id);
 const jsonLd = [
   breadcrumbListJsonLd([{ name: category.data.name }]),
   webPageJsonLd({
@@ -87,7 +82,6 @@ const jsonLd = [
       client:idle
       categoryId={category.data.id}
       categoryName={category.data.name}
-      icon={category.data.icon}
       services={services}
     />
   </article>

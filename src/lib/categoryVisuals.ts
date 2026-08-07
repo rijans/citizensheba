@@ -36,3 +36,10 @@ export function accentStyle(categoryId: string): Record<string, string> {
     '--cat-accent-soft': soft,
   };
 }
+
+/** Inline `style` attribute string for Astro (React cards use `accentStyle` as object). */
+export function accentStyleAttr(categoryId: string): string {
+  return Object.entries(accentStyle(categoryId))
+    .map(([k, v]) => `${k}:${v}`)
+    .join(';');
+}

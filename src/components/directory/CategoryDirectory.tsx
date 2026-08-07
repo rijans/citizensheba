@@ -2,28 +2,17 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { paginateDirectory, type DirectoryBrowseMode } from '../../lib/search';
 import { formatDirectoryCount } from '../../lib/directoryCopy';
 import { servicePath } from '../../lib/urls';
+import type { DirectoryCard } from '../../lib/serviceProjection';
 import DirectoryPagination from './DirectoryPagination';
 import DirectoryLoadMore from './DirectoryLoadMore';
 import ServiceCard from '../ui/ServiceCard';
 
-export type CategoryServiceCard = {
-  id: string;
-  slug: string;
-  title: string;
-  titleBn: string;
-  description: string;
-  domain: string;
-  status: 'ACTIVE' | 'MAINTENANCE' | 'DEPRECATED';
-  directoryCategoryRank: number;
-  /** Optional Service Lucide key; falls back to Category icon prop. */
-  icon?: string;
-};
+export type { DirectoryCard };
 
 type Props = {
   categoryId: string;
   categoryName: string;
-  icon: string;
-  services: CategoryServiceCard[];
+  services: DirectoryCard[];
 };
 
 /**
@@ -33,7 +22,6 @@ type Props = {
 export default function CategoryDirectory({
   categoryId,
   categoryName,
-  icon,
   services,
 }: Props) {
   const [page, setPage] = useState(1);
@@ -109,8 +97,8 @@ export default function CategoryDirectory({
               description={svc.description}
               domain={svc.domain}
               status={svc.status}
-              categoryId={categoryId}
-              icon={svc.icon ?? icon}
+              categoryId={svc.categoryId}
+              icon={svc.icon}
             />
           </li>
         ))}

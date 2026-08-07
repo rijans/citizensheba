@@ -7,13 +7,21 @@ import ServiceFaq from '../../components/service/ServiceFaq.astro';
 import StatusBadge from '../../components/service/StatusBadge.astro';
 import CategoryIcon from '../../components/ui/CategoryIcon';
 import ServiceCardLink from '../../components/ui/ServiceCardLink.astro';
-import { categoryPath, servicePath, officialDomainFromUrl } from '../../lib/urls';
+import { categoryPath, servicePath } from '../../lib/urls';
 // import { REPORT_EMAIL } from '../../lib/site';
 import { documentTitle, metaDescription, breadcrumbListJsonLd, webPageJsonLd } from '../../lib/seo';
 import { renderMarkdown } from '../../lib/markdown';
 import { servicePageHeadings, servicePageLangLabels } from '../../lib/servicePageCopy';
 import { ChevronDown } from 'lucide-react';
-import { accentStyle } from '../../lib/categoryVisuals';
+import { accentStyleAttr } from '../../lib/categoryVisuals';
+import {
+  officialDomain,
+  relatedIdsFor,
+  toDirectoryCard,
+  type CategoryProjectionInput,
+  type ServiceProjectionInput,
+} from '../../lib/serviceProjection';
+
 export async function getStaticPaths() {
   const services = await getCollection('services');
   return services.map((s) => ({ params: { slug: s.data.slug }, props: { service: s } }));
@@ -25,21 +33,25 @@ const category = categories.find((c) => c.data.id === service.data.category);
 if (!category) throw new Error('missing category');
 
 const all = await getCollection('services');
-const relatedIds =
-  service.data.related ??
-  all
-    .filter((s) => s.data.category === service.data.category && s.data.id !== service.data.id)
-    .map((s) => s.data.id)
-    .slice(0, 4);
-const related = all.filter((s) => relatedIds.includes(s.data.id));
-const catById = Object.fromEntries(categories.map((c) => [c.data.id, c]));
+const allData: ServiceProjectionInput[] = all.map((s) => s.data);
+const catById: Record<string, CategoryProjectionInput> = Object.fromEntries(
+  categories.map((c) => [
+    c.data.id,
+    { id: c.data.id, name: c.data.name, name_bn: c.data.name_bn, icon: c.data.icon },
+  ]),
+);
+const relatedIds = relatedIdsFor(service.data, allData);
+const relatedCards = relatedIds.flatMap((id) => {
+  const r = all.find((s) => s.data.id === id);
+  if (!r) return [];
+  const relCat = catById[r.data.category];
+  if (!relCat) throw new Error(`missing category for ${r.data.id}`);
+  return [toDirectoryCard(r.data, relCat)];
+});
 
-const domain = service.data.official_domain ?? officialDomainFromUrl(service.data.url);
+const domain = officialDomain(service.data);
 const hopIcon = service.data.icon ?? category.data.icon;
-const hopAccent = accentStyle(category.data.id);
-const hopAccentAttr = Object.entries(hopAccent)
-  .map(([k, v]) => `${k}:${v}`)
-  .join(';');
+const hopAccentAttr = accentStyleAttr(category.data.id);
 const title = documentTitle(
   service.data.serp_title_bn ?? service.data.title_bn,
   service.data.serp_title ?? service.data.title,
@@ -204,22 +216,18 @@ const verifiedIso = service.data.last_verified.toISOString().slice(0, 10);
       </h2>
       <div class="directory-grid">
         {
-          related.map((r) => {
-            const relCat = catById[r.data.category];
-            if (!relCat) throw new Error(`missing category for ${r.data.id}`);
-            return (
-              <ServiceCardLink
-                href={servicePath(r.data.slug)}
-                title={r.data.title}
-                titleBn={r.data.title_bn}
-                description={r.data.description}
-                domain={r.data.official_domain ?? officialDomainFromUrl(r.data.url)}
-                status={r.data.status}
-                categoryId={relCat.data.id}
-                icon={r.data.icon ?? relCat.data.icon}
-              />
-            );
-          })
+          relatedCards.map((card) => (
+            <ServiceCardLink
+              href={servicePath(card.slug)}
+              title={card.title}
+              titleBn={card.titleBn}
+              description={card.description}
+              domain={card.domain}
+              status={card.status}
+              categoryId={card.categoryId}
+              icon={card.icon}
+            />
+          ))
         }
       </div>
     </section>
