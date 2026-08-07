@@ -17,7 +17,7 @@ body_bn: |
 
   বৈদেশিক কর্মসংস্থানের মন্ত্রণালয়-পর্যায়ের নির্দেশনার জন্য বিএমইটি ক্লিয়ারেন্স ও ডব্লিউইডব্লিউবি কল্যাণ পোর্টালের পাশাপাশি এটি ব্যবহার করুন।
 
-url: "https://www.probashi.gov.bd/"
+url: "https://probashi.gov.bd/"
 official_domain: probashi.gov.bd
 category: migration
 directory_global_rank: 990

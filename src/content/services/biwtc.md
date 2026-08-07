@@ -17,7 +17,7 @@ body_bn: |
 
   কর্পোরেশন প্রকাশিত রুট, নোটিশ ও অফিসিয়াল নৌপরিবহন নির্দেশনার জন্য বিআইডব্লিউটিসি ব্যবহার করুন।
 
-url: "https://www.biwtc.gov.bd/"
+url: "https://biwtc.gov.bd/"
 official_domain: biwtc.gov.bd
 category: transport
 directory_global_rank: 650

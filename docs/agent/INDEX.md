@@ -69,7 +69,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | Agent / SEO files | `src/pages/llms.txt.ts`, `src/pages/robots.txt.ts` |
 | CI | `.github/workflows/ci.yml`, `package.json` scripts `check` / `ci` |
 | Content integrity tests | `tests/unit/content-integrity.test.ts` |
-| Link health | `scripts/check-links.mjs`, `.github/workflows/link-health.yml` |
+| Link health | `scripts/check-links.mjs`, `.github/workflows/link-health.yml`, `CONTEXT.md` (Link Health — keep official URL on gov downtime) |
 | Production / deploy | `docs/ops/production-and-deploy.md`, `wrangler.jsonc` |
 
 ---

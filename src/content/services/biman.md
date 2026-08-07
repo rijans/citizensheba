@@ -15,7 +15,7 @@ body_bn: |
 
   অফিসিয়াল এয়ারলাইন চ্যানেলে সময়সূচি ও টিকিটের জন্য বিমান ব্যবহার করুন—সিএএবি বেসামরিক বিমান কর্তৃপক্ষ, টিকিট বিক্রেতা নয়।
 
-url: "https://www.biman.gov.bd/"
+url: "https://biman.gov.bd/"
 official_domain: biman.gov.bd
 category: transport
 directory_global_rank: 630

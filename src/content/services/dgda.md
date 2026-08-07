@@ -17,7 +17,7 @@ body_bn: |
 
   কর্তৃপক্ষের প্রকাশনার জন্য ডিজিডিএ ব্যবহার করুন—ফার্মেসি শপিং কার্ট নয়।
 
-url: "https://www.dgda.gov.bd/"
+url: "https://dgda.gov.bd/"
 official_domain: dgda.gov.bd
 category: health
 directory_global_rank: 740

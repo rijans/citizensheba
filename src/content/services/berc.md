@@ -17,7 +17,7 @@ body_bn: |
 
   নিয়ন্ত্রক তথ্যের জন্য বিইআরসি ব্যবহার করুন—বিল পরিশোধ ইউটিলিটি ডিস্ট্রিবিউটর ও প্রযোজ্য ক্ষেত্রে একপেতে।
 
-url: "https://www.berc.org.bd/"
+url: "https://berc.org.bd/"
 official_domain: berc.org.bd
 category: utilities
 directory_global_rank: 600

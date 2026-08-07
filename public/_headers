@@ -1,5 +1,14 @@
 # Cloudflare Pages / Workers static asset headers
 # https://developers.cloudflare.com/pages/configuration/headers/
+# Use # comments only (not /* */ block comments) — Trap #2
+# Path /* below is a glob for all routes, not a comment.
+
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
 
 /.well-known/*
   Content-Type: text/plain; charset=utf-8

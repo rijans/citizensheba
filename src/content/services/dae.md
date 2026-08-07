@@ -17,7 +17,7 @@ body_bn: |
 
   অধিদপ্তর প্রকাশিত ফসল নির্দেশনা ও সম্প্রসারণ নোটিশের জন্য কৃষি সম্প্রসারণ ব্যবহার করুন।
 
-url: "https://www.dae.gov.bd/"
+url: "https://dae.gov.bd/"
 official_domain: dae.gov.bd
 category: central
 directory_global_rank: 730

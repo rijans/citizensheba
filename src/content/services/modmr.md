@@ -17,7 +17,7 @@ body_bn: |
 
   ঝুঁকি মৌসুমে বিএমডি আবহাওয়া ও এফএফডব্লিউসি বন্যা বুলেটিনের সাথে দুর্যোগ ব্যবস্থাপনা নির্দেশনা ব্যবহার করুন।
 
-url: "https://www.modmr.gov.bd/"
+url: "https://modmr.gov.bd/"
 official_domain: modmr.gov.bd
 category: safety
 directory_global_rank: 910

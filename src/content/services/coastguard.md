@@ -15,7 +15,7 @@ body_bn: |
 
   বিপদকালীন পরিস্থিতিতে কর্তৃপক্ষ প্রকাশিত অফিসিয়াল জরুরি যোগাযোগ ব্যবহার করুন।
 
-url: "https://www.coastguard.gov.bd/"
+url: "https://coastguard.gov.bd/"
 official_domain: coastguard.gov.bd
 category: safety
 directory_global_rank: 530

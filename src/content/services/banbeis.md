@@ -17,7 +17,7 @@ body_bn: |
 
   অফিসিয়াল শিক্ষা তথ্যের জন্য ব্যানবেইস ব্যবহার করুন—পরীক্ষার ফলাফল শিক্ষা বোর্ড ফলাফল পোর্টালে।
 
-url: "https://www.banbeis.gov.bd/"
+url: "https://banbeis.gov.bd/"
 official_domain: banbeis.gov.bd
 category: education
 directory_global_rank: 510

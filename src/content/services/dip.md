@@ -17,7 +17,7 @@ body_bn: |
 
   নাগরিক পাসপোর্ট আবেদন সাধারণত ই-পাসপোর্ট পোর্টালে; অধিদপ্তরের নোটিশ ও প্রকাশিত নির্দেশনার জন্য ডিআইপি ব্যবহার করুন।
 
-url: "https://www.dip.gov.bd/"
+url: "https://dip.gov.bd/"
 official_domain: dip.gov.bd
 category: identity
 directory_global_rank: 770

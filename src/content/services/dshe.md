@@ -17,7 +17,7 @@ body_bn: |
 
   বোর্ড পরীক্ষার ফলাফল শিক্ষা বোর্ড ফলাফল পোর্টালে; অধিদপ্তরের নোটিশ ও প্রকাশিত নির্দেশনার জন্য মাউশি ব্যবহার করুন।
 
-url: "https://www.dshe.gov.bd/"
+url: "https://dshe.gov.bd/"
 official_domain: dshe.gov.bd
 category: education
 directory_global_rank: 790

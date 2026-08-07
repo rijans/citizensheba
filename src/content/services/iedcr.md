@@ -17,7 +17,7 @@ body_bn: |
 
   ইনস্টিটিউট প্রকাশিত স্বাস্থ্য সতর্কতার জন্য আইইডিসিআর ব্যবহার করুন; ক্লিনিক্যাল সেবা হাসপাতাল ও ডিজিএইচএস চ্যানেলে।
 
-url: "https://www.iedcr.gov.bd/"
+url: "https://iedcr.gov.bd/"
 official_domain: iedcr.gov.bd
 category: health
 directory_global_rank: 860

@@ -17,7 +17,7 @@ body_bn: |
 
   বিভাগ প্রকাশিত নির্দেশনার জন্য এটি ব্যবহার করুন; প্রযোজ্য বোর্ড ফলাফল শিক্ষা বোর্ড ফলাফল পোর্টালে।
 
-url: "https://www.tmed.gov.bd/"
+url: "https://tmed.gov.bd/"
 official_domain: tmed.gov.bd
 category: education
 directory_global_rank: 1050

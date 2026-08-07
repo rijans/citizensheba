@@ -15,7 +15,7 @@ body_bn: |
   
   অফিসিয়াল সাইটে ফলাফল লাইভ থাকলে রোল, রেজিস্ট্রেশন নম্বর ও বোর্ডের তথ্য রাখুন।
 
-url: "http://www.educationboardresults.gov.bd/"
+url: "https://www.educationboardresults.gov.bd/"
 official_domain: educationboardresults.gov.bd
 category: education
 directory_global_rank: 170

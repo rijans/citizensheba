@@ -1119,6 +1119,16 @@ html[data-theme="dark"] .caution {
   padding: 2rem 0;
 }
 
+.content-page--centered > p {
+  margin-inline: auto;
+}
+
+.site-main:has(> .content-page--centered) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .content-section {
   margin-top: 1.75rem;
 }

@@ -1,6 +1,6 @@
 # Agent brief — CitizenSheba
 
-CitizenSheba (সিটিজেনসেবা) is a hop-first **Directory** of Bangladesh **Official Services** (gov, utilities, half-gov). Domain: https://citizensheba.com. Repo: this tree (`main`).
+CitizenSheba (সিটিজেনসেবা) is a hop-first **Directory** of Bangladesh **Official Services** (gov, utilities, half-gov). Domain: https://www.citizensheba.com (apex redirects to www). Repo: this tree (`main`).
 
 > **Start here every task:** Tier 0 below → route via [`docs/agent/INDEX.md`](docs/agent/INDEX.md). Scan trap titles in [`docs/specs/TRAPS.md`](docs/specs/TRAPS.md) when the topic matches. Doc map: [`docs/README.md`](docs/README.md).
 

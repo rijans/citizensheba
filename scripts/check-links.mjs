@@ -4,6 +4,10 @@
  * Exit codes:
  *   0 — no hard failures (404/410); warnings may be printed
  *   1 — at least one outbound URL returned 404 or 410
+ *
+ * Soft warnings (TLS/DNS/timeout/5xx) do NOT fail CI. Many official .gov.bd
+ * hosts are intermittently down; keep the confirmed official URL and do not
+ * churn hops on transient failures. Hard-fail is for clear content bugs only.
  */
 import { readFileSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -25,6 +29,21 @@ function daysSince(date) {
   return ms / (1000 * 60 * 60 * 24);
 }
 
+/** Classify fetch errors for clearer weekly reports (still soft). */
+function classifyNetworkError(message) {
+  const m = message.toLowerCase();
+  if (m.includes('certificate') || m.includes('cert') || m.includes('ssl') || m.includes('tls')) {
+    return `TLS/certificate: ${message}`;
+  }
+  if (m.includes('enotfound') || m.includes('getaddrinfo') || m.includes('nxdomain') || m.includes('dns')) {
+    return `DNS: ${message}`;
+  }
+  if (m.includes('econnrefused') || m.includes('econnreset') || m.includes('network')) {
+    return `network: ${message}`;
+  }
+  return message;
+}
+
 async function checkUrl(url, slug) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
@@ -34,7 +53,7 @@ async function checkUrl(url, slug) {
       method: 'HEAD',
       signal: controller.signal,
       redirect: 'follow',
-      headers: { 'User-Agent': 'CitizenSheba-LinkHealth/1.0 (+https://citizensheba.com)' },
+      headers: { 'User-Agent': 'CitizenSheba-LinkHealth/1.0 (+https://www.citizensheba.com)' },
     });
 
     if (response.status === 404 || response.status === 410) {
@@ -54,7 +73,9 @@ async function checkUrl(url, slug) {
     softWarnings.push({
       slug,
       url,
-      reason: isAbort ? `timeout after ${FETCH_TIMEOUT_MS}ms` : message,
+      reason: isAbort
+        ? `timeout after ${FETCH_TIMEOUT_MS}ms`
+        : classifyNetworkError(message),
     });
   } finally {
     clearTimeout(timer);
@@ -96,7 +117,15 @@ if (staleWarnings.length > 0) {
 }
 
 if (softWarnings.length > 0) {
-  console.warn('\n⚠ Soft warnings (network/timeout/non-404 HTTP — not failing CI):');
+  console.warn(
+    '\n⚠ Soft warnings (TLS/DNS/timeout/non-404 HTTP — not failing CI).',
+  );
+  console.warn(
+    '  Policy: if the published URL is still the confirmed official hop, keep it;',
+  );
+  console.warn(
+    '  gov portals go down periodically — do not swap URLs on transient failures.',
+  );
   for (const w of softWarnings) {
     console.warn(`  ${w.slug}: ${w.url} — ${w.reason}`);
   }

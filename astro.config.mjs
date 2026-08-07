@@ -8,8 +8,9 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://citizensheba.com',
+  site: 'https://www.citizensheba.com',
   output: 'static',
+  trailingSlash: 'always',
   integrations: [react(), sitemap()],
 
   vite: {

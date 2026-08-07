@@ -131,6 +131,12 @@ export default function InstantDirectory({
     };
   }, [categories, updateChipOverflow]);
 
+  const onQueryChange = (next: string) => {
+    if (next === query) return;
+    setQuery(next);
+    setCategoryId(null);
+  };
+
   const clearAll = () => {
     setQuery('');
     setCategoryId(null);
@@ -195,14 +201,14 @@ export default function InstantDirectory({
           type="search"
           placeholder={SEARCH_PLACEHOLDER}
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => onQueryChange(e.target.value)}
           autoComplete="off"
         />
         {query && (
           <button
             type="button"
             className="directory-search__clear"
-            onClick={() => setQuery('')}
+            onClick={() => onQueryChange('')}
             aria-label="Clear search"
           >
             <svg

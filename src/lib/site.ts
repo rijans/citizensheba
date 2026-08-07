@@ -32,4 +32,4 @@ export const DISCLAIMER_TITLE_EN = 'Disclaimer';
 export const DISCLAIMER_TITLE_BN = 'দাবিত্যাগ';
 
 export const REPORT_EMAIL = 'rijans.x@gmail.com';
-export const SITE_ORIGIN = 'https://citizensheba.com';
+export const SITE_ORIGIN = 'https://www.citizensheba.com';

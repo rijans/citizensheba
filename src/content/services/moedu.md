@@ -15,7 +15,7 @@ body_bn: |
 
   বোর্ড ফলাফল ও অনেক শিক্ষার্থী হপ নিবেদিত শিক্ষা সেবা পেজে (ফলাফল, ভর্তি, এনসিটিবি, মাউশি)।
 
-url: "https://www.moedu.gov.bd/"
+url: "https://moedu.gov.bd/"
 official_domain: moedu.gov.bd
 category: education
 directory_global_rank: 890

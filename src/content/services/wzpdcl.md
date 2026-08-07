@@ -17,7 +17,7 @@ body_bn: |
 
   সংযোগ ওয়েস্ট জোন পাওয়ারের অধীনে হলে ডব্লিউজেডপিডিসিএল ব্যবহার করুন—ডেসকো, ডিপিডিসি বা নেসকো নয়।
 
-url: "https://www.wzpdcl.org.bd/"
+url: "https://wzpdcl.org.bd/"
 official_domain: wzpdcl.org.bd
 category: utilities
 directory_global_rank: 1100

@@ -17,7 +17,7 @@ body_bn: |
 
   নিরাপদ খাদ্য বিষয়ে কর্তৃপক্ষের নির্দেশনার জন্য বিএফএসএ ব্যবহার করুন—মুদি অর্ডার সাইট নয়।
 
-url: "https://www.bfsa.gov.bd/"
+url: "https://bfsa.gov.bd/"
 official_domain: bfsa.gov.bd
 category: health
 directory_global_rank: 610

@@ -17,7 +17,7 @@ body_bn: |
 
   প্রবাসী কর্মী-সংক্রান্ত বোর্ড প্রকাশিত কল্যাণ কর্মসূচি ও যোগাযোগ তথ্যের জন্য ডব্লিউইডব্লিউবি ব্যবহার করুন।
 
-url: "https://www.wewb.gov.bd/"
+url: "https://wewb.gov.bd/"
 official_domain: wewb.gov.bd
 category: migration
 directory_global_rank: 1090

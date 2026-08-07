@@ -17,7 +17,7 @@ body_bn: |
 
   অপারেটর সেলফ-কেয়ার (মোবাইল প্রিপেইড/পোস্টপেইড) প্রতিটি অপারেটরের নিজস্ব চ্যানেলে; নিয়ন্ত্রক তথ্যের জন্য বিটিআরসি ব্যবহার করুন।
 
-url: "https://www.btrc.gov.bd/"
+url: "https://btrc.gov.bd/"
 official_domain: btrc.gov.bd
 category: utilities
 directory_global_rank: 80

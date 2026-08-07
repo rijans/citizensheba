@@ -2,11 +2,11 @@ const SERVICE_SLUG = /^bd-[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 export function servicePath(slug: string): string {
   assertServiceSlug(slug);
-  return `/services/${slug}`;
+  return `/services/${slug}/`;
 }
 
 export function categoryPath(slug: string): string {
-  return `/categories/${slug}`;
+  return `/categories/${slug}/`;
 }
 
 export function assertServiceSlug(slug: string): void {

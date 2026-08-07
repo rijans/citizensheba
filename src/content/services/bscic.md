@@ -17,7 +17,7 @@ body_bn: |
 
   অফিসিয়াল এসএমই/কুটির শিল্প নির্দেশনা ও নোটিশের জন্য বিসিক ব্যবহার করুন।
 
-url: "https://www.bscic.gov.bd/"
+url: "https://bscic.gov.bd/"
 official_domain: bscic.gov.bd
 category: central
 directory_global_rank: 700

@@ -17,7 +17,7 @@ body_bn: |
 
   অধিদপ্তরের নোটিশ ও প্রকাশিত সেবা নির্দেশনার জন্য ডিজিএফপি ব্যবহার করুন; ক্লিনিক্যাল সেবা স্বাস্থ্যকেন্দ্র চ্যানেলে।
 
-url: "https://www.dgfp.gov.bd/"
+url: "https://dgfp.gov.bd/"
 official_domain: dgfp.gov.bd
 category: health
 directory_global_rank: 750

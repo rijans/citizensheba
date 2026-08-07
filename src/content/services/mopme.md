@@ -17,7 +17,7 @@ body_bn: |
 
   মন্ত্রণালয় প্রকাশিত প্রাথমিক শিক্ষা প্রশাসন তথ্যের জন্য এটি ব্যবহার করুন।
 
-url: "https://www.mopme.gov.bd/"
+url: "https://mopme.gov.bd/"
 official_domain: mopme.gov.bd
 category: education
 directory_global_rank: 920

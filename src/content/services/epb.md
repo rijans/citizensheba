@@ -17,7 +17,7 @@ body_bn: |
 
   অফিসিয়াল রপ্তানি সহায়তা তথ্যের জন্য ইপিবি ব্যবহার করুন—কাস্টমস পদ্ধতি বাংলাদেশ কাস্টমসে।
 
-url: "https://www.epb.gov.bd/"
+url: "https://epb.gov.bd/"
 official_domain: epb.gov.bd
 category: central
 directory_global_rank: 840

@@ -39,6 +39,7 @@
 - Prefer existing classes in `global.css` over ad-hoc pixel sizes in JSX.
 - Dark theme: keep contrast; accent soft tints must remain readable on `--surface`.
 - **Directory Pagination** (ADR-0010): Prev/Next + page numbers use `--green` / `--green-hover` / `--green-soft` only — never `--cat-accent`. **Load more** (same green family) sits between the grid and the pager: appends the next batch, keeps viewport, focuses the first new card; page jumps replace and scroll to results. Hide pager + Load more when results ≤ 21; page size 20 when ≥ 22. Reset to page 1 / append mode on query/category change. Count: `N services · Showing X · Page Y of Z`.
+- **Search ↔ chips:** changing the Instant Directory search **value** (type or clear ×) resets the category chip to All; focus/click with no value change leaves the chip alone. After searching, chip clicks may still narrow results until the query string changes again.
 
 ## Content → UI
 

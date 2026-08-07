@@ -15,7 +15,7 @@ body_bn: |
 
   অনলাইন জমার পর সাধারণত ফর্ম প্রিন্ট করে পোর্টালের নির্দেশ অনুযায়ী মিশন বা ভিসা অফিসে কাগজপত্র ও ফিসহ জমা দিতে হয়।
 
-url: "https://www.visa.gov.bd/"
+url: "https://visa.gov.bd/"
 official_domain: visa.gov.bd
 category: migration
 directory_global_rank: 560

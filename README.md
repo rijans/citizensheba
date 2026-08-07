@@ -4,7 +4,7 @@
 
 CitizenSheba is **not** a government entity and is not an official portal.
 
-**Domain:** [citizensheba.com](https://citizensheba.com)
+**Domain:** [www.citizensheba.com](https://www.citizensheba.com) (apex redirects to www)
 
 ## Quick start
 
@@ -87,9 +87,9 @@ Fallback: set Worker/Pages env `PUBLIC_CF_WEB_ANALYTICS_TOKEN` to the site token
 
 ### Google Search Console
 
-1. Open [Search Console](https://search.google.com/search-console) → Add property → URL prefix `https://citizensheba.com`.
+1. Open [Search Console](https://search.google.com/search-console) → Add property → URL prefix `https://www.citizensheba.com`.
 2. Verify via **DNS TXT** record on the Cloudflare zone for `citizensheba.com` (copy the TXT value Google shows).
-3. After verified, submit sitemap: `https://citizensheba.com/sitemap-index.xml`.
+3. After verified, submit sitemap: `https://www.citizensheba.com/sitemap-index.xml`.
 4. Optional: Bing Webmaster Tools with the same sitemap.
 
 Sitemap and `robots.txt` are generated on every Astro build.

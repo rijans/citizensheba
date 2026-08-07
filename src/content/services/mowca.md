@@ -17,7 +17,7 @@ body_bn: |
 
   মন্ত্রণালয় প্রকাশিত নির্দেশনা ও জনতথ্যের জন্য এটি ব্যবহার করুন।
 
-url: "https://www.mowca.gov.bd/"
+url: "https://mowca.gov.bd/"
 official_domain: mowca.gov.bd
 category: central
 directory_global_rank: 930

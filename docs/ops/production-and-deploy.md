@@ -7,7 +7,7 @@
 
 | Item | Value |
 |------|--------|
-| Product domain | `https://citizensheba.com` (also `www` if attached) |
+| Product domain | `https://www.citizensheba.com` (apex → www; see DNS below) |
 | Worker name | `citizensheba` |
 | Workers.dev URL | `https://citizensheba.jaber-al-nahian.workers.dev` |
 | Config | `wrangler.jsonc` — **static assets** from `./dist`, `not_found_handling: "404-page"` |
@@ -17,6 +17,15 @@
 This is **not** a classic Cloudflare Pages Git auto-build unless someone later enables Workers Builds / Pages on the repo. **Default cycle today: build locally (or CI) → `wrangler deploy` by an authenticated human/agent with approval.**
 
 Do **not** run `astro add cloudflare` (Trap #1). Do **not** assume `git push origin main` alone updates the live Worker.
+
+## Custom domains (www primary)
+
+Canonical host is **`www.citizensheba.com`**. Apex must redirect to www so one hostname owns SEO and bookmarks.
+
+1. Cloudflare DNS: apex and **`www`** both attached to the Worker (or proxied so TLS works on both).
+2. **301 redirect** apex → www: `http.host eq "citizensheba.com"` → `concat("https://www.citizensheba.com", http.request.uri.path)` with query string preserved (Redirect Rule).
+3. Astro `site` / `SITE_ORIGIN` must be `https://www.citizensheba.com` so canonicals, sitemap, and robots match.
+4. Smoke: `curl -sS -o /dev/null -w '%{http_code} %{url_effective}\n' -L 'https://citizensheba.com/'` should end on `https://www.citizensheba.com/` with 200.
 
 ## Before production
 
@@ -37,7 +46,7 @@ git commit + push   # updates GitHub; CI verifies — does NOT deploy by itself
 npm run deploy      # = npm run build && wrangler deploy
     │                 # requires wrangler OAuth or CLOUDFLARE_API_TOKEN
     ▼
-smoke-check https://citizensheba.com  (see below)
+smoke-check https://www.citizensheba.com  (see below)
 ```
 
 | Stage | Who / what | Deploys? |
@@ -75,27 +84,30 @@ On first use, call `mcp_auth` for servers that require it. MCP does **not** repl
 
 ## How to check production (smoke)
 
-Prefer the **custom domain** (CDN + real DNS), not only `workers.dev`.
+Prefer the **www custom domain** (CDN + real DNS), not only `workers.dev`. Apex should 301 to www.
 
 ### Quick HTTP checks
 
 ```bash
+# Apex → www
+curl -sS -o /dev/null -w '%{http_code} %{url_effective}\n' -L 'https://citizensheba.com/'
+
 # Home — BN→EN Document Title + chips (cards hydrate via React island)
-curl -sS -L 'https://citizensheba.com/' | rg -o '<title>[^<]+</title>|canonical" href="[^"]+|directory-chip|category-icon'
+curl -sS -L 'https://www.citizensheba.com/' | rg -o '<title>[^<]+</title>|canonical" href="[^"]+|directory-chip|category-icon'
 
 # Service SEO hop — BN→EN title/meta + Outbound CTA
-curl -sS -L 'https://citizensheba.com/services/bd-nid/' | rg -o '<title>[^<]+</title>|meta name="description" content="[^"]{0,120}|Open official'
+curl -sS -L 'https://www.citizensheba.com/services/bd-nid/' | rg -o '<title>[^<]+</title>|meta name="description" content="[^"]{0,120}|Open official'
 
 # Category — static Service cards + domain line
-curl -sS -L 'https://citizensheba.com/categories/identity-registration/' | rg -o '<title>[^<]+</title>|service-card__domain|category-icon'
+curl -sS -L 'https://www.citizensheba.com/categories/identity-registration/' | rg -o '<title>[^<]+</title>|service-card__domain|category-icon'
 
 # Agent / SEO surfaces
-curl -sS -o /dev/null -w '%{http_code}\n' 'https://citizensheba.com/sitemap-index.xml'
-curl -sS -o /dev/null -w '%{http_code}\n' 'https://citizensheba.com/llms.txt'
-curl -sS -o /dev/null -w '%{http_code}\n' 'https://citizensheba.com/robots.txt'
+curl -sS -o /dev/null -w '%{http_code}\n' 'https://www.citizensheba.com/sitemap-index.xml'
+curl -sS -o /dev/null -w '%{http_code}\n' 'https://www.citizensheba.com/llms.txt'
+curl -sS -o /dev/null -w '%{http_code}\n' 'https://www.citizensheba.com/robots.txt'
 
 # Cache / CF
-curl -sS -I -L 'https://citizensheba.com/' | rg -i 'HTTP/|cf-cache-status|cf-ray'
+curl -sS -I -L 'https://www.citizensheba.com/' | rg -i 'HTTP/|cf-cache-status|cf-ray'
 ```
 
 ### What to expect

@@ -15,7 +15,7 @@ body_bn: |
 
   বাংলাদেশ পোস্ট প্রকাশিত অফিসিয়াল নোটিশ ও সেবা এন্ট্রির জন্য এটি ব্যবহার করুন।
 
-url: "https://www.bangladeshpost.gov.bd/"
+url: "https://bangladeshpost.gov.bd/"
 official_domain: bangladeshpost.gov.bd
 category: central
 directory_global_rank: 580

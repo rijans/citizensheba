@@ -17,7 +17,7 @@ body_bn: |
 
   ঘরোয়া বিল সাধারণত স্থানীয় ডিস্ট্রিবিউটরে; গ্রিড/সঞ্চালন কোম্পানি তথ্যের জন্য পিজিসিবি ব্যবহার করুন।
 
-url: "https://www.pgcb.gov.bd/"
+url: "https://pgcb.gov.bd/"
 official_domain: pgcb.gov.bd
 category: utilities
 directory_global_rank: 980

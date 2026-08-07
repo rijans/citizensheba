@@ -17,7 +17,7 @@ body_bn: |
 
   ড্রাইভিং লাইসেন্স ও যানবাহন সেবা বিআরটিএ সার্ভিস পোর্টালে।
 
-url: "https://www.rthd.gov.bd/"
+url: "https://rthd.gov.bd/"
 official_domain: rthd.gov.bd
 category: transport
 directory_global_rank: 1020

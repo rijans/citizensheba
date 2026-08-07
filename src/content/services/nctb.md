@@ -17,7 +17,7 @@ body_bn: |
 
   শিক্ষার্থী ও শিক্ষকরা বোর্ড প্রকাশিত শিক্ষাক্রম সম্পদ ও পাঠ্যপুস্তক-সংক্রান্ত নোটিশের জন্য এনসিটিবি ব্যবহার করে।
 
-url: "https://www.nctb.gov.bd/"
+url: "https://nctb.gov.bd/"
 official_domain: nctb.gov.bd
 category: education
 directory_global_rank: 960

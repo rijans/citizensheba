@@ -17,7 +17,7 @@ body_bn: |
 
   যাত্রীবাহী লঞ্চ সেবা তথ্য বিআইডব্লিউটিসিতেও থাকতে পারে; কর্তৃপক্ষ-পর্যায়ের নৌপথ নির্দেশনার জন্য বিআইডব্লিউটিএ ব্যবহার করুন।
 
-url: "https://www.biwta.gov.bd/"
+url: "https://biwta.gov.bd/"
 official_domain: biwta.gov.bd
 category: transport
 directory_global_rank: 640

@@ -17,7 +17,7 @@ body_bn: |
 
   অধিদপ্তর প্রকাশিত অফিসিয়াল সামাজিক কল্যাণ নির্দেশনার জন্য সমাজসেবা ব্যবহার করুন।
 
-url: "https://www.dss.gov.bd/"
+url: "https://dss.gov.bd/"
 official_domain: dss.gov.bd
 category: central
 directory_global_rank: 800

@@ -15,7 +15,7 @@ body_bn: |
 
   বিভাগ, আপিল বিভাগ/হাইকোর্ট বা মোবাইল কোর্ট সেবা অনুযায়ী সুপ্রিম কোর্ট ও ই-কোর্ট পোর্টালের পাশাপাশি এটি ব্যবহার করুন।
 
-url: "https://www.lawjusticediv.gov.bd/"
+url: "https://lawjusticediv.gov.bd/"
 official_domain: lawjusticediv.gov.bd
 category: justice
 directory_global_rank: 880

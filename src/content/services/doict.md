@@ -17,7 +17,7 @@ body_bn: |
 
   অধিদপ্তরের নোটিশের জন্য ডয়েক্ট ব্যবহার করুন; অনেক নাগরিক ডিজিটাল সেবা myGov ও নিবেদিত সেবা পেজেও থাকে।
 
-url: "https://www.doict.gov.bd/"
+url: "https://doict.gov.bd/"
 official_domain: doict.gov.bd
 category: central
 directory_global_rank: 780
