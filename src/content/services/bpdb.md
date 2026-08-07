@@ -42,6 +42,6 @@ faq:
     a: "Usually on your local distributor portal (or ekPay if directed). BPDB is the power development board — not every household’s bill login."
     q_bn: "ঘরোয়া বিদ্যুৎ বিল কোথায় পরিশোধ করব?"
     a_bn: "সাধারণত স্থানীয় ডিস্ট্রিবিউটর পোর্টালে (বা নির্দেশিত হলে একপে)। বিপিডিবি বিদ্যুৎ উন্নয়ন বোর্ড—সব ঘরের বিল লগইন নয়।"
-related: [desco, dpdc, nesco, wzpdcl, breb, ekpay]
+related: [desco, dpdc, nesco, wzpdcl, breb, ekpay, pgcb, berc]
 last_verified: 2026-08-07
 ---

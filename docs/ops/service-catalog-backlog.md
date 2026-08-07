@@ -107,6 +107,36 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 | RAB | rab / bd-rab | safety | https://www.rab.gov.bd/ | shipped | gap-list | Verified 200 |
 | IEDCR | iedcr / bd-iedcr | health | https://www.iedcr.gov.bd/ | shipped | gap-list | Verified 200 |
 
+
+## Priority wave 4 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| VAT Online | vat / bd-vat | tax | https://www.vat.gov.bd/ | shipped | gap-list | Verified 200 |
+| BCC | bcc / bd-bcc | central | https://www.bcc.gov.bd/ | shipped | gap-list | Verified 200 |
+| DoICT | doict / bd-doict | central | https://www.doict.gov.bd/ | shipped | gap-list | Verified 200 |
+| Ministry of Education | moedu / bd-moedu | education | https://www.moedu.gov.bd/ | shipped | gap-list | Verified 200 |
+| MoPME | mopme / bd-mopme | education | https://www.mopme.gov.bd/ | shipped | gap-list | Verified 200 |
+| TMED | tmed / bd-tmed | education | https://www.tmed.gov.bd/ | shipped | gap-list | Verified 200 |
+| University of Dhaka | du / bd-du | education | https://www.du.ac.bd/ | shipped | gap-list | Verified 200 |
+| BUET | buet / bd-buet | education | https://www.buet.ac.bd/ | shipped | gap-list | Verified 200 |
+| DGFP | dgfp / bd-dgfp | health | https://www.dgfp.gov.bd/ | shipped | gap-list | Verified 200 |
+| EPB | epb / bd-epb | central | https://www.epb.gov.bd/ | shipped | gap-list | Verified 200 |
+| BSCIC | bscic / bd-bscic | central | https://www.bscic.gov.bd/ | shipped | gap-list | Verified 200 |
+| PGCB | pgcb / bd-pgcb | utilities | https://www.pgcb.gov.bd/ | shipped | gap-list | Verified 200 |
+| BERC | berc / bd-berc | utilities | https://www.berc.org.bd/ | shipped | gap-list | Verified 200 |
+| BMD | bmd / bd-bmd | central | https://www.bmd.gov.bd/ | shipped | gap-list | Verified 200 |
+| FFWC | ffwc / bd-ffwc | safety | https://www.ffwc.gov.bd/ | shipped | gap-list | Verified 200 |
+| MoDMR | modmr / bd-modmr | safety | https://www.modmr.gov.bd/ | shipped | gap-list | Verified 200 |
+| RTHD | rthd / bd-rthd | transport | https://www.rthd.gov.bd/ | shipped | gap-list | Verified 200 |
+| DSS | dss / bd-dss | central | https://www.dss.gov.bd/ | shipped | gap-list | Verified 200 |
+| MoWCA | mowca / bd-mowca | central | https://www.mowca.gov.bd/ | shipped | gap-list | Verified 200 |
+| Supreme Court | supremecourt / bd-supremecourt | justice | https://www.supremecourt.gov.bd/ | shipped | gap-list | Verified 200 |
+| Law and Justice Division | lawjusticediv / bd-lawjusticediv | justice | https://www.lawjusticediv.gov.bd/ | shipped | gap-list | Verified 200 |
+| Bangladesh Coast Guard | coastguard / bd-coastguard | safety | https://www.coastguard.gov.bd/ | shipped | gap-list | Verified 200 |
+| DAE | dae / bd-dae | central | https://www.dae.gov.bd/ | shipped | gap-list | Verified 200 |
+| BANBEIS | banbeis / bd-banbeis | education | https://www.banbeis.gov.bd/ | shipped | gap-list | Verified 200 |
+
 ## Remaining candidates
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |

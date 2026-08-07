@@ -40,6 +40,6 @@ faq:
     a: "Use the emergency numbers published on the official Fire Service portal and national emergency guidance — confirm the current hotline on the official site."
     q_bn: "অগ্নিকাণ্ডে কোন নম্বরে ফোন করব?"
     a_bn: "অফিসিয়াল ফায়ার সার্ভিস পোর্টাল ও জাতীয় জরুরি নির্দেশনায় প্রকাশিত নম্বর ব্যবহার করুন—বর্তমান হটলাইন অফিসিয়াল সাইটে নিশ্চিত করুন।"
-related: [police]
+related: [police, modmr, ffwc, coastguard]
 last_verified: 2026-08-07
 ---

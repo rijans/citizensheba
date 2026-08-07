@@ -40,6 +40,6 @@ faq:
     a: "e-Court as linked here focuses on the published mobile-court / citizen reporting services on ecourt.gov.bd. Follow on-site guidance for what is and is not offered."
     q_bn: "এটি কি সব মামলার সম্পূর্ণ উচ্চ আদালত কেস ম্যানেজমেন্ট?"
     a_bn: "এখানে লিংক করা ই-কোর্ট মূলত ecourt.gov.bd-এ প্রকাশিত মোবাইল কোর্ট / নাগরিক রিপোর্টিং সেবা। কী আছে কী নেই তা সাইটের নির্দেশনায় দেখুন।"
-related: [police, fire-service]
+related: [police, fire-service, supremecourt, lawjusticediv]
 last_verified: 2026-08-07
 ---

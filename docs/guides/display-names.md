@@ -71,6 +71,31 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `rab` | **RAB** | Acronym ALL CAPS |
 | `iedcr` | **IEDCR** | Acronym ALL CAPS |
 
+| `vat` | **VAT Online** | NBR VAT product |
+| `bcc` | **BCC** | Acronym ALL CAPS |
+| `doict` | **DoICT** | Camel department short form |
+| `moedu` | **Ministry of Education** | Full ministry name |
+| `mopme` | **MoPME** | Acronym |
+| `tmed` | **TMED** | Acronym |
+| `du` | **University of Dhaka** | Full university name |
+| `buet` | **BUET** | Acronym ALL CAPS |
+| `dgfp` | **DGFP** | Acronym ALL CAPS |
+| `epb` | **EPB** | Acronym ALL CAPS |
+| `bscic` | **BSCIC** | Acronym ALL CAPS |
+| `pgcb` | **PGCB** | Acronym ALL CAPS |
+| `berc` | **BERC** | Acronym ALL CAPS |
+| `bmd` | **BMD** | Acronym ALL CAPS |
+| `ffwc` | **FFWC** | Acronym ALL CAPS |
+| `modmr` | **MoDMR** | Acronym |
+| `rthd` | **RTHD** | Acronym |
+| `dss` | **DSS** | Acronym ALL CAPS |
+| `mowca` | **MoWCA** | Acronym |
+| `supremecourt` | **Supreme Court** | Institutional name |
+| `lawjusticediv` | **Law and Justice Division** | Full division name |
+| `coastguard` | **Bangladesh Coast Guard** | Full force name |
+| `dae` | **DAE** | Acronym ALL CAPS |
+| `banbeis` | **BANBEIS** | Acronym ALL CAPS |
+
 Add a row whenever a new Service needs a non-obvious casing decision.
 
 ## Name Aliases — **required** on every Service
