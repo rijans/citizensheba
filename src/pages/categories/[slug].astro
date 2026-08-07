@@ -3,8 +3,11 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import Breadcrumb from '../../components/layout/Breadcrumb.astro';
 import CategoryDirectory from '../../components/directory/CategoryDirectory';
+import CategoryIcon from '../../components/ui/CategoryIcon';
 import { categoryPath, officialDomainFromUrl } from '../../lib/urls';
 import { documentTitle, metaDescription, breadcrumbListJsonLd, webPageJsonLd } from '../../lib/seo';
+import { accentStyle } from '../../lib/categoryVisuals';
+import { ArrowLeft } from 'lucide-react';
 
 export async function getStaticPaths() {
   const categories = await getCollection('categories');
@@ -35,6 +38,9 @@ const services = (await getCollection('services'))
 const title = documentTitle(category.data.name_bn, category.data.name);
 const description = metaDescription(category.data.description_bn, category.data.description);
 const canonicalPath = categoryPath(category.data.slug);
+const catAccentAttr = Object.entries(accentStyle(category.data.id))
+  .map(([k, v]) => `${k}:${v}`)
+  .join(';');
 const jsonLd = [
   breadcrumbListJsonLd([{ name: category.data.name }]),
   webPageJsonLd({
@@ -55,14 +61,26 @@ const jsonLd = [
     <Breadcrumb crumbs={[{ label: category.data.name }]} />
 
     <header class="category-page__header">
-      <h1>
-        {category.data.name} <span lang="bn">{category.data.name_bn}</span>
-      </h1>
+      <div class="category-page__title-row" style={catAccentAttr}>
+        <CategoryIcon
+          icon={category.data.icon}
+          categoryId={category.data.id}
+          inheritAccent
+          size={28}
+          className="category-page__icon"
+        />
+        <h1>
+          {category.data.name} <span lang="bn">{category.data.name_bn}</span>
+        </h1>
+      </div>
       <p>{category.data.description}</p>
     </header>
 
     <p class="category-page__browse">
-      <a href={`/?cat=${category.data.id}`}>Browse on Home</a>
+      <a href={`/?cat=${category.data.id}`}>
+        <ArrowLeft className="category-page__browse-icon" size={16} strokeWidth={2.25} aria-hidden="true" />
+        Browse on Home
+      </a>
     </p>
 
     <CategoryDirectory
