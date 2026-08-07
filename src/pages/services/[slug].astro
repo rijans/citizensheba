@@ -4,13 +4,14 @@ import BaseLayout from '../../components/layout/BaseLayout.astro';
 import OutboundCta from '../../components/service/OutboundCta.astro';
 import ServiceFaq from '../../components/service/ServiceFaq.astro';
 import StatusBadge from '../../components/service/StatusBadge.astro';
+import CategoryIcon from '../../components/ui/CategoryIcon';
 import ServiceCardLink from '../../components/ui/ServiceCardLink.astro';
 import { categoryPath, servicePath, officialDomainFromUrl } from '../../lib/urls';
 // import { REPORT_EMAIL } from '../../lib/site';
 import { documentTitle, metaDescription } from '../../lib/seo';
 import { renderMarkdown } from '../../lib/markdown';
 import { servicePageHeadings } from '../../lib/servicePageCopy';
-
+import { accentStyle } from '../../lib/categoryVisuals';
 export async function getStaticPaths() {
   const services = await getCollection('services');
   return services.map((s) => ({ params: { slug: s.data.slug }, props: { service: s } }));
@@ -32,6 +33,11 @@ const related = all.filter((s) => relatedIds.includes(s.data.id));
 const catById = Object.fromEntries(categories.map((c) => [c.data.id, c]));
 
 const domain = service.data.official_domain ?? officialDomainFromUrl(service.data.url);
+const hopIcon = service.data.icon ?? category.data.icon;
+const hopAccent = accentStyle(category.data.id);
+const hopAccentAttr = Object.entries(hopAccent)
+  .map(([k, v]) => `${k}:${v}`)
+  .join(';');
 const title = documentTitle(
   service.data.serp_title_bn ?? service.data.title_bn,
   service.data.serp_title ?? service.data.title,
@@ -63,9 +69,18 @@ const verifiedIso = service.data.last_verified.toISOString().slice(0, 10);
 
     <header class="service-page__header">
       <StatusBadge status={service.data.status} />
-      <h1>
-        {service.data.title} <span lang="bn">{service.data.title_bn}</span>
-      </h1>
+      <div class="service-page__title-row" style={hopAccentAttr}>
+        <CategoryIcon
+          icon={hopIcon}
+          categoryId={category.data.id}
+          inheritAccent
+          size={28}
+          className="service-page__icon"
+        />
+        <h1>
+          {service.data.title} <span lang="bn">{service.data.title_bn}</span>
+        </h1>
+      </div>
       {
         formerAliases.length > 0 && (
           <p class="service-page__formerly">

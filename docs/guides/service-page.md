@@ -23,7 +23,7 @@ Implementation: `src/pages/services/[slug].astro`.
 | — | Document Title (`<title>`) | `serp_title_bn`/`serp_title` or `title_bn`/`title` | `বাংলা — English \| CitizenSheba Bangladesh` (ADR-0003); expand short acronyms for SERP |
 | 1 | Breadcrumb | Category + Service | Home → Category → title |
 | 2 | Status badge | `status` | When not `ACTIVE` |
-| 3 | H1 | `title` + `title_bn` | EN then BN on one line (Mixed UI); short Display Names stay here |
+| 3 | Icon + H1 | Service `icon` ?? Category `icon`; `title` + `title_bn` | Same Lucide + Category accent as cards (ADR-0004); EN then BN on one line |
 | 4 | Formerly … | `aliases` where `kind: former` | Quiet line only |
 | 5 | Short description | `description` | EN only under H1 today; cards + Meta Description also use short fields |
 | 6 | Outbound CTA | `url` + domain | Primary action; domain under button with small **Copy** (full URL); bilingual toast “Link copied / লিংক কপি হয়েছে” |

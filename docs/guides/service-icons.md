@@ -2,7 +2,7 @@
 
 > Glossary: `CONTEXT.md` → **Service Icon**, **Category Icon**. Decision: [ADR-0004](../adr/0004-category-icons-and-service-cards.md). Spec: [`docs/superpowers/specs/2026-08-07-service-icons-design.md`](../superpowers/specs/2026-08-07-service-icons-design.md).
 
-Optional Lucide key on Service frontmatter (`icon`). Cards use `service.icon ?? category.icon`. Soft accent stays Category-colored. Filter chips stay Category-only. Registry: `src/lib/categoryIcons.ts`.
+Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1** use `service.icon ?? category.icon`. Soft accent stays Category-colored. Filter chips stay Category-only. Registry: `src/lib/categoryIcons.ts`.
 
 ## Seeded Service icons
 

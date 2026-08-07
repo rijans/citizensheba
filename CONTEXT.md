@@ -139,7 +139,7 @@ A simple SVG mark for a Category (lucide-style key in content), reused on filter
 _Avoid_: Emoji wallpaper on every card, loud category color fills, BN labels on chips that force wrapping, accent colors edited ad hoc in YAML, decorative illustrations that compete with the Outbound CTA
 
 **Service Icon**:
-Optional Lucide key on a Service (`icon` in frontmatter). When set, Service cards (Home, Category, related) show that glyph instead of the Category Icon; the soft accent remains the Category accent. When omitted, cards use the Category Icon. Living table: `docs/guides/service-icons.md`.
+Optional Lucide key on a Service (`icon` in frontmatter). When set, Service cards (Home, Category, related) and the Service Page H1 show that glyph instead of the Category Icon; the soft accent remains the Category accent. When omitted, those surfaces use the Category Icon. Living table: `docs/guides/service-icons.md`.
 _Avoid_: Per-Service accent colors, official gov logos on cards, custom PNG/stock ID-card illustrations, putting Service icons on Category chips
 
 **Mobile-First**:
