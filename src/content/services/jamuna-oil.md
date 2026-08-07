@@ -50,6 +50,6 @@ faq:
     a: "No. Jamuna Oil is a marketing company. BPC is Bangladesh Petroleum Corporation."
     q_bn: "যমুনা অয়েল কি বিপিসি-র মতো একই?"
     a_bn: "না। যমুনা অয়েল একটি বিপণন কোম্পানি। বিপিসি বাংলাদেশ পেট্রোলিয়াম কর্পোরেশন।"
-related: [bpc, petrobangla, emrd, berc, national-portal]
+related: [padma-oil, bpc, petrobangla, emrd, berc, national-portal]
 last_verified: 2026-08-08
 ---

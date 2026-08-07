@@ -44,14 +44,20 @@ curl -skS -o /tmp/p.html -w '%{http_code} %{url_effective}\n' -L --max-time 25 '
 # Confirm <title> matches the intended org (avoid wrong private college on a similar acronym).
 ```
 
-Ship only when:
+Ship when the Outbound is the **confirmed official entry** for that org:
 
-- Title / branding matches the Official org
-- Domain is plausible Official (`.gov.bd`, known SOE `.com.bd` / `.org.bd` already used for half-gov peers)
-- Not a parked / for-sale / hijacked / private lookalike
-- EN `description` ≥ 90 chars; aliases EN+BN; ranks; icon — see new-service checklist
+- Title / branding matches (when the host responds), **or**
+- Soft-down / flaky host (TLS fail, timeout, 5xx, WAF 403, Cloudflare challenge) **and** we are sure of the URL from Official sources (National Portal / sector apex / long-standing `.gov.bd` or known SOE domain already used in Bangladesh gov practice)
 
-Soft-TLS (curl verify fail but browser works) is OK with a backlog note — same pattern as WASA / Titas.
+Soft failures are **not** a reason to skip a known Official hop or to invent a “working today” alternate. Same rule as living **Link Health** in `CONTEXT.md`: keep the confirmed official URL; change only if the entry was wrong, HTTPS-on-same-host is required, or the official entry permanently moved. Record the soft failure in Catalog Backlog notes + `last_verified`.
+
+Still **do not** ship when:
+
+- Domain is parked / for-sale / hijacked / private lookalike
+- We only have a guess URL with no Official confirmation
+- EN `description` / aliases / ranks / icon incomplete — see new-service checklist
+
+Soft-TLS (curl verify fail but browser works) is the common WASA / Titas / RAJUK pattern — ship with a backlog note.
 
 ## Bucket sweep checklist (repeat per wave)
 

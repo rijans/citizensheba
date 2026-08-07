@@ -59,6 +59,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `bmet` | `briefcase-business` | Overseas employment clearance |
 | `bmrc` | `microscope` | Medical Research Council |
 | `bou` | `book-open` | Open university |
+| `bhbfc` | `home` | House Building Finance Corporation |
 | `bpatc` | `landmark` | Public admin training centre |
 | `bpc` | `factory` | Bangladesh Petroleum Corporation |
 | `bpdb` | `zap` | Power development |
@@ -103,6 +104,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `customs` | `package` | Customs |
 | `dae` | `sprout` | Agriculture extension |
 | `desco` | `zap` | Electricity |
+| `dife` | `clipboard-list` | Factory & establishment inspection |
 | `dgda` | `pill` | Drug administration |
 | `dgfood` | `utensils` | Food directorate |
 | `dgfp` | `baby` | Family planning |
@@ -113,10 +115,12 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `dip` | `user-round` | Immigration / passports |
 | `dlrs` | `map` | Land records & surveys |
 | `dls` | `sprout` | Livestock Services |
+| `djmc` | `stethoscope` | Dinajpur Medical College |
 | `dmc` | `stethoscope` | Dhaka Medical College |
 | `dmtcl` | `train-front` | Dhaka Metro |
 | `dnc` | `shield-alert` | Narcotics Control |
 | `dncc` | `building-2` | Dhaka North City |
+| `dncrp` | `scale` | National consumer rights protection |
 | `doe` | `cloud-sun` | Department of Environment |
 | `doict` | `monitor` | ICT |
 | `dos` | `ship` | Department of Shipping |
@@ -172,13 +176,16 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `iu` | `university` | Islamic University Kushtia |
 | `jamuna-oil` | `flame` | Jamuna Oil (petroleum marketing) |
 | `janata` | `landmark` | Janata Bank (state) |
+| `jbc` | `landmark` | Jiban Bima Corporation (life insurance) |
 | `jashore-board` | `school` | Jessore board |
 | `jnu` | `university` | Jagannath University |
 | `just` | `university` | Jashore S&T uni |
 | `kcc` | `building-2` | Khulna City Corp |
 | `kda` | `landmark` | Khulna Development Authority |
 | `kgdcl` | `flame` | Karnaphuli gas distribution |
+| `khulna-mc` | `stethoscope` | Khulna Medical College |
 | `khulna-wasa` | `droplets` | Khulna water |
+| `krishi-bank` | `landmark` | Bangladesh Krishi Bank |
 | `ku` | `university` | Khulna University |
 | `kuet` | `university` | KUET engineering |
 | `land-portal` | `home` | Land ministry |
@@ -231,12 +238,15 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `nesco` | `zap` | Electricity |
 | `nhrc` | `scale` | Human Rights Commission |
 | `nid` | `id-card` | National ID |
+| `nikdu` | `stethoscope` | Kidney diseases & urology institute |
+| `nimh` | `stethoscope` | National Institute of Mental Health |
 | `nilg` | `building-2` | Local gov training institute |
 | `nstu` | `university` | NSTU |
 | `ntrca` | `school` | Non-gov teachers registration |
 | `nwpgcl` | `zap` | North-West power generation |
 | `online-gd` | `shield` | Online GD |
 | `parliament` | `landmark` | Jatiya Sangsad |
+| `padma-oil` | `flame` | Padma Oil (petroleum marketing) |
 | `pbi` | `shield` | Police Bureau of Investigation |
 | `petrobangla` | `flame` | Oil/gas corporation |
 | `pgcb` | `cable` | Power grid |
@@ -284,6 +294,9 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `srdi` | `sprout` | Soil Resource Development Institute |
 | `sreda` | `zap` | Renewable energy authority |
 | `ssmc` | `stethoscope` | Sir Salimullah Medical College |
+| `shsmc` | `stethoscope` | Shaheed Suhrawardy Medical College |
+| `sust` | `university` | Shahjalal University of Science and Technology |
+| `szmc` | `stethoscope` | Shaheed Ziaur Rahman Medical College |
 | `supremecourt` | `scale` | Supreme Court |
 | `surokkha` | `heart-pulse` | Vaccination |
 | `tcb` | `store` | Trading Corporation / fair price |

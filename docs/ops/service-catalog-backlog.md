@@ -177,16 +177,39 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
-| Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | Wave 31 shipped GTCL/KGDCL/BPC/NWPGCL/Jamuna Oil/RPCL/BGFCL; Padma Oil / JGTCL still unconfirmed |
+| Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | Wave 31 + 33 shipped most oil/gas peers; **Meghna Oil / JGTCL** still unconfirmed |
 | Other city corporations | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped KCC/Rajshahi/RPCC/COCC/Mymensingh; remaining pourashava/siblings TBD |
-| More public unis / boards | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | Wave 32 shipped RUB + UFTB; **SUST** still Cloudflare 403; KAU fail; IUT skipped (OIC) |
-| More half-gov / SOE / state banks / finance | _(TBD)_ | tax | _(confirm)_ | candidate | gap-list | Wave 32 shipped ICB/MRA/IDRA/SBC/Ansar-VDP Bank; **BKB/HBFC/JBC** still fail; BDBL for sale; private banks & MFS out |
-| More public medical colleges / institutes | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | Wave 32 shipped COMC/NINS/NIDCH; SHSMC/SZMC/Khulna MC still fail; **never** `bmc.edu.bd` (private Barind) |
-| BG Press / BPATC / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 31 shipped BPATC; forms.gov.bd fail; liberationwarmuseum.org hijacked — skip |
+| More public unis / boards | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | Wave 33 shipped SUST (soft CF); GAU already shipped; KAU fail; IUT skipped (OIC) |
+| More half-gov / SOE / state banks / finance | _(TBD)_ | tax | _(confirm)_ | candidate | gap-list | Wave 33 shipped BKB (soft 503) / BHBFC / JBC; BDBL for sale; private banks & MFS out |
+| More public medical colleges / institutes | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | Wave 33–34 shipped SHSMC/SZMC/Khulna MC/DJMC/NIMH/NIKDU; **never** `bmc.edu.bd` (hijacked/private) |
+| BG Press / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 31 shipped BPATC; forms.gov.bd still flaky without alternate confirmed entry; liberationwarmuseum.org hijacked — skip |
 | Development authorities (RAJUK/CDA/KDA/RDA) | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped RAJUK/CDA/KDA; Rajshahi DA outbound still unconfirmed (`rda.gov.bd` = Rural Development Academy Bogura) |
 | Gov job application portals | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | BPSC/NTRCA shipped; **skip** Teletalk Alljobs (private+gov mix); prefer per-exam Teletalk hosts when Official |
-| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); private Barind MC (`bmc.edu.bd`); `smc.edu.bd` junk; `afmcbd.com` for sale; `nitor.org` wrong (DE pest control); icddr,b international; Teletalk Alljobs mixed market |
+| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); `bmc.edu.bd` hijacked/private; `smc.edu.bd` junk; `pmc.edu.bd` junk; `afmcbd.com` for sale; `nitor.org` wrong; icddr,b international; Teletalk Alljobs mixed market |
 | Industry / trade associations (BASIS, …) | — | — | — | — | partner | **Not Official** — Partner candidates (ADR-0013); do not seed as Official rows |
+
+## Priority wave 34 — medical + labour/consumer (2026-08-08)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Dinajpur Medical College | djmc / bd-djmc | health | https://www.djmc.edu.bd/ | shipped | gap-list | Public MC; verified 200 |
+| Khulna Medical College | khulna-mc / bd-khulna-mc | health | https://kmc.college.gov.bd/ | shipped | gap-list | Prefer college.gov.bd over flaky kmc.edu.bd |
+| DIFE | dife / bd-dife | central | https://www.dife.gov.bd/ | shipped | gap-list | Factory inspection; verified 200 |
+| DNCRP | dncrp / bd-dncrp | central | https://www.dncrp.gov.bd/ | shipped | gap-list | Consumer rights; verified 200 |
+
+## Priority wave 33 — soft-URL finance/health/uni + Padma Oil (2026-08-08)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| SUST | sust / bd-sust | education | https://www.sust.edu/ | shipped | gap-list | Soft Cloudflare 403 from some nets; known Official — keep URL |
+| Bangladesh Krishi Bank | krishi-bank / bd-krishi-bank | tax | https://www.krishibank.org.bd/ | shipped | gap-list | Soft 503 at ship time; known Official — keep URL |
+| Shaheed Suhrawardy Medical College | shsmc / bd-shsmc | health | https://shsmc.college.gov.bd/ | shipped | gap-list | Prefer college.gov.bd; verified 200 |
+| Shaheed Ziaur Rahman Medical College | szmc / bd-szmc | health | https://szmc.college.gov.bd/ | shipped | gap-list | Bogura; verified 200 |
+| Padma Oil | padma-oil / bd-padma-oil | utilities | https://www.pocl.gov.bd/ | shipped | gap-list | BPC marketing sibling; verified 200 |
+| BHBFC | bhbfc / bd-bhbfc | tax | https://www.bhbfc.gov.bd/ | shipped | gap-list | House building finance; verified 200 |
+| Jiban Bima Corporation | jbc / bd-jbc | tax | https://www.jbc.gov.bd/ | shipped | gap-list | Life insurance SOE; verified 200 |
+| NIMH | nimh / bd-nimh | health | https://nimh.gov.bd/ | shipped | gap-list | Mental health institute; verified 200 |
+| NIKDU | nikdu / bd-nikdu | health | https://www.nikdu.org.bd/ | shipped | gap-list | Kidney/urology institute; verified 200 |
 
 ## Priority wave 32 — finance + medical + unis (2026-08-08)
 

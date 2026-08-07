@@ -50,6 +50,6 @@ faq:
     a: "No. Sadharan Bima Corporation is a state / half-gov insurer."
     q_bn: "এসবিসি কি বেসরকারি বীমাকারী?"
     a_bn: "না। সাধারণ বীমা কর্পোরেশন রাষ্ট্রীয় / হাফ-গভ বীমাকারী।"
-related: [idra, bangladesh-bank, national-portal, sonali, fid]
+related: [jbc, idra, bangladesh-bank, national-portal, sonali, fid]
 last_verified: 2026-08-08
 ---

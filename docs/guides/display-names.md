@@ -138,6 +138,19 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `uftb` | **UFTB** | University of Frontier Technology; former BDU in aliases |
 | `nins` | **NINS** | Neurosciences institute |
 | `nidch` | **NIDCH** | Chest diseases institute |
+| `sust` | **SUST** | Shahjalal University of Science and Technology |
+| `krishi-bank` | **Bangladesh Krishi Bank** | Specialized state agricultural bank; BKB in aliases |
+| `shsmc` | **Shaheed Suhrawardy Medical College** | Public MC; ShSMC in aliases |
+| `szmc` | **Shaheed Ziaur Rahman Medical College** | Bogura public MC |
+| `padma-oil` | **Padma Oil** | Petroleum marketing SOE |
+| `bhbfc` | **BHBFC** | House Building Finance Corporation |
+| `jbc` | **Jiban Bima Corporation** | State life insurer |
+| `nimh` | **National Institute of Mental Health** | Specialty institute |
+| `nikdu` | **NIKDU** | Kidney diseases & urology |
+| `djmc` | **Dinajpur Medical College** | Public MC |
+| `khulna-mc` | **Khulna Medical College** | Public MC |
+| `dife` | **DIFE** | Factory inspection |
+| `dncrp` | **DNCRP** | Consumer rights |
 | `mofood` | **MoFood** | Food ministry short form |
 | `dgfood` | **DG Food** | Directorate short form |
 | `fisheries` | **DoF** | Department of Fisheries short form |
