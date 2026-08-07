@@ -53,7 +53,7 @@ faq:
     q_bn: "সুরক্ষা কি DGHS-এর অংশ?"
     a_bn: "টিকা ও সংশ্লিষ্ট কর্মসূচি অফিসিয়াল স্বাস্থ্য সাইট থেকে লিংক থাকতে পারে। নির্দিষ্ট সেবার জন্য সংশ্লিষ্ট অফিসিয়াল পোর্টাল ব্যবহার করুন।"
 
-related: [surokkha, dgda, bfsa, iedcr]
+related: [surokkha, dgda, bfsa, iedcr, mohfw]
 last_verified: 2026-08-06
 ---
 

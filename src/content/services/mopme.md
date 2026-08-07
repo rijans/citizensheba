@@ -52,7 +52,7 @@ faq:
     a: "No. HSC/SSC results are on the Education Board Results portal. MoPME focuses on primary and mass education."
     q_bn: "এইচএসসি ফলাফল কি প্রাথমিক শিক্ষা মন্ত্রণালয়ে?"
     a_bn: "না। এইচএসসি/এসএসসি ফলাফল শিক্ষা বোর্ড ফলাফল পোর্টালে। প্রাথমিক শিক্ষা মন্ত্রণালয় প্রাথমিক ও গণশিক্ষায় মনোযোগী।"
-related: [moedu, nctb, dshe, edu-results]
+related: [moedu, nctb, dshe, edu-results, dpe]
 last_verified: 2026-08-07
 ---
 

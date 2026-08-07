@@ -50,6 +50,71 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `lged` | **LGED** | Acronym ALL CAPS |
 | `dpp` | **DPP** | Acronym ALL CAPS |
 | `mofa` | **MoFA** | Ministry short form |
+| `mohfw` | **MoHFW** | Health ministry short form |
+| `dncc` | **DNCC** | Acronym ALL CAPS |
+| `dscc` | **DSCC** | Acronym ALL CAPS |
+| `ccc` | **CCC** | Acronym; BN চসিক |
+| `khulna-wasa` | **Khulna WASA** | City + WASA |
+| `pwd` | **PWD** | Acronym ALL CAPS |
+| `rhd` | **RHD** | Acronym; BN সড়ক ও জনপথ |
+| `mha` | **MoHA** | Home Affairs short form |
+| `mof` | **MoF** | Finance ministry short form |
+| `pmo` | **PMO** | Acronym ALL CAPS |
+
+| `mopa` | **MoPA** | Public Administration short form |
+| `cabinet` | **Cabinet Division** | Institutional name |
+| `plancomm` | **Planning Commission** | Institutional name |
+| `planning` | **Planning Division** | Division under MoP; MoP in aliases |
+| `nbr` | **NBR** | Acronym ALL CAPS |
+| `lgd` | **LGD** | Acronym; Local Government Division |
+| `moa` | **MoA** | Agriculture ministry short form |
+| `bsti` | **BSTI** | Acronym ALL CAPS |
+| `bgb` | **BGB** | Acronym ALL CAPS |
+| `acc` | **ACC** | Acronym; BN দুদক |
+| `ird` | **IRD** | Acronym ALL CAPS |
+| `bangabhaban` | **Bangabhaban** | House spelling (not Bangabhavan in title) |
+| `ansar` | **Ansar & VDP** | Force short Display Name |
+| `gcc` | **GCC** | Acronym; BN গসিক |
+| `mole` | **MoLE** | Labour ministry short form |
+| `mofl` | **MoFL** | Fisheries & Livestock short form |
+| `sparrso` | **SPARRSO** | Acronym ALL CAPS |
+| `infocom` | **Information Commission** | Full commission name |
+| `barishal-cc` | **Barishal City Corporation** | City spelling Barishal (not Barisal in title) |
+| `ncc` | **NCC** | Acronym; Narayanganj City Corp |
+
+| `moc` | **MoC** | Commerce ministry short form |
+| `moi` | **MoI** | Industries ministry short form |
+| `mowr` | **MoWR** | Water Resources short form |
+| `moef` | **MoEFCC** | Environment / climate short form |
+| `cag` | **CAG** | Acronym ALL CAPS |
+| `dnc` | **DNC** | Acronym ALL CAPS |
+| `moys` | **MoYS** | Youth & Sports short form |
+| `prison` | **Bangladesh Jail** | Prisons directorate Display Name |
+| `most` | **MoST** | Science & Technology short form |
+| `dpe` | **DPE** | Acronym ALL CAPS |
+
+| `bsec` | **BSEC** | Acronym ALL CAPS |
+| `cga` | **CGA** | Acronym ALL CAPS |
+| `mochta` | **MoCHTA** | CHT Affairs short form |
+| `mocat` | **MoCAT** | Civil Aviation & Tourism short form |
+| `molwa` | **MoLWA** | Liberation War Affairs short form |
+| `erd` | **ERD** | Acronym ALL CAPS |
+| `power-division` | **Power Division** | Institutional name |
+| `shed` | **SHED** | Acronym ALL CAPS |
+| `doe` | **DoE** | Department short form (capital E) |
+| `bpsc` | **BPSC** | Acronym ALL CAPS |
+
+| `parliament` | **Jatiya Sangsad** | Institutional BN-first Display Name |
+| `moinfo` | **MoInfo** | Information & Broadcasting (not Industries MoI) |
+| `pid` | **PID** | Acronym ALL CAPS |
+| `mor` | **MoR** | Railways ministry short form |
+| `sreda` | **SREDA** | Acronym ALL CAPS |
+| `sgcl` | **SGCL** | Acronym ALL CAPS |
+| `petrobangla` | **Petrobangla** | Product/corp brand casing |
+| `mofood` | **MoFood** | Food ministry short form |
+| `dgfood` | **DG Food** | Directorate short form |
+| `fisheries` | **DoF** | Department of Fisheries short form |
+| `dlrs` | **DLRS** | Acronym ALL CAPS |
 
 | `ekpay` | **ekPay** | camelCase product brand (payment gateway) |
 | `breb` | **BREB** | Acronym ALL CAPS |

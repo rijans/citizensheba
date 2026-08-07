@@ -50,6 +50,6 @@ faq:
     a: "No. Chattogram WASA serves the Chattogram franchise. Dhaka customers should open the Dhaka WASA Service."
     q_bn: "এটি কি ঢাকা ওয়াসার মতো একই?"
     a_bn: "না। চট্টগ্রাম ওয়াসা চট্টগ্রাম ফ্র্যাঞ্চাইজি। ঢাকার গ্রাহকদের ঢাকা ওয়াসা সেবা খুলতে হবে।"
-related: [dhaka-wasa, titas-gas, desco]
+related: [dhaka-wasa, titas-gas, desco, khulna-wasa, ccc]
 last_verified: 2026-08-07
 ---

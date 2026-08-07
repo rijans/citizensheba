@@ -51,7 +51,7 @@ faq:
     q_bn: "রেলওয়ে পোর্টালে কী করা যায়?"
     a_bn: "আন্তঃনগর ট্রেন টিকিট কেনা এবং রুট ও সময়সূচি দেখা যায়।"
 
-related: [brta, caab, dmtcl, brtc]
+related: [brta, caab, dmtcl, brtc, mor]
 last_verified: 2026-08-06
 ---
 

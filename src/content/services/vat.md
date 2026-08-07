@@ -52,7 +52,7 @@ faq:
     a: "No. e-Return is for income tax returns. VAT Online covers VAT registration and VAT e-services."
     q_bn: "ভ্যাট অনলাইন কি ই-রিটার্নের মতোই?"
     a_bn: "না। ই-রিটার্ন আয়কর রিটার্নের জন্য। ভ্যাট অনলাইন ভ্যাট নিবন্ধন ও ভ্যাট ই-সেবা কভার করে।"
-related: [etin, ereturn, customs, bangladesh-bank]
+related: [nbr, etin, ereturn, customs, bangladesh-bank]
 last_verified: 2026-08-07
 ---
 

@@ -52,7 +52,7 @@ faq:
     a: "Use the BRTA Service Portal (BSP). RTHD is the roads and highways division portal."
     q_bn: "ড্রাইভিং লাইসেন্স নবায়ন কোথায়?"
     a_bn: "বিআরটিএ সার্ভিস পোর্টাল (BSP) ব্যবহার করুন। সড়ক পরিবহন সড়ক ও মহাসড়ক বিভাগ পোর্টাল।"
-related: [brta, railway, caab, biwtc]
+related: [brta, railway, caab, biwtc, rhd]
 last_verified: 2026-08-07
 ---
 

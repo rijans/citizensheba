@@ -52,7 +52,7 @@ faq:
     a: "CAAB publishes authority information. Buy tickets from airlines or licensed agents — not as a CAAB booking cart."
     q_bn: "সিএএবিতে কি ফ্লাইট টিকিট কেনা যায়?"
     a_bn: "সিএএবি কর্তৃপক্ষের তথ্য প্রকাশ করে। টিকিট এয়ারলাইন বা লাইসেন্সপ্রাপ্ত এজেন্টের কাছ থেকে কিনুন—সিএএবি বুকিং কার্ট নয়।"
-related: [railway, brta, epassport, biman, biwtc]
+related: [railway, brta, epassport, biman, biwtc, mocat]
 last_verified: 2026-08-07
 ---
 

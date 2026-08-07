@@ -52,6 +52,6 @@ faq:
     a: "No. LGED focuses on local/rural infrastructure. Road Transport and Highways Division / RHD cover national highway administration."
     q_bn: "এলজিইডি কি আরএইচডি-র মতো একই?"
     a_bn: "না। এলজিইডি স্থানীয়/পল্লী অবকাঠামো দেখে। সড়ক পরিবহন ও মহাসড়ক বিভাগ / আরএইচডি জাতীয় মহাসড়ক প্রশাসন দেখে।"
-related: [rthd, national-portal, eprocure]
+related: [lgd, rthd, national-portal, eprocure, pwd, rhd]
 last_verified: 2026-08-07
 ---

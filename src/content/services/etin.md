@@ -56,7 +56,7 @@ faq:
     q_bn: "ই-টিআইএন পোর্টালে কী করা যায়?"
     a_bn: "নতুন টিআইএন নিবন্ধন বা বিদ্যমান করদাতা শনাক্তকরণ নম্বর ব্যবস্থাপনা করা যায়।"
 
-related: [ereturn, customs, rjsc, vat, bangladesh-bank]
+related: [nbr, ereturn, customs, rjsc, vat, bangladesh-bank, mof]
 last_verified: 2026-08-06
 ---
 

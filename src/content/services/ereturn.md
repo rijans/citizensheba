@@ -53,7 +53,7 @@ faq:
     q_bn: "ই-রিটার্ন পোর্টালে কী করা যায়?"
     a_bn: "এনবিআর সিস্টেমের মাধ্যমে বার্ষিক আয়কর রিটার্ন অনলাইনে জমা দেওয়া যায়।"
 
-related: [etin, vat, customs, bangladesh-bank]
+related: [nbr, etin, vat, customs, bangladesh-bank]
 last_verified: 2026-08-06
 ---
 

@@ -141,9 +141,100 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
-| Utility siblings (other DISCOs / WASAs) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | e.g. Khulna WASA, SZPDCL |
-| City corporation portals | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | DNCC / DSCC / CCC |
-| PWD / RHD deep links | _(TBD)_ | central / transport | _(confirm)_ | candidate | gap-list | if distinct citizen hops |
+| Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | e.g. SZPDCL, Jalalabad Gas |
+| Other city corporations | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | e.g. KCC, RCC, Sylhet CC |
+| More ministries / directorates | _(TBD)_ | mixed | _(confirm)_ | candidate | gap-list | gap-first Official only |
+
+## Priority wave 11 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Jatiya Sangsad | parliament / bd-parliament | central | https://www.parliament.gov.bd/ | shipped | gap-list | Parliament; verified 200 |
+| MoInfo | moinfo / bd-moinfo | central | https://www.moi.gov.bd/ | shipped | gap-list | Information & Broadcasting (not Industries MoI) |
+| PID | pid / bd-pid | central | https://www.pressinform.gov.bd/ | shipped | gap-list | Press Information Department |
+| MoR | mor / bd-mor | transport | https://mor.gov.bd/ | shipped | gap-list | Railways ministry |
+| SREDA | sreda / bd-sreda | utilities | https://www.sreda.gov.bd/ | shipped | gap-list | Renewable energy authority |
+| SGCL | sgcl / bd-sgcl | utilities | https://www.sgcl.org.bd/ | shipped | gap-list | Sundarban Gas |
+| Petrobangla | petrobangla / bd-petrobangla | utilities | https://petrobangla.org.bd/ | shipped | gap-list | Oil/gas corporation |
+| MoFood | mofood / bd-mofood | central | https://mofood.gov.bd/ | shipped | gap-list | Food ministry |
+| DG Food | dgfood / bd-dgfood | central | https://dgfood.gov.bd/ | shipped | gap-list | Food directorate |
+| DoF | fisheries / bd-fisheries | central | https://fisheries.gov.bd/ | shipped | gap-list | Department of Fisheries |
+| DLRS | dlrs / bd-dlrs | land | https://dlrs.gov.bd/ | shipped | gap-list | Land records & surveys |
+
+## Priority wave 10 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| BSEC | bsec / bd-bsec | tax | https://bsec.gov.bd/ | shipped | gap-list | Securities commission; verified 200 |
+| CGA | cga / bd-cga | tax | https://cga.gov.bd/ | shipped | gap-list | Controller General of Accounts |
+| MoCHTA | mochta / bd-mochta | central | https://www.mochta.gov.bd/ | shipped | gap-list | CHT Affairs |
+| MoCAT | mocat / bd-mocat | transport | https://mocat.gov.bd/ | shipped | gap-list | Civil Aviation & Tourism |
+| MoLWA | molwa / bd-molwa | central | https://molwa.gov.bd/ | shipped | gap-list | Liberation War Affairs |
+| ERD | erd / bd-erd | tax | https://erd.gov.bd/ | shipped | gap-list | Economic Relations Division |
+| Power Division | power-division / bd-power-division | utilities | https://powerdivision.gov.bd/ | shipped | gap-list | Electricity policy hub |
+| SHED | shed / bd-shed | education | https://shed.gov.bd/ | shipped | gap-list | Secondary & Higher Education Div |
+| DoE | doe / bd-doe | central | https://doe.gov.bd/ | shipped | gap-list | Department of Environment |
+| BPSC | bpsc / bd-bpsc | central | https://bpsc.gov.bd/ | shipped | gap-list | Public Service Commission / BCS |
+
+## Priority wave 9 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| MoC | moc / bd-moc | central | https://mincom.gov.bd/ | shipped | gap-list | Commerce; verified 200 |
+| MoI | moi / bd-moi | central | https://moind.gov.bd/ | shipped | gap-list | Industries; verified 200 |
+| MoWR | mowr / bd-mowr | central | https://mowr.gov.bd/ | shipped | gap-list | Water Resources; verified 200 |
+| MoEFCC | moef / bd-moef | central | https://moef.gov.bd/ | shipped | gap-list | Environment / climate; verified 200 |
+| CAG | cag / bd-cag | central | https://cag.org.bd/ | shipped | gap-list | Auditor General; verified 200 |
+| DNC | dnc / bd-dnc | safety | https://dnc.gov.bd/ | shipped | gap-list | Narcotics Control; verified 200 |
+| MoYS | moys / bd-moys | central | https://moysports.gov.bd/ | shipped | gap-list | Youth & Sports; verified 200 |
+| Bangladesh Jail | prison / bd-prison | safety | https://prison.gov.bd/ | shipped | gap-list | Prisons; verified 200 |
+| MoST | most / bd-most | central | https://most.gov.bd/ | shipped | gap-list | Science & Technology; verified 200 |
+| DPE | dpe / bd-dpe | education | https://dpe.gov.bd/ | shipped | gap-list | Primary Education; verified 200 |
+
+## Priority wave 8 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| IRD | ird / bd-ird | tax | https://www.ird.gov.bd/ | shipped | gap-list | Internal Resources Division |
+| Bangabhaban | bangabhaban / bd-bangabhaban | central | https://www.bangabhaban.gov.bd/ | shipped | gap-list | President’s Office |
+| Ansar & VDP | ansar / bd-ansar | safety | https://ansarvdp.gov.bd/ | shipped | gap-list | Verified 200 |
+| GCC | gcc / bd-gcc | central | https://gcc.gov.bd/ | shipped | gap-list | Gazipur City Corp |
+| MoLE | mole / bd-mole | central | https://www.mole.gov.bd/ | shipped | gap-list | Labour & Employment |
+| MoFL | mofl / bd-mofl | central | https://www.mofl.gov.bd/ | shipped | gap-list | Fisheries & Livestock |
+| SPARRSO | sparrso / bd-sparrso | central | https://www.sparrso.gov.bd/ | shipped | gap-list | Remote sensing |
+| Information Commission | infocom / bd-infocom | justice | https://www.infocom.gov.bd/ | shipped | gap-list | RTI commission |
+| Barishal City Corporation | barishal-cc / bd-barishal-cc | central | https://barishalcity.gov.bd/ | shipped | gap-list | Avoid confusion with BCC ICT |
+| NCC | ncc / bd-ncc | central | https://www.ncc.gov.bd/ | shipped | gap-list | Narayanganj City Corp |
+
+## Priority wave 7 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| MoPA | mopa / bd-mopa | central | https://mopa.gov.bd/ | shipped | gap-list | Verified 200 |
+| Cabinet Division | cabinet / bd-cabinet | central | https://www.cabinet.gov.bd/ | shipped | gap-list | Verified 200 |
+| Planning Commission | plancomm / bd-plancomm | central | https://www.plancomm.gov.bd/ | shipped | gap-list | Verified 200 |
+| Planning Division | planning / bd-planning | central | https://plandiv.gov.bd/ | shipped | gap-list | MoP public portal |
+| NBR | nbr / bd-nbr | tax | https://nbr.portal.gov.bd/ | shipped | gap-list | Portal host; nbr.gov.bd 403 |
+| LGD | lgd / bd-lgd | central | https://lgd.gov.bd/ | shipped | gap-list | Verified 200 |
+| MoA | moa / bd-moa | central | https://www.moa.gov.bd/ | shipped | gap-list | Agriculture ministry |
+| BSTI | bsti / bd-bsti | central | https://www.bsti.gov.bd/ | shipped | gap-list | Standards |
+| BGB | bgb / bd-bgb | safety | https://bgb.gov.bd/ | shipped | gap-list | Border Guard |
+| ACC | acc / bd-acc | justice | https://acc.org.bd/ | shipped | gap-list | Anti-Corruption Commission |
+
+## Priority wave 6 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| MoHFW | mohfw / bd-mohfw | health | https://mohfw.gov.bd/ | shipped | gap-list | Health ministry |
+| DNCC | dncc / bd-dncc | central | https://dncc.gov.bd/ | shipped | gap-list | Dhaka North |
+| DSCC | dscc / bd-dscc | central | https://dscc.gov.bd/ | shipped | gap-list | Dhaka South |
+| CCC | ccc / bd-ccc | central | https://ccc.gov.bd/ | shipped | gap-list | Chattogram City |
+| Khulna WASA | khulna-wasa / bd-khulna-wasa | utilities | https://kwasa.portal.gov.bd/ | shipped | gap-list | Portal host |
+| PWD | pwd / bd-pwd | central | https://www.pwd.gov.bd/ | shipped | gap-list | Public works |
+| RHD | rhd / bd-rhd | transport | https://www.rhd.gov.bd/ | shipped | gap-list | Roads & Highways Dept |
+| MoHA | mha / bd-mha | safety | https://mha.gov.bd/ | shipped | gap-list | Home Affairs |
+| MoF | mof / bd-mof | tax | https://mof.gov.bd/ | shipped | gap-list | Finance ministry |
+| PMO | pmo / bd-pmo | central | https://pmo.gov.bd/ | shipped | gap-list | Prime Minister’s Office |
 
 ## Priority wave 5 — gap fill (2026-08-07)
 

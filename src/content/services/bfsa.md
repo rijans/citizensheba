@@ -52,7 +52,7 @@ faq:
     a: "No. DGHS covers broader health services. BFSA focuses on food safety regulation and advisories."
     q_bn: "বিএফএসএ কি ডিজিএইচএস হাসপাতাল সেবার বিকল্প?"
     a_bn: "না। ডিজিএইচএস বৃহত্তর স্বাস্থ্য সেবা কভার করে। বিএফএসএ খাদ্য নিরাপত্তা নিয়ন্ত্রণ ও সতর্কতায় মনোযোগী।"
-related: [dghs, dgda, surokkha]
+related: [dghs, dgda, surokkha, mofood, dgfood]
 last_verified: 2026-08-07
 ---
 

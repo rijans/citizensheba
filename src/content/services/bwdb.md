@@ -52,6 +52,6 @@ faq:
     a: "No. BWDB covers water development projects and board information. FFWC publishes operational flood forecasts and water-level bulletins."
     q_bn: "বিডব্লিউডিবি কি এফএফডব্লিউসি বন্যা বুলেটিনের বিকল্প?"
     a_bn: "না। বিডব্লিউডিবি পানি উন্নয়ন প্রকল্প ও বোর্ড তথ্য দেয়। এফএফডব্লিউসি চলমান বন্যা পূর্বাভাস ও পানির স্তর বুলেটিন প্রকাশ করে।"
-related: [ffwc, modmr, dhaka-wasa]
+related: [ffwc, modmr, dhaka-wasa, mowr]
 last_verified: 2026-08-07
 ---

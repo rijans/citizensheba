@@ -52,7 +52,7 @@ faq:
     a: "No. Customs clearance uses Bangladesh Customs channels. EPB focuses on export promotion."
     q_bn: "কাস্টমস ক্লিয়ারেন্স কি ইপিবিতে?"
     a_bn: "না। কাস্টমস ক্লিয়ারেন্স বাংলাদেশ কাস্টমস চ্যানেলে। ইপিবি রপ্তানি উন্নয়নে মনোযোগী।"
-related: [customs, bida, rjsc, eprocure]
+related: [customs, bida, rjsc, eprocure, moc]
 last_verified: 2026-08-07
 ---
 

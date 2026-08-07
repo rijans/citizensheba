@@ -52,7 +52,7 @@ faq:
     a: "No. Land mutation uses e-Namjari. DAE covers agricultural extension advice and programmes."
     q_bn: "কৃষি সম্প্রসারণ কি নামজারি পোর্টাল?"
     a_bn: "না। নামজারি ই-নামজারিতে। কৃষি সম্প্রসারণ কৃষি পরামর্শ ও কর্মসূচি কভার করে।"
-related: [national-portal, mygov, ldtax, namjari]
+related: [moa, mofl, national-portal, mygov]
 last_verified: 2026-08-07
 ---
 

@@ -50,7 +50,7 @@ faq:
     a: "This Service Page points to Dhaka WASA. Other city WASAs have separate Official portals."
     q_bn: "এটি কি চট্টগ্রাম বা অন্য শহরের ওয়াসার জন্য?"
     a_bn: "এই সেবা পেজ ঢাকা ওয়াসার জন্য। অন্য শহরের ওয়াসার আলাদা অফিসিয়াল পোর্টাল আছে।"
-related: [titas-gas, desco, chattogram-wasa]
+related: [titas-gas, desco, chattogram-wasa, khulna-wasa]
 last_verified: 2026-08-07
 ---
 
