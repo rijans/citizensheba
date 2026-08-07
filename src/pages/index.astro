@@ -22,10 +22,10 @@ const initialCategoryId = Astro.url.searchParams.get('cat');
     <p>{SITE_TAGLINE}</p>
   </section>
   <InstantDirectory
-    client:load
+    client:idle
     categories={index.categories}
-    services={index.services}
     initialCategoryId={initialCategoryId}
+    indexUrl="/directory-index.json"
   />
   <NoscriptDirectory categories={index.categories} services={index.services} />
 </BaseLayout>

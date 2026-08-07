@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hind+Siliguri:wght@400;500;600;700&display=swap");
+@import "./fonts.css";
 @import "tailwindcss";
 
 :root {
@@ -11,10 +11,11 @@
   --border-strong: #c4d3ca;
   --ink: #122a22;
   --ink-muted: #46584f;
-  --ink-subtle: #71847a;
+  --ink-subtle: #5a6e64;
   --green: #006a4e;
   --green-hover: #0b7f5f;
   --green-soft: rgba(0, 106, 78, 0.1);
+  --on-green: #ffffff;
   --red: #f42a41;
   --header-bg: #f1f5f2;
   --shadow: 0 12px 30px -14px rgba(16, 42, 34, 0.22);
@@ -30,10 +31,13 @@ html[data-theme="dark"] {
   --border-strong: #2c4a3c;
   --ink: #e9f2ed;
   --ink-muted: #a7bdb2;
-  --ink-subtle: #74897e;
+  /* ≥4.5:1 on --surface-muted for small BN captions (PageSpeed a11y). */
+  --ink-subtle: #8aa094;
   --green: #35d6a0;
   --green-hover: #4ae4b1;
   --green-soft: rgba(53, 214, 160, 0.12);
+  /* Dark text on mint — white-on-#35d6a0 fails WCAG AA (~1.86:1). */
+  --on-green: #0a1411;
   --red: #ff4d5e;
   --header-bg: #0a1411;
   --shadow: 0 16px 36px -16px rgba(0, 0, 0, 0.6);
@@ -73,7 +77,7 @@ body {
 }
 
 .font-display {
-  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
 }
 
 a {
@@ -152,7 +156,7 @@ html[data-theme="dark"] .site-header--elevated {
 }
 
 .site-brand__name {
-  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
   font-size: 1.3125rem;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -237,7 +241,7 @@ html[data-theme="dark"] .site-header__icon-btn__glyph--moon {
 
 .site-footer__heading {
   margin: 0 0 0.75rem;
-  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
   font-size: 0.9375rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -287,7 +291,7 @@ html[data-theme="dark"] .site-header__icon-btn__glyph--moon {
 
 .hero h1 {
   margin: 0 0 0.5rem;
-  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
   font-size: clamp(1.75rem, 5vw, 2.25rem);
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -383,7 +387,7 @@ html[data-theme="dark"] .status-badge--maintenance {
 
 .service-card__title {
   margin: 0;
-  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
   font-size: 1.125rem;
   font-weight: 650;
   letter-spacing: -0.01em;
@@ -614,18 +618,18 @@ html[data-theme="dark"] .directory-chips-wrap::after {
 .directory-chip--active {
   border-color: var(--cat-accent, var(--green));
   background: var(--cat-accent, var(--green));
-  color: #fff;
+  color: var(--on-green);
 }
 
 .directory-chip--active .category-icon {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  background: color-mix(in srgb, var(--on-green) 20%, transparent);
+  color: var(--on-green);
 }
 
 .directory-chip--active:hover {
   border-color: var(--cat-accent, var(--green-hover));
   background: var(--cat-accent, var(--green-hover));
-  color: #fff;
+  color: var(--on-green);
 }
 
 .directory-toolbar {
@@ -748,13 +752,13 @@ html[data-theme="dark"] .directory-chips-wrap::after {
 .directory-pagination__page--current {
   border-color: var(--green);
   background: var(--green);
-  color: #fff;
+  color: var(--on-green);
 }
 
 .directory-pagination__page--current:hover {
   border-color: var(--green-hover);
   background: var(--green-hover);
-  color: #fff;
+  color: var(--on-green);
 }
 
 .directory-grid {
@@ -775,6 +779,15 @@ html[data-theme="dark"] .directory-chips-wrap::after {
   border-radius: 1.25rem;
   text-align: center;
   animation: directory-empty-in 0.28s ease;
+}
+
+/* Reserve viewport so the footer is not in-view while the index JSON loads (CLS). */
+.directory-empty--loading {
+  min-height: min(70vh, 36rem);
+  justify-content: center;
+  border-style: solid;
+  border-color: var(--border);
+  animation: none;
 }
 
 @keyframes directory-empty-in {
@@ -837,7 +850,7 @@ html[data-theme="dark"] .directory-chips-wrap::after {
 
 .noscript-directory__heading {
   margin: 0 0 0.75rem;
-  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
 }
@@ -923,8 +936,8 @@ html[data-theme="dark"] .directory-chips-wrap::after {
   padding: 0.75rem 1.5rem;
   border-radius: 0.875rem;
   background: var(--green);
-  color: #fff;
-  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  color: var(--on-green);
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
   font-size: 1.0625rem;
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -1089,7 +1102,7 @@ html[data-theme="dark"] .caution {
 /* Content pages */
 .content-page h1 {
   margin: 0 0 1rem;
-  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
   font-size: clamp(1.75rem, 5vw, 2.25rem);
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -1135,7 +1148,7 @@ html[data-theme="dark"] .caution {
 
 .content-section h2 {
   margin: 0 0 0.75rem;
-  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -1213,7 +1226,7 @@ html[data-theme="dark"] .caution {
   margin: 0;
   flex: 1;
   min-width: 0;
-  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -1331,7 +1344,7 @@ html[data-theme="dark"] .caution {
 
 .service-faq h2 {
   margin: 0 0 1rem;
-  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -1355,7 +1368,7 @@ html[data-theme="dark"] .caution {
 /* Category page */
 .category-page__header h1 {
   margin: 0 0 0.5rem;
-  font-family: "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 800;
   letter-spacing: -0.03em;

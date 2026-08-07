@@ -5,14 +5,18 @@ import { SITE_NAME, SITE_NAME_BN } from '../../lib/site';
 <header class="site-header">
   <div class="container site-header__inner">
     <a href="/" class="site-brand" aria-label={`${SITE_NAME}.com home`}>
-      <img
-        class="site-brand__logo"
-        src="/brand/citizensheba-logo.png"
-        alt=""
-        width="44"
-        height="44"
-        decoding="async"
-      />
+      <picture>
+        <source type="image/webp" srcset="/brand/citizensheba-logo-88.webp" />
+        <img
+          class="site-brand__logo"
+          src="/brand/citizensheba-logo-88.png"
+          alt=""
+          width="44"
+          height="44"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </picture>
       <span class="site-brand__text">
         <span class="site-brand__name">
           <em>{SITE_NAME}</em><span class="site-brand__tld">.com</span>

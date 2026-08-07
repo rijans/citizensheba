@@ -21,6 +21,15 @@ const cfWebAnalyticsToken = import.meta.env.PUBLIC_CF_WEB_ANALYTICS_TOKEN as str
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_BD" />
+    {canonical && <meta property="og:url" content={canonical} />}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {/* No font preload: font-display:optional + preload delays text LCP for PageSpeed. */}
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
     <link rel="icon" href="/favicon.ico" sizes="any" />

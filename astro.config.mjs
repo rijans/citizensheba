@@ -12,7 +12,10 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'always',
   integrations: [react(), sitemap()],
-
+  build: {
+    // Eliminate render-blocking stylesheet request (PageSpeed / Lighthouse).
+    inlineStylesheets: 'always',
+  },
   vite: {
     plugins: [tailwindcss()],
   },

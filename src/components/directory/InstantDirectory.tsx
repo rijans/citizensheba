@@ -24,8 +24,9 @@ type Category = {
 
 interface Props {
   categories: Category[];
-  services: SearchableService[];
   initialCategoryId: string | null;
+  /** Build-time JSON from `directory-index.json.ts` — not inlined in Home HTML. */
+  indexUrl: string;
 }
 
 const SEARCH_PLACEHOLDER = 'সেবা খুঁজুন… Search services…';
@@ -43,9 +44,12 @@ function revealDirectorySearch(
 
 export default function InstantDirectory({
   categories,
-  services,
   initialCategoryId,
+  indexUrl,
 }: Props) {
+  const [services, setServices] = useState<SearchableService[] | null>(null);
+  const [loadError, setLoadError] = useState(false);
+  const [loadAttempt, setLoadAttempt] = useState(0);
   const [query, setQuery] = useState('');
   const [categoryId, setCategoryId] = useState<string | null>(initialCategoryId);
   const [page, setPage] = useState(1);
@@ -57,8 +61,28 @@ export default function InstantDirectory({
   const searchInputRef = useRef<HTMLInputElement>(null);
   const focusNewRef = useRef(false);
 
+  useEffect(() => {
+    let cancelled = false;
+    setLoadError(false);
+    setServices(null);
+    fetch(indexUrl)
+      .then((res) => {
+        if (!res.ok) throw new Error(`directory index ${res.status}`);
+        return res.json() as Promise<{ services: SearchableService[] }>;
+      })
+      .then((data) => {
+        if (!cancelled) setServices(data.services);
+      })
+      .catch(() => {
+        if (!cancelled) setLoadError(true);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [indexUrl, loadAttempt]);
+
   const results = useMemo(
-    () => filterAndSort(services, query, categoryId),
+    () => filterAndSort(services ?? [], query, categoryId),
     [services, query, categoryId],
   );
 
@@ -155,11 +179,15 @@ export default function InstantDirectory({
   };
 
   const countLabel =
-    slice.total === 1
-      ? '1 service'
-      : slice.showPager
-        ? `${slice.total} services · Showing ${slice.showing} · Page ${slice.page} of ${slice.pageCount}`
-        : `${slice.total} services`;
+    services == null
+      ? loadError
+        ? 'Could not load services'
+        : 'Loading services…'
+      : slice.total === 1
+        ? '1 service'
+        : slice.showPager
+          ? `${slice.total} services · Showing ${slice.showing} · Page ${slice.page} of ${slice.pageCount}`
+          : `${slice.total} services`;
 
   const chipsWrapClass = [
     'directory-chips-wrap',
@@ -264,6 +292,7 @@ export default function InstantDirectory({
       </div>
 
       <div className="directory-toolbar">
+        <h2 className="sr-only">Official services</h2>
         <p className="directory-count" aria-live="polite">
           {countLabel}
         </p>
@@ -276,7 +305,26 @@ export default function InstantDirectory({
         )}
       </div>
 
-      {slice.total === 0 ? (
+      {services == null ? (
+        <div
+          className="directory-empty directory-empty--loading"
+          aria-busy={!loadError}
+          aria-live="polite"
+        >
+          <p className="directory-empty__text">
+            {loadError ? 'Could not load the service directory.' : 'Loading services…'}
+          </p>
+          {loadError && (
+            <button
+              type="button"
+              className="directory-empty__clear"
+              onClick={() => setLoadAttempt((n) => n + 1)}
+            >
+              Retry
+            </button>
+          )}
+        </div>
+      ) : slice.total === 0 ? (
         <div className="directory-empty">
           <span className="directory-empty__icon" aria-hidden="true">
             <SearchX size={28} strokeWidth={1.75} />

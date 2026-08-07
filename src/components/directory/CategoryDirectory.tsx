@@ -92,6 +92,7 @@ export default function CategoryDirectory({
 
   return (
     <div id="category-directory" className="category-directory">
+      <h2 className="sr-only">{categoryName} services</h2>
       <p className="directory-count" aria-live="polite">
         {countLabel}
       </p>

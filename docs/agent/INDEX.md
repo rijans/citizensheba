@@ -63,7 +63,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | Service hop copy / headings | `src/lib/servicePageCopy.ts`, `src/components/service/OutboundCta.astro`, `ServiceFaq.astro` |
 | Content schema | `src/content.config.ts`, `src/content/services/*.md`, `src/content/categories/*.yaml` |
 | SEO helpers | `src/lib/seo.ts`, `src/lib/site.ts` |
-| Search index | `src/lib/search.ts`, `src/lib/buildSearchIndex.ts` |
+| Search index | `src/lib/search.ts`, `src/lib/buildSearchIndex.ts`, `src/pages/directory-index.json.ts` |
 | Category accents / icons | `src/lib/categoryVisuals.ts`, `src/lib/categoryIcons.ts` |
 | Styles / tokens | `src/styles/global.css` |
 | Agent / SEO files | `src/pages/llms.txt.ts`, `src/pages/robots.txt.ts` |
