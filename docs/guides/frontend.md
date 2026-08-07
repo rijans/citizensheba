@@ -23,7 +23,7 @@
 
 | Use | Path |
 |-----|------|
-| Instant Directory island | `InstantDirectory.tsx` (`client:load` on Home only) |
+| Instant Directory island | `InstantDirectory.tsx` (`client:idle` on Home only) |
 | Category directory island | `CategoryDirectory.tsx` |
 | Site header | `Header.astro` — brand, Search → `/#directory-search`, theme toggle |
 | Load more / pager | `DirectoryLoadMore.tsx`, `DirectoryPagination.tsx` |
@@ -39,7 +39,8 @@
 - **Card description clamp (ADR-0012):** EN `description` on `.service-card` is capped at **2 lines** (`-webkit-line-clamp: 2`) with ellipsis. Pin `.service-card__domain` with `margin-top: auto` so domains align at the card bottom while grid rows stretch equal height. Do **not** force a 2-line `min-height` slot. Editorial floor: EN `description` ≥ **90** characters (content-integrity test) so cards fill ~2 lines at typical desktop width.
 - Prefer existing classes in `global.css` over ad-hoc pixel sizes in JSX.
 - Dark theme: keep contrast; accent soft tints must remain readable on `--surface`.
-- **Directory Pagination** (ADR-0010): Prev/Next + page numbers use `--green` / `--green-hover` / `--green-soft` only — never `--cat-accent`. **Load more** (same green family) sits between the grid and the pager: appends the next batch, keeps viewport, focuses the first new card; page jumps replace and scroll to results. Hide pager + Load more when results ≤ 21; page size 20 when ≥ 22. Reset to page 1 / append mode on query/category change. Count: `N services · Showing X · Page Y of Z`.
+- **Directory Pagination** (ADR-0010): Prev/Next + windowed page numbers (`buildPageWindow` in `src/lib/paginationWindow.ts` — ellipsis when >7 pages) use `--green` / `--green-hover` / `--green-soft` only — never `--cat-accent`. **Load more** (same green family) sits between the grid and the pager: appends the next batch, keeps viewport, focuses the first new card; page jumps replace and scroll to results. Hide pager + Load more when results ≤ 21; page size 20 when ≥ 22. Reset to page 1 / append mode on query/category change. Count: `N services · Showing X · Page Y of Z`.
+- **Directory load skeleton:** while Home fetches `/directory-index.json` (after `client:idle` hydrate), show a 6-card skeleton grid (`DirectoryCardSkeleton`) that matches Service card chrome — not a blank “Loading services…” panel. Keep `aria-busy` + screen-reader loading text; errors stay a Retry empty state. Respect `prefers-reduced-motion` (static bones, no pulse).
 - **Search ↔ chips:** changing the Instant Directory search **value** (type or clear ×) resets the category chip to All; focus/click with no value change leaves the chip alone. After searching, chip clicks may still narrow results until the query string changes again.
 
 ## Content → UI

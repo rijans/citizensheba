@@ -17,6 +17,7 @@
 ## Instant Directory
 
 - Filter/sort stays in-memory (`search.ts`) — fine at current catalog size; revisit only if catalog grows huge.
+- Home island is `client:idle`; categories ship as props, but the searchable catalog loads from `/directory-index.json` after hydrate (keeps HTML small for LCP). Until JSON arrives, show the card-grid skeleton — not an empty loading panel that collapses into the footer.
 - Avoid layout thrash: no hover `transform` that escapes chip overflow clipping (Trap #6).
 - Prefer CSS transitions over JS animation libraries.
 

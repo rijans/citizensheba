@@ -13,7 +13,7 @@ Runtime SSOT is Service frontmatter (`directory_global_rank`, `directory_categor
 | Category / chip | Sort by `directory_category_rank`, then title |
 | Search | Ignore ranks while query is non-empty (ADR-0007 scores) |
 | New Services | Default high (`500+` global, `100+` category) until curated |
-| Pagination | Page size 20; show all if ≤21 results; pager if ≥22 |
+| Pagination | Page size 20; show all if ≤21 results; pager if ≥22; ellipsis window when >7 pages |
 | Load more | Between grid and pager; appends next batch; muted “N more”; page jump replaces |
 
 ## Top ~20 global (approved seed)

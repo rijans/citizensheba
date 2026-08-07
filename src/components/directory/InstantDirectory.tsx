@@ -12,6 +12,7 @@ import CategoryIcon from '../ui/CategoryIcon';
 import ServiceCard from '../ui/ServiceCard';
 import DirectoryPagination from './DirectoryPagination';
 import DirectoryLoadMore from './DirectoryLoadMore';
+import DirectoryCardSkeleton from './DirectoryCardSkeleton';
 
 type Category = {
   id: string;
@@ -306,15 +307,9 @@ export default function InstantDirectory({
       </div>
 
       {services == null ? (
-        <div
-          className="directory-empty directory-empty--loading"
-          aria-busy={!loadError}
-          aria-live="polite"
-        >
-          <p className="directory-empty__text">
-            {loadError ? 'Could not load the service directory.' : 'Loading services…'}
-          </p>
-          {loadError && (
+        loadError ? (
+          <div className="directory-empty" aria-live="polite">
+            <p className="directory-empty__text">Could not load the service directory.</p>
             <button
               type="button"
               className="directory-empty__clear"
@@ -322,8 +317,12 @@ export default function InstantDirectory({
             >
               Retry
             </button>
-          )}
-        </div>
+          </div>
+        ) : (
+          <div aria-busy="true" aria-live="polite">
+            <DirectoryCardSkeleton />
+          </div>
+        )
       ) : slice.total === 0 ? (
         <div className="directory-empty">
           <span className="directory-empty__icon" aria-hidden="true">

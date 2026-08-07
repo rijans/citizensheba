@@ -1,3 +1,5 @@
+import { buildPageWindow } from '../../lib/paginationWindow';
+
 type Props = {
   page: number;
   pageCount: number;
@@ -7,7 +9,8 @@ type Props = {
 };
 
 /**
- * Numbered pages + Prev/Next. Brand green only (ADR-0010) — not Category accent.
+ * Numbered pages + Prev/Next with ellipsis windowing when long (ADR-0010).
+ * Brand green only — not Category accent.
  */
 export default function DirectoryPagination({
   page,
@@ -17,7 +20,7 @@ export default function DirectoryPagination({
 }: Props) {
   if (pageCount <= 1) return null;
 
-  const pages = Array.from({ length: pageCount }, (_, i) => i + 1);
+  const items = buildPageWindow(page, pageCount);
 
   return (
     <nav className="directory-pagination" aria-label={`${label} pagination`}>
@@ -31,19 +34,25 @@ export default function DirectoryPagination({
         Prev
       </button>
       <ul className="directory-pagination__pages">
-        {pages.map((p) => (
-          <li key={p}>
-            <button
-              type="button"
-              className={`directory-pagination__page${p === page ? ' directory-pagination__page--current' : ''}`}
-              aria-label={`Page ${p}`}
-              aria-current={p === page ? 'page' : undefined}
-              onClick={() => onPageChange(p)}
-            >
-              {p}
-            </button>
-          </li>
-        ))}
+        {items.map((item, i) =>
+          item === 'ellipsis' ? (
+            <li key={`ellipsis-${i}`} className="directory-pagination__ellipsis" aria-hidden="true">
+              …
+            </li>
+          ) : (
+            <li key={item}>
+              <button
+                type="button"
+                className={`directory-pagination__page${item === page ? ' directory-pagination__page--current' : ''}`}
+                aria-label={`Page ${item}`}
+                aria-current={item === page ? 'page' : undefined}
+                onClick={() => onPageChange(item)}
+              >
+                {item}
+              </button>
+            </li>
+          ),
+        )}
       </ul>
       <button
         type="button"
