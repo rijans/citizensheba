@@ -14,7 +14,8 @@
 
 - Design phone-first: sticky search/chips must not push the directory below the fold.
 - Chips: horizontal scroll OK; do **not** use `translateY` hover lifts inside `overflow-x` scrollports (Trap #6).
-- Touch targets: chips ~2.375rem height; search field ~3.25rem.
+- Touch targets: chips ~2.375rem height; search field ~3.25rem; header icon buttons 2.75rem.
+- **Header search (B1):** sticky header Search control links to `/#directory-query` — jumps to Home Instant Directory and focuses the field (same-page: focus + scroll, no reload). Do not load the search island on Service Pages for this.
 - Prefer CSS variables from `:root` / `[data-theme="dark"]` over one-off hex in components.
 
 ## Components
@@ -23,6 +24,7 @@
 |-----|------|
 | Instant Directory island | `InstantDirectory.tsx` (`client:load` on Home only) |
 | Category directory island | `CategoryDirectory.tsx` |
+| Site header | `Header.astro` — brand, Search → `/#directory-query`, theme toggle |
 | Load more / pager | `DirectoryLoadMore.tsx`, `DirectoryPagination.tsx` |
 | Static cards | `ServiceCardLink.astro` (related on Service Pages) — SSR Lucide, no extra island |
 | Icons | `CategoryIcon.tsx` + `categoryIcons.ts` (Category + optional Service keys) |

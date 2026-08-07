@@ -29,6 +29,13 @@ interface Props {
 }
 
 const SEARCH_PLACEHOLDER = 'সেবা খুঁজুন… Search services…';
+const SEARCH_HASH = '#directory-query';
+
+function focusDirectorySearchInput(input: HTMLInputElement | null) {
+  if (!input) return;
+  input.focus({ preventScroll: true });
+  input.scrollIntoView({ block: 'start', behavior: 'smooth' });
+}
 
 export default function InstantDirectory({
   categories,
@@ -42,6 +49,7 @@ export default function InstantDirectory({
   const [chipOverflow, setChipOverflow] = useState({ left: false, right: false });
   const chipsRef = useRef<HTMLDivElement>(null);
   const resultsRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const focusNewRef = useRef(false);
 
   const results = useMemo(
@@ -69,6 +77,19 @@ export default function InstantDirectory({
     const el = document.getElementById(`directory-card-${slice.firstNewIndex}`);
     el?.focus({ preventScroll: true });
   }, [slice.items, slice.firstNewIndex]);
+
+  useEffect(() => {
+    const focusFromHash = () => {
+      if (window.location.hash !== SEARCH_HASH) return;
+      focusDirectorySearchInput(searchInputRef.current);
+    };
+    const frame = requestAnimationFrame(focusFromHash);
+    window.addEventListener('hashchange', focusFromHash);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener('hashchange', focusFromHash);
+    };
+  }, []);
 
   const iconByCategory = useMemo(
     () => Object.fromEntries(categories.map((c) => [c.id, c.icon])),
@@ -159,6 +180,7 @@ export default function InstantDirectory({
           <path d="m21 21-4.3-4.3" />
         </svg>
         <input
+          ref={searchInputRef}
           id="directory-query"
           className="directory-search__input"
           type="search"

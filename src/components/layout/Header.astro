@@ -22,17 +22,28 @@ import { SITE_NAME, SITE_NAME_BN } from '../../lib/site';
     </a>
 
     <div class="site-header__actions">
+      <a
+        href="/#directory-query"
+        class="site-header__icon-btn"
+        id="header-search"
+        aria-label="Search services · সেবা খুঁজুন"
+      >
+        <svg class="site-header__icon-btn__glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.3-4.3"></path>
+        </svg>
+      </a>
       <button
         type="button"
-        class="theme-toggle"
+        class="site-header__icon-btn"
         id="theme-toggle"
         aria-label="Toggle dark mode"
       >
-        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <svg class="site-header__icon-btn__glyph site-header__icon-btn__glyph--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <circle cx="12" cy="12" r="4"></circle>
           <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
         </svg>
-        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <svg class="site-header__icon-btn__glyph site-header__icon-btn__glyph--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
       </button>
@@ -44,6 +55,28 @@ import { SITE_NAME, SITE_NAME_BN } from '../../lib/site';
   (function () {
     const header = document.querySelector('.site-header');
     const toggle = document.getElementById('theme-toggle');
+    const searchLink = document.getElementById('header-search');
+
+    function focusDirectorySearch() {
+      const input = document.getElementById('directory-query');
+      if (!(input instanceof HTMLInputElement)) return false;
+      input.focus();
+      input.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      return true;
+    }
+
+    searchLink?.addEventListener('click', (event) => {
+      const onHome = window.location.pathname === '/' || window.location.pathname === '';
+      if (!onHome) return;
+      event.preventDefault();
+      if (window.location.hash !== '#directory-query') {
+        history.replaceState(null, '', '#directory-query');
+      }
+      if (!focusDirectorySearch()) {
+        window.location.hash = 'directory-query';
+      }
+    });
+
     toggle?.addEventListener('click', () => {
       const root = document.documentElement;
       const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';

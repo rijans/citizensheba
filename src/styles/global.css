@@ -185,7 +185,7 @@ html[data-theme="dark"] .site-header--elevated {
   gap: 0.5rem;
 }
 
-.theme-toggle {
+.site-header__icon-btn {
   display: grid;
   place-items: center;
   width: 2.75rem;
@@ -195,25 +195,30 @@ html[data-theme="dark"] .site-header--elevated {
   background: var(--surface);
   color: var(--ink-muted);
   cursor: pointer;
+  text-decoration: none;
   transition:
     color 0.2s ease,
     border-color 0.2s ease,
     transform 0.2s ease;
 }
 
-.theme-toggle:hover {
+.site-header__icon-btn:hover {
   color: var(--green);
   border-color: var(--green);
 }
 
-.theme-toggle__icon {
-  display: none;
+.site-header__icon-btn__glyph {
   width: 1.125rem;
   height: 1.125rem;
 }
 
-html:not([data-theme="dark"]) .theme-toggle__icon--sun,
-html[data-theme="dark"] .theme-toggle__icon--moon {
+.site-header__icon-btn__glyph--sun,
+.site-header__icon-btn__glyph--moon {
+  display: none;
+}
+
+html:not([data-theme="dark"]) .site-header__icon-btn__glyph--sun,
+html[data-theme="dark"] .site-header__icon-btn__glyph--moon {
   display: block;
 }
 
@@ -445,6 +450,7 @@ html[data-theme="dark"] .status-badge--maintenance {
   border: 1.5px solid var(--border-strong);
   border-radius: 1rem;
   background: var(--surface);
+  scroll-margin-top: calc(var(--header-height) + 0.75rem);
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
