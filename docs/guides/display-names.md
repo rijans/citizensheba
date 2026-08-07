@@ -54,6 +54,8 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `dncc` | **DNCC** | Acronym ALL CAPS |
 | `dscc` | **DSCC** | Acronym ALL CAPS |
 | `ccc` | **CCC** | Acronym; BN চসিক |
+| `cda` | **CDA** | Chattogram Development Authority |
+| `cocc` | **COCC** | Cumilla City Corporation |
 | `khulna-wasa` | **Khulna WASA** | City + WASA |
 | `pwd` | **PWD** | Acronym ALL CAPS |
 | `rhd` | **RHD** | Acronym; BN সড়ক ও জনপথ |
@@ -75,12 +77,18 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `bangabhaban` | **Bangabhaban** | House spelling (not Bangabhavan in title) |
 | `ansar` | **Ansar & VDP** | Force short Display Name |
 | `gcc` | **GCC** | Acronym; BN গসিক |
+| `kcc` | **KCC** | Khulna City Corporation |
+| `kda` | **KDA** | Khulna Development Authority |
 | `mole` | **MoLE** | Labour ministry short form |
 | `mofl` | **MoFL** | Fisheries & Livestock short form |
 | `sparrso` | **SPARRSO** | Acronym ALL CAPS |
 | `infocom` | **Information Commission** | Full commission name |
 | `barishal-cc` | **Barishal City Corporation** | City spelling Barishal (not Barisal in title) |
 | `ncc` | **NCC** | Acronym; Narayanganj City Corp |
+| `rajuk` | **RAJUK** | Acronym ALL CAPS; capital development authority |
+| `rajshahi-cc` | **Rajshahi City Corporation** | Full name; RCC in aliases / serp |
+| `rpcc` | **RPCC** | Rangpur City Corporation |
+| `mymensingh-cc` | **Mymensingh City Corporation** | Full name; avoid bare MCC vs medical college |
 
 | `moc` | **MoC** | Commerce ministry short form |
 | `moi` | **MoI** | Industries ministry short form |

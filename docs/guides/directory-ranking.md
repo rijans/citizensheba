@@ -41,8 +41,9 @@ Runtime SSOT is Service frontmatter (`directory_global_rank`, `directory_categor
 | 180 | `surokkha` | Surokkha |
 | 190 | `fire-service` | Fire Service & Civil Defence |
 | 200 | `ekpay` | ekPay |
+| 210 | `rajuk` | RAJUK |
 
-All other Services use `directory_global_rank` ≥ 500 (title A–Z among leftovers).
+All other Services use higher `directory_global_rank` values (title A–Z among leftovers).
 
 ## Per-category tops (seed notes)
 

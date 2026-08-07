@@ -83,10 +83,12 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `cabinet` | `landmark` | Cabinet Division |
 | `cag` | `scroll-text` | Comptroller & Auditor General |
 | `ccc` | `building-2` | Chattogram City Corp |
+| `cda` | `landmark` | Chattogram Development Authority |
 | `cga` | `calculator` | Controller General of Accounts |
 | `chattogram-wasa` | `droplets` | Chattogram water |
 | `cid` | `shield` | Criminal Investigation Department |
 | `coastguard` | `ship-wheel` | Coast Guard |
+| `cocc` | `building-2` | Cumilla City Corp |
 | `coop` | `users` | Department of Cooperatives |
 | `cou` | `university` | Comilla University |
 | `cpa` | `ship` | Chittagong Port Authority |
@@ -159,6 +161,8 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `janata` | `landmark` | Janata Bank (state) |
 | `jnu` | `university` | Jagannath University |
 | `just` | `university` | Jashore S&T uni |
+| `kda` | `landmark` | Khulna Development Authority |
+| `kcc` | `building-2` | Khulna City Corp |
 | `khulna-wasa` | `droplets` | Khulna water |
 | `ku` | `university` | Khulna University |
 | `kuet` | `university` | KUET engineering |
@@ -200,6 +204,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `mpa` | `ship` | Mongla Port Authority |
 | `msw` | `hand-heart` | Social Welfare ministry |
 | `mygov` | `landmark` | Central portal |
+| `mymensingh-cc` | `building-2` | Mymensingh City Corp |
 | `mymensingh-mc` | `stethoscope` | Mymensingh Medical College |
 | `namjari` | `stamp` | Mutation |
 | `national-portal` | `globe` | National gateway |
@@ -234,12 +239,15 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `pwd` | `building-2` | Public works |
 | `rab` | `shield-alert` | RAB |
 | `railway` | `train-front` | Rail tickets |
+| `rajuk` | `landmark` | Capital development authority (Dhaka) |
+| `rajshahi-cc` | `building-2` | Rajshahi City Corp |
 | `rakub` | `landmark` | RAKUB agri bank |
 | `rdcd` | `home` | Rural Development & Cooperative Div |
 | `rhd` | `bus` | Roads & Highways Dept |
 | `rjsc` | `building-2` | Company registration |
 | `rmc` | `stethoscope` | Rajshahi Medical College |
 | `rpgcl` | `flame` | RPGCL CNG (half-gov) |
+| `rpcc` | `building-2` | Rangpur City Corp |
 | `rthd` | `bus` | Roads & highways |
 | `ru` | `university` | University of Rajshahi |
 | `ruet` | `university` | RUET |

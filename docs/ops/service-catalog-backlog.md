@@ -176,14 +176,27 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
 | Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | GTCL/NWPGCL/KGDCL/Padma Oil/BPC still curl-fail |
-| Other city corporations | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Khulna/Rajshahi/Rangpur/Cumilla/Mymensingh still fail; SCC shipped |
+| Other city corporations | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped KCC/Rajshahi/RPCC/COCC/Mymensingh; remaining pourashava/siblings TBD |
 | More public unis / boards | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | SUST 403; IUT skipped (OIC) |
 | More half-gov / SOE / state banks | _(TBD)_ | mixed | _(confirm)_ | candidate | gap-list | BDBL.com for sale; private banks & MFS out |
 | More public medical colleges | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | SHSMC / Cumilla MC still fail; private Barind skipped |
 | BG Press / BPATC / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | curl fail; liberationwarmuseum.org hijacked — skip |
-| Development authorities (RAJUK/CDA/KDA/RDA) | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | curl fail this run |
+| Development authorities (RAJUK/CDA/KDA/RDA) | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped RAJUK/CDA/KDA; Rajshahi DA outbound still unconfirmed (rda.gov.bd is Rural Development Academy Bogura — do not use) |
 | Skip notes | — | — | — | skipped | gap-list | IUT (OIC); private Barind MC; `smc.edu.bd` junk; `afmcbd.com` for sale; `nitor.org` wrong (DE pest control); icddr,b international |
 | Industry / trade associations (BASIS, …) | — | — | — | — | partner | **Not Official** — Partner candidates (ADR-0013); do not seed as Official rows |
+
+## Priority wave 30 — RAJUK + city corps (2026-08-08)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| RAJUK | rajuk / bd-rajuk | central | https://rajuk.gov.bd/ | shipped | gap-list | Verified 200 (TLS chain soft); capital development authority |
+| CDA | cda / bd-cda | central | https://cda.gov.bd/ | shipped | gap-list | Chattogram Development Authority; verified 200 |
+| KDA | kda / bd-kda | central | https://kda.gov.bd/ | shipped | gap-list | Khulna Development Authority; verified 200 |
+| KCC | kcc / bd-kcc | central | https://khulnacity.gov.bd/ | shipped | gap-list | Khulna City Corp; verified 200 |
+| Rajshahi City Corporation | rajshahi-cc / bd-rajshahi-cc | central | https://erajshahi.portal.gov.bd/ | shipped | gap-list | Verified 200 |
+| RPCC | rpcc / bd-rpcc | central | https://rpcc.gov.bd/ | shipped | gap-list | Rangpur City Corp; verified 200 |
+| COCC | cocc / bd-cocc | central | https://cocc.portal.gov.bd/ | shipped | gap-list | Cumilla City Corp; verified 200 |
+| Mymensingh City Corporation | mymensingh-cc / bd-mymensingh-cc | central | https://mcc.gov.bd/ | shipped | gap-list | Verified 200; not medical college |
 
 ## Priority wave 27 — gap fill (2026-08-07)
 
