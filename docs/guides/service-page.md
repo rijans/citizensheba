@@ -46,7 +46,7 @@ Shared section heading strings: `src/lib/servicePageCopy.ts` (not per-service).
 | Surface | Pattern |
 |---------|---------|
 | H1, section headings, FAQ questions | **EN + BN on one line** (BN in `lang="bn"`, green accent) |
-| Body, audience, FAQ answers | **Labeled panes:** বাংলা block then English block (both in DOM); hairline between. `.lang-label` size is **uniform** on About / Who / FAQ (small caps cue — do not let support-prose rules enlarge labels) |
+| Body, audience, FAQ answers | **Labeled panes:** বাংলা block then English block (both in DOM); hairline between. `.lang-label` is a **uniform muted** cue on About / Who / FAQ (small caps, weight 500 — do not let support-prose rules enlarge labels) |
 | SERP Document Title / Meta Description | BN→EN (ADR-0003); brand `CitizenSheba Bangladesh`; optional `serp_title*` when Display Names are opaque |
 
 CSS: `.hop-region--primary`, `.hop-region--support`, `.hop-disclose`, `.bilingual-panes`, `.lang-label` in `src/styles/global.css`. Support/FAQ body selectors must use `p:not(.lang-label)` (Trap #15).

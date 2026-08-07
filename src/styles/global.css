@@ -1765,10 +1765,17 @@ html[data-theme="dark"] .caution {
 .lang-label {
   margin: 0 0 0.35rem;
   font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  font-weight: 500;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  /* Quieter than body --ink-subtle; still ≥4.5:1 on --surface / --surface-muted. */
+  color: #6e8077;
+}
+
+html[data-theme="dark"] .lang-label {
+  /* Keep token floor for small text on --surface-muted (PageSpeed a11y). */
   color: var(--ink-subtle);
+  font-weight: 500;
 }
 
 .bilingual-panes {
