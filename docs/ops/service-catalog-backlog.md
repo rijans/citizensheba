@@ -141,16 +141,29 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
-| Election Commission | _(TBD)_ | central / identity | https://www.ecs.gov.bd/ | candidate | gap-list | curl 403 — browser check |
-| Chattogram WASA | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | prior URL fail |
-| BOU | bou / bd-bou | education | https://www.bou.ac.bd/ | candidate | gap-list | Verified 200 — next wave |
-| Probashi Ministry | _(TBD)_ | migration | https://www.probashi.gov.bd/ | candidate | gap-list | Verified 200 — next wave |
-| Bangladesh Bank | _(TBD)_ | tax / central | https://www.bb.org.bd/ | candidate | gap-list | Verified 200 — next wave |
-| Utility siblings (other DISCOs) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | e.g. SZPDCL, NESCO peers |
+| Utility siblings (other DISCOs / WASAs) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | e.g. Khulna WASA, SZPDCL |
+| City corporation portals | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | DNCC / DSCC / CCC |
+| PWD / RHD deep links | _(TBD)_ | central / transport | _(confirm)_ | candidate | gap-list | if distinct citizen hops |
+
+## Priority wave 5 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Election Commission | election-commission / bd-election-commission | identity | https://www.ecs.gov.bd/ | shipped | gap-list | curl 403 — browser confirm |
+| Chattogram WASA | chattogram-wasa / bd-chattogram-wasa | utilities | https://ctg-wasa.org.bd/ | shipped | gap-list | Utility sibling |
+| DMTCL | dmtcl / bd-dmtcl | transport | https://dmtcl.gov.bd/ | shipped | gap-list | Dhaka Metro |
+| BRTC | brtc / bd-brtc | transport | https://brtc.gov.bd/ | shipped | gap-list | Road transport corp |
+| BWDB | bwdb / bd-bwdb | utilities | https://www.bwdb.gov.bd/ | shipped | gap-list | Verified 200 |
+| Teletalk | teletalk / bd-teletalk | utilities | https://www.teletalk.com.bd/ | shipped | gap-list | State telco; verified 200 |
+| e-Nothi | enothi / bd-enothi | central | https://nothi.gov.bd/ | shipped | gap-list | Verified 200 |
+| LGED | lged / bd-lged | central | https://www.lged.gov.bd/ | shipped | gap-list | curl flaky — browser confirm |
+| DPP | dpp / bd-dpp | justice | https://www.dpp.gov.bd/ | shipped | gap-list | Verified 200 |
+| MoFA | mofa / bd-mofa | central | https://mofa.gov.bd/ | shipped | gap-list | curl flaky — browser confirm |
 
 ## Skipped
 
 | Working name | Reason | Notes |
 |--------------|--------|-------|
 | nagorikseba.com listings | non-Official / mixed private | Out of seed scope |
+| Private banks / MFS | commercial | Catalog v1 Official only |
 

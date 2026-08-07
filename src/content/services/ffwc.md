@@ -52,7 +52,7 @@ faq:
     a: "No. FFWC publishes flood forecasts. Use official emergency contacts for rescue and police/fire response."
     q_bn: "এফএফডব্লিউসি কি ফায়ার বা পুলিশ জরুরি নম্বরের বিকল্প?"
     a_bn: "না। এফএফডব্লিউসি বন্যা পূর্বাভাস প্রকাশ করে। উদ্ধার ও পুলিশ/ফায়ার সাড়া দেওয়ার জন্য অফিসিয়াল জরুরি যোগাযোগ ব্যবহার করুন।"
-related: [bmd, modmr, fire-service, police]
+related: [bmd, modmr, fire-service, police, bwdb]
 last_verified: 2026-08-07
 ---
 

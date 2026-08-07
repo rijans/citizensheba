@@ -52,7 +52,7 @@ faq:
     a: "myBTCL is BTCL’s official customer portal. Mobile operators have separate apps and sites — use those for mobile prepaid/postpaid self-care."
     q_bn: "মাইবিটিসিএল কি মোবাইল অপারেটর সেলফ-কেয়ার?"
     a_bn: "মাইবিটিসিএল বিটিসিএলের অফিসিয়াল গ্রাহক পোর্টাল। মোবাইল অপারেটরদের আলাদা অ্যাপ/সাইট আছে—প্রিপেইড/পোস্টপেইড সেলফ-কেয়ার সেখানে।"
-related: [ekpay, national-portal]
+related: [ekpay, national-portal, teletalk, btrc]
 last_verified: 2026-08-07
 ---
 

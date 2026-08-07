@@ -26,12 +26,15 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `bou` | `book-open` | Open university |
 | `bpdb` | `zap` | Power development |
 | `breb` | `zap` | Rural electrification |
+| `brtc` | `bus` | Road transport corp |
 | `brta` | `car` | Vehicles / licence |
 | `bscic` | `factory` | Small industries |
 | `btcl` | `phone` | Telecom |
 | `btrc` | `radio` | Telecom regulator |
 | `buet` | `university` | Engineering university |
+| `bwdb` | `droplets` | Water development |
 | `caab` | `plane` | Civil aviation |
+| `chattogram-wasa` | `droplets` | Chattogram water |
 | `coastguard` | `ship-wheel` | Coast Guard |
 | `customs` | `package` | Customs |
 | `dae` | `sprout` | Agriculture extension |
@@ -41,14 +44,18 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `dghs` | `stethoscope` | Health services |
 | `dhaka-wasa` | `droplets` | Water |
 | `dip` | `user-round` | Immigration / passports |
+| `dmtcl` | `train-front` | Dhaka Metro |
 | `doict` | `monitor` | ICT |
 | `dpdc` | `zap` | Electricity |
+| `dpp` | `scale` | Public prosecutions |
 | `dshe` | `school` | Secondary / higher ed |
 | `dss` | `hand-heart` | Social services |
 | `du` | `university` | University of Dhaka |
 | `ecourt` | `gavel` | e-Court |
 | `edu-results` | `file-badge` | Board results |
 | `ekpay` | `wallet` | Payments |
+| `election-commission` | `badge-check` | Election Commission |
+| `enothi` | `file-text` | e-Nothi |
 | `epassport` | `book-user` | Passport |
 | `epb` | `store` | Export promotion |
 | `eporcha` | `map` | Land / khatian |
@@ -62,8 +69,10 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `land-portal` | `home` | Land ministry |
 | `lawjusticediv` | `scale` | Law & justice |
 | `ldtax` | `banknote` | Land development tax |
+| `lged` | `building-2` | Local gov engineering |
 | `modmr` | `shield-alert` | Disaster management |
 | `moedu` | `school` | Education ministry |
+| `mofa` | `globe` | Foreign affairs |
 | `mopme` | `baby` | Primary education |
 | `mowca` | `heart-handshake` | Women & children |
 | `mygov` | `landmark` | Central portal |
@@ -83,6 +92,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `supremecourt` | `scale` | Supreme Court |
 | `surokkha` | `heart-pulse` | Vaccination |
 | `teachers-portal` | `graduation-cap` | Teachers |
+| `teletalk` | `phone` | State mobile |
 | `titas-gas` | `flame` | Gas |
 | `tmed` | `library` | Technical / madrasah ed |
 | `ugc` | `badge-check` | University grants |

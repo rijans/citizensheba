@@ -40,6 +40,17 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `titas-gas` | **Titas Gas** | Company short name |
 | `fire-service` | **Fire Service & Civil Defence** | Full directorate short form |
 
+| `election-commission` | **Election Commission** | Institutional name; ECS in aliases |
+| `chattogram-wasa` | **Chattogram WASA** | City + WASA acronym (not Chittagong in Display Name) |
+| `dmtcl` | **DMTCL** | Acronym; SERP expands Dhaka Metro |
+| `brtc` | **BRTC** | Acronym ALL CAPS |
+| `bwdb` | **BWDB** | Acronym; SERP expands |
+| `teletalk` | **Teletalk** | Product brand casing |
+| `enothi` | **e-Nothi** | House lowercase `e-` |
+| `lged` | **LGED** | Acronym ALL CAPS |
+| `dpp` | **DPP** | Acronym ALL CAPS |
+| `mofa` | **MoFA** | Ministry short form |
+
 | `ekpay` | **ekPay** | camelCase product brand (payment gateway) |
 | `breb` | **BREB** | Acronym ALL CAPS |
 | `rjsc` | **RJSC** | Acronym ALL CAPS |
