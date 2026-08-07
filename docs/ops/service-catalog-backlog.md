@@ -177,15 +177,32 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
-| Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | Wave 38 shipped BIFPCL; **Meghna Oil / JGTCL** still unconfirmed |
-| More public medical colleges / institutes | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | Wave 38 shipped NIPSOM + BNMC; prefer title-verified `*.college.gov.bd` |
+| Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | Wave 39 shipped BAPEX + DPHE; **Meghna Oil / JGTCL** still unconfirmed |
+| More public medical colleges / institutes | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | Wave 39 shipped DGME + NIOH; prefer title-verified `*.college.gov.bd` |
 | Gov media / information siblings | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Sangsad TV still TBD; core MoInfo peers shipped |
-| Agro / farming SOEs | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 38 shipped Milk Vita / Silk Board / Hortex |
-| Women / youth directorates | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 38 shipped DWA / JMS / DYD |
+| Education academies / councils | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | Wave 39 shipped NAEM / NAPE / BAC / DME |
+| Justice peers | _(TBD)_ | justice | _(confirm)_ | candidate | gap-list | Wave 39 shipped NLASO + AGO; Law Commission URL still soft |
 | Social safety / donation | _(TBD)_ | health / tax | _(confirm)_ | candidate | gap-list | PM relief/donation / Ashrayan still unconfirmed |
 | BG Press / forms | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Printing/DPP already shipped; forms.gov.bd still flaky |
-| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); hijacked/private lookalikes; Teletalk Alljobs; wrong `college.gov.bd` acronyms |
+| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); hijacked/private lookalikes; Teletalk Alljobs; wrong `college.gov.bd` acronyms; `moi` already covers MoInd |
 | Industry / trade associations (BASIS, …) | — | — | — | — | partner | **Not Official** — Partner candidates (ADR-0013) |
+
+## Priority wave 39 — justice + education academies + DPHE/DGME + SOEs (2026-08-08)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| NLASO | nlaso / bd-nlaso | justice | https://www.nlaso.gov.bd/ | shipped | gap-list | Legal aid organization |
+| AGO | attorney-general / bd-attorney-general | justice | https://www.attorneygeneral.gov.bd/ | shipped | gap-list | Attorney General's Office |
+| NAEM | naem / bd-naem | education | https://www.naem.gov.bd/ | shipped | gap-list | Educational management academy |
+| NAPE | nape / bd-nape | education | https://www.nape.gov.bd/ | shipped | gap-list | Primary education academy |
+| BAC | bac / bd-bac | education | https://www.bac.gov.bd/ | shipped | gap-list | Accreditation council |
+| DPHE | dphe / bd-dphe | utilities | https://www.dphe.gov.bd/ | shipped | gap-list | Public health engineering |
+| DGME | dgme / bd-dgme | health | https://www.dgme.gov.bd/ | shipped | gap-list | Medical education directorate |
+| DME | dme / bd-dme | education | https://www.dme.gov.bd/ | shipped | gap-list | Madrasah education directorate |
+| NIOH | nioh / bd-nioh | health | https://www.nioh.gov.bd/ | shipped | gap-list | Ophthalmology institute |
+| BTMC | btmc / bd-btmc | central | https://www.btmc.gov.bd/ | shipped | gap-list | Textile mills corporation |
+| BAPEX | bapex / bd-bapex | utilities | https://www.bapex.com.bd/ | shipped | gap-list | Petroleum exploration company |
+| BNF | bnf / bd-bnf | central | https://www.bnf.gov.bd/ | shipped | gap-list | Gov NGO foundation |
 
 ## Priority wave 38 — agro coops + health councils + women/youth + BIFPCL (2026-08-08)
 

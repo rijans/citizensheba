@@ -21,7 +21,19 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `badc` | `sprout` | Agricultural Development Corporation |
 | `baec` | `lightbulb` | Atomic Energy Commission |
 | `baera` | `shield` | Atomic energy regulator |
+| `bac` | `badge-check` | Accreditation council |
+| `bapex` | `flame` | Petroleum exploration |
 | `baf` | `plane` | Bangladesh Air Force |
+| `attorney-general` | `gavel` | Attorney General's Office |
+| `bnf` | `users` | NGO Foundation |
+| `btmc` | `factory` | Textile mills corporation |
+| `dgme` | `graduation-cap` | Medical education directorate |
+| `dme` | `library` | Madrasah education directorate |
+| `dphe` | `droplets` | Public health engineering |
+| `naem` | `graduation-cap` | Educational management academy |
+| `nape` | `school` | Primary education academy |
+| `nlaso` | `scale` | Legal aid |
+| `nioh` | `stethoscope` | Ophthalmology institute |
 | `banbeis` | `file-spreadsheet` | Education stats |
 | `bangabhaban` | `landmark` | President’s Office |
 | `bangla-academy` | `library` | Bangla Academy |

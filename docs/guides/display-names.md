@@ -362,6 +362,18 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `mowca` | **MoWCA** | Acronym |
 | `supremecourt` | **Supreme Court** | Institutional name |
 | `lawjusticediv` | **Law and Justice Division** | Full division name |
+| `nlaso` | **NLASO** | Legal aid org; full name in `serp_title` |
+| `attorney-general` | **AGO** | Attorney General's Office; full name in `serp_title` |
+| `naem` | **NAEM** | Acronym ALL CAPS |
+| `nape` | **NAPE** | Acronym ALL CAPS |
+| `bac` | **BAC** | Accreditation Council (not petroleum BPC) |
+| `dphe` | **DPHE** | Acronym ALL CAPS |
+| `dgme` | **DGME** | Medical education (not DGHS) |
+| `dme` | **DME** | Madrasah education directorate |
+| `nioh` | **NIOH** | Ophthalmology institute |
+| `btmc` | **BTMC** | Textile mills (not BJMC jute) |
+| `bapex` | **BAPEX** | Acronym ALL CAPS |
+| `bnf` | **BNF** | Bangladesh NGO Foundation (gov) |
 | `coastguard` | **Bangladesh Coast Guard** | Full force name |
 | `dae` | **DAE** | Acronym ALL CAPS |
 | `banbeis` | **BANBEIS** | Acronym ALL CAPS |
