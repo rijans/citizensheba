@@ -40,6 +40,6 @@ faq:
     a: "No. School/college board results use the Education Board Results portal. National University covers its own affiliated programmes and exams."
     q_bn: "বোর্ড এইচএসসি ফলাফল কি জাতীয় বিশ্ববিদ্যালয়ে?"
     a_bn: "না। স্কুল/কলেজ বোর্ড ফলাফল শিক্ষা বোর্ড ফলাফল পোর্টালে। জাতীয় বিশ্ববিদ্যালয় নিজের অধিভুক্ত প্রোগ্রাম ও পরীক্ষা কভার করে।"
-related: [edu-results, xi-admission, teachers-portal]
+related: [edu-results, xi-admission, teachers-portal, bou, ugc]
 last_verified: 2026-08-07
 ---

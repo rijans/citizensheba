@@ -42,6 +42,6 @@ faq:
     a: "No. Distributor portals remain for account and connection services. ekPay is a payment channel many billers use — pick the Service that matches your task."
     q_bn: "একপে কি ডেসকো বা ডিপিডিসি পোর্টালের বিকল্প?"
     a_bn: "না। অ্যাকাউন্ট ও সংযোগ সেবার জন্য ডিস্ট্রিবিউটর পোর্টালই মূল। একপে অনেক বিলারের পেমেন্ট চ্যানেল—কাজ অনুযায়ী সেবা বাছুন।"
-related: [desco, dpdc, titas-gas, mygov]
+related: [desco, dpdc, titas-gas, mygov, bpdb]
 last_verified: 2026-08-07
 ---

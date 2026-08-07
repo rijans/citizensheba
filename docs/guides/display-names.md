@@ -53,6 +53,24 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `wewb` | **WEWB** | Acronym ALL CAPS |
 | `customs` | **Bangladesh Customs** | Clear official short name |
 
+| `bou` | **Bangladesh Open University** | Full name; alias BOU |
+| `probashi` | **Probashi Kalyan** | Ministry short Display Name |
+| `bangladesh-bank` | **Bangladesh Bank** | Institutional name |
+| `bpdb` | **BPDB** | Acronym ALL CAPS |
+| `btrc` | **BTRC** | Acronym ALL CAPS |
+| `ugc` | **UGC** | Acronym ALL CAPS |
+| `dshe` | **DSHE** | Acronym; BN মাউশি in title_bn |
+| `dgda` | **DGDA** | Acronym ALL CAPS |
+| `eprocure` | **e-GP** | House lowercase `e-` product name |
+| `biwtc` | **BIWTC** | Acronym ALL CAPS |
+| `biwta` | **BIWTA** | Acronym ALL CAPS |
+| `biman` | **Biman Bangladesh Airlines** | Carrier full short form |
+| `dip` | **DIP** | Acronym ALL CAPS |
+| `nctb` | **NCTB** | Acronym ALL CAPS |
+| `bfsa` | **BFSA** | Acronym ALL CAPS |
+| `rab` | **RAB** | Acronym ALL CAPS |
+| `iedcr` | **IEDCR** | Acronym ALL CAPS |
+
 Add a row whenever a new Service needs a non-obvious casing decision.
 
 ## Name Aliases — **required** on every Service

@@ -42,6 +42,6 @@ faq:
     a: "No. BMET Online Clearance handles emigration clearance. WEWB focuses on wage-earner welfare services after/around overseas employment."
     q_bn: "ডব্লিউইডব্লিউবি কি বিএমইটি ক্লিয়ারেন্সের মতো?"
     a_bn: "না। বিএমইটি অনলাইন ক্লিয়ারেন্স বহির্গমন ক্লিয়ারেন্স করে। ডব্লিউইডব্লিউবি বৈদেশিক কর্মসংস্থান-সংক্রান্ত কল্যাণ সেবায় মনোযোগী।"
-related: [bmet, bangladesh-visa, epassport]
+related: [bmet, bangladesh-visa, epassport, probashi, hajj]
 last_verified: 2026-08-07
 ---

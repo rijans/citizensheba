@@ -84,6 +84,29 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 | WEWB | wewb / bd-wewb | migration | https://www.wewb.gov.bd/ | shipped | gap-list | Verified 200 |
 | Bangladesh Customs | customs / bd-customs | tax | https://customs.gov.bd/ | shipped | gap-list | Verified 200 |
 
+
+## Priority wave 3 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Bangladesh Open University | bou / bd-bou | education | https://www.bou.ac.bd/ | shipped | gap-list | Verified 200 |
+| Probashi Kalyan | probashi / bd-probashi | migration | https://www.probashi.gov.bd/ | shipped | gap-list | Verified 200 |
+| Bangladesh Bank | bangladesh-bank / bd-bangladesh-bank | tax | https://www.bb.org.bd/ | shipped | gap-list | Verified 200 |
+| BPDB | bpdb / bd-bpdb | utilities | https://www.bpdb.gov.bd/ | shipped | gap-list | Verified 200 |
+| BTRC | btrc / bd-btrc | utilities | https://www.btrc.gov.bd/ | shipped | gap-list | Verified 200 |
+| UGC | ugc / bd-ugc | education | https://www.ugc.gov.bd/ | shipped | gap-list | Verified 200 |
+| DSHE | dshe / bd-dshe | education | https://www.dshe.gov.bd/ | shipped | gap-list | Verified 200 |
+| DGDA | dgda / bd-dgda | health | https://www.dgda.gov.bd/ | shipped | gap-list | Verified 200 |
+| e-GP | eprocure / bd-eprocure | central | https://www.eprocure.gov.bd/ | shipped | gap-list | Verified 200 |
+| BIWTC | biwtc / bd-biwtc | transport | https://www.biwtc.gov.bd/ | shipped | gap-list | Verified 200 |
+| BIWTA | biwta / bd-biwta | transport | https://www.biwta.gov.bd/ | shipped | gap-list | Verified 200 |
+| Biman Bangladesh Airlines | biman / bd-biman | transport | https://www.biman.gov.bd/ | shipped | gap-list | Verified 200 |
+| DIP | dip / bd-dip | identity | https://www.dip.gov.bd/ | shipped | gap-list | Verified 200 |
+| NCTB | nctb / bd-nctb | education | https://www.nctb.gov.bd/ | shipped | gap-list | Verified 200 |
+| BFSA | bfsa / bd-bfsa | health | https://www.bfsa.gov.bd/ | shipped | gap-list | Verified 200 |
+| RAB | rab / bd-rab | safety | https://www.rab.gov.bd/ | shipped | gap-list | Verified 200 |
+| IEDCR | iedcr / bd-iedcr | health | https://www.iedcr.gov.bd/ | shipped | gap-list | Verified 200 |
+
 ## Remaining candidates
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
