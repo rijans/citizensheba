@@ -15,8 +15,8 @@ body_bn: |
 
   ভর্তি চক্রের জন্য শুধু অফিসিয়াল কলেজ সাইটের তারিখ ও ফর্ম অনুসরণ করুন।
 
-url: "https://www.fmc.edu.bd/"
-official_domain: fmc.edu.bd
+url: "https://fmc.college.gov.bd/"
+official_domain: fmc.college.gov.bd
 category: health
 directory_global_rank: 2740
 directory_category_rank: 140

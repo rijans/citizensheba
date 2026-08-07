@@ -159,6 +159,14 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `khulna-mc` | **Khulna Medical College** | Public MC |
 | `dife` | **DIFE** | Factory inspection |
 | `dncrp` | **DNCRP** | Consumer rights |
+| `pabna-mc` | **Pabna Medical College** | Public MC |
+| `jashore-mc` | **Jashore Medical College** | Public MC; Jessore alias |
+| `habiganj-mc` | **Habiganj Medical College** | Public MC |
+| `netrokona-mc` | **Netrokona Medical College** | Public MC |
+| `afmc` | **AFMC** | Armed Forces Medical College |
+| `nhtti` | **NHTTI** | Hotel & tourism training |
+| `bangladesh-museum` | **Bangladesh National Museum** | National museum |
+| `rda` | **RDA Bogura** | Rural Development Academy — not Rajshahi DA |
 | `mofood` | **MoFood** | Food ministry short form |
 | `dgfood` | **DG Food** | Directorate short form |
 | `fisheries` | **DoF** | Department of Fisheries short form |

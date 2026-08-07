@@ -178,17 +178,30 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
 | Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | Wave 31 + 33 shipped most oil/gas peers; **Meghna Oil / JGTCL** still unconfirmed |
-| Other city corporations | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped KCC/Rajshahi/RPCC/COCC/Mymensingh; remaining pourashava/siblings TBD |
+| Other city corporations | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped majors; GCC/NCC/SCC/RPCC already shipped |
 | More public unis / boards | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | Wave 33 shipped SUST (soft CF); GAU already shipped; KAU fail; IUT skipped (OIC) |
 | More half-gov / SOE / state banks / finance | _(TBD)_ | tax | _(confirm)_ | candidate | gap-list | Wave 33 shipped BKB (soft 503) / BHBFC / JBC; BDBL for sale; private banks & MFS out |
-| More public medical colleges / institutes | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | Wave 33–34 shipped SHSMC/SZMC/Khulna MC/DJMC/NIMH/NIKDU; **never** `bmc.edu.bd` (hijacked/private) |
-| Tourism / travel siblings | _(TBD)_ | transport | _(confirm)_ | candidate | gap-list | Wave 35 shipped Tourism Board / Parjatan / Hotels / Beautiful BD / BTB Registration; NHTTI still flaky |
-| Social safety / donation | _(TBD)_ | health / tax | _(confirm)_ | candidate | gap-list | Wave 35 shipped DSS Bhata + CAFO Pension; PM relief/donation / Ashrayan hosts still unconfirmed — keep searching known Official URLs |
-| BG Press / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 31 shipped BPATC; forms.gov.bd still flaky without alternate confirmed entry; liberationwarmuseum.org hijacked — skip |
-| Development authorities (RAJUK/CDA/KDA/RDA) | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped RAJUK/CDA/KDA; Rajshahi DA outbound still unconfirmed (`rda.gov.bd` = Rural Development Academy Bogura) |
+| More public medical colleges / institutes | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | Wave 36 shipped Pabna/Jashore/Habiganj/Netrokona MC + AFMC; prefer `*.college.gov.bd` when title matches; skip wrong acronym hosts |
+| Tourism / travel siblings | _(TBD)_ | transport | _(confirm)_ | candidate | gap-list | Wave 35 + 36 shipped Tourism Board/Parjatan/Hotels/Beautiful BD/BTB Reg/**NHTTI** |
+| Social safety / donation | _(TBD)_ | health / tax | _(confirm)_ | candidate | gap-list | Wave 35 shipped DSS Bhata + CAFO Pension; PM relief/donation / Ashrayan hosts still unconfirmed |
+| BG Press / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 36 shipped Bangladesh National Museum; forms.gov.bd still flaky; liberationwarmuseum.org hijacked — skip |
+| Development authorities (RAJUK/CDA/KDA/RDA) | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped RAJUK/CDA/KDA; Wave 36 shipped **RDA Bogura** (Rural Development Academy — not Rajshahi DA) |
 | Gov job application portals | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | BPSC/NTRCA shipped; **skip** Teletalk Alljobs (private+gov mix); prefer per-exam Teletalk hosts when Official |
-| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); `bmc.edu.bd` hijacked/private; `smc.edu.bd` junk; `pmc.edu.bd` junk; `afmcbd.com` for sale; `nitor.org` wrong; icddr,b international; Teletalk Alljobs mixed market |
+| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); `bmc.edu.bd` hijacked/private; `smc.edu.bd` junk; `pmc.edu.bd` junk; `afmcbd.com` for sale (use afmc.edu.bd); `nitor.org` wrong; icddr,b international; Teletalk Alljobs mixed market; wrong `*.college.gov.bd` acronyms (women's colleges) |
 | Industry / trade associations (BASIS, …) | — | — | — | — | partner | **Not Official** — Partner candidates (ADR-0013); do not seed as Official rows |
+
+## Priority wave 36 — medical colleges + NHTTI/museum/RDA (2026-08-08)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Pabna Medical College | pabna-mc / bd-pabna-mc | health | https://pmc.college.gov.bd/ | shipped | gap-list | Verified title match |
+| Jashore Medical College | jashore-mc / bd-jashore-mc | health | https://jmc.college.gov.bd/ | shipped | gap-list | Jessore alias; verified 200 |
+| Habiganj Medical College | habiganj-mc / bd-habiganj-mc | health | https://hmc.college.gov.bd/ | shipped | gap-list | Verified title match |
+| Netrokona Medical College | netrokona-mc / bd-netrokona-mc | health | https://nmc.college.gov.bd/ | shipped | gap-list | Verified title match |
+| AFMC | afmc / bd-afmc | health | https://www.afmc.edu.bd/ | shipped | gap-list | Armed Forces Medical College; not afmcbd.com |
+| NHTTI | nhtti / bd-nhtti | transport | https://nhtti.gov.bd/ | shipped | gap-list | Hotel & tourism training; verified 200 |
+| Bangladesh National Museum | bangladesh-museum / bd-bangladesh-museum | central | https://www.bangladeshmuseum.gov.bd/ | shipped | gap-list | Official museum; verified 200 |
+| RDA Bogura | rda / bd-rda | central | https://www.rda.gov.bd/ | shipped | gap-list | Rural Development Academy — not Rajshahi DA |
 
 ## Priority wave 35 — tourism + social safety (2026-08-08)
 

@@ -84,7 +84,8 @@ Soft-TLS (curl verify fail but browser works) is the common WASA / Titas / RAJUK
 ## Anti-patterns
 
 - Stuffing private medical colleges because the acronym matches (e.g. Barind BMC ≠ Barishal Medical College)
-- Using `rda.gov.bd` for Rajshahi Development Authority (that domain is Rural Development Academy)
+- Trusting every `*.college.gov.bd` host without checking `<title>` (some acronyms resolve to unrelated women's colleges)
+- Using `rda.gov.bd` for Rajshahi Development Authority (that domain is Rural Development Academy Bogura — shipped as RDA Bogura)
 - Shipping Teletalk org home as “all gov jobs”
 - Mirroring every NP office page as a thin hop
 - Calling associations Official (Partner only)

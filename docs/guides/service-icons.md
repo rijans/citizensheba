@@ -11,6 +11,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `a2i` | `lightbulb` | Innovation |
 | `acc` | `scale` | Anti-Corruption Commission |
 | `agrani` | `landmark` | Agrani Bank (state) |
+| `afmc` | `stethoscope` | Armed Forces Medical College |
 | `ais` | `sprout` | Agriculture Information Service |
 | `ansar` | `users` | Ansar & VDP |
 | `ansar-vdp-bank` | `landmark` | Ansar-VDP Development Bank |
@@ -22,6 +23,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `banbeis` | `file-spreadsheet` | Education stats |
 | `bangabhaban` | `landmark` | President’s Office |
 | `bangla-academy` | `library` | Bangla Academy |
+| `bangladesh-museum` | `landmark` | Bangladesh National Museum |
 | `bangladesh-bank` | `landmark` | Central bank |
 | `bangladesh-post` | `mail` | Postal |
 | `bangladesh-visa` | `plane` | Online visa |
@@ -165,6 +167,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `gcc` | `building-2` | Gazipur City Corp |
 | `gst-admission` | `school` | Cluster university admission |
 | `gtcl` | `flame` | Gas transmission |
+| `habiganj-mc` | `stethoscope` | Habiganj Medical College |
 | `hajj` | `mosque` | Hajj |
 | `hcu` | `flame` | Hydrocarbon Unit |
 | `highway-police` | `car` | Highway Police |
@@ -179,8 +182,9 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `iu` | `university` | Islamic University Kushtia |
 | `jamuna-oil` | `flame` | Jamuna Oil (petroleum marketing) |
 | `janata` | `landmark` | Janata Bank (state) |
-| `jbc` | `landmark` | Jiban Bima Corporation (life insurance) |
 | `jashore-board` | `school` | Jessore board |
+| `jashore-mc` | `stethoscope` | Jashore Medical College |
+| `jbc` | `landmark` | Jiban Bima Corporation (life insurance) |
 | `jnu` | `university` | Jagannath University |
 | `just` | `university` | Jashore S&T uni |
 | `kcc` | `building-2` | Khulna City Corp |
@@ -239,7 +243,9 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `ncc` | `building-2` | Narayanganj City Corp |
 | `nctb` | `book-open` | Textbooks |
 | `nesco` | `zap` | Electricity |
+| `netrokona-mc` | `stethoscope` | Netrokona Medical College |
 | `nhrc` | `scale` | Human Rights Commission |
+| `nhtti` | `graduation-cap` | National Hotel & Tourism Training Institute |
 | `nid` | `id-card` | National ID |
 | `nikdu` | `stethoscope` | Kidney diseases & urology institute |
 | `nimh` | `stethoscope` | National Institute of Mental Health |
@@ -248,6 +254,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `ntrca` | `school` | Non-gov teachers registration |
 | `nwpgcl` | `zap` | North-West power generation |
 | `online-gd` | `shield` | Online GD |
+| `pabna-mc` | `stethoscope` | Pabna Medical College |
 | `parliament` | `landmark` | Jatiya Sangsad |
 | `parjatan` | `building-2` | Bangladesh Parjatan Corporation |
 | `parjatan-hotels` | `building-2` | Parjatan Hotels booking |
@@ -272,6 +279,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `rab` | `shield-alert` | RAB |
 | `railway` | `train-front` | Rail tickets |
 | `rajuk` | `landmark` | Capital development authority (Dhaka) |
+| `rda` | `sprout` | Rural Development Academy Bogura |
 | `rajshahi-cc` | `building-2` | Rajshahi City Corp |
 | `rakub` | `landmark` | RAKUB agri bank |
 | `rdcd` | `home` | Rural Development & Cooperative Div |
