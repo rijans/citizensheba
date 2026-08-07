@@ -178,17 +178,31 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
 | Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | Wave 31 + 33 shipped most oil/gas peers; **Meghna Oil / JGTCL** still unconfirmed |
-| Other city corporations | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped majors; GCC/NCC/SCC/RPCC already shipped |
-| More public unis / boards | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | Wave 33 shipped SUST (soft CF); GAU already shipped; KAU fail; IUT skipped (OIC) |
-| More half-gov / SOE / state banks / finance | _(TBD)_ | tax | _(confirm)_ | candidate | gap-list | Wave 33 shipped BKB (soft 503) / BHBFC / JBC; BDBL for sale; private banks & MFS out |
-| More public medical colleges / institutes | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | Wave 36 shipped Pabna/Jashore/Habiganj/Netrokona MC + AFMC; prefer `*.college.gov.bd` when title matches; skip wrong acronym hosts |
-| Tourism / travel siblings | _(TBD)_ | transport | _(confirm)_ | candidate | gap-list | Wave 35 + 36 shipped Tourism Board/Parjatan/Hotels/Beautiful BD/BTB Reg/**NHTTI** |
-| Social safety / donation | _(TBD)_ | health / tax | _(confirm)_ | candidate | gap-list | Wave 35 shipped DSS Bhata + CAFO Pension; PM relief/donation / Ashrayan hosts still unconfirmed |
-| BG Press / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 36 shipped Bangladesh National Museum; forms.gov.bd still flaky; liberationwarmuseum.org hijacked — skip |
-| Development authorities (RAJUK/CDA/KDA/RDA) | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped RAJUK/CDA/KDA; Wave 36 shipped **RDA Bogura** (Rural Development Academy — not Rajshahi DA) |
-| Gov job application portals | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | BPSC/NTRCA shipped; **skip** Teletalk Alljobs (private+gov mix); prefer per-exam Teletalk hosts when Official |
-| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); `bmc.edu.bd` hijacked/private; `smc.edu.bd` junk; `pmc.edu.bd` junk; `afmcbd.com` for sale (use afmc.edu.bd); `nitor.org` wrong; icddr,b international; Teletalk Alljobs mixed market; wrong `*.college.gov.bd` acronyms (women's colleges) |
+| More public medical colleges / institutes | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | Wave 36 shipped Pabna/Jashore/Habiganj/Netrokona MC + AFMC; prefer title-verified `*.college.gov.bd` |
+| Gov media / information siblings | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 37 shipped DFP/Mass Comm/FDC/PIB/Press Council; BTV/Betar/BSS/PID/MoInfo already shipped; Sangsad TV TBD |
+| Ministry apex gaps | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 37 shipped MoRA/MoCA/MoHPW/MoP; most cabinet ministries already present |
+| Agro / farming SOEs | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 37 shipped DAM/BADC/BMDA; MoA/DAE/AIS/research institutes largely shipped; Milk Vita / silk board optional |
+| Social safety / donation | _(TBD)_ | health / tax | _(confirm)_ | candidate | gap-list | Wave 35 shipped DSS Bhata + CAFO Pension; PM relief/donation / Ashrayan still unconfirmed |
+| BG Press / forms | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | forms.gov.bd still flaky; liberationwarmuseum.org hijacked — skip |
+| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); hijacked/private lookalikes; Teletalk Alljobs mixed market; wrong `college.gov.bd` acronyms |
 | Industry / trade associations (BASIS, …) | — | — | — | — | partner | **Not Official** — Partner candidates (ADR-0013); do not seed as Official rows |
+
+## Priority wave 37 — ministries + gov media + agro (2026-08-08)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| MoRA | mora / bd-mora | central | https://www.mora.gov.bd/ | shipped | gap-list | Religious Affairs ministry |
+| MoCA | moca / bd-moca | central | https://www.moca.gov.bd/ | shipped | gap-list | Cultural Affairs ministry |
+| MoHPW | mohpw / bd-mohpw | central | https://www.mohpw.gov.bd/ | shipped | gap-list | Housing & Public Works; PWD peer |
+| MoP | mop / bd-mop | central | https://www.mop.gov.bd/ | shipped | gap-list | Planning ministry apex; Planning Division/Commission peers |
+| DFP | dfp / bd-dfp | central | https://www.dfp.gov.bd/ | shipped | gap-list | Films & Publications |
+| Mass Communication | mass-communication / bd-mass-communication | central | https://www.masscommunication.gov.bd/ | shipped | gap-list | MoInfo directorate |
+| FDC | fdc / bd-fdc | central | https://www.fdc.gov.bd/ | shipped | gap-list | Film Development Corporation |
+| PIB | pib / bd-pib | central | https://www.pib.gov.bd/ | shipped | gap-list | Press Institute Bangladesh |
+| Press Council | press-council / bd-press-council | central | https://www.presscouncil.gov.bd/ | shipped | gap-list | Statutory press body |
+| DAM | dam / bd-dam | central | https://www.dam.gov.bd/ | shipped | gap-list | Agricultural Marketing |
+| BADC | badc / bd-badc | central | https://www.badc.gov.bd/ | shipped | gap-list | Agri Development Corporation |
+| BMDA | bmda / bd-bmda | central | https://www.bmda.gov.bd/ | shipped | gap-list | Barind Multipurpose Development Authority |
 
 ## Priority wave 36 — medical colleges + NHTTI/museum/RDA (2026-08-08)
 

@@ -52,6 +52,6 @@ faq:
     a: "No. MoInfo is Information and Broadcasting (moi.gov.bd). The Ministry of Industries is a separate Service (MoI)."
     q_bn: "মোইনফো কি শিল্প মন্ত্রণালয়ের মতো একই?"
     a_bn: "না। মোইনফো তথ্য ও সম্প্রচার (moi.gov.bd)। শিল্প মন্ত্রণালয় আলাদা সেবা (মোআই)।"
-related: [pid, infocom, national-portal, a2i, btv, betar, bss, bangla-academy, shilpakala, archaeology]
+related: [pid, dfp, mass-communication, fdc, pib, press-council, infocom, national-portal, a2i, btv, betar, bss, bangla-academy, shilpakala]
 last_verified: 2026-08-07
 ---

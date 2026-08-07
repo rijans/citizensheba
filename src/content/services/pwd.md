@@ -52,6 +52,6 @@ faq:
     a: "No. PWD focuses on public works / government buildings. LGED focuses on local government engineering and rural infrastructure."
     q_bn: "পিডব্লিউডি কি এলজিইডি-র মতো একই?"
     a_bn: "না। পিডব্লিউডি গণপূর্ত / সরকারি ভবন দেখে। এলজিইডি স্থানীয় সরকার প্রকৌশল ও পল্লী অবকাঠামো দেখে।"
-related: [lged, rhd, eprocure, national-portal]
+related: [mohpw, lged, rhd, eprocure, national-portal]
 last_verified: 2026-08-07
 ---

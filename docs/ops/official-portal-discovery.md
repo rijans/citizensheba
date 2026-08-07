@@ -69,8 +69,11 @@ Soft-TLS (curl verify fail but browser works) is the common WASA / Titas / RAJUK
 | Jobs / recruitment | BPSC, NTRCA, Teletalk **exam-application** hosts, dedicated join-forces URLs | `central` / `education` / `safety` | Prefer dedicated application portals. **Do not** ship Teletalk Alljobs (`alljobs.teletalk.com.bd`) as Official — it mixes private + gov job ads |
 | Utilities / energy SOEs | DISCOs, gas distribution, generation, Petrobangla siblings | `utilities` | One company = one hop |
 | LGI / development | City corps, pourashava (selective), RAJUK/CDA/KDA | `central` | Pourashava: high bar (citizen demand) |
-| Tourism / travel | Tourism Board, Parjatan Corp, Parjatan Hotels booking, Beautiful Bangladesh, BTB registration | `transport` | MoCAT / CAAB / Biman / Tourist Police already common peers |
-| Social safety / pension | DSS Bhata (ISPMIS) for vata allowances; CAFO Pension for civil pensions; DSS/MoSW policy hops | `health` (welfare) / `tax` | Do not conflate boyosko/bekar vata with civil pension |
+| Tourism / travel | Tourism Board, Parjatan, hotels booking, Beautiful Bangladesh, BTB registration, NHTTI | `transport` | MoCAT / CAAB / Biman / Tourist Police peers |
+| Gov media / information | MoInfo peers: DFP, Mass Communication, FDC, PIB, Press Council (BTV/Betar/BSS/PID often already shipped) | `central` | Skip private channels |
+| Ministries apex gaps | MoRA, MoCA, MoHPW, MoP, … when not already covered by a division hop alone | `central` / domain Category | Prefer ministry + key directorate siblings |
+| Agro / farming SOEs | DAM, BADC, BMDA, research institutes, DAE/AIS already common | `central` (until farm Category) | Do not ship private agri apps |
+| Social safety / pension | DSS Bhata (ISPMIS) for vata; CAFO Pension for civil pensions | `health` / `tax` | Do not conflate boyosko/bekar vata with civil pension |
 | Training / forms | BPATC, NILG, forms.gov.bd | `central` | Skip hijacked museum domains |
 
 ## Wave rhythm

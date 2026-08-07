@@ -18,6 +18,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `apscl` | `zap` | Ashuganj generation (half-gov) |
 | `archaeology` | `landmark` | Archaeology directorate |
 | `army` | `shield` | Bangladesh Army |
+| `badc` | `sprout` | Agricultural Development Corporation |
 | `baec` | `lightbulb` | Atomic Energy Commission |
 | `baf` | `plane` | Bangladesh Air Force |
 | `banbeis` | `file-spreadsheet` | Education stats |
@@ -57,6 +58,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `bksp` | `users` | Sports education institute |
 | `blri` | `sprout` | Livestock research |
 | `bmd` | `cloud-sun` | Meteorology |
+| `bmda` | `droplets` | Barind Multipurpose Development Authority |
 | `bmeb` | `school` | Madrasah Education Board |
 | `bmet` | `briefcase-business` | Overseas employment clearance |
 | `bmrc` | `microscope` | Medical Research Council |
@@ -106,7 +108,9 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `cuet` | `university` | CUET engineering |
 | `customs` | `package` | Customs |
 | `dae` | `sprout` | Agriculture extension |
+| `dam` | `sprout` | Agricultural Marketing |
 | `desco` | `zap` | Electricity |
+| `dfp` | `monitor` | Films & Publications |
 | `dife` | `clipboard-list` | Factory & establishment inspection |
 | `dgda` | `pill` | Drug administration |
 | `dgfood` | `utensils` | Food directorate |
@@ -129,11 +133,19 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `dos` | `ship` | Department of Shipping |
 | `dpdc` | `zap` | Electricity |
 | `dpe` | `school` | Primary education |
+| `fdc` | `monitor` | Film Development Corporation |
 | `icb` | `landmark` | Investment Corporation of Bangladesh |
 | `idra` | `landmark` | Insurance Development & Regulatory Authority |
+| `mass-communication` | `radio` | Mass Communication directorate |
+| `moca` | `landmark` | Cultural Affairs ministry |
+| `mohpw` | `building-2` | Housing & Public Works ministry |
+| `mop` | `clipboard-list` | Planning ministry |
+| `mora` | `landmark` | Religious Affairs ministry |
 | `mra` | `landmark` | Microcredit Regulatory Authority |
 | `nidch` | `stethoscope` | Chest diseases institute |
 | `nins` | `stethoscope` | Neurosciences institute |
+| `pib` | `scroll-text` | Press Institute Bangladesh |
+| `press-council` | `scale` | Bangladesh Press Council |
 | `printing` | `file-text` | Printing & publications / gazettes |
 | `dscc` | `building-2` | Dhaka South City |
 | `dshe` | `school` | Secondary / higher ed |

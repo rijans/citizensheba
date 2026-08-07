@@ -167,6 +167,18 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `nhtti` | **NHTTI** | Hotel & tourism training |
 | `bangladesh-museum` | **Bangladesh National Museum** | National museum |
 | `rda` | **RDA Bogura** | Rural Development Academy — not Rajshahi DA |
+| `mora` | **MoRA** | Ministry of Religious Affairs |
+| `moca` | **MoCA** | Ministry of Cultural Affairs |
+| `mohpw` | **MoHPW** | Housing & Public Works |
+| `mop` | **MoP** | Ministry of Planning |
+| `dfp` | **DFP** | Films & Publications |
+| `mass-communication` | **Mass Communication** | Mass Communication directorate |
+| `fdc` | **FDC** | Film Development Corporation |
+| `pib` | **PIB** | Press Institute Bangladesh |
+| `press-council` | **Press Council** | Bangladesh Press Council |
+| `dam` | **DAM** | Agricultural Marketing |
+| `badc` | **BADC** | Agricultural Development Corporation |
+| `bmda` | **BMDA** | Barind Multipurpose Development Authority |
 | `mofood` | **MoFood** | Food ministry short form |
 | `dgfood` | **DG Food** | Directorate short form |
 | `fisheries` | **DoF** | Department of Fisheries short form |

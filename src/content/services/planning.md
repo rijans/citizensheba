@@ -52,6 +52,6 @@ faq:
     a: "Check both the Planning Division and Planning Commission portals for published planning documents and notices."
     q_bn: "পঞ্চবার্ষিক পরিকল্পনার নথি কোথায় পাব?"
     a_bn: "প্রকাশিত পরিকল্পনা নথি ও নোটিশের জন্য পরিকল্পনা বিভাগ ও পরিকল্পনা কমিশন—দুই পোর্টালই দেখুন।"
-related: [plancomm, cabinet, pmo, national-portal]
+related: [mop, plancomm, cabinet, pmo, national-portal]
 last_verified: 2026-08-07
 ---
