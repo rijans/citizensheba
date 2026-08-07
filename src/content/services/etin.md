@@ -5,7 +5,7 @@ title: NBR e-TIN Registration
 title_bn: ই-টিআইএন
 serp_title: NBR e-TIN Registration (Taxpayer Identification Number)
 serp_title_bn: ই-টিআইএন (করদাতা শনাক্তকরণ নম্বর)
-description: Register for a new Taxpayer Identification Number (TIN) or manage existing ones.
+description: "Register for a new Taxpayer Identification Number (TIN) or manage existing TIN records on the official portal."
 description_bn: জাতীয় রাজস্ব বোর্ডের মাধ্যমে করদাতা শনাক্তকরণ নম্বর (টিআইএন) নিবন্ধন বা ব্যবস্থাপনা করুন
 body: |
   **NBR e-TIN Registration** is the official path to register for a Taxpayer Identification Number (TIN) or manage existing TIN details with the National Board of Revenue.

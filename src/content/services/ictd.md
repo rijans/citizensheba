@@ -5,7 +5,7 @@ title: ICTD
 title_bn: আইসিটিডি
 serp_title: ICTD (ICT Division)
 serp_title_bn: তথ্য ও যোগাযোগ প্রযুক্তি বিভাগ
-description: Official ICT Division portal for ICT policy notices and division public information.
+description: "Official ICT Division portal for ICT policy notices, programme updates, and division public information."
 description_bn: আইসিটি নীতি নোটিশ ও বিভাগ জনতথ্যের অফিসিয়াল তথ্য ও যোগাযোগ প্রযুক্তি বিভাগ পোর্টাল
 body: |
   **ICTD** is the official ICT Division portal for ICT policy notices and published public information.

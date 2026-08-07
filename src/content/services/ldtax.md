@@ -3,7 +3,7 @@ id: ldtax
 slug: bd-ldtax
 title: Land Development Tax (LD Tax)
 title_bn: ভূমি উন্নয়ন কর
-description: Pay your land development tax online and receive digital Dakhila (receipts).
+description: "Pay your land development tax online and receive digital Dakhila receipts through the official LD Tax portal."
 description_bn: ভূমি উন্নয়ন কর পরিশোধ করুন এবং ডিজিটাল দাখিলা রসিদ নিন
 body: |
   **Land Development Tax (LD Tax)** lets landowners pay land development tax online and receive digital Dakhila (receipts) through the official portal.

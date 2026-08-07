@@ -18,7 +18,7 @@ Create `src/content/services/<id>.md` following [`service-page.md`](service-page
 | Must have | Notes |
 |-----------|--------|
 | `title` / `title_bn` | Card + H1 Display Names |
-| `description` / `description_bn` | Short; cards + Meta Description |
+| `description` / `description_bn` | Short; cards + Meta Description. EN `description` ≥ **90** chars (ADR-0012; 2-line card clamp) |
 | `body` / `body_bn` | Hop Markdown (min length); BN then EN on page |
 | `audience` / `audience_bn` | Who it’s for |
 | `faq[]` | 1–5 bilingual; **service-useful** only — no “is this official?” / CitizenSheba account FAQ |

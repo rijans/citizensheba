@@ -3,7 +3,7 @@ id: ecourt
 slug: bd-ecourt
 title: e-Court
 title_bn: ই-কোর্ট
-description: Official e-Court portal for citizen reports and mobile court related digital services.
+description: "Official e-Court portal for citizen reports, mobile court related digital services, and published court notices."
 description_bn: নাগরিক অভিযোগ ও মোবাইল কোর্ট-সংক্রান্ত ডিজিটাল সেবার অফিসিয়াল ই-কোর্ট পোর্টাল
 body: |
   **e-Court** is the official digital portal for e-Court / mobile-court related citizen services published by the government.

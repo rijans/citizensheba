@@ -3,7 +3,7 @@ id: bangladesh-visa
 slug: bd-bangladesh-visa
 title: Bangladesh Online Visa (MRV)
 title_bn: বাংলাদেশ অনলাইন ভিসা (এমআরভি)
-description: Official Bangladesh Online MRV portal to start machine-readable visa applications.
+description: "Official Bangladesh Online MRV portal to start machine-readable visa applications and follow published visa guidance."
 description_bn: মেশিন-রিডেবল ভিসা আবেদন শুরু করার অফিসিয়াল বাংলাদেশ অনলাইন এমআরভি পোর্টাল
 body: |
   **Bangladesh Online Visa (MRV)** is the official portal to fill and submit Machine Readable Visa application forms online.

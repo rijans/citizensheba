@@ -5,7 +5,7 @@ title: ekPay
 title_bn: একপে
 serp_title: ekPay (Government Payment Gateway)
 serp_title_bn: একপে (সরকারি পেমেন্ট গেটওয়ে)
-description: Official government payment gateway for utility bills and selected public-service fees.
+description: "Official government payment gateway for utility bills and selected public-service fees across participating agencies."
 description_bn: ইউটিলিটি বিল ও নির্বাচিত সরকারি সেবা ফি পরিশোধের অফিসিয়াল সরকারি পেমেন্ট গেটওয়ে
 body: |
   **ekPay** is the official government payment gateway for paying many utility bills and selected public-service fees online.

@@ -56,7 +56,7 @@ Schema: `src/content.config.ts`. Integrity: `tests/unit/content-integrity.test.t
 |-------|------|
 | `title` / `title_bn` | Display Name for H1 / cards (ADR-0005) |
 | `serp_title` / `serp_title_bn` | Optional SERP expansions when Display Names are too short/opaque (e.g. A2I → A2I (Aspire to Innovate)) |
-| `description` / `description_bn` | Short — cards + Meta Description; keep SERP-sized |
+| `description` / `description_bn` | Short — cards + Meta Description; keep SERP-sized. EN `description` ≥ **90** chars (ADR-0012; card clamps to 2 lines) |
 | `body` / `body_bn` | Longer hop Markdown (min length enforced) |
 | `audience` / `audience_bn` | Who the Service is for |
 | `faq[]` | 1–5 items; each needs `q`, `a`, `q_bn`, `a_bn` |

@@ -36,6 +36,7 @@
 - Display: Bricolage Grotesque; body/BN: Hind Siliguri (see `global.css`).
 - Body base **17px** (one step up from 16 for readability on Home + hop pages). Hero/display H1 clamps unchanged.
 - **Directory / card scale:** card title EN+BN `1.125rem` (BN uses brand `--green`, weight 600 — peer for Bangla-only readers; EN stays ink + 650). Description `1rem`, domain `0.875rem`; chips `0.9375rem`; search input `1.0625rem`. Hop prose `1.0625rem`. Do **not** tint BN titles with `--cat-accent` (icon well already carries Category accent).
+- **Card description clamp (ADR-0012):** EN `description` on `.service-card` is capped at **2 lines** (`-webkit-line-clamp: 2`) with ellipsis. Pin `.service-card__domain` with `margin-top: auto` so domains align at the card bottom while grid rows stretch equal height. Do **not** force a 2-line `min-height` slot. Editorial floor: EN `description` ≥ **90** characters (content-integrity test) so cards fill ~2 lines at typical desktop width.
 - Prefer existing classes in `global.css` over ad-hoc pixel sizes in JSX.
 - Dark theme: keep contrast; accent soft tints must remain readable on `--surface`.
 - **Directory Pagination** (ADR-0010): Prev/Next + page numbers use `--green` / `--green-hover` / `--green-soft` only — never `--cat-accent`. **Load more** (same green family) sits between the grid and the pager: appends the next batch, keeps viewport, focuses the first new card; page jumps replace and scroll to results. Hide pager + Load more when results ≤ 21; page size 20 when ≥ 22. Reset to page 1 / append mode on query/category change. Count: `N services · Showing X · Page Y of Z`.
@@ -44,6 +45,7 @@
 ## Content → UI
 
 - Cards show: icon, title, `title_bn`, description, **official domain**, status when not ACTIVE.
+- EN card `description` ≥ 90 characters (ADR-0012); CSS clamps display to 2 lines.
 - Never reintroduce `meta_title` / `meta_description` content fields.
 - New categories need `icon` (lucide key) + entry in `CATEGORY_ACCENTS` if a dedicated hue is desired.
 - New Services need `directory_global_rank` + `directory_category_rank` (see [`directory-ranking.md`](directory-ranking.md)).
@@ -61,4 +63,4 @@
 
 - **Service Page hop:** [`docs/guides/service-page.md`](service-page.md)
 - **Directory ranking:** [`docs/guides/directory-ranking.md`](directory-ranking.md)
-- ADR-0003, ADR-0004, ADR-0010, `docs/guides/performance.md`, `docs/specs/TRAPS.md` (#3–#7), `CONTEXT.md` § Instant Directory / Category Icon / Mobile-First / Directory ranks
+- ADR-0003, ADR-0004, ADR-0010, ADR-0012, `docs/guides/performance.md`, `docs/specs/TRAPS.md` (#3–#7), `CONTEXT.md` § Instant Directory / Category Icon / Mobile-First / Directory ranks

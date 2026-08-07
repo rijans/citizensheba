@@ -26,14 +26,14 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 |---------------------|------|
 | agent workflow, stop-and-ask, parallel session, foreign dirty, finalization, redesign | `docs/guides/agent-workflow.md`, `docs/specs/TRAPS.md` (#10) |
 | trap, pitfall, regression, known mistake | `docs/specs/TRAPS.md` (scan index, open matching bodies) |
-| UI, CSS, card, chip, Mobile-First, design token, Lucide, jargon in copy, logo, brand mark, favicon, PWA icon | `docs/guides/frontend.md`, ADR-0004, `public/brand/`, `docs/specs/TRAPS.md` (#5–#7) |
+| UI, CSS, card, chip, Mobile-First, design token, Lucide, jargon in copy, logo, brand mark, favicon, PWA icon | `docs/guides/frontend.md`, ADR-0004, ADR-0012, `public/brand/`, `docs/specs/TRAPS.md` (#5–#7) |
 | performance, island, LCP, client JS, analytics weight | `docs/guides/performance.md`, ADR-0001 |
 | stack, Astro, Cloudflare, wrangler, static assets, React island, Tailwind | `docs/adr/0001-astro-ssg-react-island-cloudflare.md`, `README.md` § Cloudflare, Trap #1 |
 | deploy, production, wrangler login, smoke live, workers.dev, citizensheba.com, Workers Builds, MCP Cloudflare | `docs/ops/production-and-deploy.md` |
 | local dev, localhost, HMR, live reload, `npm run dev`, preview before push | `docs/ops/local-dev.md` |
 | llms.txt, robots, ai.txt, agent crawl, AI train | `docs/adr/0002-agent-llms-txt-and-ai-usage-signals.md` |
 | Document Title, Meta Description, SERP, bilingual title, `serp_title`, `description_bn`, `meta_title`, CitizenSheba Bangladesh | ADR-0003, `src/lib/seo.ts`, `src/lib/site.ts` (`SITE_BRAND_SERP`), `CONTEXT.md`, Traps #3–#4, `docs/guides/service-page.md` |
-| Category Icon, Service Icon, Service card, accent, Instant Directory chips, emoji on cards, per-service icon | ADR-0004, `docs/guides/service-icons.md`, `docs/guides/frontend.md`, `src/lib/categoryVisuals.ts`, `src/lib/categoryIcons.ts`, `CONTEXT.md`, Traps #5–#7 |
+| Category Icon, Service Icon, Service card, accent, Instant Directory chips, emoji on cards, per-service icon | ADR-0004, ADR-0012, `docs/guides/service-icons.md`, `docs/guides/frontend.md`, `src/lib/categoryVisuals.ts`, `src/lib/categoryIcons.ts`, `CONTEXT.md`, Traps #5–#7 |
 | Web Analytics, CF beacon, `PUBLIC_CF_WEB_ANALYTICS_TOKEN` | `docs/ops/web-analytics.md` |
 | Search Console, GSC, sitemap | `docs/ops/search-console.md` |
 | add/move docs, AGENTS layout, Cursor rules | `docs/specs/DOC_ARCHITECTURE.md` |
@@ -89,3 +89,4 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | 0009 Service Page bilingual sections | `docs/adr/0009-service-page-bilingual-sections.md` |
 | 0010 Directory ranking + pagination | `docs/adr/0010-directory-ranking-and-pagination.md` |
 | 0011 Service capability capsules | `docs/adr/0011-service-capability-capsules.md` |
+| 0012 Service card description clamp | `docs/adr/0012-service-card-description-clamp.md` |

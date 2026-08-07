@@ -5,7 +5,7 @@ title: RAB
 title_bn: র্যাব
 serp_title: RAB (Rapid Action Battalion)
 serp_title_bn: র্যাব (র্যাপিড অ্যাকশন ব্যাটালিয়ন)
-description: Official Rapid Action Battalion portal for RAB public information and published notices.
+description: "Official Rapid Action Battalion portal for RAB public information, published notices, and citizen-facing updates."
 description_bn: র্যাব জনতথ্য ও প্রকাশিত নোটিশের অফিসিয়াল র্যাপিড অ্যাকশন ব্যাটালিয়ন পোর্টাল
 body: |
   **RAB** (Rapid Action Battalion) is the official portal for Rapid Action Battalion public information and published notices.

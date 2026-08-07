@@ -3,7 +3,7 @@ id: national-portal
 slug: bd-national-portal
 title: Bangladesh National Portal
 title_bn: জাতীয় তথ্য বাতায়ন
-description: The central gateway to all digital services and ministries of the Bangladesh government.
+description: "The central gateway to digital services and ministries of the Bangladesh government for citizens and businesses."
 description_bn: মন্ত্রণালয় ও ডিজিটাল সেবায় প্রবেশের বাংলাদেশ জাতীয় পোর্টাল
 body: |
   The **Bangladesh National Portal** (bangladesh.gov.bd) is the central public gateway to ministries, departments, and many government digital services.

@@ -5,7 +5,7 @@ title: NID Services
 title_bn: জাতীয় পরিচয়পত্র
 serp_title: NID Services (National ID)
 serp_title_bn: জাতীয় পরিচয়পত্র (এনআইডি সেবা)
-description: "Portal for new voter registration, NID correction, and downloading NID copies."
+description: "Portal for new voter registration, NID correction, and downloading NID copies from the official NID services site."
 description_bn: "নতুন ভোটার নিবন্ধন, এনআইডি সংশোধন এবং এনআইডি কপি ডাউনলোডের অফিসিয়াল সেবা"
 body: |
   **NID Services** is the official gateway for National ID–related tasks such as new voter registration, corrections, and downloading NID copies where the government portal offers them.

@@ -5,7 +5,7 @@ title: BGB
 title_bn: বিজিবি
 serp_title: BGB (Border Guard Bangladesh)
 serp_title_bn: বর্ডার গার্ড বাংলাদেশ (বিজিবি)
-description: Official Border Guard Bangladesh portal for BGB public information and published notices.
+description: "Official Border Guard Bangladesh portal for BGB public information, published notices, and citizen-facing updates."
 description_bn: বিজিবি জনতথ্য ও প্রকাশিত নোটিশের অফিসিয়াল বর্ডার গার্ড বাংলাদেশ পোর্টাল
 body: |
   **BGB** is the official Border Guard Bangladesh portal for public information and published notices.

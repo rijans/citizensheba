@@ -5,7 +5,7 @@ title: VAT Online
 title_bn: ভ্যাট অনলাইন
 serp_title: VAT Online (NBR)
 serp_title_bn: ভ্যাট অনলাইন (এনবিআর)
-description: Official NBR VAT Online portal for VAT registration and related e-services.
+description: "Official NBR VAT Online portal for VAT registration, return-related e-services, and published VAT notices."
 description_bn: ভ্যাট নিবন্ধন ও সংশ্লিষ্ট ই-সেবার অফিসিয়াল এনবিআর ভ্যাট অনলাইন পোর্টাল
 body: |
   **VAT Online** is the official NBR portal for Value Added Tax registration and related online VAT services.

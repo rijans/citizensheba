@@ -67,6 +67,13 @@ describe('content integrity', () => {
     expect(selfRefs).toEqual([]);
   });
 
+  it('every service EN description is long enough for a 2-line card (≥90 chars)', () => {
+    const tooShort = services
+      .filter((s) => String(s.description || '').trim().length < 90)
+      .map((s) => `${s.id} (${String(s.description || '').trim().length})`);
+    expect(tooShort).toEqual([]);
+  });
+
   it('every service has Name Aliases with EN and BN coverage', () => {
     type Alias = { name?: string; lang?: string; kind?: string };
     const problems: string[] = [];

@@ -3,7 +3,7 @@ id: edu-results
 slug: bd-edu-results
 title: Education Board Results
 title_bn: শিক্ষা বোর্ড ফলাফল
-description: "Check results for public examinations (SSC, HSC, JSC, etc.) across all education boards."
+description: "Check results for public examinations such as SSC, HSC, and JSC across Bangladesh education boards."
 description_bn: "সব শিক্ষা বোর্ডের পাবলিক পরীক্ষা (এসএসসি, এইচএসসি, জেএসসি ইত্যাদি) ফলাফল দেখুন"
 body: |
   **Education Board Results** is the official site to check public exam results such as SSC, HSC, and JSC across education boards.

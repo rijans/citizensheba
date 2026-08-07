@@ -5,7 +5,7 @@ title: Surokkha
 title_bn: সুরক্ষা
 serp_title: Surokkha (vaccine registration and certificates)
 serp_title_bn: সুরক্ষা (টিকা নিবন্ধন ও সনদ)
-description: "Vaccine registration, status checking, and certificate downloading platform."
+description: "Vaccine registration, status checking, and certificate downloading platform on the official Surokkha portal."
 description_bn: "টিকা নিবন্ধন, অবস্থা যাচাই এবং সনদ ডাউনলোডের সুরক্ষা পোর্টাল"
 body: |
   **Surokkha** is the official platform for vaccine registration, status checks, and downloading vaccination certificates where offered.

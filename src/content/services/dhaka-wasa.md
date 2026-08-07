@@ -3,7 +3,7 @@ id: dhaka-wasa
 slug: bd-dhaka-wasa
 title: Dhaka WASA
 title_bn: ঢাকা ওয়াসা
-description: Official Dhaka WASA consumer portal for water and sewer account and bill services.
+description: "Official Dhaka WASA consumer portal for water and sewer account services, bill payment, and published notices."
 description_bn: পানি ও স্যুয়ারেজ অ্যাকাউন্ট ও বিল সেবার জন্য অফিসিয়াল ঢাকা ওয়াসা কনজিউমার পোর্টাল
 body: |
   **Dhaka WASA** is the official consumer portal for Dhaka Water Supply and Sewerage Authority account and bill services.

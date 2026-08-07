@@ -5,7 +5,7 @@ title: MoFood
 title_bn: খাদ্য মন্ত্রণালয়
 serp_title: MoFood (Ministry of Food)
 serp_title_bn: খাদ্য মন্ত্রণালয়
-description: Official Ministry of Food portal for food-policy notices and ministry public information.
+description: "Official Ministry of Food portal for food-policy notices, programme updates, and ministry public information."
 description_bn: খাদ্য নীতি নোটিশ ও মন্ত্রণালয় জনতথ্যের অফিসিয়াল খাদ্য মন্ত্রণালয় পোর্টাল
 body: |
   **MoFood** is the official Ministry of Food portal for food-policy notices and ministry public information.
