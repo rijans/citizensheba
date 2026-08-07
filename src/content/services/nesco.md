@@ -42,6 +42,6 @@ faq:
     a: "Dhaka distributors are typically DESCO or DPDC. Use those Service Pages unless your bill explicitly names NESCO."
     q_bn: "ঢাকায় থাকলে কোন পোর্টালে যাব?"
     a_bn: "ঢাকায় সাধারণত ডেসকো বা ডিপিডিসি। বিলে স্পষ্টভাবে নেসকো না থাকলে সেই সেবা পেজ ব্যবহার করুন।"
-related: [desco, dpdc]
+related: [desco, dpdc, breb, wzpdcl, ekpay]
 last_verified: 2026-08-07
 ---

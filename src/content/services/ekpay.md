@@ -1,0 +1,47 @@
+---
+id: ekpay
+slug: bd-ekpay
+title: ekPay
+title_bn: একপে
+serp_title: ekPay (Government Payment Gateway)
+serp_title_bn: একপে (সরকারি পেমেন্ট গেটওয়ে)
+description: Official government payment gateway for utility bills and selected public-service fees.
+description_bn: ইউটিলিটি বিল ও নির্বাচিত সরকারি সেবা ফি পরিশোধের অফিসিয়াল সরকারি পেমেন্ট গেটওয়ে
+body: |
+  **ekPay** is the official government payment gateway for paying many utility bills and selected public-service fees online.
+
+  Use ekPay when a government or utility portal directs you to the national payment channel — confirm the biller name carefully before paying.
+
+body_bn: |
+  **একপে (ekPay)** অনেক ইউটিলিটি বিল ও নির্বাচিত সরকারি সেবা ফি অনলাইনে পরিশোধের অফিসিয়াল সরকারি পেমেন্ট গেটওয়ে।
+
+  সরকারি বা ইউটিলিটি পোর্টাল জাতীয় পেমেন্ট চ্যানেলে পাঠালে একপে ব্যবহার করুন—পরিশোধের আগে বিলার নাম নিশ্চিত করুন।
+
+url: "https://ekpay.gov.bd/"
+official_domain: ekpay.gov.bd
+category: central
+tags: [ekpay, payment, bill, "একপে", "বিল"]
+aliases:
+  - name: Ekpay
+    lang: en
+    kind: alt
+  - name: government payment gateway
+    lang: en
+    kind: alt
+  - name: একপে
+    lang: bn
+    kind: alt
+  - name: সরকারি পেমেন্ট
+    lang: bn
+    kind: informal
+status: ACTIVE
+audience: Citizens paying utility bills or selected government fees through the official ekPay channel.
+audience_bn: অফিসিয়াল একপে চ্যানেলে ইউটিলিটি বিল বা নির্বাচিত সরকারি ফি পরিশোধকারী নাগরিক।
+faq:
+  - q: "Does ekPay replace DESCO or DPDC portals?"
+    a: "No. Distributor portals remain for account and connection services. ekPay is a payment channel many billers use — pick the Service that matches your task."
+    q_bn: "একপে কি ডেসকো বা ডিপিডিসি পোর্টালের বিকল্প?"
+    a_bn: "না। অ্যাকাউন্ট ও সংযোগ সেবার জন্য ডিস্ট্রিবিউটর পোর্টালই মূল। একপে অনেক বিলারের পেমেন্ট চ্যানেল—কাজ অনুযায়ী সেবা বাছুন।"
+related: [desco, dpdc, titas-gas, mygov]
+last_verified: 2026-08-07
+---

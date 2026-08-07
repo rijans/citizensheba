@@ -42,6 +42,6 @@ faq:
     a: "No. DPDC and DESCO are different Dhaka distributors with separate portals. Pick the Service that matches your bill / connection area."
     q_bn: "ডিপিডিসি কি ডেসকোর মতোই?"
     a_bn: "না। ডিপিডিসি ও ডেসকো আলাদা ঢাকা ডিস্ট্রিবিউটর—আলাদা পোর্টাল। আপনার বিল/সংযোগ এলাকার সাথে মিলিয়ে সেবা বাছুন।"
-related: [desco, nesco]
+related: [desco, nesco, breb, wzpdcl, ekpay]
 last_verified: 2026-08-07
 ---

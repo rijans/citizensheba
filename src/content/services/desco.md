@@ -42,6 +42,6 @@ faq:
     a: "DESCO covers its own service area. For other distributors (for example DPDC or NESCO), use those Official Service Pages."
     q_bn: "সব এলাকার বিদ্যুৎ বিল কি ডেসকোতে পরিশোধ করা যায়?"
     a_bn: "ডেসকো শুধু নিজের সেবাদান এলাকা কভার করে। অন্য বিতরণকারী (যেমন ডিপিডিসি বা নেসকো) এর জন্য সেই অফিসিয়াল সেবা পেজ ব্যবহার করুন।"
-related: [dpdc, nesco, titas-gas]
+related: [dpdc, nesco, titas-gas, breb, wzpdcl, ekpay]
 last_verified: 2026-08-07
 ---

@@ -40,6 +40,19 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `titas-gas` | **Titas Gas** | Company short name |
 | `fire-service` | **Fire Service & Civil Defence** | Full directorate short form |
 
+| `ekpay` | **ekPay** | camelCase product brand (payment gateway) |
+| `breb` | **BREB** | Acronym ALL CAPS |
+| `rjsc` | **RJSC** | Acronym ALL CAPS |
+| `btcl` | **myBTCL** | camelCase BTCL customer portal |
+| `bida` | **BIDA** | Acronym ALL CAPS |
+| `hajj` | **Bangladesh Hajj** | Clear pilgrimage portal name |
+| `bangladesh-post` | **Bangladesh Post** | Institutional short name |
+| `caab` | **CAAB** | Acronym ALL CAPS |
+| `wzpdcl` | **WZPDCL** | Acronym ALL CAPS |
+| `national-university` | **National University** | Full institutional name |
+| `wewb` | **WEWB** | Acronym ALL CAPS |
+| `customs` | **Bangladesh Customs** | Clear official short name |
+
 Add a row whenever a new Service needs a non-obvious casing decision.
 
 ## Name Aliases — **required** on every Service

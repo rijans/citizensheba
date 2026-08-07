@@ -42,6 +42,6 @@ faq:
     a: "Clearance workflows have moved to the official BMET online clearance system. Prefer `oc.bmet.gov.bd` for new clearance work unless BMET publishes otherwise."
     q_bn: "আমি প্রবাসী কি এই পোর্টালের মতোই?"
     a_bn: "ক্লিয়ারেন্স কার্যক্রম অফিসিয়াল বিএমইটি অনলাইন ক্লিয়ারেন্স সিস্টেমে স্থানান্তরিত। নতুন ক্লিয়ারেন্সের জন্য `oc.bmet.gov.bd` ব্যবহার করুন—বিএমইটি অন্যথা প্রকাশ না করলে।"
-related: [epassport, bangladesh-visa]
+related: [epassport, bangladesh-visa, wewb, hajj]
 last_verified: 2026-08-07
 ---

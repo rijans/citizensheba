@@ -65,7 +65,35 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 | NESCO | nesco / bd-nesco | utilities | `https://customer.nesco.gov.bd/` | shipped | gap-list | Verified **200** |
 | e-Court / judiciary | ecourt / bd-ecourt | justice (if ships) | `https://ecourt.gov.bd/` | shipped | gap-list | Verified **200** |
 | Fire Service & Civil Defence | fire-service / bd-fire-service | safety | `https://fireservice.gov.bd/` | shipped | gap-list | curl TLS fail — confirm in browser |
-| Utility siblings (other DISCOs) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | One portal per Service; wave cap ~8–12; e.g. BREB still candidate |
+
+
+## Priority wave 2 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| ekPay | ekpay / bd-ekpay | central | https://ekpay.gov.bd/ | shipped | gap-list | Verified 200 |
+| BREB | breb / bd-breb | utilities | https://reb.gov.bd/ | shipped | gap-list | Verified 200 |
+| RJSC | rjsc / bd-rjsc | central | https://roc.gov.bd/ | shipped | gap-list | Verified 200 |
+| myBTCL | btcl / bd-btcl | utilities | https://mybtcl.btcl.gov.bd/ | shipped | gap-list | Verified 200 |
+| BIDA | bida / bd-bida | central | https://investbangladesh.gov.bd/ | shipped | gap-list | Verified 200 (OSS 403) |
+| Bangladesh Hajj | hajj / bd-hajj | migration | https://hajj.gov.bd/ | shipped | gap-list | Verified 200 |
+| Bangladesh Post | bangladesh-post / bd-bangladesh-post | central | https://www.bangladeshpost.gov.bd/ | shipped | gap-list | Verified 200 |
+| CAAB | caab / bd-caab | transport | https://caab.gov.bd/ | shipped | gap-list | Verified 200 |
+| WZPDCL | wzpdcl / bd-wzpdcl | utilities | https://www.wzpdcl.org.bd/ | shipped | gap-list | Verified 200 |
+| National University | national-university / bd-national-university | education | https://www.nu.ac.bd/ | shipped | gap-list | Verified 200 |
+| WEWB | wewb / bd-wewb | migration | https://www.wewb.gov.bd/ | shipped | gap-list | Verified 200 |
+| Bangladesh Customs | customs / bd-customs | tax | https://customs.gov.bd/ | shipped | gap-list | Verified 200 |
+
+## Remaining candidates
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Election Commission | _(TBD)_ | central / identity | https://www.ecs.gov.bd/ | candidate | gap-list | curl 403 — browser check |
+| Chattogram WASA | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | prior URL fail |
+| BOU | bou / bd-bou | education | https://www.bou.ac.bd/ | candidate | gap-list | Verified 200 — next wave |
+| Probashi Ministry | _(TBD)_ | migration | https://www.probashi.gov.bd/ | candidate | gap-list | Verified 200 — next wave |
+| Bangladesh Bank | _(TBD)_ | tax / central | https://www.bb.org.bd/ | candidate | gap-list | Verified 200 — next wave |
+| Utility siblings (other DISCOs) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | e.g. SZPDCL, NESCO peers |
 
 ## Skipped
 

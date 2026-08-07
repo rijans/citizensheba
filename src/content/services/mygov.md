@@ -40,5 +40,6 @@ faq:
     q_bn: "myGov-এ কী করা যায়?"
     a_bn: "এক প্ল্যাটফর্ম থেকে একীভূত G2C, G2B ও G2G সরকারি সেবায় প্রবেশ করা যায়।"
 
+related: [national-portal, a2i, ekpay, rjsc]
 last_verified: 2026-08-06
 ---
