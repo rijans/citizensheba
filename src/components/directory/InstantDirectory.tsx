@@ -29,12 +29,16 @@ interface Props {
 }
 
 const SEARCH_PLACEHOLDER = 'সেবা খুঁজুন… Search services…';
-const SEARCH_HASH = '#directory-query';
+/** Hash target = search shell (not the input) so sticky-header scroll-margin applies. */
+const DIRECTORY_SEARCH_HASH = '#directory-search';
 
-function focusDirectorySearchInput(input: HTMLInputElement | null) {
-  if (!input) return;
-  input.focus({ preventScroll: true });
-  input.scrollIntoView({ block: 'start', behavior: 'smooth' });
+function revealDirectorySearch(
+  shell: HTMLElement | null,
+  input: HTMLInputElement | null,
+) {
+  shell?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  // preventScroll: focus must not fight scrollIntoView / land on chips under the header.
+  input?.focus({ preventScroll: true });
 }
 
 export default function InstantDirectory({
@@ -49,6 +53,7 @@ export default function InstantDirectory({
   const [chipOverflow, setChipOverflow] = useState({ left: false, right: false });
   const chipsRef = useRef<HTMLDivElement>(null);
   const resultsRef = useRef<HTMLDivElement>(null);
+  const searchShellRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const focusNewRef = useRef(false);
 
@@ -80,8 +85,8 @@ export default function InstantDirectory({
 
   useEffect(() => {
     const focusFromHash = () => {
-      if (window.location.hash !== SEARCH_HASH) return;
-      focusDirectorySearchInput(searchInputRef.current);
+      if (window.location.hash !== DIRECTORY_SEARCH_HASH) return;
+      revealDirectorySearch(searchShellRef.current, searchInputRef.current);
     };
     const frame = requestAnimationFrame(focusFromHash);
     window.addEventListener('hashchange', focusFromHash);
@@ -160,7 +165,11 @@ export default function InstantDirectory({
 
   return (
     <div className="directory" ref={resultsRef}>
-      <div className="directory-search">
+      <div
+        ref={searchShellRef}
+        id="directory-search"
+        className="directory-search"
+      >
         <label className="sr-only" htmlFor="directory-query">
           {SEARCH_PLACEHOLDER}
         </label>

@@ -23,7 +23,7 @@ import { SITE_NAME, SITE_NAME_BN } from '../../lib/site';
 
     <div class="site-header__actions">
       <a
-        href="/#directory-query"
+        href="/#directory-search"
         class="site-header__icon-btn"
         id="header-search"
         aria-label="Search services · সেবা খুঁজুন"
@@ -57,11 +57,14 @@ import { SITE_NAME, SITE_NAME_BN } from '../../lib/site';
     const toggle = document.getElementById('theme-toggle');
     const searchLink = document.getElementById('header-search');
 
-    function focusDirectorySearch() {
+    function revealDirectorySearch() {
+      const shell = document.getElementById('directory-search');
       const input = document.getElementById('directory-query');
-      if (!(input instanceof HTMLInputElement)) return false;
-      input.focus();
-      input.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      if (!(shell instanceof HTMLElement)) return false;
+      shell.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      if (input instanceof HTMLInputElement) {
+        input.focus({ preventScroll: true });
+      }
       return true;
     }
 
@@ -69,11 +72,11 @@ import { SITE_NAME, SITE_NAME_BN } from '../../lib/site';
       const onHome = window.location.pathname === '/' || window.location.pathname === '';
       if (!onHome) return;
       event.preventDefault();
-      if (window.location.hash !== '#directory-query') {
-        history.replaceState(null, '', '#directory-query');
+      if (window.location.hash !== '#directory-search') {
+        history.replaceState(null, '', '#directory-search');
       }
-      if (!focusDirectorySearch()) {
-        window.location.hash = 'directory-query';
+      if (!revealDirectorySearch()) {
+        window.location.hash = 'directory-search';
       }
     });
 
