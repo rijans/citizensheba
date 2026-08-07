@@ -14,7 +14,7 @@
 
 - Design phone-first: sticky search/chips must not push the directory below the fold.
 - Chips: horizontal scroll OK; do **not** use `translateY` hover lifts inside `overflow-x` scrollports (Trap #6).
-- Touch targets: chips ~2.375rem height; search field ~3.25rem; header icon buttons 2.75rem.
+- Touch targets: chips ~2.375rem height; search field ~3.25rem; header icon buttons 2.5rem; sticky header ~4.25rem (logo 2.75rem, wordmark ~1.3125rem).
 - **Header search (B1):** sticky header Search control links to `/#directory-search` (the search shell, not the input) — jumps to Home Instant Directory, scrolls with `scroll-margin-top` under the sticky header, then focuses the field with `preventScroll`. Do not load the search island on Service Pages for this.
 - **Hop capability capsules:** optional `capabilities` (2–4 EN+BN) between description and Outbound CTA; muted gray EN + subtler gray BN on `surface-muted` (not Category blue / green BN); not on cards (ADR-0011).
 - Prefer CSS variables from `:root` / `[data-theme="dark"]` over one-off hex in components.
