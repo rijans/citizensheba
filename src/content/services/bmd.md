@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.bmd.gov.bd/"
 official_domain: bmd.gov.bd
 category: central
+directory_global_rank: 660
+directory_category_rank: 220
 tags: [bmd, weather, forecast, "বিএমডি", "আবহাওয়া"]
 aliases:
   - name: Bangladesh Meteorological Department
@@ -45,3 +47,4 @@ faq:
 related: [ffwc, modmr, national-portal]
 last_verified: 2026-08-07
 ---
+

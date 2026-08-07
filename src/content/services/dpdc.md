@@ -20,6 +20,8 @@ body_bn: |
 url: "https://dpdc.org.bd/public/service/ebill"
 official_domain: dpdc.org.bd
 category: utilities
+directory_global_rank: 110
+directory_category_rank: 30
 tags: [dpdc, electricity, ebill, "ডিপিডিসি", "বিদ্যুৎ"]
 aliases:
   - name: Dhaka Power Distribution
@@ -45,3 +47,4 @@ faq:
 related: [desco, nesco, breb, wzpdcl, ekpay]
 last_verified: 2026-08-07
 ---
+

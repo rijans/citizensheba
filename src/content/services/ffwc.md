@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.ffwc.gov.bd/"
 official_domain: ffwc.gov.bd
 category: safety
+directory_global_rank: 850
+directory_category_rank: 60
 tags: [ffwc, flood, warning, "এফএফডব্লিউসি", "বন্যা"]
 aliases:
   - name: Flood Forecasting and Warning Centre
@@ -45,3 +47,4 @@ faq:
 related: [bmd, modmr, fire-service, police]
 last_verified: 2026-08-07
 ---
+

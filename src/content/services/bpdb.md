@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.bpdb.gov.bd/"
 official_domain: bpdb.gov.bd
 category: utilities
+directory_global_rank: 680
+directory_category_rank: 80
 tags: [bpdb, power, electricity, "বিপিডিবি", "বিদ্যুৎ"]
 aliases:
   - name: Bangladesh Power Development Board
@@ -45,3 +47,4 @@ faq:
 related: [desco, dpdc, nesco, wzpdcl, breb, ekpay, pgcb, berc]
 last_verified: 2026-08-07
 ---
+

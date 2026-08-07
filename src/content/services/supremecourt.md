@@ -18,6 +18,8 @@ body_bn: |
 url: "https://www.supremecourt.gov.bd/"
 official_domain: supremecourt.gov.bd
 category: justice
+directory_global_rank: 1030
+directory_category_rank: 20
 tags: [supreme court, judiciary, "সুপ্রিম কোর্ট", "আদালত"]
 aliases:
   - name: Supreme Court of Bangladesh
@@ -43,3 +45,4 @@ faq:
 related: [ecourt, police, lawjusticediv]
 last_verified: 2026-08-07
 ---
+

@@ -18,6 +18,8 @@ body_bn: |
 url: "https://www.bb.org.bd/"
 official_domain: bb.org.bd
 category: tax
+directory_global_rank: 520
+directory_category_rank: 50
 tags: [bangladesh bank, central bank, "বাংলাদেশ ব্যাংক", "কেন্দ্রীয় ব্যাংক"]
 aliases:
   - name: BB
@@ -43,3 +45,4 @@ faq:
 related: [etin, ereturn, customs, ekpay]
 last_verified: 2026-08-07
 ---
+

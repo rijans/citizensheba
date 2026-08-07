@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.biwta.gov.bd/"
 official_domain: biwta.gov.bd
 category: transport
+directory_global_rank: 640
+directory_category_rank: 70
 tags: [biwta, waterway, navigation, "বিআইডব্লিউটিএ", "নৌপথ"]
 aliases:
   - name: Bangladesh Inland Water Transport Authority
@@ -45,3 +47,4 @@ faq:
 related: [biwtc, railway, brta, caab]
 last_verified: 2026-08-07
 ---
+

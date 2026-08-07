@@ -18,6 +18,8 @@ body_bn: |
 url: "https://www.police.gov.bd/"
 official_domain: police.gov.bd
 category: safety
+directory_global_rank: 140
+directory_category_rank: 10
 tags: [police, "পুলিশ", security, law]
 aliases:
   - name: BD police
@@ -44,3 +46,4 @@ faq:
 related: [fire-service, ecourt, rab]
 last_verified: 2026-08-06
 ---
+

@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.biwtc.gov.bd/"
 official_domain: biwtc.gov.bd
 category: transport
+directory_global_rank: 650
+directory_category_rank: 60
 tags: [biwtc, launch, waterway, "বিআইডব্লিউটিসি", "লঞ্চ"]
 aliases:
   - name: Bangladesh Inland Water Transport Corporation
@@ -45,3 +47,4 @@ faq:
 related: [railway, brta, caab, biwta]
 last_verified: 2026-08-07
 ---
+

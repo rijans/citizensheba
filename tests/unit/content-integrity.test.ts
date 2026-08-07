@@ -123,4 +123,17 @@ describe('content integrity', () => {
     }
     expect(problems).toEqual([]);
   });
+
+  it('every service has directory_global_rank and directory_category_rank', () => {
+    const missing = services
+      .filter(
+        (s) =>
+          typeof s.directory_global_rank !== 'number' ||
+          !Number.isInteger(s.directory_global_rank) ||
+          typeof s.directory_category_rank !== 'number' ||
+          !Number.isInteger(s.directory_category_rank),
+      )
+      .map((s) => String(s.id));
+    expect(missing).toEqual([]);
+  });
 });

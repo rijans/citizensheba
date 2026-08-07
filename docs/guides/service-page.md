@@ -58,6 +58,7 @@ Schema: `src/content.config.ts`. Integrity: `tests/unit/content-integrity.test.t
 | `audience` / `audience_bn` | Who the Service is for |
 | `faq[]` | 1–5 items; each needs `q`, `a`, `q_bn`, `a_bn` |
 | `aliases` | ≥2 with both `en` and `bn` (ADR-0006) |
+| `directory_global_rank` / `directory_category_rank` | Browse order on Home All / Category (ADR-0010); living table [`directory-ranking.md`](directory-ranking.md) |
 | `url`, `official_domain`, `last_verified`, `category`, `slug` (`bd-…`) | Hop + Link Health |
 
 ## Editorial do-nots (hop copy)
@@ -80,6 +81,7 @@ The **Open official site** button + domain already answer the hop. FAQ must be *
 | Bilingual audience / FAQ / related | [0009](../adr/0009-service-page-bilingual-sections.md) |
 | Display Name casing | [0005](../adr/0005-display-name-casing.md) |
 | Name Aliases | [0006](../adr/0006-name-aliases.md) |
+| Directory ranks + pagination | [0010](../adr/0010-directory-ranking-and-pagination.md) |
 | SERP title / meta order | [0003](../adr/0003-bilingual-document-title-and-meta-description.md) |
 
 Design snapshots (history): `docs/superpowers/specs/2026-08-07-service-page-bilingual-sections-design.md` — prefer this guide + ADRs for current truth.

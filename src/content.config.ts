@@ -51,6 +51,10 @@ const service = defineCollection({
     url: z.string().url(),
     official_domain: z.string().optional(),
     category: z.string(),
+    /** Home All browse order — lower = higher (ADR-0010). */
+    directory_global_rank: z.number().int(),
+    /** Category Page / chip browse order — lower = higher (ADR-0010). */
+    directory_category_rank: z.number().int(),
     tags: z.array(z.string()),
     /** Required: at least two Name Aliases covering EN and BN (enforced in integrity tests too). */
     aliases: z.array(nameAlias).min(2),

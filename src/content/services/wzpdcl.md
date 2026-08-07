@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.wzpdcl.org.bd/"
 official_domain: wzpdcl.org.bd
 category: utilities
+directory_global_rank: 1100
+directory_category_rank: 90
 tags: [wzpdcl, electricity, west zone, "বিদ্যুৎ"]
 aliases:
   - name: West Zone Power Distribution
@@ -45,3 +47,4 @@ faq:
 related: [desco, dpdc, nesco, breb, ekpay]
 last_verified: 2026-08-07
 ---
+

@@ -18,6 +18,8 @@ body_bn: |
 url: "http://www.educationboardresults.gov.bd/"
 official_domain: educationboardresults.gov.bd
 category: education
+directory_global_rank: 170
+directory_category_rank: 20
 tags: [ssc, hsc, jsc, result, "রেজাল্ট"]
 aliases:
   - name: SSC result
@@ -47,3 +49,4 @@ faq:
 related: [xi-admission, national-university, teachers-portal, moedu, dshe]
 last_verified: 2026-08-06
 ---
+

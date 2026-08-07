@@ -20,6 +20,8 @@ body_bn: |
 url: "https://reb.gov.bd/"
 official_domain: reb.gov.bd
 category: utilities
+directory_global_rank: 690
+directory_category_rank: 70
 tags: [breb, rural, electricity, "বিআরইবি", "পল্লী বিদ্যুৎ"]
 aliases:
   - name: Bangladesh Rural Electrification Board
@@ -45,3 +47,4 @@ faq:
 related: [desco, dpdc, nesco, ekpay]
 last_verified: 2026-08-07
 ---
+

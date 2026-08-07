@@ -18,6 +18,8 @@ body_bn: |
 url: "https://www.teachers.gov.bd/"
 official_domain: teachers.gov.bd
 category: education
+directory_global_rank: 160
+directory_category_rank: 10
 tags: [teacher, "শিক্ষক", education, portal, registration]
 aliases:
   - name: Shikkhok Batayon
@@ -44,3 +46,4 @@ faq:
 related: [edu-results, xi-admission, dshe, nctb]
 last_verified: 2026-08-06
 ---
+

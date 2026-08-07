@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.dshe.gov.bd/"
 official_domain: dshe.gov.bd
 category: education
+directory_global_rank: 790
+directory_category_rank: 110
 tags: [dshe, secondary education, "মাউশি", "মাধ্যমিক"]
 aliases:
   - name: Directorate of Secondary and Higher Education
@@ -45,3 +47,4 @@ faq:
 related: [edu-results, xi-admission, teachers-portal, nctb]
 last_verified: 2026-08-07
 ---
+

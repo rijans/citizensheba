@@ -20,6 +20,8 @@ body_bn: |
 url: "https://oc.bmet.gov.bd/"
 official_domain: oc.bmet.gov.bd
 category: migration
+directory_global_rank: 670
+directory_category_rank: 10
 tags: [bmet, emigration, overseas, "বিএমইটি", "প্রবাস"]
 aliases:
   - name: Bureau of Manpower Employment and Training
@@ -45,3 +47,4 @@ faq:
 related: [epassport, bangladesh-visa, wewb, hajj]
 last_verified: 2026-08-07
 ---
+

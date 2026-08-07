@@ -22,7 +22,9 @@
 | Use | Path |
 |-----|------|
 | Instant Directory island | `InstantDirectory.tsx` (`client:load` on Home only) |
-| Static cards | `ServiceCardLink.astro` (Category + related) — SSR Lucide, no extra island |
+| Category directory island | `CategoryDirectory.tsx` |
+| Load more / pager | `DirectoryLoadMore.tsx`, `DirectoryPagination.tsx` |
+| Static cards | `ServiceCardLink.astro` (related on Service Pages) — SSR Lucide, no extra island |
 | Icons | `CategoryIcon.tsx` + `categoryIcons.ts` |
 | Accents | `categoryVisuals.ts` (code map by category id) |
 
@@ -33,12 +35,14 @@
 - **Directory / card scale (modest, post-NID compare):** card title `1.0625rem`, BN `0.875rem`, description `0.9375rem`, domain `0.8125rem`; Category Icon well `2.5rem` / glyph ~20px; chips `0.875rem` with ~`1.375rem` icon wells.
 - Prefer existing classes in `global.css` over ad-hoc pixel sizes in JSX.
 - Dark theme: keep contrast; accent soft tints must remain readable on `--surface`.
+- **Directory Pagination** (ADR-0010): Prev/Next + page numbers use `--green` / `--green-hover` / `--green-soft` only — never `--cat-accent`. **Load more** (same green family) sits between the grid and the pager: appends the next batch, keeps viewport, focuses the first new card; page jumps replace and scroll to results. Hide pager + Load more when results ≤ 21; page size 20 when ≥ 22. Reset to page 1 / append mode on query/category change. Count: `N services · Showing X · Page Y of Z`.
 
 ## Content → UI
 
 - Cards show: icon, title, `title_bn`, description, **official domain**, status when not ACTIVE.
 - Never reintroduce `meta_title` / `meta_description` content fields.
 - New categories need `icon` (lucide key) + entry in `CATEGORY_ACCENTS` if a dedicated hue is desired.
+- New Services need `directory_global_rank` + `directory_category_rank` (see [`directory-ranking.md`](directory-ranking.md)).
 
 ## Brand mark
 
@@ -51,4 +55,5 @@
 ## Related
 
 - **Service Page hop:** [`docs/guides/service-page.md`](service-page.md)
-- ADR-0003, ADR-0004, `docs/guides/performance.md`, `docs/specs/TRAPS.md` (#3–#7), `CONTEXT.md` § Instant Directory / Category Icon / Mobile-First
+- **Directory ranking:** [`docs/guides/directory-ranking.md`](directory-ranking.md)
+- ADR-0003, ADR-0004, ADR-0010, `docs/guides/performance.md`, `docs/specs/TRAPS.md` (#3–#7), `CONTEXT.md` § Instant Directory / Category Icon / Mobile-First / Directory ranks

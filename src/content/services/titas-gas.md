@@ -18,6 +18,8 @@ body_bn: |
 url: "https://titasgas.gov.bd/"
 official_domain: titasgas.gov.bd
 category: utilities
+directory_global_rank: 1040
+directory_category_rank: 50
 tags: [titas, gas, bill, "তিতাস", "গ্যাস"]
 aliases:
   - name: TGTDCL
@@ -43,3 +45,4 @@ faq:
 related: [dhaka-wasa, desco]
 last_verified: 2026-08-07
 ---
+

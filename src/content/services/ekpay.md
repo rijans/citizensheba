@@ -20,6 +20,8 @@ body_bn: |
 url: "https://ekpay.gov.bd/"
 official_domain: ekpay.gov.bd
 category: central
+directory_global_rank: 200
+directory_category_rank: 30
 tags: [ekpay, payment, bill, "একপে", "বিল"]
 aliases:
   - name: Ekpay
@@ -45,3 +47,4 @@ faq:
 related: [desco, dpdc, titas-gas, mygov, bpdb]
 last_verified: 2026-08-07
 ---
+

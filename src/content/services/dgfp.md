@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.dgfp.gov.bd/"
 official_domain: dgfp.gov.bd
 category: health
+directory_global_rank: 750
+directory_category_rank: 40
 tags: [dgfp, family planning, "ডিজিএফপি", "পরিবার পরিকল্পনা"]
 aliases:
   - name: Directorate General of Family Planning
@@ -45,3 +47,4 @@ faq:
 related: [dghs, surokkha, dgda, iedcr]
 last_verified: 2026-08-07
 ---
+

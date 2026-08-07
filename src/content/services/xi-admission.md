@@ -20,6 +20,8 @@ body_bn: |
 url: "http://www.xiclassadmission.gov.bd/"
 official_domain: xiclassadmission.gov.bd
 category: education
+directory_global_rank: 1110
+directory_category_rank: 30
 tags: [admission, college, xi, "একাদশ", "ভর্তি"]
 aliases:
   - name: class 11 admission
@@ -48,3 +50,4 @@ faq:
 
 last_verified: 2026-08-06
 ---
+

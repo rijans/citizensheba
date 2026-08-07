@@ -20,6 +20,8 @@ body_bn: |
 url: "https://customer.nesco.gov.bd/"
 official_domain: customer.nesco.gov.bd
 category: utilities
+directory_global_rank: 970
+directory_category_rank: 60
 tags: [nesco, electricity, bill, "নেসকো", "বিদ্যুৎ"]
 aliases:
   - name: Northern Electricity Supply
@@ -45,3 +47,4 @@ faq:
 related: [desco, dpdc, breb, wzpdcl, ekpay]
 last_verified: 2026-08-07
 ---
+

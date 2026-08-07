@@ -20,6 +20,8 @@ body_bn: |
 url: "https://roc.gov.bd/"
 official_domain: roc.gov.bd
 category: central
+directory_global_rank: 1010
+directory_category_rank: 290
 tags: [rjsc, company, registration, "আরজেএসসি", "কোম্পানি"]
 aliases:
   - name: Registrar of Joint Stock Companies
@@ -45,3 +47,4 @@ faq:
 related: [mygov, etin, national-portal]
 last_verified: 2026-08-07
 ---
+

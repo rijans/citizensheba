@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.berc.org.bd/"
 official_domain: berc.org.bd
 category: utilities
+directory_global_rank: 600
+directory_category_rank: 120
 tags: [berc, energy, tariff, "বিইআরসি", "জ্বালানি"]
 aliases:
   - name: Bangladesh Energy Regulatory Commission
@@ -45,3 +47,4 @@ faq:
 related: [bpdb, pgcb, desco, titas-gas, ekpay]
 last_verified: 2026-08-07
 ---
+

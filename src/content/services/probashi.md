@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.probashi.gov.bd/"
 official_domain: probashi.gov.bd
 category: migration
+directory_global_rank: 990
+directory_category_rank: 40
 tags: [probashi, expatriate, overseas, "প্রবাসী", "কল্যাণ"]
 aliases:
   - name: Ministry of Expatriates Welfare
@@ -45,3 +47,4 @@ faq:
 related: [bmet, wewb, hajj, epassport]
 last_verified: 2026-08-07
 ---
+

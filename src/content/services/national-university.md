@@ -18,6 +18,8 @@ body_bn: |
 url: "https://www.nu.ac.bd/"
 official_domain: nu.ac.bd
 category: education
+directory_global_rank: 950
+directory_category_rank: 130
 tags: [nu, university, exam, "জাতীয় বিশ্ববিদ্যালয়", "পরীক্ষা"]
 aliases:
   - name: NU Bangladesh
@@ -43,3 +45,4 @@ faq:
 related: [edu-results, xi-admission, teachers-portal, bou, ugc]
 last_verified: 2026-08-07
 ---
+

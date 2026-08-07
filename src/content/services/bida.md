@@ -20,6 +20,8 @@ body_bn: |
 url: "https://investbangladesh.gov.bd/"
 official_domain: investbangladesh.gov.bd
 category: central
+directory_global_rank: 620
+directory_category_rank: 210
 tags: [bida, investment, oss, "বিডা", "বিনিয়োগ"]
 aliases:
   - name: Bangladesh Investment Development Authority
@@ -45,3 +47,4 @@ faq:
 related: [rjsc, mygov, national-portal]
 last_verified: 2026-08-07
 ---
+

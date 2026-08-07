@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.rab.gov.bd/"
 official_domain: rab.gov.bd
 category: safety
+directory_global_rank: 1000
+directory_category_rank: 30
 tags: [rab, security, "র্যাব", "নিরাপত্তা"]
 aliases:
   - name: Rapid Action Battalion
@@ -45,3 +47,4 @@ faq:
 related: [police, fire-service, ecourt]
 last_verified: 2026-08-07
 ---
+

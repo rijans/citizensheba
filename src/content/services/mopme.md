@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.mopme.gov.bd/"
 official_domain: mopme.gov.bd
 category: education
+directory_global_rank: 920
+directory_category_rank: 90
 tags: [mopme, primary education, "প্রাথমিক শিক্ষা"]
 aliases:
   - name: Ministry of Primary and Mass Education
@@ -45,3 +47,4 @@ faq:
 related: [moedu, nctb, dshe, edu-results]
 last_verified: 2026-08-07
 ---
+

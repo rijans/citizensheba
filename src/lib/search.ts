@@ -25,7 +25,104 @@ export type SearchableService = {
   categoryNameBn: string;
   domain: string;
   status: 'ACTIVE' | 'MAINTENANCE' | 'DEPRECATED';
+  /** Home All empty-query order — lower = higher (ADR-0010). */
+  directoryGlobalRank: number;
+  /** Category / chip empty-query order — lower = higher (ADR-0010). */
+  directoryCategoryRank: number;
 };
+
+/** Cards per page when paginating. */
+export const DIRECTORY_PAGE_SIZE = 20;
+/** Show all without a pager when result count is at most this (avoids a lonely 1-card page). */
+export const DIRECTORY_SOFT_MAX = 21;
+
+export type DirectoryBrowseMode = 'replace' | 'append';
+
+export type DirectoryPageSlice<T> = {
+  items: T[];
+  page: number;
+  pageCount: number;
+  total: number;
+  showing: number;
+  remaining: number;
+  showPager: boolean;
+  showLoadMore: boolean;
+  /** Index of first newly revealed card when appending (for focus); null on replace/page 1. */
+  firstNewIndex: number | null;
+};
+
+export type PaginateDirectoryOptions = {
+  pageSize?: number;
+  softMax?: number;
+  /** `append` = show pages 1..page stacked; `replace` = show only the current page. */
+  mode?: DirectoryBrowseMode;
+};
+
+/** Clamp page and slice results. Soft-show-all when total ≤ DIRECTORY_SOFT_MAX. */
+export function paginateDirectory<T>(
+  items: T[],
+  page: number,
+  options: PaginateDirectoryOptions = {},
+): DirectoryPageSlice<T> {
+  const pageSize = options.pageSize ?? DIRECTORY_PAGE_SIZE;
+  const softMax = options.softMax ?? DIRECTORY_SOFT_MAX;
+  const mode = options.mode ?? 'replace';
+  const total = items.length;
+
+  if (total <= softMax) {
+    return {
+      items,
+      page: 1,
+      pageCount: 1,
+      total,
+      showing: total,
+      remaining: 0,
+      showPager: false,
+      showLoadMore: false,
+      firstNewIndex: null,
+    };
+  }
+
+  const pageCount = Math.max(1, Math.ceil(total / pageSize));
+  const safePage = Math.min(Math.max(1, page), pageCount);
+
+  let sliceItems: T[];
+  let firstNewIndex: number | null = null;
+
+  if (mode === 'append') {
+    const end = Math.min(total, safePage * pageSize);
+    sliceItems = items.slice(0, end);
+    if (safePage > 1) {
+      firstNewIndex = (safePage - 1) * pageSize;
+    }
+  } else {
+    const start = (safePage - 1) * pageSize;
+    sliceItems = items.slice(start, start + pageSize);
+  }
+
+  const showing = sliceItems.length;
+  const windowEnd = Math.min(total, safePage * pageSize);
+  const remaining = Math.max(0, total - windowEnd);
+
+  return {
+    items: sliceItems,
+    page: safePage,
+    pageCount,
+    total,
+    showing,
+    remaining,
+    showPager: true,
+    showLoadMore: remaining > 0,
+    firstNewIndex,
+  };
+}
+
+function compareBrowse(a: SearchableService, b: SearchableService, categoryId: string | null): number {
+  const rankA = categoryId ? a.directoryCategoryRank : a.directoryGlobalRank;
+  const rankB = categoryId ? b.directoryCategoryRank : b.directoryGlobalRank;
+  if (rankA !== rankB) return rankA - rankB;
+  return a.title.localeCompare(b.title);
+}
 
 /** Service-agnostic spelling twins (normalized forms). */
 export const SEARCH_VARIANT_GROUPS: readonly (readonly string[])[] = [
@@ -153,6 +250,8 @@ export function filterAndSort(
     .map((s) => ({ s, score: scoreService(s, query) }))
     .filter((x) => x.score >= 0);
 
-  if (!normalizeSearchText(query)) return scored.map((x) => x.s);
+  if (!normalizeSearchText(query)) {
+    return scored.map((x) => x.s).sort((a, b) => compareBrowse(a, b, categoryId));
+  }
   return scored.sort((a, b) => b.score - a.score).map((x) => x.s);
 }

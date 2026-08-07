@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.dss.gov.bd/"
 official_domain: dss.gov.bd
 category: central
+directory_global_rank: 800
+directory_category_rank: 250
 tags: [dss, social services, welfare, "সমাজসেবা", "ভাতা"]
 aliases:
   - name: Department of Social Services
@@ -45,3 +47,4 @@ faq:
 related: [mygov, national-portal, nid, mowca]
 last_verified: 2026-08-07
 ---
+

@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.mygov.bd/"
 official_domain: mygov.bd
 category: central
+directory_global_rank: 60
+directory_category_rank: 10
 tags: [mygov, "one stop", central, "সেবা"]
 aliases:
   - name: Amar Shorkar
@@ -43,3 +45,4 @@ faq:
 related: [national-portal, a2i, ekpay, rjsc]
 last_verified: 2026-08-06
 ---
+

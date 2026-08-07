@@ -20,6 +20,8 @@ body_bn: |
 url: "https://etaxnbr.gov.bd/"
 official_domain: etaxnbr.gov.bd
 category: tax
+directory_global_rank: 40
+directory_category_rank: 20
 tags: [return, tax, "income tax", nbr, "আয়কর"]
 aliases:
   - name: income tax return
@@ -46,3 +48,4 @@ faq:
 related: [etin, vat, customs, bangladesh-bank]
 last_verified: 2026-08-06
 ---
+

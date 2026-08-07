@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.dae.gov.bd/"
 official_domain: dae.gov.bd
 category: central
+directory_global_rank: 730
+directory_category_rank: 240
 tags: [dae, agriculture, farmers, "কৃষি", "সম্প্রসারণ"]
 aliases:
   - name: Department of Agricultural Extension
@@ -45,3 +47,4 @@ faq:
 related: [national-portal, mygov, ldtax, namjari]
 last_verified: 2026-08-07
 ---
+

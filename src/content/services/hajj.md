@@ -18,6 +18,8 @@ body_bn: |
 url: "https://hajj.gov.bd/"
 official_domain: hajj.gov.bd
 category: migration
+directory_global_rank: 550
+directory_category_rank: 30
 tags: [hajj, pilgrimage, "হজ", "হাজী"]
 aliases:
   - name: Hajj management
@@ -43,3 +45,4 @@ faq:
 related: [epassport, bmet, bangladesh-visa]
 last_verified: 2026-08-07
 ---
+

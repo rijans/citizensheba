@@ -18,6 +18,8 @@ body_bn: |
 url: "https://www.lawjusticediv.gov.bd/"
 official_domain: lawjusticediv.gov.bd
 category: justice
+directory_global_rank: 880
+directory_category_rank: 30
 tags: [law, justice, division, "আইন", "বিচার"]
 aliases:
   - name: Law & Justice Division
@@ -43,3 +45,4 @@ faq:
 related: [supremecourt, ecourt, police]
 last_verified: 2026-08-07
 ---
+

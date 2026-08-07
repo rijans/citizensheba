@@ -18,6 +18,8 @@ body_bn: |
 url: "https://www.du.ac.bd/"
 official_domain: du.ac.bd
 category: education
+directory_global_rank: 1070
+directory_category_rank: 70
 tags: [du, dhaka university, admission, "ঢাকা বিশ্ববিদ্যালয়"]
 aliases:
   - name: DU
@@ -43,3 +45,4 @@ faq:
 related: [buet, ugc, national-university, edu-results]
 last_verified: 2026-08-07
 ---
+

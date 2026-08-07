@@ -18,6 +18,8 @@ body_bn: |
 url: "https://ecourt.gov.bd/"
 official_domain: ecourt.gov.bd
 category: justice
+directory_global_rank: 810
+directory_category_rank: 10
 tags: [ecourt, court, mobile court, "ই-কোর্ট", "আদালত"]
 aliases:
   - name: eCourts
@@ -43,3 +45,4 @@ faq:
 related: [police, fire-service, supremecourt, lawjusticediv]
 last_verified: 2026-08-07
 ---
+

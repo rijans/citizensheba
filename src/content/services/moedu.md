@@ -18,6 +18,8 @@ body_bn: |
 url: "https://www.moedu.gov.bd/"
 official_domain: moedu.gov.bd
 category: education
+directory_global_rank: 890
+directory_category_rank: 40
 tags: [education ministry, moedu, "শিক্ষা মন্ত্রণালয়"]
 aliases:
   - name: MoE Bangladesh
@@ -43,3 +45,4 @@ faq:
 related: [edu-results, dshe, nctb, mopme, tmed]
 last_verified: 2026-08-07
 ---
+

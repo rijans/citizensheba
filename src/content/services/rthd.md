@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.rthd.gov.bd/"
 official_domain: rthd.gov.bd
 category: transport
+directory_global_rank: 1020
+directory_category_rank: 50
 tags: [rthd, roads, highways, "সড়ক", "মহাসড়ক"]
 aliases:
   - name: Road Transport and Highways Division
@@ -45,3 +47,4 @@ faq:
 related: [brta, railway, caab, biwtc]
 last_verified: 2026-08-07
 ---
+

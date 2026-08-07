@@ -18,6 +18,8 @@ body_bn: |
 url: "https://bangladesh.gov.bd/"
 official_domain: bangladesh.gov.bd
 category: central
+directory_global_rank: 70
+directory_category_rank: 20
 tags: [portal, ministries, government, "বাতায়ন"]
 aliases:
   - name: bangladesh.gov.bd
@@ -43,3 +45,4 @@ faq:
 
 last_verified: 2026-08-06
 ---
+

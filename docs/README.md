@@ -24,6 +24,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [guides/agent-workflow.md](guides/agent-workflow.md) | Stop-and-ask, patterns, parallel sessions, finalization |
 | [guides/service-page.md](guides/service-page.md) | **Service Page hop structure** (layout, bilingual rules, FAQ policy) |
 | [guides/display-names.md](guides/display-names.md) | Display Name table + Name Aliases |
+| [guides/directory-ranking.md](guides/directory-ranking.md) | Directory Global / Category ranks + Top browse table |
 | [guides/frontend.md](guides/frontend.md) | Cards, chips, Mobile-First, tokens, **brand logo / favicon** |
 | [guides/performance.md](guides/performance.md) | Islands, SSG, analytics weight |
 
@@ -40,6 +41,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [0007](adr/0007-bilingual-directory-search.md) | Bilingual Instant Directory search |
 | [0008](adr/0008-service-page-body-markdown.md) | Service Page body Markdown (EN + BN) |
 | [0009](adr/0009-service-page-bilingual-sections.md) | Service Page bilingual audience / FAQ / related |
+| [0010](adr/0010-directory-ranking-and-pagination.md) | Directory browse ranks + green pagination |
 
 ## Ops
 
@@ -58,5 +60,8 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [specs/…-design.md](superpowers/specs/2026-08-06-bd-digital-services-directory-design.md) | v1 product design |
 | [specs/…-name-aliases-design.md](superpowers/specs/2026-08-07-name-aliases-design.md) | Name Aliases (typed field, search, former line) |
 | [specs/…-priority-wave-design.md](superpowers/specs/2026-08-07-official-services-priority-wave-design.md) | Official Services priority wave + Catalog Backlog |
+| [specs/…-directory-ranking-pagination-design.md](superpowers/specs/2026-08-07-directory-ranking-pagination-design.md) | Directory ranking + pagination |
+| [specs/…-directory-load-more-design.md](superpowers/specs/2026-08-07-directory-load-more-design.md) | Directory Load more (append) + pager |
 | [plans/…-directory.md](superpowers/plans/2026-08-06-bd-digital-services-directory.md) | v1 implementation plan |
 | [plans/…-priority-wave.md](superpowers/plans/2026-08-07-official-services-priority-wave.md) | Official Services priority wave implementation |
+| [plans/…-directory-ranking-pagination.md](superpowers/plans/2026-08-07-directory-ranking-pagination.md) | Directory ranking + pagination implementation |

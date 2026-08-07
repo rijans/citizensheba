@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.tmed.gov.bd/"
 official_domain: tmed.gov.bd
 category: education
+directory_global_rank: 1050
+directory_category_rank: 100
 tags: [tmed, technical education, madrasah, "কারিগরি", "মাদরাসা"]
 aliases:
   - name: Technical and Madrasah Education Division
@@ -45,3 +47,4 @@ faq:
 related: [moedu, dshe, edu-results, nctb]
 last_verified: 2026-08-07
 ---
+

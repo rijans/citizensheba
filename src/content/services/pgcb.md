@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.pgcb.gov.bd/"
 official_domain: pgcb.gov.bd
 category: utilities
+directory_global_rank: 980
+directory_category_rank: 110
 tags: [pgcb, power grid, transmission, "পিজিসিবি", "গ্রিড"]
 aliases:
   - name: Power Grid Company of Bangladesh
@@ -45,3 +47,4 @@ faq:
 related: [bpdb, desco, dpdc, berc, ekpay]
 last_verified: 2026-08-07
 ---
+

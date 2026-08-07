@@ -18,6 +18,8 @@ body_bn: |
 url: "https://www.visa.gov.bd/"
 official_domain: visa.gov.bd
 category: migration
+directory_global_rank: 560
+directory_category_rank: 20
 tags: [visa, mrv, immigration, "ভিসা", "এমআরভি"]
 aliases:
   - name: MRV portal
@@ -43,3 +45,4 @@ faq:
 related: [epassport, bmet]
 last_verified: 2026-08-07
 ---
+

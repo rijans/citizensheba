@@ -41,6 +41,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | Catalog Backlog, seed, populate services, priority wave, remaining services, utilities, migration, DESCO, WASA, BMET | `docs/ops/service-catalog-backlog.md`, `docs/superpowers/specs/2026-08-07-official-services-priority-wave-design.md`, `CONTEXT.md` (Catalog Backlog), `docs/guides/service-page.md` |
 | Display Name, title casing, a2i, A2I, myGov, e-Namjari, official typography, Name Alias, synonym, former name, aliases | ADR-0005, ADR-0006, `docs/guides/display-names.md`, `CONTEXT.md` (Display Name, Name Alias), Trap #12–#14, `src/content/services/*.md`, `src/lib/search.ts` |
 | Instant Directory search, bilingual search, romanization, Search Variant, description_bn, relatedTitles | ADR-0007, `src/lib/search.ts`, `src/lib/buildSearchIndex.ts`, `CONTEXT.md` (Instant Directory, Search Variant), `tests/unit/search.test.ts` |
+| Directory rank, directory_global_rank, directory_category_rank, pagination, page size, popular services first | ADR-0010, `docs/guides/directory-ranking.md`, `docs/guides/frontend.md`, `CONTEXT.md` (Directory Global/Category Rank, Directory Pagination), `src/lib/search.ts` (`paginateDirectory`), `InstantDirectory.tsx`, `CategoryDirectory.tsx` |
 | Service Page, hop page, SEO hop, body_bn, audience_bn, FAQ q_bn, related services heading, outbound CTA, last verified, service page structure | **`docs/guides/service-page.md` (SSOT)**, ADR-0008, ADR-0009, `src/lib/markdown.ts`, `src/lib/servicePageCopy.ts`, `src/pages/services/[slug].astro`, `CONTEXT.md` (Service Page v1), Trap #9 |
 | Official catalog, MFS, bank, doorway | `AGENTS.md` do-nots, Traps #8–#9 |
 | `_headers` | Trap #2, `public/_headers` if present |
@@ -53,7 +54,8 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 
 | Area | Paths |
 |------|--------|
-| Home Instant Directory | `src/pages/index.astro`, `src/components/directory/InstantDirectory.tsx` |
+| Home Instant Directory | `src/pages/index.astro`, `src/components/directory/InstantDirectory.tsx`, `DirectoryPagination.tsx` |
+| Category directory (paginated) | `src/pages/categories/[slug].astro`, `src/components/directory/CategoryDirectory.tsx` |
 | Service / Category cards | `src/components/ui/ServiceCard.tsx`, `ServiceCardLink.astro`, `CategoryIcon.tsx` |
 | Layout shell | `src/components/layout/BaseLayout.astro`, `Header.astro`, `Footer.astro` |
 | Brand / favicon / PWA icons | `public/brand/citizensheba-logo.png`, `public/favicon*`, `public/icons/`, `public/manifest.webmanifest`, `docs/guides/frontend.md` § Brand mark |
@@ -85,3 +87,4 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | 0007 Bilingual Directory search | `docs/adr/0007-bilingual-directory-search.md` |
 | 0008 Service Page body Markdown | `docs/adr/0008-service-page-body-markdown.md` |
 | 0009 Service Page bilingual sections | `docs/adr/0009-service-page-bilingual-sections.md` |
+| 0010 Directory ranking + pagination | `docs/adr/0010-directory-ranking-and-pagination.md` |

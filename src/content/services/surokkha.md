@@ -20,6 +20,8 @@ body_bn: |
 url: "https://surokkha.gov.bd/"
 official_domain: surokkha.gov.bd
 category: health
+directory_global_rank: 180
+directory_category_rank: 10
 tags: [vaccine, covid, certificate, "টিকা"]
 aliases:
   - name: vaccine certificate
@@ -45,3 +47,4 @@ faq:
 
 last_verified: 2026-08-06
 ---
+

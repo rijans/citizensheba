@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.buet.ac.bd/"
 official_domain: buet.ac.bd
 category: education
+directory_global_rank: 710
+directory_category_rank: 80
 tags: [buet, engineering, admission, "বুয়েট"]
 aliases:
   - name: Bangladesh University of Engineering and Technology
@@ -45,3 +47,4 @@ faq:
 related: [du, ugc, national-university, edu-results]
 last_verified: 2026-08-07
 ---
+

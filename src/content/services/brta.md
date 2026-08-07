@@ -20,6 +20,8 @@ body_bn: |
 url: "https://bsp.brta.gov.bd/"
 official_domain: bsp.brta.gov.bd
 category: transport
+directory_global_rank: 130
+directory_category_rank: 20
 tags: ["driving licence", license, vehicle, brta, "লাইসেন্স"]
 aliases:
   - name: driving license
@@ -45,3 +47,4 @@ faq:
 
 last_verified: 2026-08-06
 ---
+

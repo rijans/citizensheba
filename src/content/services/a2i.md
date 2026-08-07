@@ -20,6 +20,8 @@ body_bn: |
 url: "https://a2i.gov.bd/"
 official_domain: a2i.gov.bd
 category: central
+directory_global_rank: 500
+directory_category_rank: 40
 tags: [a2i, digital, innovation, "এটুআই", services]
 aliases:
   - name: Aspire to Innovate
@@ -43,3 +45,4 @@ faq:
 related: [mygov, national-portal, bcc, doict]
 last_verified: 2026-08-06
 ---
+

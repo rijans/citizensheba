@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.dgda.gov.bd/"
 official_domain: dgda.gov.bd
 category: health
+directory_global_rank: 740
+directory_category_rank: 30
 tags: [dgda, drug, medicine, "ডিজিডিএ", "ওষুধ"]
 aliases:
   - name: Directorate General of Drug Administration
@@ -45,3 +47,4 @@ faq:
 related: [dghs, surokkha, bfsa]
 last_verified: 2026-08-07
 ---
+

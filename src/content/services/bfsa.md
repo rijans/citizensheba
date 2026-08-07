@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.bfsa.gov.bd/"
 official_domain: bfsa.gov.bd
 category: health
+directory_global_rank: 610
+directory_category_rank: 60
 tags: [bfsa, food safety, "বিএফএসএ", "নিরাপদ খাদ্য"]
 aliases:
   - name: Bangladesh Food Safety Authority
@@ -45,3 +47,4 @@ faq:
 related: [dghs, dgda, surokkha]
 last_verified: 2026-08-07
 ---
+

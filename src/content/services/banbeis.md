@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.banbeis.gov.bd/"
 official_domain: banbeis.gov.bd
 category: education
+directory_global_rank: 510
+directory_category_rank: 140
 tags: [banbeis, education statistics, "ব্যানবেইস", "শিক্ষা তথ্য"]
 aliases:
   - name: Bangladesh Bureau of Educational Information and Statistics
@@ -45,3 +47,4 @@ faq:
 related: [moedu, edu-results, dshe, nctb]
 last_verified: 2026-08-07
 ---
+

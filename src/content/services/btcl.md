@@ -20,6 +20,8 @@ body_bn: |
 url: "https://mybtcl.btcl.gov.bd/"
 official_domain: mybtcl.btcl.gov.bd
 category: utilities
+directory_global_rank: 940
+directory_category_rank: 100
 tags: [btcl, telephone, telecom, "বিটিসিএল", "টেলিফোন"]
 aliases:
   - name: BTCL
@@ -45,3 +47,4 @@ faq:
 related: [ekpay, national-portal]
 last_verified: 2026-08-07
 ---
+

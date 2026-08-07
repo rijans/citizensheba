@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.wewb.gov.bd/"
 official_domain: wewb.gov.bd
 category: migration
+directory_global_rank: 1090
+directory_category_rank: 50
 tags: [wewb, expatriate, welfare, "প্রবাসী", "কল্যাণ"]
 aliases:
   - name: Wage Earners Welfare Board
@@ -45,3 +47,4 @@ faq:
 related: [bmet, bangladesh-visa, epassport, probashi, hajj]
 last_verified: 2026-08-07
 ---
+

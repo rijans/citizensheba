@@ -18,6 +18,8 @@ body_bn: |
 url: "https://www.bou.ac.bd/"
 official_domain: bou.ac.bd
 category: education
+directory_global_rank: 570
+directory_category_rank: 120
 tags: [bou, open university, distance learning, "উন্মুক্ত বিশ্ববিদ্যালয়"]
 aliases:
   - name: BOU
@@ -43,3 +45,4 @@ faq:
 related: [national-university, edu-results, teachers-portal]
 last_verified: 2026-08-07
 ---
+

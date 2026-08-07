@@ -18,6 +18,8 @@ body_bn: |
 url: "https://www.biman.gov.bd/"
 official_domain: biman.gov.bd
 category: transport
+directory_global_rank: 630
+directory_category_rank: 30
 tags: [biman, airline, flight, "বিমান", "এয়ারলাইন্স"]
 aliases:
   - name: Biman
@@ -43,3 +45,4 @@ faq:
 related: [caab, railway, epassport, biwtc]
 last_verified: 2026-08-07
 ---
+

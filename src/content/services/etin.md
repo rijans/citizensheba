@@ -20,6 +20,8 @@ body_bn: |
 url: "https://secure.incometax.gov.bd/"
 official_domain: secure.incometax.gov.bd
 category: tax
+directory_global_rank: 30
+directory_category_rank: 10
 tags: [tin, tax, nbr, income, "টিআইএন"]
 aliases:
   - name: TIN
@@ -49,3 +51,4 @@ faq:
 related: [ereturn, customs, rjsc, vat, bangladesh-bank]
 last_verified: 2026-08-06
 ---
+

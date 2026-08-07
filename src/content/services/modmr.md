@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.modmr.gov.bd/"
 official_domain: modmr.gov.bd
 category: safety
+directory_global_rank: 910
+directory_category_rank: 50
 tags: [modmr, disaster, relief, "দুর্যোগ", "ত্রাণ"]
 aliases:
   - name: Ministry of Disaster Management and Relief
@@ -45,3 +47,4 @@ faq:
 related: [ffwc, bmd, fire-service, police]
 last_verified: 2026-08-07
 ---
+

@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.vat.gov.bd/"
 official_domain: vat.gov.bd
 category: tax
+directory_global_rank: 1080
+directory_category_rank: 30
 tags: [vat, nbr, tax, "ভ্যাট", "কর"]
 aliases:
   - name: VAT
@@ -45,3 +47,4 @@ faq:
 related: [etin, ereturn, customs, bangladesh-bank]
 last_verified: 2026-08-07
 ---
+

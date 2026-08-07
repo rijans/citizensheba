@@ -20,6 +20,8 @@ body_bn: |
 url: "https://dghs.gov.bd/"
 official_domain: dghs.gov.bd
 category: health
+directory_global_rank: 760
+directory_category_rank: 20
 tags: [dghs, health, "স্বাস্থ্য", hospital]
 aliases:
   - name: Directorate General of Health Services
@@ -46,3 +48,4 @@ faq:
 related: [surokkha, dgda, bfsa, iedcr]
 last_verified: 2026-08-06
 ---
+

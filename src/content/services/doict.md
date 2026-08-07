@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.doict.gov.bd/"
 official_domain: doict.gov.bd
 category: central
+directory_global_rank: 780
+directory_category_rank: 60
 tags: [doict, ict, "ডয়েক্ট", "আইসিটি"]
 aliases:
   - name: Department of ICT
@@ -45,3 +47,4 @@ faq:
 related: [bcc, a2i, mygov, national-portal]
 last_verified: 2026-08-07
 ---
+

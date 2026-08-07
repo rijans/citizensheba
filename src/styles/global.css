@@ -641,6 +641,104 @@ html[data-theme="dark"] .directory-chips-wrap::after {
   text-decoration: underline;
 }
 
+.directory-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+  margin: 1.25rem 0 0;
+}
+
+.directory-load-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 1.25rem 0 0;
+}
+
+.directory-load-more__btn {
+  min-height: 2.5rem;
+  padding: 0.45rem 1.25rem;
+  border: 1px solid var(--green);
+  border-radius: 0.5rem;
+  background: var(--green-soft);
+  color: var(--green);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.directory-load-more__btn:hover {
+  border-color: var(--green-hover);
+  color: var(--green-hover);
+  background: var(--green-soft);
+}
+
+.directory-load-more__hint {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--ink-subtle);
+}
+
+.directory-grid > li:focus {
+  outline: none;
+}
+
+.directory-grid > li:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+  border-radius: 0.75rem;
+}
+
+.directory-pagination__pages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.directory-pagination__btn,
+.directory-pagination__page {
+  min-height: 2.375rem;
+  min-width: 2.375rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.875rem;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.directory-pagination__btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.directory-pagination__btn:not(:disabled):hover,
+.directory-pagination__page:hover {
+  border-color: var(--green);
+  color: var(--green);
+  background: var(--green-soft);
+}
+
+.directory-pagination__page--current {
+  border-color: var(--green);
+  background: var(--green);
+  color: #fff;
+}
+
+.directory-pagination__page--current:hover {
+  border-color: var(--green-hover);
+  background: var(--green-hover);
+  color: #fff;
+}
+
 .directory-grid {
   display: grid;
   gap: 0.875rem;

@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.epassport.gov.bd/"
 official_domain: epassport.gov.bd
 category: identity
+directory_global_rank: 20
+directory_category_rank: 20
 tags: [passport, mrp, travel, "পাসপোর্ট"]
 aliases:
   - name: MRP
@@ -46,3 +48,4 @@ faq:
 related: [nid, bangladesh-visa, bmet, dip]
 last_verified: 2026-08-06
 ---
+

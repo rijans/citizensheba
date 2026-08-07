@@ -18,6 +18,8 @@ body_bn: |
 url: "https://fireservice.gov.bd/"
 official_domain: fireservice.gov.bd
 category: safety
+directory_global_rank: 190
+directory_category_rank: 20
 tags: [fire, civil defence, emergency, "ফায়ার", "সিভিল ডিফেন্স"]
 aliases:
   - name: FSCD
@@ -43,3 +45,4 @@ faq:
 related: [police, modmr, ffwc, coastguard]
 last_verified: 2026-08-07
 ---
+

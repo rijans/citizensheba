@@ -18,6 +18,8 @@ body_bn: |
 url: "https://www.bangladeshpost.gov.bd/"
 official_domain: bangladeshpost.gov.bd
 category: central
+directory_global_rank: 580
+directory_category_rank: 200
 tags: [post, postal, tracking, "ডাক", "পোস্ট"]
 aliases:
   - name: Bangladesh Postal Department
@@ -43,3 +45,4 @@ faq:
 related: [national-portal, mygov]
 last_verified: 2026-08-07
 ---
+

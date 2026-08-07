@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.iedcr.gov.bd/"
 official_domain: iedcr.gov.bd
 category: health
+directory_global_rank: 860
+directory_category_rank: 50
 tags: [iedcr, epidemiology, disease control, "আইইডিসিআর", "রোগ নিয়ন্ত্রণ"]
 aliases:
   - name: Institute of Epidemiology Disease Control and Research
@@ -45,3 +47,4 @@ faq:
 related: [dghs, surokkha, dgda, bfsa]
 last_verified: 2026-08-07
 ---
+

@@ -72,7 +72,16 @@ export async function buildSearchIndex(): Promise<{
       categoryNameBn: cat.nameBn,
       domain: s.data.official_domain ?? officialDomainFromUrl(s.data.url),
       status: s.data.status,
+      directoryGlobalRank: s.data.directory_global_rank,
+      directoryCategoryRank: s.data.directory_category_rank,
     };
+  });
+
+  services.sort((a, b) => {
+    if (a.directoryGlobalRank !== b.directoryGlobalRank) {
+      return a.directoryGlobalRank - b.directoryGlobalRank;
+    }
+    return a.title.localeCompare(b.title);
   });
 
   return { categories, services };

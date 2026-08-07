@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.mowca.gov.bd/"
 official_domain: mowca.gov.bd
 category: central
+directory_global_rank: 930
+directory_category_rank: 280
 tags: [mowca, women, children, "মহিলা", "শিশু"]
 aliases:
   - name: Ministry of Women and Children Affairs
@@ -45,3 +47,4 @@ faq:
 related: [dss, dghs, national-portal, mygov]
 last_verified: 2026-08-07
 ---
+

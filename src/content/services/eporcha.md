@@ -20,6 +20,8 @@ body_bn: |
 url: "https://eporcha.gov.bd/"
 official_domain: eporcha.gov.bd
 category: land
+directory_global_rank: 150
+directory_category_rank: 10
 tags: [khatian, "land record", mouza, porcha, "খতিয়ান"]
 aliases:
   - name: porcha
@@ -48,3 +50,4 @@ faq:
 
 last_verified: 2026-08-06
 ---
+

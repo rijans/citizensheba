@@ -18,6 +18,8 @@ body_bn: |
 url: "https://ldtax.gov.bd/"
 official_domain: ldtax.gov.bd
 category: land
+directory_global_rank: 870
+directory_category_rank: 30
 tags: ["land tax", khajna, dakhila, "খাজনা"]
 aliases:
   - name: khajna
@@ -46,3 +48,4 @@ faq:
 
 last_verified: 2026-08-06
 ---
+

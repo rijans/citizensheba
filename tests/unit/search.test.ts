@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   filterAndSort,
   normalizeSearchText,
+  paginateDirectory,
   scoreService,
   type SearchableService,
 } from '../../src/lib/search';
@@ -14,6 +15,8 @@ const base = {
   descriptionBn: '',
   searchBlob: '',
   relatedTitles: [] as string[],
+  directoryGlobalRank: 500,
+  directoryCategoryRank: 100,
 };
 
 const nid: SearchableService = {
@@ -28,6 +31,8 @@ const nid: SearchableService = {
   tags: ['nid', 'voter', 'identity', 'পরিচয়পত্র'],
   aliases: ['national identity card', 'এনআইডি'],
   domain: 'services.nidw.gov.bd',
+  directoryGlobalRank: 10,
+  directoryCategoryRank: 10,
 };
 
 const passport: SearchableService = {
@@ -45,6 +50,8 @@ const passport: SearchableService = {
   categoryName: 'Travel',
   categoryNameBn: 'ভ্রমণ',
   domain: 'epassport.gov.bd',
+  directoryGlobalRank: 20,
+  directoryCategoryRank: 10,
 };
 
 const brta: SearchableService = {
@@ -61,6 +68,8 @@ const brta: SearchableService = {
   categoryName: 'Transport',
   categoryNameBn: 'পরিবহন',
   domain: 'bsp.brta.gov.bd',
+  directoryGlobalRank: 130,
+  directoryCategoryRank: 20,
 };
 
 describe('normalizeSearchText', () => {
@@ -121,5 +130,60 @@ describe('filterAndSort', () => {
   it('sorts by score when query is non-empty', () => {
     const result = filterAndSort([passport, nid], 'nid', null);
     expect(result[0]?.id).toBe('nid');
+  });
+
+  it('sorts by directoryGlobalRank when All + empty query', () => {
+    const low: SearchableService = { ...brta, id: 'z-low', title: 'Zebra', directoryGlobalRank: 5 };
+    const result = filterAndSort([passport, low, nid], '', null);
+    expect(result.map((s) => s.id)).toEqual(['z-low', 'nid', 'passport']);
+  });
+
+  it('sorts by directoryCategoryRank when category chip + empty query', () => {
+    const late: SearchableService = {
+      ...nid,
+      id: 'late-nid',
+      title: 'AAA Late',
+      directoryCategoryRank: 99,
+    };
+    const result = filterAndSort([late, nid], '', 'identity');
+    expect(result.map((s) => s.id)).toEqual(['nid', 'late-nid']);
+  });
+});
+
+describe('paginateDirectory', () => {
+  const items = Array.from({ length: 82 }, (_, i) => i + 1);
+
+  it('shows all without pager when total ≤ soft max (21)', () => {
+    const slice = paginateDirectory(items.slice(0, 21), 1);
+    expect(slice.showPager).toBe(false);
+    expect(slice.showLoadMore).toBe(false);
+    expect(slice.items).toHaveLength(21);
+  });
+
+  it('pages by 20 when total ≥ 22 (replace)', () => {
+    const slice = paginateDirectory(items, 1, { mode: 'replace' });
+    expect(slice.showPager).toBe(true);
+    expect(slice.items).toEqual(items.slice(0, 20));
+    expect(slice.pageCount).toBe(5);
+    expect(slice.showing).toBe(20);
+    expect(slice.remaining).toBe(62);
+    expect(paginateDirectory(items, 2, { mode: 'replace' }).items).toEqual(items.slice(20, 40));
+  });
+
+  it('append stacks pages 1..page and exposes firstNewIndex', () => {
+    const page2 = paginateDirectory(items, 2, { mode: 'append' });
+    expect(page2.items).toEqual(items.slice(0, 40));
+    expect(page2.showing).toBe(40);
+    expect(page2.remaining).toBe(42);
+    expect(page2.page).toBe(2);
+    expect(page2.firstNewIndex).toBe(20);
+    expect(page2.showLoadMore).toBe(true);
+  });
+
+  it('hides Load more on the last page window', () => {
+    const last = paginateDirectory(items, 5, { mode: 'append' });
+    expect(last.showing).toBe(82);
+    expect(last.remaining).toBe(0);
+    expect(last.showLoadMore).toBe(false);
   });
 });

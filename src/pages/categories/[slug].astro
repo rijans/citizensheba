@@ -1,8 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../components/layout/BaseLayout.astro';
-import ServiceCardLink from '../../components/ui/ServiceCardLink.astro';
-import { categoryPath, servicePath, officialDomainFromUrl } from '../../lib/urls';
+import CategoryDirectory from '../../components/directory/CategoryDirectory';
+import { categoryPath, officialDomainFromUrl } from '../../lib/urls';
 import { documentTitle, metaDescription } from '../../lib/seo';
 
 export async function getStaticPaths() {
@@ -13,7 +13,22 @@ export async function getStaticPaths() {
 const { category } = Astro.props;
 const services = (await getCollection('services'))
   .filter((s) => s.data.category === category.data.id)
-  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+  .sort((a, b) => {
+    if (a.data.directory_category_rank !== b.data.directory_category_rank) {
+      return a.data.directory_category_rank - b.data.directory_category_rank;
+    }
+    return a.data.title.localeCompare(b.data.title);
+  })
+  .map((s) => ({
+    id: s.data.id,
+    slug: s.data.slug,
+    title: s.data.title,
+    titleBn: s.data.title_bn,
+    description: s.data.description,
+    domain: s.data.official_domain ?? officialDomainFromUrl(s.data.url),
+    status: s.data.status,
+    directoryCategoryRank: s.data.directory_category_rank,
+  }));
 
 const title = documentTitle(category.data.name_bn, category.data.name);
 const description = metaDescription(category.data.description_bn, category.data.description);
@@ -38,21 +53,12 @@ const description = metaDescription(category.data.description_bn, category.data.
       <a href={`/?cat=${category.data.id}`}>Browse on Home</a>
     </p>
 
-    <div class="directory-grid">
-      {
-        services.map((s) => (
-          <ServiceCardLink
-            href={servicePath(s.data.slug)}
-            title={s.data.title}
-            titleBn={s.data.title_bn}
-            description={s.data.description}
-            domain={s.data.official_domain ?? officialDomainFromUrl(s.data.url)}
-            status={s.data.status}
-            categoryId={category.data.id}
-            icon={category.data.icon}
-          />
-        ))
-      }
-    </div>
+    <CategoryDirectory
+      client:load
+      categoryId={category.data.id}
+      categoryName={category.data.name}
+      icon={category.data.icon}
+      services={services}
+    />
   </article>
 </BaseLayout>

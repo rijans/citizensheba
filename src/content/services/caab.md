@@ -20,6 +20,8 @@ body_bn: |
 url: "https://caab.gov.bd/"
 official_domain: caab.gov.bd
 category: transport
+directory_global_rank: 720
+directory_category_rank: 40
 tags: [caab, aviation, airport, "সিএএবি", "বিমান"]
 aliases:
   - name: Civil Aviation Authority of Bangladesh
@@ -45,3 +47,4 @@ faq:
 related: [railway, brta, epassport, biman, biwtc]
 last_verified: 2026-08-07
 ---
+

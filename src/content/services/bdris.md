@@ -18,6 +18,8 @@ body_bn: |
 url: "https://bdris.gov.bd/"
 official_domain: bdris.gov.bd
 category: identity
+directory_global_rank: 50
+directory_category_rank: 30
 tags: [birth, death, certificate, bdris, "জন্ম নিবন্ধন"]
 aliases:
   - name: birth registration
@@ -46,3 +48,4 @@ faq:
 
 last_verified: 2026-08-06
 ---
+

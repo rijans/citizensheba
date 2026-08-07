@@ -20,6 +20,8 @@ body_bn: |
 url: "https://www.nctb.gov.bd/"
 official_domain: nctb.gov.bd
 category: education
+directory_global_rank: 960
+directory_category_rank: 50
 tags: [nctb, textbook, curriculum, "এনসিটিবি", "পাঠ্যপুস্তক"]
 aliases:
   - name: National Curriculum and Textbook Board
@@ -45,3 +47,4 @@ faq:
 related: [dshe, edu-results, teachers-portal, xi-admission]
 last_verified: 2026-08-07
 ---
+

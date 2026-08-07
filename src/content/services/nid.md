@@ -20,6 +20,8 @@ body_bn: |
 url: "https://services.nidw.gov.bd/nid-pub/"
 official_domain: services.nidw.gov.bd
 category: identity
+directory_global_rank: 10
+directory_category_rank: 10
 tags: [nid, voter, identity, "smart card", "পরিচয়পত্র"]
 aliases:
   - name: National ID
@@ -45,3 +47,4 @@ faq:
 
 last_verified: 2026-08-06
 ---
+

@@ -18,6 +18,8 @@ body_bn: |
 url: "https://customs.gov.bd/"
 official_domain: customs.gov.bd
 category: tax
+directory_global_rank: 540
+directory_category_rank: 40
 tags: [customs, import, export, "কাস্টমস", "শুল্ক"]
 aliases:
   - name: Customs BD
@@ -43,3 +45,4 @@ faq:
 related: [etin, ereturn, national-portal]
 last_verified: 2026-08-07
 ---
+

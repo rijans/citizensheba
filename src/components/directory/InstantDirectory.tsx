@@ -1,10 +1,17 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
-import { filterAndSort, type SearchableService } from '../../lib/search';
+import {
+  filterAndSort,
+  paginateDirectory,
+  type DirectoryBrowseMode,
+  type SearchableService,
+} from '../../lib/search';
 import { categoryPath, servicePath } from '../../lib/urls';
 import { accentStyle } from '../../lib/categoryVisuals';
 import { LayoutGrid, SearchX } from '../../lib/categoryIcons';
 import CategoryIcon from '../ui/CategoryIcon';
 import ServiceCard from '../ui/ServiceCard';
+import DirectoryPagination from './DirectoryPagination';
+import DirectoryLoadMore from './DirectoryLoadMore';
 
 type Category = {
   id: string;
@@ -30,13 +37,38 @@ export default function InstantDirectory({
 }: Props) {
   const [query, setQuery] = useState('');
   const [categoryId, setCategoryId] = useState<string | null>(initialCategoryId);
+  const [page, setPage] = useState(1);
+  const [mode, setMode] = useState<DirectoryBrowseMode>('append');
   const [chipOverflow, setChipOverflow] = useState({ left: false, right: false });
   const chipsRef = useRef<HTMLDivElement>(null);
+  const resultsRef = useRef<HTMLDivElement>(null);
+  const focusNewRef = useRef(false);
 
   const results = useMemo(
     () => filterAndSort(services, query, categoryId),
     [services, query, categoryId],
   );
+
+  const slice = useMemo(
+    () => paginateDirectory(results, page, { mode }),
+    [results, page, mode],
+  );
+
+  useEffect(() => {
+    setPage(1);
+    setMode('append');
+  }, [query, categoryId]);
+
+  useEffect(() => {
+    if (page !== slice.page) setPage(slice.page);
+  }, [page, slice.page]);
+
+  useEffect(() => {
+    if (!focusNewRef.current || slice.firstNewIndex == null) return;
+    focusNewRef.current = false;
+    const el = document.getElementById(`directory-card-${slice.firstNewIndex}`);
+    el?.focus({ preventScroll: true });
+  }, [slice.items, slice.firstNewIndex]);
 
   const iconByCategory = useMemo(
     () => Object.fromEntries(categories.map((c) => [c.id, c.icon])),
@@ -78,8 +110,24 @@ export default function InstantDirectory({
     setCategoryId(null);
   };
 
+  const onPageChange = (next: number) => {
+    setMode('replace');
+    setPage(next);
+    resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  const onLoadMore = () => {
+    focusNewRef.current = true;
+    setMode('append');
+    setPage((p) => p + 1);
+  };
+
   const countLabel =
-    results.length === 1 ? '1 service' : `${results.length} services`;
+    slice.total === 1
+      ? '1 service'
+      : slice.showPager
+        ? `${slice.total} services · Showing ${slice.showing} · Page ${slice.page} of ${slice.pageCount}`
+        : `${slice.total} services`;
 
   const chipsWrapClass = [
     'directory-chips-wrap',
@@ -90,7 +138,7 @@ export default function InstantDirectory({
     .join(' ');
 
   return (
-    <div className="directory">
+    <div className="directory" ref={resultsRef}>
       <div className="directory-search">
         <label className="sr-only" htmlFor="directory-query">
           {SEARCH_PLACEHOLDER}
@@ -191,7 +239,7 @@ export default function InstantDirectory({
         )}
       </div>
 
-      {results.length === 0 ? (
+      {slice.total === 0 ? (
         <div className="directory-empty">
           <span className="directory-empty__icon" aria-hidden="true">
             <SearchX size={28} strokeWidth={1.75} />
@@ -205,22 +253,35 @@ export default function InstantDirectory({
           )}
         </div>
       ) : (
-        <ul className="directory-grid">
-          {results.map((svc) => (
-            <li key={svc.id}>
-              <ServiceCard
-                href={servicePath(svc.slug)}
-                title={svc.title}
-                titleBn={svc.titleBn}
-                description={svc.description}
-                domain={svc.domain}
-                status={svc.status}
-                categoryId={svc.categoryId}
-                icon={iconByCategory[svc.categoryId] ?? 'landmark'}
-              />
-            </li>
-          ))}
-        </ul>
+        <>
+          <ul className="directory-grid">
+            {slice.items.map((svc, i) => (
+              <li key={svc.id} id={`directory-card-${i}`} tabIndex={-1}>
+                <ServiceCard
+                  href={servicePath(svc.slug)}
+                  title={svc.title}
+                  titleBn={svc.titleBn}
+                  description={svc.description}
+                  domain={svc.domain}
+                  status={svc.status}
+                  categoryId={svc.categoryId}
+                  icon={iconByCategory[svc.categoryId] ?? 'landmark'}
+                />
+              </li>
+            ))}
+          </ul>
+          {slice.showLoadMore && (
+            <DirectoryLoadMore remaining={slice.remaining} onLoadMore={onLoadMore} />
+          )}
+          {slice.showPager && (
+            <DirectoryPagination
+              page={slice.page}
+              pageCount={slice.pageCount}
+              onPageChange={onPageChange}
+              label="Directory results"
+            />
+          )}
+        </>
       )}
     </div>
   );

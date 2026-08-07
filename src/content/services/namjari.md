@@ -20,6 +20,8 @@ body_bn: |
 url: "https://mutation.land.gov.bd/"
 official_domain: mutation.land.gov.bd
 category: land
+directory_global_rank: 830
+directory_category_rank: 20
 tags: [mutation, namjari, "নামজারি"]
 aliases:
   - name: namjari
@@ -45,3 +47,4 @@ faq:
 
 last_verified: 2026-08-06
 ---
+

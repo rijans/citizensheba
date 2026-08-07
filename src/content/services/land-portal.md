@@ -18,6 +18,8 @@ body_bn: |
 url: "https://www.land.gov.bd/"
 official_domain: land.gov.bd
 category: land
+directory_global_rank: 900
+directory_category_rank: 40
 tags: [land, "ভূমি", ministry, khatian]
 aliases:
   - name: land ministry
@@ -43,3 +45,4 @@ faq:
 
 last_verified: 2026-08-06
 ---
+
