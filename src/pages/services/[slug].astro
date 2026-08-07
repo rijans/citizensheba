@@ -6,7 +6,7 @@ import ServiceFaq from '../../components/service/ServiceFaq.astro';
 import StatusBadge from '../../components/service/StatusBadge.astro';
 import ServiceCardLink from '../../components/ui/ServiceCardLink.astro';
 import { categoryPath, servicePath, officialDomainFromUrl } from '../../lib/urls';
-import { REPORT_EMAIL } from '../../lib/site';
+// import { REPORT_EMAIL } from '../../lib/site';
 import { documentTitle, metaDescription } from '../../lib/seo';
 import { renderMarkdown } from '../../lib/markdown';
 import { servicePageHeadings } from '../../lib/servicePageCopy';
@@ -37,7 +37,8 @@ const title = documentTitle(
   service.data.serp_title ?? service.data.title,
 );
 const description = metaDescription(service.data.description_bn, service.data.description);
-const reportSubject = encodeURIComponent(`Report: ${service.data.slug}`);
+// Temporarily disabled — Report a problem mailto
+// const reportSubject = encodeURIComponent(`Report: ${service.data.slug}`);
 const formerAliases = (service.data.aliases ?? []).filter((a) => a.kind === 'former');
 const bodyHtml = renderMarkdown(service.data.body);
 const bodyBnHtml = renderMarkdown(service.data.body_bn);
@@ -142,8 +143,10 @@ const verifiedIso = service.data.last_verified.toISOString().slice(0, 10);
       </div>
     </section>
 
+    {/* Temporarily disabled — Report a problem
     <p class="service-page__report">
       <a href={`mailto:${REPORT_EMAIL}?subject=${reportSubject}`}>Report a problem</a>
     </p>
+    */}
   </article>
 </BaseLayout>

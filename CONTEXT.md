@@ -119,7 +119,7 @@ v1 ships a web app manifest and icons so users can Add to Home Screen. No servic
 _Avoid_: Full offline PWA, promising that official portals work offline
 
 **Link Health**:
-Outbound Links are kept trustworthy via (1) user “Report a problem” on Service Pages and (2) automated link checks (e.g. CI) that surface broken/changed URLs for editorial fix in git. Status and last-verified on the Service Page reflect editorial judgment.
+Outbound Links are kept trustworthy via automated link checks (e.g. CI) that surface broken/changed URLs for editorial fix in git. A Service Page “Report a problem” mailto exists in code but is **temporarily disabled** in the hop UI. Status and last-verified on the Service Page reflect editorial judgment.
 _Avoid_: Auto-changing status without human review, proxying official sites
 
 **Service Slug**:

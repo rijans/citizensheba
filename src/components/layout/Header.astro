@@ -41,10 +41,21 @@ import { SITE_NAME, SITE_NAME_BN } from '../../lib/site';
 </header>
 
 <script is:inline>
-  document.getElementById('theme-toggle')?.addEventListener('click', () => {
-    const root = document.documentElement;
-    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
-    localStorage.setItem('data-theme', next);
-  });
+  (function () {
+    const header = document.querySelector('.site-header');
+    const toggle = document.getElementById('theme-toggle');
+    toggle?.addEventListener('click', () => {
+      const root = document.documentElement;
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('data-theme', next);
+    });
+
+    if (!header) return;
+    const syncElevated = () => {
+      header.classList.toggle('site-header--elevated', window.scrollY > 2);
+    };
+    syncElevated();
+    window.addEventListener('scroll', syncElevated, { passive: true });
+  })();
 </script>

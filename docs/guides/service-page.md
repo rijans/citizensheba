@@ -31,7 +31,7 @@ Implementation: `src/pages/services/[slug].astro`.
 | 10 | Who is this for | `audience_bn` then `audience` | Heading EN+BN; values BN then EN |
 | 11 | FAQ | `faq[]` with `q`/`a`/`q_bn`/`a_bn` | Heading EN+BN; Q EN+BN one line; answers BN then EN |
 | 12 | Related services | related cards | Heading EN+BN; cards already show `title` + `title_bn` |
-| 13 | Report a problem | mailto | |
+| 13 | Report a problem | mailto | **Temporarily disabled** (commented out in `[slug].astro`) |
 
 Shared section heading strings: `src/lib/servicePageCopy.ts` (not per-service).
 

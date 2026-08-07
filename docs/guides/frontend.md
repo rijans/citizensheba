@@ -31,8 +31,8 @@
 ## Typography & tokens
 
 - Display: Bricolage Grotesque; body/BN: Hind Siliguri (see `global.css`).
-- Body base stays **16px** (industry default). Hero/header largely unchanged.
-- **Directory / card scale (modest, post-NID compare):** card title `1.0625rem`, BN `0.875rem`, description `0.9375rem`, domain `0.8125rem`; Category Icon well `2.5rem` / glyph ~20px; chips `0.875rem` with ~`1.375rem` icon wells.
+- Body base **17px** (one step up from 16 for readability on Home + hop pages). Hero/display H1 clamps unchanged.
+- **Directory / card scale:** card title `1.125rem`, BN `0.9375rem`, description `1rem`, domain `0.875rem`; chips `0.9375rem`; search input `1.0625rem`. Hop prose `1.0625rem`.
 - Prefer existing classes in `global.css` over ad-hoc pixel sizes in JSX.
 - Dark theme: keep contrast; accent soft tints must remain readable on `--surface`.
 - **Directory Pagination** (ADR-0010): Prev/Next + page numbers use `--green` / `--green-hover` / `--green-soft` only — never `--cat-accent`. **Load more** (same green family) sits between the grid and the pager: appends the next batch, keeps viewport, focuses the first new card; page jumps replace and scroll to results. Hide pager + Load more when results ≤ 21; page size 20 when ≥ 22. Reset to page 1 / append mode on query/category change. Count: `N services · Showing X · Page Y of Z`.
