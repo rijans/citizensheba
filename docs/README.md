@@ -51,7 +51,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | Doc | Topic |
 |-----|--------|
 | [ops/local-dev.md](ops/local-dev.md) | Localhost live reload (`npm run dev`) before push |
-| [ops/production-and-deploy.md](ops/production-and-deploy.md) | Production URLs, deploy cycle, auth, live smoke checks |
+| [ops/production-and-deploy.md](ops/production-and-deploy.md) | Production URLs, Workers Builds auto-deploy on `main`, CLI fallback, live smoke |
 | [ops/web-analytics.md](ops/web-analytics.md) | Cloudflare Web Analytics |
 | [ops/search-console.md](ops/search-console.md) | Google Search Console |
 | [ops/service-catalog-backlog.md](ops/service-catalog-backlog.md) | Catalog Backlog — candidates vs shipped (priority waves) |

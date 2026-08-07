@@ -29,7 +29,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | UI, CSS, card, chip, Mobile-First, design token, Lucide, jargon in copy, logo, brand mark, favicon, PWA icon | `docs/guides/frontend.md`, ADR-0004, `public/brand/`, `docs/specs/TRAPS.md` (#5–#7) |
 | performance, island, LCP, client JS, analytics weight | `docs/guides/performance.md`, ADR-0001 |
 | stack, Astro, Cloudflare, wrangler, static assets, React island, Tailwind | `docs/adr/0001-astro-ssg-react-island-cloudflare.md`, `README.md` § Cloudflare, Trap #1 |
-| deploy, production, wrangler login, smoke live, workers.dev, citizensheba.com, MCP Cloudflare | `docs/ops/production-and-deploy.md` |
+| deploy, production, wrangler login, smoke live, workers.dev, citizensheba.com, Workers Builds, MCP Cloudflare | `docs/ops/production-and-deploy.md` |
 | local dev, localhost, HMR, live reload, `npm run dev`, preview before push | `docs/ops/local-dev.md` |
 | llms.txt, robots, ai.txt, agent crawl, AI train | `docs/adr/0002-agent-llms-txt-and-ai-usage-signals.md` |
 | Document Title, Meta Description, SERP, bilingual title, `serp_title`, `description_bn`, `meta_title`, CitizenSheba Bangladesh | ADR-0003, `src/lib/seo.ts`, `src/lib/site.ts` (`SITE_BRAND_SERP`), `CONTEXT.md`, Traps #3–#4, `docs/guides/service-page.md` |

@@ -12,11 +12,12 @@
 | Workers.dev URL | `https://citizensheba.jaber-al-nahian.workers.dev` |
 | Config | `wrangler.jsonc` — **static assets** from `./dist`, `not_found_handling: "404-page"` |
 | Output | Astro `output: "static"` → `dist/` |
+| Auto-deploy | **Cloudflare Workers Builds** on push to `main` (GitHub → build → deploy Worker) |
 | Account (typical) | Cloudflare account tied to `wrangler whoami` (e.g. JABER AL NAHIAN) |
 
-This is **not** a classic Cloudflare Pages Git auto-build unless someone later enables Workers Builds / Pages on the repo. **Default cycle today: build locally (or CI) → `wrangler deploy` by an authenticated human/agent with approval.**
+Production ships via **Workers Builds** when `main` is updated on GitHub. GitHub Actions (`.github/workflows/ci.yml`) only **verifies** (`check` / test / build) — it does not upload the Worker. Manual `npm run deploy` / `wrangler deploy` remains a fallback (hotfix, Builds outage, or local-only experiment).
 
-Do **not** run `astro add cloudflare` (Trap #1). Do **not** assume `git push origin main` alone updates the live Worker.
+Do **not** run `astro add cloudflare` (Trap #1). Do **not** confuse GitHub CI success with a live deploy — wait for the Workers Builds run (or smoke the www hostname).
 
 ## Custom domains (www primary)
 
@@ -29,7 +30,7 @@ Canonical host is **`www.citizensheba.com`**. Apex must redirect to www so one h
 
 ## Before production
 
-Use [`local-dev.md`](local-dev.md) (`npm run dev`) to live-check UI/content on localhost. Use `npm run ci` before commit/push. Then deploy only with approval (below).
+Use [`local-dev.md`](local-dev.md) (`npm run dev`) to live-check UI/content on localhost. Use `npm run ci` before commit/push to `main` (push **does** trigger Workers Builds deploy — get approval first).
 
 ## Deployment cycle
 
@@ -40,25 +41,29 @@ edit code/content
 npm run ci          # astro check → vitest → astro build  (also GitHub Actions on push/PR)
     │
     ▼
-git commit + push   # updates GitHub; CI verifies — does NOT deploy by itself
+git commit + push main
     │
-    ▼
-npm run deploy      # = npm run build && wrangler deploy
-    │                 # requires wrangler OAuth or CLOUDFLARE_API_TOKEN
-    ▼
+    ├─► GitHub Actions     # verify only — does NOT deploy
+    │
+    └─► Workers Builds     # Cloudflare builds dist/ and deploys Worker `citizensheba`
+            │
+            ▼
 smoke-check https://www.citizensheba.com  (see below)
+
+# Fallback / hotfix (optional):
+npm run deploy      # = npm run build && wrangler deploy
 ```
 
 | Stage | Who / what | Deploys? |
 |-------|------------|----------|
 | `npm run ci` / GitHub Actions | Local or `.github/workflows/ci.yml` | No — verify only |
-| `git push` to `main` | GitHub | No — unless Workers Builds is explicitly wired later |
-| `npm run deploy` / `npx wrangler deploy` | Authenticated CLI | **Yes** — uploads `dist/` assets |
-| Cloudflare dashboard | Manual | Possible; prefer CLI for reproducibility |
+| `git push` to `main` | Cloudflare **Workers Builds** | **Yes** — builds and deploys Worker |
+| `npm run deploy` / `npx wrangler deploy` | Authenticated CLI | **Yes** — manual fallback |
+| Cloudflare dashboard | Manual upload / retry build | Possible |
 
-**Agent rule:** never deploy or push to `main` without **explicit user approval** (`AGENTS.md`). After approval, prefer `npm run deploy` from a clean tree that already passes `npm run ci`.
+**Agent rule:** never push to `main` / production without **explicit user approval** (`AGENTS.md`) — a merge to `main` **is** a production deploy via Workers Builds. Prefer `npm run ci` locally before push; use `npm run deploy` only when Builds cannot ship (or the user asks for a CLI deploy).
 
-### Auth for deploy
+### Auth for deploy (CLI fallback)
 
 ```bash
 npx wrangler whoami
@@ -67,7 +72,7 @@ npx wrangler login
 # Or set CLOUDFLARE_API_TOKEN in the environment (do not commit tokens)
 ```
 
-Credentials live under `~/.config/.wrangler/` when using OAuth. Non-interactive CI/agents need `CLOUDFLARE_API_TOKEN`.
+Credentials live under `~/.config/.wrangler/` when using OAuth. Non-interactive CLI/agents need `CLOUDFLARE_API_TOKEN`.
 
 ### Cursor Cloudflare MCP (optional)
 
@@ -76,11 +81,11 @@ Project MCP config: [`.cursor/mcp.json`](../../.cursor/mcp.json).
 | Server | Use for |
 |--------|---------|
 | `cloudflare` / bindings | Account resources (Workers list, etc.) after OAuth |
-| `cloudflare-builds` | Workers Builds history/logs (if Builds enabled) |
+| `cloudflare-builds` | Workers Builds history/logs (confirm auto-deploy status) |
 | `cloudflare-observability` | Worker logs/metrics |
 | `cloudflare-docs` | Docs search (public; no auth) |
 
-On first use, call `mcp_auth` for servers that require it. MCP does **not** replace `wrangler deploy` for this static-assets Worker unless you deliberately change the workflow.
+On first use, call `mcp_auth` for servers that require it. After a push to `main`, use `workers_builds_list_builds` (Worker id from `workers_list`) to confirm the commit built successfully — do not assume GitHub Actions green means live is updated until Builds succeeds.
 
 ## How to check production (smoke)
 
@@ -123,14 +128,14 @@ curl -sS -I -L 'https://www.citizensheba.com/' | rg -i 'HTTP/|cf-cache-status|cf
 
 Open Home → chips + icons + result count; open one Service Page → official CTA; dark/light toggle still works.
 
-### Confirm Worker via CLI / MCP
+### Confirm Worker / Builds via CLI / MCP
 
 ```bash
 npx wrangler deployments list --name citizensheba   # if supported by installed wrangler
 npx wrangler whoami
 ```
 
-Or MCP `workers_list` / builds tools after auth — look for Worker name `citizensheba`.
+Or MCP `workers_list` / `workers_builds_list_builds` after auth — Worker name `citizensheba` (confirm the latest build commit hash matches `main`).
 
 ## npm scripts (deploy-related)
 
@@ -138,7 +143,7 @@ Or MCP `workers_list` / builds tools after auth — look for Worker name `citize
 |--------|------|
 | `npm run build` | Astro → `dist/` only |
 | `npm run ci` | check + test + build |
-| `npm run deploy` | build + `wrangler deploy` |
+| `npm run deploy` | build + `wrangler deploy` (manual fallback; usual path is Workers Builds on `main`) |
 | `npm run pages:deploy` | Same as `deploy` (legacy name; still Workers assets) |
 
 ## Related traps

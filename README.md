@@ -46,26 +46,27 @@ Services live in `src/content/services/*.md` and categories in `src/content/cate
 
 Agent onboarding: [`AGENTS.md`](AGENTS.md) → [`docs/agent/INDEX.md`](docs/agent/INDEX.md). Doc map: [`docs/README.md`](docs/README.md). Domain language: [`CONTEXT.md`](CONTEXT.md). ADRs: [`docs/adr/`](docs/adr/).
 
-## Cloudflare (Workers static assets / Pages)
+## Cloudflare (Workers static assets)
 
 | Setting | Value |
 |---------|--------|
 | Build command | `npm run build` |
-| Deploy command | `npx wrangler deploy` |
+| Auto-deploy | Cloudflare **Workers Builds** on push to `main` |
+| Manual deploy | `npx wrangler deploy` (fallback) |
 | Output / assets | `dist` (see `wrangler.jsonc`) |
 | Node version | 22+ |
-| Production domain | `citizensheba.com` |
+| Production domain | `https://www.citizensheba.com` (apex → www) |
 
 Do **not** run `astro add cloudflare` for this site — it is plain static SSG (`output: "static"`). `wrangler.jsonc` serves `./dist` as assets.
 
-Deploy locally:
+Usual ship path: merge/push `main` → Workers Builds. Manual fallback:
 
 ```bash
 npm run build
 npx wrangler deploy
 ```
 
-Attach custom domains `citizensheba.com` and `www.citizensheba.com` in the project settings.
+Attach custom domains `citizensheba.com` and `www.citizensheba.com` in the Worker settings; canonical host is **www**.
 
 ## Post-launch ops
 

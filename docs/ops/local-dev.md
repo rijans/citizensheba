@@ -27,7 +27,7 @@ Default URL: **http://localhost:4321** (Astro default). If the port is taken, th
 | Iterate on UI, CSS, Instant Directory, content copy | `npm run dev` |
 | Confirm production build / routing / 404 assets | `npm run build && npm run preview` |
 | Typecheck + unit tests + build gate | `npm run ci` |
-| Ship to Cloudflare | `npm run deploy` only with approval — see production-and-deploy |
+| Ship to Cloudflare | Push `main` (Workers Builds auto-deploys); `npm run deploy` only as fallback — see production-and-deploy |
 
 **Agents (should):** for UI / CSS / visual content work, run or remind to use `npm run dev` so changes are checked live before push. Not a CI hard gate. Prefer `preview` when validating build-only behavior (e.g. asset hashing, `_headers` in `dist`).
 

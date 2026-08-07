@@ -75,12 +75,13 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 
 Local live-check before push: [`docs/ops/local-dev.md`](docs/ops/local-dev.md) (`npm run dev` → http://localhost:4321).
 
-Full production cycle (auth, `wrangler deploy`, curl checklist): [`docs/ops/production-and-deploy.md`](docs/ops/production-and-deploy.md).
+Full production cycle (Workers Builds, CLI fallback, curl checklist): [`docs/ops/production-and-deploy.md`](docs/ops/production-and-deploy.md).
 
 ```bash
 npm ci && npm run ci
 # UI work: also npm run dev and verify in the browser
-# then npm run deploy only when asked
+# push to main (with approval) → Cloudflare Workers Builds deploys
+# npm run deploy only as fallback / when asked
 ```
 
-CI on GitHub: `npm ci` → `astro check` → Vitest → `astro build` (**verify only — does not deploy**).
+GitHub Actions: `npm ci` → `astro check` → Vitest → `astro build` (**verify only**). Production deploy is **Cloudflare Workers Builds** on push to `main` (not GitHub Actions).
