@@ -33,7 +33,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | local dev, localhost, HMR, live reload, `npm run dev`, preview before push | `docs/ops/local-dev.md` |
 | llms.txt, robots, ai.txt, agent crawl, AI train | `docs/adr/0002-agent-llms-txt-and-ai-usage-signals.md` |
 | Document Title, Meta Description, SERP, bilingual title, `serp_title`, `description_bn`, `meta_title`, CitizenSheba Bangladesh | ADR-0003, `src/lib/seo.ts`, `src/lib/site.ts` (`SITE_BRAND_SERP`), `CONTEXT.md`, Traps #3–#4, `docs/guides/service-page.md` |
-| Category Icon, Service card, accent, Instant Directory chips, emoji on cards | `docs/adr/0004-category-icons-and-service-cards.md`, `src/lib/categoryVisuals.ts`, `CONTEXT.md`, Traps #5–#7 |
+| Category Icon, Service Icon, Service card, accent, Instant Directory chips, emoji on cards, per-service icon | ADR-0004, `docs/guides/service-icons.md`, `docs/guides/frontend.md`, `src/lib/categoryVisuals.ts`, `src/lib/categoryIcons.ts`, `CONTEXT.md`, Traps #5–#7 |
 | Web Analytics, CF beacon, `PUBLIC_CF_WEB_ANALYTICS_TOKEN` | `docs/ops/web-analytics.md` |
 | Search Console, GSC, sitemap | `docs/ops/search-console.md` |
 | add/move docs, AGENTS layout, Cursor rules | `docs/specs/DOC_ARCHITECTURE.md` |

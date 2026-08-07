@@ -22,6 +22,7 @@ official_domain: mygov.bd
 category: central
 directory_global_rank: 60
 directory_category_rank: 10
+icon: landmark
 tags: [mygov, "one stop", central, "সেবা"]
 aliases:
   - name: Amar Shorkar

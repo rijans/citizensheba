@@ -22,6 +22,7 @@ official_domain: dpdc.org.bd
 category: utilities
 directory_global_rank: 110
 directory_category_rank: 30
+icon: zap
 tags: [dpdc, electricity, ebill, "ডিপিডিসি", "বিদ্যুৎ"]
 aliases:
   - name: Dhaka Power Distribution

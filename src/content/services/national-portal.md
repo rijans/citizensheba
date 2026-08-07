@@ -20,6 +20,7 @@ official_domain: bangladesh.gov.bd
 category: central
 directory_global_rank: 70
 directory_category_rank: 20
+icon: globe
 tags: [portal, ministries, government, "বাতায়ন"]
 aliases:
   - name: bangladesh.gov.bd

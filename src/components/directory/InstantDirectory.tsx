@@ -265,7 +265,7 @@ export default function InstantDirectory({
                   domain={svc.domain}
                   status={svc.status}
                   categoryId={svc.categoryId}
-                  icon={iconByCategory[svc.categoryId] ?? 'landmark'}
+                  icon={svc.icon ?? iconByCategory[svc.categoryId] ?? 'landmark'}
                 />
               </li>
             ))}

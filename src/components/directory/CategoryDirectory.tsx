@@ -14,6 +14,8 @@ export type CategoryServiceCard = {
   domain: string;
   status: 'ACTIVE' | 'MAINTENANCE' | 'DEPRECATED';
   directoryCategoryRank: number;
+  /** Optional Service Lucide key; falls back to Category icon prop. */
+  icon?: string;
 };
 
 type Props = {
@@ -104,7 +106,7 @@ export default function CategoryDirectory({
               domain={svc.domain}
               status={svc.status}
               categoryId={categoryId}
-              icon={icon}
+              icon={svc.icon ?? icon}
             />
           </li>
         ))}

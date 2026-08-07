@@ -20,6 +20,7 @@ official_domain: teachers.gov.bd
 category: education
 directory_global_rank: 160
 directory_category_rank: 10
+icon: graduation-cap
 tags: [teacher, "শিক্ষক", education, portal, registration]
 aliases:
   - name: Shikkhok Batayon

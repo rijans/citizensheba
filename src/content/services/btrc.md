@@ -22,6 +22,7 @@ official_domain: btrc.gov.bd
 category: utilities
 directory_global_rank: 80
 directory_category_rank: 40
+icon: radio
 tags: [btrc, telecom, regulator, "বিটিআরসি", "টেলিকম"]
 aliases:
   - name: Bangladesh Telecommunication Regulatory Commission

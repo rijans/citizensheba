@@ -22,6 +22,7 @@ official_domain: ocsms.desco.org.bd
 category: utilities
 directory_global_rank: 100
 directory_category_rank: 20
+icon: zap
 tags: [desco, electricity, bill, "ডেসকো", "বিদ্যুৎ"]
 aliases:
   - name: Dhaka Electric Supply

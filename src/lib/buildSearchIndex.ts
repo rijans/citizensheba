@@ -74,6 +74,7 @@ export async function buildSearchIndex(): Promise<{
       status: s.data.status,
       directoryGlobalRank: s.data.directory_global_rank,
       directoryCategoryRank: s.data.directory_category_rank,
+      ...(s.data.icon ? { icon: s.data.icon } : {}),
     };
   });
 

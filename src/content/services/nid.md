@@ -22,6 +22,7 @@ official_domain: services.nidw.gov.bd
 category: identity
 directory_global_rank: 10
 directory_category_rank: 10
+icon: id-card
 tags: [nid, voter, identity, "smart card", "পরিচয়পত্র"]
 aliases:
   - name: National ID

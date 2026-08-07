@@ -20,6 +20,7 @@ official_domain: fireservice.gov.bd
 category: safety
 directory_global_rank: 190
 directory_category_rank: 20
+icon: flame
 tags: [fire, civil defence, emergency, "ফায়ার", "সিভিল ডিফেন্স"]
 aliases:
   - name: FSCD

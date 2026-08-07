@@ -22,6 +22,7 @@ official_domain: etaxnbr.gov.bd
 category: tax
 directory_global_rank: 40
 directory_category_rank: 20
+icon: file-text
 tags: [return, tax, "income tax", nbr, "আয়কর"]
 aliases:
   - name: income tax return

@@ -20,6 +20,7 @@ official_domain: titasgas.gov.bd
 category: utilities
 directory_global_rank: 1040
 directory_category_rank: 50
+icon: flame
 tags: [titas, gas, bill, "তিতাস", "গ্যাস"]
 aliases:
   - name: TGTDCL

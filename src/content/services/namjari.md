@@ -22,6 +22,7 @@ official_domain: mutation.land.gov.bd
 category: land
 directory_global_rank: 830
 directory_category_rank: 20
+icon: stamp
 tags: [mutation, namjari, "নামজারি"]
 aliases:
   - name: namjari

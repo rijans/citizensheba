@@ -22,6 +22,7 @@ official_domain: epassport.gov.bd
 category: identity
 directory_global_rank: 20
 directory_category_rank: 20
+icon: book-user
 tags: [passport, mrp, travel, "পাসপোর্ট"]
 aliases:
   - name: MRP

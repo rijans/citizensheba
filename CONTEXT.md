@@ -135,8 +135,12 @@ v1 signals: allow search indexing and AI input/citation of our pages; disallow A
 _Avoid_: Relying on ai.txt alone for enforcement
 
 **Category Icon**:
-A simple SVG mark for a Category (lucide-style key in content), reused on filter chips and Service cards in that Category so the Instant Directory is scannable. Paired with a soft Category accent (muted tint + icon hue), not strong app-like color blocks. Accent hues are defined in code keyed by category id/icon, not in content YAML. Category-level only in v1 — not per-Service emoji or logo. Chips use a small icon + soft accent with the English category name (no BN on chips in v1).
-_Avoid_: Emoji wallpaper on every card, per-Service custom icons as the default, loud category color fills, BN labels on chips that force wrapping, accent colors edited ad hoc in YAML, decorative illustrations that compete with the Outbound CTA
+A simple SVG mark for a Category (lucide-style key in content), reused on filter chips and as the **default** glyph on Service cards in that Category so the Instant Directory is scannable. Paired with a soft Category accent (muted tint + icon hue), not strong app-like color blocks. Accent hues are defined in code keyed by category id/icon, not in content YAML. Chips use a small icon + soft accent with the English category name (no BN on chips in v1).
+_Avoid_: Emoji wallpaper on every card, loud category color fills, BN labels on chips that force wrapping, accent colors edited ad hoc in YAML, decorative illustrations that compete with the Outbound CTA
+
+**Service Icon**:
+Optional Lucide key on a Service (`icon` in frontmatter). When set, Service cards (Home, Category, related) show that glyph instead of the Category Icon; the soft accent remains the Category accent. When omitted, cards use the Category Icon. Living table: `docs/guides/service-icons.md`.
+_Avoid_: Per-Service accent colors, official gov logos on cards, custom PNG/stock ID-card illustrations, putting Service icons on Category chips
 
 **Mobile-First**:
 Layouts, Instant Directory, and Service/Category Pages are designed for small screens first (thumb reach, single-column cards, sticky search/chips that don’t eat the viewport), then enhanced for tablet/desktop. Touch targets and performance on mid-range Android matter as much as desktop polish.

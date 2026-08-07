@@ -22,6 +22,7 @@ official_domain: secure.incometax.gov.bd
 category: tax
 directory_global_rank: 30
 directory_category_rank: 10
+icon: receipt
 tags: [tin, tax, nbr, income, "টিআইএন"]
 aliases:
   - name: TIN

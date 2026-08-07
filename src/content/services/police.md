@@ -20,6 +20,7 @@ official_domain: police.gov.bd
 category: safety
 directory_global_rank: 140
 directory_category_rank: 10
+icon: shield
 tags: [police, "পুলিশ", security, law]
 aliases:
   - name: BD police

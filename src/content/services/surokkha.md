@@ -22,6 +22,7 @@ official_domain: surokkha.gov.bd
 category: health
 directory_global_rank: 180
 directory_category_rank: 10
+icon: heart-pulse
 tags: [vaccine, covid, certificate, "টিকা"]
 aliases:
   - name: vaccine certificate

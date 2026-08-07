@@ -6,7 +6,7 @@
 
 - **One job per surface:** Home = Instant Directory; Service Page = SEO hop + Outbound CTA; Category = filtered list.
 - **Shared Service card** everywhere (`ServiceCard` / `ServiceCardLink`) — do not invent a second card UI.
-- **Category Icon + soft accent** (Lucide + `categoryVisuals.ts`). No emoji-first cards (ADR-0004).
+- **Category Icon + soft accent** (Lucide + `categoryVisuals.ts`). Optional **Service Icon** overrides the glyph only (ADR-0004). No emoji-first cards.
 - **Mixed UI:** EN-first visible H1; SERP Document Title / Meta Description stay BN→EN (ADR-0003).
 - **Plain language** in UI copy — no internal jargon (`SSOT`, `ADR`, `meta_*`) in citizen-facing strings.
 
@@ -25,7 +25,7 @@
 | Category directory island | `CategoryDirectory.tsx` |
 | Load more / pager | `DirectoryLoadMore.tsx`, `DirectoryPagination.tsx` |
 | Static cards | `ServiceCardLink.astro` (related on Service Pages) — SSR Lucide, no extra island |
-| Icons | `CategoryIcon.tsx` + `categoryIcons.ts` |
+| Icons | `CategoryIcon.tsx` + `categoryIcons.ts` (Category + optional Service keys) |
 | Accents | `categoryVisuals.ts` (code map by category id) |
 
 ## Typography & tokens
@@ -43,7 +43,7 @@
 - Never reintroduce `meta_title` / `meta_description` content fields.
 - New categories need `icon` (lucide key) + entry in `CATEGORY_ACCENTS` if a dedicated hue is desired.
 - New Services need `directory_global_rank` + `directory_category_rank` (see [`directory-ranking.md`](directory-ranking.md)).
-
+- Optional Service `icon` (Lucide): see [`service-icons.md`](service-icons.md); add the key to `categoryIcons.ts` if missing.
 ## Brand mark
 
 - Circular emblem (transparent PNG): `public/brand/citizensheba-logo.png`

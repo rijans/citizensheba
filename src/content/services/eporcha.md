@@ -22,6 +22,7 @@ official_domain: eporcha.gov.bd
 category: land
 directory_global_rank: 150
 directory_category_rank: 10
+icon: map
 tags: [khatian, "land record", mouza, porcha, "খতিয়ান"]
 aliases:
   - name: porcha

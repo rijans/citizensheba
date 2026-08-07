@@ -59,6 +59,7 @@ Schema: `src/content.config.ts`. Integrity: `tests/unit/content-integrity.test.t
 | `faq[]` | 1–5 items; each needs `q`, `a`, `q_bn`, `a_bn` |
 | `aliases` | ≥2 with both `en` and `bn` (ADR-0006) |
 | `directory_global_rank` / `directory_category_rank` | Browse order on Home All / Category (ADR-0010); living table [`directory-ranking.md`](directory-ranking.md) |
+| `icon` | Optional Lucide Service Icon (ADR-0004); [`service-icons.md`](service-icons.md) |
 | `url`, `official_domain`, `last_verified`, `category`, `slug` (`bd-…`) | Hop + Link Health |
 
 ## Editorial do-nots (hop copy)

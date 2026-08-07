@@ -41,7 +41,7 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 
 ## Instant Directory visuals (see ADR-0004)
 
-- Lucide **Category Icons** + soft accents from `src/lib/categoryVisuals.ts` (code map, not YAML)
+- Lucide **Category Icons** (+ optional **Service Icon** glyph) + soft accents from `src/lib/categoryVisuals.ts` (code map, not YAML); living seeds [`docs/guides/service-icons.md`](docs/guides/service-icons.md)
 - Shared Service card: icon, titles, description, official domain, status when not ACTIVE
 - No emoji-first cards; no Home trust strip (footer disclaimer only)
 - Chips: small icon + EN name; result count + clear empty state

@@ -29,6 +29,8 @@ export type SearchableService = {
   directoryGlobalRank: number;
   /** Category / chip empty-query order — lower = higher (ADR-0010). */
   directoryCategoryRank: number;
+  /** Optional Service Lucide key; cards fall back to Category icon (ADR-0004). */
+  icon?: string;
 };
 
 /** Cards per page when paginating. */

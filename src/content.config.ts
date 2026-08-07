@@ -55,6 +55,11 @@ const service = defineCollection({
     directory_global_rank: z.number().int(),
     /** Category Page / chip browse order — lower = higher (ADR-0010). */
     directory_category_rank: z.number().int(),
+    /**
+     * Optional Lucide key for this Service’s card glyph (ADR-0004).
+     * When omitted, cards use the Category icon. Chips always use Category icons.
+     */
+    icon: z.string().min(1).optional(),
     tags: z.array(z.string()),
     /** Required: at least two Name Aliases covering EN and BN (enforced in integrity tests too). */
     aliases: z.array(nameAlias).min(2),

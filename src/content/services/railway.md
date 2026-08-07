@@ -20,6 +20,7 @@ official_domain: eticket.railway.gov.bd
 category: transport
 directory_global_rank: 120
 directory_category_rank: 10
+icon: train-front
 tags: [train, ticket, rail, "ট্রেন", "টিকিট"]
 aliases:
   - name: train ticket

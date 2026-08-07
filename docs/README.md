@@ -25,6 +25,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [guides/service-page.md](guides/service-page.md) | **Service Page hop structure** (layout, bilingual rules, FAQ policy) |
 | [guides/display-names.md](guides/display-names.md) | Display Name table + Name Aliases |
 | [guides/directory-ranking.md](guides/directory-ranking.md) | Directory Global / Category ranks + Top browse table |
+| [guides/service-icons.md](guides/service-icons.md) | Optional per-Service Lucide icons (seed table) |
 | [guides/frontend.md](guides/frontend.md) | Cards, chips, Mobile-First, tokens, **brand logo / favicon** |
 | [guides/performance.md](guides/performance.md) | Islands, SSG, analytics weight |
 
@@ -62,6 +63,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [specs/…-priority-wave-design.md](superpowers/specs/2026-08-07-official-services-priority-wave-design.md) | Official Services priority wave + Catalog Backlog |
 | [specs/…-directory-ranking-pagination-design.md](superpowers/specs/2026-08-07-directory-ranking-pagination-design.md) | Directory ranking + pagination |
 | [specs/…-directory-load-more-design.md](superpowers/specs/2026-08-07-directory-load-more-design.md) | Directory Load more (append) + pager |
+| [specs/…-service-icons-design.md](superpowers/specs/2026-08-07-service-icons-design.md) | Optional per-Service Lucide icons |
 | [plans/…-directory.md](superpowers/plans/2026-08-06-bd-digital-services-directory.md) | v1 implementation plan |
 | [plans/…-priority-wave.md](superpowers/plans/2026-08-07-official-services-priority-wave.md) | Official Services priority wave implementation |
 | [plans/…-directory-ranking-pagination.md](superpowers/plans/2026-08-07-directory-ranking-pagination.md) | Directory ranking + pagination implementation |

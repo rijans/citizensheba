@@ -20,6 +20,7 @@ official_domain: consumer-portal.dhakawasa.org
 category: utilities
 directory_global_rank: 90
 directory_category_rank: 10
+icon: droplets
 tags: [wasa, water, bill, "ওয়াসা", "পানি"]
 aliases:
   - name: DWASA

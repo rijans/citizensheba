@@ -22,6 +22,7 @@ official_domain: ekpay.gov.bd
 category: central
 directory_global_rank: 200
 directory_category_rank: 30
+icon: wallet
 tags: [ekpay, payment, bill, "একপে", "বিল"]
 aliases:
   - name: Ekpay

@@ -134,7 +134,7 @@ const verifiedIso = service.data.last_verified.toISOString().slice(0, 10);
                 domain={r.data.official_domain ?? officialDomainFromUrl(r.data.url)}
                 status={r.data.status}
                 categoryId={relCat.data.id}
-                icon={relCat.data.icon}
+                icon={r.data.icon ?? relCat.data.icon}
               />
             );
           })

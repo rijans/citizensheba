@@ -22,6 +22,7 @@ official_domain: customer.nesco.gov.bd
 category: utilities
 directory_global_rank: 970
 directory_category_rank: 60
+icon: zap
 tags: [nesco, electricity, bill, "নেসকো", "বিদ্যুৎ"]
 aliases:
   - name: Northern Electricity Supply
