@@ -1,0 +1,32 @@
+---
+import { ChevronDown } from 'lucide-react';
+
+interface Props {
+  variant: 'primary' | 'support';
+  headingId: string;
+  headingEn: string;
+  headingBn: string;
+  /** Extra classes on the <details> (e.g. service-faq). */
+  class?: string;
+}
+
+const { variant, headingId, headingEn, headingBn, class: className } = Astro.props;
+const classes = ['hop-region', `hop-region--${variant}`, 'hop-disclose', className]
+  .filter(Boolean)
+  .join(' ');
+---
+
+<details class={classes} open>
+  <summary class="hop-disclose__summary">
+    <h2 id={headingId} class="hop-disclose__heading">
+      {headingEn}{' '}
+      <span lang="bn">{headingBn}</span>
+    </h2>
+    <span class="hop-disclose__chevron" aria-hidden="true">
+      <ChevronDown size={20} strokeWidth={2} />
+    </span>
+  </summary>
+  <div class="hop-disclose__body">
+    <slot />
+  </div>
+</details>

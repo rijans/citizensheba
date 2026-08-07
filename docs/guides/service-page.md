@@ -4,7 +4,7 @@
 
 **Adding a Service?** Use the checklist [`new-service.md`](new-service.md) first (fields, icons, ranks, cards), then this file for hop structure/copy rules.
 
-**When to read:** any task touching Service Pages, `src/pages/services/[slug].astro`, `ServiceFaq` / `OutboundCta`, `body` / `audience` / FAQ content, or hop-related CSS.
+**When to read:** any task touching Service Pages, `src/pages/services/[slug].astro`, `HopDisclose` / `BilingualPanes` / `ServiceFaq` / `OutboundCta`, `body` / `audience` / FAQ content, or hop-related CSS.
 
 **When to update:** any change to page section order, bilingual layout rules, required content fields on the hop, FAQ policy, SERP/`serp_title` rules, or verified-link labeling — update **this file first**, then ADRs / CONTEXT / INDEX / Trap #9 as needed (see [DOC_ARCHITECTURE](../specs/DOC_ARCHITECTURE.md)).
 
@@ -33,9 +33,9 @@ Implementation: `src/pages/services/[slug].astro`.
 | 5b | Capability capsules | optional `capabilities[]` | 2–4 EN+BN soft capsules (muted gray EN, subtler gray BN); hop only — ADR-0011 |
 | 6 | Outbound CTA | `url` + domain + `last_verified` | Green button left; right = white meta well: domain + `Verified on {date}` stacked, **Copy link** vertically centered beside them; stacks under on phone; bilingual toast |
 | 7 | Status caution | if not `ACTIVE` | Short warning |
-| 8 | About (primary) | `body_bn` then `body` | H2 About EN+BN; primary `--surface` panel; labeled panes; `<details open>` + chevron; Markdown |
-| 9 | Who is this for (support) | `audience_bn` then `audience` | Quiet `--surface-muted` strip; labeled panes; `<details open>` + chevron |
-| 10 | FAQ (support) | `faq[]` with `q`/`a`/`q_bn`/`a_bn` | Same disclose pattern; Q EN+BN one line; answers labeled BN→EN |
+| 8 | About (primary) | `body_bn` then `body` | `HopDisclose` + `BilingualPanes`; primary panel; BN→EN Markdown via `set:html` |
+| 9 | Who is this for (support) | `audience_bn` then `audience` | Same modules; support strip; plain text panes |
+| 10 | FAQ (support) | `faq[]` with `q`/`a`/`q_bn`/`a_bn` | `ServiceFaq` wraps `HopDisclose`; Q EN+BN one line; answers via `BilingualPanes` |
 | 11 | Related services | related cards | Heading EN+BN; cards already show `title` + `title_bn` |
 | 12 | Report a problem | mailto | **Temporarily disabled** (commented out in `[slug].astro`) |
 

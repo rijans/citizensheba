@@ -1,0 +1,14 @@
+---
+import { servicePageLangLabels } from '../../lib/servicePageCopy';
+---
+
+<div class="bilingual-panes">
+  <div class="bilingual-pane">
+    <p class="lang-label">{servicePageLangLabels.bn}</p>
+    <slot name="bn" />
+  </div>
+  <div class="bilingual-pane">
+    <p class="lang-label">{servicePageLangLabels.en}</p>
+    <slot name="en" />
+  </div>
+</div>

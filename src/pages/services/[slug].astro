@@ -3,6 +3,8 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import Breadcrumb from '../../components/layout/Breadcrumb.astro';
 import OutboundCta from '../../components/service/OutboundCta.astro';
+import HopDisclose from '../../components/service/HopDisclose.astro';
+import BilingualPanes from '../../components/service/BilingualPanes.astro';
 import ServiceFaq from '../../components/service/ServiceFaq.astro';
 import StatusBadge from '../../components/service/StatusBadge.astro';
 import CategoryIcon from '../../components/ui/CategoryIcon';
@@ -11,8 +13,7 @@ import { categoryPath, servicePath } from '../../lib/urls';
 // import { REPORT_EMAIL } from '../../lib/site';
 import { documentTitle, metaDescription, breadcrumbListJsonLd, webPageJsonLd } from '../../lib/seo';
 import { renderMarkdown } from '../../lib/markdown';
-import { servicePageHeadings, servicePageLangLabels } from '../../lib/servicePageCopy';
-import { ChevronDown } from 'lucide-react';
+import { servicePageHeadings } from '../../lib/servicePageCopy';
 import { accentStyleAttr } from '../../lib/categoryVisuals';
 import {
   officialDomain,
@@ -159,53 +160,31 @@ const verifiedIso = service.data.last_verified.toISOString().slice(0, 10);
       )
     }
 
-    <details class="hop-region hop-region--primary hop-disclose" open>
-      <summary class="hop-disclose__summary">
-        <h2 id="service-about-heading" class="hop-disclose__heading">
-          {servicePageHeadings.about.en}{' '}
-          <span lang="bn">{servicePageHeadings.about.bn}</span>
-        </h2>
-        <span class="hop-disclose__chevron" aria-hidden="true">
-          <ChevronDown size={20} strokeWidth={2} />
-        </span>
-      </summary>
-      <div class="hop-disclose__body">
-        <div class="bilingual-panes">
-          <div class="bilingual-pane">
-            <p class="lang-label">{servicePageLangLabels.bn}</p>
-            <div class="service-page__prose" lang="bn" set:html={bodyBnHtml} />
-          </div>
-          <div class="bilingual-pane">
-            <p class="lang-label">{servicePageLangLabels.en}</p>
-            <div class="service-page__prose" set:html={bodyHtml} />
-          </div>
-        </div>
-      </div>
-    </details>
+    <HopDisclose
+      variant="primary"
+      headingId="service-about-heading"
+      headingEn={servicePageHeadings.about.en}
+      headingBn={servicePageHeadings.about.bn}
+    >
+      <BilingualPanes>
+        <div slot="bn" class="service-page__prose" lang="bn" set:html={bodyBnHtml} />
+        <div slot="en" class="service-page__prose" set:html={bodyHtml} />
+      </BilingualPanes>
+    </HopDisclose>
 
-    <details class="hop-region hop-region--support hop-disclose" open>
-      <summary class="hop-disclose__summary">
-        <h2 id="service-audience-heading" class="hop-disclose__heading">
-          {servicePageHeadings.audience.en}{' '}
-          <span lang="bn">{servicePageHeadings.audience.bn}</span>
-        </h2>
-        <span class="hop-disclose__chevron" aria-hidden="true">
-          <ChevronDown size={20} strokeWidth={2} />
-        </span>
-      </summary>
-      <div class="hop-disclose__body">
-        <div class="bilingual-panes">
-          <div class="bilingual-pane">
-            <p class="lang-label">{servicePageLangLabels.bn}</p>
-            <p lang="bn">{service.data.audience_bn}</p>
-          </div>
-          <div class="bilingual-pane">
-            <p class="lang-label">{servicePageLangLabels.en}</p>
-            <p>{service.data.audience}</p>
-          </div>
-        </div>
-      </div>
-    </details>
+    <HopDisclose
+      variant="support"
+      headingId="service-audience-heading"
+      headingEn={servicePageHeadings.audience.en}
+      headingBn={servicePageHeadings.audience.bn}
+    >
+      <BilingualPanes>
+        <p slot="bn" lang="bn">
+          {service.data.audience_bn}
+        </p>
+        <p slot="en">{service.data.audience}</p>
+      </BilingualPanes>
+    </HopDisclose>
 
     <ServiceFaq items={service.data.faq} />
 

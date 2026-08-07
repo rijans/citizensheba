@@ -1,6 +1,7 @@
 ---
-import { ChevronDown } from 'lucide-react';
-import { servicePageHeadings, servicePageLangLabels } from '../../lib/servicePageCopy';
+import HopDisclose from './HopDisclose.astro';
+import BilingualPanes from './BilingualPanes.astro';
+import { servicePageHeadings } from '../../lib/servicePageCopy';
 
 interface FaqItem {
   q: string;
@@ -17,35 +18,26 @@ const { items } = Astro.props;
 const { faq: heading } = servicePageHeadings;
 ---
 
-<details class="service-faq hop-region hop-region--support hop-disclose" open>
-  <summary class="hop-disclose__summary">
-    <h2 id="service-faq-heading" class="hop-disclose__heading">
-      {heading.en}{' '}
-      <span lang="bn">{heading.bn}</span>
-    </h2>
-    <span class="hop-disclose__chevron" aria-hidden="true">
-      <ChevronDown size={20} strokeWidth={2} />
-    </span>
-  </summary>
-  <div class="hop-disclose__body">
-    {
-      items.map((item) => (
-        <div class="service-faq__item">
-          <h3>
-            {item.q} <span lang="bn">{item.q_bn}</span>
-          </h3>
-          <div class="bilingual-panes">
-            <div class="bilingual-pane">
-              <p class="lang-label">{servicePageLangLabels.bn}</p>
-              <p lang="bn">{item.a_bn}</p>
-            </div>
-            <div class="bilingual-pane">
-              <p class="lang-label">{servicePageLangLabels.en}</p>
-              <p>{item.a}</p>
-            </div>
-          </div>
-        </div>
-      ))
-    }
-  </div>
-</details>
+<HopDisclose
+  variant="support"
+  headingId="service-faq-heading"
+  headingEn={heading.en}
+  headingBn={heading.bn}
+  class="service-faq"
+>
+  {
+    items.map((item) => (
+      <div class="service-faq__item">
+        <h3>
+          {item.q} <span lang="bn">{item.q_bn}</span>
+        </h3>
+        <BilingualPanes>
+          <p slot="bn" lang="bn">
+            {item.a_bn}
+          </p>
+          <p slot="en">{item.a}</p>
+        </BilingualPanes>
+      </div>
+    ))
+  }
+</HopDisclose>
