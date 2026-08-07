@@ -42,6 +42,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `bfri` | `sprout` | Forest research |
 | `bfsa` | `utensils` | Food safety |
 | `bgb` | `shield` | Border Guard |
+| `bgfcl` | `flame` | Bangladesh Gas Fields |
 | `bida` | `briefcase-business` | Investment |
 | `biman` | `plane` | National airline |
 | `bina` | `sprout` | Nuclear agriculture institute |
@@ -57,6 +58,8 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `bmet` | `briefcase-business` | Overseas employment clearance |
 | `bmrc` | `microscope` | Medical Research Council |
 | `bou` | `book-open` | Open university |
+| `bpatc` | `landmark` | Public admin training centre |
+| `bpc` | `factory` | Bangladesh Petroleum Corporation |
 | `bpdb` | `zap` | Power development |
 | `bpsc` | `clipboard-list` | Public Service Commission |
 | `breb` | `zap` | Rural electrification |
@@ -147,6 +150,8 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `fri` | `sprout` | Fisheries research |
 | `gau` | `university` | Gazipur Agricultural Uni |
 | `gcc` | `building-2` | Gazipur City Corp |
+| `gst-admission` | `school` | Cluster university admission |
+| `gtcl` | `flame` | Gas transmission |
 | `hajj` | `mosque` | Hajj |
 | `hcu` | `flame` | Hydrocarbon Unit |
 | `highway-police` | `car` | Highway Police |
@@ -158,11 +163,14 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `infocom` | `scroll-text` | Information Commission / RTI |
 | `ird` | `banknote` | Internal Resources Division |
 | `iu` | `university` | Islamic University Kushtia |
+| `jamuna-oil` | `flame` | Jamuna Oil (petroleum marketing) |
 | `janata` | `landmark` | Janata Bank (state) |
+| `jashore-board` | `school` | Jessore board |
 | `jnu` | `university` | Jagannath University |
 | `just` | `university` | Jashore S&T uni |
-| `kda` | `landmark` | Khulna Development Authority |
 | `kcc` | `building-2` | Khulna City Corp |
+| `kda` | `landmark` | Khulna Development Authority |
+| `kgdcl` | `flame` | Karnaphuli gas distribution |
 | `khulna-wasa` | `droplets` | Khulna water |
 | `ku` | `university` | Khulna University |
 | `kuet` | `university` | KUET engineering |
@@ -219,6 +227,8 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `nilg` | `building-2` | Local gov training institute |
 | `nstu` | `university` | NSTU |
 | `ntrca` | `school` | Non-gov teachers registration |
+| `nwpgcl` | `zap` | North-West power generation |
+| `online-gd` | `shield` | Online GD |
 | `parliament` | `landmark` | Jatiya Sangsad |
 | `pbi` | `shield` | Police Bureau of Investigation |
 | `petrobangla` | `flame` | Oil/gas corporation |
@@ -248,6 +258,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `rmc` | `stethoscope` | Rajshahi Medical College |
 | `rpgcl` | `flame` | RPGCL CNG (half-gov) |
 | `rpcc` | `building-2` | Rangpur City Corp |
+| `rpcl` | `zap` | Rural Power Company |
 | `rthd` | `bus` | Roads & highways |
 | `ru` | `university` | University of Rajshahi |
 | `ruet` | `university` | RUET |

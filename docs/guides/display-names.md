@@ -117,8 +117,16 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `pid` | **PID** | Acronym ALL CAPS |
 | `mor` | **MoR** | Railways ministry short form |
 | `sreda` | **SREDA** | Acronym ALL CAPS |
-| `sgcl` | **SGCL** | Acronym ALL CAPS |
 | `petrobangla` | **Petrobangla** | Product/corp brand casing |
+| `sgcl` | **SGCL** | Acronym ALL CAPS |
+| `gtcl` | **GTCL** | Gas Transmission Company |
+| `kgdcl` | **KGDCL** | Karnaphuli Gas Distribution |
+| `bpc` | **BPC** | Bangladesh Petroleum Corporation |
+| `nwpgcl` | **NWPGCL** | North-West Power Generation |
+| `jamuna-oil` | **Jamuna Oil** | Company short name |
+| `rpcl` | **RPCL** | Rural Power Company |
+| `bgfcl` | **BGFCL** | Bangladesh Gas Fields |
+| `bpatc` | **BPATC** | Public Administration Training Centre |
 | `mofood` | **MoFood** | Food ministry short form |
 | `dgfood` | **DG Food** | Directorate short form |
 | `fisheries` | **DoF** | Department of Fisheries short form |

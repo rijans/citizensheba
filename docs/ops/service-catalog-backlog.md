@@ -175,15 +175,28 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
-| Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | GTCL/NWPGCL/KGDCL/Padma Oil/BPC still curl-fail |
+| Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | Wave 31 shipped GTCL/KGDCL/BPC/NWPGCL/Jamuna Oil/RPCL/BGFCL; Padma Oil / JGTCL still unconfirmed |
 | Other city corporations | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped KCC/Rajshahi/RPCC/COCC/Mymensingh; remaining pourashava/siblings TBD |
-| More public unis / boards | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | SUST 403; IUT skipped (OIC) |
-| More half-gov / SOE / state banks | _(TBD)_ | mixed | _(confirm)_ | candidate | gap-list | BDBL.com for sale; private banks & MFS out |
-| More public medical colleges | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | SHSMC / Cumilla MC still fail; private Barind skipped |
-| BG Press / BPATC / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | curl fail; liberationwarmuseum.org hijacked — skip |
+| More public unis / boards | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | SUST 403 Cloudflare; IUT skipped (OIC) |
+| More half-gov / SOE / state banks | _(TBD)_ | mixed | _(confirm)_ | candidate | gap-list | Major state banks shipped; BDBL.com for sale; private banks & MFS out |
+| More public medical colleges | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | SHSMC / Cumilla MC still fail; DMC/CMC/SSMC shipped |
+| BG Press / BPATC / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 31 shipped BPATC; forms.gov.bd fail; liberationwarmuseum.org hijacked — skip |
 | Development authorities (RAJUK/CDA/KDA/RDA) | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 30 shipped RAJUK/CDA/KDA; Rajshahi DA outbound still unconfirmed (rda.gov.bd is Rural Development Academy Bogura — do not use) |
 | Skip notes | — | — | — | skipped | gap-list | IUT (OIC); private Barind MC; `smc.edu.bd` junk; `afmcbd.com` for sale; `nitor.org` wrong (DE pest control); icddr,b international |
 | Industry / trade associations (BASIS, …) | — | — | — | — | partner | **Not Official** — Partner candidates (ADR-0013); do not seed as Official rows |
+
+## Priority wave 31 — utility SOEs + BPATC (2026-08-08)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| GTCL | gtcl / bd-gtcl | utilities | https://gtcl.gov.bd/ | shipped | gap-list | Gas transmission; verified 200 |
+| KGDCL | kgdcl / bd-kgdcl | utilities | https://kgdcl.gov.bd/ | shipped | gap-list | Karnaphuli gas distribution; verified 200 |
+| BPC | bpc / bd-bpc | utilities | https://bpc.gov.bd/ | shipped | gap-list | Bangladesh Petroleum Corporation; verified 200 |
+| NWPGCL | nwpgcl / bd-nwpgcl | utilities | https://nwpgcl.gov.bd/ | shipped | gap-list | North-West power generation; verified 200 |
+| Jamuna Oil | jamuna-oil / bd-jamuna-oil | utilities | https://jamunaoil.gov.bd/ | shipped | gap-list | Petroleum marketing; verified 200 |
+| RPCL | rpcl / bd-rpcl | utilities | https://rpcl.gov.bd/ | shipped | gap-list | Rural Power Company; verified 200 |
+| BGFCL | bgfcl / bd-bgfcl | utilities | https://bgfcl.gov.bd/ | shipped | gap-list | Gas fields; verified 200 |
+| BPATC | bpatc / bd-bpatc | central | https://bpatc.gov.bd/ | shipped | gap-list | Public admin training; verified 200 |
 
 ## Priority wave 30 — RAJUK + city corps (2026-08-08)
 
