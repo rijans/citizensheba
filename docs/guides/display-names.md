@@ -48,7 +48,7 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `teletalk` | **Teletalk** | Product brand casing |
 | `enothi` | **e-Nothi** | House lowercase `e-` |
 | `lged` | **LGED** | Acronym ALL CAPS |
-| `dpp` | **DPP** | Acronym ALL CAPS |
+| `printing` | **Department of Printing and Publications** | Prefer full name; `dpp.gov.bd` is printing/gazettes — not public prosecutions |
 | `mofa` | **MoFA** | Ministry short form |
 | `mohfw` | **MoHFW** | Health ministry short form |
 | `dncc` | **DNCC** | Acronym ALL CAPS |

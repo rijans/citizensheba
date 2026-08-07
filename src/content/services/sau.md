@@ -52,6 +52,6 @@ faq:
     a: "No. SAU is Sher-e-Bangla Agricultural University in Dhaka. BAU is Bangladesh Agricultural University in Mymensingh."
     q_bn: "শেকৃবি কি বাকৃবি-র মতো একই?"
     a_bn: "না। শেকৃবি ঢাকার শেরেবাংলা কৃষি বিশ্ববিদ্যালয়। বাকৃবি ময়মনসিংহের বাংলাদেশ কৃষি বিশ্ববিদ্যালয়।"
-related: [bau, bari, moa, ugc, gau]
+related: [bau, bari, moa, ugc, gau, sylhet-au, cvasu]
 last_verified: 2026-08-07
 ---

@@ -50,6 +50,6 @@ faq:
     a: "No. Dhaka Medical College is a public medical college. Private medical colleges are out of the Official catalog."
     q_bn: "ঢাকা মেডিকেল কলেজ কি বেসরকারি?"
     a_bn: "না। ঢাকা মেডিকেল কলেজ পাবলিক মেডিকেল কলেজ। বেসরকারি মেডিকেল কলেজ অফিসিয়াল ক্যাটালগের বাইরে।"
-related: [bsmmu, dghs, mohfw, rmc, somc, ssmc, fmc, mymensingh-mc]
+related: [bsmmu, dghs, mohfw, rmc, somc, ssmc, fmc, mymensingh-mc, cmc, rangpur-mc, cmu, rmu]
 last_verified: 2026-08-07
 ---

@@ -50,6 +50,6 @@ faq:
     a: "No. This Service is Barishal City Corporation. BCC (Computer Council) is a separate central ICT Service."
     q_bn: "এটি কি বাংলাদেশ কম্পিউটার কাউন্সিল?"
     a_bn: "না। এই সেবা বরিশাল সিটি কর্পোরেশন। বিসিসি (কম্পিউটার কাউন্সিল) আলাদা কেন্দ্রীয় আইসিটি সেবা।"
-related: [lgd, gcc, ccc, national-portal]
+related: [lgd, gcc, ccc, national-portal, scc]
 last_verified: 2026-08-07
 ---

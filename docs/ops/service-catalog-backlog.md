@@ -137,17 +137,104 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 | DAE | dae / bd-dae | central | https://dae.gov.bd/ | shipped | gap-list | Verified 200 |
 | BANBEIS | banbeis / bd-banbeis | education | https://banbeis.gov.bd/ | shipped | gap-list | Verified 200 |
 
+## Priority wave 30 — metro police + printing fix (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Dhaka Metropolitan Police | dmp / bd-dmp | safety | https://www.dmp.gov.bd/ | shipped | gap-list | Verified 200 |
+| Chattogram Metropolitan Police | cmp / bd-cmp | safety | https://www.cmp.gov.bd/ | shipped | gap-list | Verified 200 |
+| Rajshahi Metropolitan Police | rmp / bd-rmp | safety | https://www.rmp.gov.bd/ | shipped | gap-list | Verified 200 |
+| Gazipur Metropolitan Police | gmp / bd-gmp | safety | https://www.gmp.gov.bd/ | shipped | gap-list | Verified 200 |
+| Rangpur Metropolitan Police | rpmp / bd-rpmp | safety | https://www.rpmp.gov.bd/ | shipped | gap-list | Verified 200 |
+| Department of Printing and Publications | printing / bd-printing | central | https://www.dpp.gov.bd/ | shipped | gap-list | Corrects prior mislabeled prosecutions hop |
+
+## Priority wave 29 — citizen + institutional portals (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Bangladesh Judiciary | judiciary / bd-judiciary | justice | https://judiciary.gov.bd/ | shipped | gap-list | Verified 200 |
+| DPDT | dpdt / bd-dpdt | central | https://dpdt.gov.bd/ | shipped | gap-list | Patents/designs/trademarks; verified 200 |
+| Muktopaath | muktopaath / bd-muktopaath | education | https://muktopaath.gov.bd/ | shipped | gap-list | Gov e-learning; verified 200 |
+| BMDC | bmdc / bd-bmdc | health | https://www.bmdc.org.bd/ | shipped | gap-list | Medical & Dental Council; verified 200 |
+| PKSF | pksf / bd-pksf | central | https://www.pksf-bd.org/ | shipped | gap-list | Half-gov apex foundation; verified 200 |
+| MoFA Consular Services | consular / bd-consular | central | https://consular.mofa.gov.bd/ | shipped | gap-list | Verified 200 |
+| GST Admission | gst-admission / bd-gst-admission | education | https://gstadmission.ac.bd/ | shipped | gap-list | Cluster uni admission; verified 200 |
+
+## Priority wave 28 — citizen must (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Online GD | online-gd / bd-online-gd | safety | https://gd.police.gov.bd/ | shipped | gap-list | Police General Diary; verified 200; high citizen demand |
+| GRS | grs / bd-grs | central | https://www.grs.gov.bd/ | shipped | gap-list | Grievance Redress System; verified 200 |
+| Cause List | causelist / bd-causelist | justice | https://causelist.judiciary.gov.bd/ | shipped | gap-list | Judiciary e-Causelist; verified 200 |
+| e-Court | ecourt / bd-ecourt | justice | https://ecourt.gov.bd/ | shipped | catalog | Already shipped earlier; reconfirmed 200 |
+
 ## Remaining candidates
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
-| Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | URLs often flaky |
-| Other city corporations | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Often 403 |
-| More public unis / boards | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | e.g. Rajshahi/Jashore/Sylhet boards; SUST/JU blocked |
-| More half-gov / SOE / state banks | _(TBD)_ | mixed | _(confirm)_ | candidate | gap-list | Rupali 403; skip private banks & MFS |
-| More public medical colleges | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | e.g. CMC (`cmc.gov.bd` verified 200) |
-| BG Press / BPATC / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Probe next wave |
-| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); `mmd.gov.bd` wrong app; private KGMC; `smc.edu.bd` junk |
+| Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | GTCL/NWPGCL/KGDCL/Padma Oil/BPC still curl-fail |
+| Other city corporations | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Khulna/Rajshahi/Rangpur/Cumilla/Mymensingh still fail; SCC shipped |
+| More public unis / boards | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | SUST 403; IUT skipped (OIC) |
+| More half-gov / SOE / state banks | _(TBD)_ | mixed | _(confirm)_ | candidate | gap-list | BDBL.com for sale; private banks & MFS out |
+| More public medical colleges | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | SHSMC / Cumilla MC still fail; private Barind skipped |
+| BG Press / BPATC / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | curl fail; liberationwarmuseum.org hijacked — skip |
+| Development authorities (RAJUK/CDA/KDA/RDA) | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | curl fail this run |
+| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); private Barind MC; `smc.edu.bd` junk; `afmcbd.com` for sale; `nitor.org` wrong (DE pest control); icddr,b international |
+
+## Priority wave 27 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| NICVD | nicvd / bd-nicvd | health | https://www.nicvd.gov.bd/ | shipped | gap-list | Verified 200 |
+| NITOR | nitor / bd-nitor | health | https://www.nitor.gov.bd/ | shipped | gap-list | Verified 200; not nitor.org |
+| NICRH | nicrh / bd-nicrh | health | https://www.nicrh.gov.bd/ | shipped | gap-list | Verified 200 |
+
+## Priority wave 26 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Directorate of Technical Education | techedu / bd-techedu | education | https://techedu.gov.bd/ | shipped | gap-list | DTE; verified 200 |
+| CVASU | cvasu / bd-cvasu | education | https://cvasu.ac.bd/ | shipped | gap-list | Verified 200 |
+| Sylhet Agricultural University | sylhet-au / bd-sylhet-au | education | https://sau.ac.bd/ | shipped | gap-list | Distinct from SAU Dhaka; verified 200 |
+| JSTU | jstu / bd-jstu | education | https://www.bsfmstu.ac.bd/ | shipped | gap-list | Jamalpur S&T; domain still bsfmstu.ac.bd |
+| Naogaon Polytechnic | npi / bd-npi | education | https://www.npi.gov.bd/ | shipped | gap-list | Verified 200 |
+| Dinajpur Polytechnic | dinajpur-poly / bd-dinajpur-poly | education | https://www.dpi.edu.bd/ | shipped | gap-list | Verified 200; not DPE |
+| Sylhet City Corporation | scc / bd-scc | central | https://www.scc.gov.bd/ | shipped | gap-list | Verified 200 |
+
+## Priority wave 25 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| PUST | pust / bd-pust | education | https://www.pust.ac.bd/ | shipped | gap-list | Verified 200 |
+| GSTU | gstu / bd-gstu | education | https://www.gstu.edu.bd/ | shipped | gap-list | Verified 200 |
+| BAUET | bauet / bd-bauet | education | https://www.bauet.ac.bd/ | shipped | gap-list | Army engineering uni (half-gov); verified 200 |
+| Rupali Bank | rupali / bd-rupali | tax | https://www.rupalibank.com/ | shipped | gap-list | State bank; verified 200 (was previously 403) |
+
+## Priority wave 24 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Chittagong Medical College | cmc / bd-cmc | health | https://www.cmc.gov.bd/ | shipped | gap-list | Verified 200 |
+| Rangpur Medical College | rangpur-mc / bd-rangpur-mc | health | https://www.rpmc.edu.bd/ | shipped | gap-list | Verified 200 |
+| Chittagong Medical University | cmu / bd-cmu | health | https://www.cmu.edu.bd/ | shipped | gap-list | Verified 200 |
+| Rajshahi Medical University | rmu / bd-rmu | health | https://www.rmu.edu.bd/ | shipped | gap-list | Verified 200 |
+| Jahangirnagar University | ju / bd-ju | education | https://www.juniv.edu/ | shipped | gap-list | Verified 200 |
+| Begum Rokeya University | brur / bd-brur | education | https://www.brur.ac.bd/ | shipped | gap-list | Verified 200 |
+| Bangladesh Maritime University | bsmrmu / bd-bsmrmu | education | https://www.bsmrmu.edu.bd/ | shipped | gap-list | BMU; verified 200 |
+| JKKNIU | jkkniu / bd-jkkniu | education | https://www.jkkniu.edu.bd/ | shipped | gap-list | Verified 200 |
+
+## Priority wave 23 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Rajshahi Education Board | rajshahi-board / bd-rajshahi-board | education | https://rajshahiboard.gov.bd/ | shipped | gap-list | Verified 200 |
+| Jashore Education Board | jashore-board / bd-jashore-board | education | https://www.jessoreboard.gov.bd/ | shipped | gap-list | Verified 200; former Jessore |
+| Sylhet Education Board | sylhet-board / bd-sylhet-board | education | https://sylhetboard.gov.bd/ | shipped | gap-list | Verified 200 |
+| Cumilla Education Board | comilla-board / bd-comilla-board | education | https://comillaboard.gov.bd/ | shipped | gap-list | Verified 200; former Comilla |
+| Barishal Education Board | barishal-board / bd-barishal-board | education | https://barisalboard.gov.bd/ | shipped | gap-list | Verified 200 |
+| Dinajpur Education Board | dinajpur-board / bd-dinajpur-board | education | https://dinajpureducationboard.gov.bd/ | shipped | gap-list | Verified 200 |
+| Mymensingh Education Board | mymensingh-board / bd-mymensingh-board | education | https://www.mymensingheducationboard.gov.bd/ | shipped | gap-list | Verified 200 |
 
 ## Priority wave 22 — gap fill (2026-08-07)
 
@@ -417,7 +504,8 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 | Teletalk | teletalk / bd-teletalk | utilities | https://www.teletalk.com.bd/ | shipped | gap-list | State telco; verified 200 |
 | e-Nothi | enothi / bd-enothi | central | https://nothi.gov.bd/ | shipped | gap-list | Verified 200 |
 | LGED | lged / bd-lged | central | https://www.lged.gov.bd/ | shipped | gap-list | curl flaky — browser confirm |
-| DPP | dpp / bd-dpp | justice | https://www.dpp.gov.bd/ | shipped | gap-list | Verified 200 |
+| DPP (prosecutions) | — | justice | — | skip | gap-list | Prior row mislabeled: `dpp.gov.bd` is Printing & Publications — now `printing`. True public-prosecutions portal still unconfirmed |
+| Department of Printing and Publications | printing / bd-printing | central | https://www.dpp.gov.bd/ | shipped | gap-list | Gazettes / BG Press; verified 200 |
 | MoFA | mofa / bd-mofa | central | https://mofa.gov.bd/ | shipped | gap-list | curl flaky — browser confirm |
 
 ## Skipped

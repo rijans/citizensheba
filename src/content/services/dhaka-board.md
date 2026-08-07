@@ -50,6 +50,6 @@ faq:
     a: "Use the Education Board Results Service for cross-board public exam results. This hop is the Dhaka board portal for notices and schedules."
     q_bn: "এসএসসি/এইচএসসি ফলাফল কোথায় দেখব?"
     a_bn: "ক্রস-বোর্ড পাবলিক পরীক্ষার ফলাফলের জন্য শিক্ষা বোর্ড ফলাফল সেবা ব্যবহার করুন। এই হপ নোটিশ ও সময়সূচির ঢাকা বোর্ড পোর্টাল।"
-related: [edu-results, dshe, moedu, bteb, bmeb]
+related: [edu-results, dshe, moedu, bteb, bmeb, rajshahi-board, jashore-board, sylhet-board]
 last_verified: 2026-08-07
 ---

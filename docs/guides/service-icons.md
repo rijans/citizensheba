@@ -115,7 +115,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `dos` | `ship` | Department of Shipping |
 | `dpdc` | `zap` | Electricity |
 | `dpe` | `school` | Primary education |
-| `dpp` | `scale` | Public prosecutions |
+| `printing` | `file-text` | Printing & publications / gazettes |
 | `dscc` | `building-2` | Dhaka South City |
 | `dshe` | `school` | Secondary / higher ed |
 | `dss` | `hand-heart` | Social services |

@@ -50,6 +50,6 @@ faq:
     a: "No. Cabinet Division and the Prime Minister’s Office are separate. Use the PMO Service for PMO information."
     q_bn: "এটি কি প্রধানমন্ত্রীর কার্যালয়?"
     a_bn: "না। মন্ত্রিপরিষদ বিভাগ ও প্রধানমন্ত্রীর কার্যালয় আলাদা। পিএমও তথ্যের জন্য পিএমও সেবা ব্যবহার করুন।"
-related: [pmo, mopa, national-portal, a2i, parliament]
+related: [pmo, mopa, national-portal, a2i, parliament, grs]
 last_verified: 2026-08-07
 ---

@@ -52,6 +52,6 @@ faq:
     a: "ACC handles anti-corruption matters through its published channels. General crimes go through Police / emergency services."
     q_bn: "দুদক ওয়েবসাইটে কি যেকোনো পুলিশ মামলা করা যায়?"
     a_bn: "দুদক তার প্রকাশিত চ্যানেলে দুর্নীতি বিষয় দেখে। সাধারণ অপরাধ পুলিশ / জরুরি সেবায় যায়।"
-related: [police, ecourt, dpp, supremecourt]
+related: [police, ecourt, supremecourt, lawjusticediv]
 last_verified: 2026-08-07
 ---

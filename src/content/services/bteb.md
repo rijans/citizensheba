@@ -52,6 +52,6 @@ faq:
     a: "No. BTEB is the technical education board. The Education Board Results hop covers general board public exam results."
     q_bn: "বিটিইবি কি শিক্ষা বোর্ড ফলাফলের মতো একই?"
     a_bn: "না। বিটিইবি কারিগরি শিক্ষা বোর্ড। শিক্ষা বোর্ড ফলাফল হপ সাধারণ বোর্ড পাবলিক পরীক্ষার ফলাফল দেখে।"
-related: [edu-results, tmed, moedu, bmeb]
+related: [edu-results, tmed, moedu, bmeb, techedu, npi, dinajpur-poly]
 last_verified: 2026-08-07
 ---

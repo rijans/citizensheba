@@ -52,6 +52,6 @@ faq:
     a: "No. Catalog v1 includes state-owned / half-gov banks such as Sonali Bank, not private commercial banks or MFS apps."
     q_bn: "বেসরকারি ব্যাংক কি অফিসিয়াল সেবা হিসেবে তালিকাভুক্ত?"
     a_bn: "না। ক্যাটালগ v1-এ সোনালী ব্যাংকের মতো রাষ্ট্রীয় / হাফ-গভ ব্যাংক আছে—বেসরকারি বাণিজ্যিক ব্যাংক বা এমএফএস অ্যাপ নয়।"
-related: [janata, bangladesh-bank, pkb, national-portal, basic-bank, rakub]
+related: [janata, bangladesh-bank, pkb, national-portal, basic-bank, rakub, rupali, agrani]
 last_verified: 2026-08-07
 ---
