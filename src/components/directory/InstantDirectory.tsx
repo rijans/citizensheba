@@ -1,10 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
-import {
-  filterAndSort,
-  paginateDirectory,
-  type DirectoryBrowseMode,
-  type SearchableService,
-} from '../../lib/search';
+import { filterAndSort, type SearchableService } from '../../lib/search';
 import { formatDirectoryCount } from '../../lib/directoryCopy';
 import { categoryPath, servicePath } from '../../lib/urls';
 import { accentStyle } from '../../lib/categoryVisuals';
@@ -15,6 +10,7 @@ import ServiceCard from '../ui/ServiceCard';
 import DirectoryPagination from './DirectoryPagination';
 import DirectoryLoadMore from './DirectoryLoadMore';
 import DirectoryCardSkeleton from './DirectoryCardSkeleton';
+import { useDirectoryBrowse } from './useDirectoryBrowse';
 
 type Category = {
   id: string;
@@ -55,14 +51,11 @@ export default function InstantDirectory({
   const [loadAttempt, setLoadAttempt] = useState(0);
   const [query, setQuery] = useState('');
   const [categoryId, setCategoryId] = useState<string | null>(initialCategoryId);
-  const [page, setPage] = useState(1);
-  const [mode, setMode] = useState<DirectoryBrowseMode>('append');
   const [chipOverflow, setChipOverflow] = useState({ left: false, right: false });
   const chipsRef = useRef<HTMLDivElement>(null);
   const resultsRef = useRef<HTMLDivElement>(null);
   const searchShellRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
-  const focusNewRef = useRef(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -89,26 +82,11 @@ export default function InstantDirectory({
     [services, query, categoryId],
   );
 
-  const slice = useMemo(
-    () => paginateDirectory(results, page, { mode }),
-    [results, page, mode],
-  );
-
-  useEffect(() => {
-    setPage(1);
-    setMode('append');
-  }, [query, categoryId]);
-
-  useEffect(() => {
-    if (page !== slice.page) setPage(slice.page);
-  }, [page, slice.page]);
-
-  useEffect(() => {
-    if (!focusNewRef.current || slice.firstNewIndex == null) return;
-    focusNewRef.current = false;
-    const el = document.getElementById(`directory-card-${slice.firstNewIndex}`);
-    el?.focus({ preventScroll: true });
-  }, [slice.items, slice.firstNewIndex]);
+  const { slice, onPageChange, onLoadMore } = useDirectoryBrowse(results, {
+    resetKey: `${query}\0${categoryId ?? ''}`,
+    cardIdPrefix: 'directory-card',
+    scrollTargetRef: resultsRef,
+  });
 
   useEffect(() => {
     const focusFromHash = () => {
@@ -174,18 +152,6 @@ export default function InstantDirectory({
   const clearAll = () => {
     setQuery('');
     setCategoryId(null);
-  };
-
-  const onPageChange = (next: number) => {
-    setMode('replace');
-    setPage(next);
-    resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
-
-  const onLoadMore = () => {
-    focusNewRef.current = true;
-    setMode('append');
-    setPage((p) => p + 1);
   };
 
   const countLabel =
