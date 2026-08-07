@@ -1,10 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
+import CategoryIcon from '../ui/CategoryIcon';
 import { categoryPath } from '../../lib/urls';
-import { DISCLAIMER_SHORT, SITE_NAME } from '../../lib/site';
+import { DISCLAIMER_SHORT, SITE_NAME, SITE_NAME_BN } from '../../lib/site';
 
 const categories = (await getCollection('categories'))
   .sort((a, b) => a.data.sort_order - b.data.sort_order);
+const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
@@ -17,6 +19,7 @@ const categories = (await getCollection('categories'))
             categories.map((category) => (
               <li>
                 <a class="site-footer__link" href={categoryPath(category.data.slug)}>
+                  <CategoryIcon icon={category.data.icon} categoryId={category.data.id} size={16} />
                   {category.data.name}
                 </a>
               </li>
@@ -40,11 +43,31 @@ const categories = (await getCollection('categories'))
       <section aria-labelledby="footer-disclaimer">
         <h2 id="footer-disclaimer" class="site-footer__heading">Notice</h2>
         <p class="site-footer__disclaimer">{DISCLAIMER_SHORT}</p>
+        <a href="/" class="site-footer__brand" aria-label={`${SITE_NAME}.com home`}>
+          <picture>
+            <source type="image/webp" srcset="/brand/citizensheba-logo-176.webp" />
+            <img
+              class="site-footer__logo"
+              src="/brand/citizensheba-logo.png"
+              alt=""
+              width="112"
+              height="112"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <span class="site-footer__brand-text">
+            <span class="site-footer__brand-name">
+              <em>{SITE_NAME}</em><span class="site-footer__tld">.com</span>
+            </span>
+            <span class="site-footer__brand-bn" lang="bn">{SITE_NAME_BN}</span>
+          </span>
+        </a>
       </section>
     </div>
 
     <p class="site-footer__bottom">
-      &copy; {new Date().getFullYear()} {SITE_NAME}
+      &copy; {year} {SITE_NAME}.com
     </p>
   </div>
 </footer>

@@ -26,7 +26,8 @@
 | Instant Directory island | `InstantDirectory.tsx` (`client:idle={{ timeout: 500 }}` on Home) |
 | Category directory island | `CategoryDirectory.tsx` |
 | Site header | `Header.astro` — brand, Search → `/#directory-search`, theme toggle |
-| Breadcrumb | `Breadcrumb.astro` — quiet surface pill, Lucide home + `>` seps; current page muted (no chip) |
+| Site footer | `Footer.astro` — category links with chip-size icons; trust/notice; brand under Notice; © strip |
+| Breadcrumb | `Breadcrumb.astro` — quiet surface pill, Lucide home + chevron seps (same gray as current), current muted |
 | Load more / pager | `DirectoryLoadMore.tsx`, `DirectoryPagination.tsx` |
 | Static cards | `ServiceCardLink.astro` (related on Service Pages) — SSR Lucide, no extra island |
 | Icons | `CategoryIcon.tsx` + `categoryIcons.ts` (Category + optional Service keys) |
@@ -60,7 +61,9 @@
 - Header: emblem + existing English `.com` wordmark + Bangla (`Header.astro`)
 - Favicon / Apple touch: `public/favicon-32.png`, `favicon-48.png`, `favicon.ico`, `apple-touch-icon.png`
 - PWA: `public/icons/icon-192.png`, `icon-512.png`, `icon-512-maskable.png` (`manifest.webmanifest`)
-- When replacing the logo, crop to a transparent circle and regenerate favicon + PWA sizes together (see `docs/superpowers/specs/2026-08-07-brand-logo-design.md`)
+- **Default OG / Twitter image:** `public/brand/og-default.png` (1200×630). Wired in `BaseLayout` via `resolveOgImage()` — overwrite the file to refresh shares. Future per-Service/Category images resolve ahead of this default (`src/lib/seo.ts`).
+- JSON-LD: sitewide `Organization` + `WebSite` in `BaseLayout`; Service/Category pages add `BreadcrumbList` + `WebPage` (helpers in `seo.ts`). Do not claim `GovernmentService` for CitizenSheba.
+- When replacing the logo, crop to a transparent circle and regenerate favicon + PWA sizes together (see `docs/superpowers/specs/2026-08-07-brand-logo-design.md`); refresh `og-default.png` if the brand mark changes.
 
 ## Related
 

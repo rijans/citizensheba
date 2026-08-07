@@ -4,7 +4,7 @@ import BaseLayout from '../../components/layout/BaseLayout.astro';
 import Breadcrumb from '../../components/layout/Breadcrumb.astro';
 import CategoryDirectory from '../../components/directory/CategoryDirectory';
 import { categoryPath, officialDomainFromUrl } from '../../lib/urls';
-import { documentTitle, metaDescription } from '../../lib/seo';
+import { documentTitle, metaDescription, breadcrumbListJsonLd, webPageJsonLd } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const categories = await getCollection('categories');
@@ -34,9 +34,23 @@ const services = (await getCollection('services'))
 
 const title = documentTitle(category.data.name_bn, category.data.name);
 const description = metaDescription(category.data.description_bn, category.data.description);
+const canonicalPath = categoryPath(category.data.slug);
+const jsonLd = [
+  breadcrumbListJsonLd([{ name: category.data.name }]),
+  webPageJsonLd({
+    name: title,
+    description,
+    path: canonicalPath,
+  }),
+];
 ---
 
-<BaseLayout title={title} description={description} canonicalPath={categoryPath(category.data.slug)}>
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={canonicalPath}
+  jsonLd={jsonLd}
+>
   <article class="category-page">
     <Breadcrumb crumbs={[{ label: category.data.name }]} />
 

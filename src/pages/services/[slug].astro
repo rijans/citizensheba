@@ -9,7 +9,7 @@ import CategoryIcon from '../../components/ui/CategoryIcon';
 import ServiceCardLink from '../../components/ui/ServiceCardLink.astro';
 import { categoryPath, servicePath, officialDomainFromUrl } from '../../lib/urls';
 // import { REPORT_EMAIL } from '../../lib/site';
-import { documentTitle, metaDescription } from '../../lib/seo';
+import { documentTitle, metaDescription, breadcrumbListJsonLd, webPageJsonLd } from '../../lib/seo';
 import { renderMarkdown } from '../../lib/markdown';
 import { servicePageHeadings, servicePageLangLabels } from '../../lib/servicePageCopy';
 import { ChevronDown } from 'lucide-react';
@@ -45,6 +45,19 @@ const title = documentTitle(
   service.data.serp_title ?? service.data.title,
 );
 const description = metaDescription(service.data.description_bn, service.data.description);
+const canonicalPath = servicePath(service.data.slug);
+const jsonLd = [
+  breadcrumbListJsonLd([
+    { name: category.data.name, path: categoryPath(category.data.slug) },
+    { name: service.data.title },
+  ]),
+  webPageJsonLd({
+    name: title,
+    description,
+    path: canonicalPath,
+    dateModified: service.data.last_verified.toISOString().slice(0, 10),
+  }),
+];
 // Temporarily disabled — Report a problem mailto
 // const reportSubject = encodeURIComponent(`Report: ${service.data.slug}`);
 const formerAliases = (service.data.aliases ?? []).filter((a) => a.kind === 'former');
@@ -59,7 +72,12 @@ const verifiedLabel = new Intl.DateTimeFormat('en-US', {
 const verifiedIso = service.data.last_verified.toISOString().slice(0, 10);
 ---
 
-<BaseLayout title={title} description={description} canonicalPath={servicePath(service.data.slug)}>
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={canonicalPath}
+  jsonLd={jsonLd}
+>
   <article class="service-page">
     <Breadcrumb
       crumbs={[

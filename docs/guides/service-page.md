@@ -23,7 +23,9 @@ Implementation: `src/pages/services/[slug].astro`.
 | # | Block | Source | Notes |
 |---|--------|--------|--------|
 | — | Document Title (`<title>`) | `serp_title_bn`/`serp_title` or `title_bn`/`title` | `বাংলা — English \| CitizenSheba Bangladesh` (ADR-0003); expand short acronyms for SERP |
-| 1 | Breadcrumb | Category + Service | Lucide home icon + Home → Category → title (`Breadcrumb.astro`) |
+| — | Open Graph / Twitter image | brand default or future Service OG | `resolveOgImage()` — brand `og-default.png` until per-Service raster exists |
+| — | JSON-LD | composed in page + BaseLayout | Sitewide Organization + WebSite; hop adds BreadcrumbList + WebPage (`last_verified` → `dateModified`). Not GovernmentService. |
+| 1 | Breadcrumb | Category + Service | Lucide home icon + Home → Category → title (`Breadcrumb.astro`); schema mirrors visible trail |
 | 2 | Status badge | `status` | When not `ACTIVE` |
 | 3 | Icon + H1 | Service `icon` ?? Category `icon`; `title` + `title_bn` | Same Lucide + Category accent as cards (ADR-0004); EN then BN on one line |
 | 4 | Formerly … | `aliases` where `kind: former` | Quiet line only |

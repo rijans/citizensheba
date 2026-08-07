@@ -264,8 +264,17 @@ html[data-theme="dark"] .site-header__icon-btn__glyph--moon {
 }
 
 .site-footer__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   color: var(--ink-muted);
   transition: color 0.2s ease;
+}
+
+.site-footer__link .category-icon {
+  width: 1.375rem;
+  height: 1.375rem;
+  border-radius: 0.4375rem;
 }
 
 .site-footer__link:hover {
@@ -277,6 +286,67 @@ html[data-theme="dark"] .site-header__icon-btn__glyph--moon {
   font-size: 0.9375rem;
   color: var(--ink-subtle);
   line-height: 1.5;
+}
+
+.site-footer__grid > * {
+  min-width: 0;
+}
+
+.site-footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  max-width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-footer__logo {
+  width: min(7rem, 100%);
+  height: auto;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  border-radius: 999px;
+  object-fit: contain;
+  display: block;
+}
+
+.site-footer__brand-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  max-width: 100%;
+  line-height: 1.15;
+}
+
+.site-footer__brand-name {
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-size: clamp(1.0625rem, 2.8vw, 1.375rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+}
+
+.site-footer__brand-name em {
+  color: var(--green);
+  font-style: normal;
+}
+
+.site-footer__tld {
+  margin-left: 0.06em;
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink-subtle);
+  vertical-align: 0.06em;
+}
+
+.site-footer__brand-bn {
+  font-size: 0.875rem;
+  color: var(--ink-subtle);
 }
 
 .site-footer__bottom {
@@ -1139,9 +1209,17 @@ html[data-theme="dark"] .breadcrumb {
 }
 
 .breadcrumb__sep {
-  color: var(--border-strong);
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--ink-subtle);
+  line-height: 0;
   user-select: none;
+}
+
+.breadcrumb__sep svg {
+  display: block;
 }
 
 .breadcrumb__current {

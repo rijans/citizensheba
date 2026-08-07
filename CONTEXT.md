@@ -74,6 +74,14 @@ _Avoid_: English-only meta titles, reversing BN/EN order for Document Titles, re
 The HTML meta description / SERP snippet. Bengali sentence(s) first, then English sentence(s), joined as two natural sentences (e.g. `বাংলা বাক্য। English sentence.`). Always generated from content fields (`description_bn` then `description`); do not store a separate `meta_description`. Same rule for Service, Category, and static pages via BN/EN site constants.
 _Avoid_: English-only meta descriptions, EN-then-BN order, em-dash or pipe joins for descriptions, per-page `meta_description` overrides
 
+**Open Graph Image**:
+The absolute URL used for `og:image` / Twitter share cards. Default brand card is `public/brand/og-default.png` (1200×630). Resolution order: Service OG image → Category OG image → brand default. Site chrome pages (Home, About, Disclaimer, …) use the brand default. Lucide Service Icons are glyphs, not OG assets — per-Service/Category images are added later as real raster files.
+_Avoid_: Pointing `og:image` at inline SVG / Lucide components, omitting a fallback image, claiming a Service Icon URL that does not exist
+
+**Structured Data (JSON-LD)**:
+Machine-readable graphs in page HTML: sitewide `Organization` + `WebSite` (every page); Service and Category pages also emit `BreadcrumbList` (mirrors visible breadcrumb) and `WebPage`. Service hops stay `WebPage` only — do not claim `GovernmentService` for CitizenSheba. No `SearchAction` until a crawlable search results URL exists. No FAQPage in v1.
+_Avoid_: Marking CitizenSheba as a government provider, FAQ rich-result spam, SearchAction with a client-only filter URL
+
 **Official Service** (v1 catalog):
 A Service whose Outbound Link is run by government, a statutory/public body, a regulated utility, or a **half-gov** state enterprise citizens commonly need (SOE utilities, public universities, state-owned commercial banks such as Sonali/Janata/Agrani/PKB).
 _Avoid_: Partner listing, Promoted service, Affiliate (those are future, separate types)
