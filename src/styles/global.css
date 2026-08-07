@@ -1522,7 +1522,6 @@ html[data-theme="dark"] .caution {
 
 .service-page__description {
   margin: 1rem 0 0;
-  max-width: 42rem;
   color: var(--ink-muted);
 }
 
@@ -1533,7 +1532,6 @@ html[data-theme="dark"] .caution {
   list-style: none;
   margin: 0.875rem 0 0;
   padding: 0;
-  max-width: 42rem;
 }
 
 .service-page__capability {
@@ -1589,9 +1587,10 @@ html[data-theme="dark"] .caution {
   text-underline-offset: 0.12em;
 }
 
-/* Hop content regions (2026-08-08) */
+/* Hop content regions (2026-08-08) — full site-main width */
 .hop-region {
-  max-width: 42rem;
+  width: 100%;
+  max-width: none;
 }
 
 .hop-region--primary {
@@ -1736,7 +1735,6 @@ html[data-theme="dark"] .caution {
   margin: 0;
   font-size: 0.9375rem;
   color: var(--ink-muted);
-  max-width: 42rem;
 }
 
 /* Category page */
