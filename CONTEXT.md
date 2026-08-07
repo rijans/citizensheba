@@ -83,7 +83,7 @@ Private banks, MFS apps (bKash/Nagad as products), commercial SaaS, and purely p
 _Avoid_: Calling these Official Services
 
 **Service Page (v1 content)**:
-SEO hop page for one Official Service — structure, bilingual rules, and editorial do-nots: [`docs/guides/service-page.md`](docs/guides/service-page.md) (SSOT). Glossary: Mixed UI H1, Outbound CTA, short `description` fields, longer `body`/`body_bn`, bilingual audience/FAQ/related, official-link last verified. Full how-to Guides are out of scope for v1.
+SEO hop page for one Official Service — structure, bilingual rules, and editorial do-nots: [`docs/guides/service-page.md`](docs/guides/service-page.md) (SSOT). Glossary: Mixed UI H1, Outbound CTA, short `description` fields, longer `body`/`body_bn`, bilingual audience/FAQ/related, official-link last verified. Mid-page **content regions**: About (primary panel) → Who / FAQ (support strips) with labeled BN/EN panes; verified sits in About; Related cards unchanged. Full how-to Guides are out of scope for v1.
 _Avoid_: Doorway spam, hop-disclaimer FAQ/body copy, long essays in `description` — details in the Service Page guide + Trap #9
 
 **Category Page**:

@@ -14,6 +14,8 @@ Thin **SEO hop**: help citizens reach the official portal fast, with enough hone
 
 Non-Official stance lives in site chrome (CTA, About, Disclaimer) — **not** repeated in `body` or FAQ.
 
+**Content regions:** About is the primary article; Who and FAQ are quieter support strips. Related stays card-grid only (no outer panel). Design: [`docs/superpowers/specs/2026-08-08-service-page-content-regions-design.md`](../superpowers/specs/2026-08-08-service-page-content-regions-design.md).
+
 ## Page order (top → bottom)
 
 Implementation: `src/pages/services/[slug].astro`.
@@ -29,10 +31,10 @@ Implementation: `src/pages/services/[slug].astro`.
 | 5b | Capability capsules | optional `capabilities[]` | 2–4 EN+BN soft capsules (muted gray EN, subtler gray BN); hop only — ADR-0011 |
 | 6 | Outbound CTA | `url` + domain | Primary action; domain under button with small **Copy** (full URL); bilingual toast “Link copied / লিংক কপি হয়েছে” |
 | 7 | Status caution | if not `ACTIVE` | Short warning |
-| 8 | Body | `body_bn` then `body` | Markdown; BN first; equal-spaced divider before EN |
-| 9 | Official link last verified | `last_verified` | Human-readable date (UTC); means outbound link check |
-| 10 | Who is this for | `audience_bn` then `audience` | Heading EN+BN; values BN then EN |
-| 11 | FAQ | `faq[]` with `q`/`a`/`q_bn`/`a_bn` | Heading EN+BN; Q EN+BN one line; answers BN then EN |
+| 8 | About (primary) | `body_bn` then `body` | H2 About EN+BN; primary `--surface` panel; labeled বাংলা / English panes; Markdown |
+| 9 | Official link last verified | `last_verified` | Inside About panel footer |
+| 10 | Who is this for (support) | `audience_bn` then `audience` | Quiet `--surface-muted` strip; labeled panes |
+| 11 | FAQ (support) | `faq[]` with `q`/`a`/`q_bn`/`a_bn` | Quiet strip; Q EN+BN one line; answers labeled BN→EN |
 | 12 | Related services | related cards | Heading EN+BN; cards already show `title` + `title_bn` |
 | 13 | Report a problem | mailto | **Temporarily disabled** (commented out in `[slug].astro`) |
 
@@ -43,10 +45,10 @@ Shared section heading strings: `src/lib/servicePageCopy.ts` (not per-service).
 | Surface | Pattern |
 |---------|---------|
 | H1, section headings, FAQ questions | **EN + BN on one line** (BN in `lang="bn"`, green accent) |
-| Body, audience, FAQ answers | **BN block first, then EN** |
+| Body, audience, FAQ answers | **Labeled panes:** বাংলা block then English block (both in DOM); hairline between |
 | SERP Document Title / Meta Description | BN→EN (ADR-0003); brand `CitizenSheba Bangladesh`; optional `serp_title*` when Display Names are opaque |
 
-CSS: `.bilingual-stack`, `.service-page__prose--secondary` in `src/styles/global.css`.
+CSS: `.hop-region--primary`, `.hop-region--support`, `.bilingual-panes`, `.lang-label` in `src/styles/global.css`.
 
 ## Content fields (required on every Service)
 

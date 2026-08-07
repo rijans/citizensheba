@@ -10,7 +10,7 @@ import { categoryPath, servicePath, officialDomainFromUrl } from '../../lib/urls
 // import { REPORT_EMAIL } from '../../lib/site';
 import { documentTitle, metaDescription } from '../../lib/seo';
 import { renderMarkdown } from '../../lib/markdown';
-import { servicePageHeadings } from '../../lib/servicePageCopy';
+import { servicePageHeadings, servicePageLangLabels } from '../../lib/servicePageCopy';
 import { accentStyle } from '../../lib/categoryVisuals';
 export async function getStaticPaths() {
   const services = await getCollection('services');
@@ -123,24 +123,41 @@ const verifiedIso = service.data.last_verified.toISOString().slice(0, 10);
       )
     }
 
-    <section class="service-page__body" aria-label="About this service">
-      <div class="service-page__prose" lang="bn" set:html={bodyBnHtml} />
-      <div class="service-page__prose service-page__prose--secondary" set:html={bodyHtml} />
+    <section class="hop-region hop-region--primary" aria-labelledby="service-about-heading">
+      <h2 id="service-about-heading">
+        {servicePageHeadings.about.en}{' '}
+        <span lang="bn">{servicePageHeadings.about.bn}</span>
+      </h2>
+      <div class="bilingual-panes">
+        <div class="bilingual-pane">
+          <p class="lang-label">{servicePageLangLabels.bn}</p>
+          <div class="service-page__prose" lang="bn" set:html={bodyBnHtml} />
+        </div>
+        <div class="bilingual-pane">
+          <p class="lang-label">{servicePageLangLabels.en}</p>
+          <div class="service-page__prose" set:html={bodyHtml} />
+        </div>
+      </div>
+      <p class="service-page__verified">
+        <strong>Official link last verified:</strong>
+        <time datetime={verifiedIso}>{verifiedLabel}</time>
+      </p>
     </section>
 
-    <p class="service-page__verified">
-      <strong>Official link last verified:</strong>
-      <time datetime={verifiedIso}>{verifiedLabel}</time>
-    </p>
-
-    <section class="content-section">
-      <h2>
+    <section class="hop-region hop-region--support" aria-labelledby="service-audience-heading">
+      <h2 id="service-audience-heading">
         {servicePageHeadings.audience.en}{' '}
         <span lang="bn">{servicePageHeadings.audience.bn}</span>
       </h2>
-      <div class="bilingual-stack">
-        <p lang="bn">{service.data.audience_bn}</p>
-        <p>{service.data.audience}</p>
+      <div class="bilingual-panes">
+        <div class="bilingual-pane">
+          <p class="lang-label">{servicePageLangLabels.bn}</p>
+          <p lang="bn">{service.data.audience_bn}</p>
+        </div>
+        <div class="bilingual-pane">
+          <p class="lang-label">{servicePageLangLabels.en}</p>
+          <p>{service.data.audience}</p>
+        </div>
       </div>
     </section>
 

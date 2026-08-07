@@ -35,6 +35,7 @@
 
 - Display: Bricolage Grotesque; body/BN: Hind Siliguri (see `global.css`).
 - Body base **17px** (one step up from 16 for readability on Home + hop pages). Hero/display H1 clamps unchanged.
+- **Service hop content regions:** About = primary surface panel; Who/FAQ = muted support strips; labeled BN/EN panes — see [`service-page.md`](service-page.md).
 - **Directory / card scale:** card title EN+BN `1.125rem` (BN uses brand `--green`, weight 600 — peer for Bangla-only readers; EN stays ink + 650). Description `1rem`, domain `0.875rem`; chips `0.9375rem`; search input `1.0625rem`. Hop prose `1.0625rem`. Do **not** tint BN titles with `--cat-accent` (icon well already carries Category accent).
 - **Card description clamp (ADR-0012):** EN `description` on `.service-card` is capped at **2 lines** (`-webkit-line-clamp: 2`) with ellipsis. Pin `.service-card__domain` with `margin-top: auto` so domains align at the card bottom while grid rows stretch equal height. Do **not** force a 2-line `min-height` slot. Editorial floor: EN `description` ≥ **90** characters (content-integrity test) so cards fill ~2 lines at typical desktop width.
 - Prefer existing classes in `global.css` over ad-hoc pixel sizes in JSX.

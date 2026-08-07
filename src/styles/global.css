@@ -45,6 +45,10 @@ html[data-theme="dark"] {
   color-scheme: dark;
 }
 
+html[data-theme="dark"] .hop-region--primary {
+  box-shadow: 0 10px 24px -16px rgba(0, 0, 0, 0.55);
+}
+
 *,
 *::before,
 *::after {
@@ -1410,11 +1414,6 @@ html[data-theme="dark"] .caution {
   color: var(--ink-subtle);
 }
 
-.service-page__body {
-  margin: 1.75rem 0 0;
-  max-width: 42rem;
-}
-
 .service-page__prose {
   color: var(--ink-muted);
   font-size: 1.0625rem;
@@ -1445,17 +1444,86 @@ html[data-theme="dark"] .caution {
   text-underline-offset: 0.12em;
 }
 
-/* Equal space above and below the language divider (BN first, then EN). */
-.service-page__prose--secondary {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
+/* Hop content regions (2026-08-08) */
+.hop-region {
+  max-width: 42rem;
+}
+
+.hop-region--primary {
+  margin: 1.75rem 0 0;
+  padding: 1.25rem 1.25rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 8px 22px -16px rgba(16, 42, 34, 0.28);
+}
+
+.hop-region--support {
+  margin: 1rem 0 0;
+  padding: 0.875rem 1rem;
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.hop-region h2 {
+  margin: 0 0 0.875rem;
+  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.hop-region--support h2 {
+  margin-bottom: 0.625rem;
+  font-size: 1.125rem;
+}
+
+.hop-region h2 span[lang="bn"] {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.lang-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-subtle);
+}
+
+.bilingual-panes {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.bilingual-pane + .bilingual-pane {
+  margin-top: 0.875rem;
+  padding-top: 0.875rem;
   border-top: 1px solid var(--border);
 }
 
+.hop-region--support .bilingual-pane + .bilingual-pane {
+  margin-top: 0.625rem;
+  padding-top: 0.625rem;
+}
+
+.hop-region--support .service-page__prose,
+.hop-region--support .bilingual-pane p {
+  font-size: 0.9375rem;
+}
+
 .service-page__verified {
-  margin: 1.25rem 0;
+  margin: 0;
   font-size: 0.9375rem;
   color: var(--ink-subtle);
+}
+
+.hop-region--primary .service-page__verified {
+  margin: 1rem 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
 }
 
 .service-page__report {
@@ -1464,28 +1532,24 @@ html[data-theme="dark"] .caution {
 }
 
 /* Service FAQ */
-.service-faq {
-  margin-top: 1.75rem;
-}
-
-.service-faq h2 {
-  margin: 0 0 1rem;
-  font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-.service-faq__item + .service-faq__item {
+.service-faq.hop-region--support {
   margin-top: 1rem;
 }
 
+.service-faq__item + .service-faq__item {
+  margin-top: 0.875rem;
+  padding-top: 0.875rem;
+  border-top: 1px solid var(--border);
+}
+
 .service-faq__item h3 {
-  margin: 0 0 0.375rem;
+  margin: 0 0 0.5rem;
   font-size: 1rem;
   font-weight: 600;
 }
 
-.service-faq__item .bilingual-stack p {
+.service-faq__item .bilingual-pane p {
+  margin: 0;
   font-size: 0.9375rem;
   color: var(--ink-muted);
   max-width: 42rem;
