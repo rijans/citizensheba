@@ -50,7 +50,7 @@ faq:
     q_bn: "A2I-তে কি এনআইডি বা পাসপোর্টের আবেদন করা যায়?"
     a_bn: "A2I ডিজিটাল সরকার–সংক্রান্ত কর্মসূচি ও লিংক হোস্ট করে। এনআইডি, পাসপোর্ট বা করের জন্য সেই নিবেদিত সেবা পেজ ও অফিসিয়াল পোর্টাল ব্যবহার করুন।"
 
-related: [mygov, national-portal, bcc, doict]
+related: [mygov, national-portal, bcc, doict, ictd]
 last_verified: 2026-08-06
 ---
 

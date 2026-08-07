@@ -50,6 +50,6 @@ faq:
     a: "Use your distribution company’s portal (for example DESCO, DPDC, or NESCO). Power Division is the policy hub."
     q_bn: "বিদ্যুৎ বিল কোথায় পরিশোধ করব?"
     a_bn: "আপনার বিতরণ কোম্পানির পোর্টাল ব্যবহার করুন (যেমন ডেসকো, ডিপিডিসি বা নেসকো)। বিদ্যুৎ বিভাগ নীতি হাব।"
-related: [desco, dpdc, nesco, bpdb, berc, pgcb]
+related: [desco, dpdc, nesco, bpdb, berc, pgcb, egcb, emrd]
 last_verified: 2026-08-07
 ---

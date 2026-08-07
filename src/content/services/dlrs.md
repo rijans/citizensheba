@@ -52,6 +52,6 @@ faq:
     a: "Use the e-Porcha Service for khatian and related digital land records. DLRS is the records and surveys directorate hub."
     q_bn: "ডিজিটাল পর্চা কোথায় পাব?"
     a_bn: "খতিয়ান ও সংশ্লিষ্ট ডিজিটাল ভূমি রেকর্ডের জন্য ই-পর্চা সেবা ব্যবহার করুন। ডিএলআরএস রেকর্ড ও জরিপ অধিদপ্তর হাব।"
-related: [eporcha, namjari, ldtax, land-portal]
+related: [eporcha, namjari, ldtax, land-portal, settlement]
 last_verified: 2026-08-07
 ---

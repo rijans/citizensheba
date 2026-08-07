@@ -50,6 +50,6 @@ faq:
     a: "They are closely related. This Service points to the Planning Commission portal; the Ministry of Planning has its own site."
     q_bn: "পরিকল্পনা কমিশন কি পরিকল্পনা মন্ত্রণালয়ের মতো একই?"
     a_bn: "এরা ঘনিষ্ঠভাবে সম্পর্কিত। এই সেবা পরিকল্পনা কমিশন পোর্টালে যায়; পরিকল্পনা মন্ত্রণালয়ের নিজস্ব সাইট আছে।"
-related: [planning, cabinet, pmo, national-portal]
+related: [planning, cabinet, pmo, national-portal, imed, bbs]
 last_verified: 2026-08-07
 ---

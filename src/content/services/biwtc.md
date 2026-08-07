@@ -52,7 +52,7 @@ faq:
     a: "No. Railway e-Ticket is for trains. BIWTC covers inland water transport services published by the corporation."
     q_bn: "বিআইডব্লিউটিসি কি রেলওয়ে ই-টিকিটের মতো?"
     a_bn: "না। রেলওয়ে ই-টিকিট ট্রেনের জন্য। বিআইডব্লিউটিসি কর্পোরেশন প্রকাশিত অভ্যন্তরীণ নৌপরিবহন সেবা কভার করে।"
-related: [railway, brta, caab, biwta]
+related: [railway, brta, caab, biwta, bsc, mos]
 last_verified: 2026-08-07
 ---
 

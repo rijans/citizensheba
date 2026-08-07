@@ -52,7 +52,7 @@ faq:
     a: "No. A2I is the Aspire to Innovate programme portal. BCC is the Bangladesh Computer Council."
     q_bn: "বিসিসি কি এটুআইয়ের মতোই?"
     a_bn: "না। এটুআই Aspire to Innovate কর্মসূচি পোর্টাল। বিসিসি বাংলাদেশ কম্পিউটার কাউন্সিল।"
-related: [a2i, doict, mygov, national-portal, most]
+related: [a2i, doict, mygov, national-portal, most, ictd]
 last_verified: 2026-08-07
 ---
 

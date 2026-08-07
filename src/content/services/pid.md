@@ -52,6 +52,6 @@ faq:
     a: "No. PID publishes government press information. The Information Commission handles Right to Information matters."
     q_bn: "পিআইডি কি তথ্য কমিশনের মতো একই?"
     a_bn: "না। পিআইডি সরকারি প্রেস তথ্য প্রকাশ করে। তথ্য কমিশন তথ্য অধিকার বিষয় দেখে।"
-related: [moinfo, infocom, national-portal, cabinet]
+related: [moinfo, infocom, national-portal, cabinet, bss, btv, betar]
 last_verified: 2026-08-07
 ---

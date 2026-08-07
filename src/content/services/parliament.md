@@ -52,6 +52,6 @@ faq:
     a: "No. Use the e-Passport Service for passport applications. Parliament publishes parliamentary information."
     q_bn: "সংসদ ওয়েবসাইটে কি পাসপোর্ট আবেদন করা যায়?"
     a_bn: "না। পাসপোর্ট আবেদনের জন্য ই-পাসপোর্ট সেবা ব্যবহার করুন। সংসদ সংসদীয় তথ্য প্রকাশ করে।"
-related: [cabinet, pmo, bangabhaban, national-portal]
+related: [cabinet, pmo, bangabhaban, national-portal, legislativediv]
 last_verified: 2026-08-07
 ---

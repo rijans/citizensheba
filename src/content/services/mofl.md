@@ -52,6 +52,6 @@ faq:
     a: "No. MoFL covers fisheries and livestock. MoA is the Ministry of Agriculture for crop agriculture policy."
     q_bn: "মোফল কি মোএ-র মতো একই?"
     a_bn: "না। মোফল মৎস্য ও প্রাণিসম্পদ দেখে। মোএ ফসল কৃষি নীতির কৃষি মন্ত্রণালয়।"
-related: [moa, dae, national-portal, bfsa, fisheries]
+related: [moa, dae, national-portal, bfsa, fisheries, dls, fri, blri, bfdc]
 last_verified: 2026-08-07
 ---

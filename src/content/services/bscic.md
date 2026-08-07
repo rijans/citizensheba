@@ -52,7 +52,7 @@ faq:
     a: "No. RJSC registers companies/firms. BSCIC supports small and cottage industry programmes."
     q_bn: "বিসিক কি আরজেএসসির মতো কোম্পানি নিবন্ধন?"
     a_bn: "না। আরজেএসসি কোম্পানি/ফার্ম নিবন্ধন করে। বিসিক ক্ষুদ্র ও কুটির শিল্প কর্মসূচি সহায়তা করে।"
-related: [rjsc, bida, epb, eprocure]
+related: [rjsc, bida, epb, eprocure, bitac]
 last_verified: 2026-08-07
 ---
 

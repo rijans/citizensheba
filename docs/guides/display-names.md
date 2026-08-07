@@ -116,6 +116,122 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `fisheries` | **DoF** | Department of Fisheries short form |
 | `dlrs` | **DLRS** | Acronym ALL CAPS |
 
+| `cpa` | **CPA** | Acronym; Chittagong Port Authority |
+| `mpa` | **MPA** | Acronym; Mongla Port Authority |
+| `highway-police` | **Highway Police** | Unit Display Name |
+| `tourist-police` | **Tourist Police** | Unit Display Name |
+| `bforest` | **Forest Department** | Institutional short name |
+| `dls` | **DLS** | Acronym ALL CAPS |
+| `bari` | **BARI** | Acronym ALL CAPS |
+| `tcb` | **TCB** | Acronym ALL CAPS |
+| `msw` | **MoSW** | Social Welfare short form |
+| `dgnm` | **DGNM** | Acronym ALL CAPS |
+
+| `mod` | **MoD** | Defence ministry short form |
+| `army` | **Bangladesh Army** | Force Display Name |
+| `navy` | **Bangladesh Navy** | Force Display Name |
+| `baf` | **Bangladesh Air Force** | Force Display Name |
+| `rpgcl` | **RPGCL** | Acronym ALL CAPS |
+| `sonali` | **Sonali Bank** | State bank brand |
+| `janata` | **Janata Bank** | State bank brand |
+| `bcic` | **BCIC** | Acronym ALL CAPS |
+| `idcol` | **IDCOL** | Acronym ALL CAPS |
+| `pkb` | **PKB** | Probashi Kallyan Bank |
+| `ru` | **University of Rajshahi** | Full institutional name; RU in aliases |
+| `cu` | **University of Chittagong** | Full institutional name; CU in aliases |
+| `kuet` | **KUET** | Acronym ALL CAPS |
+| `cuet` | **CUET** | Acronym ALL CAPS |
+| `bsmmu` | **BSMMU** | Acronym ALL CAPS |
+| `bau` | **BAU** | Acronym ALL CAPS |
+| `brri` | **BRRI** | Acronym ALL CAPS |
+| `imed` | **IMED** | Acronym ALL CAPS |
+| `pgcl` | **PGCL** | Acronym; not PGCB |
+| `agrani` | **Agrani Bank** | State bank brand |
+
+| `settlement` | **Settlement Office** | Land settlement Display Name |
+| `nilg` | **NILG** | Acronym ALL CAPS |
+| `coop` | **Department of Cooperatives** | Institutional name |
+| `rdcd` | **RDCD** | Acronym ALL CAPS |
+| `motj` | **MoTJ** | Textiles & Jute short form |
+| `bjmc` | **BJMC** | Acronym ALL CAPS |
+| `hcu` | **HCU** | Acronym ALL CAPS |
+| `emrd` | **EMRD** | Acronym ALL CAPS |
+| `sid` | **SID** | Acronym ALL CAPS |
+| `bepza` | **BEPZA** | Acronym ALL CAPS |
+| `duet` | **DUET** | Acronym ALL CAPS |
+| `sau` | **SAU** | Acronym; Sher-e-Bangla Agricultural Uni |
+| `ku` | **Khulna University** | Full name; KU in aliases |
+| `jnu` | **Jagannath University** | Full institutional name |
+| `iu` | **Islamic University** | Public uni Kushtia |
+| `hstu` | **HSTU** | Acronym ALL CAPS |
+| `egcb` | **EGCB** | Acronym ALL CAPS |
+| `apscl` | **APSCL** | Acronym ALL CAPS |
+| `cpgcbl` | **CPGCBL** | Acronym ALL CAPS |
+| `bksp` | **BKSP** | Acronym ALL CAPS |
+
+| `bfri` | **BFRI** | Forest Research Institute (not fisheries FRI) |
+| `fri` | **FRI** | Fisheries Research Institute |
+| `bjri` | **BJRI** | Acronym ALL CAPS |
+| `bsri` | **BSRI** | Acronym ALL CAPS |
+| `cid` | **CID** | Acronym ALL CAPS |
+| `emis` | **EMIS** | Acronym ALL CAPS |
+| `btv` | **BTV** | Acronym ALL CAPS |
+| `betar` | **Bangladesh Betar** | State radio Display Name |
+| `bss` | **BSS** | Acronym ALL CAPS |
+| `nhrc` | **NHRC** | Acronym ALL CAPS |
+| `pstu` | **PSTU** | Acronym ALL CAPS |
+| `mbstu` | **MBSTU** | Acronym ALL CAPS |
+| `butex` | **BUTEX** | Acronym ALL CAPS |
+| `gau` | **GAU** | Gazipur Agricultural Uni; BSMRAU is `former` |
+| `cou` | **Comilla University** | Full institutional name; COU in aliases |
+| `just` | **JUST** | Acronym ALL CAPS |
+| `ruet` | **RUET** | Acronym ALL CAPS |
+| `bup` | **BUP** | Acronym ALL CAPS |
+| `mist` | **MIST** | Acronym ALL CAPS |
+| `nstu` | **NSTU** | Acronym ALL CAPS |
+
+| `fima` | **FIMA** | Acronym ALL CAPS |
+| `basic-bank` | **BASIC Bank** | State bank brand; BASIC stays ALL CAPS |
+| `rakub` | **RAKUB** | Acronym ALL CAPS |
+| `ppa` | **PPA** | Payra Port Authority |
+| `bsc` | **BSC** | Shipping Corporation; not BSTI/BSCIC |
+| `baec` | **BAEC** | Acronym ALL CAPS |
+| `bitac` | **BITAC** | Acronym ALL CAPS |
+| `bbs` | **BBS** | Acronym ALL CAPS |
+| `ntrca` | **NTRCA** | Acronym ALL CAPS |
+| `bangla-academy` | **Bangla Academy** | Institutional Display Name |
+| `shilpakala` | **Shilpakala Academy** | Short institutional name |
+| `archaeology` | **Department of Archaeology** | Directorate Display Name |
+| `bu` | **University of Barishal** | Full name; BU in aliases |
+| `legislativediv` | **Legislative Division** | Short division name |
+| `pbi` | **PBI** | Acronym ALL CAPS |
+| `mos` | **MoS** | Shipping ministry short form |
+| `textiles` | **Department of Textiles** | Not telecom DoT |
+| `dmc` | **Dhaka Medical College** | Full institutional name |
+| `rmc` | **Rajshahi Medical College** | Full institutional name |
+| `somc` | **SOMC** | Sylhet MAG Osmani Medical College |
+
+| `ssmc` | **SSMC** | Sir Salimullah Medical College |
+| `fmc` | **Faridpur Medical College** | Full institutional name |
+| `mymensingh-mc` | **Mymensingh Medical College** | Full name; avoid bare MMC clash |
+| `bcps` | **BCPS** | Acronym ALL CAPS |
+| `bmrc` | **BMRC** | Acronym ALL CAPS |
+| `police-staff-college` | **Police Staff College** | Not BPSC |
+| `barc` | **BARC** | Agricultural Research Council; not BARI |
+| `bina` | **BINA** | Acronym ALL CAPS |
+| `srdi` | **SRDI** | Acronym ALL CAPS |
+| `blri` | **BLRI** | Acronym ALL CAPS |
+| `warpo` | **WARPO** | Acronym ALL CAPS |
+| `bfdc` | **BFDC** | Acronym ALL CAPS |
+| `bteb` | **BTEB** | Acronym ALL CAPS |
+| `bmeb` | **BMEB** | Acronym ALL CAPS |
+| `dhaka-board` | **Dhaka Education Board** | Institutional board name |
+| `ictd` | **ICTD** | ICT Division short form |
+| `ais` | **AIS** | Agriculture Information Service |
+| `sca` | **SCA** | Seed Certification Agency |
+| `fid` | **FID** | Financial Institutions Division |
+| `dos` | **DoS** | Department of Shipping short form |
+
 | `ekpay` | **ekPay** | camelCase product brand (payment gateway) |
 | `breb` | **BREB** | Acronym ALL CAPS |
 | `rjsc` | **RJSC** | Acronym ALL CAPS |

@@ -52,7 +52,7 @@ faq:
     a: "No. Board marksheets/results use the Education Board Results portal. BANBEIS publishes education statistics."
     q_bn: "এসএসসি মার্কশিট কি ব্যানবেইসে?"
     a_bn: "না। বোর্ড মার্কশিট/ফলাফল শিক্ষা বোর্ড ফলাফল পোর্টালে। ব্যানবেইস শিক্ষা পরিসংখ্যান প্রকাশ করে।"
-related: [moedu, edu-results, dshe, nctb]
+related: [moedu, edu-results, dshe, nctb, emis]
 last_verified: 2026-08-07
 ---
 

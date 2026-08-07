@@ -54,7 +54,7 @@ faq:
     q_bn: "কী কী ফল দেখা যায়?"
     a_bn: "বাংলাদেশজুড়ে এসএসসি, এইচএসসি, জেএসসিসহ পাবলিক ও বোর্ড পরীক্ষার ফল।"
 
-related: [xi-admission, national-university, teachers-portal, moedu, dshe]
+related: [xi-admission, national-university, teachers-portal, moedu, dshe, bteb, bmeb, dhaka-board]
 last_verified: 2026-08-06
 ---
 

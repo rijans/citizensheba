@@ -50,6 +50,6 @@ faq:
     a: "Use your gas distribution company (for example Titas Gas or SGCL). Petrobangla is the sector corporation hub."
     q_bn: "গৃহস্থালি গ্যাস বিল কোথায় পরিশোধ করব?"
     a_bn: "আপনার গ্যাস বিতরণ কোম্পানি ব্যবহার করুন (যেমন তিতাস গ্যাস বা এসজিসিএল)। পেট্রোবাংলা খাত কর্পোরেশন হাব।"
-related: [titas-gas, sgcl, power-division, berc]
+related: [titas-gas, sgcl, power-division, berc, rpgcl, pgcl, hcu, emrd]
 last_verified: 2026-08-07
 ---

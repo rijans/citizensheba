@@ -52,6 +52,6 @@ faq:
     a: "Use e-Return / NBR taxpayer portals for filing. MoF publishes ministry finance and budget information."
     q_bn: "অর্থ মন্ত্রণালয় ওয়েবসাইটে কি ট্যাক্স রিটার্ন জমা দেওয়া যায়?"
     a_bn: "জমার জন্য ই-রিটার্ন / এনবিআর করদাতা পোর্টাল ব্যবহার করুন। অর্থ মন্ত্রণালয় মন্ত্রণালয় অর্থ ও বাজেট তথ্য প্রকাশ করে।"
-related: [nbr, ird, etin, ereturn, vat, bangladesh-bank, cag]
+related: [nbr, ird, etin, ereturn, vat, bangladesh-bank, cag, fima, fid]
 last_verified: 2026-08-07
 ---

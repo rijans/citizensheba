@@ -50,7 +50,7 @@ faq:
     a: "No. e-Court focuses on published mobile-court / citizen reporting services. The Supreme Court portal is for apex court information."
     q_bn: "এটি কি ই-কোর্টের মতোই?"
     a_bn: "না। ই-কোর্ট প্রকাশিত মোবাইল কোর্ট / নাগরিক রিপোর্টিং সেবায় মনোযোগী। সুপ্রিম কোর্ট পোর্টাল আপিল বিভাগ/হাইকোর্ট তথ্যের জন্য।"
-related: [ecourt, police, lawjusticediv]
+related: [ecourt, police, lawjusticediv, nhrc]
 last_verified: 2026-08-07
 ---
 

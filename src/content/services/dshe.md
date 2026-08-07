@@ -52,7 +52,7 @@ faq:
     a: "Use the Education Board Results portal. DSHE is the directorate for administration information, not the board results site."
     q_bn: "এসএসসি বা এইচএসসি ফলাফল কোথায় দেখব?"
     a_bn: "শিক্ষা বোর্ড ফলাফল পোর্টাল ব্যবহার করুন। মাউশি প্রশাসন তথ্যের অধিদপ্তর—বোর্ড ফলাফল সাইট নয়।"
-related: [edu-results, xi-admission, teachers-portal, nctb]
+related: [edu-results, xi-admission, teachers-portal, nctb, emis, ntrca, dhaka-board, bmeb]
 last_verified: 2026-08-07
 ---
 

@@ -50,7 +50,7 @@ faq:
     a: "No. Each university publishes its own admission process. This Service Page is for University of Dhaka."
     q_bn: "সব বিশ্ববিদ্যালয় ভর্তি কি শুধু ঢাবিতে?"
     a_bn: "না। প্রতিটি বিশ্ববিদ্যালয় নিজের ভর্তি প্রক্রিয়া প্রকাশ করে। এই সেবা পেজ ঢাকা বিশ্ববিদ্যালয়ের জন্য।"
-related: [buet, ugc, national-university, edu-results]
+related: [buet, ugc, national-university, edu-results, ru, cu]
 last_verified: 2026-08-07
 ---
 

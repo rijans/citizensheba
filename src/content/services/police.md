@@ -51,7 +51,7 @@ faq:
     q_bn: "বাংলাদেশ পুলিশ পোর্টালে কী পাওয়া যায়?"
     a_bn: "অফিসিয়াল police.gov.bd সাইটে জনসাধারণের তথ্য এবং পুলিশ-সংক্রান্ত ডিজিটাল সেবার প্রবেশদ্বার।"
 
-related: [fire-service, ecourt, rab, mha, bgb, ansar, dnc, prison]
+related: [fire-service, ecourt, rab, mha, bgb, ansar, dnc, prison, highway-police, tourist-police, army, cid, pbi, police-staff-college]
 last_verified: 2026-08-06
 ---
 

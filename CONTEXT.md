@@ -75,11 +75,11 @@ The HTML meta description / SERP snippet. Bengali sentence(s) first, then Englis
 _Avoid_: English-only meta descriptions, EN-then-BN order, em-dash or pipe joins for descriptions, per-page `meta_description` overrides
 
 **Official Service** (v1 catalog):
-A Service whose Outbound Link is run by government, a statutory/public body, or a regulated utility citizens must use (e.g. NID, education boards, railway, DESCO/WASA-class bill portals).
+A Service whose Outbound Link is run by government, a statutory/public body, a regulated utility, or a **half-gov** state enterprise citizens commonly need (SOE utilities, public universities, state-owned commercial banks such as Sonali/Janata/Agrani/PKB).
 _Avoid_: Partner listing, Promoted service, Affiliate (those are future, separate types)
 
 **Out of catalog (v1)**:
-Private banks, MFS apps (bKash/Nagad as products), commercial SaaS, and purely promotional third-party tools — unless later introduced under a distinct non-Official type.
+Private banks, MFS apps (bKash/Nagad as products), commercial SaaS, and purely promotional third-party tools — unless later introduced under a distinct non-Official type. Half-gov / SOE / state banks are **not** out of catalog.
 _Avoid_: Calling these Official Services
 
 **Service Page (v1 content)**:

@@ -52,6 +52,6 @@ faq:
     a: "Use FFWC for flood forecasting and BMD for weather. MoEFCC is the environment, forest, and climate ministry hub."
     q_bn: "মোইএফসিসি কি বন্যা সতর্কতা দেয়?"
     a_bn: "বন্যা পূর্বাভাসের জন্য এফএফডব্লিউসি ও আবহাওয়ার জন্য বিএমডি ব্যবহার করুন। মোইএফসিসি পরিবেশ, বন ও জলবায়ু মন্ত্রণালয় হাব।"
-related: [modmr, bmd, ffwc, national-portal, doe]
+related: [modmr, bmd, ffwc, national-portal, doe, bforest]
 last_verified: 2026-08-07
 ---

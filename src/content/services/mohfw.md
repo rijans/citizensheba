@@ -52,6 +52,6 @@ faq:
     a: "No. MoHFW is the ministry hub. DGHS is the Directorate General of Health Services for programmes and directorate services."
     q_bn: "মোএইচএফডব্লিউ কি ডিজিএইচএস-এর মতো একই?"
     a_bn: "না। মোএইচএফডব্লিউ মন্ত্রণালয় হাব। ডিজিএইচএস স্বাস্থ্য অধিদপ্তর—কর্মসূচি ও অধিদপ্তর সেবার জন্য।"
-related: [dghs, dgfp, surokkha, dgda]
+related: [dghs, dgfp, surokkha, dgda, dmc, bcps, bmrc]
 last_verified: 2026-08-07
 ---

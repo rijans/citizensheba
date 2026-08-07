@@ -141,9 +141,178 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
-| Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | e.g. SZPDCL, Jalalabad Gas |
-| Other city corporations | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | e.g. KCC, RCC, Sylhet CC |
-| More ministries / directorates | _(TBD)_ | mixed | _(confirm)_ | candidate | gap-list | gap-first Official only |
+| Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | URLs often flaky |
+| Other city corporations | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Often 403 |
+| More public unis / boards | _(TBD)_ | education | _(confirm)_ | candidate | gap-list | e.g. Rajshahi/Jashore/Sylhet boards; SUST/JU blocked |
+| More half-gov / SOE / state banks | _(TBD)_ | mixed | _(confirm)_ | candidate | gap-list | Rupali 403; skip private banks & MFS |
+| More public medical colleges | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | e.g. CMC (`cmc.gov.bd` verified 200) |
+| BG Press / BPATC / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Probe next wave |
+| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); `mmd.gov.bd` wrong app; private KGMC; `smc.edu.bd` junk |
+
+## Priority wave 22 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| WARPO | warpo / bd-warpo | utilities | https://www.warpo.gov.bd/ | shipped | gap-list | Water resources planning |
+| BFDC | bfdc / bd-bfdc | central | https://www.bfdc.gov.bd/ | shipped | gap-list | Fisheries Development Corp (SOE) |
+| BTEB | bteb / bd-bteb | education | https://www.bteb.gov.bd/ | shipped | gap-list | Technical Education Board |
+| BMEB | bmeb / bd-bmeb | education | https://www.bmeb.gov.bd/ | shipped | gap-list | Madrasah Education Board |
+| Dhaka Education Board | dhaka-board / bd-dhaka-board | education | https://www.dhakaeducationboard.gov.bd/ | shipped | gap-list | BISE Dhaka |
+| ICTD | ictd / bd-ictd | central | https://www.ictd.gov.bd/ | shipped | gap-list | ICT Division |
+| AIS | ais / bd-ais | central | https://www.ais.gov.bd/ | shipped | gap-list | Agriculture Information Service |
+| SCA | sca / bd-sca | central | https://www.sca.gov.bd/ | shipped | gap-list | Seed Certification Agency |
+| FID | fid / bd-fid | tax | https://www.fid.gov.bd/ | shipped | gap-list | Financial Institutions Division |
+| DoS | dos / bd-dos | transport | https://www.dos.gov.bd/ | shipped | gap-list | Department of Shipping |
+
+## Priority wave 21 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| SSMC | ssmc / bd-ssmc | health | https://www.ssmc.edu.bd/ | shipped | gap-list | Sir Salimullah Medical College |
+| Faridpur Medical College | fmc / bd-fmc | health | https://www.fmc.edu.bd/ | shipped | gap-list | Public medical college |
+| Mymensingh Medical College | mymensingh-mc / bd-mymensingh-mc | health | https://www.mmc.gov.bd/ | shipped | gap-list | Use mmc.gov.bd (not mmc.edu.bd) |
+| BCPS | bcps / bd-bcps | health | https://www.bcps.edu.bd/ | shipped | gap-list | Physicians & Surgeons college |
+| BMRC | bmrc / bd-bmrc | health | https://www.bmrcbd.org/ | shipped | gap-list | Medical Research Council |
+| Police Staff College | police-staff-college / bd-police-staff-college | safety | https://www.psc.gov.bd/ | shipped | gap-list | Not BPSC |
+| BARC | barc / bd-barc | central | https://www.barc.gov.bd/ | shipped | gap-list | Agricultural Research Council |
+| BINA | bina / bd-bina | central | https://www.bina.gov.bd/ | shipped | gap-list | Nuclear agriculture institute |
+| SRDI | srdi / bd-srdi | central | https://www.srdi.gov.bd/ | shipped | gap-list | Soil Resource Development Institute |
+| BLRI | blri / bd-blri | central | https://www.blri.gov.bd/ | shipped | gap-list | Livestock Research Institute |
+
+## Priority wave 20 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Shilpakala Academy | shilpakala / bd-shilpakala | central | https://www.shilpakala.gov.bd/ | shipped | gap-list | Fine arts academy |
+| Department of Archaeology | archaeology / bd-archaeology | central | https://www.archaeology.gov.bd/ | shipped | gap-list | Heritage directorate |
+| University of Barishal | bu / bd-bu | education | https://www.bu.ac.bd/ | shipped | gap-list | Public university |
+| Legislative Division | legislativediv / bd-legislativediv | justice | https://www.legislativediv.gov.bd/ | shipped | gap-list | Legislative & Parliamentary Affairs |
+| PBI | pbi / bd-pbi | safety | https://pbi.gov.bd/ | shipped | gap-list | Police Bureau of Investigation |
+| MoS | mos / bd-mos | transport | https://www.mos.gov.bd/ | shipped | gap-list | Ministry of Shipping |
+| Department of Textiles | textiles / bd-textiles | central | https://www.dot.gov.bd/ | shipped | gap-list | Textiles directorate (not telecom) |
+| Dhaka Medical College | dmc / bd-dmc | health | https://www.dmc.edu.bd/ | shipped | gap-list | Public medical college |
+| Rajshahi Medical College | rmc / bd-rmc | health | https://www.rmc.edu.bd/ | shipped | gap-list | Public medical college |
+| SOMC | somc / bd-somc | health | https://www.somc.edu.bd/ | shipped | gap-list | Sylhet MAG Osmani Medical College |
+
+## Priority wave 19 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| FIMA | fima / bd-fima | central | https://www.fima.gov.bd/ | shipped | gap-list | Financial Management Academy |
+| BASIC Bank | basic-bank / bd-basic-bank | tax | https://www.basicbanklimited.com/ | shipped | gap-list | State bank (half-gov) |
+| RAKUB | rakub / bd-rakub | tax | https://www.rakub.org.bd/ | shipped | gap-list | State specialized agri bank |
+| PPA | ppa / bd-ppa | transport | https://www.ppa.gov.bd/ | shipped | gap-list | Payra Port Authority |
+| BSC | bsc / bd-bsc | transport | https://www.bsc.gov.bd/ | shipped | gap-list | Shipping Corporation (SOE) |
+| BAEC | baec / bd-baec | central | https://www.baec.gov.bd/ | shipped | gap-list | Atomic Energy Commission |
+| BITAC | bitac / bd-bitac | central | https://www.bitac.gov.bd/ | shipped | gap-list | Industrial technical assistance |
+| BBS | bbs / bd-bbs | central | https://www.bbs.gov.bd/ | shipped | gap-list | Bureau of Statistics |
+| NTRCA | ntrca / bd-ntrca | education | https://www.ntrca.gov.bd/ | shipped | gap-list | Non-gov teachers registration |
+| Bangla Academy | bangla-academy / bd-bangla-academy | central | https://banglaacademy.gov.bd/ | shipped | gap-list | National language academy |
+
+## Priority wave 18 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| PSTU | pstu / bd-pstu | education | https://www.pstu.ac.bd/ | shipped | gap-list | Public S&T uni |
+| MBSTU | mbstu / bd-mbstu | education | https://www.mbstu.ac.bd/ | shipped | gap-list | Public S&T uni |
+| BUTEX | butex / bd-butex | education | https://www.butex.edu.bd/ | shipped | gap-list | Textiles university |
+| GAU | gau / bd-gau | education | https://www.gau.edu.bd/ | shipped | gap-list | Gazipur Agricultural Uni (ex-BSMRAU) |
+| Comilla University | cou / bd-cou | education | https://www.cou.ac.bd/ | shipped | gap-list | Public university |
+| JUST | just / bd-just | education | https://www.just.edu.bd/ | shipped | gap-list | Jashore S&T uni |
+| RUET | ruet / bd-ruet | education | https://www.ruet.ac.bd/ | shipped | gap-list | Engineering university |
+| BUP | bup / bd-bup | education | https://www.bup.edu.bd/ | shipped | gap-list | Public university |
+| MIST | mist / bd-mist | education | https://www.mist.ac.bd/ | shipped | gap-list | Military institute (half-gov) |
+| NSTU | nstu / bd-nstu | education | https://www.nstu.edu.bd/ | shipped | gap-list | Public S&T uni |
+
+## Priority wave 17 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| BFRI | bfri / bd-bfri | central | https://www.bfri.gov.bd/ | shipped | gap-list | Forest Research Institute (not fisheries) |
+| FRI | fri / bd-fri | central | https://www.fri.gov.bd/ | shipped | gap-list | Fisheries Research Institute |
+| BJRI | bjri / bd-bjri | central | https://www.bjri.gov.bd/ | shipped | gap-list | Jute Research Institute |
+| BSRI | bsri / bd-bsri | central | https://www.bsri.gov.bd/ | shipped | gap-list | Sugarcrop Research Institute |
+| CID | cid / bd-cid | safety | https://www.cid.gov.bd/ | shipped | gap-list | Criminal Investigation Department |
+| EMIS | emis / bd-emis | education | https://www.emis.gov.bd/ | shipped | gap-list | DSHE education MIS |
+| BTV | btv / bd-btv | central | https://www.btv.gov.bd/ | shipped | gap-list | State television |
+| Bangladesh Betar | betar / bd-betar | central | https://www.betar.gov.bd/ | shipped | gap-list | State radio |
+| BSS | bss / bd-bss | central | https://www.bssnews.net/ | shipped | gap-list | National news agency |
+| NHRC | nhrc / bd-nhrc | justice | https://www.nhrc.org.bd/ | shipped | gap-list | Human Rights Commission |
+
+## Priority wave 16 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| DUET | duet / bd-duet | education | https://www.duet.ac.bd/ | shipped | gap-list | Public engineering uni |
+| SAU | sau / bd-sau | education | https://www.sau.edu.bd/ | shipped | gap-list | Sher-e-Bangla Agricultural Uni |
+| Khulna University | ku / bd-ku | education | https://www.ku.ac.bd/ | shipped | gap-list | Public university |
+| Jagannath University | jnu / bd-jnu | education | https://www.jnu.ac.bd/ | shipped | gap-list | Public university |
+| Islamic University | iu / bd-iu | education | https://www.iu.ac.bd/ | shipped | gap-list | Public university (Kushtia) |
+| HSTU | hstu / bd-hstu | education | https://www.hstu.ac.bd/ | shipped | gap-list | Science & technology uni |
+| EGCB | egcb / bd-egcb | utilities | https://www.egcb.com.bd/ | shipped | gap-list | Half-gov generation company |
+| APSCL | apscl / bd-apscl | utilities | https://www.apscl.com/ | shipped | gap-list | Half-gov Ashuganj generation |
+| CPGCBL | cpgcbl / bd-cpgcbl | utilities | https://www.cpgcbl.gov.bd/ | shipped | gap-list | Half-gov coal generation |
+| BKSP | bksp / bd-bksp | central | https://www.bksp.gov.bd/ | shipped | gap-list | Sports education institute |
+
+## Priority wave 15 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Settlement Office | settlement / bd-settlement | land | https://www.settlement.gov.bd/ | shipped | gap-list | Land settlement |
+| NILG | nilg / bd-nilg | central | https://www.nilg.gov.bd/ | shipped | gap-list | Local gov training institute |
+| Department of Cooperatives | coop / bd-coop | central | https://www.coop.gov.bd/ | shipped | gap-list | Cooperatives |
+| RDCD | rdcd / bd-rdcd | central | https://www.rdcd.gov.bd/ | shipped | gap-list | Rural Development & Cooperative Div |
+| MoTJ | motj / bd-motj | central | https://www.motj.gov.bd/ | shipped | gap-list | Textiles & Jute ministry |
+| BJMC | bjmc / bd-bjmc | central | https://www.bjmc.gov.bd/ | shipped | gap-list | Jute Mills SOE (half-gov) |
+| HCU | hcu / bd-hcu | utilities | https://www.hcu.org.bd/ | shipped | gap-list | Hydrocarbon Unit |
+| EMRD | emrd / bd-emrd | utilities | https://www.emrd.gov.bd/ | shipped | gap-list | Energy & Mineral Resources Div |
+| SID | sid / bd-sid | central | https://www.sid.gov.bd/ | shipped | gap-list | Statistics & Informatics Div |
+| BEPZA | bepza / bd-bepza | central | https://www.bepza.gov.bd/ | shipped | gap-list | EPZ authority (half-gov) |
+
+## Priority wave 14 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| University of Rajshahi | ru / bd-ru | education | https://www.ru.ac.bd/ | shipped | gap-list | Public university |
+| University of Chittagong | cu / bd-cu | education | https://www.cu.ac.bd/ | shipped | gap-list | Public university |
+| KUET | kuet / bd-kuet | education | https://www.kuet.ac.bd/ | shipped | gap-list | Engineering university |
+| CUET | cuet / bd-cuet | education | https://www.cuet.ac.bd/ | shipped | gap-list | Engineering university |
+| BSMMU | bsmmu / bd-bsmmu | education | https://www.bsmmu.edu.bd/ | shipped | gap-list | Medical university |
+| BAU | bau / bd-bau | education | https://www.bau.edu.bd/ | shipped | gap-list | Agricultural university |
+| BRRI | brri / bd-brri | central | https://www.brri.gov.bd/ | shipped | gap-list | Rice research institute |
+| IMED | imed / bd-imed | central | https://www.imed.gov.bd/ | shipped | gap-list | Implementation monitoring |
+| PGCL | pgcl / bd-pgcl | utilities | https://www.pgcl.org.bd/ | shipped | gap-list | Half-gov western gas utility |
+| Agrani Bank | agrani / bd-agrani | tax | https://www.agranibank.org/ | shipped | gap-list | State-owned bank (half-gov) |
+
+## Priority wave 13 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| MoD | mod / bd-mod | safety | https://www.mod.gov.bd/ | shipped | gap-list | Defence ministry |
+| Bangladesh Army | army / bd-army | safety | https://www.army.mil.bd/ | shipped | gap-list | Armed forces |
+| Bangladesh Navy | navy / bd-navy | safety | https://www.navy.mil.bd/ | shipped | gap-list | Armed forces |
+| Bangladesh Air Force | baf / bd-baf | safety | https://www.baf.mil.bd/ | shipped | gap-list | Armed forces |
+| RPGCL | rpgcl / bd-rpgcl | utilities | https://www.rpgcl.org.bd/ | shipped | gap-list | Half-gov CNG company |
+| Sonali Bank | sonali / bd-sonali | tax | https://www.sonalibank.com.bd/ | shipped | gap-list | State-owned bank (half-gov) |
+| Janata Bank | janata / bd-janata | tax | https://www.janatabank-bd.com/ | shipped | gap-list | State-owned bank (half-gov) |
+| BCIC | bcic / bd-bcic | central | https://www.bcic.gov.bd/ | shipped | gap-list | Chemical Industries SOE |
+| IDCOL | idcol / bd-idcol | utilities | https://www.idcol.org/ | shipped | gap-list | Half-gov infrastructure finance |
+| PKB | pkb / bd-pkb | tax | https://www.pkb.gov.bd/ | shipped | gap-list | Probashi Kallyan Bank (state) |
+
+## Priority wave 12 — gap fill (2026-08-07)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| CPA | cpa / bd-cpa | transport | https://cpa.gov.bd/ | shipped | gap-list | Chittagong Port; verified 200 |
+| MPA | mpa / bd-mpa | transport | https://www.mpa.gov.bd/ | shipped | gap-list | Mongla Port; verified 200 |
+| Highway Police | highway-police / bd-highway-police | safety | https://www.highwaypolice.gov.bd/ | shipped | gap-list | Verified 200 |
+| Tourist Police | tourist-police / bd-tourist-police | safety | https://www.touristpolice.gov.bd/ | shipped | gap-list | Verified 200 |
+| Forest Department | bforest / bd-bforest | central | https://www.bforest.gov.bd/ | shipped | gap-list | Verified 200 |
+| DLS | dls / bd-dls | central | https://www.dls.gov.bd/ | shipped | gap-list | Livestock Services |
+| BARI | bari / bd-bari | central | https://www.bari.gov.bd/ | shipped | gap-list | Agricultural Research Institute |
+| TCB | tcb / bd-tcb | central | https://www.tcb.gov.bd/ | shipped | gap-list | Trading Corporation / fair price |
+| MoSW | msw / bd-msw | central | https://www.msw.gov.bd/ | shipped | gap-list | Social Welfare ministry |
+| DGNM | dgnm / bd-dgnm | health | https://www.dgnm.gov.bd/ | shipped | gap-list | Nursing & Midwifery |
 
 ## Priority wave 11 — gap fill (2026-08-07)
 
@@ -256,5 +425,5 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 | Working name | Reason | Notes |
 |--------------|--------|-------|
 | nagorikseba.com listings | non-Official / mixed private | Out of seed scope |
-| Private banks / MFS | commercial | Catalog v1 Official only |
+| Private banks / MFS | commercial | Catalog v1 Official only — **state-owned banks / SOEs / half-gov utilities are in scope** |
 

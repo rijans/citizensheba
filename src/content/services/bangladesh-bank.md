@@ -50,7 +50,7 @@ faq:
     a: "No. Retail accounts are opened at scheduled banks. Bangladesh Bank is the central bank and regulator portal."
     q_bn: "বাংলাদেশ ব্যাংকে কি ব্যক্তিগত অ্যাকাউন্ট খোলা যায়?"
     a_bn: "না। রিটেইল অ্যাকাউন্ট তফসিলি ব্যাংকে খোলে। বাংলাদেশ ব্যাংক কেন্দ্রীয় ব্যাংক ও নিয়ন্ত্রক পোর্টাল।"
-related: [etin, ereturn, customs, ekpay, bsec]
+related: [etin, ereturn, customs, ekpay, bsec, sonali, janata, basic-bank, rakub, fid]
 last_verified: 2026-08-07
 ---
 

@@ -52,6 +52,6 @@ faq:
     a: "No. LGD is the Local Government Division. LGED is the Local Government Engineering Department."
     q_bn: "এলজিডি কি এলজিইডি-র মতো একই?"
     a_bn: "না। এলজিডি স্থানীয় সরকার বিভাগ। এলজিইডি স্থানীয় সরকার প্রকৌশল অধিদপ্তর।"
-related: [lged, dncc, dscc, ccc, national-portal]
+related: [lged, dncc, dscc, ccc, national-portal, nilg, rdcd]
 last_verified: 2026-08-07
 ---

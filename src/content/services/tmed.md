@@ -52,7 +52,7 @@ faq:
     a: "No. DSHE covers secondary and higher education directorate services. TMED covers technical and madrasah education division information."
     q_bn: "কারিগরি শিক্ষা কি মাউশির মতোই?"
     a_bn: "না। মাউশি মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর সেবা কভার করে। কারিগরি শিক্ষা কারিগরি ও মাদরাসা শিক্ষা বিভাগের তথ্য কভার করে।"
-related: [moedu, dshe, edu-results, nctb]
+related: [moedu, dshe, edu-results, nctb, bteb]
 last_verified: 2026-08-07
 ---
 

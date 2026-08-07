@@ -50,7 +50,7 @@ faq:
     a: "Use the e-Court Service Page. This Division portal publishes law and justice administration information."
     q_bn: "ই-কোর্ট নাগরিক রিপোর্ট কোথায় দেব?"
     a_bn: "ই-কোর্ট সেবা পেজ ব্যবহার করুন। এই বিভাগ পোর্টাল আইন ও বিচার প্রশাসন তথ্য প্রকাশ করে।"
-related: [supremecourt, ecourt, police]
+related: [supremecourt, ecourt, police, legislativediv]
 last_verified: 2026-08-07
 ---
 

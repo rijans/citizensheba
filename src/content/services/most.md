@@ -52,6 +52,6 @@ faq:
     a: "No. MoST is the ministry. BCC (Bangladesh Computer Council) is a separate ICT Service."
     q_bn: "মোএসটি কি বিসিসি-র মতো একই?"
     a_bn: "না। মোএসটি মন্ত্রণালয়। বিসিসি (বাংলাদেশ কম্পিউটার কাউন্সিল) আলাদা আইসিটি সেবা।"
-related: [bcc, doict, sparrso, a2i, national-portal]
+related: [bcc, doict, sparrso, a2i, national-portal, baec]
 last_verified: 2026-08-07
 ---

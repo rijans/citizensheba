@@ -52,6 +52,6 @@ faq:
     a: "Use Bangladesh Police and emergency channels for incidents. MoHA publishes ministry-level home-affairs information."
     q_bn: "স্বরাষ্ট্র মন্ত্রণালয় ওয়েবসাইটে কি অপরাধ রিপোর্ট করব?"
     a_bn: "ঘটনার জন্য বাংলাদেশ পুলিশ ও জরুরি চ্যানেল ব্যবহার করুন। স্বরাষ্ট্র মন্ত্রণালয় মন্ত্রণালয়-স্তরের তথ্য প্রকাশ করে।"
-related: [police, fire-service, coastguard, rab, bgb, ansar, dip]
+related: [police, fire-service, coastguard, rab, bgb, ansar, dip, police-staff-college]
 last_verified: 2026-08-07
 ---

@@ -50,7 +50,7 @@ faq:
     a: "The official site publishes payment guidance. Many customers also pay via bank or MFS channels listed by Titas — follow only channels the company publishes."
     q_bn: "তিতাস গ্যাস বিল কি শুধু এই ওয়েবসাইটে পরিশোধ করা যায়?"
     a_bn: "অফিসিয়াল সাইটে পেমেন্ট নির্দেশনা থাকে। অনেক গ্রাহক তিতাসের তালিকাভুক্ত ব্যাংক বা এমএফএস চ্যানেলেও পরিশোধ করেন—শুধু কোম্পানি প্রকাশিত চ্যানেল অনুসরণ করুন।"
-related: [dhaka-wasa, desco, sgcl, petrobangla]
+related: [dhaka-wasa, desco, sgcl, petrobangla, pgcl]
 last_verified: 2026-08-07
 ---
 

@@ -52,6 +52,6 @@ faq:
     a: "No. MoA is the ministry. DAE (Department of Agricultural Extension) provides extension and farmer advisory services."
     q_bn: "মোএ কি ডিএই-র মতো একই?"
     a_bn: "না। মোএ মন্ত্রণালয়। ডিএই (কৃষি সম্প্রসারণ অধিদপ্তর) সম্প্রসারণ ও কৃষক পরামর্শ সেবা দেয়।"
-related: [dae, national-portal, ffwc]
+related: [dae, national-portal, ffwc, barc, ais, sca, bina, srdi]
 last_verified: 2026-08-07
 ---

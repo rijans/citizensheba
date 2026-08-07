@@ -52,7 +52,7 @@ faq:
     a: "No. BUET is a separate public engineering university with its own admission process."
     q_bn: "বুয়েট ভর্তি কি জাতীয় বিশ্ববিদ্যালয়ের মতো?"
     a_bn: "না। বুয়েট আলাদা পাবলিক প্রকৌশল বিশ্ববিদ্যালয়—নিজস্ব ভর্তি প্রক্রিয়া আছে।"
-related: [du, ugc, national-university, edu-results]
+related: [du, ugc, national-university, edu-results, kuet, cuet, duet, ruet, mist]
 last_verified: 2026-08-07
 ---
 

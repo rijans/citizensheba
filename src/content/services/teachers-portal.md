@@ -51,7 +51,7 @@ faq:
     q_bn: "শিক্ষার্থীরা কি এই পোর্টাল ব্যবহার করতে পারে?"
     a_bn: "শিক্ষক বাতায়ন শিক্ষকদের জন্য। শিক্ষার্থীদের শিক্ষা ফল ও ভর্তি সেবা পেজ ব্যবহার করা উচিত।"
 
-related: [edu-results, xi-admission, dshe, nctb]
+related: [edu-results, xi-admission, dshe, nctb, ntrca]
 last_verified: 2026-08-06
 ---
 

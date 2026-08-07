@@ -52,6 +52,6 @@ faq:
     a: "No. MoFood is the ministry. BFSA handles food safety regulation."
     q_bn: "মোফুড কি বিএফএসএ-র মতো একই?"
     a_bn: "না। মোফুড মন্ত্রণালয়। বিএফএসএ খাদ্য নিরাপত্তা নিয়ন্ত্রণ দেখে।"
-related: [dgfood, bfsa, national-portal, moc]
+related: [dgfood, bfsa, national-portal, moc, tcb]
 last_verified: 2026-08-07
 ---

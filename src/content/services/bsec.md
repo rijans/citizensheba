@@ -52,6 +52,6 @@ faq:
     a: "No. BSEC regulates the capital market. Trading goes through licensed brokers and exchanges."
     q_bn: "bsec.gov.bd-এ কি শেয়ার কেনাবেচা যায়?"
     a_bn: "না। বিএসইসি পুঁজিবাজার নিয়ন্ত্রণ করে। কেনাবেচা লাইসেন্সপ্রাপ্ত ব্রোকার ও এক্সচেঞ্জে যায়।"
-related: [bangladesh-bank, mof, nbr, rjsc]
+related: [bangladesh-bank, mof, nbr, rjsc, fid]
 last_verified: 2026-08-07
 ---

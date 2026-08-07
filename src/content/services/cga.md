@@ -52,6 +52,6 @@ faq:
     a: "No. CGA handles government accounts administration. CAG is the Comptroller and Auditor General (audit)."
     q_bn: "সিজিএ কি সিএজি-র মতো একই?"
     a_bn: "না। সিজিএ সরকারি হিসাব প্রশাসন দেখে। সিএজি মহাহিসাব নিরীক্ষক ও নিয়ন্ত্রক (নিরীক্ষা)।"
-related: [cag, mof, nbr, ird]
+related: [cag, mof, nbr, ird, fima]
 last_verified: 2026-08-07
 ---

@@ -52,7 +52,7 @@ faq:
     a: "No. IEDCR publishes disease control and research information. Hospital services follow DGHS and hospital portals."
     q_bn: "হাসপাতাল অ্যাপয়েন্টমেন্ট কি আইইডিসিআরে?"
     a_bn: "না। আইইডিসিআর রোগ নিয়ন্ত্রণ ও গবেষণা তথ্য প্রকাশ করে। হাসপাতাল সেবা ডিজিএইচএস ও হাসপাতাল পোর্টালে।"
-related: [dghs, surokkha, dgda, bfsa]
+related: [dghs, surokkha, dgda, bfsa, bmrc]
 last_verified: 2026-08-07
 ---
 

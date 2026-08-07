@@ -52,7 +52,7 @@ faq:
     a: "Emigration clearance is handled on BMET Online Clearance. Probashi Kalyan is the ministry portal for broader expatriate welfare policy and notices."
     q_bn: "ক্লিয়ারেন্স প্রবাসীতে নাকি বিএমইটিতে শুরু করব?"
     a_bn: "বহির্গমন ক্লিয়ারেন্স বিএমইটি অনলাইন ক্লিয়ারেন্সে। প্রবাসী কল্যাণ বৃহত্তর প্রবাসী নীতি ও নোটিশের মন্ত্রণালয় পোর্টাল।"
-related: [bmet, wewb, hajj, epassport]
+related: [bmet, wewb, hajj, epassport, pkb]
 last_verified: 2026-08-07
 ---
 

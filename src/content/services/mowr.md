@@ -52,6 +52,6 @@ faq:
     a: "No. MoWR is the ministry. BWDB is the Bangladesh Water Development Board."
     q_bn: "মোডব্লিউআর কি বিডব্লিউডিবি-র মতো একই?"
     a_bn: "না। মোডব্লিউআর মন্ত্রণালয়। বিডব্লিউডিবি বাংলাদেশ পানি উন্নয়ন বোর্ড।"
-related: [bwdb, ffwc, modmr, national-portal]
+related: [bwdb, ffwc, modmr, national-portal, warpo]
 last_verified: 2026-08-07
 ---

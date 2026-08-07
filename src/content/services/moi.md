@@ -52,6 +52,6 @@ faq:
     a: "No. MoI is the ministry. BSCIC focuses on small and cottage industries support."
     q_bn: "মোআই কি বিএসসিআইসি-র মতো একই?"
     a_bn: "না। মোআই মন্ত্রণালয়। বিএসসিআইসি ক্ষুদ্র ও কুটির শিল্প সহায়তায় মনোযোগী।"
-related: [bscic, bsti, moc, bida, national-portal]
+related: [bscic, bsti, moc, bida, national-portal, bitac]
 last_verified: 2026-08-07
 ---

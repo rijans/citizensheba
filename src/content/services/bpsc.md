@@ -52,6 +52,6 @@ faq:
     a: "BPSC handles BCS and other commission exams. Many other public jobs are advertised by the recruiting ministry or body."
     q_bn: "সব সরকারি চাকরির বিজ্ঞপ্তি কি বিপিএসসি-তে?"
     a_bn: "বিপিএসসি বিসিএস ও অন্যান্য কমিশন পরীক্ষা দেখে। অন্য অনেক সরকারি চাকরি নিয়োগকারী মন্ত্রণালয় বা সংস্থা বিজ্ঞাপন দেয়।"
-related: [mopa, national-portal, mygov, teachers-portal]
+related: [mopa, national-portal, mygov, teachers-portal, police-staff-college]
 last_verified: 2026-08-07
 ---

@@ -52,7 +52,7 @@ faq:
     a: "No. RJSC handles company/firm registration. BIDA focuses on investment facilitation and related authority services."
     q_bn: "বিডা কি আরজেএসসি কোম্পানি নিবন্ধনের মতো?"
     a_bn: "না। আরজেএসসি কোম্পানি/ফার্ম নিবন্ধন করে। বিডা বিনিয়োগ সহজীকরণ ও সংশ্লিষ্ট কর্তৃপক্ষ সেবায় মনোযোগী।"
-related: [rjsc, mygov, national-portal]
+related: [rjsc, mygov, national-portal, bepza]
 last_verified: 2026-08-07
 ---
 

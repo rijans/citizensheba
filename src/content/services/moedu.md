@@ -50,7 +50,7 @@ faq:
     a: "Use the Education Board Results portal. The ministry portal publishes policy and notices."
     q_bn: "বোর্ড পরীক্ষার ফলাফল কোথায় দেখব?"
     a_bn: "শিক্ষা বোর্ড ফলাফল পোর্টাল ব্যবহার করুন। মন্ত্রণালয় পোর্টাল নীতি ও নোটিশ প্রকাশ করে।"
-related: [edu-results, dshe, nctb, mopme, tmed, shed]
+related: [edu-results, dshe, nctb, mopme, tmed, shed, emis, ntrca, bteb, bmeb, dhaka-board]
 last_verified: 2026-08-07
 ---
 

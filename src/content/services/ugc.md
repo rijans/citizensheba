@@ -52,7 +52,7 @@ faq:
     a: "Usually no. Apply on the university or cluster admission portals they publish. UGC provides commission-level higher-education information."
     q_bn: "ইউজিসিতে কি বিশ্ববিদ্যালয় ভর্তির আবেদন করব?"
     a_bn: "সাধারণত না। বিশ্ববিদ্যালয় বা ক্লাস্টার ভর্তি পোর্টালে আবেদন করুন। ইউজিসি কমিশন-পর্যায়ের উচ্চশিক্ষা তথ্য দেয়।"
-related: [national-university, bou, edu-results]
+related: [national-university, bou, edu-results, ruet, gau, bup, bu]
 last_verified: 2026-08-07
 ---
 

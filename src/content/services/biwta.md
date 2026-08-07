@@ -52,7 +52,7 @@ faq:
     a: "BIWTA is the inland water transport authority. BIWTC is the corporation that operates many water transport services. Check each portal for its published role."
     q_bn: "বিআইডব্লিউটিএ ও বিআইডব্লিউটিসির পার্থক্য?"
     a_bn: "বিআইডব্লিউটিএ অভ্যন্তরীণ নৌপরিবহন কর্তৃপক্ষ। বিআইডব্লিউটিসি অনেক নৌপরিবহন সেবা পরিচালনাকারী কর্পোরেশন। প্রকাশিত ভূমিকা প্রতিটি পোর্টালে দেখুন।"
-related: [biwtc, railway, brta, caab]
+related: [biwtc, railway, brta, caab, cpa, mpa, mos, bsc]
 last_verified: 2026-08-07
 ---
 

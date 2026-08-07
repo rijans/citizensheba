@@ -52,6 +52,6 @@ faq:
     a: "No. DoF is the Department of Fisheries. MoFL is the Ministry of Fisheries and Livestock."
     q_bn: "ডফ কি মোফল-এর মতো একই?"
     a_bn: "না। ডফ মৎস্য অধিদপ্তর। মোফল মৎস্য ও প্রাণিসম্পদ মন্ত্রণালয়।"
-related: [mofl, moa, dae, national-portal]
+related: [mofl, moa, dae, national-portal, fri, bfdc]
 last_verified: 2026-08-07
 ---

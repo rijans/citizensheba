@@ -52,7 +52,7 @@ faq:
     a: "Not always. DoICT is the department portal. Prefer the dedicated Service Page for NID, tax, land, and similar hops."
     q_bn: "সব ডিজিটাল সেবা কি ডয়েক্টে শুরু করব?"
     a_bn: "সবসময় নয়। ডয়েক্ট অধিদপ্তর পোর্টাল। এনআইডি, কর, ভূমি ইত্যাদির জন্য নিবেদিত সেবা পেজ ব্যবহার করুন।"
-related: [bcc, a2i, mygov, national-portal]
+related: [bcc, a2i, mygov, national-portal, ictd]
 last_verified: 2026-08-07
 ---
 
