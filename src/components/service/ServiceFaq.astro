@@ -1,5 +1,5 @@
 ---
-import { servicePageHeadings } from '../../lib/servicePageCopy';
+import { servicePageHeadings, servicePageLangLabels } from '../../lib/servicePageCopy';
 
 interface FaqItem {
   q: string;
@@ -16,8 +16,8 @@ const { items } = Astro.props;
 const { faq: heading } = servicePageHeadings;
 ---
 
-<section class="service-faq">
-  <h2>
+<section class="service-faq hop-region hop-region--support" aria-labelledby="service-faq-heading">
+  <h2 id="service-faq-heading">
     {heading.en}{' '}
     <span lang="bn">{heading.bn}</span>
   </h2>
@@ -27,9 +27,15 @@ const { faq: heading } = servicePageHeadings;
         <h3>
           {item.q} <span lang="bn">{item.q_bn}</span>
         </h3>
-        <div class="bilingual-stack">
-          <p lang="bn">{item.a_bn}</p>
-          <p>{item.a}</p>
+        <div class="bilingual-panes">
+          <div class="bilingual-pane">
+            <p class="lang-label">{servicePageLangLabels.bn}</p>
+            <p lang="bn">{item.a_bn}</p>
+          </div>
+          <div class="bilingual-pane">
+            <p class="lang-label">{servicePageLangLabels.en}</p>
+            <p>{item.a}</p>
+          </div>
         </div>
       </div>
     ))
