@@ -37,7 +37,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | Web Analytics, CF beacon, `PUBLIC_CF_WEB_ANALYTICS_TOKEN` | `docs/ops/web-analytics.md` |
 | Search Console, GSC, sitemap | `docs/ops/search-console.md` |
 | add/move docs, AGENTS layout, Cursor rules | `docs/specs/DOC_ARCHITECTURE.md` |
-| content catalog, service md, category yaml, FAQ, `bd-` slug, related, new service | `docs/guides/service-page.md`, `CONTEXT.md`, `src/content.config.ts`, `docs/guides/display-names.md`, `tests/unit/content-integrity.test.ts`, Traps #11, #14 |
+| content catalog, service md, category yaml, FAQ, `bd-` slug, related, new service, add service | **`docs/guides/new-service.md` (checklist)**, `docs/guides/service-page.md`, `CONTEXT.md`, `src/content.config.ts`, `docs/guides/display-names.md`, `docs/guides/service-icons.md`, `docs/guides/directory-ranking.md`, `tests/unit/content-integrity.test.ts`, Traps #11, #14 |
 | Catalog Backlog, seed, populate services, priority wave, remaining services, utilities, migration, DESCO, WASA, BMET | `docs/ops/service-catalog-backlog.md`, `docs/superpowers/specs/2026-08-07-official-services-priority-wave-design.md`, `CONTEXT.md` (Catalog Backlog), `docs/guides/service-page.md` |
 | Display Name, title casing, a2i, A2I, myGov, e-Namjari, official typography, Name Alias, synonym, former name, aliases | ADR-0005, ADR-0006, `docs/guides/display-names.md`, `CONTEXT.md` (Display Name, Name Alias), Trap #12–#14, `src/content/services/*.md`, `src/lib/search.ts` |
 | Instant Directory search, bilingual search, romanization, Search Variant, description_bn, relatedTitles | ADR-0007, `src/lib/search.ts`, `src/lib/buildSearchIndex.ts`, `CONTEXT.md` (Instant Directory, Search Variant), `tests/unit/search.test.ts` |

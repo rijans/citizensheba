@@ -23,6 +23,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 |-----|--------|
 | [guides/agent-workflow.md](guides/agent-workflow.md) | Stop-and-ask, patterns, parallel sessions, finalization |
 | [guides/service-page.md](guides/service-page.md) | **Service Page hop structure** (layout, bilingual rules, FAQ policy) |
+| [guides/new-service.md](guides/new-service.md) | **Checklist when adding a Service** (fields, icons, ranks, cards) |
 | [guides/display-names.md](guides/display-names.md) | Display Name table + Name Aliases |
 | [guides/directory-ranking.md](guides/directory-ranking.md) | Directory Global / Category ranks + Top browse table |
 | [guides/service-icons.md](guides/service-icons.md) | Optional per-Service Lucide icons (seed table) |

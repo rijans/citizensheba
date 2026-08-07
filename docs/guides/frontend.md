@@ -44,6 +44,7 @@
 - New categories need `icon` (lucide key) + entry in `CATEGORY_ACCENTS` if a dedicated hue is desired.
 - New Services need `directory_global_rank` + `directory_category_rank` (see [`directory-ranking.md`](directory-ranking.md)).
 - Optional Service `icon` (Lucide): see [`service-icons.md`](service-icons.md); add the key to `categoryIcons.ts` if missing.
+- Full add-Service checklist: [`new-service.md`](new-service.md).
 ## Brand mark
 
 - Circular emblem (transparent PNG): `public/brand/citizensheba-logo.png`

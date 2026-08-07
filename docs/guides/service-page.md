@@ -2,6 +2,8 @@
 
 > **SSOT for Service Page layout and hop copy.** Read this before changing `/services/bd-*` UI, schema fields that render on the hop, or Service Markdown shape. Decisions that are hard to reverse stay in ADRs; this guide is the living structure + editorial rules.
 
+**Adding a Service?** Use the checklist [`new-service.md`](new-service.md) first (fields, icons, ranks, cards), then this file for hop structure/copy rules.
+
 **When to read:** any task touching Service Pages, `src/pages/services/[slug].astro`, `ServiceFaq` / `OutboundCta`, `body` / `audience` / FAQ content, or hop-related CSS.
 
 **When to update:** any change to page section order, bilingual layout rules, required content fields on the hop, FAQ policy, SERP/`serp_title` rules, or verified-link labeling — update **this file first**, then ADRs / CONTEXT / INDEX / Trap #9 as needed (see [DOC_ARCHITECTURE](../specs/DOC_ARCHITECTURE.md)).
