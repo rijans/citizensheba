@@ -22,6 +22,7 @@ official_domain: bscic.gov.bd
 category: central
 directory_global_rank: 700
 directory_category_rank: 230
+icon: factory
 tags: [bscic, sme, cottage, "বিসিক", "কুটির শিল্প"]
 aliases:
   - name: Bangladesh Small and Cottage Industries Corporation

@@ -22,6 +22,7 @@ official_domain: ffwc.gov.bd
 category: safety
 directory_global_rank: 850
 directory_category_rank: 60
+icon: cloud-rain
 tags: [ffwc, flood, warning, "এফএফডব্লিউসি", "বন্যা"]
 aliases:
   - name: Flood Forecasting and Warning Centre

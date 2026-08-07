@@ -8,32 +8,88 @@ Optional Lucide key on Service frontmatter (`icon`). Cards use `service.icon ?? 
 
 | Content id | Lucide key | Notes |
 |------------|------------|--------|
-| `nid` | `id-card` | National ID |
-| `epassport` | `book-user` | Passport booklet |
-| `etin` | `receipt` | Tax registration |
-| `ereturn` | `file-text` | Tax return |
-| `bdris` | `scroll-text` | Vital records certificate |
-| `mygov` | `landmark` | Central portal |
-| `national-portal` | `globe` | National gateway |
-| `btrc` | `radio` | Telecom |
-| `dhaka-wasa` | `droplets` | Water |
-| `desco` | `zap` | Electricity |
-| `dpdc` | `zap` | Electricity |
-| `nesco` | `zap` | Electricity peer |
-| `breb` | `zap` | Electricity peer |
-| `railway` | `train-front` | Rail tickets |
+| `a2i` | `lightbulb` | Innovation |
+| `bangladesh-bank` | `landmark` | Central bank |
+| `bangladesh-post` | `mail` | Postal |
+| `bangladesh-visa` | `plane` | Online visa |
+| `banbeis` | `file-spreadsheet` | Education stats |
+| `bcc` | `cpu` | Computer council |
+| `bdris` | `scroll-text` | Vital records |
+| `berc` | `bolt` | Energy regulator |
+| `bfsa` | `utensils` | Food safety |
+| `bida` | `briefcase-business` | Investment |
+| `biman` | `plane` | National airline |
+| `biwta` | `anchor` | Inland waterways auth. |
+| `biwtc` | `ship` | Water transport |
+| `bmd` | `cloud-sun` | Meteorology |
+| `bmet` | `briefcase-business` | Overseas employment clearance |
+| `bou` | `book-open` | Open university |
+| `bpdb` | `zap` | Power development |
+| `breb` | `zap` | Rural electrification |
 | `brta` | `car` | Vehicles / licence |
-| `police` | `shield` | Safety |
-| `eporcha` | `map` | Land / khatian |
-| `namjari` | `stamp` | Mutation peer |
-| `teachers-portal` | `graduation-cap` | Education |
+| `bscic` | `factory` | Small industries |
+| `btcl` | `phone` | Telecom |
+| `btrc` | `radio` | Telecom regulator |
+| `buet` | `university` | Engineering university |
+| `caab` | `plane` | Civil aviation |
+| `coastguard` | `ship-wheel` | Coast Guard |
+| `customs` | `package` | Customs |
+| `dae` | `sprout` | Agriculture extension |
+| `desco` | `zap` | Electricity |
+| `dgda` | `pill` | Drug administration |
+| `dgfp` | `baby` | Family planning |
+| `dghs` | `stethoscope` | Health services |
+| `dhaka-wasa` | `droplets` | Water |
+| `dip` | `user-round` | Immigration / passports |
+| `doict` | `monitor` | ICT |
+| `dpdc` | `zap` | Electricity |
+| `dshe` | `school` | Secondary / higher ed |
+| `dss` | `hand-heart` | Social services |
+| `du` | `university` | University of Dhaka |
+| `ecourt` | `gavel` | e-Court |
 | `edu-results` | `file-badge` | Board results |
-| `surokkha` | `heart-pulse` | Health |
-| `fire-service` | `flame` | Fire |
-| `titas-gas` | `flame` | Gas peer |
 | `ekpay` | `wallet` | Payments |
-
-Services not listed omit `icon` and keep their Category glyph.
+| `epassport` | `book-user` | Passport |
+| `epb` | `store` | Export promotion |
+| `eporcha` | `map` | Land / khatian |
+| `eprocure` | `clipboard-list` | e-GP procurement |
+| `ereturn` | `file-text` | Tax return |
+| `etin` | `receipt` | e-TIN |
+| `ffwc` | `cloud-rain` | Flood forecasting |
+| `fire-service` | `flame` | Fire service |
+| `hajj` | `mosque` | Hajj |
+| `iedcr` | `microscope` | Disease research |
+| `land-portal` | `home` | Land ministry |
+| `lawjusticediv` | `scale` | Law & justice |
+| `ldtax` | `banknote` | Land development tax |
+| `modmr` | `shield-alert` | Disaster management |
+| `moedu` | `school` | Education ministry |
+| `mopme` | `baby` | Primary education |
+| `mowca` | `heart-handshake` | Women & children |
+| `mygov` | `landmark` | Central portal |
+| `namjari` | `stamp` | Mutation |
+| `national-portal` | `globe` | National gateway |
+| `national-university` | `university` | National University |
+| `nctb` | `book-open` | Textbooks |
+| `nesco` | `zap` | Electricity |
+| `nid` | `id-card` | National ID |
+| `pgcb` | `cable` | Power grid |
+| `police` | `shield` | Police |
+| `probashi` | `users` | Expatriate welfare |
+| `rab` | `shield-alert` | RAB |
+| `railway` | `train-front` | Rail tickets |
+| `rjsc` | `building-2` | Company registration |
+| `rthd` | `bus` | Roads & highways |
+| `supremecourt` | `scale` | Supreme Court |
+| `surokkha` | `heart-pulse` | Vaccination |
+| `teachers-portal` | `graduation-cap` | Teachers |
+| `titas-gas` | `flame` | Gas |
+| `tmed` | `library` | Technical / madrasah ed |
+| `ugc` | `badge-check` | University grants |
+| `vat` | `calculator` | VAT online |
+| `wewb` | `hand-heart` | Wage earners welfare |
+| `wzpdcl` | `zap` | West zone power |
+| `xi-admission` | `clipboard-check` | Class 11 admission |
 
 ## Editing
 

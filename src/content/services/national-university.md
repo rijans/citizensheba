@@ -20,6 +20,7 @@ official_domain: nu.ac.bd
 category: education
 directory_global_rank: 950
 directory_category_rank: 130
+icon: university
 tags: [nu, university, exam, "জাতীয় বিশ্ববিদ্যালয়", "পরীক্ষা"]
 aliases:
   - name: NU Bangladesh

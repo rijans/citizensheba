@@ -22,6 +22,7 @@ official_domain: mybtcl.btcl.gov.bd
 category: utilities
 directory_global_rank: 940
 directory_category_rank: 100
+icon: phone
 tags: [btcl, telephone, telecom, "বিটিসিএল", "টেলিফোন"]
 aliases:
   - name: BTCL

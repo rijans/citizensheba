@@ -22,6 +22,7 @@ official_domain: iedcr.gov.bd
 category: health
 directory_global_rank: 860
 directory_category_rank: 50
+icon: microscope
 tags: [iedcr, epidemiology, disease control, "আইইডিসিআর", "রোগ নিয়ন্ত্রণ"]
 aliases:
   - name: Institute of Epidemiology Disease Control and Research

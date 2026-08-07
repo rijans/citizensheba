@@ -911,6 +911,7 @@ html[data-theme="dark"] .directory-chips-wrap::after {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   min-height: 3rem;
   padding: 0.75rem 1.5rem;
   border-radius: 0.875rem;
@@ -925,15 +926,100 @@ html[data-theme="dark"] .directory-chips-wrap::after {
     transform 0.2s ease;
 }
 
+.outbound-cta__external {
+  flex-shrink: 0;
+  opacity: 0.92;
+}
+
 .outbound-cta__link:hover {
   background: var(--green-hover);
   transform: translateY(-1px);
 }
 
+.outbound-cta__domain-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.5rem;
+  margin: 0.35rem 0 0;
+  width: 100%;
+}
+
 .outbound-cta__domain {
-  margin: 0.25rem 0 0;
+  margin: 0;
   font-size: 0.9375rem;
+  line-height: 1;
   color: var(--ink-subtle);
+  display: inline-flex;
+  align-items: center;
+}
+
+.outbound-cta__copy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.375rem;
+  min-height: 1.375rem;
+  padding: 0 0.4rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 0.3125rem;
+  background: var(--surface);
+  color: var(--ink-muted);
+  font-family: inherit;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease,
+    background 0.15s ease;
+}
+
+.outbound-cta__copy:hover {
+  border-color: var(--green);
+  color: var(--green);
+  background: var(--green-soft);
+}
+
+.copy-toast {
+  position: fixed;
+  top: calc(var(--header-height) + 0.75rem);
+  right: 1rem;
+  left: auto;
+  bottom: auto;
+  z-index: 80;
+  max-width: min(22rem, calc(100vw - 2rem));
+  padding: 0.75rem 1.125rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transform: translateY(-0.5rem);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.copy-toast--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.copy-toast__text {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-align: left;
+  line-height: 1.35;
+}
+
+.copy-toast__text span[lang="bn"] {
+  color: var(--green);
+  font-weight: 650;
 }
 
 /* Service page — mobile-first */

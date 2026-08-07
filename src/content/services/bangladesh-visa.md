@@ -20,6 +20,7 @@ official_domain: visa.gov.bd
 category: migration
 directory_global_rank: 560
 directory_category_rank: 20
+icon: plane
 tags: [visa, mrv, immigration, "ভিসা", "এমআরভি"]
 aliases:
   - name: MRV portal

@@ -22,6 +22,7 @@ official_domain: rab.gov.bd
 category: safety
 directory_global_rank: 1000
 directory_category_rank: 30
+icon: shield-alert
 tags: [rab, security, "র্যাব", "নিরাপত্তা"]
 aliases:
   - name: Rapid Action Battalion

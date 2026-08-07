@@ -22,6 +22,7 @@ official_domain: wzpdcl.org.bd
 category: utilities
 directory_global_rank: 1100
 directory_category_rank: 90
+icon: zap
 tags: [wzpdcl, electricity, west zone, "বিদ্যুৎ"]
 aliases:
   - name: West Zone Power Distribution

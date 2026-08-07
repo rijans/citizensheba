@@ -22,6 +22,7 @@ official_domain: modmr.gov.bd
 category: safety
 directory_global_rank: 910
 directory_category_rank: 50
+icon: shield-alert
 tags: [modmr, disaster, relief, "দুর্যোগ", "ত্রাণ"]
 aliases:
   - name: Ministry of Disaster Management and Relief

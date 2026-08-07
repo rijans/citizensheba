@@ -20,6 +20,7 @@ official_domain: moedu.gov.bd
 category: education
 directory_global_rank: 890
 directory_category_rank: 40
+icon: school
 tags: [education ministry, moedu, "শিক্ষা মন্ত্রণালয়"]
 aliases:
   - name: MoE Bangladesh

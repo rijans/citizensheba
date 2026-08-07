@@ -22,6 +22,7 @@ official_domain: bcc.gov.bd
 category: central
 directory_global_rank: 590
 directory_category_rank: 50
+icon: cpu
 tags: [bcc, ict, digital, "বিসিসি", "আইসিটি"]
 aliases:
   - name: Bangladesh Computer Council

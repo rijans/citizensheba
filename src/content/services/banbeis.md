@@ -22,6 +22,7 @@ official_domain: banbeis.gov.bd
 category: education
 directory_global_rank: 510
 directory_category_rank: 140
+icon: file-spreadsheet
 tags: [banbeis, education statistics, "ব্যানবেইস", "শিক্ষা তথ্য"]
 aliases:
   - name: Bangladesh Bureau of Educational Information and Statistics

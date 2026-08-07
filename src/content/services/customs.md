@@ -20,6 +20,7 @@ official_domain: customs.gov.bd
 category: tax
 directory_global_rank: 540
 directory_category_rank: 40
+icon: package
 tags: [customs, import, export, "কাস্টমস", "শুল্ক"]
 aliases:
   - name: Customs BD

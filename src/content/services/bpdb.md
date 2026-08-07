@@ -22,6 +22,7 @@ official_domain: bpdb.gov.bd
 category: utilities
 directory_global_rank: 680
 directory_category_rank: 80
+icon: zap
 tags: [bpdb, power, electricity, "বিপিডিবি", "বিদ্যুৎ"]
 aliases:
   - name: Bangladesh Power Development Board

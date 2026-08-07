@@ -24,7 +24,7 @@ Implementation: `src/pages/services/[slug].astro`.
 | 3 | H1 | `title` + `title_bn` | EN then BN on one line (Mixed UI); short Display Names stay here |
 | 4 | Formerly … | `aliases` where `kind: former` | Quiet line only |
 | 5 | Short description | `description` | EN only under H1 today; cards + Meta Description also use short fields |
-| 6 | Outbound CTA | `url` + domain | Primary action; domain tight under button |
+| 6 | Outbound CTA | `url` + domain | Primary action; domain under button with small **Copy** (full URL); bilingual toast “Link copied / লিংক কপি হয়েছে” |
 | 7 | Status caution | if not `ACTIVE` | Short warning |
 | 8 | Body | `body_bn` then `body` | Markdown; BN first; equal-spaced divider before EN |
 | 9 | Official link last verified | `last_verified` | Human-readable date (UTC); means outbound link check |

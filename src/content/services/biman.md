@@ -20,6 +20,7 @@ official_domain: biman.gov.bd
 category: transport
 directory_global_rank: 630
 directory_category_rank: 30
+icon: plane
 tags: [biman, airline, flight, "বিমান", "এয়ারলাইন্স"]
 aliases:
   - name: Biman

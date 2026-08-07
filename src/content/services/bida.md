@@ -22,6 +22,7 @@ official_domain: investbangladesh.gov.bd
 category: central
 directory_global_rank: 620
 directory_category_rank: 210
+icon: briefcase-business
 tags: [bida, investment, oss, "বিডা", "বিনিয়োগ"]
 aliases:
   - name: Bangladesh Investment Development Authority

@@ -22,6 +22,7 @@ official_domain: caab.gov.bd
 category: transport
 directory_global_rank: 720
 directory_category_rank: 40
+icon: plane
 tags: [caab, aviation, airport, "সিএএবি", "বিমান"]
 aliases:
   - name: Civil Aviation Authority of Bangladesh

@@ -10,6 +10,93 @@ const { url, domain } = Astro.props;
 <div class="outbound-cta">
   <a class="outbound-cta__link" href={url} target="_blank" rel="noopener noreferrer">
     Open official site
+    <svg
+      class="outbound-cta__external"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2.25"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M15 3h6v6"></path>
+      <path d="M10 14 21 3"></path>
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+    </svg>
   </a>
-  <p class="outbound-cta__domain">{domain}</p>
+  <div class="outbound-cta__domain-row">
+    <p class="outbound-cta__domain">{domain}</p>
+    <button
+      type="button"
+      class="outbound-cta__copy"
+      data-copy-url={url}
+      aria-label={`Copy official link ${domain}`}
+    >
+      Copy
+    </button>
+  </div>
 </div>
+
+<div
+  class="copy-toast"
+  id="copy-toast"
+  role="status"
+  aria-live="polite"
+  aria-atomic="true"
+  hidden
+>
+  <p class="copy-toast__text">
+    Link copied <span lang="bn">লিংক কপি হয়েছে</span>
+  </p>
+</div>
+
+<script is:inline>
+  (function () {
+    const toast = document.getElementById('copy-toast');
+    let hideTimer = 0;
+
+    function showCopyToast() {
+      if (!(toast instanceof HTMLElement)) return;
+      toast.hidden = false;
+      toast.classList.add('copy-toast--visible');
+      window.clearTimeout(hideTimer);
+      hideTimer = window.setTimeout(() => {
+        toast.classList.remove('copy-toast--visible');
+        window.setTimeout(() => {
+          toast.hidden = true;
+        }, 200);
+      }, 2200);
+    }
+
+    async function copyText(value) {
+      try {
+        await navigator.clipboard.writeText(value);
+      } catch {
+        const ta = document.createElement('textarea');
+        ta.value = value;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+    }
+
+    document.querySelectorAll('.outbound-cta__copy').forEach((btn) => {
+      if (!(btn instanceof HTMLButtonElement)) return;
+      if (btn.dataset.bound === '1') return;
+      btn.dataset.bound = '1';
+      btn.addEventListener('click', async () => {
+        const value = btn.getAttribute('data-copy-url') || '';
+        if (!value) return;
+        await copyText(value);
+        showCopyToast();
+      });
+    });
+  })();
+</script>

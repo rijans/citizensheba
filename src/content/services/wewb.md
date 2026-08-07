@@ -22,6 +22,7 @@ official_domain: wewb.gov.bd
 category: migration
 directory_global_rank: 1090
 directory_category_rank: 50
+icon: hand-heart
 tags: [wewb, expatriate, welfare, "প্রবাসী", "কল্যাণ"]
 aliases:
   - name: Wage Earners Welfare Board

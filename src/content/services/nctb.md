@@ -22,6 +22,7 @@ official_domain: nctb.gov.bd
 category: education
 directory_global_rank: 960
 directory_category_rank: 50
+icon: book-open
 tags: [nctb, textbook, curriculum, "এনসিটিবি", "পাঠ্যপুস্তক"]
 aliases:
   - name: National Curriculum and Textbook Board

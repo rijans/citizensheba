@@ -22,6 +22,7 @@ official_domain: berc.org.bd
 category: utilities
 directory_global_rank: 600
 directory_category_rank: 120
+icon: bolt
 tags: [berc, energy, tariff, "বিইআরসি", "জ্বালানি"]
 aliases:
   - name: Bangladesh Energy Regulatory Commission

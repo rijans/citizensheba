@@ -22,6 +22,7 @@ official_domain: ugc.gov.bd
 category: education
 directory_global_rank: 1060
 directory_category_rank: 60
+icon: badge-check
 tags: [ugc, university, higher education, "ইউজিসি", "উচ্চশিক্ষা"]
 aliases:
   - name: University Grants Commission

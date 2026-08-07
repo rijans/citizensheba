@@ -22,6 +22,7 @@ official_domain: dgfp.gov.bd
 category: health
 directory_global_rank: 750
 directory_category_rank: 40
+icon: baby
 tags: [dgfp, family planning, "ডিজিএফপি", "পরিবার পরিকল্পনা"]
 aliases:
   - name: Directorate General of Family Planning

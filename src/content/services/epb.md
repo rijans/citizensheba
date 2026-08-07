@@ -22,6 +22,7 @@ official_domain: epb.gov.bd
 category: central
 directory_global_rank: 840
 directory_category_rank: 270
+icon: store
 tags: [epb, export, trade, "ইপিবি", "রপ্তানি"]
 aliases:
   - name: Export Promotion Bureau

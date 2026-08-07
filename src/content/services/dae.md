@@ -22,6 +22,7 @@ official_domain: dae.gov.bd
 category: central
 directory_global_rank: 730
 directory_category_rank: 240
+icon: sprout
 tags: [dae, agriculture, farmers, "কৃষি", "সম্প্রসারণ"]
 aliases:
   - name: Department of Agricultural Extension

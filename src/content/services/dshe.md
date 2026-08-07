@@ -22,6 +22,7 @@ official_domain: dshe.gov.bd
 category: education
 directory_global_rank: 790
 directory_category_rank: 110
+icon: school
 tags: [dshe, secondary education, "মাউশি", "মাধ্যমিক"]
 aliases:
   - name: Directorate of Secondary and Higher Education

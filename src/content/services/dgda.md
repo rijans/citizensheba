@@ -22,6 +22,7 @@ official_domain: dgda.gov.bd
 category: health
 directory_global_rank: 740
 directory_category_rank: 30
+icon: pill
 tags: [dgda, drug, medicine, "ডিজিডিএ", "ওষুধ"]
 aliases:
   - name: Directorate General of Drug Administration

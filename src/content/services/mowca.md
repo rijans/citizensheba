@@ -22,6 +22,7 @@ official_domain: mowca.gov.bd
 category: central
 directory_global_rank: 930
 directory_category_rank: 280
+icon: heart-handshake
 tags: [mowca, women, children, "মহিলা", "শিশু"]
 aliases:
   - name: Ministry of Women and Children Affairs

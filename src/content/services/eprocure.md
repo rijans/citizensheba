@@ -22,6 +22,7 @@ official_domain: eprocure.gov.bd
 category: central
 directory_global_rank: 820
 directory_category_rank: 260
+icon: clipboard-list
 tags: [egp, tender, procurement, "ই-জিপি", "দরপত্র"]
 aliases:
   - name: e-Government Procurement

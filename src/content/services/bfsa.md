@@ -22,6 +22,7 @@ official_domain: bfsa.gov.bd
 category: health
 directory_global_rank: 610
 directory_category_rank: 60
+icon: utensils
 tags: [bfsa, food safety, "বিএফএসএ", "নিরাপদ খাদ্য"]
 aliases:
   - name: Bangladesh Food Safety Authority

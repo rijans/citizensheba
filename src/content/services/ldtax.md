@@ -20,6 +20,7 @@ official_domain: ldtax.gov.bd
 category: land
 directory_global_rank: 870
 directory_category_rank: 30
+icon: banknote
 tags: ["land tax", khajna, dakhila, "খাজনা"]
 aliases:
   - name: khajna

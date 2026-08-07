@@ -20,6 +20,7 @@ official_domain: coastguard.gov.bd
 category: safety
 directory_global_rank: 530
 directory_category_rank: 40
+icon: ship-wheel
 tags: [coast guard, maritime, "কোস্ট গার্ড", "সমুদ্র"]
 aliases:
   - name: Coast Guard BD

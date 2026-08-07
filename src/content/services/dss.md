@@ -22,6 +22,7 @@ official_domain: dss.gov.bd
 category: central
 directory_global_rank: 800
 directory_category_rank: 250
+icon: hand-heart
 tags: [dss, social services, welfare, "সমাজসেবা", "ভাতা"]
 aliases:
   - name: Department of Social Services

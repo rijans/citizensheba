@@ -22,6 +22,7 @@ official_domain: a2i.gov.bd
 category: central
 directory_global_rank: 500
 directory_category_rank: 40
+icon: lightbulb
 tags: [a2i, digital, innovation, "এটুআই", services]
 aliases:
   - name: Aspire to Innovate

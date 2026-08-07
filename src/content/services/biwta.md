@@ -22,6 +22,7 @@ official_domain: biwta.gov.bd
 category: transport
 directory_global_rank: 640
 directory_category_rank: 70
+icon: anchor
 tags: [biwta, waterway, navigation, "বিআইডব্লিউটিএ", "নৌপথ"]
 aliases:
   - name: Bangladesh Inland Water Transport Authority

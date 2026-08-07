@@ -20,6 +20,7 @@ official_domain: ecourt.gov.bd
 category: justice
 directory_global_rank: 810
 directory_category_rank: 10
+icon: gavel
 tags: [ecourt, court, mobile court, "ই-কোর্ট", "আদালত"]
 aliases:
   - name: eCourts

@@ -22,6 +22,7 @@ official_domain: bmd.gov.bd
 category: central
 directory_global_rank: 660
 directory_category_rank: 220
+icon: cloud-sun
 tags: [bmd, weather, forecast, "বিএমডি", "আবহাওয়া"]
 aliases:
   - name: Bangladesh Meteorological Department

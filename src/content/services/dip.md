@@ -22,6 +22,7 @@ official_domain: dip.gov.bd
 category: identity
 directory_global_rank: 770
 directory_category_rank: 40
+icon: user-round
 tags: [dip, passport, immigration, "ডিআইপি", "পাসপোর্ট"]
 aliases:
   - name: Department of Immigration and Passports

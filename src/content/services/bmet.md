@@ -22,6 +22,7 @@ official_domain: oc.bmet.gov.bd
 category: migration
 directory_global_rank: 670
 directory_category_rank: 10
+icon: briefcase-business
 tags: [bmet, emigration, overseas, "বিএমইটি", "প্রবাস"]
 aliases:
   - name: Bureau of Manpower Employment and Training

@@ -22,6 +22,7 @@ official_domain: vat.gov.bd
 category: tax
 directory_global_rank: 1080
 directory_category_rank: 30
+icon: calculator
 tags: [vat, nbr, tax, "ভ্যাট", "কর"]
 aliases:
   - name: VAT

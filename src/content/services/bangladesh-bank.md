@@ -20,6 +20,7 @@ official_domain: bb.org.bd
 category: tax
 directory_global_rank: 520
 directory_category_rank: 50
+icon: landmark
 tags: [bangladesh bank, central bank, "বাংলাদেশ ব্যাংক", "কেন্দ্রীয় ব্যাংক"]
 aliases:
   - name: BB

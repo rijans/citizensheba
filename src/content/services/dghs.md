@@ -22,6 +22,7 @@ official_domain: dghs.gov.bd
 category: health
 directory_global_rank: 760
 directory_category_rank: 20
+icon: stethoscope
 tags: [dghs, health, "স্বাস্থ্য", hospital]
 aliases:
   - name: Directorate General of Health Services

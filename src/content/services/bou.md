@@ -20,6 +20,7 @@ official_domain: bou.ac.bd
 category: education
 directory_global_rank: 570
 directory_category_rank: 120
+icon: book-open
 tags: [bou, open university, distance learning, "উন্মুক্ত বিশ্ববিদ্যালয়"]
 aliases:
   - name: BOU

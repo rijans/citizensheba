@@ -20,6 +20,7 @@ official_domain: hajj.gov.bd
 category: migration
 directory_global_rank: 550
 directory_category_rank: 30
+icon: mosque
 tags: [hajj, pilgrimage, "হজ", "হাজী"]
 aliases:
   - name: Hajj management

@@ -22,6 +22,7 @@ official_domain: xiclassadmission.gov.bd
 category: education
 directory_global_rank: 1110
 directory_category_rank: 30
+icon: clipboard-check
 tags: [admission, college, xi, "একাদশ", "ভর্তি"]
 aliases:
   - name: class 11 admission
