@@ -177,15 +177,30 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
 |--------------|-----------|----------|--------------|--------|--------|-------|
-| Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | Wave 31 + 33 shipped most oil/gas peers; **Meghna Oil / JGTCL** still unconfirmed |
-| More public medical colleges / institutes | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | Wave 36 shipped Pabna/Jashore/Habiganj/Netrokona MC + AFMC; prefer title-verified `*.college.gov.bd` |
-| Gov media / information siblings | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 37 shipped DFP/Mass Comm/FDC/PIB/Press Council; BTV/Betar/BSS/PID/MoInfo already shipped; Sangsad TV TBD |
-| Ministry apex gaps | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 37 shipped MoRA/MoCA/MoHPW/MoP; most cabinet ministries already present |
-| Agro / farming SOEs | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 37 shipped DAM/BADC/BMDA; MoA/DAE/AIS/research institutes largely shipped; Milk Vita / silk board optional |
-| Social safety / donation | _(TBD)_ | health / tax | _(confirm)_ | candidate | gap-list | Wave 35 shipped DSS Bhata + CAFO Pension; PM relief/donation / Ashrayan still unconfirmed |
-| BG Press / forms | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | forms.gov.bd still flaky; liberationwarmuseum.org hijacked — skip |
-| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); hijacked/private lookalikes; Teletalk Alljobs mixed market; wrong `college.gov.bd` acronyms |
-| Industry / trade associations (BASIS, …) | — | — | — | — | partner | **Not Official** — Partner candidates (ADR-0013); do not seed as Official rows |
+| Utility siblings (other DISCOs / gas) | _(TBD)_ | utilities | _(confirm)_ | candidate | gap-list | Wave 38 shipped BIFPCL; **Meghna Oil / JGTCL** still unconfirmed |
+| More public medical colleges / institutes | _(TBD)_ | health | _(confirm)_ | candidate | gap-list | Wave 38 shipped NIPSOM + BNMC; prefer title-verified `*.college.gov.bd` |
+| Gov media / information siblings | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Sangsad TV still TBD; core MoInfo peers shipped |
+| Agro / farming SOEs | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 38 shipped Milk Vita / Silk Board / Hortex |
+| Women / youth directorates | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Wave 38 shipped DWA / JMS / DYD |
+| Social safety / donation | _(TBD)_ | health / tax | _(confirm)_ | candidate | gap-list | PM relief/donation / Ashrayan still unconfirmed |
+| BG Press / forms | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | Printing/DPP already shipped; forms.gov.bd still flaky |
+| Skip notes | — | — | — | skipped | gap-list | IUT (OIC); hijacked/private lookalikes; Teletalk Alljobs; wrong `college.gov.bd` acronyms |
+| Industry / trade associations (BASIS, …) | — | — | — | — | partner | **Not Official** — Partner candidates (ADR-0013) |
+
+## Priority wave 38 — agro coops + health councils + women/youth + BIFPCL (2026-08-08)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| Milk Vita | milk-vita / bd-milk-vita | central | https://www.milkvita.org.bd/ | shipped | gap-list | Dairy cooperative union |
+| BSB | bsb / bd-bsb | central | https://www.bsb.gov.bd/ | shipped | gap-list | Silk Development Board (not seed) |
+| Hortex | hortex / bd-hortex | central | https://www.hortex.org/ | shipped | gap-list | Horticulture export foundation |
+| BIFPCL | bifpcl / bd-bifpcl | utilities | https://www.bifpcl.com/ | shipped | gap-list | Friendship power company |
+| NIPSOM | nipsom / bd-nipsom | health | https://www.nipsom.gov.bd/ | shipped | gap-list | Preventive & social medicine |
+| BAERA | baera / bd-baera | central | https://www.baera.gov.bd/ | shipped | gap-list | Atomic energy regulator |
+| BNMC | bnmc / bd-bnmc | health | https://www.bnmc.gov.bd/ | shipped | gap-list | Nursing & Midwifery Council |
+| DWA | dwa / bd-dwa | central | https://www.dwa.gov.bd/ | shipped | gap-list | Department of Women Affairs |
+| JMS | jms / bd-jms | central | https://www.jms.gov.bd/ | shipped | gap-list | Jatiya Mahila Sangstha |
+| DYD | dyd / bd-dyd | central | https://www.dyd.gov.bd/ | shipped | gap-list | Department of Youth Development |
 
 ## Priority wave 37 — ministries + gov media + agro (2026-08-08)
 

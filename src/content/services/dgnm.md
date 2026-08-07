@@ -52,6 +52,6 @@ faq:
     a: "No. DGNM focuses on nursing and midwifery. DGHS is the Directorate General of Health Services."
     q_bn: "ডিজিএনএম কি ডিজিএইচএস-এর মতো একই?"
     a_bn: "না। ডিজিএনএম নার্সিং ও মিডওয়াইফারিতে মনোযোগী। ডিজিএইচএস স্বাস্থ্য অধিদপ্তর।"
-related: [dghs, mohfw, dgfp, surokkha]
+related: [bnmc, dghs, mohfw, dgfp, surokkha]
 last_verified: 2026-08-07
 ---

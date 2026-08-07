@@ -52,7 +52,7 @@ faq:
     a: "No. MoWCA is the ministry portal for women and children affairs. Health services use DGHS and facility channels."
     q_bn: "মহিলা ও শিশু কি হাসপাতাল অ্যাপয়েন্টমেন্ট পোর্টাল?"
     a_bn: "না। এটি মহিলা ও শিশু বিষয়ক মন্ত্রণালয় পোর্টাল। স্বাস্থ্য সেবা ডিজিএইচএস ও স্বাস্থ্যকেন্দ্র চ্যানেলে।"
-related: [dss, dghs, national-portal, mygov]
+related: [dwa, jms, dss, dghs, national-portal, mygov]
 last_verified: 2026-08-07
 ---
 

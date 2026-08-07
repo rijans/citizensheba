@@ -52,6 +52,6 @@ faq:
     a: "No. BAEC is the atomic energy commission. Electricity DISCOs and generation companies are separate utility Services."
     q_bn: "বিএইসি কি বিদ্যুৎ বিতরণ কোম্পানি?"
     a_bn: "না। বিএইসি পরমাণু শক্তি কমিশন। বিদ্যুৎ ডিসকো ও উৎপাদন কোম্পানি আলাদা ইউটিলিটি সেবা।"
-related: [most, power-division, national-portal, bsti, bina]
+related: [baera, most, power-division, national-portal, bsti, bina]
 last_verified: 2026-08-07
 ---

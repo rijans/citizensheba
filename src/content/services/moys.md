@@ -52,6 +52,6 @@ faq:
     a: "MoYS publishes ministry information and notices. Ticket sales for events use the organizer’s official channels."
     q_bn: "মোওয়াইএস-এ কি ম্যাচ টিকিট কেনা যায়?"
     a_bn: "মোওয়াইএস মন্ত্রণালয় তথ্য ও নোটিশ প্রকাশ করে। ইভেন্ট টিকিট আয়োজকের অফিসিয়াল চ্যানেলে।"
-related: [dss, mowca, national-portal, mygov, bksp]
+related: [dyd, dss, mowca, national-portal, mygov, bksp]
 last_verified: 2026-08-07
 ---

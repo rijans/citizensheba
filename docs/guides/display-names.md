@@ -179,6 +179,16 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `dam` | **DAM** | Agricultural Marketing |
 | `badc` | **BADC** | Agricultural Development Corporation |
 | `bmda` | **BMDA** | Barind Multipurpose Development Authority |
+| `milk-vita` | **Milk Vita** | Dairy cooperative union |
+| `bsb` | **BSB** | Silk Development Board (not seed) |
+| `hortex` | **Hortex** | Horticulture export foundation |
+| `bifpcl` | **BIFPCL** | Bangladesh-India Friendship Power Company |
+| `nipsom` | **NIPSOM** | Preventive & social medicine institute |
+| `baera` | **BAERA** | Atomic energy regulator |
+| `bnmc` | **BNMC** | Nursing & Midwifery Council |
+| `dwa` | **DWA** | Department of Women Affairs |
+| `jms` | **JMS** | Jatiya Mahila Sangstha |
+| `dyd` | **DYD** | Department of Youth Development |
 | `mofood` | **MoFood** | Food ministry short form |
 | `dgfood` | **DG Food** | Directorate short form |
 | `fisheries` | **DoF** | Department of Fisheries short form |

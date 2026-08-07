@@ -20,6 +20,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `army` | `shield` | Bangladesh Army |
 | `badc` | `sprout` | Agricultural Development Corporation |
 | `baec` | `lightbulb` | Atomic Energy Commission |
+| `baera` | `shield` | Atomic energy regulator |
 | `baf` | `plane` | Bangladesh Air Force |
 | `banbeis` | `file-spreadsheet` | Education stats |
 | `bangabhaban` | `landmark` | President’s Office |
@@ -48,6 +49,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `bgb` | `shield` | Border Guard |
 | `bgfcl` | `flame` | Bangladesh Gas Fields |
 | `bida` | `briefcase-business` | Investment |
+| `bifpcl` | `zap` | Bangladesh-India Friendship Power |
 | `biman` | `plane` | National airline |
 | `bina` | `sprout` | Nuclear agriculture institute |
 | `bitac` | `factory` | Industrial technical assistance |
@@ -62,6 +64,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `bmeb` | `school` | Madrasah Education Board |
 | `bmet` | `briefcase-business` | Overseas employment clearance |
 | `bmrc` | `microscope` | Medical Research Council |
+| `bnmc` | `heart-pulse` | Nursing & Midwifery Council |
 | `bou` | `book-open` | Open university |
 | `bhbfc` | `home` | House Building Finance Corporation |
 | `bpatc` | `landmark` | Public admin training centre |
@@ -72,6 +75,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `brri` | `sprout` | Rice research |
 | `brta` | `car` | Vehicles / licence |
 | `brtc` | `bus` | Road transport corp |
+| `bsb` | `sprout` | Silk Development Board |
 | `bsc` | `ship` | Shipping Corporation |
 | `bscic` | `factory` | Small industries |
 | `bsec` | `banknote` | Securities commission |
@@ -133,10 +137,15 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `dos` | `ship` | Department of Shipping |
 | `dpdc` | `zap` | Electricity |
 | `dpe` | `school` | Primary education |
+| `dwa` | `users` | Department of Women Affairs |
+| `dyd` | `users` | Department of Youth Development |
 | `fdc` | `monitor` | Film Development Corporation |
+| `hortex` | `sprout` | Hortex Foundation |
 | `icb` | `landmark` | Investment Corporation of Bangladesh |
 | `idra` | `landmark` | Insurance Development & Regulatory Authority |
+| `jms` | `users` | Jatiya Mahila Sangstha |
 | `mass-communication` | `radio` | Mass Communication directorate |
+| `milk-vita` | `store` | Milk Vita dairy cooperative |
 | `moca` | `landmark` | Cultural Affairs ministry |
 | `mohpw` | `building-2` | Housing & Public Works ministry |
 | `mop` | `clipboard-list` | Planning ministry |
@@ -144,6 +153,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `mra` | `landmark` | Microcredit Regulatory Authority |
 | `nidch` | `stethoscope` | Chest diseases institute |
 | `nins` | `stethoscope` | Neurosciences institute |
+| `nipsom` | `stethoscope` | Preventive & social medicine |
 | `pib` | `scroll-text` | Press Institute Bangladesh |
 | `press-council` | `scale` | Bangladesh Press Council |
 | `printing` | `file-text` | Printing & publications / gazettes |
