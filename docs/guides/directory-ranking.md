@@ -15,6 +15,7 @@ Runtime SSOT is Service frontmatter (`directory_global_rank`, `directory_categor
 | New Services | Default high (`500+` global, `100+` category) until curated |
 | Pagination | Page size 20; show all if ≤21 results; pager if ≥22; ellipsis window when >7 pages |
 | Load more | Between grid and pager; appends next batch; muted “N more”; page jump replaces |
+| Browse UX wiring | Shared `useDirectoryBrowse` in Instant + Category shells ([`code-structure.md`](code-structure.md)) — do not fork page/mode/focus |
 
 ## Top ~20 global (approved seed)
 

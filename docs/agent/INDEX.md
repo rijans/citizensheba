@@ -27,6 +27,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | agent workflow, stop-and-ask, parallel session, foreign dirty, finalization, redesign | `docs/guides/agent-workflow.md`, `docs/specs/TRAPS.md` (#10) |
 | trap, pitfall, regression, known mistake | `docs/specs/TRAPS.md` (scan index, open matching bodies) |
 | UI, CSS, card, chip, Mobile-First, design token, Lucide, jargon in copy, logo, brand mark, favicon, PWA icon | `docs/guides/frontend.md`, ADR-0004, ADR-0012, `public/brand/`, `docs/specs/TRAPS.md` (#5–#7) |
+| code structure, seam, DRY, Service projection, DirectoryCard, useDirectoryBrowse, HopDisclose, BilingualPanes, StatusBadge twin, refactor locality | **`docs/guides/code-structure.md`**, `docs/guides/frontend.md`, `docs/specs/TRAPS.md` (#16), `docs/guides/performance.md` |
 | performance, island, LCP, client JS, analytics weight, directory skeleton, directory-index.json | `docs/guides/performance.md`, ADR-0001 |
 | stack, Astro, Cloudflare, wrangler, static assets, React island, Tailwind | `docs/adr/0001-astro-ssg-react-island-cloudflare.md`, `README.md` § Cloudflare, Trap #1 |
 | deploy, production, wrangler login, smoke live, workers.dev, citizensheba.com, Workers Builds, MCP Cloudflare | `docs/ops/production-and-deploy.md` |
@@ -40,8 +41,8 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | content catalog, service md, category yaml, FAQ, `bd-` slug, related, new service, add service | **`docs/guides/new-service.md` (checklist)**, `docs/guides/service-page.md`, `CONTEXT.md`, `src/content.config.ts`, `docs/guides/display-names.md`, `docs/guides/service-icons.md`, `docs/guides/directory-ranking.md`, `tests/unit/content-integrity.test.ts`, Traps #11, #14 |
 | Catalog Backlog, seed, populate services, priority wave, remaining services, utilities, migration, DESCO, WASA, BMET | `docs/ops/service-catalog-backlog.md`, `docs/superpowers/specs/2026-08-07-official-services-priority-wave-design.md`, `CONTEXT.md` (Catalog Backlog), `docs/guides/service-page.md` |
 | Display Name, title casing, a2i, A2I, myGov, e-Namjari, official typography, Name Alias, synonym, former name, aliases | ADR-0005, ADR-0006, `docs/guides/display-names.md`, `CONTEXT.md` (Display Name, Name Alias), Trap #12–#14, `src/content/services/*.md`, `src/lib/search.ts` |
-| Instant Directory search, bilingual search, romanization, Search Variant, description_bn, relatedTitles | ADR-0007, `src/lib/search.ts`, `src/lib/buildSearchIndex.ts`, `CONTEXT.md` (Instant Directory, Search Variant), `tests/unit/search.test.ts` |
-| Directory rank, directory_global_rank, directory_category_rank, pagination, page size, popular services first, ellipsis pager | ADR-0010, `docs/guides/directory-ranking.md`, `docs/guides/frontend.md`, `CONTEXT.md` (Directory Global/Category Rank, Directory Pagination), `src/lib/search.ts` (`paginateDirectory`), `src/lib/paginationWindow.ts`, `InstantDirectory.tsx`, `CategoryDirectory.tsx` |
+| Instant Directory search, bilingual search, romanization, Search Variant, description_bn, relatedTitles | ADR-0007, `src/lib/search.ts`, `src/lib/buildSearchIndex.ts`, `src/lib/serviceProjection.ts`, `CONTEXT.md` (Instant Directory, Search Variant), `tests/unit/search.test.ts`, `tests/unit/serviceProjection.test.ts` |
+| Directory rank, directory_global_rank, directory_category_rank, pagination, page size, popular services first, ellipsis pager, Load more, useDirectoryBrowse | ADR-0010, `docs/guides/directory-ranking.md`, `docs/guides/frontend.md`, `docs/guides/code-structure.md`, `CONTEXT.md` (Directory Global/Category Rank, Directory Pagination), `src/lib/search.ts` (`paginateDirectory`), `src/lib/paginationWindow.ts`, `useDirectoryBrowse.ts`, `InstantDirectory.tsx`, `CategoryDirectory.tsx` |
 | Service Page, hop page, SEO hop, body_bn, audience_bn, FAQ q_bn, related services heading, outbound CTA, last verified, service page structure, capabilities, capability capsules, content regions, lang-label, hop-region, HopDisclose, BilingualPanes | **`docs/guides/service-page.md` (SSOT)**, ADR-0008, ADR-0009, ADR-0011, `src/lib/markdown.ts`, `src/lib/servicePageCopy.ts`, `src/pages/services/[slug].astro`, `HopDisclose.astro`, `BilingualPanes.astro`, `CONTEXT.md` (Service Page v1, Service Capability), Traps #9, #15, design `docs/superpowers/specs/2026-08-08-service-page-content-regions-design.md` |
 | Official catalog, MFS, bank, doorway | `AGENTS.md` do-nots, Traps #8–#9 |
 | `_headers` | Trap #2, `public/_headers` if present |
@@ -66,6 +67,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | Search index | `src/lib/search.ts`, `src/lib/buildSearchIndex.ts`, `src/lib/serviceProjection.ts`, `src/pages/directory-index.json.ts` |
 | Category accents / icons | `src/lib/categoryVisuals.ts` (`accentStyle` / `accentStyleAttr`), `src/lib/categoryIcons.ts` |
 | Styles / tokens | `src/styles/global.css` |
+| Code structure / seams | `docs/guides/code-structure.md` |
 | Agent / SEO files | `src/pages/llms.txt.ts`, `src/pages/robots.txt.ts` |
 | CI | `.github/workflows/ci.yml`, `package.json` scripts `check` / `ci` |
 | Content integrity tests | `tests/unit/content-integrity.test.ts` |

@@ -25,13 +25,20 @@
 |-----|------|
 | Instant Directory island | `InstantDirectory.tsx` (`client:idle={{ timeout: 500 }}` on Home) |
 | Category directory island | `CategoryDirectory.tsx` |
+| Shared browse controller | `useDirectoryBrowse.ts` (page/mode/focus/pager — both shells) |
 | Site header | `Header.astro` — brand, Search → `/#directory-search`, theme toggle |
 | Site footer | `Footer.astro` — category links with chip-size icons; trust/notice; brand under Notice; © strip |
 | Breadcrumb | `Breadcrumb.astro` — quiet surface pill, Lucide home + chevron seps (same gray as current), current muted |
 | Load more / pager | `DirectoryLoadMore.tsx`, `DirectoryPagination.tsx` |
-| Static cards | `ServiceCardLink.astro` (related on Service Pages) — SSR Lucide, no extra island |
+| Island cards | `ServiceCard.tsx` + `StatusBadge.tsx` |
+| Static / related cards | `ServiceCardLink.astro` + `StatusBadge.astro` (SSR Lucide, no extra island) |
+| Shared card / badge types | `src/lib/serviceCard.ts` |
+| Content → card / search DTOs | `src/lib/serviceProjection.ts` (`DirectoryCard`, `toSearchableService`) |
+| Hop disclose / bilingual panes | `HopDisclose.astro`, `BilingualPanes.astro`, `ServiceFaq.astro` |
 | Icons | `CategoryIcon.tsx` + `categoryIcons.ts` (Category + optional Service keys) |
-| Accents | `categoryVisuals.ts` (code map by category id) |
+| Accents | `categoryVisuals.ts` — `accentStyle` (React object) / `accentStyleAttr` (Astro string) |
+
+**Structure SSOT:** [`code-structure.md`](code-structure.md) (where not to fork recipes).
 
 ## Typography & tokens
 
@@ -67,6 +74,7 @@
 
 ## Related
 
+- **Code structure / seams:** [`docs/guides/code-structure.md`](code-structure.md)
 - **Service Page hop:** [`docs/guides/service-page.md`](service-page.md)
 - **Directory ranking:** [`docs/guides/directory-ranking.md`](directory-ranking.md)
-- ADR-0003, ADR-0004, ADR-0010, ADR-0012, `docs/guides/performance.md`, `docs/specs/TRAPS.md` (#3–#7), `CONTEXT.md` § Instant Directory / Category Icon / Mobile-First / Directory ranks
+- ADR-0003, ADR-0004, ADR-0010, ADR-0012, `docs/guides/performance.md`, `docs/specs/TRAPS.md` (#3–#7, #16), `CONTEXT.md` § Instant Directory / Category Icon / Mobile-First / Directory ranks

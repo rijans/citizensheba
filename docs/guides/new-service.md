@@ -27,10 +27,10 @@ Create `src/content/services/<id>.md` following [`service-page.md`](service-page
 | `directory_global_rank`, `directory_category_rank` | Required ints — lower = higher ([`directory-ranking.md`](directory-ranking.md)). New long-tail → high defaults (`500+` / `100+`) until curated |
 | `icon` | **Strongly preferred** Lucide key ([`service-icons.md`](service-icons.md)). Add key to `categoryIcons.ts` if missing. Omit → Category glyph fallback |
 | `capabilities` | **Preferred** 2–4 hop tasks `{ en, bn }` (ADR-0011). Soft capsules before Outbound CTA; omit if nothing solid yet |
-| `related` | Optional peer ids; else same-category fallback |
+| `related` | Optional peer ids; else same-category fallback via `relatedIdsFor` in `serviceProjection.ts` (limit 4) |
 | `serp_title*` | Optional when Display Name is opaque for SERP (e.g. A2I) |
 
-Wire **related** links on peers when it helps discovery. Update backlog status if you used the Catalog Backlog.
+Wire **related** links on peers when it helps discovery. Update backlog status if you used the Catalog Backlog. Card DTOs / domain / related fallback: [`code-structure.md`](code-structure.md) § Service projection — do not re-implement in the page.
 
 ## Cards & Instant Directory (no extra UI work)
 

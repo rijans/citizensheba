@@ -42,10 +42,10 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 ## Instant Directory visuals (see ADR-0004)
 
 - Lucide **Category Icons** (+ optional **Service Icon** glyph) + soft accents from `src/lib/categoryVisuals.ts` (code map, not YAML); living seeds [`docs/guides/service-icons.md`](docs/guides/service-icons.md)
-- Shared Service card: icon, titles, description, official domain, status when not ACTIVE
+- Shared Service card: icon, titles, description, official domain, status when not ACTIVE — React/Astro twins via `src/lib/serviceCard.ts` ([`docs/guides/code-structure.md`](docs/guides/code-structure.md))
 - No emoji-first cards; no Home trust strip (footer disclaimer only)
 - Chips: small icon + EN name; result count + clear empty state
-- Frontend / perf detail: [`docs/guides/frontend.md`](docs/guides/frontend.md), [`docs/guides/performance.md`](docs/guides/performance.md)
+- Frontend / perf / seams: [`docs/guides/frontend.md`](docs/guides/frontend.md), [`docs/guides/performance.md`](docs/guides/performance.md), [`docs/guides/code-structure.md`](docs/guides/code-structure.md)
 
 ## Hard do-nots
 
@@ -61,7 +61,8 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 
 - **New Service checklist (cards + hop + icons + ranks):** [`docs/guides/new-service.md`](docs/guides/new-service.md)
 - **Service Page hop structure (read + update when changing hop UI/copy):** [`docs/guides/service-page.md`](docs/guides/service-page.md)
-- Services: `src/content/services/*.md` — required fields and FAQ policy summarized in the hop guide; schema in `src/content.config.ts`
+- **Shared code seams (projection, browse hook, hop disclose, card twins):** [`docs/guides/code-structure.md`](docs/guides/code-structure.md) — Trap #16
+- Services: `src/content/services/*.md` — required fields and FAQ policy summarized in the hop guide; schema in `src/content.config.ts` (no Service `logo` field — brand/OG are site assets)
 - Categories: `src/content/categories/*.yaml` — required `name_bn`, `description_bn`
 - Prefer English public slugs with `bd-` prefix for services
 - **Display Name** casing: curated (not blind official typography) — ADR-0005, Trap #12, living table [`docs/guides/display-names.md`](docs/guides/display-names.md); examples A2I, myGov, lowercase `e-`

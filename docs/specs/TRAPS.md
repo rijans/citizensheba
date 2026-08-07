@@ -21,6 +21,7 @@
 | 13 | Alternate names only in `tags` (skip `aliases`) |
 | 14 | New Service without EN+BN Name Aliases |
 | 15 | Hop support `p` rules enlarging `.lang-label` |
+| 16 | Forking Directory / hop / card recipes |
 
 ---
 
@@ -201,3 +202,15 @@ Who/FAQ use quieter support strips with slightly smaller body type via `.hop-reg
 ### Rule
 
 Keep `.lang-label` at one small size on **all** hop regions. Body/prose selectors must use `p:not(.lang-label)`. Living structure: [`docs/guides/service-page.md`](../guides/service-page.md); design: `docs/superpowers/specs/2026-08-08-service-page-content-regions-design.md`.
+
+---
+
+## 16. Forking Directory / hop / card recipes
+
+### Pitfall
+
+Re-implementing related-id fallback, `official_domain ?? hostname`, page/mode/load-more browse, hop `<details>` chrome, or status badge labels in a new page/component “just for this case.” Drift breaks Instant Directory, Category grids, and Service Page related cards independently. Adding a React island on Service Pages “to share the card” regresses Lighthouse.
+
+### Rule
+
+Use the seams in [`docs/guides/code-structure.md`](../guides/code-structure.md): `serviceProjection.ts`, `useDirectoryBrowse.ts`, `HopDisclose` / `BilingualPanes`, `serviceCard.ts` + badge twins. Keep Home JSON-fetch vs Category props. No new islands for cards/hop disclose.

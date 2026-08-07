@@ -14,11 +14,11 @@ Thin **SEO hop**: help citizens reach the official portal fast, with enough hone
 
 Non-Official stance lives in site chrome (CTA, About, Disclaimer) — **not** repeated in `body` or FAQ.
 
-**Content regions:** About (primary), Who, and FAQ are quieter/primary panels with a Lucide chevron; **expanded by default** (`<details open>`) — collapse is optional. Regions span the full `site-main` width (no 42rem reading column). Related stays card-grid only (no outer panel). Design: [`docs/superpowers/specs/2026-08-08-service-page-content-regions-design.md`](../superpowers/specs/2026-08-08-service-page-content-regions-design.md).
+**Content regions:** About (primary), Who, and FAQ use `HopDisclose` + `BilingualPanes` (FAQ via `ServiceFaq`); **expanded by default** (`<details open>`) — collapse is optional. Regions span the full `site-main` width (no 42rem reading column). Related stays card-grid only (no outer panel). Implementation map: [`code-structure.md`](code-structure.md). Design: [`docs/superpowers/specs/2026-08-08-service-page-content-regions-design.md`](../superpowers/specs/2026-08-08-service-page-content-regions-design.md).
 
 ## Page order (top → bottom)
 
-Implementation: `src/pages/services/[slug].astro`.
+Implementation: `src/pages/services/[slug].astro` + `HopDisclose` / `BilingualPanes` / `ServiceFaq` (see [`code-structure.md`](code-structure.md)).
 
 | # | Block | Source | Notes |
 |---|--------|--------|--------|

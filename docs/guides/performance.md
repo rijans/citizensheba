@@ -5,8 +5,8 @@
 ## Defaults that keep us fast
 
 - **SSG output** — HTML ships from `dist/`; do not convert the site to a client-heavy SPA.
-- **One React island on Home** — Instant Directory only (`client:idle={{ timeout: 500 }}` so hydration prefers idle but does not hang forever in busy tabs). Category grids use `client:idle` too. Service Pages stay Astro SSR (no island).
-- **Content Collections at build time** — search index is built in `buildSearchIndex.ts`. Home fetches `/directory-index.json` after idle (not inlined as island props) so HTML stays small for LCP.
+- **One React island on Home** — Instant Directory only (`client:idle={{ timeout: 500 }}` so hydration prefers idle but does not hang forever in busy tabs). Category grids use `client:idle` too. Shared browse UX lives in `useDirectoryBrowse` (not a second island). Service Pages stay Astro SSR (no island) — hop chrome is `HopDisclose` / `BilingualPanes`.
+- **Content Collections at build time** — search index via `buildSearchIndex.ts` → `serviceProjection.toSearchableService`. Home fetches `/directory-index.json` after idle (not inlined as island props) so HTML stays small for LCP.
 - **Self-hosted fonts** — `src/styles/fonts.css` from `@fontsource` files, `font-display: optional` (no Google Fonts; no font preload — preload + optional delays text LCP).
 - **Inline CSS** — `build.inlineStylesheets: 'always'` so the document is not blocked on a separate stylesheet request.
 - **Sized brand mark** — header uses `/brand/citizensheba-logo-88.webp` (not the 512px PNG).
@@ -39,4 +39,4 @@ Home still ships one React island (~unused-JS opportunity). Service Pages (no is
 
 ## Related
 
-- ADR-0001, `docs/guides/frontend.md`, `AGENTS.md` § Deploy smoke
+- ADR-0001, `docs/guides/frontend.md`, `docs/guides/code-structure.md`, `AGENTS.md` § Deploy smoke

@@ -80,7 +80,6 @@ const service = defineCollection({
     faq: z.array(faqItem).min(1).max(5),
     related: z.array(z.string()).optional(),
     last_verified: z.coerce.date(),
-    logo: z.string().optional(),
   }),
 });
 

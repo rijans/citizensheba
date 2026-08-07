@@ -28,6 +28,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [guides/directory-ranking.md](guides/directory-ranking.md) | Directory Global / Category ranks + Top browse table |
 | [guides/service-icons.md](guides/service-icons.md) | Optional per-Service Lucide icons (seed table) |
 | [guides/frontend.md](guides/frontend.md) | Cards, chips, Mobile-First, tokens, **brand logo / favicon** |
+| [guides/code-structure.md](guides/code-structure.md) | **Shared seams** — projection, browse hook, hop disclose, card twins |
 | [guides/performance.md](guides/performance.md) | Islands, SSG, analytics weight |
 
 ## ADR index
