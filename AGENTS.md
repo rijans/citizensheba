@@ -50,7 +50,8 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 ## Hard do-nots
 
 - No doorway-page spam; Service Pages stay thin SEO hops with clear Outbound CTA — structure: [`docs/guides/service-page.md`](docs/guides/service-page.md)
-- Catalog v1 = Official Services only — no private banks, MFS, or commercial SaaS as Official
+- Catalog Instant Directory / published hops = Official Services only — no private banks, MFS, or commercial SaaS as Official
+- Do not ship Partner / association hops or call them Official — type locked in ADR-0013 (docs-only until a ship wave); Instant Directory stays Official-only until a follow-up discovery ADR
 - Do not host or proxy government transactions
 - `_headers` comments: `#` only (not `/* */`)
 - Do not rewrite git config; use env / `git -c` for identity when committing

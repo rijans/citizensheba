@@ -2,11 +2,11 @@
 
 > **Start here when adding an Official Service.** This is the maintenance checklist — not a second policy SSOT. Deep rules stay in the linked guides/ADRs. Router: [`docs/agent/INDEX.md`](../agent/INDEX.md).
 
-**Do not:** invent a second card UI, doorway spam, private banks/MFS as Official, or skip EN+BN aliases / ranks.
+**Do not:** invent a second card UI, doorway spam, private banks/MFS as Official, or skip EN+BN aliases / ranks. Industry / trade associations (e.g. BASIS) → **Partner listing** ([ADR-0013](../adr/0013-partner-listing.md)), not this Official checklist — and do not ship Partner hops until the Partner ship wave.
 
 ## Before you write content
 
-1. Confirm it is an **Official Service** (gov / utility / half-gov) with **one Outbound URL** — [`AGENTS.md`](../../AGENTS.md), Catalog Backlog [`docs/ops/service-catalog-backlog.md`](../ops/service-catalog-backlog.md).
+1. Confirm it is an **Official Service** (gov / utility / half-gov) with **one Outbound URL** — [`AGENTS.md`](../../AGENTS.md), Catalog Backlog [`docs/ops/service-catalog-backlog.md`](../ops/service-catalog-backlog.md). Associations are not Official.
 2. Pick Category (`src/content/categories/*.yaml`). New Category → Lucide `icon` + accent in `categoryVisuals.ts` ([`frontend.md`](frontend.md), ADR-0004).
 3. Lock **Display Name** casing ([`display-names.md`](display-names.md), ADR-0005). Ask if stylized/disputed.
 4. Prefer public slug `bd-…` (English kebab).

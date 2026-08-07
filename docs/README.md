@@ -46,6 +46,8 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [0009](adr/0009-service-page-bilingual-sections.md) | Service Page bilingual audience / FAQ / related |
 | [0010](adr/0010-directory-ranking-and-pagination.md) | Directory browse ranks + green pagination |
 | [0011](adr/0011-service-capability-capsules.md) | Hop capability capsules (EN+BN) |
+| [0012](adr/0012-service-card-description-clamp.md) | Service card description clamp (2 lines) |
+| [0013](adr/0013-partner-listing.md) | Partner listing (associations-first; docs-only) |
 
 ## Ops
 
@@ -64,6 +66,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [specs/…-design.md](superpowers/specs/2026-08-06-bd-digital-services-directory-design.md) | v1 product design |
 | [specs/…-name-aliases-design.md](superpowers/specs/2026-08-07-name-aliases-design.md) | Name Aliases (typed field, search, former line) |
 | [specs/…-priority-wave-design.md](superpowers/specs/2026-08-07-official-services-priority-wave-design.md) | Official Services priority wave + Catalog Backlog |
+| [specs/…-partner-listing-design.md](superpowers/specs/2026-08-08-partner-listing-design.md) | Partner listing (associations-first; docs-only ADR) |
 | [specs/…-directory-ranking-pagination-design.md](superpowers/specs/2026-08-07-directory-ranking-pagination-design.md) | Directory ranking + pagination |
 | [specs/…-directory-load-more-design.md](superpowers/specs/2026-08-07-directory-load-more-design.md) | Directory Load more (append) + pager |
 | [specs/…-service-icons-design.md](superpowers/specs/2026-08-07-service-icons-design.md) | Optional per-Service Lucide icons |

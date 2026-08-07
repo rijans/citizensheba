@@ -13,7 +13,7 @@
 | 5 | Emoji-first Service cards |
 | 6 | Chip hover clipped by `overflow-x` |
 | 7 | Accent colors edited in category YAML |
-| 8 | Catalog creep (banks / MFS as Official) |
+| 8 | Catalog creep (banks / MFS / associations as Official) |
 | 9 | Doorway / thin spam Service Pages |
 | 10 | Committing foreign session WIP |
 | 11 | Broken category / related content refs |
@@ -22,6 +22,7 @@
 | 14 | New Service without EN+BN Name Aliases |
 | 15 | Hop support `p` rules enlarging `.lang-label` |
 | 16 | Forking Directory / hop / card recipes |
+| 17 | Shipping Partner listings before the ship wave |
 
 ---
 
@@ -109,15 +110,15 @@ Accents live in `src/lib/categoryVisuals.ts` keyed by category id (ADR-0004).
 
 ---
 
-## 8. Catalog creep (banks / MFS as Official)
+## 8. Catalog creep (banks / MFS / associations as Official)
 
 ### Pitfall
 
-Listing private banks, MFS apps, or commercial SaaS as Official Services to “fill the directory.”
+Listing private banks, MFS apps, commercial SaaS, or industry / trade associations (e.g. BASIS) as Official Services to “fill the directory.”
 
 ### Rule
 
-v1 Official = gov / utilities / half-gov peers only. See `CONTEXT.md` / `AGENTS.md` catalog do-nots.
+Published Official = gov / utilities / half-gov peers only. Associations are **Partner listing** candidates (ADR-0013) — never Official. Banks / MFS / SaaS stay out of Partner for the associations-first slice. See `CONTEXT.md` / `AGENTS.md` catalog do-nots.
 
 ---
 
@@ -214,3 +215,15 @@ Re-implementing related-id fallback, `official_domain ?? hostname`, page/mode/lo
 ### Rule
 
 Use the seams in [`docs/guides/code-structure.md`](../guides/code-structure.md): `serviceProjection.ts`, `useDirectoryBrowse.ts`, `HopDisclose` / `BilingualPanes`, `serviceCard.ts` + badge twins. Keep Home JSON-fetch vs Category props. No new islands for cards/hop disclose.
+
+---
+
+## 17. Shipping Partner listings before the ship wave
+
+### Pitfall
+
+Adding Partner / association Markdown hops, a `partners` collection, or Instant Directory Partner chrome because ADR-0013 exists — or mixing Partners into `/directory-index.json` without a discovery ADR.
+
+### Rule
+
+ADR-0013 is **docs-only** until a deliberate ship wave (schema + Non-Official hop chrome + backlog). Instant Directory and Category Official lists stay Official-only until a **follow-up ADR** opens discovery. Partner ≠ Official forever on page chrome.

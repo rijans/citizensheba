@@ -4,6 +4,8 @@
 > **Design:** [`docs/superpowers/specs/2026-08-07-official-services-priority-wave-design.md`](../superpowers/specs/2026-08-07-official-services-priority-wave-design.md).  
 > **Published Services:** `src/content/services/*.md` — this file is not a content collection.
 
+**Partner listing (not Official):** Industry / trade associations (e.g. BASIS, FBCCI, BGMEA-class) are **Partner candidates** under [ADR-0013](../adr/0013-partner-listing.md) — do **not** add them as Official `candidate` rows here. No separate Partner backlog file until a Partner ship wave. Instant Directory stays Official-only.
+
 **Statuses:** `candidate` → `drafting` → `ready` → `shipped` | `skip` (`skip` needs a reason).
 
 ## Verification 2026-08-07
@@ -181,6 +183,7 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 | BG Press / BPATC / forms / museum | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | curl fail; liberationwarmuseum.org hijacked — skip |
 | Development authorities (RAJUK/CDA/KDA/RDA) | _(TBD)_ | central | _(confirm)_ | candidate | gap-list | curl fail this run |
 | Skip notes | — | — | — | skipped | gap-list | IUT (OIC); private Barind MC; `smc.edu.bd` junk; `afmcbd.com` for sale; `nitor.org` wrong (DE pest control); icddr,b international |
+| Industry / trade associations (BASIS, …) | — | — | — | — | partner | **Not Official** — Partner candidates (ADR-0013); do not seed as Official rows |
 
 ## Priority wave 27 — gap fill (2026-08-07)
 

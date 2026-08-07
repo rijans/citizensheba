@@ -45,6 +45,7 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | Directory rank, directory_global_rank, directory_category_rank, pagination, page size, popular services first, ellipsis pager, Load more, useDirectoryBrowse | ADR-0010, `docs/guides/directory-ranking.md`, `docs/guides/frontend.md`, `docs/guides/code-structure.md`, `CONTEXT.md` (Directory Global/Category Rank, Directory Pagination), `src/lib/search.ts` (`paginateDirectory`), `src/lib/paginationWindow.ts`, `useDirectoryBrowse.ts`, `InstantDirectory.tsx`, `CategoryDirectory.tsx` |
 | Service Page, hop page, SEO hop, body_bn, audience_bn, FAQ q_bn, related services heading, outbound CTA, last verified, service page structure, capabilities, capability capsules, content regions, lang-label, hop-region, HopDisclose, BilingualPanes | **`docs/guides/service-page.md` (SSOT)**, ADR-0008, ADR-0009, ADR-0011, `src/lib/markdown.ts`, `src/lib/servicePageCopy.ts`, `src/pages/services/[slug].astro`, `HopDisclose.astro`, `BilingualPanes.astro`, `CONTEXT.md` (Service Page v1, Service Capability), Traps #9, #15, design `docs/superpowers/specs/2026-08-08-service-page-content-regions-design.md` |
 | Official catalog, MFS, bank, doorway | `AGENTS.md` do-nots, Traps #8–#9 |
+| Partner listing, BASIS, association, non-Official, FBCCI, BGMEA | ADR-0013, `CONTEXT.md` (Partner listing), Traps #8 + #17, `docs/superpowers/specs/2026-08-08-partner-listing-design.md` |
 | `_headers` | Trap #2, `public/_headers` if present |
 | v1 product intent, Guides future, hop-first | `docs/superpowers/specs/2026-08-06-bd-digital-services-directory-design.md` |
 | historical implementation plan | `docs/superpowers/plans/2026-08-06-bd-digital-services-directory.md` |
@@ -92,3 +93,4 @@ Doc map: [`docs/README.md`](../README.md). Layout: [`docs/specs/DOC_ARCHITECTURE
 | 0010 Directory ranking + pagination | `docs/adr/0010-directory-ranking-and-pagination.md` |
 | 0011 Service capability capsules | `docs/adr/0011-service-capability-capsules.md` |
 | 0012 Service card description clamp | `docs/adr/0012-service-card-description-clamp.md` |
+| 0013 Partner listing | `docs/adr/0013-partner-listing.md` |
