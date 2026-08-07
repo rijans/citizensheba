@@ -5,8 +5,10 @@ import {
   type DirectoryBrowseMode,
   type SearchableService,
 } from '../../lib/search';
+import { formatDirectoryCount } from '../../lib/directoryCopy';
 import { categoryPath, servicePath } from '../../lib/urls';
 import { accentStyle } from '../../lib/categoryVisuals';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { LayoutGrid, SearchX } from '../../lib/categoryIcons';
 import CategoryIcon from '../ui/CategoryIcon';
 import ServiceCard from '../ui/ServiceCard';
@@ -143,6 +145,13 @@ export default function InstantDirectory({
     );
   }, []);
 
+  const scrollChips = useCallback((direction: -1 | 1) => {
+    const el = chipsRef.current;
+    if (!el) return;
+    const step = Math.max(180, Math.round(el.clientWidth * 0.7));
+    el.scrollBy({ left: direction * step, behavior: 'smooth' });
+  }, []);
+
   useEffect(() => {
     const el = chipsRef.current;
     if (!el) return;
@@ -184,11 +193,15 @@ export default function InstantDirectory({
       ? loadError
         ? 'Could not load services'
         : 'Loading services…'
-      : slice.total === 1
-        ? '1 service'
-        : slice.showPager
-          ? `${slice.total} services · Showing ${slice.showing} · Page ${slice.page} of ${slice.pageCount}`
-          : `${slice.total} services`;
+      : formatDirectoryCount({
+          total: slice.total,
+          showPager: slice.showPager,
+          showing: slice.showing,
+          page: slice.page,
+          pageCount: slice.pageCount,
+          categoryName: activeCategory?.name,
+          query,
+        });
 
   const chipsWrapClass = [
     'directory-chips-wrap',
@@ -259,6 +272,16 @@ export default function InstantDirectory({
       </div>
 
       <div className={chipsWrapClass}>
+        {chipOverflow.left && (
+          <button
+            type="button"
+            className="directory-chips-nav directory-chips-nav--left"
+            aria-label="Scroll categories left"
+            onClick={() => scrollChips(-1)}
+          >
+            <ChevronLeft size={18} strokeWidth={2.25} aria-hidden="true" />
+          </button>
+        )}
         <div
           ref={chipsRef}
           className="directory-chips"
@@ -290,6 +313,16 @@ export default function InstantDirectory({
             );
           })}
         </div>
+        {chipOverflow.right && (
+          <button
+            type="button"
+            className="directory-chips-nav directory-chips-nav--right"
+            aria-label="Scroll categories right"
+            onClick={() => scrollChips(1)}
+          >
+            <ChevronRight size={18} strokeWidth={2.25} aria-hidden="true" />
+          </button>
+        )}
       </div>
 
       <div className="directory-toolbar">

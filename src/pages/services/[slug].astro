@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../components/layout/BaseLayout.astro';
+import Breadcrumb from '../../components/layout/Breadcrumb.astro';
 import OutboundCta from '../../components/service/OutboundCta.astro';
 import ServiceFaq from '../../components/service/ServiceFaq.astro';
 import StatusBadge from '../../components/service/StatusBadge.astro';
@@ -11,6 +12,7 @@ import { categoryPath, servicePath, officialDomainFromUrl } from '../../lib/urls
 import { documentTitle, metaDescription } from '../../lib/seo';
 import { renderMarkdown } from '../../lib/markdown';
 import { servicePageHeadings, servicePageLangLabels } from '../../lib/servicePageCopy';
+import { ChevronDown } from 'lucide-react';
 import { accentStyle } from '../../lib/categoryVisuals';
 export async function getStaticPaths() {
   const services = await getCollection('services');
@@ -59,13 +61,12 @@ const verifiedIso = service.data.last_verified.toISOString().slice(0, 10);
 
 <BaseLayout title={title} description={description} canonicalPath={servicePath(service.data.slug)}>
   <article class="service-page">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a>
-      <span class="breadcrumb__sep" aria-hidden="true">/</span>
-      <a href={categoryPath(category.data.slug)}>{category.data.name}</a>
-      <span class="breadcrumb__sep" aria-hidden="true">/</span>
-      <span class="breadcrumb__current">{service.data.title}</span>
-    </nav>
+    <Breadcrumb
+      crumbs={[
+        { label: category.data.name, href: categoryPath(category.data.slug) },
+        { label: service.data.title },
+      ]}
+    />
 
     <header class="service-page__header">
       <StatusBadge status={service.data.status} />
@@ -113,7 +114,12 @@ const verifiedIso = service.data.last_verified.toISOString().slice(0, 10);
       )
     }
 
-    <OutboundCta url={service.data.url} domain={domain} />
+    <OutboundCta
+      url={service.data.url}
+      domain={domain}
+      verifiedLabel={verifiedLabel}
+      verifiedIso={verifiedIso}
+    />
 
     {
       service.data.status !== 'ACTIVE' && (
@@ -123,43 +129,53 @@ const verifiedIso = service.data.last_verified.toISOString().slice(0, 10);
       )
     }
 
-    <section class="hop-region hop-region--primary" aria-labelledby="service-about-heading">
-      <h2 id="service-about-heading">
-        {servicePageHeadings.about.en}{' '}
-        <span lang="bn">{servicePageHeadings.about.bn}</span>
-      </h2>
-      <div class="bilingual-panes">
-        <div class="bilingual-pane">
-          <p class="lang-label">{servicePageLangLabels.bn}</p>
-          <div class="service-page__prose" lang="bn" set:html={bodyBnHtml} />
-        </div>
-        <div class="bilingual-pane">
-          <p class="lang-label">{servicePageLangLabels.en}</p>
-          <div class="service-page__prose" set:html={bodyHtml} />
+    <details class="hop-region hop-region--primary hop-disclose" open>
+      <summary class="hop-disclose__summary">
+        <h2 id="service-about-heading" class="hop-disclose__heading">
+          {servicePageHeadings.about.en}{' '}
+          <span lang="bn">{servicePageHeadings.about.bn}</span>
+        </h2>
+        <span class="hop-disclose__chevron" aria-hidden="true">
+          <ChevronDown size={20} strokeWidth={2} />
+        </span>
+      </summary>
+      <div class="hop-disclose__body">
+        <div class="bilingual-panes">
+          <div class="bilingual-pane">
+            <p class="lang-label">{servicePageLangLabels.bn}</p>
+            <div class="service-page__prose" lang="bn" set:html={bodyBnHtml} />
+          </div>
+          <div class="bilingual-pane">
+            <p class="lang-label">{servicePageLangLabels.en}</p>
+            <div class="service-page__prose" set:html={bodyHtml} />
+          </div>
         </div>
       </div>
-      <p class="service-page__verified">
-        <strong>Official link last verified:</strong>
-        <time datetime={verifiedIso}>{verifiedLabel}</time>
-      </p>
-    </section>
+    </details>
 
-    <section class="hop-region hop-region--support" aria-labelledby="service-audience-heading">
-      <h2 id="service-audience-heading">
-        {servicePageHeadings.audience.en}{' '}
-        <span lang="bn">{servicePageHeadings.audience.bn}</span>
-      </h2>
-      <div class="bilingual-panes">
-        <div class="bilingual-pane">
-          <p class="lang-label">{servicePageLangLabels.bn}</p>
-          <p lang="bn">{service.data.audience_bn}</p>
-        </div>
-        <div class="bilingual-pane">
-          <p class="lang-label">{servicePageLangLabels.en}</p>
-          <p>{service.data.audience}</p>
+    <details class="hop-region hop-region--support hop-disclose" open>
+      <summary class="hop-disclose__summary">
+        <h2 id="service-audience-heading" class="hop-disclose__heading">
+          {servicePageHeadings.audience.en}{' '}
+          <span lang="bn">{servicePageHeadings.audience.bn}</span>
+        </h2>
+        <span class="hop-disclose__chevron" aria-hidden="true">
+          <ChevronDown size={20} strokeWidth={2} />
+        </span>
+      </summary>
+      <div class="hop-disclose__body">
+        <div class="bilingual-panes">
+          <div class="bilingual-pane">
+            <p class="lang-label">{servicePageLangLabels.bn}</p>
+            <p lang="bn">{service.data.audience_bn}</p>
+          </div>
+          <div class="bilingual-pane">
+            <p class="lang-label">{servicePageLangLabels.en}</p>
+            <p>{service.data.audience}</p>
+          </div>
         </div>
       </div>
-    </section>
+    </details>
 
     <ServiceFaq items={service.data.faq} />
 

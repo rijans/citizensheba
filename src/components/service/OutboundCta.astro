@@ -2,9 +2,11 @@
 interface Props {
   url: string;
   domain: string;
+  verifiedLabel: string;
+  verifiedIso: string;
 }
 
-const { url, domain } = Astro.props;
+const { url, domain, verifiedLabel, verifiedIso } = Astro.props;
 ---
 
 <div class="outbound-cta">
@@ -27,15 +29,21 @@ const { url, domain } = Astro.props;
       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
     </svg>
   </a>
-  <div class="outbound-cta__domain-row">
-    <p class="outbound-cta__domain">{domain}</p>
+  <div class="outbound-cta__meta">
+    <div class="outbound-cta__meta-text">
+      <p class="outbound-cta__domain">{domain}</p>
+      <p class="outbound-cta__verified">
+        Verified on
+        <time datetime={verifiedIso}>{verifiedLabel}</time>
+      </p>
+    </div>
     <button
       type="button"
       class="outbound-cta__copy"
       data-copy-url={url}
       aria-label={`Copy official link ${domain}`}
     >
-      Copy
+      Copy link
     </button>
   </div>
 </div>

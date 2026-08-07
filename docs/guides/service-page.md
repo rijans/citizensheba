@@ -14,7 +14,7 @@ Thin **SEO hop**: help citizens reach the official portal fast, with enough hone
 
 Non-Official stance lives in site chrome (CTA, About, Disclaimer) — **not** repeated in `body` or FAQ.
 
-**Content regions:** About is the primary article; Who and FAQ are quieter support strips. Related stays card-grid only (no outer panel). Design: [`docs/superpowers/specs/2026-08-08-service-page-content-regions-design.md`](../superpowers/specs/2026-08-08-service-page-content-regions-design.md).
+**Content regions:** About (primary), Who, and FAQ are quieter/primary panels with a Lucide chevron; **expanded by default** (`<details open>`) — collapse is optional. Related stays card-grid only (no outer panel). Design: [`docs/superpowers/specs/2026-08-08-service-page-content-regions-design.md`](../superpowers/specs/2026-08-08-service-page-content-regions-design.md).
 
 ## Page order (top → bottom)
 
@@ -23,20 +23,19 @@ Implementation: `src/pages/services/[slug].astro`.
 | # | Block | Source | Notes |
 |---|--------|--------|--------|
 | — | Document Title (`<title>`) | `serp_title_bn`/`serp_title` or `title_bn`/`title` | `বাংলা — English \| CitizenSheba Bangladesh` (ADR-0003); expand short acronyms for SERP |
-| 1 | Breadcrumb | Category + Service | Home → Category → title |
+| 1 | Breadcrumb | Category + Service | Lucide home icon + Home → Category → title (`Breadcrumb.astro`) |
 | 2 | Status badge | `status` | When not `ACTIVE` |
 | 3 | Icon + H1 | Service `icon` ?? Category `icon`; `title` + `title_bn` | Same Lucide + Category accent as cards (ADR-0004); EN then BN on one line |
 | 4 | Formerly … | `aliases` where `kind: former` | Quiet line only |
 | 5 | Short description | `description` | EN only under H1 today; cards + Meta Description also use short fields |
 | 5b | Capability capsules | optional `capabilities[]` | 2–4 EN+BN soft capsules (muted gray EN, subtler gray BN); hop only — ADR-0011 |
-| 6 | Outbound CTA | `url` + domain | Primary action; domain under button with small **Copy** (full URL); bilingual toast “Link copied / লিংক কপি হয়েছে” |
+| 6 | Outbound CTA | `url` + domain + `last_verified` | Green button left; right = white meta well: domain + `Verified on {date}` stacked, **Copy link** vertically centered beside them; stacks under on phone; bilingual toast |
 | 7 | Status caution | if not `ACTIVE` | Short warning |
-| 8 | About (primary) | `body_bn` then `body` | H2 About EN+BN; primary `--surface` panel; labeled বাংলা / English panes; Markdown |
-| 9 | Official link last verified | `last_verified` | Inside About panel footer |
-| 10 | Who is this for (support) | `audience_bn` then `audience` | Quiet `--surface-muted` strip; labeled panes |
-| 11 | FAQ (support) | `faq[]` with `q`/`a`/`q_bn`/`a_bn` | Quiet strip; Q EN+BN one line; answers labeled BN→EN |
-| 12 | Related services | related cards | Heading EN+BN; cards already show `title` + `title_bn` |
-| 13 | Report a problem | mailto | **Temporarily disabled** (commented out in `[slug].astro`) |
+| 8 | About (primary) | `body_bn` then `body` | H2 About EN+BN; primary `--surface` panel; labeled panes; `<details open>` + chevron; Markdown |
+| 9 | Who is this for (support) | `audience_bn` then `audience` | Quiet `--surface-muted` strip; labeled panes; `<details open>` + chevron |
+| 10 | FAQ (support) | `faq[]` with `q`/`a`/`q_bn`/`a_bn` | Same disclose pattern; Q EN+BN one line; answers labeled BN→EN |
+| 11 | Related services | related cards | Heading EN+BN; cards already show `title` + `title_bn` |
+| 12 | Report a problem | mailto | **Temporarily disabled** (commented out in `[slug].astro`) |
 
 Shared section heading strings: `src/lib/servicePageCopy.ts` (not per-service).
 
@@ -45,10 +44,10 @@ Shared section heading strings: `src/lib/servicePageCopy.ts` (not per-service).
 | Surface | Pattern |
 |---------|---------|
 | H1, section headings, FAQ questions | **EN + BN on one line** (BN in `lang="bn"`, green accent) |
-| Body, audience, FAQ answers | **Labeled panes:** বাংলা block then English block (both in DOM); hairline between |
+| Body, audience, FAQ answers | **Labeled panes:** বাংলা block then English block (both in DOM); hairline between. `.lang-label` size is **uniform** on About / Who / FAQ (small caps cue — do not let support-prose rules enlarge labels) |
 | SERP Document Title / Meta Description | BN→EN (ADR-0003); brand `CitizenSheba Bangladesh`; optional `serp_title*` when Display Names are opaque |
 
-CSS: `.hop-region--primary`, `.hop-region--support`, `.bilingual-panes`, `.lang-label` in `src/styles/global.css`.
+CSS: `.hop-region--primary`, `.hop-region--support`, `.hop-disclose`, `.bilingual-panes`, `.lang-label` in `src/styles/global.css`. Support/FAQ body selectors must use `p:not(.lang-label)` (Trap #15).
 
 ## Content fields (required on every Service)
 

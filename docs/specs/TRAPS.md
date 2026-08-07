@@ -20,6 +20,7 @@
 | 12 | Mirroring broken official Display Name casing |
 | 13 | Alternate names only in `tags` (skip `aliases`) |
 | 14 | New Service without EN+BN Name Aliases |
+| 15 | Hop support `p` rules enlarging `.lang-label` |
 
 ---
 
@@ -127,7 +128,7 @@ Mass-generating near-empty pages that only exist to rank and bounce to third par
 
 ### Rule
 
-Service Pages stay thin **SEO hops** with clear Non-Official stance and primary Outbound CTA — not doorway spam. **Canonical structure + editorial rules:** [`docs/guides/service-page.md`](../guides/service-page.md). Short `description` fields stay card/SERP-sized; longer EN+BN Markdown lives in required `body` / `body_bn` (ADR-0008), not in `description`. Render **BN body first, then EN**. Body copy describes the government Service only — put hop disclaimers in site chrome (CTA / About / Disclaimer), not in `body` / `body_bn` or FAQ. Do **not** FAQ “Is this the official …?” or “Do I need a CitizenSheba account?” — the Outbound CTA already answers that. Show **official link last verified** with a human-readable date. Audience, FAQ, and Related section headings are EN+BN on one line; audience/FAQ values use required `audience_bn` and `q_bn`/`a_bn` stacked BN then EN (ADR-0009). FAQ is 1–5 service-useful items. When changing hop layout or copy policy, update the Service Page guide first.
+Service Pages stay thin **SEO hops** with clear Non-Official stance and primary Outbound CTA — not doorway spam. **Canonical structure + editorial rules:** [`docs/guides/service-page.md`](../guides/service-page.md). Short `description` fields stay card/SERP-sized; longer EN+BN Markdown lives in required `body` / `body_bn` (ADR-0008), not in `description`. Mid-page **content regions**: About (primary panel) → Who / FAQ (support strips) with **labeled** বাংলা / English panes (both in DOM); official-link last verified sits on the Outbound CTA domain row. Body copy describes the government Service only — put hop disclaimers in site chrome (CTA / About / Disclaimer), not in `body` / `body_bn` or FAQ. Do **not** FAQ “Is this the official …?” or “Do I need a CitizenSheba account?” — the Outbound CTA already answers that. Audience, FAQ, and Related section headings are EN+BN on one line; audience/FAQ answers use required `audience_bn` and `q_bn`/`a_bn` (ADR-0009). FAQ is 1–5 service-useful items. When changing hop layout or copy policy, update the Service Page guide first.
 
 ---
 
@@ -188,3 +189,15 @@ Adding a Service with only `title` / `title_bn` / `tags`, so Instant Directory m
 ### Rule
 
 Every new Service ships with `aliases` (≥2) covering **both** `lang: en` and `lang: bn`, each with `kind`. Include useful romanizations in aliases. See `docs/guides/display-names.md`. `npm run ci` fails without them.
+
+---
+
+## 15. Hop support `p` rules enlarging `.lang-label`
+
+### Pitfall
+
+Who/FAQ use quieter support strips with slightly smaller body type via `.hop-region--support .bilingual-pane p` (and FAQ equivalents). Language cues are also `<p class="lang-label">`, so those rules accidentally enlarge বাংলা / English labels vs About.
+
+### Rule
+
+Keep `.lang-label` at one small size on **all** hop regions. Body/prose selectors must use `p:not(.lang-label)`. Living structure: [`docs/guides/service-page.md`](../guides/service-page.md); design: `docs/superpowers/specs/2026-08-08-service-page-content-regions-design.md`.

@@ -37,6 +37,13 @@ Services/categories are Git Content Collections. In `dev`, frontmatter and MD/YA
 
 Integrity: `npm test` (includes `tests/unit/content-integrity.test.ts`).
 
+## Troubleshooting
+
+| Symptom | Fix |
+|---------|-----|
+| Home Instant Directory stuck on skeleton / “Loading services…” | Stale Vite dep cache (often after a long-lived `astro dev`). Stop the server, `rm -rf node_modules/.vite`, restart `npm run dev`, hard-refresh the browser. Confirm `/node_modules/.vite/deps/lucide-react.js` returns **200**. |
+| Port already in use | Use the next port Astro prints, or free `4321`. |
+
 ## Related
 
 - [`README.md`](../../README.md) — script table  

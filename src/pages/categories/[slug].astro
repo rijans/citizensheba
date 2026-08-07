@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../components/layout/BaseLayout.astro';
+import Breadcrumb from '../../components/layout/Breadcrumb.astro';
 import CategoryDirectory from '../../components/directory/CategoryDirectory';
 import { categoryPath, officialDomainFromUrl } from '../../lib/urls';
 import { documentTitle, metaDescription } from '../../lib/seo';
@@ -37,11 +38,7 @@ const description = metaDescription(category.data.description_bn, category.data.
 
 <BaseLayout title={title} description={description} canonicalPath={categoryPath(category.data.slug)}>
   <article class="category-page">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a>
-      <span class="breadcrumb__sep" aria-hidden="true">/</span>
-      <span class="breadcrumb__current">{category.data.name}</span>
-    </nav>
+    <Breadcrumb crumbs={[{ label: category.data.name }]} />
 
     <header class="category-page__header">
       <h1>

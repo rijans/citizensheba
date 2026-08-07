@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { paginateDirectory, type DirectoryBrowseMode } from '../../lib/search';
+import { formatDirectoryCount } from '../../lib/directoryCopy';
 import { servicePath } from '../../lib/urls';
 import DirectoryPagination from './DirectoryPagination';
 import DirectoryLoadMore from './DirectoryLoadMore';
@@ -83,12 +84,14 @@ export default function CategoryDirectory({
     setPage((p) => p + 1);
   };
 
-  const countLabel =
-    slice.total === 1
-      ? '1 service'
-      : slice.showPager
-        ? `${slice.total} services · Showing ${slice.showing} · Page ${slice.page} of ${slice.pageCount}`
-        : `${slice.total} services`;
+  const countLabel = formatDirectoryCount({
+    total: slice.total,
+    showPager: slice.showPager,
+    showing: slice.showing,
+    page: slice.page,
+    pageCount: slice.pageCount,
+    categoryName,
+  });
 
   return (
     <div id="category-directory" className="category-directory">

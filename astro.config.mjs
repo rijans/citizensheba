@@ -18,5 +18,10 @@ export default defineConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    // Prebundle Lucide so Home Instant Directory hydrate does not 504 on a stale
+    // `node_modules/.vite` cache (skeleton sticks on “Loading services…”).
+    optimizeDeps: {
+      include: ['lucide-react'],
+    },
   },
 });

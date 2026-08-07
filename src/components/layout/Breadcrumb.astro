@@ -1,0 +1,33 @@
+---
+import { Home } from 'lucide-react';
+
+type Crumb = {
+  label: string;
+  href?: string;
+};
+
+type Props = {
+  crumbs: Crumb[];
+};
+
+const { crumbs } = Astro.props;
+---
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/" class="breadcrumb__home">
+    <Home className="breadcrumb__home-icon" size={14} strokeWidth={2} aria-hidden="true" />
+    Home
+  </a>
+  {
+    crumbs.map((crumb) => (
+      <>
+        <span class="breadcrumb__sep" aria-hidden="true">&gt;</span>
+        {crumb.href ? (
+          <a href={crumb.href}>{crumb.label}</a>
+        ) : (
+          <span class="breadcrumb__current">{crumb.label}</span>
+        )}
+      </>
+    ))
+  }
+</nav>

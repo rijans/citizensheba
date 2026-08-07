@@ -1,7 +1,7 @@
 # Service Page content regions — design
 
 **Date:** 2026-08-08  
-**Status:** Approved for planning  
+**Status:** Implemented (merged to `main`)  
 **Surfaces:** Service hop below Outbound CTA (`/services/bd-*`)  
 **SSOT after ship:** [`docs/guides/service-page.md`](../../guides/service-page.md) (update on implement); ADRs 0008/0009 stay BN→EN content order
 
@@ -18,9 +18,9 @@ QA and editorial review: the hop’s mid-page content (BN body, EN body, Who is 
 
 ## Non-goals (v1)
 
-- Language toggle or side-by-side BN|EN columns
+- Accordion FAQ *per question* (whole Who / FAQ sections may use one open-by-default `<details>` each)
+- Language toggle, side-by-side BN|EN columns
 - In-page jump TOC or numbered wizard steps
-- Accordion FAQ
 - Rewriting service Markdown length/copy
 - Changing Related card layout
 - Temporary Astro “preview design” routes (companion mockups used for decision)
@@ -32,8 +32,9 @@ QA and editorial review: the hop’s mid-page content (BN body, EN body, Who is 
 | Overall | Separated regions + clearer path; content stays visible |
 | Language | Labeled panes: **বাংলা** then **English**, hairline between; both in DOM |
 | Navigation chrome | No jump links / step numbers — H2s + visual weight only |
-| About | New H2; **primary** white/surface panel; verified **inside** About footer |
-| Who / FAQ | **Quiet support** strips (`surface-muted`, tighter) — not equal to About |
+| About | New H2; **primary** white/surface panel; **`<details open>`** + chevron (same pattern as Who/FAQ) |
+| Who / FAQ | **Quiet support** strips (`surface-muted`, tighter) — not equal to About; **`<details open>`** + chevron (collapse optional; open by default) |
+| Verified date | On Outbound CTA domain row (with domain + Copy), not inside About |
 | Related | Unchanged heading + card grid (no outer panel) |
 | Visual standard | “Quiet bilingual wells” + primary-vs-support hierarchy |
 
@@ -47,12 +48,12 @@ QA and editorial review: the hop’s mid-page content (BN body, EN body, Who is 
 
 ## Information architecture (below CTA)
 
-1. **About (primary)** — `body_bn` → `body` + `last_verified` footer  
+1. **About (primary)** — `body_bn` → `body`  
 2. **Who is this for (support)** — `audience_bn` → `audience`  
 3. **FAQ (support)** — existing `faq[]`; Q EN+BN one line; answers labeled BN→EN  
 4. **Related** — existing related cards  
 
-Above CTA unchanged (breadcrumb, H1, description, capabilities, Outbound CTA).
+Above CTA unchanged except verified date sits on the Outbound CTA domain row (domain + Copy + verified).
 
 ## Visual design
 
@@ -60,8 +61,8 @@ Above CTA unchanged (breadcrumb, H1, description, capabilities, Outbound CTA).
 
 - H2: EN **About this service** + BN **এই সেবা সম্পর্কে** (add to `servicePageCopy.ts`).
 - Panel: `--surface` on page `--bg`, light `--border`, soft radius, light shadow (article, not Directory-card heavy).
-- Inside: `.lang-label` **বাংলা** → prose Markdown → hairline → **English** → prose Markdown.
-- Footer: existing verified line, muted, inside the panel.
+- Inside: `.lang-label` **বাংলা** → prose Markdown → hairline → **English** → prose Markdown. Label size is the same on About, Who, and FAQ (support/FAQ `p` rules must not enlarge `.lang-label` — Trap #15).
+- Chevron disclose open by default (parity with Who/FAQ).
 
 ### Who / FAQ (support)
 
@@ -82,7 +83,8 @@ Above CTA unchanged (breadcrumb, H1, description, capabilities, Outbound CTA).
 | Area | Change |
 |------|--------|
 | `src/lib/servicePageCopy.ts` | Add `about: { en, bn }` |
-| `src/pages/services/[slug].astro` | Wrap body in About primary region; audience in support strip; move verified into About |
+| `src/pages/services/[slug].astro` | Wrap body in About primary region; audience in support strip |
+| `src/components/service/OutboundCta.astro` | Domain row: domain + Copy + verified date |
 | `src/components/service/ServiceFaq.astro` | Support strip + labeled answer panes |
 | `src/styles/global.css` | Primary panel, support strip, lang-label, bilingual hairline; dark tokens |
 | `docs/guides/service-page.md` | Section order, About H2, primary vs support, labeled panes |

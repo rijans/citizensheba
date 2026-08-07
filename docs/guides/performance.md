@@ -5,7 +5,7 @@
 ## Defaults that keep us fast
 
 - **SSG output** — HTML ships from `dist/`; do not convert the site to a client-heavy SPA.
-- **One React island on Home** — Instant Directory only (`client:idle` so hydration waits for browser idle). Category grids use `client:idle` too. Service Pages stay Astro SSR (no island).
+- **One React island on Home** — Instant Directory only (`client:idle={{ timeout: 500 }}` so hydration prefers idle but does not hang forever in busy tabs). Category grids use `client:idle` too. Service Pages stay Astro SSR (no island).
 - **Content Collections at build time** — search index is built in `buildSearchIndex.ts`. Home fetches `/directory-index.json` after idle (not inlined as island props) so HTML stays small for LCP.
 - **Self-hosted fonts** — `src/styles/fonts.css` from `@fontsource` files, `font-display: optional` (no Google Fonts; no font preload — preload + optional delays text LCP).
 - **Inline CSS** — `build.inlineStylesheets: 'always'` so the document is not blocked on a separate stylesheet request.
@@ -17,7 +17,7 @@
 ## Instant Directory
 
 - Filter/sort stays in-memory (`search.ts`) — fine at current catalog size; revisit only if catalog grows huge.
-- Home island is `client:idle`; categories ship as props, but the searchable catalog loads from `/directory-index.json` after hydrate (keeps HTML small for LCP). Until JSON arrives, show the card-grid skeleton — not an empty loading panel that collapses into the footer.
+- Home island is `client:idle` with a 500ms timeout; categories ship as props, but the searchable catalog loads from `/directory-index.json` after hydrate (keeps HTML small for LCP). Until JSON arrives, show the card-grid skeleton — not an empty loading panel that collapses into the footer.
 - Avoid layout thrash: no hover `transform` that escapes chip overflow clipping (Trap #6).
 - Prefer CSS transitions over JS animation libraries.
 
