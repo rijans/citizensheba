@@ -28,6 +28,8 @@ capabilities:
     bn: "জি২সি সেবা নিন"
   - en: "Explore G2B services"
     bn: "জি২বি সেবা দেখুন"
+  - en: "Track application status"
+    bn: "আবেদনের অবস্থান"
   - en: "Open integrated gov services"
     bn: "সমন্বিত সরকারি সেবা"
 tags: [mygov, "one stop", central, "সেবা"]
@@ -35,11 +37,17 @@ aliases:
   - name: Amar Shorkar
     lang: en
     kind: alt
+  - name: mygov.bd
+    lang: en
+    kind: alt
   - name: আমার সরকার
     lang: bn
     kind: alt
   - name: My Government
     lang: en
+    kind: informal
+  - name: মাইগভ পোর্টাল
+    lang: bn
     kind: informal
 status: ACTIVE
 audience: "Citizens, businesses, and government users seeking integrated digital government services."
@@ -49,8 +57,16 @@ faq:
     a: "Access integrated G2C, G2B, and G2G government services from a single platform."
     q_bn: "myGov-এ কী করা যায়?"
     a_bn: "এক প্ল্যাটফর্ম থেকে একীভূত G2C, G2B ও G2G সরকারি সেবায় প্রবেশ করা যায়।"
+  - q: "How do I track an application submitted through myGov?"
+    a: "Log in with your mobile number or NID on mygov.bd to view all submitted application statuses and updates in your dashboard."
+    q_bn: "myGov-এ জমা দেওয়া আবেদন কীভাবে খোঁজ রাখব?"
+    a_bn: "মোবাইল নম্বর বা এনআইডি দিয়ে mygov.bd পোর্টালে লগইন করে ড্যাশবোর্ডে আবেদনের অবস্থান দেখা যায়।"
+  - q: "Is myGov the same as the Bangladesh National Portal?"
+    a: "No. The National Portal (bangladesh.gov.bd) is an information directory of ministries, while myGov (mygov.bd) is an transactional platform for applying for government services."
+    q_bn: "myGov কি জাতীয় তথ্য বাতায়নের মতো একই?"
+    a_bn: "না। জাতীয় তথ্য বাতায়ন (bangladesh.gov.bd) মন্ত্রণালয় ও সরকারি দপ্তরের তথ্য পোর্টাল, আর myGov (mygov.bd) হলো সরাসরি সেবা আবেদনের সমন্বিত ডিজিটাল প্ল্যাটফর্ম।"
 
-related: [national-portal, a2i, ekpay, rjsc]
-last_verified: 2026-08-06
+related: [national-portal, a2i, ekpay, rjsc, grs]
+last_verified: 2026-08-08
 ---
 

@@ -28,6 +28,8 @@ capabilities:
     bn: "ইউটিলিটি বিল পরিশোধ"
   - en: "Pay selected service fees"
     bn: "নির্বাচিত সেবা ফি"
+  - en: "Track payment receipt"
+    bn: "পেমেন্ট রিসিপ্ট যাচাই"
   - en: "Use government payment gateway"
     bn: "সরকারি পেমেন্ট গেটওয়ে"
 tags: [ekpay, payment, bill, "একপে", "বিল"]
@@ -38,10 +40,16 @@ aliases:
   - name: government payment gateway
     lang: en
     kind: alt
+  - name: ekPay Bangladesh
+    lang: en
+    kind: alt
   - name: একপে
     lang: bn
     kind: alt
   - name: সরকারি পেমেন্ট
+    lang: bn
+    kind: informal
+  - name: একপে বিল
     lang: bn
     kind: informal
 status: ACTIVE
@@ -52,7 +60,15 @@ faq:
     a: "No. Distributor portals remain for account and connection services. ekPay is a payment channel many billers use — pick the Service that matches your task."
     q_bn: "একপে কি ডেসকো বা ডিপিডিসি পোর্টালের বিকল্প?"
     a_bn: "না। অ্যাকাউন্ট ও সংযোগ সেবার জন্য ডিস্ট্রিবিউটর পোর্টালই মূল। একপে অনেক বিলারের পেমেন্ট চ্যানেল—কাজ অনুযায়ী সেবা বাছুন।"
-related: [desco, dpdc, titas-gas, mygov, bpdb]
-last_verified: 2026-08-07
----
+  - q: "What payment methods are accepted on ekPay?"
+    a: "ekPay accepts all major debit/credit cards, internet banking, and mobile financial services (MFS) like bKash, Nagad, and Rocket."
+    q_bn: "একপে পোর্টালে কী কী উপায়ে বিল পরিশোধ করা যায়?"
+    a_bn: "একপে পোর্টালে ডেবিট/ক্রেডিট কার্ড, ইন্টারনেট ব্যাংকিং এবং বিকাশ, নগদ, রকেটের মতো প্রধান এমএফএস (MFS) দিয়ে বিল পরিশোধ করা যায়।"
+  - q: "How can I verify a completed payment on ekPay?"
+    a: "Enter your Transaction ID or Bill Number on the ekPay portal verification page to check transaction status and download the payment receipt."
+    q_bn: "একপে-তে পরিশোধিত পেমেন্ট কীভাবে কনফার্ম বা যাচাই করব?"
+    a_bn: "একপে পোর্টালে ট্রানজেকশন আইডি বা বিল নম্বর প্রদান করে পেমেন্ট স্ট্যাটাস দেখা ও ডিজিটাল পেমেন্ট স্লিপ ডাউনলোড করা যায়।"
 
+related: [desco, dpdc, titas-gas, mygov, bpdb, btrc]
+last_verified: 2026-08-08
+---

@@ -28,6 +28,8 @@ capabilities:
     bn: "টেলিকম নোটিশ পড়ুন"
   - en: "View regulation updates"
     bn: "নিয়ন্ত্রণ আপডেট"
+  - en: "Check handset NEIR status"
+    bn: "হ্যান্ডসেট এনইআইআর যাচাই"
   - en: "Find public information"
     bn: "জনতথ্য খুঁজুন"
 tags: [btrc, telecom, regulator, "বিটিআরসি", "টেলিকম"]
@@ -38,10 +40,16 @@ aliases:
   - name: telecom regulator
     lang: en
     kind: informal
+  - name: BTRC Bangladesh
+    lang: en
+    kind: alt
   - name: টেলিকম কমিশন
     lang: bn
     kind: alt
   - name: বিটিআরসি কমিশন
+    lang: bn
+    kind: informal
+  - name: টেলিযোগাযোগ নিয়ন্ত্রণ কমিশন
     lang: bn
     kind: informal
 status: ACTIVE
@@ -52,7 +60,16 @@ faq:
     a: "No. Recharge and self-care are on mobile operator apps/USSD. BTRC publishes regulatory information and notices."
     q_bn: "বিটিআরসিতে কি মোবাইল সিম রিচার্জ করা যায়?"
     a_bn: "না। রিচার্জ ও সেলফ-কেয়ার মোবাইল অপারেটর অ্যাপ/ইউএসএসডিতে। বিটিআরসি নিয়ন্ত্রক তথ্য ও নোটিশ প্রকাশ করে।"
-related: [btcl, ekpay, national-portal]
-last_verified: 2026-08-07
+  - q: "How do I lodge a complaint against a mobile network operator?"
+    a: "You can submit telecom complaints through the BTRC official complaint portal or by calling their shortcode 100."
+    q_bn: "মোবাইল অপারেটরের বিরুদ্ধে কীভাবে বিটিআরসিতে অভিযোগ করা যায়?"
+    a_bn: "বিটিআরসির অফিসিয়াল ওয়েবসাইটের কমপ্লেইন পোর্টাল বা তাদের শর্টকোড ১০০-এ কল করে টেলিকম অভিযোগ জমা দেওয়া যায়।"
+  - q: "How can I check registered SIMs linked to my NID?"
+    a: "Dial *16001# from your mobile phone and enter the last 4 digits of your NID to receive a list of registered SIM numbers."
+    q_bn: "আমার এনআইডিতে কয়টি মোবাইল সিম নিবন্ধিত আছে কীভাবে দেখব?"
+    a_bn: "মোবাইল থেকে *16001# ডায়াল করে আপনার এনআইডির শেষ ৪ ডিজিট পাঠালে নিবন্ধিত সিমের তালিকা পাওয়া যায়।"
+
+related: [btcl, btv, ekpay, national-portal, teletalk]
+last_verified: 2026-08-08
 ---
 

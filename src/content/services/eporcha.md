@@ -30,6 +30,8 @@ capabilities:
     bn: "সত্যায়িত কপির আবেদন"
   - en: "Find Mouza maps"
     bn: "মৌজা ম্যাপ খুঁজুন"
+  - en: "Track land record status"
+    bn: "পর্চা আবেদনের অবস্থা"
 tags: [khatian, "land record", mouza, porcha, "খতিয়ান"]
 aliases:
   - name: porcha
@@ -41,12 +43,18 @@ aliases:
   - name: mouza map
     lang: en
     kind: alt
+  - name: RS CS BS Khatian
+    lang: en
+    kind: informal
   - name: খতিয়ান
     lang: bn
     kind: alt
   - name: মৌজা ম্যাপ
     lang: bn
     kind: alt
+  - name: পর্চা আবেদন
+    lang: bn
+    kind: informal
 status: ACTIVE
 audience: Landowners and citizens requesting certified khatian copies and mouza maps.
 audience_bn: সত্যায়িত খতিয়ান কপি ও মৌজা ম্যাপ চাওয়া জমির মালিক ও নাগরিক।
@@ -55,7 +63,16 @@ faq:
     a: "Search and apply for certified copies of Khatian land records and Mouza maps."
     q_bn: "ই-পর্চায় কী করা যায়?"
     a_bn: "খতিয়ান ভূমি রেকর্ড ও মৌজা ম্যাপের সত্যায়িত কপির জন্য অনুসন্ধান ও আবেদন করা যায়।"
+  - q: "Which types of Khatian records can be searched on e-Porcha?"
+    a: "You can search CS, SA, RS, BS, and City Survey (Namjari) khatian records across Bangladesh on eporcha.gov.bd."
+    q_bn: "ই-পর্চায় কোন কোন ধরণের খতিয়ান খোঁজা যায়?"
+    a_bn: "eporcha.gov.bd পোর্টালে সিএস, এসএ, আরএস, বিএস এবং সিটি জরিপসহ বিভিন্ন খতিয়ান রেকর্ড অনুসন্ধান করা যায়।"
+  - q: "How do I receive the certified copy of a Khatian or Mouza map?"
+    a: "After submitting an online application and fee payment, certified copies can be collected via Bangladesh Post counter or home delivery."
+    q_bn: "খতিয়ান বা মৌজা ম্যাপের সত্যায়িত কপি কীভাবে পাব?"
+    a_bn: "অনলাইনে ফি পরিশোধসহ আবেদনের পর ডাকবিভাগের মাধ্যমে হোম ডেলিভারি বা নির্দিষ্ট ডিসি অফিস কাউন্টার থেকে সত্যায়িত কপি সংগ্রহ করা যায়।"
 
-last_verified: 2026-08-06
+related: [namjari, ldtax, land-portal, dlrs, molwa]
+last_verified: 2026-08-08
 ---
 

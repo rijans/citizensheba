@@ -26,6 +26,8 @@ capabilities:
     bn: "পুলিশ জনতথ্য"
   - en: "Access digital police services"
     bn: "ডিজিটাল পুলিশ সেবা"
+  - en: "Apply for police clearance"
+    bn: "পুলিশ ক্লিয়ারেন্স আবেদন"
   - en: "Read published notices"
     bn: "প্রকাশিত নোটিশ পড়ুন"
 tags: [police, "পুলিশ", security, law]
@@ -36,10 +38,16 @@ aliases:
   - name: police portal
     lang: en
     kind: alt
+  - name: Police Clearance Bangladesh
+    lang: en
+    kind: alt
   - name: বাংলাদেশ পুলিশ
     lang: bn
     kind: alt
   - name: পুলিশ
+    lang: bn
+    kind: informal
+  - name: পুলিশি সেবা
     lang: bn
     kind: informal
 status: ACTIVE
@@ -50,8 +58,16 @@ faq:
     a: "Public information and entry points to police-related digital services on the official police.gov.bd site."
     q_bn: "বাংলাদেশ পুলিশ পোর্টালে কী পাওয়া যায়?"
     a_bn: "অফিসিয়াল police.gov.bd সাইটে জনসাধারণের তথ্য এবং পুলিশ-সংক্রান্ত ডিজিটাল সেবার প্রবেশদ্বার।"
+  - q: "Where can I apply for an online Police Clearance Certificate?"
+    a: "Police Clearance Certificate applications for abroad travel/employment are processed via the official PCC portal linked from Bangladesh Police."
+    q_bn: "অনলাইন পুলিশ ক্লিয়ারেন্স সনদের আবেদন কোথায় করব?"
+    a_bn: "বিদেশ যাত্রা বা চাকরির জন্য পুলিশ ক্লিয়ারেন্স সার্টিফিকেট আবেদন বাংলাদেশ পুলিশ পোর্টাল থেকে লিংক করা পিসিসি পোর্টালে করা যায়।"
+  - q: "How do I file an online General Diary (GD)?"
+    a: "For lost documents or security notices, use the Online GD service (gd.police.gov.bd) using your NID and mobile number."
+    q_bn: "অনলাইনে জিডি (সাধারণ ডায়েরি) কীভাবে করতে হয়?"
+    a_bn: "কাগজপত্র হারানো বা নিরাপত্তা সংক্রান্ত বিষয়ে অনলাইন জিডি (Online GD) সেবার জন্য এনআইডি ও মোবাইল নম্বর দিয়ে gd.police.gov.bd ব্যবহার করুন।"
 
 related: [online-gd, fire-service, ecourt, rab, mha, bgb, ansar, dnc, prison, highway-police, tourist-police, army, cid, pbi, police-staff-college, dmp, cmp, rmp]
-last_verified: 2026-08-06
+last_verified: 2026-08-08
 ---
 

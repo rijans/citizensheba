@@ -30,6 +30,8 @@ capabilities:
     bn: "টিকার অবস্থা যাচাই"
   - en: "Download certificate"
     bn: "সনদ ডাউনলোড"
+  - en: "Verify vaccine QR"
+    bn: "টিকা কিউআর যাচাই"
 tags: [vaccine, covid, certificate, "টিকা"]
 aliases:
   - name: vaccine certificate
@@ -38,12 +40,18 @@ aliases:
   - name: COVID vaccine
     lang: en
     kind: informal
+  - name: Surokkha BD
+    lang: en
+    kind: alt
   - name: টিকা সনদ
     lang: bn
     kind: alt
   - name: টিকা নিবন্ধন
     lang: bn
     kind: alt
+  - name: সুরক্ষা পোর্টাল
+    lang: bn
+    kind: informal
 status: ACTIVE
 audience: Citizens registering for vaccines and downloading vaccination certificates.
 audience_bn: টিকা নিবন্ধন ও টিকা সনদ ডাউনলোডকারী নাগরিক।
@@ -52,7 +60,16 @@ faq:
     a: "Register for vaccines, check vaccination status, and download certificates."
     q_bn: "সুরক্ষায় কী করা যায়?"
     a_bn: "টিকা নিবন্ধন, টিকার অবস্থা যাচাই এবং সনদ ডাউনলোড করা যায়।"
+  - q: "How can I download my vaccine certificate from Surokkha?"
+    a: "Select the Certificate Download option on surokkha.gov.bd, enter your NID number and date of birth, and enter the OTP sent to your registered mobile phone."
+    q_bn: "সুরক্ষা থেকে কীভাবে টিকার সনদ ডাউনলোড করব?"
+    a_bn: "surokkha.gov.bd পোর্টালে পাসপোর্ট বা এনআইডি নম্বর ও জন্ম তারিখ দিয়ে মোবাইলে প্রাপ্ত ওটিপি কোড ব্যবহার করে টিকা সনদ ডাউনলোড করা যায়।"
+  - q: "How can a foreign verifier verify my Surokkha vaccination card?"
+    a: "Surokkha certificates include a digital QR code which can be scanned using a smartphone camera or the official Surokkha verification portal."
+    q_bn: "সুরক্ষা টিকা সনদ কীভাবে যাচাই করা যায়?"
+    a_bn: "সুরক্ষা টিকার সনদে একটি ডিজিটাল কিউআর (QR) কোড থাকে যা স্ক্যান করে বা পোর্টালে পাসপোর্ট/এনআইডি নম্বর দিয়ে সত্যতা যাচাই করা যায়।"
 
-last_verified: 2026-08-06
+related: [dghs, mohfw, epassport, nid, iedcr]
+last_verified: 2026-08-08
 ---
 

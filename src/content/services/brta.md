@@ -30,6 +30,8 @@ capabilities:
     bn: "মোটরযান নিবন্ধন"
   - en: "Pay transport fees"
     bn: "পরিবহন ফি পরিশোধ"
+  - en: "Check licence status"
+    bn: "লাইসেন্স স্ট্যাটাস চেক"
 tags: ["driving licence", license, vehicle, brta, "লাইসেন্স"]
 aliases:
   - name: driving license
@@ -41,9 +43,15 @@ aliases:
   - name: BSP
     lang: en
     kind: alt
+  - name: BRTA Service Portal
+    lang: en
+    kind: alt
   - name: ড্রাইভিং লাইসেন্স
     lang: bn
     kind: alt
+  - name: বিআরটিএ বিএসপি
+    lang: bn
+    kind: informal
 status: ACTIVE
 audience: "Drivers and vehicle owners applying for licenses, registration, and transport fees."
 audience_bn: "লাইসেন্স, নিবন্ধন ও পরিবহন ফি–সংক্রান্ত আবেদনকারী চালক ও যান মালিক।"
@@ -52,7 +60,16 @@ faq:
     a: "Apply for driving licenses, register motor vehicles, and pay transport-related fees online."
     q_bn: "BRTA পোর্টালে কী করা যায়?"
     a_bn: "ড্রাইভিং লাইসেন্সের আবেদন, মোটরযান নিবন্ধন এবং পরিবহন–সংক্রান্ত ফি অনলাইনে পরিশোধ করা যায়।"
+  - q: "How do I apply for a learner driving license online?"
+    a: "Register an account on bsp.brta.gov.bd, upload applicant photo, medical certificate, and NID to receive an instant electronic learner driving license permit."
+    q_bn: "অনলাইনে লার্নার ড্রাইভিং লাইসেন্সের আবেদন কীভাবে করব?"
+    a_bn: "bsp.brta.gov.bd পোর্টালে নিবন্ধন করে ছবি, মেডিকেল সার্টিফিকেট ও এনআইডি আপলোড করলে সাথে সাথে ই-লার্নার পারমিট পাওয়া যায়।"
+  - q: "Can I pay motor vehicle tax token and fitness fees online?"
+    a: "Yes. You can calculate and pay motor vehicle tax tokens, fitness fees, and digital registration certificate fees via the BSP portal."
+    q_bn: "মোটরযানের ট্যাক্স টোকেন ও ফিটনেস ফি কি অনলাইনে দেওয়া যায়?"
+    a_bn: "হ্যাঁ। বিআরটিএ বিএসপি পোর্টালে মোটরযানের ট্যাক্স টোকেন, ফিটনেস ফি ও ডিজিটাল রেজিস্ট্রেশন সার্টিফিকেটের ফি হিসাব করে অনলাইনে পরিশোধ করা যায়।"
 
-last_verified: 2026-08-06
+related: [police, railway, bba, rthd, dmtcl]
+last_verified: 2026-08-08
 ---
 

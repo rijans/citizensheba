@@ -26,6 +26,8 @@ capabilities:
     bn: "পানি অ্যাকাউন্ট ব্যবস্থাপনা"
   - en: "Pay water bills"
     bn: "পানির বিল পরিশোধ"
+  - en: "Apply for water connection"
+    bn: "পানি সংযোগের আবেদন"
   - en: "Access sewer services"
     bn: "স্যুয়ারেজ সেবা নিন"
 tags: [wasa, water, bill, "ওয়াসা", "পানি"]
@@ -36,10 +38,16 @@ aliases:
   - name: Dhaka Water Supply
     lang: en
     kind: alt
+  - name: Dhaka WASA Consumer Portal
+    lang: en
+    kind: alt
   - name: ঢাকা ওয়াসা
     lang: bn
     kind: alt
   - name: ওয়াসা বিল
+    lang: bn
+    kind: informal
+  - name: ঢাকা পানি সরবরাহ
     lang: bn
     kind: informal
 status: ACTIVE
@@ -47,10 +55,19 @@ audience: Dhaka WASA water and sewer customers managing accounts or bills online
 audience_bn: অনলাইনে অ্যাকাউন্ট বা বিল দেখা ঢাকা ওয়াসা গ্রাহক।
 faq:
   - q: "Is this for Chattogram or other city WASAs?"
-    a: "This Service Page points to Dhaka WASA. Other city WASAs have separate Official portals."
+    a: "This Service Page points to Dhaka WASA. Other city WASAs (such as Chattogram WASA or Khulna WASA) have separate Official portals."
     q_bn: "এটি কি চট্টগ্রাম বা অন্য শহরের ওয়াসার জন্য?"
-    a_bn: "এই সেবা পেজ ঢাকা ওয়াসার জন্য। অন্য শহরের ওয়াসার আলাদা অফিসিয়াল পোর্টাল আছে।"
-related: [titas-gas, desco, chattogram-wasa, khulna-wasa]
-last_verified: 2026-08-07
+    a_bn: "এই সেবা পেজ ঢাকা ওয়াসার জন্য। অন্য শহরের ওয়াসার (যেমন চট্টগ্রাম ওয়াসা বা খুলনা ওয়াসা) আলাদা অফিসিয়াল পোর্টাল আছে।"
+  - q: "How do I check my Dhaka WASA bill online?"
+    a: "Log in to the Dhaka WASA Consumer Portal (consumer-portal.dhakawasa.org) with your account number to view current monthly bills and payment history."
+    q_bn: "অনলাইনে ঢাকা ওয়াসা বিল কীভাবে দেখব?"
+    a_bn: "অ্যাকাউন্ট নম্বর দিয়ে ঢাকা ওয়াসা কনজিউমার পোর্টালে (consumer-portal.dhakawasa.org) লগইন করে বর্তমান মাসের বিল ও পরিশোধের তথ্য দেখা যায়।"
+  - q: "Can I pay Dhaka WASA bills through digital payment gateways?"
+    a: "Yes. Dhaka WASA bills can be paid online via ekPay, mobile financial services (MFS), and internet banking gateways."
+    q_bn: "ঢাকা ওয়াসা বিল কি ডিজিটাল গেটওয়েতে পরিশোধ করা যায়?"
+    a_bn: "হ্যাঁ। ঢাকা ওয়াসা বিল একপে (ekPay), এমএফএস ও ইন্টারনেট ব্যাংকিং গেটওয়ের মাধ্যমে অনলাইনে পরিশোধ করা যায়।"
+
+related: [chattogram-wasa, khulna-wasa, titas-gas, desco, dpdc, ekpay]
+last_verified: 2026-08-08
 ---
 

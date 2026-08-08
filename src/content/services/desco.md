@@ -28,6 +28,8 @@ capabilities:
     bn: "বিদ্যুৎ অ্যাকাউন্ট দেখুন"
   - en: "Pay or view bills"
     bn: "বিল দেখুন বা পরিশোধ"
+  - en: "Apply for new connection"
+    bn: "নতুন বিদ্যুৎ সংযোগ আবেদন"
   - en: "Find customer services"
     bn: "গ্রাহক সেবা খুঁজুন"
 tags: [desco, electricity, bill, "ডেসকো", "বিদ্যুৎ"]
@@ -38,12 +40,18 @@ aliases:
   - name: Desco
     lang: en
     kind: informal
+  - name: DESCO OCSMS
+    lang: en
+    kind: alt
   - name: ডেসকো
     lang: bn
     kind: alt
   - name: ঢাকা ইলেকট্রিক সাপ্লাই
     lang: bn
     kind: alt
+  - name: ডেসকো বিল
+    lang: bn
+    kind: informal
 status: ACTIVE
 audience: Electricity consumers and applicants in DESCO coverage areas of Dhaka.
 audience_bn: ডেসকোর সেবাদান এলাকার বিদ্যুৎ গ্রাহক ও আবেদনকারী।
@@ -52,7 +60,16 @@ faq:
     a: "DESCO covers its own service area. For other distributors (for example DPDC or NESCO), use those Official Service Pages."
     q_bn: "সব এলাকার বিদ্যুৎ বিল কি ডেসকোতে পরিশোধ করা যায়?"
     a_bn: "ডেসকো শুধু নিজের সেবাদান এলাকা কভার করে। অন্য বিতরণকারী (যেমন ডিপিডিসি বা নেসকো) এর জন্য সেই অফিসিয়াল সেবা পেজ ব্যবহার করুন।"
+  - q: "How do I apply for a new DESCO electricity connection online?"
+    a: "Submit a new connection application via the DESCO OCSMS portal along with applicant photo, NID copy, and land ownership document."
+    q_bn: "অনলাইনে ডেসকোর নতুন বিদ্যুৎ সংযোগের আবেদন কীভাবে করতে হয়?"
+    a_bn: "আবেদনকারীর ছবি, এনআইডির কপি ও জমির মালিকানার কাগজপত্রসহ ডেসকো OCSMS পোর্টালে নতুন সংযোগের আবেদন জমা দেওয়া যায়।"
+  - q: "What should I do if my DESCO bill is incorrect or disputed?"
+    a: "File a complaint online through the DESCO OCSMS portal or call the DESCO hotline at 16120."
+    q_bn: "ডেসকো বিলে ভুল থাকলে কী করব?"
+    a_bn: "ডেসকো OCSMS পোর্টালে অনলাইন অভিযোগ জমা দিন অথবা ডেসকো হটলাইন১৬১২০ নম্বরে কল করুন।"
+
 related: [dpdc, nesco, titas-gas, breb, wzpdcl, ekpay, power-division]
-last_verified: 2026-08-07
+last_verified: 2026-08-08
 ---
 

@@ -55,7 +55,16 @@ faq:
     a: "Apply for birth and death certificates, track applications, and verify certificates online."
     q_bn: "BDRIS-এ কী করা যায়?"
     a_bn: "জন্ম ও মৃত্যু সনদের আবেদন, আবেদন ট্র‍্যাক এবং অনলাইনে সনদ যাচাই করা যায়।"
+  - q: "How can I verify a birth certificate online?"
+    a: "Select the certificate verification option on bdris.gov.bd and enter the 17-digit birth registration number and date of birth."
+    q_bn: "অনলাইনে জন্ম সনদ কীভাবে যাচাই করা যাবে?"
+    a_bn: "bdris.gov.bd পোর্টালে জন্ম সনদ অনলাইন যাচাই লিংকে ১৭ ডিজিটের জন্ম নিবন্ধন নম্বর ও জন্ম তারিখ প্রদান করে যাচাই করা যায়।"
+  - q: "Is a birth certificate required for NID and passport enrollment?"
+    a: "Yes. BDRIS birth registration is required for minors applying for e-Passports and for citizens registering for new NIDs."
+    q_bn: "এনআইডি ও পাসপোর্ট আবেদনের জন্য কি জন্ম সনদ লাগে?"
+    a_bn: "হ্যাঁ। অপ্রাপ্তবয়স্কদের ই-পাসপোর্ট আবেদন এবং নতুন ভোটারদের নিবন্ধনের ক্ষেত্রে ডিজিটাইজড জন্ম নিবন্ধন সনদ আবশ্যক।"
 
-last_verified: 2026-08-06
+related: [nid, epassport, dip, election-commission, dss]
+last_verified: 2026-08-08
 ---
 
