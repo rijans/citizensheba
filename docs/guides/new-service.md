@@ -10,6 +10,7 @@
 2. Pick Category (`src/content/categories/*.yaml`). New Category → Lucide `icon` + accent in `categoryVisuals.ts` ([`frontend.md`](frontend.md), ADR-0004).
 3. Lock **Display Name** casing ([`display-names.md`](display-names.md), ADR-0005). Ask if stylized/disputed.
 4. Prefer public slug `bd-…` (English kebab).
+5. **Service Slug:** If the name is an opaque acronym, use elaborated form `bd-{token}-{official-english-expansion}` (ADR-0014, Trap #19). Keep content `id` short. Skip elaboration when the slug is already human-readable.
 
 ## Ship the Markdown hop
 

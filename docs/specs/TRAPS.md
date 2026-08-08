@@ -23,6 +23,7 @@
 | 15 | Hop support `p` rules enlarging `.lang-label` |
 | 16 | Forking Directory / hop / card recipes |
 | 17 | Shipping Partner listings before the ship wave |
+| 19 | Bare acronym Service slugs (`bd-rab` without expansion) |
 
 ---
 
@@ -227,3 +228,15 @@ Adding Partner / association Markdown hops, a `partners` collection, or Instant 
 ### Rule
 
 ADR-0013 is **docs-only** until a deliberate ship wave (schema + Non-Official hop chrome + backlog). Instant Directory and Category Official lists stay Official-only until a **follow-up ADR** opens discovery. Partner ≠ Official forever on page chrome.
+
+---
+
+## 19. Bare acronym Service slugs
+
+### Pitfall
+
+Shipping `/services/bd-rab` (or similar opaque acronym-only paths) when an official English expansion exists — weak SEO and unclear URLs.
+
+### Rule
+
+Opaque Services use `bd-{token}-{expansion}` (ADR-0014). Keep short `id`. Skip already-readable slugs. Add `_redirects` 301s when renaming. See `src/lib/serviceSlug.ts` + design spec `2026-08-08-elaborated-service-slugs-design.md`.

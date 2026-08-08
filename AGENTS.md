@@ -65,7 +65,7 @@ Full text: [`docs/guides/agent-workflow.md`](docs/guides/agent-workflow.md).
 - **Shared code seams (projection, browse hook, hop disclose, card twins):** [`docs/guides/code-structure.md`](docs/guides/code-structure.md) — Trap #16
 - Services: `src/content/services/*.md` — required fields and FAQ policy summarized in the hop guide; schema in `src/content.config.ts` (no Service `logo` field — brand/OG are site assets)
 - Categories: `src/content/categories/*.yaml` — required `name_bn`, `description_bn`
-- Prefer English public slugs with `bd-` prefix for services
+- Prefer English public slugs with `bd-` prefix; **opaque acronyms must be elaborated** `bd-{token}-{expansion}` (ADR-0014, Trap #19). Stable short content `id`. Legacy short URLs → `public/_redirects` 301
 - **Display Name** casing: curated (not blind official typography) — ADR-0005, Trap #12, living table [`docs/guides/display-names.md`](docs/guides/display-names.md); examples A2I, myGov, lowercase `e-`
 - **Name Aliases**: **required** for every Service — ADR-0006, Trap #13–#14; search all kinds; “Formerly …” only for `kind: former`. New Services must ship EN+BN aliases (romanizations in `aliases`, not only `tags`)
 - **Directory ranks**: **required** `directory_global_rank` + `directory_category_rank` — ADR-0010, [`docs/guides/directory-ranking.md`](docs/guides/directory-ranking.md); pagination soft-max 21 / page size 20
