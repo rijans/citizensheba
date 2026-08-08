@@ -1,6 +1,6 @@
 ---
 id: btcl
-slug: bd-btcl
+slug: bd-btcl-customer-portal
 title: myBTCL
 title_bn: মাইবিটিসিএল
 serp_title: myBTCL (BTCL Customer Portal)

@@ -1,6 +1,6 @@
 ---
 id: banbeis
-slug: bd-banbeis
+slug: bd-banbeis-education-information
 title: BANBEIS
 title_bn: ব্যানবেইস
 serp_title: BANBEIS (Education Information)

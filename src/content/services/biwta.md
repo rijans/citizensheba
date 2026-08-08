@@ -1,6 +1,6 @@
 ---
 id: biwta
-slug: bd-biwta
+slug: bd-biwta-inland-water-transport-authority
 title: BIWTA
 title_bn: বিআইডব্লিউটিএ
 serp_title: BIWTA (Inland Water Transport Authority)

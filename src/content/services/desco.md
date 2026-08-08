@@ -1,6 +1,6 @@
 ---
 id: desco
-slug: bd-desco
+slug: bd-desco-dhaka-electric-supply
 title: DESCO
 title_bn: ডেসকো
 serp_title: DESCO (Dhaka Electric Supply)

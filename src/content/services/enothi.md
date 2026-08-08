@@ -1,6 +1,6 @@
 ---
 id: enothi
-slug: bd-enothi
+slug: bd-enothi-electronic-file
 title: e-Nothi
 title_bn: ই-নথি
 description: Official e-Nothi portal for Bangladesh government electronic file and digital nothi workflow services.

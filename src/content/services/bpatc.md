@@ -1,6 +1,6 @@
 ---
 id: bpatc
-slug: bd-bpatc
+slug: bd-bpatc-bangladesh-public-administration-training-centre
 title: BPATC
 title_bn: বিপিএটিসি
 serp_title: BPATC (Bangladesh Public Administration Training Centre)

@@ -1,6 +1,6 @@
 ---
 id: fid
-slug: bd-fid
+slug: bd-fid-financial-institutions-division
 title: FID
 title_bn: এফআইডি
 serp_title: FID (Financial Institutions Division)

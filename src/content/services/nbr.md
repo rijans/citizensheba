@@ -1,6 +1,6 @@
 ---
 id: nbr
-slug: bd-nbr
+slug: bd-nbr-national-board-of-revenue
 title: NBR
 title_bn: এনবিআর
 serp_title: NBR (National Board of Revenue)

@@ -1,6 +1,6 @@
 ---
 id: mora
-slug: bd-mora
+slug: bd-mora-ministry-of-religious-affairs
 title: MoRA
 title_bn: ধর্ম বিষয়ক মন্ত্রণালয়
 serp_title: MoRA (Ministry of Religious Affairs)

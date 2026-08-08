@@ -1,6 +1,6 @@
 ---
 id: rakub
-slug: bd-rakub
+slug: bd-rakub-rajshahi-krishi-unnayan-bank
 title: RAKUB
 title_bn: রাকুব
 serp_title: RAKUB (Rajshahi Krishi Unnayan Bank)

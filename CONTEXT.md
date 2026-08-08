@@ -135,8 +135,8 @@ Outbound Links are kept trustworthy via automated link checks (e.g. CI) that sur
 _Avoid_: Auto-changing status or URLs without human review when a gov portal is intermittently offline, proxying official sites, blanket stripping `www.` without verifying each host
 
 **Service Slug**:
-Public URL path segment for a Service Page, English kebab-case with a `bd-` prefix (e.g. `/services/bd-nid`). The internal content id may omit the prefix.
-_Avoid_: Bangla slugs, unprefixed public service paths (v1)
+Public URL path segment for a Service Page, English kebab-case with a `bd-` prefix. Opaque / acronym Services use an **elaborated** form `bd-{token}-{official-english-expansion}` (e.g. `/services/bd-rab-rapid-action-battalion`). Already human-readable English slugs stay short-descriptive (e.g. `/services/bd-dhaka-wasa`). The internal content id may omit the prefix and stays stable when the public slug expands. Legacy short paths 301 via `public/_redirects`. Decision: ADR-0014.
+_Avoid_: Bangla slugs, unprefixed public service paths (v1), bare acronym-only slugs when an official English expansion exists, renaming content ids to match long slugs, Worker URL rewrites for this concern
 
 **Agent Index**:
 A build-generated `/llms.txt` (and optional later `/llms-full.txt`) that gives AI agents a short curated map of the Directory. Complements sitemap; does not replace robots policy.

@@ -1,6 +1,6 @@
 ---
 id: bepza
-slug: bd-bepza
+slug: bd-bepza-bangladesh-export-processing-zones-authority
 title: BEPZA
 title_bn: বেপজা
 serp_title: BEPZA (Bangladesh Export Processing Zones Authority)

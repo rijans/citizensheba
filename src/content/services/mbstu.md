@@ -1,6 +1,6 @@
 ---
 id: mbstu
-slug: bd-mbstu
+slug: bd-mbstu-mawlana-bhashani-science-and-technology-university
 title: MBSTU
 title_bn: এমবিএসটিইউ
 serp_title: MBSTU (Mawlana Bhashani Science and Technology University)

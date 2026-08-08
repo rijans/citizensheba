@@ -1,6 +1,6 @@
 ---
 id: dam
-slug: bd-dam
+slug: bd-dam-department-of-agricultural-marketing
 title: DAM
 title_bn: ড্যাম
 serp_title: DAM (Department of Agricultural Marketing)

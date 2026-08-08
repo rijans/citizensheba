@@ -1,6 +1,6 @@
 ---
 id: bsmrmu
-slug: bd-bsmrmu
+slug: bd-bsmrmu-bangladesh-maritime-university
 title: Bangladesh Maritime University
 title_bn: বাংলাদেশ মেরিটাইম বিশ্ববিদ্যালয়
 description: Official Bangladesh Maritime University portal for admissions, academic notices, and published university public information for students and guardians.

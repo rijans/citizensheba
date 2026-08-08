@@ -24,6 +24,7 @@
 | 16 | Forking Directory / hop / card recipes |
 | 17 | Shipping Partner listings before the ship wave |
 | 18 | BN loanwords with bare `র্যা` instead of ZWJ `র‍্যা` |
+| 19 | Bare acronym Service slugs (`bd-rab` without expansion) |
 
 ---
 
@@ -240,3 +241,15 @@ Writing English-loan Bangla with the bare conjunct `র্যা…` (র + ্ 
 ### Rule
 
 Before shipping `title_bn`, BN aliases, or BN body for an English-derived org name, **verify the official Bangla spelling** (Outbound site header / Bangla Academy). Insert ZWJ for র + য-ফলা loans. Do **not** rewrite native words (`কার্যালয়`, `পর্যায়`). Living rule: [`display-names.md`](../guides/display-names.md). CI flags known bare forms in `content-integrity.test.ts`.
+
+---
+
+## 19. Bare acronym Service slugs
+
+### Pitfall
+
+Shipping `/services/bd-rab` (or similar opaque acronym-only paths) when an official English expansion exists — weak SEO and unclear URLs.
+
+### Rule
+
+Opaque Services use `bd-{token}-{expansion}` (ADR-0014). Keep short `id`. Skip already-readable slugs. Add `_redirects` 301s when renaming. See `src/lib/serviceSlug.ts` + design spec `2026-08-08-elaborated-service-slugs-design.md`.

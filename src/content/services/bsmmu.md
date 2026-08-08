@@ -1,6 +1,6 @@
 ---
 id: bsmmu
-slug: bd-bsmmu
+slug: bd-bsmmu-bangabandhu-sheikh-mujib-medical-university
 title: BSMMU
 title_bn: বিএসএমএমইউ
 serp_title: BSMMU (Bangabandhu Sheikh Mujib Medical University)

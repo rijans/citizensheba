@@ -1,6 +1,6 @@
 ---
 id: nid
-slug: bd-nid
+slug: bd-nid-national-id
 title: NID Services
 title_bn: জাতীয় পরিচয়পত্র
 serp_title: NID Services (National ID)

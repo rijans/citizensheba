@@ -1,6 +1,6 @@
 ---
 id: mofa
-slug: bd-mofa
+slug: bd-mofa-ministry-of-foreign-affairs
 title: MoFA
 title_bn: পররাষ্ট্র মন্ত্রণালয়
 serp_title: MoFA (Ministry of Foreign Affairs)

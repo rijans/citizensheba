@@ -1,6 +1,6 @@
 ---
 id: grs
-slug: bd-grs
+slug: bd-grs-grievance-redress-system
 title: GRS
 title_bn: জিআরএস
 serp_title: GRS (Grievance Redress System)

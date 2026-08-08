@@ -1,6 +1,6 @@
 ---
 id: bgb
-slug: bd-bgb
+slug: bd-bgb-border-guard-bangladesh
 title: BGB
 title_bn: বিজিবি
 serp_title: BGB (Border Guard Bangladesh)

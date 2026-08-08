@@ -1,6 +1,6 @@
 ---
 id: gmp
-slug: bd-gmp
+slug: bd-gmp-gazipur-metropolitan-police
 title: Gazipur Metropolitan Police
 title_bn: গাজীপুর মেট্রোপলিটন পুলিশ
 description: Official Gazipur Metropolitan Police portal for metropolitan police public information, unit notices, and published citizen safety updates.

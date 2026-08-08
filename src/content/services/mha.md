@@ -1,6 +1,6 @@
 ---
 id: mha
-slug: bd-mha
+slug: bd-mha-ministry-of-home-affairs
 title: MoHA
 title_bn: স্বরাষ্ট্র মন্ত্রণালয়
 serp_title: MoHA (Ministry of Home Affairs)

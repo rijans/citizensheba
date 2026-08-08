@@ -1,6 +1,6 @@
 ---
 id: pgcb
-slug: bd-pgcb
+slug: bd-pgcb-power-grid-company
 title: PGCB
 title_bn: পিজিসিবি
 serp_title: PGCB (Power Grid Company)

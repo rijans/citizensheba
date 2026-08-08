@@ -1,6 +1,6 @@
 ---
 id: shsmc
-slug: bd-shsmc
+slug: bd-shsmc-shaheed-suhrawardy-medical-college
 title: Shaheed Suhrawardy Medical College
 title_bn: শহীদ সোহরাওয়ার্দী মেডিকেল কলেজ
 description: Official Shaheed Suhrawardy Medical College portal for public medical college admissions notices and published college public information.

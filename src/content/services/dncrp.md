@@ -1,6 +1,6 @@
 ---
 id: dncrp
-slug: bd-dncrp
+slug: bd-dncrp-directorate-of-national-consumer-rights-protection
 title: DNCRP
 title_bn: ডিএনসিআরপি
 serp_title: Directorate of National Consumer Rights Protection

@@ -1,6 +1,6 @@
 ---
 id: nlaso
-slug: bd-nlaso
+slug: bd-nlaso-national-legal-aid-services-organization
 title: NLASO
 title_bn: এনএলএএসও
 serp_title: NLASO (National Legal Aid Services Organization)

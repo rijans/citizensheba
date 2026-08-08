@@ -1,6 +1,6 @@
 ---
 id: afmc
-slug: bd-afmc
+slug: bd-afmc-armed-forces-medical-college
 title: AFMC
 title_bn: এএফএমসি
 serp_title: Armed Forces Medical College

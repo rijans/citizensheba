@@ -1,6 +1,6 @@
 ---
 id: dss
-slug: bd-dss
+slug: bd-dss-social-services
 title: DSS
 title_bn: সমাজসেবা
 serp_title: DSS (Social Services)

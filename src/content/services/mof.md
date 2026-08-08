@@ -1,6 +1,6 @@
 ---
 id: mof
-slug: bd-mof
+slug: bd-mof-ministry-of-finance
 title: MoF
 title_bn: অর্থ মন্ত্রণালয়
 serp_title: MoF (Ministry of Finance)

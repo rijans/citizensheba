@@ -1,6 +1,6 @@
 ---
 id: ku
-slug: bd-ku
+slug: bd-ku-khulna-university
 title: Khulna University
 title_bn: খুলনা বিশ্ববিদ্যালয়
 description: Official Khulna University portal for admissions, academic notices, and university information.

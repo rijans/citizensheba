@@ -1,6 +1,6 @@
 ---
 id: cabinet
-slug: bd-cabinet
+slug: bd-cabinet-division
 title: Cabinet Division
 title_bn: মন্ত্রিপরিষদ বিভাগ
 description: Official Cabinet Division portal for cabinet administration notices and published government coordination information.

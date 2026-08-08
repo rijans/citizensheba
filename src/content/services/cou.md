@@ -1,6 +1,6 @@
 ---
 id: cou
-slug: bd-cou
+slug: bd-cou-comilla-university
 title: Comilla University
 title_bn: কুমিল্লা বিশ্ববিদ্যালয়
 description: Official Comilla University portal for public university admissions, academic notices, and university information.

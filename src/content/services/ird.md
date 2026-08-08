@@ -1,6 +1,6 @@
 ---
 id: ird
-slug: bd-ird
+slug: bd-ird-internal-resources-division
 title: IRD
 title_bn: অভ্যন্তরীণ সম্পদ বিভাগ
 serp_title: IRD (Internal Resources Division)

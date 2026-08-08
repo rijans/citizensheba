@@ -1,6 +1,6 @@
 ---
 id: nctb
-slug: bd-nctb
+slug: bd-nctb-national-curriculum-and-textbook-board
 title: NCTB
 title_bn: এনসিটিবি
 serp_title: NCTB (National Curriculum and Textbook Board)

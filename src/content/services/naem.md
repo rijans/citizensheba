@@ -1,6 +1,6 @@
 ---
 id: naem
-slug: bd-naem
+slug: bd-naem-national-academy-for-educational-management
 title: NAEM
 title_bn: নায়েম
 serp_title: NAEM (National Academy for Educational Management)

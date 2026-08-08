@@ -1,6 +1,6 @@
 ---
 id: baf
-slug: bd-baf
+slug: bd-baf-bangladesh-air-force
 title: Bangladesh Air Force
 title_bn: বাংলাদেশ বিমানবাহিনী
 description: Official Bangladesh Air Force portal for air-force public information and published recruitment or service notices.

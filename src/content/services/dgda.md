@@ -1,6 +1,6 @@
 ---
 id: dgda
-slug: bd-dgda
+slug: bd-dgda-drug-administration
 title: DGDA
 title_bn: ডিজিডিএ
 serp_title: DGDA (Drug Administration)

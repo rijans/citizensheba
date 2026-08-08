@@ -1,6 +1,6 @@
 ---
 id: lgd
-slug: bd-lgd
+slug: bd-lgd-local-government-division
 title: LGD
 title_bn: স্থানীয় সরকার বিভাগ
 serp_title: LGD (Local Government Division)

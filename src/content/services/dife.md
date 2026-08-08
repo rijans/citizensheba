@@ -1,6 +1,6 @@
 ---
 id: dife
-slug: bd-dife
+slug: bd-dife-department-of-inspection-for-factories-and-establishments
 title: DIFE
 title_bn: ডিআইএফই
 serp_title: Department of Inspection for Factories and Establishments

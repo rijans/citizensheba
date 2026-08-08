@@ -1,6 +1,6 @@
 ---
 id: dncc
-slug: bd-dncc
+slug: bd-dncc-dhaka-north-city-corporation
 title: DNCC
 title_bn: ডিএনসিসি
 serp_title: DNCC (Dhaka North City Corporation)

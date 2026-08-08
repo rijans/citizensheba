@@ -1,6 +1,6 @@
 ---
 id: iedcr
-slug: bd-iedcr
+slug: bd-iedcr-disease-control-research
 title: IEDCR
 title_bn: আইইডিসিআর
 serp_title: IEDCR (Disease Control Research)

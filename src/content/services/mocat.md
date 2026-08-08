@@ -1,6 +1,6 @@
 ---
 id: mocat
-slug: bd-mocat
+slug: bd-mocat-ministry-of-civil-aviation-and-tourism
 title: MoCAT
 title_bn: বেসামরিক বিমান পরিবহন ও পর্যটন মন্ত্রণালয়
 serp_title: MoCAT (Ministry of Civil Aviation and Tourism)

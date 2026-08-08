@@ -1,6 +1,6 @@
 ---
 id: bida
-slug: bd-bida
+slug: bd-bida-bangladesh-investment-development-authority
 title: BIDA
 title_bn: বিডা
 serp_title: BIDA (Bangladesh Investment Development Authority)

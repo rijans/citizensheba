@@ -1,6 +1,6 @@
 ---
 id: etin
-slug: bd-etin
+slug: bd-etin-taxpayer-identification-number
 title: NBR e-TIN Registration
 title_bn: ই-টিআইএন
 serp_title: NBR e-TIN Registration (Taxpayer Identification Number)

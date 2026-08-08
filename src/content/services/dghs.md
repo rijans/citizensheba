@@ -1,6 +1,6 @@
 ---
 id: dghs
-slug: bd-dghs
+slug: bd-dghs-directorate-general-of-health-services
 title: DGHS
 title_bn: স্বাস্থ্য অধিদপ্তর
 serp_title: DGHS (Directorate General of Health Services)

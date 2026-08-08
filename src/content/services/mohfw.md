@@ -1,6 +1,6 @@
 ---
 id: mohfw
-slug: bd-mohfw
+slug: bd-mohfw-ministry-of-health-and-family-welfare
 title: MoHFW
 title_bn: স্বাস্থ্য মন্ত্রণালয়
 serp_title: MoHFW (Ministry of Health and Family Welfare)

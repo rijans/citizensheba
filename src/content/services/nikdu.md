@@ -1,6 +1,6 @@
 ---
 id: nikdu
-slug: bd-nikdu
+slug: bd-nikdu-national-institute-of-kidney-diseases-and-urology
 title: NIKDU
 title_bn: নিকডু
 serp_title: National Institute of Kidney Diseases and Urology

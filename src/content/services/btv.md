@@ -1,6 +1,6 @@
 ---
 id: btv
-slug: bd-btv
+slug: bd-btv-bangladesh-television
 title: BTV
 title_bn: বিটিভি
 serp_title: BTV (Bangladesh Television)

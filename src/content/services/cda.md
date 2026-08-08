@@ -1,6 +1,6 @@
 ---
 id: cda
-slug: bd-cda
+slug: bd-cda-chattogram-development-authority
 title: CDA
 title_bn: সিডিএ
 serp_title: CDA (Chattogram Development Authority)

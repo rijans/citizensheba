@@ -1,6 +1,6 @@
 ---
 id: bfdc
-slug: bd-bfdc
+slug: bd-bfdc-bangladesh-fisheries-development-corporation
 title: BFDC
 title_bn: বিএফডিসি
 serp_title: BFDC (Bangladesh Fisheries Development Corporation)

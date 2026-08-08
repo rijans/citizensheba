@@ -1,6 +1,6 @@
 ---
 id: caab
-slug: bd-caab
+slug: bd-caab-civil-aviation-authority-of-bangladesh
 title: CAAB
 title_bn: সিএএবি
 serp_title: CAAB (Civil Aviation Authority of Bangladesh)

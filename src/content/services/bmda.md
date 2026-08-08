@@ -1,6 +1,6 @@
 ---
 id: bmda
-slug: bd-bmda
+slug: bd-bmda-barind-multipurpose-development-authority
 title: BMDA
 title_bn: বিএমডিএ
 serp_title: BMDA (Barind Multipurpose Development Authority)

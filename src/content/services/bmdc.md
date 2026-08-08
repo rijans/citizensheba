@@ -1,6 +1,6 @@
 ---
 id: bmdc
-slug: bd-bmdc
+slug: bd-bmdc-bangladesh-medical-and-dental-council
 title: BMDC
 title_bn: বিএমডিসি
 serp_title: BMDC (Bangladesh Medical and Dental Council)

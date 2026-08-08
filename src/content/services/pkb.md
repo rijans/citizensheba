@@ -1,6 +1,6 @@
 ---
 id: pkb
-slug: bd-pkb
+slug: bd-pkb-probashi-kallyan-bank
 title: PKB
 title_bn: পিকেবি
 serp_title: PKB (Probashi Kallyan Bank)

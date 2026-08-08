@@ -1,6 +1,6 @@
 ---
 id: breb
-slug: bd-breb
+slug: bd-breb-bangladesh-rural-electrification-board
 title: BREB
 title_bn: বিআরইবি
 serp_title: BREB (Bangladesh Rural Electrification Board)

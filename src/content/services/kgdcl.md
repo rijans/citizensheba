@@ -1,6 +1,6 @@
 ---
 id: kgdcl
-slug: bd-kgdcl
+slug: bd-kgdcl-karnaphuli-gas-distribution-company
 title: KGDCL
 title_bn: কেজিডিসিএল
 serp_title: KGDCL (Karnaphuli Gas Distribution Company Limited)

@@ -1,6 +1,6 @@
 ---
 id: mofl
-slug: bd-mofl
+slug: bd-mofl-ministry-of-fisheries-and-livestock
 title: MoFL
 title_bn: মৎস্য ও প্রাণিসম্পদ মন্ত্রণালয়
 serp_title: MoFL (Ministry of Fisheries and Livestock)

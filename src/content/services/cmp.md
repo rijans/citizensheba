@@ -1,6 +1,6 @@
 ---
 id: cmp
-slug: bd-cmp
+slug: bd-cmp-chattogram-metropolitan-police
 title: Chattogram Metropolitan Police
 title_bn: চট্টগ্রাম মেট্রোপলিটন পুলিশ
 description: Official Chattogram Metropolitan Police portal for metropolitan police public information, unit notices, and published citizen safety updates.

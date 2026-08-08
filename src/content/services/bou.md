@@ -1,6 +1,6 @@
 ---
 id: bou
-slug: bd-bou
+slug: bd-bou-bangladesh-open-university
 title: Bangladesh Open University
 title_bn: বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয়
 description: Official Bangladesh Open University portal for open and distance learning programmes, exams, and admissions information.

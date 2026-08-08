@@ -1,6 +1,6 @@
 ---
 id: sca
-slug: bd-sca
+slug: bd-sca-seed-certification-agency
 title: SCA
 title_bn: এসসিএ
 serp_title: SCA (Seed Certification Agency)

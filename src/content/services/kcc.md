@@ -1,6 +1,6 @@
 ---
 id: kcc
-slug: bd-kcc
+slug: bd-kcc-khulna-city-corporation
 title: KCC
 title_bn: কেসিসি
 serp_title: KCC (Khulna City Corporation)

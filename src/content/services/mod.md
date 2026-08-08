@@ -1,6 +1,6 @@
 ---
 id: mod
-slug: bd-mod
+slug: bd-mod-ministry-of-defence
 title: MoD
 title_bn: প্রতিরক্ষা মন্ত্রণালয়
 serp_title: MoD (Ministry of Defence)

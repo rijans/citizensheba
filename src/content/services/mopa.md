@@ -1,6 +1,6 @@
 ---
 id: mopa
-slug: bd-mopa
+slug: bd-mopa-ministry-of-public-administration
 title: MoPA
 title_bn: জনপ্রশাসন মন্ত্রণালয়
 serp_title: MoPA (Ministry of Public Administration)

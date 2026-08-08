@@ -1,6 +1,6 @@
 ---
 id: cga
-slug: bd-cga
+slug: bd-cga-controller-general-of-accounts
 title: CGA
 title_bn: সিজিএ
 serp_title: CGA (Controller General of Accounts)

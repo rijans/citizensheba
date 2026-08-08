@@ -1,6 +1,6 @@
 ---
 id: dgfp
-slug: bd-dgfp
+slug: bd-dgfp-family-planning
 title: DGFP
 title_bn: ডিজিএফপি
 serp_title: DGFP (Family Planning)

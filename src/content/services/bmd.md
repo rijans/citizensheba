@@ -1,6 +1,6 @@
 ---
 id: bmd
-slug: bd-bmd
+slug: bd-bmd-meteorological-department
 title: BMD
 title_bn: বিএমডি
 serp_title: BMD (Meteorological Department)

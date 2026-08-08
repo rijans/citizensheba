@@ -1,6 +1,6 @@
 ---
 id: sbc
-slug: bd-sbc
+slug: bd-sbc-sadharan-bima-corporation
 title: SBC
 title_bn: এসবিসি
 serp_title: SBC (Sadharan Bima Corporation)

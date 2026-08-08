@@ -1,6 +1,6 @@
 ---
 id: sid
-slug: bd-sid
+slug: bd-sid-statistics-and-informatics-division
 title: SID
 title_bn: এসআইডি
 serp_title: SID (Statistics and Informatics Division)

@@ -1,6 +1,6 @@
 ---
 id: mop
-slug: bd-mop
+slug: bd-mop-ministry-of-planning
 title: MoP
 title_bn: পরিকল্পনা মন্ত্রণালয়
 serp_title: MoP (Ministry of Planning)

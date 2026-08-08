@@ -1,6 +1,6 @@
 ---
 id: pstu
-slug: bd-pstu
+slug: bd-pstu-patuakhali-science-and-technology-university
 title: PSTU
 title_bn: পিএসটিইউ
 serp_title: PSTU (Patuakhali Science and Technology University)

@@ -1,6 +1,6 @@
 ---
 id: dphe
-slug: bd-dphe
+slug: bd-dphe-department-of-public-health-engineering
 title: DPHE
 title_bn: ডিপিএইচই
 serp_title: DPHE (Department of Public Health Engineering)

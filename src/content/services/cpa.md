@@ -1,6 +1,6 @@
 ---
 id: cpa
-slug: bd-cpa
+slug: bd-cpa-chittagong-port-authority
 title: CPA
 title_bn: চট্টগ্রাম বন্দর কর্তৃপক্ষ
 serp_title: CPA (Chittagong Port Authority)

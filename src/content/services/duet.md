@@ -1,6 +1,6 @@
 ---
 id: duet
-slug: bd-duet
+slug: bd-duet-dhaka-university-of-engineering-and-technology
 title: DUET
 title_bn: ডুয়েট
 serp_title: DUET (Dhaka University of Engineering & Technology)

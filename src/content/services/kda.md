@@ -1,6 +1,6 @@
 ---
 id: kda
-slug: bd-kda
+slug: bd-kda-khulna-development-authority
 title: KDA
 title_bn: কেডিএ
 serp_title: KDA (Khulna Development Authority)

@@ -1,6 +1,6 @@
 ---
 id: bauet
-slug: bd-bauet
+slug: bd-bauet-bangladesh-army-university-of-engineering-and-technology
 title: BAUET
 title_bn: বাউয়েট
 serp_title: BAUET (Bangladesh Army University of Engineering and Technology)

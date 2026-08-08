@@ -1,6 +1,6 @@
 ---
 id: shed
-slug: bd-shed
+slug: bd-shed-secondary-and-higher-education-division
 title: SHED
 title_bn: মাধ্যমিক ও উচ্চ শিক্ষা বিভাগ
 serp_title: SHED (Secondary and Higher Education Division)

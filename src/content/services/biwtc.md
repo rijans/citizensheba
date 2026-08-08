@@ -1,6 +1,6 @@
 ---
 id: biwtc
-slug: bd-biwtc
+slug: bd-biwtc-inland-water-transport-corporation
 title: BIWTC
 title_bn: বিআইডব্লিউটিসি
 serp_title: BIWTC (Inland Water Transport Corporation)

@@ -1,6 +1,6 @@
 ---
 id: pust
-slug: bd-pust
+slug: bd-pust-pabna-university-of-science-and-technology
 title: Pabna University of Science and Technology
 title_bn: পাবনা বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়
 description: Official Pabna University of Science and Technology portal for admissions, academic notices, and published university public information for students and guardians.

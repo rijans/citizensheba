@@ -1,6 +1,6 @@
 ---
 id: brur
-slug: bd-brur
+slug: bd-brur-begum-rokeya-university
 title: Begum Rokeya University
 title_bn: বেগম রোকেয়া বিশ্ববিদ্যালয়
 description: Official Begum Rokeya University portal for admissions, academic notices, and published university public information for students and guardians.

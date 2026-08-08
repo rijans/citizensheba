@@ -1,6 +1,6 @@
 ---
 id: berc
-slug: bd-berc
+slug: bd-berc-energy-regulatory-commission
 title: BERC
 title_bn: বিইআরসি
 serp_title: BERC (Energy Regulatory Commission)

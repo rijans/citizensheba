@@ -1,6 +1,6 @@
 ---
 id: bscic
-slug: bd-bscic
+slug: bd-bscic-cottage-industries
 title: BSCIC
 title_bn: বিসিক
 serp_title: BSCIC (Cottage Industries)

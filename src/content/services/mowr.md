@@ -1,6 +1,6 @@
 ---
 id: mowr
-slug: bd-mowr
+slug: bd-mowr-ministry-of-water-resources
 title: MoWR
 title_bn: পানিসম্পদ মন্ত্রণালয়
 serp_title: MoWR (Ministry of Water Resources)

@@ -1,6 +1,6 @@
 ---
 id: bsb
-slug: bd-bsb
+slug: bd-bsb-bangladesh-silk-development-board
 title: BSB
 title_bn: বিএসবি
 serp_title: BSB (Bangladesh Silk Development Board)

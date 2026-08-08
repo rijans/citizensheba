@@ -1,6 +1,6 @@
 ---
 id: dshe
-slug: bd-dshe
+slug: bd-dshe-secondary-and-higher-education
 title: DSHE
 title_bn: মাউশি
 serp_title: DSHE (Secondary and Higher Education)

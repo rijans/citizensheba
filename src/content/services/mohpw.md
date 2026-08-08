@@ -1,6 +1,6 @@
 ---
 id: mohpw
-slug: bd-mohpw
+slug: bd-mohpw-ministry-of-housing-and-public-works
 title: MoHPW
 title_bn: গৃহায়ন ও গণপূর্ত মন্ত্রণালয়
 serp_title: MoHPW (Ministry of Housing and Public Works)

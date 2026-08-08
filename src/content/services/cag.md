@@ -1,6 +1,6 @@
 ---
 id: cag
-slug: bd-cag
+slug: bd-cag-comptroller-and-auditor-general
 title: CAG
 title_bn: মহাহিসাব নিরীক্ষক ও নিয়ন্ত্রক
 serp_title: CAG (Comptroller and Auditor General)

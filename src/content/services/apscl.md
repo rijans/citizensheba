@@ -1,6 +1,6 @@
 ---
 id: apscl
-slug: bd-apscl
+slug: bd-apscl-ashuganj-power-station-company
 title: APSCL
 title_bn: এপিএসসিএল
 serp_title: APSCL (Ashuganj Power Station Company Limited)

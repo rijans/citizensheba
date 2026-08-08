@@ -1,6 +1,6 @@
 ---
 id: rpmp
-slug: bd-rpmp
+slug: bd-rpmp-rangpur-metropolitan-police
 title: Rangpur Metropolitan Police
 title_bn: রংপুর মেট্রোপলিটন পুলিশ
 description: Official Rangpur Metropolitan Police portal for metropolitan police public information, unit notices, and published citizen safety updates.

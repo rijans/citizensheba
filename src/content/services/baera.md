@@ -1,6 +1,6 @@
 ---
 id: baera
-slug: bd-baera
+slug: bd-baera-bangladesh-atomic-energy-regulatory-authority
 title: BAERA
 title_bn: বায়রা
 serp_title: BAERA (Bangladesh Atomic Energy Regulatory Authority)

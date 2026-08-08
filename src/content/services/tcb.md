@@ -1,6 +1,6 @@
 ---
 id: tcb
-slug: bd-tcb
+slug: bd-tcb-trading-corporation-of-bangladesh
 title: TCB
 title_bn: টিসিবি
 serp_title: TCB (Trading Corporation of Bangladesh)

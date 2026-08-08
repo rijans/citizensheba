@@ -1,6 +1,6 @@
 ---
 id: moinfo
-slug: bd-moinfo
+slug: bd-moinfo-ministry-of-information-and-broadcasting
 title: MoInfo
 title_bn: তথ্য ও সম্প্রচার মন্ত্রণালয়
 serp_title: MoInfo (Ministry of Information and Broadcasting)

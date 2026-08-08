@@ -1,6 +1,6 @@
 ---
 id: ppa
-slug: bd-ppa
+slug: bd-ppa-payra-port-authority
 title: PPA
 title_bn: পিপিএ
 serp_title: PPA (Payra Port Authority)

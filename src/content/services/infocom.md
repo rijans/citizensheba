@@ -1,6 +1,6 @@
 ---
 id: infocom
-slug: bd-infocom
+slug: bd-infocom-information-commission
 title: Information Commission
 title_bn: তথ্য কমিশন
 description: Official Information Commission portal for Right to Information guidance, notices, and published commission information.

@@ -1,6 +1,6 @@
 ---
 id: dscc
-slug: bd-dscc
+slug: bd-dscc-dhaka-south-city-corporation
 title: DSCC
 title_bn: ডিএসসিসি
 serp_title: DSCC (Dhaka South City Corporation)

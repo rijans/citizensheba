@@ -1,6 +1,6 @@
 ---
 id: nstu
-slug: bd-nstu
+slug: bd-nstu-noakhali-science-and-technology-university
 title: NSTU
 title_bn: এনএসটিইউ
 serp_title: NSTU (Noakhali Science and Technology University)

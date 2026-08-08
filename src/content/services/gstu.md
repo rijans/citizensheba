@@ -1,6 +1,6 @@
 ---
 id: gstu
-slug: bd-gstu
+slug: bd-gstu-gopalganj-science-and-technology-university
 title: Gopalganj Science and Technology University
 title_bn: গোপালগঞ্জ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়
 description: Official Gopalganj Science and Technology University portal for admissions, academic notices, and published university public information for students and guardians.

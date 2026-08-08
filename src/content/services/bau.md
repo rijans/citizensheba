@@ -1,6 +1,6 @@
 ---
 id: bau
-slug: bd-bau
+slug: bd-bau-bangladesh-agricultural-university
 title: BAU
 title_bn: বাকৃবি
 serp_title: BAU (Bangladesh Agricultural University)

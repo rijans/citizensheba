@@ -1,6 +1,6 @@
 ---
 id: eporcha
-slug: bd-eporcha
+slug: bd-eporcha-certified-khatian-and-mouza-map-copies
 title: "e-Porcha (Khatian & Mouza Map)"
 title_bn: ই-পর্চা
 serp_title: e-Porcha (certified Khatian and Mouza map copies)

@@ -6,6 +6,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
 import matter from 'gray-matter';
+import { isOpaqueServiceSlug } from '../../src/lib/serviceSlug';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '../..');
 const categoriesDir = join(root, 'src/content/categories');
@@ -154,5 +155,35 @@ describe('content integrity', () => {
       if (bareLoan.test(raw)) problems.push(f);
     }
     expect(problems).toEqual([]);
+  });
+
+  it('service slugs are unique', () => {
+    const slugs = services.map((s) => String(s.slug));
+    const dupes = slugs.filter((slug, i) => slugs.indexOf(slug) !== i);
+    expect(dupes).toEqual([]);
+  });
+
+  it('opaque service slugs are elaborated (bd-token-expansion)', () => {
+    const bare = services
+      .filter((s) => isOpaqueServiceSlug(String(s.slug)))
+      .map((s) => `${s.id} → ${s.slug}`);
+    expect(bare).toEqual([]);
+  });
+
+  it('every legacy Service redirect target matches a current service slug', () => {
+    const redirects = readFileSync(join(root, 'public/_redirects'), 'utf8');
+    const current = new Set(services.map((s) => String(s.slug)));
+    const missing: string[] = [];
+    for (const line of redirects.split('\n')) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith('#')) continue;
+      const parts = trimmed.split(/\s+/);
+      if (parts.length < 3) continue;
+      const [from, to, code] = parts;
+      if (code !== '301' || !from.startsWith('/services/')) continue;
+      const toSlug = to.replace(/^\/services\//, '').replace(/\/$/, '');
+      if (!current.has(toSlug)) missing.push(`${from} → ${to}`);
+    }
+    expect(missing).toEqual([]);
   });
 });

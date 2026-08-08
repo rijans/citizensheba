@@ -1,6 +1,6 @@
 ---
 id: navy
-slug: bd-navy
+slug: bd-navy-bangladesh-navy
 title: Bangladesh Navy
 title_bn: বাংলাদেশ নৌবাহিনী
 description: Official Bangladesh Navy portal for navy public information and published recruitment or service notices.

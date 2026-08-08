@@ -1,6 +1,6 @@
 ---
 id: gtcl
-slug: bd-gtcl
+slug: bd-gtcl-gas-transmission-company
 title: GTCL
 title_bn: জিটিসিএল
 serp_title: GTCL (Gas Transmission Company Limited)

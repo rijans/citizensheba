@@ -1,6 +1,6 @@
 ---
 id: nidch
-slug: bd-nidch
+slug: bd-nidch-national-institute-of-diseases-of-chest-and-hospital
 title: NIDCH
 title_bn: এনআইডিসিএইচ
 serp_title: NIDCH (National Institute of Diseases of the Chest and Hospital)

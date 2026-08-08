@@ -1,6 +1,6 @@
 ---
 id: btrc
-slug: bd-btrc
+slug: bd-btrc-bangladesh-telecommunication-regulatory-commission
 title: BTRC
 title_bn: বিটিআরসি
 serp_title: BTRC (Bangladesh Telecommunication Regulatory Commission)

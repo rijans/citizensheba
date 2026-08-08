@@ -1,6 +1,6 @@
 ---
 id: bss
-slug: bd-bss
+slug: bd-bss-bangladesh-sangbad-sangstha
 title: BSS
 title_bn: বিএসএস
 serp_title: BSS (Bangladesh Sangbad Sangstha)

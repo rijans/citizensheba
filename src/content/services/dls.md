@@ -1,6 +1,6 @@
 ---
 id: dls
-slug: bd-dls
+slug: bd-dls-department-of-livestock-services
 title: DLS
 title_bn: প্রাণিসম্পদ অধিদপ্তর
 serp_title: DLS (Department of Livestock Services)

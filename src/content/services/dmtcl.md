@@ -1,6 +1,6 @@
 ---
 id: dmtcl
-slug: bd-dmtcl
+slug: bd-dmtcl-dhaka-metro-rail
 title: DMTCL
 title_bn: ডিএমটিসিএল
 serp_title: DMTCL (Dhaka Metro Rail)

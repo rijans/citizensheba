@@ -1,6 +1,6 @@
 ---
 id: ugc
-slug: bd-ugc
+slug: bd-ugc-university-grants-commission
 title: UGC
 title_bn: ইউজিসি
 serp_title: UGC (University Grants Commission)

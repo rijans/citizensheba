@@ -1,6 +1,6 @@
 ---
 id: idcol
-slug: bd-idcol
+slug: bd-idcol-infrastructure-development-company
 title: IDCOL
 title_bn: আইডিকল
 serp_title: IDCOL (Infrastructure Development Company Limited)

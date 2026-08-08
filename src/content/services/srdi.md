@@ -1,6 +1,6 @@
 ---
 id: srdi
-slug: bd-srdi
+slug: bd-srdi-soil-resource-development-institute
 title: SRDI
 title_bn: এসআরডিআই
 serp_title: SRDI (Soil Resource Development Institute)

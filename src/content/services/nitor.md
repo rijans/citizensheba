@@ -1,6 +1,6 @@
 ---
 id: nitor
-slug: bd-nitor
+slug: bd-nitor-national-institute-of-traumatology-and-orthopaedic-rehabilitation
 title: NITOR
 title_bn: নিটর
 serp_title: NITOR (National Institute of Traumatology and Orthopaedic Rehabilitation)

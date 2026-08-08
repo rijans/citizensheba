@@ -1,6 +1,6 @@
 ---
 id: nape
-slug: bd-nape
+slug: bd-nape-national-academy-for-primary-education
 title: NAPE
 title_bn: নেপ
 serp_title: NAPE (National Academy for Primary Education)

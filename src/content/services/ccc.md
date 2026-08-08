@@ -1,6 +1,6 @@
 ---
 id: ccc
-slug: bd-ccc
+slug: bd-ccc-chattogram-city-corporation
 title: CCC
 title_bn: চসিক
 serp_title: CCC (Chattogram City Corporation)

@@ -1,6 +1,6 @@
 ---
 id: moc
-slug: bd-moc
+slug: bd-moc-ministry-of-commerce
 title: MoC
 title_bn: বাণিজ্য মন্ত্রণালয়
 serp_title: MoC (Ministry of Commerce)

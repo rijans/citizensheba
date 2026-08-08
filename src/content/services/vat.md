@@ -1,6 +1,6 @@
 ---
 id: vat
-slug: bd-vat
+slug: bd-vat-online-nbr
 title: VAT Online
 title_bn: ভ্যাট অনলাইন
 serp_title: VAT Online (NBR)

@@ -1,6 +1,6 @@
 ---
 id: nimh
-slug: bd-nimh
+slug: bd-nimh-national-institute-of-mental-health
 title: National Institute of Mental Health
 title_bn: জাতীয় মানসিক স্বাস্থ্য ইনস্টিটিউট
 description: Official National Institute of Mental Health portal for public mental health institute notices and published specialty hospital information.

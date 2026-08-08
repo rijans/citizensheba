@@ -11,6 +11,7 @@
 3. Lock **Display Name** casing ([`display-names.md`](display-names.md), ADR-0005). Ask if stylized/disputed.
 4. **Verify BN brand/loan orthography** for English-derived names (Trap #18): র + য-ফলা loans need ZWJ (`র‍্যাব`, not `র্যাব`). Check the official site’s Bangla spelling before writing `title_bn` / BN aliases / `body_bn`.
 5. Prefer public slug `bd-…` (English kebab).
+6. **Service Slug:** If the name is an opaque acronym, use elaborated form `bd-{token}-{official-english-expansion}` (ADR-0014, Trap #19). Keep content `id` short. Skip elaboration when the slug is already human-readable.
 
 ## Ship the Markdown hop
 

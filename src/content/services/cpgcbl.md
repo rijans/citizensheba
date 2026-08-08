@@ -1,6 +1,6 @@
 ---
 id: cpgcbl
-slug: bd-cpgcbl
+slug: bd-cpgcbl-coal-power-generation-company-bangladesh
 title: CPGCBL
 title_bn: সিপিজিসিবিএল
 serp_title: CPGCBL (Coal Power Generation Company Bangladesh Limited)

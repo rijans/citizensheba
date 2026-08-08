@@ -1,6 +1,6 @@
 ---
 id: butex
-slug: bd-butex
+slug: bd-butex-bangladesh-university-of-textiles
 title: BUTEX
 title_bn: বুটেক্স
 serp_title: BUTEX (Bangladesh University of Textiles)

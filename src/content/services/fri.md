@@ -1,6 +1,6 @@
 ---
 id: fri
-slug: bd-fri
+slug: bd-fri-bangladesh-fisheries-research-institute
 title: FRI
 title_bn: এফআরআই
 serp_title: FRI (Bangladesh Fisheries Research Institute)

@@ -1,6 +1,6 @@
 ---
 id: pid
-slug: bd-pid
+slug: bd-pid-press-information-department
 title: PID
 title_bn: পিআইডি
 serp_title: PID (Press Information Department)

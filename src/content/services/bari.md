@@ -1,6 +1,6 @@
 ---
 id: bari
-slug: bd-bari
+slug: bd-bari-bangladesh-agricultural-research-institute
 title: BARI
 title_bn: বারি
 serp_title: BARI (Bangladesh Agricultural Research Institute)

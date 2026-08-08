@@ -1,6 +1,6 @@
 ---
 id: molwa
-slug: bd-molwa
+slug: bd-molwa-ministry-of-liberation-war-affairs
 title: MoLWA
 title_bn: মুক্তিযুদ্ধ বিষয়ক মন্ত্রণালয়
 serp_title: MoLWA (Ministry of Liberation War Affairs)

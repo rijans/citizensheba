@@ -1,6 +1,6 @@
 ---
 id: prison
-slug: bd-prison
+slug: bd-prison-department-of-prisons
 title: Bangladesh Jail
 title_bn: কারা অধিদপ্তর
 serp_title: Bangladesh Jail (Department of Prisons)

@@ -1,6 +1,6 @@
 ---
 id: wewb
-slug: bd-wewb
+slug: bd-wewb-wage-earners-welfare-board
 title: WEWB
 title_bn: ডব্লিউইডব্লিউবি
 serp_title: WEWB (Wage Earners Welfare Board)

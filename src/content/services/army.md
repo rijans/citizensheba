@@ -1,6 +1,6 @@
 ---
 id: army
-slug: bd-army
+slug: bd-army-bangladesh-army
 title: Bangladesh Army
 title_bn: বাংলাদেশ সেনাবাহিনী
 description: Official Bangladesh Army portal for army public information and published recruitment or service notices.

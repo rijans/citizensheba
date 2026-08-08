@@ -48,6 +48,7 @@ Central map of project docs. **Agents:** start at root [`AGENTS.md`](../AGENTS.m
 | [0011](adr/0011-service-capability-capsules.md) | Hop capability capsules (EN+BN) |
 | [0012](adr/0012-service-card-description-clamp.md) | Service card description clamp (2 lines) |
 | [0013](adr/0013-partner-listing.md) | Partner listing (associations-first; docs-only) |
+| [0014](adr/0014-elaborated-service-slugs.md) | Elaborated Service Slugs (SEO + 301s) |
 
 ## Ops
 

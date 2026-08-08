@@ -1,6 +1,6 @@
 ---
 id: nipsom
-slug: bd-nipsom
+slug: bd-nipsom-national-institute-of-preventive-and-social-medicine
 title: NIPSOM
 title_bn: নিপসম
 serp_title: NIPSOM (National Institute of Preventive and Social Medicine)

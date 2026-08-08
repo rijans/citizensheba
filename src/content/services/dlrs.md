@@ -1,6 +1,6 @@
 ---
 id: dlrs
-slug: bd-dlrs
+slug: bd-dlrs-directorate-of-land-records-and-surveys
 title: DLRS
 title_bn: ভূমি রেকর্ড ও জরিপ অধিদপ্তর
 serp_title: DLRS (Directorate of Land Records and Surveys)

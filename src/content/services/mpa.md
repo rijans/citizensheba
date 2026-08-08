@@ -1,6 +1,6 @@
 ---
 id: mpa
-slug: bd-mpa
+slug: bd-mpa-mongla-port-authority
 title: MPA
 title_bn: মোংলা বন্দর কর্তৃপক্ষ
 serp_title: MPA (Mongla Port Authority)

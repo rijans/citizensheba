@@ -1,6 +1,6 @@
 ---
 id: betar
-slug: bd-betar
+slug: bd-betar-bangladesh-betar
 title: Bangladesh Betar
 title_bn: বাংলাদেশ বেতার
 description: Official Bangladesh Betar portal for state radio programme notices and published public broadcasting information.

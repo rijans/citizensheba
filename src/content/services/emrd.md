@@ -1,6 +1,6 @@
 ---
 id: emrd
-slug: bd-emrd
+slug: bd-emrd-energy-and-mineral-resources-division
 title: EMRD
 title_bn: ইএমআরডি
 serp_title: EMRD (Energy and Mineral Resources Division)

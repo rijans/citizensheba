@@ -1,6 +1,6 @@
 ---
 id: bup
-slug: bd-bup
+slug: bd-bup-bangladesh-university-of-professionals
 title: BUP
 title_bn: বিইউপি
 serp_title: BUP (Bangladesh University of Professionals)

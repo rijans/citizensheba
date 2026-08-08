@@ -1,6 +1,6 @@
 ---
 id: dae
-slug: bd-dae
+slug: bd-dae-agricultural-extension
 title: DAE
 title_bn: কৃষি সম্প্রসারণ
 serp_title: DAE (Agricultural Extension)

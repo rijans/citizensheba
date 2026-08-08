@@ -1,6 +1,6 @@
 ---
 id: ictd
-slug: bd-ictd
+slug: bd-ictd-ict-division
 title: ICTD
 title_bn: আইসিটিডি
 serp_title: ICTD (ICT Division)

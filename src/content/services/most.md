@@ -1,6 +1,6 @@
 ---
 id: most
-slug: bd-most
+slug: bd-most-ministry-of-science-and-technology
 title: MoST
 title_bn: বিজ্ঞান ও প্রযুক্তি মন্ত্রণালয়
 serp_title: MoST (Ministry of Science and Technology)

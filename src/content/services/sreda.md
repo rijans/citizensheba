@@ -1,6 +1,6 @@
 ---
 id: sreda
-slug: bd-sreda
+slug: bd-sreda-sustainable-and-renewable-energy-development-authority
 title: SREDA
 title_bn: স্রেডা
 serp_title: SREDA (Sustainable and Renewable Energy Development Authority)

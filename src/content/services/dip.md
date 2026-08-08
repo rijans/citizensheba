@@ -1,6 +1,6 @@
 ---
 id: dip
-slug: bd-dip
+slug: bd-dip-department-of-immigration-and-passports
 title: DIP
 title_bn: ডিআইপি
 serp_title: DIP (Department of Immigration and Passports)

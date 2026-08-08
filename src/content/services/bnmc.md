@@ -1,6 +1,6 @@
 ---
 id: bnmc
-slug: bd-bnmc
+slug: bd-bnmc-bangladesh-nursing-and-midwifery-council
 title: BNMC
 title_bn: বিএনএমসি
 serp_title: BNMC (Bangladesh Nursing and Midwifery Council)

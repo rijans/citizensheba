@@ -1,6 +1,6 @@
 ---
 id: mist
-slug: bd-mist
+slug: bd-mist-military-institute-of-science-and-technology
 title: MIST
 title_bn: মিস্ট
 serp_title: MIST (Military Institute of Science and Technology)

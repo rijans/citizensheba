@@ -1,6 +1,6 @@
 ---
 id: jms
-slug: bd-jms
+slug: bd-jms-jatiya-mahila-sangstha
 title: JMS
 title_bn: জেএমএস
 serp_title: JMS (Jatiya Mahila Sangstha)

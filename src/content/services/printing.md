@@ -1,6 +1,6 @@
 ---
 id: printing
-slug: bd-printing
+slug: bd-printing-bg-press-gazettes
 title: Department of Printing and Publications
 title_bn: মুদ্রণ ও প্রকাশনা অধিদপ্তর
 serp_title: Department of Printing and Publications (BG Press / Gazettes)

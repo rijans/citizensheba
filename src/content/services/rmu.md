@@ -1,6 +1,6 @@
 ---
 id: rmu
-slug: bd-rmu
+slug: bd-rmu-rajshahi-medical-university
 title: Rajshahi Medical University
 title_bn: রাজশাহী মেডিকেল বিশ্ববিদ্যালয়
 description: Official Rajshahi Medical University portal for medical university notices, academic programs, and published public information.

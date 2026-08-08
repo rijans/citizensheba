@@ -1,6 +1,6 @@
 ---
 id: bsc
-slug: bd-bsc
+slug: bd-bsc-bangladesh-shipping-corporation
 title: BSC
 title_bn: বিএসসি
 serp_title: BSC (Bangladesh Shipping Corporation)

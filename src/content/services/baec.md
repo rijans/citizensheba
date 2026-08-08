@@ -1,6 +1,6 @@
 ---
 id: baec
-slug: bd-baec
+slug: bd-baec-bangladesh-atomic-energy-commission
 title: BAEC
 title_bn: বিএইসি
 serp_title: BAEC (Bangladesh Atomic Energy Commission)

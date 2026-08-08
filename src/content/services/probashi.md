@@ -1,6 +1,6 @@
 ---
 id: probashi
-slug: bd-probashi
+slug: bd-probashi-expatriates-welfare-ministry
 title: Probashi Kalyan
 title_bn: প্রবাসী কল্যাণ
 serp_title: Probashi Kalyan (Expatriates Welfare Ministry)

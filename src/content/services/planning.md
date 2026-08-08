@@ -1,6 +1,6 @@
 ---
 id: planning
-slug: bd-planning
+slug: bd-planning-ministry-of-planning
 title: Planning Division
 title_bn: পরিকল্পনা বিভাগ
 serp_title: Planning Division (Ministry of Planning)

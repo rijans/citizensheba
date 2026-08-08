@@ -1,6 +1,6 @@
 ---
 id: cmu
-slug: bd-cmu
+slug: bd-cmu-chittagong-medical-university
 title: Chittagong Medical University
 title_bn: চট্টগ্রাম মেডিকেল বিশ্ববিদ্যালয়
 description: Official Chittagong Medical University portal for medical university notices, academic programs, and published public information.

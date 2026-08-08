@@ -1,6 +1,6 @@
 ---
 id: djmc
-slug: bd-djmc
+slug: bd-djmc-dinajpur-medical-college
 title: Dinajpur Medical College
 title_bn: দিনাজপুর মেডিকেল কলেজ
 description: Official Dinajpur Medical College portal for public medical college admissions notices and published college public information.

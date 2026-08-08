@@ -1,6 +1,6 @@
 ---
 id: rpcl
-slug: bd-rpcl
+slug: bd-rpcl-rural-power-company
 title: RPCL
 title_bn: আরপিসিএল
 serp_title: RPCL (Rural Power Company Limited)

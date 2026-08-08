@@ -1,6 +1,6 @@
 ---
 id: nicrh
-slug: bd-nicrh
+slug: bd-nicrh-national-institute-of-cancer-research-and-hospital
 title: NICRH
 title_bn: এনআইসিআরএইচ
 serp_title: NICRH (National Institute of Cancer Research and Hospital)

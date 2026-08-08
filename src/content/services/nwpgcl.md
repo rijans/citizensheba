@@ -1,6 +1,6 @@
 ---
 id: nwpgcl
-slug: bd-nwpgcl
+slug: bd-nwpgcl-north-west-power-generation-company
 title: NWPGCL
 title_bn: এনডব্লিউপিজিসিএল
 serp_title: NWPGCL (North-West Power Generation Company Limited)

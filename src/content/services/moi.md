@@ -1,6 +1,6 @@
 ---
 id: moi
-slug: bd-moi
+slug: bd-moi-ministry-of-industries
 title: MoI
 title_bn: শিল্প মন্ত্রণালয়
 serp_title: MoI (Ministry of Industries)

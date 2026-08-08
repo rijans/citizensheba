@@ -1,6 +1,6 @@
 ---
 id: dnc
-slug: bd-dnc
+slug: bd-dnc-department-of-narcotics-control
 title: DNC
 title_bn: মাদকদ্রব্য নিয়ন্ত্রণ অধিদপ্তর
 serp_title: DNC (Department of Narcotics Control)

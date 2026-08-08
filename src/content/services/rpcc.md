@@ -1,6 +1,6 @@
 ---
 id: rpcc
-slug: bd-rpcc
+slug: bd-rpcc-rangpur-city-corporation
 title: RPCC
 title_bn: আরপিসিসি
 serp_title: RPCC (Rangpur City Corporation)

@@ -1,6 +1,6 @@
 ---
 id: a2i
-slug: bd-a2i
+slug: bd-a2i-aspire-to-innovate
 title: A2I
 title_bn: এটুআই
 serp_title: A2I (Aspire to Innovate)

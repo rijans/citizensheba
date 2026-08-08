@@ -1,6 +1,6 @@
 ---
 id: motj
-slug: bd-motj
+slug: bd-motj-ministry-of-textiles-and-jute
 title: MoTJ
 title_bn: বস্ত্র ও পাট মন্ত্রণালয়
 serp_title: MoTJ (Ministry of Textiles and Jute)

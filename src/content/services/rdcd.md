@@ -1,6 +1,6 @@
 ---
 id: rdcd
-slug: bd-rdcd
+slug: bd-rdcd-rural-development-and-cooperative-division
 title: RDCD
 title_bn: আরডিসিডি
 serp_title: RDCD (Rural Development and Cooperative Division)

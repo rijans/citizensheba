@@ -1,6 +1,6 @@
 ---
 id: ju
-slug: bd-ju
+slug: bd-ju-jahangirnagar-university
 title: Jahangirnagar University
 title_bn: জাহাঙ্গীরনগর বিশ্ববিদ্যালয়
 description: Official Jahangirnagar University portal for admissions, academic notices, and published university public information for students and guardians.

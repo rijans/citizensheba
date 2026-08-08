@@ -1,6 +1,6 @@
 ---
 id: szmc
-slug: bd-szmc
+slug: bd-szmc-shaheed-ziaur-rahman-medical-college
 title: Shaheed Ziaur Rahman Medical College
 title_bn: শহীদ জিয়াউর রহমান মেডিকেল কলেজ
 description: Official Shaheed Ziaur Rahman Medical College Bogura portal for public medical college admissions notices and published college information.

@@ -1,6 +1,6 @@
 ---
 id: modmr
-slug: bd-modmr
+slug: bd-modmr-disaster-management
 title: MoDMR
 title_bn: দুর্যোগ ব্যবস্থাপনা
 serp_title: MoDMR (Disaster Management)

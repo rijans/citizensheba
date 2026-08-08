@@ -1,6 +1,6 @@
 ---
 id: scc
-slug: bd-scc
+slug: bd-scc-sylhet-city-corporation
 title: Sylhet City Corporation
 title_bn: সিলেট সিটি কর্পোরেশন
 description: Official Sylhet City Corporation portal for municipal services information, corporation notices, and published public updates.

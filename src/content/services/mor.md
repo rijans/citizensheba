@@ -1,6 +1,6 @@
 ---
 id: mor
-slug: bd-mor
+slug: bd-mor-ministry-of-railways
 title: MoR
 title_bn: রেলপথ মন্ত্রণালয়
 serp_title: MoR (Ministry of Railways)
