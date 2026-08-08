@@ -17,12 +17,8 @@
   --green-soft: rgba(0, 106, 78, 0.1);
   --on-green: #ffffff;
   --red: #f42a41;
-  --header-bg: rgba(241, 245, 242, 0.88);
+  --header-bg: #f1f5f2;
   --shadow: 0 12px 30px -14px rgba(16, 42, 34, 0.22);
-  --hero-ambient: 
-    radial-gradient(ellipse 70% 60% at 50% -10%, rgba(0, 106, 78, 0.1), transparent 70%),
-    radial-gradient(circle at 85% 30%, rgba(53, 214, 160, 0.12), transparent 45%),
-    radial-gradient(circle at 15% 80%, rgba(0, 106, 78, 0.05), transparent 40%);
 
   color-scheme: light;
 }
@@ -43,12 +39,8 @@ html[data-theme="dark"] {
   /* Dark text on mint — white-on-#35d6a0 fails WCAG AA (~1.86:1). */
   --on-green: #0a1411;
   --red: #ff4d5e;
-  --header-bg: rgba(10, 20, 17, 0.88);
+  --header-bg: #0a1411;
   --shadow: 0 16px 36px -16px rgba(0, 0, 0, 0.6);
-  --hero-ambient: 
-    radial-gradient(ellipse 75% 65% at 50% -15%, rgba(53, 214, 160, 0.14), transparent 75%),
-    radial-gradient(circle at 80% 20%, rgba(0, 106, 78, 0.3), transparent 50%),
-    radial-gradient(circle at 20% 70%, rgba(53, 214, 160, 0.07), transparent 45%);
 
   color-scheme: dark;
 }
@@ -127,8 +119,6 @@ a {
   height: var(--header-height);
   border-bottom: 1px solid var(--border);
   background: var(--header-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   transition: box-shadow 0.2s ease;
 }
 
@@ -370,16 +360,10 @@ html[data-theme="dark"] .site-header__icon-btn__glyph--moon {
 
 /* Hero (home) */
 .hero {
-  position: relative;
   margin-bottom: 1.5rem;
-  padding: 1.25rem 1.25rem 1.5rem;
-  border-radius: 1.25rem;
-  background: var(--hero-ambient);
-  overflow: hidden;
 }
 
 .hero h1 {
-  position: relative;
   margin: 0 0 0.5rem;
   font-family: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Hind Siliguri", sans-serif;
   font-size: clamp(1.625rem, 4.5vw, 2.125rem);
@@ -393,7 +377,6 @@ html[data-theme="dark"] .site-header__icon-btn__glyph--moon {
 }
 
 .hero p {
-  position: relative;
   margin: 0;
   max-width: 38rem;
   color: var(--ink-muted);
@@ -450,10 +433,6 @@ html[data-theme="dark"] .status-badge--maintenance {
   box-shadow: var(--shadow);
 }
 
-.service-card:hover .category-icon {
-  transform: scale(1.06);
-}
-
 .service-card__top {
   display: flex;
   align-items: center;
@@ -476,7 +455,6 @@ html[data-theme="dark"] .status-badge--maintenance {
   border-radius: 0.875rem;
   color: var(--cat-accent, var(--green));
   background: var(--cat-accent-soft, var(--green-soft));
-  transition: transform 0.2s ease;
 }
 
 .category-icon svg {
