@@ -5,17 +5,17 @@ title: DESCO
 title_bn: ডেসকো
 serp_title: DESCO (Dhaka Electric Supply)
 serp_title_bn: ডেসকো (ঢাকা ইলেকট্রিক সাপ্লাই)
-description: Official Dhaka Electric Supply Company portal for customer information and electricity services in DESCO areas.
-description_bn: ডেসকো এলাকায় গ্রাহক তথ্য ও বিদ্যুৎ সেবার জন্য অফিসিয়াল ডেসকো পোর্টাল
+description: "Official DESCO OCSMS portal for new electricity connections, prepaid and postpaid bill details, and meter or billing complaints."
+description_bn: "নতুন বিদ্যুৎ সংযোগ, প্রিপেইড ও পোস্টপেইড বিল এবং মিটার বা বিল সংক্রান্ত অভিযোগের অফিসিয়াল ডেসকো OCSMS পোর্টাল"
 body: |
-  **DESCO** (Dhaka Electric Supply) is the official Online Customer Service Management System for electricity customers in DESCO service areas.
+  **DESCO** (Dhaka Electric Supply Company) operates the official Online Customer Service Management System (OCSMS) for electricity customers in DESCO service areas.
 
-  Use DESCO OCSMS for new connection applications, follow-ups, and published customer-service channels for DESCO coverage areas.
+  Use DESCO OCSMS to apply for new connections, view prepaid/postpaid account and billing details, and lodge official complaints regarding unexpected bill spikes, meter discrepancies, or service disruptions.
 
 body_bn: |
-  **ডেসকো (DESCO)** ডেসকো সেবাদান এলাকার বিদ্যুৎ গ্রাহকদের জন্য অফিসিয়াল অনলাইন কাস্টমার সার্ভিস ম্যানেজমেন্ট সিস্টেম (OCSMS)।
+  **ডেসকো (DESCO)** সেবাদান এলাকার বিদ্যুৎ গ্রাহকদের জন্য অফিসিয়াল অনলাইন কাস্টমার সার্ভিস ম্যানেজমেন্ট সিস্টেম (OCSMS) পরিচালনা করে।
 
-  নতুন সংযোগ আবেদন, ফলো-আপ এবং প্রকাশিত গ্রাহক সেবা চ্যানেলের জন্য ডেসকো OCSMS ব্যবহার করুন।
+  নতুন বিদ্যুৎ সংযোগের আবেদন, প্রিপেইড ও পোস্টপেইড অ্যাকাউন্ট ও বিলের বিবরণ দেখতে এবং অপ্রত্যাশিত বিল বৃদ্ধি, মিটার সমস্যা বা গ্রাহক সেবার অভিযোগ জানাতে ডেসকো OCSMS ব্যবহার করুন।
 
 url: "https://ocsms.desco.org.bd/home"
 official_domain: ocsms.desco.org.bd
@@ -24,14 +24,14 @@ directory_global_rank: 100
 directory_category_rank: 20
 icon: zap
 capabilities:
-  - en: "Check electricity account"
-    bn: "বিদ্যুৎ অ্যাকাউন্ট দেখুন"
-  - en: "Pay or view bills"
-    bn: "বিল দেখুন বা পরিশোধ"
   - en: "Apply for new connection"
     bn: "নতুন বিদ্যুৎ সংযোগ আবেদন"
-  - en: "Find customer services"
-    bn: "গ্রাহক সেবা খুঁজুন"
+  - en: "View account & bill details"
+    bn: "অ্যাকাউন্ট ও বিলের বিবরণ"
+  - en: "Lodge bill & meter complaint"
+    bn: "বিল ও মিটার সংক্রান্ত অভিযোগ"
+  - en: "DESCO customer support"
+    bn: "ডেসকো কাস্টমার সাপোর্ট"
 tags: [desco, electricity, bill, "ডেসকো", "বিদ্যুৎ"]
 aliases:
   - name: Dhaka Electric Supply
@@ -43,13 +43,19 @@ aliases:
   - name: DESCO OCSMS
     lang: en
     kind: alt
+  - name: DESCO bill complaint
+    lang: en
+    kind: informal
   - name: ডেসকো
     lang: bn
     kind: alt
   - name: ঢাকা ইলেকট্রিক সাপ্লাই
     lang: bn
     kind: alt
-  - name: ডেসকো বিল
+  - name: ডেসকো বিল অভিযোগ
+    lang: bn
+    kind: informal
+  - name: ডেসকো প্রিপেইড মিটার
     lang: bn
     kind: informal
 status: ACTIVE
@@ -64,10 +70,10 @@ faq:
     a: "Submit a new connection application via the DESCO OCSMS portal along with applicant photo, NID copy, and land ownership document."
     q_bn: "অনলাইনে ডেসকোর নতুন বিদ্যুৎ সংযোগের আবেদন কীভাবে করতে হয়?"
     a_bn: "আবেদনকারীর ছবি, এনআইডির কপি ও জমির মালিকানার কাগজপত্রসহ ডেসকো OCSMS পোর্টালে নতুন সংযোগের আবেদন জমা দেওয়া যায়।"
-  - q: "What should I do if my DESCO bill is incorrect or disputed?"
-    a: "File a complaint online through the DESCO OCSMS portal or call the DESCO hotline at 16120."
-    q_bn: "ডেসকো বিলে ভুল থাকলে কী করব?"
-    a_bn: "ডেসকো OCSMS পোর্টালে অনলাইন অভিযোগ জমা দিন অথবা ডেসকো হটলাইন১৬১২০ নম্বরে কল করুন।"
+  - q: "What should I do if I get an unexpected high bill or prepaid meter spike on DESCO?"
+    a: "Log in to the DESCO OCSMS portal (ocsms.desco.org.bd) to submit a formal billing dispute/complaint, or call the DESCO hotline at 16120 for meter inspection."
+    q_bn: "ডেসকো প্রিপেইড বা পোস্টপেইড মিটারে অপ্রত্যাশিত অতিরিক্ত বিল বা স্পাইক আসলে কী করব?"
+    a_bn: "ডেসকো OCSMS পোর্টালে (ocsms.desco.org.bd) লগইন করে অনলাইন বিলের অভিযোগ জমা দিন অথবা মিটার পরিদর্শনের জন্য ডেসকো হটলাইন ১৬১২০ নম্বরে কল করুন।"
 
 related: [dpdc, nesco, titas-gas, breb, wzpdcl, ekpay, power-division]
 last_verified: 2026-08-08
