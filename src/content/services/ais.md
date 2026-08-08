@@ -1,6 +1,6 @@
 ---
 id: ais
-slug: bd-ais
+slug: bd-ais-agriculture-information-service
 title: AIS
 title_bn: এআইএস
 serp_title: AIS (Agriculture Information Service)

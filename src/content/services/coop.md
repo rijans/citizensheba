@@ -1,6 +1,6 @@
 ---
 id: coop
-slug: bd-coop
+slug: bd-coop-department-of-cooperatives
 title: Department of Cooperatives
 title_bn: সমবায় অধিদপ্তর
 description: Official Department of Cooperatives portal for cooperative-society notices and published department public information.

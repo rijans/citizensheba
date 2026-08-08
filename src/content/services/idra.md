@@ -1,6 +1,6 @@
 ---
 id: idra
-slug: bd-idra
+slug: bd-idra-insurance-development-and-regulatory-authority
 title: IDRA
 title_bn: আইডিআরএ
 serp_title: IDRA (Insurance Development and Regulatory Authority)

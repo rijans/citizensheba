@@ -1,6 +1,6 @@
 ---
 id: nicvd
-slug: bd-nicvd
+slug: bd-nicvd-national-institute-of-cardiovascular-diseases
 title: NICVD
 title_bn: এনআইসিভিডি
 serp_title: NICVD (National Institute of Cardiovascular Diseases)

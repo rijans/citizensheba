@@ -1,6 +1,6 @@
 ---
 id: dme
-slug: bd-dme
+slug: bd-dme-directorate-of-madrasah-education
 title: DME
 title_bn: ডিএমই
 serp_title: DME (Directorate of Madrasah Education)

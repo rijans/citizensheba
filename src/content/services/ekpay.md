@@ -1,6 +1,6 @@
 ---
 id: ekpay
-slug: bd-ekpay
+slug: bd-ekpay-government-payment-gateway
 title: ekPay
 title_bn: একপে
 serp_title: ekPay (Government Payment Gateway)

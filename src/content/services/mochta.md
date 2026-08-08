@@ -1,6 +1,6 @@
 ---
 id: mochta
-slug: bd-mochta
+slug: bd-mochta-ministry-of-chittagong-hill-tracts-affairs
 title: MoCHTA
 title_bn: পার্বত্য চট্টগ্রাম বিষয়ক মন্ত্রণালয়
 serp_title: MoCHTA (Ministry of Chittagong Hill Tracts Affairs)

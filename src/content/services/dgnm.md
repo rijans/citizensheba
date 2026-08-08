@@ -1,6 +1,6 @@
 ---
 id: dgnm
-slug: bd-dgnm
+slug: bd-dgnm-directorate-general-of-nursing-and-midwifery
 title: DGNM
 title_bn: ডিজিএনএম
 serp_title: DGNM (Directorate General of Nursing and Midwifery)

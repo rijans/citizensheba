@@ -1,6 +1,6 @@
 ---
 id: hortex
-slug: bd-hortex
+slug: bd-hortex-foundation
 title: Hortex
 title_bn: হরটেক্স
 serp_title: Hortex Foundation

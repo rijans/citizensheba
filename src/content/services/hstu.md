@@ -1,6 +1,6 @@
 ---
 id: hstu
-slug: bd-hstu
+slug: bd-hstu-hajee-mohammad-danesh-science-and-technology-university
 title: HSTU
 title_bn: হাবিপ্রবি
 serp_title: HSTU (Hajee Mohammad Danesh Science & Technology University)

@@ -1,6 +1,6 @@
 ---
 id: eprocure
-slug: bd-eprocure
+slug: bd-eprocure-national-e-government-procurement
 title: e-GP
 title_bn: ই-জিপি
 serp_title: e-GP (National e-Government Procurement)

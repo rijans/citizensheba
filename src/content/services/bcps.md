@@ -1,6 +1,6 @@
 ---
 id: bcps
-slug: bd-bcps
+slug: bd-bcps-bangladesh-college-of-physicians-and-surgeons
 title: BCPS
 title_bn: বিসিপিএস
 serp_title: BCPS (Bangladesh College of Physicians and Surgeons)

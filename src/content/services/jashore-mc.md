@@ -1,6 +1,6 @@
 ---
 id: jashore-mc
-slug: bd-jashore-mc
+slug: bd-jashore-mc-jashore-medical-college
 title: Jashore Medical College
 title_bn: যশোর মেডিকেল কলেজ
 description: Official Jashore Medical College portal for public medical college admissions notices and published college public information.

@@ -1,6 +1,6 @@
 ---
 id: moys
-slug: bd-moys
+slug: bd-moys-ministry-of-youth-and-sports
 title: MoYS
 title_bn: যুব ও ক্রীড়া মন্ত্রণালয়
 serp_title: MoYS (Ministry of Youth and Sports)

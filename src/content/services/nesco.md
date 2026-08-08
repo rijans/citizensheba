@@ -1,6 +1,6 @@
 ---
 id: nesco
-slug: bd-nesco
+slug: bd-nesco-northern-electricity-supply
 title: NESCO
 title_bn: নেসকো
 serp_title: NESCO (Northern Electricity Supply)

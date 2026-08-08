@@ -1,6 +1,6 @@
 ---
 id: pbi
-slug: bd-pbi
+slug: bd-pbi-police-bureau-of-investigation
 title: PBI
 title_bn: পিবিআই
 serp_title: PBI (Police Bureau of Investigation)

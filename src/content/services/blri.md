@@ -1,6 +1,6 @@
 ---
 id: blri
-slug: bd-blri
+slug: bd-blri-bangladesh-livestock-research-institute
 title: BLRI
 title_bn: বিএলআরআই
 serp_title: BLRI (Bangladesh Livestock Research Institute)

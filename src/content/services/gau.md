@@ -1,6 +1,6 @@
 ---
 id: gau
-slug: bd-gau
+slug: bd-gau-gazipur-agricultural-university
 title: GAU
 title_bn: জিএইউ
 serp_title: GAU (Gazipur Agricultural University)

@@ -1,6 +1,6 @@
 ---
 id: brta
-slug: bd-brta
+slug: bd-brta-service-portal-bsp-driving-licence-and-vehicle-registration
 title: BRTA Service Portal (BSP)
 title_bn: বিআরটিএ সেবা
 serp_title: BRTA Service Portal (BSP) — driving licence and vehicle registration

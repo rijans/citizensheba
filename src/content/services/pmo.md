@@ -1,6 +1,6 @@
 ---
 id: pmo
-slug: bd-pmo
+slug: bd-pmo-prime-minister-s-office
 title: PMO
 title_bn: প্রধানমন্ত্রীর কার্যালয়
 serp_title: PMO (Prime Minister's Office)

@@ -1,6 +1,6 @@
 ---
 id: brri
-slug: bd-brri
+slug: bd-brri-bangladesh-rice-research-institute
 title: BRRI
 title_bn: ব্রি
 serp_title: BRRI (Bangladesh Rice Research Institute)

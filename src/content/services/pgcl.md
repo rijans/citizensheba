@@ -1,6 +1,6 @@
 ---
 id: pgcl
-slug: bd-pgcl
+slug: bd-pgcl-pashchimanchal-gas-company
 title: PGCL
 title_bn: পিজিসিএল
 serp_title: PGCL (Pashchimanchal Gas Company Limited)

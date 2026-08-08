@@ -1,6 +1,6 @@
 ---
 id: kuet
-slug: bd-kuet
+slug: bd-kuet-khulna-university-of-engineering-and-technology
 title: KUET
 title_bn: কুয়েট
 serp_title: KUET (Khulna University of Engineering & Technology)

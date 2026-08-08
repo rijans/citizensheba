@@ -1,6 +1,6 @@
 ---
 id: cu
-slug: bd-cu
+slug: bd-cu-university-of-chittagong
 title: University of Chittagong
 title_bn: চট্টগ্রাম বিশ্ববিদ্যালয়
 description: Official University of Chittagong portal for admissions, academic notices, and university information.

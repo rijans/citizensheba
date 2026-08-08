@@ -1,6 +1,6 @@
 ---
 id: bu
-slug: bd-bu
+slug: bd-bu-university-of-barishal
 title: University of Barishal
 title_bn: বরিশাল বিশ্ববিদ্যালয়
 description: Official University of Barishal portal for public university admissions, academic notices, and university information.

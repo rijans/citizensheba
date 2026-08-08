@@ -1,6 +1,6 @@
 ---
 id: bwdb
-slug: bd-bwdb
+slug: bd-bwdb-bangladesh-water-development-board
 title: BWDB
 title_bn: বিডব্লিউডিবি
 serp_title: BWDB (Bangladesh Water Development Board)

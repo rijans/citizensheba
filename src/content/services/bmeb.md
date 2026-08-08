@@ -1,6 +1,6 @@
 ---
 id: bmeb
-slug: bd-bmeb
+slug: bd-bmeb-bangladesh-madrasah-education-board
 title: BMEB
 title_bn: বিএমইবি
 serp_title: BMEB (Bangladesh Madrasah Education Board)

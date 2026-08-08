@@ -1,6 +1,6 @@
 ---
 id: mos
-slug: bd-mos
+slug: bd-mos-ministry-of-shipping
 title: MoS
 title_bn: নৌপরিবহন মন্ত্রণালয়
 serp_title: MoS (Ministry of Shipping)

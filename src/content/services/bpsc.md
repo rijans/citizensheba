@@ -1,6 +1,6 @@
 ---
 id: bpsc
-slug: bd-bpsc
+slug: bd-bpsc-bangladesh-public-service-commission
 title: BPSC
 title_bn: বিপিএসসি
 serp_title: BPSC (Bangladesh Public Service Commission)

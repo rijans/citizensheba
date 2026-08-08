@@ -1,6 +1,6 @@
 ---
 id: jbc
-slug: bd-jbc
+slug: bd-jbc-jiban-bima-corporation
 title: Jiban Bima Corporation
 title_bn: জীবন বীমা কর্পোরেশন
 description: Official Jiban Bima Corporation portal for state life insurance notices and published half-gov insurance information.

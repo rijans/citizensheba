@@ -1,6 +1,6 @@
 ---
 id: cuet
-slug: bd-cuet
+slug: bd-cuet-chittagong-university-of-engineering-and-technology
 title: CUET
 title_bn: সিইউইটি
 serp_title: CUET (Chittagong University of Engineering & Technology)

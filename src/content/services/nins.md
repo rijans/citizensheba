@@ -1,6 +1,6 @@
 ---
 id: nins
-slug: bd-nins
+slug: bd-nins-national-institute-of-neurosciences-and-hospital
 title: NINS
 title_bn: নিনস
 serp_title: NINS (National Institute of Neurosciences & Hospital)

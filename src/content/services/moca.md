@@ -1,6 +1,6 @@
 ---
 id: moca
-slug: bd-moca
+slug: bd-moca-ministry-of-cultural-affairs
 title: MoCA
 title_bn: সংস্কৃতি বিষয়ক মন্ত্রণালয়
 serp_title: MoCA (Ministry of Cultural Affairs)

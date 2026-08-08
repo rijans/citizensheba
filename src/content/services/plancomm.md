@@ -1,6 +1,6 @@
 ---
 id: plancomm
-slug: bd-plancomm
+slug: bd-plancomm-planning-commission
 title: Planning Commission
 title_bn: পরিকল্পনা কমিশন
 description: Official Bangladesh Planning Commission portal for national planning information and published commission notices.

@@ -1,6 +1,6 @@
 ---
 id: rda
-slug: bd-rda
+slug: bd-rda-rural-development-academy-bogura
 title: RDA Bogura
 title_bn: আরডিএ বগুড়া
 serp_title: Rural Development Academy Bogura

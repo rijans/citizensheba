@@ -1,6 +1,6 @@
 ---
 id: erd
-slug: bd-erd
+slug: bd-erd-economic-relations-division
 title: ERD
 title_bn: অর্থনৈতিক সম্পর্ক বিভাগ
 serp_title: ERD (Economic Relations Division)

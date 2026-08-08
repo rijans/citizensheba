@@ -1,6 +1,6 @@
 ---
 id: bksp
-slug: bd-bksp
+slug: bd-bksp-bangladesh-krira-shikkha-protishtan
 title: BKSP
 title_bn: বিকেএসপি
 serp_title: BKSP (Bangladesh Krira Shikkha Protishtan)

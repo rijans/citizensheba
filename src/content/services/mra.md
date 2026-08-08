@@ -1,6 +1,6 @@
 ---
 id: mra
-slug: bd-mra
+slug: bd-mra-microcredit-regulatory-authority
 title: MRA
 title_bn: এমআরএ
 serp_title: MRA (Microcredit Regulatory Authority)

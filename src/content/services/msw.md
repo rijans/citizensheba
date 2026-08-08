@@ -1,6 +1,6 @@
 ---
 id: msw
-slug: bd-msw
+slug: bd-msw-ministry-of-social-welfare
 title: MoSW
 title_bn: সমাজকল্যাণ মন্ত্রণালয়
 serp_title: MoSW (Ministry of Social Welfare)

@@ -1,6 +1,6 @@
 ---
 id: sgcl
-slug: bd-sgcl
+slug: bd-sgcl-sundarban-gas-company
 title: SGCL
 title_bn: এসজিসিএল
 serp_title: SGCL (Sundarban Gas Company Limited)

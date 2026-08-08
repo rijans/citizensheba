@@ -1,6 +1,6 @@
 ---
 id: textiles
-slug: bd-textiles
+slug: bd-textiles-department-of-textiles
 title: Department of Textiles
 title_bn: বস্ত্র অধিদপ্তর
 description: Official Department of Textiles portal for textiles sector notices and published directorate public information.

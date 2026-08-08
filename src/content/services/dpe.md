@@ -1,6 +1,6 @@
 ---
 id: dpe
-slug: bd-dpe
+slug: bd-dpe-directorate-of-primary-education
 title: DPE
 title_bn: প্রাথমিক শিক্ষা অধিদপ্তর
 serp_title: DPE (Directorate of Primary Education)

@@ -1,6 +1,6 @@
 ---
 id: press-council
-slug: bd-press-council
+slug: bd-press-council-bangladesh-press-council
 title: Press Council
 title_bn: প্রেস কাউন্সিল
 serp_title: Bangladesh Press Council

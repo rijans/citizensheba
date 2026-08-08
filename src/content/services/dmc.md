@@ -1,6 +1,6 @@
 ---
 id: dmc
-slug: bd-dmc
+slug: bd-dmc-dhaka-medical-college
 title: Dhaka Medical College
 title_bn: ঢাকা মেডিকেল কলেজ
 description: Official Dhaka Medical College portal for medical college admissions notices and published college public information.

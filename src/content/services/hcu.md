@@ -1,6 +1,6 @@
 ---
 id: hcu
-slug: bd-hcu
+slug: bd-hcu-hydrocarbon-unit
 title: HCU
 title_bn: এইচসিইউ
 serp_title: HCU (Hydrocarbon Unit)

@@ -1,6 +1,6 @@
 ---
 id: namjari
-slug: bd-namjari
+slug: bd-namjari-land-mutation-applications
 title: e-Namjari (Mutation)
 title_bn: ই-নামজারি
 serp_title: e-Namjari (land mutation applications)

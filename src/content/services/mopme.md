@@ -1,6 +1,6 @@
 ---
 id: mopme
-slug: bd-mopme
+slug: bd-mopme-primary-and-mass-education
 title: MoPME
 title_bn: প্রাথমিক শিক্ষা মন্ত্রণালয়
 serp_title: MoPME (Primary and Mass Education)

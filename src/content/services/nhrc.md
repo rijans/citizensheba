@@ -1,6 +1,6 @@
 ---
 id: nhrc
-slug: bd-nhrc
+slug: bd-nhrc-national-human-rights-commission
 title: NHRC
 title_bn: এনএইচআরসি
 serp_title: NHRC (National Human Rights Commission)

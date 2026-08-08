@@ -1,6 +1,6 @@
 ---
 id: bjmc
-slug: bd-bjmc
+slug: bd-bjmc-bangladesh-jute-mills-corporation
 title: BJMC
 title_bn: বিজেএমসি
 serp_title: BJMC (Bangladesh Jute Mills Corporation)

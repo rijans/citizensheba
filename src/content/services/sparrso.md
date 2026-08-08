@@ -1,6 +1,6 @@
 ---
 id: sparrso
-slug: bd-sparrso
+slug: bd-sparrso-space-research-and-remote-sensing-organization
 title: SPARRSO
 title_bn: স্পারসো
 serp_title: SPARRSO (Space Research and Remote Sensing Organization)

@@ -1,6 +1,6 @@
 ---
 id: bcc
-slug: bd-bcc
+slug: bd-bcc-bangladesh-computer-council
 title: BCC
 title_bn: বিসিসি
 serp_title: BCC (Bangladesh Computer Council)

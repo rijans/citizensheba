@@ -1,6 +1,6 @@
 ---
 id: doe
-slug: bd-doe
+slug: bd-doe-department-of-environment
 title: DoE
 title_bn: পরিবেশ অধিদপ্তর
 serp_title: DoE (Department of Environment)

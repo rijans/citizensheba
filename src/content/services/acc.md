@@ -1,6 +1,6 @@
 ---
 id: acc
-slug: bd-acc
+slug: bd-acc-anti-corruption-commission
 title: ACC
 title_bn: দুদক
 serp_title: ACC (Anti-Corruption Commission)

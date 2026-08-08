@@ -1,6 +1,6 @@
 ---
 id: bpdb
-slug: bd-bpdb
+slug: bd-bpdb-bangladesh-power-development-board
 title: BPDB
 title_bn: বিপিডিবি
 serp_title: BPDB (Bangladesh Power Development Board)

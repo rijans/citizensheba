@@ -1,6 +1,6 @@
 ---
 id: rajuk
-slug: bd-rajuk
+slug: bd-rajuk-rajdhani-unnayan-kartripakkha
 title: RAJUK
 title_bn: রাজউক
 serp_title: RAJUK (Rajdhani Unnayan Kartripakkha)

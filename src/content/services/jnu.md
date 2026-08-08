@@ -1,6 +1,6 @@
 ---
 id: jnu
-slug: bd-jnu
+slug: bd-jnu-jagannath-university
 title: Jagannath University
 title_bn: জগন্নাথ বিশ্ববিদ্যালয়
 description: Official Jagannath University portal for admissions, academic notices, and university information.

@@ -1,6 +1,6 @@
 ---
 id: bfri
-slug: bd-bfri
+slug: bd-bfri-bangladesh-forest-research-institute
 title: BFRI
 title_bn: বিএফআরআই
 serp_title: BFRI (Bangladesh Forest Research Institute)

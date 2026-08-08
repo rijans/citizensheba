@@ -1,6 +1,6 @@
 ---
 id: imed
-slug: bd-imed
+slug: bd-imed-implementation-monitoring-and-evaluation-division
 title: IMED
 title_bn: আইএমইডি
 serp_title: IMED (Implementation Monitoring and Evaluation Division)

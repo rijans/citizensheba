@@ -1,6 +1,6 @@
 ---
 id: rpgcl
-slug: bd-rpgcl
+slug: bd-rpgcl-rupantarita-prakritik-gas-company
 title: RPGCL
 title_bn: আরপিজিসিএল
 serp_title: RPGCL (Rupantarita Prakritik Gas Company Limited)

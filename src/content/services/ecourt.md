@@ -1,6 +1,6 @@
 ---
 id: ecourt
-slug: bd-ecourt
+slug: bd-ecourt-mobile-court
 title: e-Court
 title_bn: ই-কোর্ট
 description: "Official e-Court portal for citizen reports, mobile court related digital services, and published court notices."

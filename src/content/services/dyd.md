@@ -1,6 +1,6 @@
 ---
 id: dyd
-slug: bd-dyd
+slug: bd-dyd-department-of-youth-development
 title: DYD
 title_bn: ডিওয়াইডি
 serp_title: DYD (Department of Youth Development)

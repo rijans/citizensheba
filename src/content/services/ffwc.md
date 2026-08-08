@@ -1,6 +1,6 @@
 ---
 id: ffwc
-slug: bd-ffwc
+slug: bd-ffwc-flood-forecasting
 title: FFWC
 title_bn: এফএফডব্লিউসি
 serp_title: FFWC (Flood Forecasting)

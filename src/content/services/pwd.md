@@ -1,6 +1,6 @@
 ---
 id: pwd
-slug: bd-pwd
+slug: bd-pwd-public-works-department
 title: PWD
 title_bn: পিডব্লিউডি
 serp_title: PWD (Public Works Department)

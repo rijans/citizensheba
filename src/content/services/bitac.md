@@ -1,6 +1,6 @@
 ---
 id: bitac
-slug: bd-bitac
+slug: bd-bitac-bangladesh-industrial-technical-assistance-centre
 title: BITAC
 title_bn: বিটাক
 serp_title: BITAC (Bangladesh Industrial Technical Assistance Centre)

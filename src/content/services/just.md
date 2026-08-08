@@ -1,6 +1,6 @@
 ---
 id: just
-slug: bd-just
+slug: bd-just-jashore-university-of-science-and-technology
 title: JUST
 title_bn: জাস্ট
 serp_title: JUST (Jashore University of Science and Technology)

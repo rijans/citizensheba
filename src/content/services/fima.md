@@ -1,6 +1,6 @@
 ---
 id: fima
-slug: bd-fima
+slug: bd-fima-financial-management-academy
 title: FIMA
 title_bn: ফিমা
 serp_title: FIMA (Financial Management Academy)

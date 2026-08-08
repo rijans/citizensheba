@@ -1,6 +1,6 @@
 ---
 id: wzpdcl
-slug: bd-wzpdcl
+slug: bd-wzpdcl-west-zone-power-distribution
 title: WZPDCL
 title_bn: ডব্লিউজেডপিডিসিএল
 serp_title: WZPDCL (West Zone Power Distribution)

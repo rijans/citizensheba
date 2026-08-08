@@ -1,6 +1,6 @@
 ---
 id: doict
-slug: bd-doict
+slug: bd-doict-department-of-ict
 title: DoICT
 title_bn: ডয়েক্ট
 serp_title: DoICT (Department of ICT)

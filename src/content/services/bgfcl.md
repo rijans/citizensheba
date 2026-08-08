@@ -1,6 +1,6 @@
 ---
 id: bgfcl
-slug: bd-bgfcl
+slug: bd-bgfcl-bangladesh-gas-fields-company
 title: BGFCL
 title_bn: বিজিএফসিএল
 serp_title: BGFCL (Bangladesh Gas Fields Company Limited)

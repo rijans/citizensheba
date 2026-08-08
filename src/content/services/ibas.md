@@ -1,6 +1,6 @@
 ---
 id: ibas
-slug: bd-ibas
+slug: bd-ibas-integrated-budget-and-accounting-system
 title: iBAS++
 title_bn: আইবিএএস++
 serp_title: iBAS++ (Integrated Budget and Accounting System)

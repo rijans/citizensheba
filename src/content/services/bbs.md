@@ -1,6 +1,6 @@
 ---
 id: bbs
-slug: bd-bbs
+slug: bd-bbs-bangladesh-bureau-of-statistics
 title: BBS
 title_bn: বিবিএস
 serp_title: BBS (Bangladesh Bureau of Statistics)

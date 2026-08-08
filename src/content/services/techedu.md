@@ -1,6 +1,6 @@
 ---
 id: techedu
-slug: bd-techedu
+slug: bd-techedu-directorate-of-technical-education-dte
 title: Directorate of Technical Education
 title_bn: কারিগরি শিক্ষা অধিদপ্তর
 serp_title: Directorate of Technical Education (DTE)

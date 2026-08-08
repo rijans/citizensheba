@@ -1,6 +1,6 @@
 ---
 id: mole
-slug: bd-mole
+slug: bd-mole-ministry-of-labour-and-employment
 title: MoLE
 title_bn: শ্রম ও কর্মসংস্থান মন্ত্রণালয়
 serp_title: MoLE (Ministry of Labour and Employment)

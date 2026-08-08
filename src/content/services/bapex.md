@@ -1,6 +1,6 @@
 ---
 id: bapex
-slug: bd-bapex
+slug: bd-bapex-bangladesh-petroleum-exploration-and-production-company
 title: BAPEX
 title_bn: বাপেক্স
 serp_title: BAPEX (Bangladesh Petroleum Exploration and Production Company)

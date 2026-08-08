@@ -1,6 +1,6 @@
 ---
 id: janata
-slug: bd-janata
+slug: bd-janata-bank-state-owned
 title: Janata Bank
 title_bn: জনতা ব্যাংক
 serp_title: Janata Bank (state-owned)

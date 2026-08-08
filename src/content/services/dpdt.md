@@ -1,6 +1,6 @@
 ---
 id: dpdt
-slug: bd-dpdt
+slug: bd-dpdt-department-of-patents-designs-and-trademarks
 title: DPDT
 title_bn: ডিপিডিটি
 serp_title: DPDT (Department of Patents, Designs and Trademarks)

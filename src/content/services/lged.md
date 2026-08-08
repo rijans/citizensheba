@@ -1,6 +1,6 @@
 ---
 id: lged
-slug: bd-lged
+slug: bd-lged-local-government-engineering-department
 title: LGED
 title_bn: এলজিইডি
 serp_title: LGED (Local Government Engineering Department)

@@ -1,6 +1,6 @@
 ---
 id: surokkha
-slug: bd-surokkha
+slug: bd-surokkha-vaccine-registration-and-certificates
 title: Surokkha
 title_bn: সুরক্ষা
 serp_title: Surokkha (vaccine registration and certificates)

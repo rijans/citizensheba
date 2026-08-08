@@ -1,6 +1,6 @@
 ---
 id: cafopfm
-slug: bd-cafopfm
+slug: bd-cafopfm-cafo-pension-and-fund-management
 title: CAFO Pension
 title_bn: ক্যাফো পেনশন
 serp_title: CAFO Pension and Fund Management

@@ -63,7 +63,19 @@ const READABLE_HINTS = [
   'parjatan',
   'tourism',
   'tourist',
-  'land-portal',
+  'academy',
+  'barishal',
+  'rajshahi',
+  'sylhet',
+  'khulna',
+  'rangpur',
+  'mymensingh',
+  'chattogram',
+  'comilla',
+  'habiganj',
+  'netrokona',
+  'pabna',
+  'division',
 ];
 
 export function isOpaqueServiceSlug(slug: string): boolean {
@@ -107,7 +119,8 @@ export function buildElaboratedServiceSlug(input: {
   officialEnglish: string;
 }): string {
   const body = input.currentSlug.startsWith('bd-') ? input.currentSlug.slice(3) : input.currentSlug;
-  const token = body.split('-')[0] ?? body;
+  // Whole body is the stable token (e.g. rab, bangla-academy), not only the first segment.
+  const token = body;
   let expansion = kebabizeExpansion(input.officialEnglish);
 
   // Strip leading token echo: "du-university-of-dhaka" or "rab-rapid-…"
@@ -121,7 +134,8 @@ export function buildElaboratedServiceSlug(input: {
 
   // Trim trailing tokens until under soft max (keep at least token + one expansion word)
   const bits = slug.split('-');
-  while (bits.length > 3 && bits.join('-').length > SOFT_SLUG_MAX_CHARS) {
+  const minParts = token.split('-').length + 1;
+  while (bits.length > minParts && bits.join('-').length > SOFT_SLUG_MAX_CHARS) {
     bits.pop();
   }
   return bits.join('-');
@@ -134,7 +148,21 @@ export function pickOfficialEnglish(fields: {
 }): string {
   const serp = (fields.serp_title || '').trim();
   if (serp) return serp;
-  const enAlias = (fields.aliases || []).find((a) => a.lang === 'en' && a.name?.trim());
-  if (enAlias?.name) return enAlias.name.trim();
-  return fields.title.trim();
+
+  const title = (fields.title || '').trim();
+  const enAliases = (fields.aliases || [])
+    .filter((a) => a.lang === 'en' && a.name?.trim())
+    .map((a) => a.name!.trim());
+
+  const isThin = (s: string) => {
+    const words = s.split(/\s+/).filter(Boolean);
+    return words.length <= 1 && s.replace(/[^a-z0-9]/gi, '').length <= 12;
+  };
+
+  if (title && !isThin(title)) return title;
+
+  const rich = enAliases.filter((n) => !isThin(n)).sort((a, b) => b.length - a.length);
+  if (rich[0]) return rich[0];
+  if (title) return title;
+  return enAliases[0] || '';
 }

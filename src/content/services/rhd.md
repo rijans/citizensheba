@@ -1,6 +1,6 @@
 ---
 id: rhd
-slug: bd-rhd
+slug: bd-rhd-roads-and-highways-department
 title: RHD
 title_bn: সড়ক ও জনপথ
 serp_title: RHD (Roads and Highways Department)

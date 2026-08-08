@@ -1,6 +1,6 @@
 ---
 id: bforest
-slug: bd-bforest
+slug: bd-bforest-bangladesh-forest-department
 title: Forest Department
 title_bn: বন অধিদপ্তর
 serp_title: Bangladesh Forest Department

@@ -1,6 +1,6 @@
 ---
 id: nhtti
-slug: bd-nhtti
+slug: bd-nhtti-national-hotel-and-tourism-training-institute
 title: NHTTI
 title_bn: এনএইচটিটিআই
 serp_title: National Hotel and Tourism Training Institute

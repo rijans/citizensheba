@@ -1,6 +1,6 @@
 ---
 id: btmc
-slug: bd-btmc
+slug: bd-btmc-bangladesh-textile-mills-corporation
 title: BTMC
 title_bn: বিটিএমসি
 serp_title: BTMC (Bangladesh Textile Mills Corporation)

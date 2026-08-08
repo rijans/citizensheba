@@ -1,6 +1,6 @@
 ---
 id: npi
-slug: bd-npi
+slug: bd-npi-naogaon-polytechnic-institute
 title: Naogaon Polytechnic Institute
 title_bn: নওগাঁ পলিটেকনিক ইনস্টিটিউট
 description: Official Naogaon Polytechnic Institute portal for institute notices, diploma program information, and published public updates.

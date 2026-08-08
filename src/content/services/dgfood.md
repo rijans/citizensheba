@@ -1,6 +1,6 @@
 ---
 id: dgfood
-slug: bd-dgfood
+slug: bd-dgfood-directorate-general-of-food
 title: DG Food
 title_bn: খাদ্য অধিদপ্তর
 serp_title: DG Food (Directorate General of Food)

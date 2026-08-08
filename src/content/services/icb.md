@@ -1,6 +1,6 @@
 ---
 id: icb
-slug: bd-icb
+slug: bd-icb-investment-corporation-of-bangladesh
 title: ICB
 title_bn: আইসিবি
 serp_title: ICB (Investment Corporation of Bangladesh)

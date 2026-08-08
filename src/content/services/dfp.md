@@ -1,6 +1,6 @@
 ---
 id: dfp
-slug: bd-dfp
+slug: bd-dfp-department-of-films-and-publications
 title: DFP
 title_bn: ডিএফপি
 serp_title: DFP (Department of Films and Publications)

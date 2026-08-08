@@ -1,6 +1,6 @@
 ---
 id: mofood
-slug: bd-mofood
+slug: bd-mofood-ministry-of-food
 title: MoFood
 title_bn: খাদ্য মন্ত্রণালয়
 serp_title: MoFood (Ministry of Food)

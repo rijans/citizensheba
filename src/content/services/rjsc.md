@@ -1,6 +1,6 @@
 ---
 id: rjsc
-slug: bd-rjsc
+slug: bd-rjsc-registrar-of-joint-stock-companies
 title: RJSC
 title_bn: আরজেএসসি
 serp_title: RJSC (Registrar of Joint Stock Companies)

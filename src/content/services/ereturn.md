@@ -1,6 +1,6 @@
 ---
 id: ereturn
-slug: bd-ereturn
+slug: bd-ereturn-nbr-online-income-tax-return
 title: e-Return (Online Tax Submission)
 title_bn: ই-রিটার্ন
 serp_title: e-Return (NBR online income tax return)

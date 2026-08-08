@@ -1,6 +1,6 @@
 ---
 id: cid
-slug: bd-cid
+slug: bd-cid-criminal-investigation-department
 title: CID
 title_bn: সিআইডি
 serp_title: CID (Criminal Investigation Department)

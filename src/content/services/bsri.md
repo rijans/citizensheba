@@ -1,6 +1,6 @@
 ---
 id: bsri
-slug: bd-bsri
+slug: bd-bsri-bangladesh-sugarcrop-research-institute
 title: BSRI
 title_bn: বিএসআরআই
 serp_title: BSRI (Bangladesh Sugarcrop Research Institute)

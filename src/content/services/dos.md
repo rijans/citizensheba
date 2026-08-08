@@ -1,6 +1,6 @@
 ---
 id: dos
-slug: bd-dos
+slug: bd-dos-department-of-shipping
 title: DoS
 title_bn: নৌপরিবহন অধিদপ্তর
 serp_title: DoS (Department of Shipping)

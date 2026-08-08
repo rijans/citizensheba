@@ -1,6 +1,6 @@
 ---
 id: epb
-slug: bd-epb
+slug: bd-epb-export-promotion-bureau
 title: EPB
 title_bn: ইপিবি
 serp_title: EPB (Export Promotion Bureau)

@@ -1,6 +1,6 @@
 ---
 id: pksf
-slug: bd-pksf
+slug: bd-pksf-palli-karma-sahayak-foundation
 title: PKSF
 title_bn: পিকেএসএফ
 serp_title: PKSF (Palli Karma-Sahayak Foundation)

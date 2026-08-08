@@ -1,6 +1,6 @@
 ---
 id: nilg
-slug: bd-nilg
+slug: bd-nilg-national-institute-of-local-government
 title: NILG
 title_bn: নিল্গ
 serp_title: NILG (National Institute of Local Government)

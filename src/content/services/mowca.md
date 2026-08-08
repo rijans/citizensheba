@@ -1,6 +1,6 @@
 ---
 id: mowca
-slug: bd-mowca
+slug: bd-mowca-women-and-children-affairs
 title: MoWCA
 title_bn: মহিলা ও শিশু
 serp_title: MoWCA (Women and Children Affairs)

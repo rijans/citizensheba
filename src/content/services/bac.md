@@ -1,6 +1,6 @@
 ---
 id: bac
-slug: bd-bac
+slug: bd-bac-bangladesh-accreditation-council
 title: BAC
 title_bn: বিএসি
 serp_title: BAC (Bangladesh Accreditation Council)

@@ -1,6 +1,6 @@
 ---
 id: rupali
-slug: bd-rupali
+slug: bd-rupali-bank
 title: Rupali Bank
 title_bn: রূপালী ব্যাংক
 description: Official Rupali Bank portal for state-owned bank notices, branch information, and published public banking updates.

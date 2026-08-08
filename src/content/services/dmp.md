@@ -1,6 +1,6 @@
 ---
 id: dmp
-slug: bd-dmp
+slug: bd-dmp-dhaka-metropolitan-police
 title: Dhaka Metropolitan Police
 title_bn: ঢাকা মেট্রোপলিটন পুলিশ
 description: Official Dhaka Metropolitan Police portal for metropolitan police public information, unit notices, and published citizen safety updates.

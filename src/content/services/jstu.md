@@ -1,6 +1,6 @@
 ---
 id: jstu
-slug: bd-jstu
+slug: bd-jstu-jamalpur-science-and-technology-university
 title: JSTU
 title_bn: জাস্টু
 serp_title: JSTU (Jamalpur Science and Technology University)

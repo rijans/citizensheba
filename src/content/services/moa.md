@@ -1,6 +1,6 @@
 ---
 id: moa
-slug: bd-moa
+slug: bd-moa-ministry-of-agriculture
 title: MoA
 title_bn: কৃষি মন্ত্রণালয়
 serp_title: MoA (Ministry of Agriculture)

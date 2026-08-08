@@ -1,6 +1,6 @@
 ---
 id: emis
-slug: bd-emis
+slug: bd-emis-education-management-information-system
 title: EMIS
 title_bn: ইএমআইএস
 serp_title: EMIS (Education Management Information System)

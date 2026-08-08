@@ -1,6 +1,6 @@
 ---
 id: nioh
-slug: bd-nioh
+slug: bd-nioh-national-institute-of-ophthalmology-and-hospital
 title: NIOH
 title_bn: এনআইওএইচ
 serp_title: NIOH (National Institute of Ophthalmology & Hospital)

@@ -1,6 +1,6 @@
 ---
 id: bmrc
-slug: bd-bmrc
+slug: bd-bmrc-bangladesh-medical-research-council
 title: BMRC
 title_bn: বিএমআরসি
 serp_title: BMRC (Bangladesh Medical Research Council)

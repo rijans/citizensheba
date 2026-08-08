@@ -1,6 +1,6 @@
 ---
 id: ntrca
-slug: bd-ntrca
+slug: bd-ntrca-non-government-teachers-registration-and-certification-authority
 title: NTRCA
 title_bn: এনটিআরসিএ
 serp_title: NTRCA (Non-Government Teachers Registration & Certification Authority)

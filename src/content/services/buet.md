@@ -1,6 +1,6 @@
 ---
 id: buet
-slug: bd-buet
+slug: bd-buet-engineering-and-technology
 title: BUET
 title_bn: বুয়েট
 serp_title: BUET (Engineering and Technology)

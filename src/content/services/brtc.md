@@ -1,6 +1,6 @@
 ---
 id: brtc
-slug: bd-brtc
+slug: bd-brtc-bangladesh-road-transport-corporation
 title: BRTC
 title_bn: বিআরটিসি
 serp_title: BRTC (Bangladesh Road Transport Corporation)

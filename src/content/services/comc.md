@@ -1,6 +1,6 @@
 ---
 id: comc
-slug: bd-comc
+slug: bd-comc-cumilla-medical-college
 title: Cumilla Medical College
 title_bn: কুমিল্লা মেডিকেল কলেজ
 description: Official Cumilla Medical College portal for public medical college admissions notices and published college public information.

@@ -1,6 +1,6 @@
 ---
 id: cmc
-slug: bd-cmc
+slug: bd-cmc-chittagong-medical-college
 title: Chittagong Medical College
 title_bn: চট্টগ্রাম মেডিকেল কলেজ
 description: Official Chittagong Medical College portal for college notices, academic information, and published public medical education updates.

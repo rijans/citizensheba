@@ -1,6 +1,6 @@
 ---
 id: bnf
-slug: bd-bnf
+slug: bd-bnf-bangladesh-ngo-foundation
 title: BNF
 title_bn: বিএনএফ
 serp_title: BNF (Bangladesh NGO Foundation)

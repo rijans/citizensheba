@@ -1,6 +1,6 @@
 ---
 id: bjri
-slug: bd-bjri
+slug: bd-bjri-bangladesh-jute-research-institute
 title: BJRI
 title_bn: বিজেআরআই
 serp_title: BJRI (Bangladesh Jute Research Institute)

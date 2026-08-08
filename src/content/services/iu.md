@@ -1,6 +1,6 @@
 ---
 id: iu
-slug: bd-iu
+slug: bd-iu-islamic-university-bangladesh
 title: Islamic University
 title_bn: ইসলামী বিশ্ববিদ্যালয়
 serp_title: Islamic University, Bangladesh

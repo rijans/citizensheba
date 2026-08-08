@@ -1,6 +1,6 @@
 ---
 id: dgme
-slug: bd-dgme
+slug: bd-dgme-directorate-general-of-medical-education
 title: DGME
 title_bn: ডিজিএমই
 serp_title: DGME (Directorate General of Medical Education)

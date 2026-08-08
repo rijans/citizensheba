@@ -1,6 +1,6 @@
 ---
 id: rthd
-slug: bd-rthd
+slug: bd-rthd-road-transport-and-highways
 title: RTHD
 title_bn: সড়ক পরিবহন
 serp_title: RTHD (Road Transport and Highways)

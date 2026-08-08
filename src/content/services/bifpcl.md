@@ -1,6 +1,6 @@
 ---
 id: bifpcl
-slug: bd-bifpcl
+slug: bd-bifpcl-bangladesh-india-friendship-power-company
 title: BIFPCL
 title_bn: বিআইএফপিসিএল
 serp_title: BIFPCL (Bangladesh-India Friendship Power Company)

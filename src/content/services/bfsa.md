@@ -1,6 +1,6 @@
 ---
 id: bfsa
-slug: bd-bfsa
+slug: bd-bfsa-bangladesh-food-safety-authority
 title: BFSA
 title_bn: বিএফএসএ
 serp_title: BFSA (Bangladesh Food Safety Authority)

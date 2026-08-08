@@ -1,6 +1,6 @@
 ---
 id: pib
-slug: bd-pib
+slug: bd-pib-press-institute-bangladesh
 title: PIB
 title_bn: পিআইবি
 serp_title: PIB (Press Institute Bangladesh)

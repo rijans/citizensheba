@@ -1,6 +1,6 @@
 ---
 id: rab
-slug: bd-rab
+slug: bd-rab-rapid-action-battalion
 title: RAB
 title_bn: র্যাব
 serp_title: RAB (Rapid Action Battalion)

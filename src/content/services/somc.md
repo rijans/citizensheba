@@ -1,6 +1,6 @@
 ---
 id: somc
-slug: bd-somc
+slug: bd-somc-sylhet-mag-osmani-medical-college
 title: SOMC
 title_bn: সোমক
 serp_title: SOMC (Sylhet MAG Osmani Medical College)

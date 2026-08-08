@@ -1,6 +1,6 @@
 ---
 id: du
-slug: bd-du
+slug: bd-du-university-of-dhaka
 title: University of Dhaka
 title_bn: ঢাকা বিশ্ববিদ্যালয়
 description: Official University of Dhaka portal for admissions, academic notices, and university information.

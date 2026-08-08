@@ -1,6 +1,6 @@
 ---
 id: fdc
-slug: bd-fdc
+slug: bd-fdc-bangladesh-film-development-corporation
 title: FDC
 title_bn: এফডিসি
 serp_title: FDC (Bangladesh Film Development Corporation)

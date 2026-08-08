@@ -1,6 +1,6 @@
 ---
 id: sau
-slug: bd-sau
+slug: bd-sau-sher-e-bangla-agricultural-university
 title: SAU
 title_bn: শেকৃবি
 serp_title: SAU (Sher-e-Bangla Agricultural University)

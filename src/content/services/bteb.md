@@ -1,6 +1,6 @@
 ---
 id: bteb
-slug: bd-bteb
+slug: bd-bteb-bangladesh-technical-education-board
 title: BTEB
 title_bn: বিটিইবি
 serp_title: BTEB (Bangladesh Technical Education Board)

@@ -1,6 +1,6 @@
 ---
 id: bsec
-slug: bd-bsec
+slug: bd-bsec-bangladesh-securities-and-exchange-commission
 title: BSEC
 title_bn: বিএসইসি
 serp_title: BSEC (Bangladesh Securities and Exchange Commission)

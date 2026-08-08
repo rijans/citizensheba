@@ -1,6 +1,6 @@
 ---
 id: barc
-slug: bd-barc
+slug: bd-barc-bangladesh-agricultural-research-council
 title: BARC
 title_bn: বার্ক
 serp_title: BARC (Bangladesh Agricultural Research Council)

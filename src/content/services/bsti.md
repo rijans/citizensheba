@@ -1,6 +1,6 @@
 ---
 id: bsti
-slug: bd-bsti
+slug: bd-bsti-bangladesh-standards-and-testing-institution
 title: BSTI
 title_bn: বিএসটিআই
 serp_title: BSTI (Bangladesh Standards and Testing Institution)

@@ -1,6 +1,6 @@
 ---
 id: teletalk
-slug: bd-teletalk
+slug: bd-teletalk-state-mobile-operator
 title: Teletalk
 title_bn: টেলিটক
 description: Official Teletalk Bangladesh portal for the state-owned mobile operator’s packages, self-care, and customer information.

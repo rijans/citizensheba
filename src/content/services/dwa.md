@@ -1,6 +1,6 @@
 ---
 id: dwa
-slug: bd-dwa
+slug: bd-dwa-department-of-women-affairs
 title: DWA
 title_bn: ডিডব্লিউএ
 serp_title: DWA (Department of Women Affairs)

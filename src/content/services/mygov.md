@@ -1,6 +1,6 @@
 ---
 id: mygov
-slug: bd-mygov
+slug: bd-mygov-integrated-digital-government-services
 title: myGov
 title_bn: মাইগভ
 serp_title: myGov (integrated digital government services)

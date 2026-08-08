@@ -1,6 +1,6 @@
 ---
 id: railway
-slug: bd-railway
+slug: bd-railway-bangladesh-railway-e-ticket
 title: Bangladesh Railway e-Ticket
 title_bn: রেলওয়ে ই-টিকিট
 description: "Official portal to purchase intercity train tickets and check train routes, schedules, and booking notices."

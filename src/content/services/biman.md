@@ -1,6 +1,6 @@
 ---
 id: biman
-slug: bd-biman
+slug: bd-biman-bangladesh-airlines
 title: Biman Bangladesh Airlines
 title_bn: বিমান বাংলাদেশ এয়ারলাইন্স
 description: Official Biman Bangladesh Airlines portal for national carrier flight information and booking entry points.

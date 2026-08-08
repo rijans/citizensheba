@@ -1,6 +1,6 @@
 ---
 id: bcic
-slug: bd-bcic
+slug: bd-bcic-bangladesh-chemical-industries-corporation
 title: BCIC
 title_bn: বিসিআইসি
 serp_title: BCIC (Bangladesh Chemical Industries Corporation)

@@ -1,6 +1,6 @@
 ---
 id: sust
-slug: bd-sust
+slug: bd-sust-shahjalal-university-of-science-and-technology
 title: SUST
 title_bn: শাবিপ্রবি
 serp_title: Shahjalal University of Science and Technology

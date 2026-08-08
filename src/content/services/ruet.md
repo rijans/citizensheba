@@ -1,6 +1,6 @@
 ---
 id: ruet
-slug: bd-ruet
+slug: bd-ruet-rajshahi-university-of-engineering-and-technology
 title: RUET
 title_bn: রুয়েট
 serp_title: RUET (Rajshahi University of Engineering & Technology)

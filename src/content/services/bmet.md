@@ -1,6 +1,6 @@
 ---
 id: bmet
-slug: bd-bmet
+slug: bd-bmet-online-clearance-emigration
 title: BMET Online Clearance
 title_bn: বিএমইটি অনলাইন ক্লিয়ারেন্স
 serp_title: BMET Online Clearance (Emigration)

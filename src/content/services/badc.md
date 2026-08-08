@@ -1,6 +1,6 @@
 ---
 id: badc
-slug: bd-badc
+slug: bd-badc-bangladesh-agricultural-development-corporation
 title: BADC
 title_bn: বিএডিসি
 serp_title: BADC (Bangladesh Agricultural Development Corporation)

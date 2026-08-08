@@ -1,6 +1,6 @@
 ---
 id: bina
-slug: bd-bina
+slug: bd-bina-bangladesh-institute-of-nuclear-agriculture
 title: BINA
 title_bn: বিনা
 serp_title: BINA (Bangladesh Institute of Nuclear Agriculture)

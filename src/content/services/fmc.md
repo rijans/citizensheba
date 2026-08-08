@@ -1,6 +1,6 @@
 ---
 id: fmc
-slug: bd-fmc
+slug: bd-fmc-faridpur-medical-college
 title: Faridpur Medical College
 title_bn: ফরিদপুর মেডিকেল কলেজ
 description: Official Faridpur Medical College portal for medical college admissions notices and published college public information.

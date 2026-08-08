@@ -1,6 +1,6 @@
 ---
 id: ncc
-slug: bd-ncc
+slug: bd-ncc-narayanganj-city-corporation
 title: NCC
 title_bn: নসিক
 serp_title: NCC (Narayanganj City Corporation)

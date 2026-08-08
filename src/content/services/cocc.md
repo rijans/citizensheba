@@ -1,6 +1,6 @@
 ---
 id: cocc
-slug: bd-cocc
+slug: bd-cocc-cumilla-city-corporation
 title: COCC
 title_bn: কুসিসি
 serp_title: COCC (Cumilla City Corporation)

@@ -1,6 +1,6 @@
 ---
 id: bhbfc
-slug: bd-bhbfc
+slug: bd-bhbfc-bangladesh-house-building-finance-corporation
 title: BHBFC
 title_bn: বিএইচবিএফসি
 serp_title: Bangladesh House Building Finance Corporation

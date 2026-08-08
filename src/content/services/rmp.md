@@ -1,6 +1,6 @@
 ---
 id: rmp
-slug: bd-rmp
+slug: bd-rmp-rajshahi-metropolitan-police
 title: Rajshahi Metropolitan Police
 title_bn: রাজশাহী মেট্রোপলিটন পুলিশ
 description: Official Rajshahi Metropolitan Police portal for metropolitan police public information, unit notices, and published citizen safety updates.

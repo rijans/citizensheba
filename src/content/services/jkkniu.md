@@ -1,6 +1,6 @@
 ---
 id: jkkniu
-slug: bd-jkkniu
+slug: bd-jkkniu-jatiya-kabi-kazi-nazrul-islam-university
 title: Jatiya Kabi Kazi Nazrul Islam University
 title_bn: জাতীয় কবি কাজী নজরুল ইসলাম বিশ্ববিদ্যালয়
 description: Official Jatiya Kabi Kazi Nazrul Islam University portal for admissions, academic notices, and published university public information for students and guardians.

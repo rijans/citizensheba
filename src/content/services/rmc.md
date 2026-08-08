@@ -1,6 +1,6 @@
 ---
 id: rmc
-slug: bd-rmc
+slug: bd-rmc-rajshahi-medical-college
 title: Rajshahi Medical College
 title_bn: রাজশাহী মেডিকেল কলেজ
 description: Official Rajshahi Medical College portal for medical college admissions notices and published college public information.

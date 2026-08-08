@@ -1,6 +1,6 @@
 ---
 id: gcc
-slug: bd-gcc
+slug: bd-gcc-gazipur-city-corporation
 title: GCC
 title_bn: গসিক
 serp_title: GCC (Gazipur City Corporation)

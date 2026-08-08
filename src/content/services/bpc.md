@@ -1,6 +1,6 @@
 ---
 id: bpc
-slug: bd-bpc
+slug: bd-bpc-bangladesh-petroleum-corporation
 title: BPC
 title_bn: বিপিসি
 serp_title: BPC (Bangladesh Petroleum Corporation)

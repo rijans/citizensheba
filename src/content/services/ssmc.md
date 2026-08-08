@@ -1,6 +1,6 @@
 ---
 id: ssmc
-slug: bd-ssmc
+slug: bd-ssmc-sir-salimullah-medical-college
 title: SSMC
 title_bn: এসএসএমসি
 serp_title: SSMC (Sir Salimullah Medical College)

@@ -1,6 +1,6 @@
 ---
 id: hajj
-slug: bd-hajj
+slug: bd-hajj-bangladesh-hajj
 title: Bangladesh Hajj
 title_bn: বাংলাদেশ হজ
 description: Official Bangladesh Hajj management portal for pilgrimage registration and published hajj guidance.

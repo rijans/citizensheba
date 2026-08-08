@@ -1,6 +1,6 @@
 ---
 id: ru
-slug: bd-ru
+slug: bd-ru-university-of-rajshahi
 title: University of Rajshahi
 title_bn: রাজশাহী বিশ্ববিদ্যালয়
 description: Official University of Rajshahi portal for admissions, academic notices, and university information.

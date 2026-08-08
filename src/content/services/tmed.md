@@ -1,6 +1,6 @@
 ---
 id: tmed
-slug: bd-tmed
+slug: bd-tmed-technical-and-madrasah-education
 title: TMED
 title_bn: কারিগরি শিক্ষা
 serp_title: TMED (Technical and Madrasah Education)

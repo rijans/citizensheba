@@ -1,6 +1,6 @@
 ---
 id: moef
-slug: bd-moef
+slug: bd-moef-ministry-of-environment-forest-and-climate-change
 title: MoEFCC
 title_bn: পরিবেশ, বন ও জলবায়ু পরিবর্তন মন্ত্রণালয়
 serp_title: MoEFCC (Ministry of Environment, Forest and Climate Change)

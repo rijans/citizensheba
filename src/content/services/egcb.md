@@ -1,6 +1,6 @@
 ---
 id: egcb
-slug: bd-egcb
+slug: bd-egcb-electricity-generation-company-of-bangladesh
 title: EGCB
 title_bn: ইজিসিবি
 serp_title: EGCB (Electricity Generation Company of Bangladesh)

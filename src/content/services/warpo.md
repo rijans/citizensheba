@@ -1,6 +1,6 @@
 ---
 id: warpo
-slug: bd-warpo
+slug: bd-warpo-water-resources-planning-organization
 title: WARPO
 title_bn: ওয়ারপো
 serp_title: WARPO (Water Resources Planning Organization)

@@ -1,6 +1,6 @@
 ---
 id: rub
-slug: bd-rub
+slug: bd-rub-rabindra-university-bangladesh
 title: Rabindra University Bangladesh
 title_bn: রবীন্দ্র বিশ্ববিদ্যালয় বাংলাদেশ
 description: Official Rabindra University Bangladesh portal for public university admissions notices and published academic information.

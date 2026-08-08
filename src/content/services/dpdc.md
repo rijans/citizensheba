@@ -1,6 +1,6 @@
 ---
 id: dpdc
-slug: bd-dpdc
+slug: bd-dpdc-dhaka-power-distribution
 title: DPDC
 title_bn: ডিপিডিসি
 serp_title: DPDC (Dhaka Power Distribution)

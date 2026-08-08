@@ -1,6 +1,6 @@
 ---
 id: moedu
-slug: bd-moedu
+slug: bd-moedu-ministry-of-education
 title: Ministry of Education
 title_bn: শিক্ষা মন্ত্রণালয়
 description: Official Ministry of Education portal for national education policy notices and ministry information.

@@ -1,6 +1,6 @@
 ---
 id: uftb
-slug: bd-uftb
+slug: bd-uftb-university-of-frontier-technology-bangladesh
 title: UFTB
 title_bn: ইউএফটিবি
 serp_title: UFTB (University of Frontier Technology, Bangladesh)

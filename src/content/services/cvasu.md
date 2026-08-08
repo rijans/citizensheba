@@ -1,6 +1,6 @@
 ---
 id: cvasu
-slug: bd-cvasu
+slug: bd-cvasu-chattogram-veterinary-and-animal-sciences-university
 title: CVASU
 title_bn: সিভাসু
 serp_title: CVASU (Chattogram Veterinary and Animal Sciences University)
