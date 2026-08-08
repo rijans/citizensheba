@@ -187,6 +187,21 @@ Outbound check: `curl -sS -o /dev/null -w '%{http_code}' -L --max-time 25` from 
 | Skip notes | — | — | — | skipped | gap-list | IUT (OIC); hijacked/private lookalikes; Teletalk Alljobs; wrong `college.gov.bd` acronyms; `moi` already covers MoInd |
 | Industry / trade associations (BASIS, …) | — | — | — | — | partner | **Not Official** — Partner candidates (ADR-0013) |
 
+## Priority wave 40 — e-Apostille + utility/SOEs + Sangsad TV + BBA/BTC/Macademy (2026-08-08)
+
+| Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
+|--------------|-----------|----------|--------------|--------|--------|-------|
+| e-Apostille | apostille / bd-apostille-document-legalization | migration | https://apostille.mygov.bd/ | shipped | gap-list | Document legalization |
+| Meghna Petroleum | mpl / bd-mpl-meghna-petroleum | utilities | https://mpl.gov.bd/ | shipped | gap-list | BPC oil marketing |
+| JGTDSL | jgtdsl / bd-jgtdsl-jalalabad-gas | utilities | https://jgtdsl.gov.bd/ | shipped | gap-list | Sylhet gas utility |
+| SGFL | sgfl / bd-sgfl-sylhet-gas-fields | utilities | https://sgfl.gov.bd/ | shipped | gap-list | Sylhet gas fields |
+| Sangsad Television | sangsad-tv / bd-sangsad-television | central | https://btvlive.gov.bd/channel/Sangsad-Television | shipped | gap-list | Parliament live channel |
+| PDBF | pdbf / bd-pdbf-palli-daridro-bimochon-foundation | central | https://www.pdbf.gov.bd/ | shipped | gap-list | Poverty alleviation foundation |
+| BSFIC | bsfic / bd-bsfic-sugar-and-food-industries | central | https://www.bsfic.gov.bd/ | shipped | gap-list | Sugar & food industries |
+| BBA | bba / bd-bba-bangladesh-bridge-authority | transport | https://bba.gov.bd/ | shipped | gap-list | Bridge authority |
+| BTC | btc / bd-btc-trade-and-tariff-commission | central | https://btc.gov.bd/ | shipped | gap-list | Trade & tariff commission |
+| Maritime Academy | macademy / bd-macademy-bangladesh-maritime-academy | education | https://macademy.gov.bd/ | shipped | gap-list | Merchant navy academy |
+
 ## Priority wave 39 — justice + education academies + DPHE/DGME + SOEs (2026-08-08)
 
 | Working name | id / slug | Category | Outbound URL | Status | Source | Notes |
