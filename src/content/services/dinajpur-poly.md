@@ -1,6 +1,6 @@
 ---
 id: dinajpur-poly
-slug: bd-dinajpur-poly-dinajpur-polytechnic-institute
+slug: bd-dinajpur-polytechnic-institute
 title: Dinajpur Polytechnic Institute
 title_bn: দিনাজপুর পলিটেকনিক ইনস্টিটিউট
 description: Official Dinajpur Polytechnic Institute portal for institute notices, diploma program information, and published public updates.

@@ -1,6 +1,6 @@
 ---
 id: sonali
-slug: bd-sonali-bank-state-owned
+slug: bd-sonali-bank
 title: Sonali Bank
 title_bn: সোনালী ব্যাংক
 serp_title: Sonali Bank (state-owned)

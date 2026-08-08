@@ -1,6 +1,6 @@
 ---
 id: bdris
-slug: bd-bdris-birth-and-death-registration-bdris
+slug: bd-bdris-birth-and-death-registration
 title: "Birth & Death Registration (BDRIS)"
 title_bn: জন্ম ও মৃত্যু নিবন্ধন
 description: "Apply for new birth/death certificates, track application status, and verify certificates online."

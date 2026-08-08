@@ -1,6 +1,6 @@
 ---
 id: customs
-slug: bd-customs-bangladesh-customs
+slug: bd-bangladesh-customs
 title: Bangladesh Customs
 title_bn: বাংলাদেশ কাস্টমস
 description: Official Bangladesh Customs portal for customs procedures, notices, and trade-related guidance.

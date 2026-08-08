@@ -1,6 +1,6 @@
 ---
 id: consular
-slug: bd-consular-mofa-consular-services
+slug: bd-consular-mofa-services
 title: MoFA Consular Services
 title_bn: পররাষ্ট্র মন্ত্রণালয় কনস্যুলার সেবা
 description: Official MoFA consular services portal for diplomatic passport, SAARC visa sticker, and published consular channel information.

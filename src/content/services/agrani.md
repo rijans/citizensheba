@@ -1,6 +1,6 @@
 ---
 id: agrani
-slug: bd-agrani-bank-state-owned
+slug: bd-agrani-bank
 title: Agrani Bank
 title_bn: অগ্রণী ব্যাংক
 serp_title: Agrani Bank (state-owned)

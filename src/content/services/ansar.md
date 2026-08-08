@@ -1,6 +1,6 @@
 ---
 id: ansar
-slug: bd-ansar-bangladesh-ansar-and-vdp
+slug: bd-ansar-village-defence-party
 title: Ansar & VDP
 title_bn: আনসার ও ভিডিপি
 serp_title: Bangladesh Ansar and VDP
