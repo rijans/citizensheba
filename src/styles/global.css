@@ -372,8 +372,10 @@ html[data-theme="dark"] .site-header__icon-btn__glyph--moon {
 .hero {
   position: relative;
   margin-bottom: 1.5rem;
-  padding-block: 0.5rem 0.5rem;
+  padding: 1.25rem 1.25rem 1.5rem;
+  border-radius: 1.25rem;
   background: var(--hero-ambient);
+  overflow: hidden;
 }
 
 .hero h1 {
