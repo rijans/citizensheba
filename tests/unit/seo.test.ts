@@ -25,6 +25,12 @@ describe('documentTitle', () => {
       'এটুআই (তথ্য ও যোগাযোগ প্রযুক্তি বিভাগ) — A2I (Aspire to Innovate) | CitizenSheba Bangladesh',
     );
   });
+
+  it('allows brand override for custom document titles', () => {
+    expect(
+      documentTitle('বাংলাদেশের সরকারি সব ডিজিটাল সেবা', 'Bangladesh Gov Digital Services', 'CitizenSheba.com'),
+    ).toBe('বাংলাদেশের সরকারি সব ডিজিটাল সেবা — Bangladesh Gov Digital Services | CitizenSheba.com');
+  });
 });
 
 describe('metaDescription', () => {

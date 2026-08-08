@@ -11,13 +11,13 @@ const initialCategoryId = Astro.url.searchParams.get('cat');
 ---
 
 <BaseLayout
-  title={documentTitle(HOME_TITLE_BN, HOME_TITLE_EN)}
+  title={documentTitle(HOME_TITLE_BN, HOME_TITLE_EN, 'CitizenSheba.com')}
   description={metaDescription(SITE_TAGLINE_BN, SITE_TAGLINE)}
   canonicalPath="/"
 >
   <section class="hero">
     <h1>
-      <span lang="bn">সরকারি সব ডিজিটাল সেবা</span> Bangladesh Gov Digital Services
+      <span lang="bn">বাংলাদেশের সরকারি সব ডিজিটাল সেবা</span> Bangladesh Gov Digital Services
     </h1>
     <p>{SITE_TAGLINE}</p>
   </section>

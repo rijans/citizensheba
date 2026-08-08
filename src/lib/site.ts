@@ -20,8 +20,8 @@ export const ABOUT_DESCRIPTION_EN =
 export const ABOUT_DESCRIPTION_BN =
   'সিটিজেনসেবা বাংলাদেশের সরকারি ও ইউটিলিটি ডিজিটাল সেবার একটি স্বাধীন নির্দেশিকা';
 
-export const HOME_TITLE_EN = 'Bangladesh digital services directory';
-export const HOME_TITLE_BN = 'বাংলাদেশের ডিজিটাল সেবা নির্দেশিকা';
+export const HOME_TITLE_EN = 'Bangladesh Gov Digital Services';
+export const HOME_TITLE_BN = 'বাংলাদেশের সরকারি সব ডিজিটাল সেবা';
 
 export const NOT_FOUND_TITLE_EN = 'Page not found';
 export const NOT_FOUND_TITLE_BN = 'পৃষ্ঠা পাওয়া যায়নি';
