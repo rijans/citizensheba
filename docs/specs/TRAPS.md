@@ -23,6 +23,7 @@
 | 15 | Hop support `p` rules enlarging `.lang-label` |
 | 16 | Forking Directory / hop / card recipes |
 | 17 | Shipping Partner listings before the ship wave |
+| 18 | BN loanwords with bare `র্যা` instead of ZWJ `র‍্যা` |
 
 ---
 
@@ -227,3 +228,15 @@ Adding Partner / association Markdown hops, a `partners` collection, or Instant 
 ### Rule
 
 ADR-0013 is **docs-only** until a deliberate ship wave (schema + Non-Official hop chrome + backlog). Instant Directory and Category Official lists stay Official-only until a **follow-up ADR** opens discovery. Partner ≠ Official forever on page chrome.
+
+---
+
+## 18. BN loanwords with bare `র্যা` instead of ZWJ `র‍্যা`
+
+### Pitfall
+
+Writing English-loan Bangla with the bare conjunct `র্যা…` (র + ্ + য + া) for brands like RAB / Rapid — renders wrong vs the official form `র‍্যা…` (র + U+200D + ্ + য + া). Same class: track / franchise / brand / graduate loans.
+
+### Rule
+
+Before shipping `title_bn`, BN aliases, or BN body for an English-derived org name, **verify the official Bangla spelling** (Outbound site header / Bangla Academy). Insert ZWJ for র + য-ফলা loans. Do **not** rewrite native words (`কার্যালয়`, `পর্যায়`). Living rule: [`display-names.md`](../guides/display-names.md). CI flags known bare forms in `content-integrity.test.ts`.

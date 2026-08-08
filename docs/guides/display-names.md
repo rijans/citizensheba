@@ -13,6 +13,7 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | Preserve known camelCase product brands | myGov |
 | Domains / URLs stay literal | `a2i.gov.bd`, `mygov.bd` |
 | Clear cases → apply; stylized / disputed → ask | See ADR-0005 |
+| **BN brand/loan orthography:** English loans with র + য-ফলা use **ZWJ** (`র` + U+200D + `্যা…`), not the bare conjunct `র্যা…` | RAB → **র‍্যাব**, Rapid → **র‍্যাপিড**; also track/franchise/brand/graduate loans (`ট্র‍্যাক`, `ফ্র‍্যাঞ্চাইজি`, …). Native Bangla (`কার্যালয়`, `পর্যায়`) keeps the conjunct. **Verify** BN Display Name / aliases against the official site (or Bangla Academy form) before shipping — Trap #18 |
 
 ## Known Display Names
 
@@ -338,7 +339,7 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `dip` | **DIP** | Acronym ALL CAPS |
 | `nctb` | **NCTB** | Acronym ALL CAPS |
 | `bfsa` | **BFSA** | Acronym ALL CAPS |
-| `rab` | **RAB** | Acronym ALL CAPS |
+| `rab` | **RAB** | Acronym ALL CAPS; BN **র‍্যাব** (ZWJ) — not `র্যাব` |
 | `iedcr` | **IEDCR** | Acronym ALL CAPS |
 
 | `vat` | **VAT Online** | NBR VAT product |

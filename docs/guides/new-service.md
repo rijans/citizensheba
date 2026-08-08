@@ -9,7 +9,8 @@
 1. Confirm it is an **Official Service** (gov / utility / half-gov) with **one Outbound URL** — [`AGENTS.md`](../../AGENTS.md), Catalog Backlog [`docs/ops/service-catalog-backlog.md`](../ops/service-catalog-backlog.md), discovery method [`docs/ops/official-portal-discovery.md`](../ops/official-portal-discovery.md). Associations are not Official.
 2. Pick Category (`src/content/categories/*.yaml`). New Category → Lucide `icon` + accent in `categoryVisuals.ts` ([`frontend.md`](frontend.md), ADR-0004).
 3. Lock **Display Name** casing ([`display-names.md`](display-names.md), ADR-0005). Ask if stylized/disputed.
-4. Prefer public slug `bd-…` (English kebab).
+4. **Verify BN brand/loan orthography** for English-derived names (Trap #18): র + য-ফলা loans need ZWJ (`র‍্যাব`, not `র্যাব`). Check the official site’s Bangla spelling before writing `title_bn` / BN aliases / `body_bn`.
+5. Prefer public slug `bd-…` (English kebab).
 
 ## Ship the Markdown hop
 

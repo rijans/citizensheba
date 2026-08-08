@@ -143,4 +143,16 @@ describe('content integrity', () => {
       .map((s) => String(s.id));
     expect(missing).toEqual([]);
   });
+
+  it('BN English-loan র্যা uses ZWJ (র‍্যা), not bare conjunct', () => {
+    // Trap #18 — bare র্যা… for loans like RAB/Rapid/track/franchise/brand/graduate.
+    // Native Bangla (কার্যালয়, পর্যায়) correctly keeps the conjunct and is not listed here.
+    const bareLoan = /(?<!\u200d)(?:র্যাব|র্যাপিড|ট্র্যাক|ফ্র্যাঞ্চাইজি|ব্র্যান্ড|গ্র্যাজুয়েট)/;
+    const problems: string[] = [];
+    for (const f of serviceFiles) {
+      const raw = readFileSync(join(servicesDir, f), 'utf8');
+      if (bareLoan.test(raw)) problems.push(f);
+    }
+    expect(problems).toEqual([]);
+  });
 });

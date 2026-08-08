@@ -44,7 +44,7 @@ aliases:
     kind: alt
 status: ACTIVE
 audience: Titas Gas residential and commercial customers in its franchise areas.
-audience_bn: তিতাস গ্যাসের ফ্র্যাঞ্চাইজি এলাকার আবাসিক ও বাণিজ্যিক গ্রাহক।
+audience_bn: তিতাস গ্যাসের ফ্র‍্যাঞ্চাইজি এলাকার আবাসিক ও বাণিজ্যিক গ্রাহক।
 faq:
   - q: "Can I pay Titas Gas only through this website?"
     a: "The official site publishes payment guidance. Many customers also pay via bank or MFS channels listed by Titas — follow only channels the company publishes."

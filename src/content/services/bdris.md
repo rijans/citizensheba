@@ -4,7 +4,7 @@ slug: bd-bdris
 title: "Birth & Death Registration (BDRIS)"
 title_bn: জন্ম ও মৃত্যু নিবন্ধন
 description: "Apply for new birth/death certificates, track application status, and verify certificates online."
-description_bn: "নতুন জন্ম/মৃত্যু সনদের আবেদন, আবেদনের অবস্থা ট্র্যাক এবং সনদ যাচাই অনলাইনে করুন"
+description_bn: "নতুন জন্ম/মৃত্যু সনদের আবেদন, আবেদনের অবস্থা ট্র‍্যাক এবং সনদ যাচাই অনলাইনে করুন"
 body: |
   **Birth & Death Registration (BDRIS)** is Bangladesh’s official online system for applying for birth and death certificates, checking application status, and verifying issued certificates.
   
@@ -27,7 +27,7 @@ capabilities:
   - en: "Apply for death certificate"
     bn: "মৃত্যু সনদের আবেদন"
   - en: "Track application status"
-    bn: "আবেদনের অবস্থা ট্র্যাক"
+    bn: "আবেদনের অবস্থা ট্র‍্যাক"
   - en: "Verify certificate"
     bn: "সনদ যাচাই করুন"
 tags: [birth, death, certificate, bdris, "জন্ম নিবন্ধন"]
@@ -54,7 +54,7 @@ faq:
   - q: "What can I do on BDRIS?"
     a: "Apply for birth and death certificates, track applications, and verify certificates online."
     q_bn: "BDRIS-এ কী করা যায়?"
-    a_bn: "জন্ম ও মৃত্যু সনদের আবেদন, আবেদন ট্র্যাক এবং অনলাইনে সনদ যাচাই করা যায়।"
+    a_bn: "জন্ম ও মৃত্যু সনদের আবেদন, আবেদন ট্র‍্যাক এবং অনলাইনে সনদ যাচাই করা যায়।"
 
 last_verified: 2026-08-06
 ---

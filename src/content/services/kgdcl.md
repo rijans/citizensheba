@@ -6,7 +6,7 @@ title_bn: কেজিডিসিএল
 serp_title: KGDCL (Karnaphuli Gas Distribution Company Limited)
 serp_title_bn: কর্ণফুলী গ্যাস ডিস্ট্রিবিউশন কোম্পানি লিমিটেড
 description: Official KGDCL portal for Karnaphuli gas distribution notices, customer information, and published franchise-area updates.
-description_bn: কর্ণফুলী গ্যাস বিতরণ নোটিশ, গ্রাহক তথ্য ও প্রকাশিত ফ্র্যাঞ্চাইজি আপডেটের অফিসিয়াল কেজিডিসিএল পোর্টাল
+description_bn: কর্ণফুলী গ্যাস বিতরণ নোটিশ, গ্রাহক তথ্য ও প্রকাশিত ফ্র‍্যাঞ্চাইজি আপডেটের অফিসিয়াল কেজিডিসিএল পোর্টাল
 body: |
   **KGDCL** (Karnaphuli Gas Distribution Company Limited) is the official gas distribution portal for company notices and published customer information in its franchise areas.
 
@@ -46,12 +46,12 @@ aliases:
     kind: informal
 status: ACTIVE
 audience: KGDCL residential and commercial customers in its franchise areas.
-audience_bn: কেজিডিসিএল ফ্র্যাঞ্চাইজি এলাকার আবাসিক ও বাণিজ্যিক গ্রাহক।
+audience_bn: কেজিডিসিএল ফ্র‍্যাঞ্চাইজি এলাকার আবাসিক ও বাণিজ্যিক গ্রাহক।
 faq:
   - q: "Is KGDCL the same as Titas Gas?"
     a: "No. KGDCL and Titas Gas are separate distribution companies for different franchise areas."
     q_bn: "কেজিডিসিএল কি তিতাস গ্যাসের মতো একই?"
-    a_bn: "না। কেজিডিসিএল ও তিতাস গ্যাস আলাদা ফ্র্যাঞ্চাইজি এলাকার বিতরণ কোম্পানি।"
+    a_bn: "না। কেজিডিসিএল ও তিতাস গ্যাস আলাদা ফ্র‍্যাঞ্চাইজি এলাকার বিতরণ কোম্পানি।"
 related: [titas-gas, sgcl, gtcl, petrobangla, ccc]
 last_verified: 2026-08-08
 ---

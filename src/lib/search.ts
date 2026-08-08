@@ -140,6 +140,8 @@ export function normalizeSearchText(s: string): string {
     .toString()
     .toLowerCase()
     .normalize('NFC')
+    // Drop ZWJ/ZWNJ so র‍্যাব and র্যাব (and similar loan twins) match the same query.
+    .replace(/[\u200c\u200d]/g, '')
     .replace(/[-.']/g, '')
     // Keep letters + combining marks (Bangla matras) + digits; drop other punct.
     .replace(/[^\p{L}\p{M}\p{N}\s]+/gu, ' ')

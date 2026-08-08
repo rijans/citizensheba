@@ -6,14 +6,14 @@ title_bn: ডব্লিউজেডপিডিসিএল
 serp_title: WZPDCL (West Zone Power Distribution)
 serp_title_bn: ডব্লিউজেডপিডিসিএল (ওয়েস্ট জোন পাওয়ার ডিস্ট্রিবিউশন)
 description: Official West Zone Power Distribution Company portal for electricity customers in the west zone franchise.
-description_bn: পশ্চিমাঞ্চল ফ্র্যাঞ্চাইজির বিদ্যুৎ গ্রাহকদের জন্য অফিসিয়াল ওয়েস্ট জোন পাওয়ার ডিস্ট্রিবিউশন পোর্টাল
+description_bn: পশ্চিমাঞ্চল ফ্র‍্যাঞ্চাইজির বিদ্যুৎ গ্রাহকদের জন্য অফিসিয়াল ওয়েস্ট জোন পাওয়ার ডিস্ট্রিবিউশন পোর্টাল
 body: |
   **WZPDCL** (West Zone Power Distribution Company Ltd.) is the official portal for electricity distribution information and customer services in its west-zone franchise.
 
   Use WZPDCL when your connection area is under West Zone Power — not DESCO, DPDC, or NESCO.
 
 body_bn: |
-  **ডব্লিউজেডপিডিসিএল (WZPDCL)** পশ্চিমাঞ্চল ফ্র্যাঞ্চাইজিতে বিদ্যুৎ বিতরণ তথ্য ও গ্রাহক সেবার অফিসিয়াল পোর্টাল।
+  **ডব্লিউজেডপিডিসিএল (WZPDCL)** পশ্চিমাঞ্চল ফ্র‍্যাঞ্চাইজিতে বিদ্যুৎ বিতরণ তথ্য ও গ্রাহক সেবার অফিসিয়াল পোর্টাল।
 
   সংযোগ ওয়েস্ট জোন পাওয়ারের অধীনে হলে ডব্লিউজেডপিডিসিএল ব্যবহার করুন—ডেসকো, ডিপিডিসি বা নেসকো নয়।
 

@@ -46,7 +46,7 @@ audience_bn: অফিসিয়াল মিল্ক ভিটা দুগ�
 faq:
   - q: "Is Milk Vita a private dairy brand only?"
     a: "Milk Vita is the Bangladesh Milk Producers Cooperative Union — a half-gov cooperative dairy organization."
-    q_bn: "মিল্ক ভিটা কি শুধু বেসরকারি দুগ্ধ ব্র্যান্ড?"
+    q_bn: "মিল্ক ভিটা কি শুধু বেসরকারি দুগ্ধ ব্র‍্যান্ড?"
     a_bn: "মিল্ক ভিটা বাংলাদেশ দুগ্ধ উৎপাদনকারী সমবায় ইউনিয়ন—একটি হাফ-গভ সমবায় দুগ্ধ সংস্থা।"
 related: [mofl, dls, bfdc, coop, national-portal]
 last_verified: 2026-08-08

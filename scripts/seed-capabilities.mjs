@@ -26,7 +26,7 @@ const CAPABILITIES = {
     { en: 'Find public information', bn: 'জনতথ্য খুঁজুন' },
   ],
   'bangladesh-post': [
-    { en: 'Track postal items', bn: 'ডাক আইটেম ট্র্যাক করুন' },
+    { en: 'Track postal items', bn: 'ডাক আইটেম ট্র‍্যাক করুন' },
     { en: 'Find post-office guidance', bn: 'পোস্ট অফিস নির্দেশনা' },
     { en: 'Explore postal services', bn: 'ডাক সেবা দেখুন' },
   ],
@@ -43,7 +43,7 @@ const CAPABILITIES = {
   bdris: [
     { en: 'Apply for birth certificate', bn: 'জন্ম সনদের আবেদন' },
     { en: 'Apply for death certificate', bn: 'মৃত্যু সনদের আবেদন' },
-    { en: 'Track application status', bn: 'আবেদনের অবস্থা ট্র্যাক' },
+    { en: 'Track application status', bn: 'আবেদনের অবস্থা ট্র‍্যাক' },
     { en: 'Verify certificate', bn: 'সনদ যাচাই করুন' },
   ],
   berc: [
@@ -308,7 +308,7 @@ const CAPABILITIES = {
   ],
   namjari: [
     { en: 'Apply for land mutation', bn: 'নামজারি আবেদন' },
-    { en: 'Track mutation status', bn: 'নামজারি অবস্থা ট্র্যাক' },
+    { en: 'Track mutation status', bn: 'নামজারি অবস্থা ট্র‍্যাক' },
     { en: 'Follow application steps', bn: 'আবেদনের ধাপ অনুসরণ' },
   ],
   'national-portal': [
@@ -352,7 +352,7 @@ const CAPABILITIES = {
     { en: 'View ministry services', bn: 'মন্ত্রণালয় সেবা' },
   ],
   rab: [
-    { en: 'Read RAB public information', bn: 'র্যাব জনতথ্য পড়ুন' },
+    { en: 'Read RAB public information', bn: 'র‍্যাব জনতথ্য পড়ুন' },
     { en: 'View published notices', bn: 'প্রকাশিত নোটিশ দেখুন' },
     { en: 'Find official updates', bn: 'অফিসিয়াল আপডেট' },
   ],
@@ -418,7 +418,7 @@ const CAPABILITIES = {
   ],
   'xi-admission': [
     { en: 'Apply for Class 11 admission', bn: 'একাদশ ভর্তি আবেদন' },
-    { en: 'Track admission status', bn: 'ভর্তির অবস্থা ট্র্যাক' },
+    { en: 'Track admission status', bn: 'ভর্তির অবস্থা ট্র‍্যাক' },
     { en: 'Follow college admission steps', bn: 'কলেজ ভর্তির ধাপ' },
   ],
 };

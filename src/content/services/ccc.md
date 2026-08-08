@@ -51,7 +51,7 @@ faq:
   - q: "Is CCC the same as Chattogram WASA?"
     a: "No. CCC is the city corporation. Chattogram WASA handles water and sewerage for its franchise."
     q_bn: "চসিক কি চট্টগ্রাম ওয়াসার মতো একই?"
-    a_bn: "না। চসিক সিটি কর্পোরেশন। চট্টগ্রাম ওয়াসা তার ফ্র্যাঞ্চাইজিতে পানি ও স্যুয়ারেজ দেখে।"
+    a_bn: "না। চসিক সিটি কর্পোরেশন। চট্টগ্রাম ওয়াসা তার ফ্র‍্যাঞ্চাইজিতে পানি ও স্যুয়ারেজ দেখে।"
 related: [dncc, dscc, chattogram-wasa, national-portal]
 last_verified: 2026-08-07
 ---

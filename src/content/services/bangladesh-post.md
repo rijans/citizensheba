@@ -4,14 +4,14 @@ slug: bd-bangladesh-post
 title: Bangladesh Post
 title_bn: বাংলাদেশ পোস্ট
 description: Official Bangladesh Post portal for postal services, tracking information, and published post-office guidance.
-description_bn: ডাক সেবা, ট্র্যাকিং তথ্য ও প্রকাশিত পোস্ট অফিস নির্দেশনার অফিসিয়াল বাংলাদেশ পোস্ট পোর্টাল
+description_bn: ডাক সেবা, ট্র‍্যাকিং তথ্য ও প্রকাশিত পোস্ট অফিস নির্দেশনার অফিসিয়াল বাংলাদেশ পোস্ট পোর্টাল
 body: |
   **Bangladesh Post** is the official portal for Bangladesh postal services, tracking information, and post-office related guidance.
 
   Use it for official postal notices and service entry points published by Bangladesh Post.
 
 body_bn: |
-  **বাংলাদেশ পোস্ট** বাংলাদেশের ডাক সেবা, ট্র্যাকিং তথ্য ও পোস্ট অফিস-সংক্রান্ত নির্দেশনার অফিসিয়াল পোর্টাল।
+  **বাংলাদেশ পোস্ট** বাংলাদেশের ডাক সেবা, ট্র‍্যাকিং তথ্য ও পোস্ট অফিস-সংক্রান্ত নির্দেশনার অফিসিয়াল পোর্টাল।
 
   বাংলাদেশ পোস্ট প্রকাশিত অফিসিয়াল নোটিশ ও সেবা এন্ট্রির জন্য এটি ব্যবহার করুন।
 
@@ -23,7 +23,7 @@ directory_category_rank: 200
 icon: mail
 capabilities:
   - en: "Track postal items"
-    bn: "ডাক আইটেম ট্র্যাক করুন"
+    bn: "ডাক আইটেম ট্র‍্যাক করুন"
   - en: "Find post-office guidance"
     bn: "পোস্ট অফিস নির্দেশনা"
   - en: "Explore postal services"

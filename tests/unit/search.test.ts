@@ -81,6 +81,10 @@ describe('normalizeSearchText', () => {
   it('keeps Bengali letters with matras intact', () => {
     expect(normalizeSearchText('সেবা')).toBe('সেবা');
   });
+
+  it('folds ZWJ so র‍্যাব and র্যাব match', () => {
+    expect(normalizeSearchText('র‍্যাব')).toBe(normalizeSearchText('র্যাব'));
+  });
 });
 
 describe('scoreService', () => {

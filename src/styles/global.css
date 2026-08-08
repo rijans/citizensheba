@@ -817,15 +817,15 @@ html[data-theme="dark"] .directory-chips-wrap::after {
   align-items: center;
   justify-content: center;
   gap: 0.5rem 0.75rem;
-  margin: 1.25rem 0 0;
+  margin: 0;
 }
 
 .directory-load-more {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.35rem;
-  margin: 1.25rem 0 0;
+  gap: 0.5rem;
+  margin: 0;
 }
 
 .directory-load-more__btn {
@@ -1828,11 +1828,27 @@ html[data-theme="dark"] .lang-label {
   color: var(--ink-muted);
 }
 
-/* Category page */
+/* Category page — same 1rem stack rhythm as Instant Directory (.directory) */
+.category-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.category-page .breadcrumb {
+  margin-bottom: 0;
+}
+
 .category-page__header {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+}
+
+.category-directory {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .category-page__title-row {
@@ -1869,7 +1885,7 @@ html[data-theme="dark"] .lang-label {
 }
 
 .category-page__browse {
-  margin: 1rem 0 1.5rem;
+  margin: 0;
   font-size: 0.9375rem;
   font-weight: 600;
 }
