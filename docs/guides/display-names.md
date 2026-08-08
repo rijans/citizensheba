@@ -27,6 +27,7 @@ When you decide a tricky brand with the product owner, **update the Display Name
 | `eporcha` | **e-Porcha (Khatian & Mouza Map)** | House `e-` |
 | `etin` | **NBR e-TIN Registration** | Acronym NBR + `e-TIN` |
 | `brta` | **BRTA Service Portal (BSP)** | Acronyms ALL CAPS |
+| `fuelpass` | **BD Fuel Pass** | Portal brand |
 | `dghs` | **DGHS** | Acronym |
 | `bdris` | **Birth & Death Registration (BDRIS)** | Acronym in paren |
 | `nid` | **NID Services** | Acronym |

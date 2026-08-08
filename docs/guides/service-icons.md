@@ -194,6 +194,7 @@ Optional Lucide key on Service frontmatter (`icon`). Cards **and Service Page H1
 | `fid` | `landmark` | Financial Institutions Division |
 | `fima` | `calculator` | Financial Management Academy |
 | `fire-service` | `flame` | Fire service |
+| `fuelpass` | `fuel` | Fuel QR pass |
 | `fisheries` | `anchor` | Department of Fisheries |
 | `fmc` | `stethoscope` | Faridpur Medical College |
 | `fri` | `sprout` | Fisheries research |
